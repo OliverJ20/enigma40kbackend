@@ -86,15 +86,10 @@ export const auth = betterAuth({
   },
 
   advanced: {
-    cookieOptions: {
+    defaultCookieAttributes: {
       sameSite: isProd ? "none" : "lax",
       secure: isProd,
       httpOnly: true,
-      // Remove domain entirely for cross-origin — let browser handle it
-      domain: undefined,
-    },
-    crossSubDomainCookies: {
-      enabled: false,
     },
   },
 
