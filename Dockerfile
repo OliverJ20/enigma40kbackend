@@ -9,25 +9,20 @@
 FROM node:20-alpine AS deps
 WORKDIR /app
 
-# pnpm via corepack — smaller than npm install -g
-RUN corepack enable
-RUN corepack prepare pnpm@9.12.0 --activate
-
-COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile --prod=false
+COPY package.json package-lock.json* ./
+RUN npm ci
 
 # ── Stage 2: build ────────────────────────────────────────────
 FROM node:20-alpine AS build
 WORKDIR /app
-RUN corepack enable && corepack prepare pnpm@9.12.0 --activate
 
 COPY --from=deps /app/node_modules ./node_modules
-COPY package.json pnpm-lock.yaml* tsconfig.json tsconfig.build.json ./
+COPY package.json package-lock.json* tsconfig.json tsconfig.build.json ./
 COPY src ./src
 
-RUN pnpm run build
+RUN npm run build
 # Prune to production-only deps for the runtime image
-RUN pnpm prune --prod
+RUN npm prune --production
 
 # ── Stage 3: runtime ──────────────────────────────────────────
 FROM node:20-alpine AS runtime
