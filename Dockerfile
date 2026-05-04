@@ -30,7 +30,7 @@ WORKDIR /app
 
 # Cloud Run sets PORT; default to 8080 for local docker run.
 ENV NODE_ENV=production \
-    PORT=8080
+    RUN_PORT=8080
 
 # Non-root user for the runtime
 RUN addgroup -S app && adduser -S app -G app

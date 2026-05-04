@@ -21,7 +21,10 @@ const app = new Hono();
 // Global middleware
 // ────────────────────────────────────────────────────────────
 
-app.use("*", honoLogger((msg) => logger.info(msg)));
+app.use(
+  "*",
+  honoLogger((msg) => logger.info(msg)),
+);
 app.use("*", secureHeaders());
 
 app.use(
@@ -78,10 +81,7 @@ app.get("/", (c) =>
 
 app.onError((err, c) => {
   if (err instanceof HTTPException) {
-    return c.json(
-      { error: err.message },
-      err.status,
-    );
+    return c.json({ error: err.message }, err.status);
   }
   logger.error({ err: err.message, stack: err.stack }, "Unhandled error");
   return c.json({ error: "Internal server error" }, 500);
@@ -93,7 +93,7 @@ app.notFound((c) => c.json({ error: "Not found" }, 404));
 // Start
 // ────────────────────────────────────────────────────────────
 
-const port = env.PORT;
+const port = env.RUN_PORT;
 serve({ fetch: app.fetch, port }, (info) => {
   logger.info(
     {
