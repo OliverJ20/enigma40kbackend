@@ -90,7 +90,7 @@ export const auth = betterAuth({
     // frontend, so the session cookie has to be SameSite=None.
     // In dev (localhost:3000 ↔ localhost:8080), Lax is fine and
     // avoids requiring HTTPS.
-    cookieOptions: {
+    defaultCookieAttributes: {
       sameSite: isProd ? "none" : "lax",
       secure: isProd,
       domain: env.COOKIE_DOMAIN || baseHost,
