@@ -86,15 +86,15 @@ export const auth = betterAuth({
   },
 
   advanced: {
-    // In production, the backend is on a different origin from the
-    // frontend, so the session cookie has to be SameSite=None.
-    // In dev (localhost:3000 ↔ localhost:8080), Lax is fine and
-    // avoids requiring HTTPS.
-    defaultCookieAttributes: {
+    cookieOptions: {
       sameSite: isProd ? "none" : "lax",
       secure: isProd,
-      domain: env.COOKIE_DOMAIN || baseHost,
       httpOnly: true,
+      // Remove domain entirely for cross-origin — let browser handle it
+      domain: undefined,
+    },
+    crossSubDomainCookies: {
+      enabled: false,
     },
   },
 
@@ -123,7 +123,8 @@ export const auth = betterAuth({
       create: {
         before: async (data) => {
           const local =
-            data.email?.split("@")[0]?.replace(/[^a-z0-9_-]/gi, "") || "commander";
+            data.email?.split("@")[0]?.replace(/[^a-z0-9_-]/gi, "") ||
+            "commander";
           const suffix = Math.random().toString(36).slice(2, 6);
           return {
             data: {
@@ -138,7 +139,12 @@ export const auth = betterAuth({
 
   logger: {
     log: (level, message, ...rest) => {
-      const fn = level === "error" ? logger.error : level === "warn" ? logger.warn : logger.info;
+      const fn =
+        level === "error"
+          ? logger.error
+          : level === "warn"
+            ? logger.warn
+            : logger.info;
       fn.call(logger, { rest }, `[better-auth] ${message}`);
     },
   },
