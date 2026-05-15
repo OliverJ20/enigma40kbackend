@@ -18,6 +18,7 @@
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
     "auth:generate": "npx @better-auth/cli generate --output src/db/auth-schema.ts",
+    "sync:catalogue": "tsx scripts/sync-bsdata.ts",
     "docker:build": "docker build -t wh40k-lists-backend .",
     "docker:run": "docker run --env-file .env -p 8080:8080 wh40k-lists-backend"
   },
