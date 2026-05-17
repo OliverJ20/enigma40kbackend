@@ -603,6 +603,8 @@ function segToVariants(seg: Record<string, any>, fallbackMax: number): WargearVa
 function segToUpgradeVariants(seg: Record<string, any>, fallbackMax: number): WargearVariant[] {
   const defaultId = String(seg["@_defaultSelectionEntryId"] ?? "");
   const variants: WargearVariant[] = [];
+
+  // Inline selectionEntries
   for (const childSe of (seg["selectionEntries"]?.["selectionEntry"] ?? [])) {
     if (childSe["@_type"] !== "upgrade") continue;
     const name = String(childSe["@_name"] ?? "");
@@ -611,7 +613,31 @@ function segToUpgradeVariants(seg: Record<string, any>, fallbackMax: number): Wa
     const isDefault = defaultId !== "" && String(childSe["@_id"] ?? "") === defaultId;
     variants.push({ name, min, max: max || fallbackMax, weapons: [name], isDefault });
   }
+
+  // entryLinks (e.g. "Weavefield crest" referenced from a shared entry).
+  // The link's own id is what defaultSelectionEntryId points to.
+  for (const link of (seg["entryLinks"]?.["entryLink"] ?? [])) {
+    if (String(link["@_type"] ?? "") !== "selectionEntry") continue;
+    const name = String(link["@_name"] ?? "");
+    if (!isWargearName(name)) continue;
+    const { min, max } = readSelectionConstraints(link);
+    const isDefault = defaultId !== "" && String(link["@_id"] ?? "") === defaultId;
+    variants.push({ name, min, max: max || fallbackMax, weapons: [name], isDefault });
+  }
+
   return variants;
+}
+
+/** Normalises verbose BSData SEG names to shorter display labels.
+ *  "Exchange melee weapon for hammer" → "Melee weapon"
+ *  "Replace bolt pistol with plasma pistol" → "Bolt pistol"
+ */
+function normaliseSegName(name: string): string {
+  const exchange = name.match(/^[Ee]xchange (.+?) for .+$/);
+  if (exchange) return exchange[1]!.charAt(0).toUpperCase() + exchange[1]!.slice(1);
+  const replace = name.match(/^[Rr]eplace (.+?) with .+$/);
+  if (replace) return replace[1]!.charAt(0).toUpperCase() + replace[1]!.slice(1);
+  return name;
 }
 
 /**
@@ -629,7 +655,7 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
   for (const seg of (e["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
     const { min: segMin, max: segMax } = readSelectionConstraints(seg);
     if (segMax === 0 && segMin === 0) continue;
-    const segName = String(seg["@_name"] ?? "");
+    const segName = normaliseSegName(String(seg["@_name"] ?? ""));
     if (!isWargearName(segName)) continue;
 
     const variants = segToVariants(seg, segMax);
@@ -641,7 +667,7 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
     for (const nested of (seg["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
       const { min: nestedMin, max: nestedMax } = readSelectionConstraints(nested);
       if (nestedMax === 0 && nestedMin === 0) continue;
-      const nestedName = String(nested["@_name"] ?? "");
+      const nestedName = normaliseSegName(String(nested["@_name"] ?? ""));
       if (!isWargearName(nestedName)) continue;
       const nestedVariants = segToVariants(nested, nestedMax);
       if (nestedVariants.length > 0) {
@@ -657,7 +683,7 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
     for (const internalSeg of (directSe["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
       const { min: segMin, max: segMax } = readSelectionConstraints(internalSeg);
       if (segMax === 0 && segMin === 0) continue;
-      const segName = String(internalSeg["@_name"] ?? "");
+      const segName = normaliseSegName(String(internalSeg["@_name"] ?? ""));
       if (!isWargearName(segName)) continue;
       const upgradeVariants = segToUpgradeVariants(internalSeg, segMax);
       if (upgradeVariants.length > 0) {

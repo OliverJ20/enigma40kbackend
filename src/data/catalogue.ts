@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T09:24:40.862Z
+// Last synced: 2026-05-17T09:35:13.783Z
 
 export interface WargearVariant {
   name: string;
@@ -248,6 +248,24 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Spear of the Faithful"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Anointed Halberd",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Anointed Halberd"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hallowed Mace",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hallowed Mace"
+                ],
+                "isDefault": true
               }
             ]
           }
@@ -601,6 +619,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "max": 1,
                 "weapons": [
                   "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ministorum heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum heavy flamer"
                 ],
                 "isDefault": false
               }
@@ -1006,7 +1033,35 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Sacred Banner",
           "Bolt pistol"
         ],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Zephyrim Superior",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e80a-4a97-2c3b-710e",
@@ -1135,6 +1190,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Condemnor bolt pistol"
                 ],
                 "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Celestian Insidiant Superior",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Condemnor bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Condemnor bolt pistol"
+                ],
+                "isDefault": true
               }
             ]
           }
@@ -3240,6 +3322,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Galvanic rifle"
                 ],
                 "isDefault": true
+              },
+              {
+                "name": "Mechanicus pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Mechanicus pistol"
+                ],
+                "isDefault": false
               }
             ]
           }
@@ -3351,6 +3442,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Radium carbine"
                 ],
                 "isDefault": true
+              },
+              {
+                "name": "Mechanicus pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Mechanicus pistol"
+                ],
+                "isDefault": false
               }
             ]
           }
@@ -8777,6 +8877,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Boltgun"
                 ],
                 "isDefault": true
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": false
               }
             ]
           }
@@ -9037,6 +9146,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Plasma gun"
                 ],
                 "isDefault": true
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
               }
             ]
           }
@@ -9301,6 +9419,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Galvanic rifle"
                 ],
                 "isDefault": true
+              },
+              {
+                "name": "Mechanicus pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Mechanicus pistol"
+                ],
+                "isDefault": false
               }
             ]
           }
@@ -9412,6 +9539,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Radium carbine"
                 ],
                 "isDefault": true
+              },
+              {
+                "name": "Mechanicus pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Mechanicus pistol"
+                ],
+                "isDefault": false
               }
             ]
           }
@@ -15054,6 +15190,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Power weapon"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Close combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ],
+                "isDefault": true
               }
             ]
           },
@@ -15670,6 +15815,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Power weapon"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Close combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ],
+                "isDefault": true
               }
             ]
           },
@@ -17494,6 +17648,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Power weapon"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Close combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ],
+                "isDefault": true
               }
             ]
           },
@@ -17950,9 +18113,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Soulreaper cannon",
                 "min": 0,
                 "max": 1,
-                "weapons": [
-                  "Soulreaper cannon"
-                ],
+                "weapons": ["Soulreaper cannon"],
                 "isDefault": false
               }
             ]
@@ -18474,6 +18635,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Hand flamer"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
               }
             ]
           }
@@ -19326,6 +19496,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Combi-bolter"
                 ],
                 "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
               }
             ]
           }
@@ -20308,9 +20487,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Soulreaper cannon",
                 "min": 0,
                 "max": 1,
-                "weapons": [
-                  "Soulreaper cannon"
-                ],
+                "weapons": ["Soulreaper cannon"],
                 "isDefault": false
               }
             ]
@@ -20662,6 +20839,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Autopistol and chainsword"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Divining spear",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Divining spear"
+                ],
+                "isDefault": true
               }
             ]
           }
@@ -21501,6 +21687,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Plasma pistol"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
               }
             ]
           }
@@ -21679,6 +21874,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "max": 1,
                 "weapons": [
                   "Combi-bolter, power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Paired accursed weapons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paired accursed weapons"
                 ],
                 "isDefault": false
               }
@@ -23523,6 +23727,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Skyweaver Haywire Cannon"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": true
               }
             ]
           },
@@ -26858,6 +27071,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Skyweaver Haywire Cannon"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": true
               }
             ]
           },
@@ -31552,7 +31774,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           },
           {
-            "name": "Exchange melee weapon for hammer",
+            "name": "Melee weapon",
             "groupMin": 0,
             "groupMax": 1,
             "modelContext": "Hesyr",
@@ -31602,6 +31824,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Teleport crest"
                 ],
                 "isDefault": false
+              },
+              {
+                "name": "Weavefield crest",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Weavefield crest"
+                ],
+                "isDefault": true
               }
             ]
           }
@@ -32099,6 +32330,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Plasma sword"
                 ],
                 "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Steeljack Theyn",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plasma sword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma sword"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Concussion gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Concussion gauntlet"
+                ],
+                "isDefault": false
               }
             ]
           }
@@ -38421,7 +38679,26 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Chitinous claws and teeth"
         ],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Spinemaw",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "Ripper Swarm",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Spinemaw",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Spinemaw"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d213-efd8-a2b4-42d2",
