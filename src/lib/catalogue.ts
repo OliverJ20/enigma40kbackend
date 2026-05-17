@@ -3,10 +3,12 @@ import {
   type CatalogueUnit,
   type Detachment,
   type Enhancement,
+  type WargearVariant,
+  type WargearGroup,
 } from "../data/catalogue.js";
 import { ROLE_ORDER, type UnitRole } from "./mock-catalogue.js";
 
-export type { CatalogueUnit, Detachment, Enhancement, UnitRole };
+export type { CatalogueUnit, Detachment, Enhancement, WargearVariant, WargearGroup, UnitRole };
 export { ROLE_ORDER };
 
 export function getUnits(factionId: string) {
@@ -20,6 +22,7 @@ export function getUnits(factionId: string) {
     minModels: u.minModels,
     maxModels: u.maxModels,
     wargear: u.wargear,
+    wargearOptions: u.wargearOptions,
   }));
 }
 

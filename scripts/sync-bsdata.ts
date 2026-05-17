@@ -31,6 +31,29 @@ const BSDATA_RAW = "https://raw.githubusercontent.com/BSData/wh40k-10e/main";
 
 // ── Types ──────────────────────────────────────────────────────
 
+/** One selectable model variant within a wargear group (e.g. "Hearthkyn Warrior w/ ion blaster"). */
+export interface WargearVariant {
+  name: string;
+  min: number;       // min of this specific variant (usually 0)
+  max: number;       // max of this variant within the group
+  weapons: string[]; // weapons this variant carries
+}
+
+/**
+ * A named group of selectable model variants that share a slot budget.
+ * Corresponds to a selectionEntryGroup in BSData.
+ * e.g. "Hearthkyn Warriors" (9/9) or "Heavy weapons" (0/2).
+ * For leader weapon choices (e.g. Theyn's "Weapon (1/1)"), modelContext
+ * names the model the choice belongs to; empty string for unit-level groups.
+ */
+export interface WargearGroup {
+  name: string;
+  groupMin: number;   // total mandatory slots in this group
+  groupMax: number;   // total available slots in this group
+  modelContext: string; // "" for unit-level SEGs; model name for leader choices
+  variants: WargearVariant[];
+}
+
 export interface CatalogueUnit {
   id: string;
   name: string;
@@ -39,7 +62,15 @@ export interface CatalogueUnit {
   keywords: string[];
   minModels: number;
   maxModels: number;
+  /** Fixed weapons all models in the unit always carry. */
   wargear: string[];
+  /**
+   * Selectable model variant groups (SEGs) within the unit.
+   * Each group has a slot budget (groupMin/groupMax) and a list of variants the
+   * player can fill those slots with. Nested SEGs (e.g. "Heavy weapons" inside
+   * "Hearthkyn Warriors") appear as their own group.
+   */
+  wargearOptions: WargearGroup[];
 }
 
 export interface Detachment {
@@ -480,6 +511,21 @@ function collectFixedWargear(entryLinks: any[], out: Set<string>): void {
   }
 }
 
+/** Reads the min/max selections constraint from a selectionEntry or selectionEntryGroup. */
+function readSelectionConstraints(entry: Record<string, any>): { min: number; max: number } {
+  const constraints: any[] = entry["constraints"]?.["constraint"] ?? [];
+  let min = 0;
+  let max = 0;
+  for (const c of constraints) {
+    if (c["@_field"] === "selections" && c["@_scope"] === "parent") {
+      const val = Math.round(parseFloat(String(c["@_value"] ?? "0")));
+      if (c["@_type"] === "min" && val > 0) min = val;
+      if (c["@_type"] === "max") max = val;
+    }
+  }
+  return { min, max };
+}
+
 /** Yields all model selectionEntries from direct children and inside SEGs. */
 function* iterModelSEs(container: Record<string, any>): Generator<Record<string, any>> {
   for (const se of (container["selectionEntries"]?.["selectionEntry"] ?? [])) {
@@ -490,22 +536,120 @@ function* iterModelSEs(container: Record<string, any>): Generator<Record<string,
   }
 }
 
+/** Collects weapon names from direct upgrade selectionEntry children of a model SE. */
+function collectUpgradeWeapons(modelSE: Record<string, any>, out: Set<string>): void {
+  for (const se of (modelSE["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (se["@_type"] !== "upgrade") continue;
+    const name = String(se["@_name"] ?? "");
+    if (isWargearName(name)) out.add(name);
+  }
+}
+
 function extractWargearNames(e: Record<string, any>): string[] {
   const names = new Set<string>();
   if (e["@_type"] === "model") {
     collectFixedWargear(e["entryLinks"]?.["entryLink"] ?? [], names);
+    collectUpgradeWeapons(e, names);
   } else {
     for (const model of iterModelSEs(e)) {
       collectFixedWargear(model["entryLinks"]?.["entryLink"] ?? [], names);
+      collectUpgradeWeapons(model, names);
     }
   }
   return Array.from(names);
 }
 
+function segToVariants(seg: Record<string, any>, fallbackMax: number): WargearVariant[] {
+  const variants: WargearVariant[] = [];
+  for (const childSe of (seg["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (childSe["@_type"] !== "model") continue;
+    const variantName = String(childSe["@_name"] ?? "");
+    if (!isWargearName(variantName)) continue;
+    const { min: varMin, max: varMax } = readSelectionConstraints(childSe);
+    const weapons = new Set<string>();
+    collectUpgradeWeapons(childSe, weapons);
+    collectFixedWargear(childSe["entryLinks"]?.["entryLink"] ?? [], weapons);
+    variants.push({ name: variantName, min: varMin, max: varMax || fallbackMax, weapons: Array.from(weapons) });
+  }
+  return variants;
+}
+
+/** Extracts upgrade-type weapon choice options from a leader model's internal SEG. */
+function segToUpgradeVariants(seg: Record<string, any>, fallbackMax: number): WargearVariant[] {
+  const variants: WargearVariant[] = [];
+  for (const childSe of (seg["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (childSe["@_type"] !== "upgrade") continue;
+    const name = String(childSe["@_name"] ?? "");
+    if (!isWargearName(name)) continue;
+    const { min, max } = readSelectionConstraints(childSe);
+    variants.push({ name, min, max: max || fallbackMax, weapons: [name] });
+  }
+  return variants;
+}
+
+/**
+ * Extracts structured wargear groups (model-variant SEGs) for list-building display.
+ * Handles nested SEGs (e.g. "Heavy weapons" inside "Hearthkyn Warriors") as
+ * separate sibling groups so the frontend can render independent slot budgets.
+ * Also extracts internal SEGs from direct child model SEs (leader weapon choices,
+ * e.g. Theyn's "Weapon (1/1)": Autoch-pattern bolter / Ion blaster / Theyn's pistol).
+ */
+function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
+  if (e["@_type"] === "model") return [];
+  const groups: WargearGroup[] = [];
+
+  // Unit-level SEGs (squad composition + optional weapons)
+  for (const seg of (e["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+    const { min: segMin, max: segMax } = readSelectionConstraints(seg);
+    if (segMax === 0 && segMin === 0) continue;
+    const segName = String(seg["@_name"] ?? "");
+    if (!isWargearName(segName)) continue;
+
+    const variants = segToVariants(seg, segMax);
+    if (variants.length > 0) {
+      groups.push({ name: segName, groupMin: segMin, groupMax: segMax, modelContext: "", variants });
+    }
+
+    // Nested SEGs (e.g. "Heavy weapons" inside "Hearthkyn Warriors")
+    for (const nested of (seg["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+      const { min: nestedMin, max: nestedMax } = readSelectionConstraints(nested);
+      if (nestedMax === 0 && nestedMin === 0) continue;
+      const nestedName = String(nested["@_name"] ?? "");
+      if (!isWargearName(nestedName)) continue;
+      const nestedVariants = segToVariants(nested, nestedMax);
+      if (nestedVariants.length > 0) {
+        groups.push({ name: nestedName, groupMin: nestedMin, groupMax: nestedMax, modelContext: "", variants: nestedVariants });
+      }
+    }
+  }
+
+  // Leader model weapon choices — SEGs nested inside direct child model SEs
+  for (const directSe of (e["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (directSe["@_type"] !== "model") continue;
+    const modelName = String(directSe["@_name"] ?? "");
+    for (const internalSeg of (directSe["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+      const { min: segMin, max: segMax } = readSelectionConstraints(internalSeg);
+      if (segMax === 0 && segMin === 0) continue;
+      const segName = String(internalSeg["@_name"] ?? "");
+      if (!isWargearName(segName)) continue;
+      const upgradeVariants = segToUpgradeVariants(internalSeg, segMax);
+      if (upgradeVariants.length > 0) {
+        groups.push({ name: segName, groupMin: segMin, groupMax: segMax, modelContext: modelName, variants: upgradeVariants });
+      }
+    }
+  }
+
+  return groups;
+}
+
 /**
  * Returns min/max model counts for a unit.
  * For type="model" (standalone characters) always returns 1/1.
- * For type="unit", sums mandatory child model constraints (including inside SEGs).
+ * For type="unit":
+ *   - Direct child model SEs: use their own min/max constraints.
+ *   - Child SEGs: use the SEG's own min/max constraints (the SEG constraint
+ *     defines how many models the group contributes, regardless of variants inside).
+ *     If the SEG has no own constraints, fall back to checking its child model SEs.
  */
 function extractModelCounts(e: Record<string, any>): { minModels: number; maxModels: number } {
   if (e["@_type"] === "model") return { minModels: 1, maxModels: 1 };
@@ -513,21 +657,32 @@ function extractModelCounts(e: Record<string, any>): { minModels: number; maxMod
   let minModels = 0;
   let maxModels = 0;
 
-  for (const model of iterModelSEs(e)) {
-    const constraints: any[] = model["constraints"]?.["constraint"] ?? [];
-    let modelMin = 0;
-    let modelMax = 0;
-    for (const c of constraints) {
-      if (c["@_field"] === "selections" && c["@_scope"] === "parent") {
-        const val = Math.round(parseFloat(String(c["@_value"] ?? "0")));
-        if (c["@_type"] === "min" && val > 0) modelMin = val;
-        if (c["@_type"] === "max") modelMax = val;
-      }
+  // Direct child model SEs
+  for (const se of (e["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (se["@_type"] !== "model") continue;
+    const { min, max } = readSelectionConstraints(se);
+    if (min > 0) {
+      minModels += min;
+      maxModels += max || min;
     }
-    // Only count models with a minimum requirement (mandatory slots)
-    if (modelMin > 0) {
-      minModels += modelMin;
-      maxModels += modelMax || modelMin;
+  }
+
+  // Child SEGs — the SEG's own constraints define how many models it contributes
+  for (const seg of (e["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+    const { min: segMin, max: segMax } = readSelectionConstraints(seg);
+    if (segMin > 0 || segMax > 0) {
+      minModels += segMin;
+      maxModels += segMax || segMin;
+    } else {
+      // No SEG-level constraint: fall back to summing mandatory child model SEs
+      for (const childSe of (seg["selectionEntries"]?.["selectionEntry"] ?? [])) {
+        if (childSe["@_type"] !== "model") continue;
+        const { min, max } = readSelectionConstraints(childSe);
+        if (min > 0) {
+          minModels += min;
+          maxModels += max || min;
+        }
+      }
     }
   }
 
@@ -570,8 +725,9 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
 
   const { minModels, maxModels } = extractModelCounts(e);
   const wargear = extractWargearNames(e);
+  const wargearOptions = extractWargearOptions(e);
 
-  return { id: String(e["@_id"]), name, role, costs: [[1, pts]], keywords, minModels, maxModels, wargear };
+  return { id: String(e["@_id"]), name, role, costs: [[1, pts]], keywords, minModels, maxModels, wargear, wargearOptions };
 }
 
 // ── Per-faction parsing ────────────────────────────────────────
@@ -711,6 +867,22 @@ async function main() {
 // Regenerate: npm run sync:catalogue
 // Last synced: ${new Date().toISOString()}
 
+export interface WargearVariant {
+  name: string;
+  min: number;
+  max: number;
+  weapons: string[];
+}
+
+export interface WargearGroup {
+  name: string;
+  groupMin: number;
+  groupMax: number;
+  /** Empty string for unit-level groups; model name (e.g. "Theyn") for leader weapon choices. */
+  modelContext: string;
+  variants: WargearVariant[];
+}
+
 export interface CatalogueUnit {
   id: string;
   name: string;
@@ -720,6 +892,7 @@ export interface CatalogueUnit {
   minModels: number;
   maxModels: number;
   wargear: string[];
+  wargearOptions: WargearGroup[];
 }
 
 export interface Detachment {

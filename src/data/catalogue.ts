@@ -1,7 +1,23 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T02:17:19.667Z
+// Last synced: 2026-05-17T03:25:58.484Z
+
+export interface WargearVariant {
+  name: string;
+  min: number;
+  max: number;
+  weapons: string[];
+}
+
+export interface WargearGroup {
+  name: string;
+  groupMin: number;
+  groupMax: number;
+  /** Empty string for unit-level groups; model name (e.g. "Theyn") for leader weapon choices. */
+  modelContext: string;
+  variants: WargearVariant[];
+}
 
 export interface CatalogueUnit {
   id: string;
@@ -12,6 +28,7 @@ export interface CatalogueUnit {
   minModels: number;
   maxModels: number;
   wargear: string[];
+  wargearOptions: WargearGroup[];
 }
 
 export interface Detachment {
@@ -55,7 +72,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Blade of Vigil",
+          "Bolt pistol",
+          "Scribe's staff"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "ca59-3760-5efc-9846",
@@ -72,7 +94,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Arco-flails"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "f26d-450d-1c55-caeb",
@@ -85,13 +110,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 7,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
           "Boltgun",
           "Special Weapons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Battle Sisters",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Battle Sister",
+                "min": 6,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol",
+                  "Boltgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Battle Sister w/ Simulacrum Imperialis",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Boltgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Battle Sister w/ Special or Heavy Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Battle Sister w/ Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Special Weapons",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -107,7 +181,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "820-1e76-78cc-931a",
@@ -122,7 +197,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f1af-4984-1a52-c5",
@@ -135,9 +211,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Sacresant Superior",
+            "variants": [
+              {
+                "name": "Spear of the Faithful",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Spear of the Faithful"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8569-2390-d4db-30fd",
@@ -153,8 +247,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 2,
         "maxModels": 2,
         "wargear": [
-          "Bolt pistol"
-        ]
+          "Bolt pistol",
+          "Sanctity",
+          "The Outcast's Blades"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "91b8-3ccb-de30-6e54",
@@ -169,7 +266,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "76b1-f4d1-b2f0-6949",
@@ -184,7 +282,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d929-b22d-3040-9707",
@@ -197,12 +296,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 5,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
           "Boltgun"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Dominions",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Dominion",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol",
+                  "Boltgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Dominion w/ Simulacrum Imperialis",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Boltgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Dominion w/ Special Weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -218,7 +356,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "938e-1c24-4e63-4cf3",
@@ -233,7 +372,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3ad3-558b-29f9-2e45",
@@ -248,7 +388,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1001-80ff-c9a8-5d9b",
@@ -263,7 +404,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8f9a-8a8b-2539-547f",
@@ -278,7 +420,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Twin Ministorum Heavy Flamer",
+          "Mace of Castigation"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3c3f-f02d-c05c-492a",
@@ -295,7 +441,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7188-4d20-8216-c68a",
@@ -310,7 +457,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Lance of Illumination",
+          "Fidelis",
+          "Paragon missile launcher"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "fbeb-1caf-8f5c-ff8e",
@@ -325,7 +477,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e75d-a7ac-7fcc-d302",
@@ -342,6 +495,80 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 3,
         "wargear": [
           "Bolt pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Paragon Carapace Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Paragon Warsuit",
+            "variants": [
+              {
+                "name": "Paragon Storm Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paragon Storm Bolters"
+                ]
+              },
+              {
+                "name": "Paragon Grenade Launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paragon Grenade Launchers"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Paragon Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Paragon Warsuit",
+            "variants": [
+              {
+                "name": "Paragon War Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paragon War Blade"
+                ]
+              },
+              {
+                "name": "Paragon War Mace",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paragon War Mace"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Paragon Ranged Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Paragon Warsuit",
+            "variants": [
+              {
+                "name": "Heavy Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolter"
+                ]
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -359,7 +586,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "599d-1e2a-eb0e-430e",
@@ -376,7 +604,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7d63-7b55-a632-6a10",
@@ -394,8 +623,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Bolt pistol"
-        ]
+          "Penitent Eviscerator",
+          "Bolt pistol",
+          "Neural Whips"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c49d-f150-4b3-c118",
@@ -413,6 +645,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Bolt pistol",
           "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Retributors",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Retributor",
+                "min": 4,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -430,7 +681,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "The Ardent Blade"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "bee9-172b-7db7-f748",
@@ -445,10 +699,94 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Jump Pack"
         ],
-        "minModels": 3,
+        "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "2 Bolt Pistols"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Seraphim",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Seraphim",
+                "min": 2,
+                "max": 9,
+                "weapons": [
+                  "2 Bolt Pistols",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Seraphim with Special Weapons",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Seraphim Superior",
+            "variants": [
+              {
+                "name": "2 Bolt Pistols",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Bolt Pistols"
+                ]
+              },
+              {
+                "name": "Bolt Pistol and Plasma Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Pistol and Plasma Pistol"
+                ]
+              },
+              {
+                "name": "Plasma Pistol and Power Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma Pistol and Power Weapon"
+                ]
+              },
+              {
+                "name": "Bolt Pistol and Power Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Pistol and Power Weapon"
+                ]
+              },
+              {
+                "name": "Bolt Pistol and Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Pistol and Chainsword"
+                ]
+              },
+              {
+                "name": "Plasma Pistol and Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma Pistol and Chainsword"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -462,11 +800,82 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 10,
+        "maxModels": 10,
         "wargear": [
           "Close combat weapon",
+          "Sacred Banner",
+          "Autopistol",
           "Ministorum flamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Novitiates",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Novitiate with Sacred Banner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sacred Banner",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Novitiate with Simulacrum Imperialis",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Novitiate with Ministorum Flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Ministorum flamer",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Novitiate Superior",
+            "variants": [
+              {
+                "name": "Bolt Pistol and Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Pistol and Boltgun"
+                ]
+              },
+              {
+                "name": "Bolt Pistol and Power Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Pistol and Power Weapon"
+                ]
+              },
+              {
+                "name": "Plasma Pistol and Power Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma Pistol and Power Weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -482,7 +891,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9f5f-d769-7900-c8a1",
@@ -497,7 +907,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Bolt Pistols",
+          "Relic Weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "22f0-a7d8-b2b6-e26",
@@ -515,8 +929,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Power Weapon",
+          "Sacred Banner",
           "Bolt pistol"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "e80a-4a97-2c3b-710e",
@@ -534,7 +951,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "eade-6ec7-7236-bfdb",
@@ -551,8 +969,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 9,
         "wargear": [
           "Ministorum hand flamer",
-          "Ministorum flamer"
-        ]
+          "Close combat weapon",
+          "Simulacrum Imperialis",
+          "Holy fire",
+          "Burning hands",
+          "Death Cult blades",
+          "Ministorum flamer",
+          "Salvationist Medikit"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "e286-849d-8f74-75e6",
@@ -565,11 +990,74 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 3,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Condemnor bolt pistol",
-          "Ministorum hand flamer"
+          "Ministorum hand flamer",
+          "Blessed sword",
+          "Virge of admonition",
+          "Denuncia Oratory",
+          "Simulacrum imperialis"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Insidiants",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Insidiant",
+                "min": 2,
+                "max": 9,
+                "weapons": [
+                  "Condemnor bolt pistol"
+                ]
+              },
+              {
+                "name": "Insidiant w/ hand flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Ministorum hand flamer"
+                ]
+              },
+              {
+                "name": "Insidiant w/ blessed sword",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Blessed sword"
+                ]
+              },
+              {
+                "name": "Insidiant w/ virge of admonition",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Virge of admonition"
+                ]
+              },
+              {
+                "name": "Insidiant w/ denuncia",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Denuncia Oratory"
+                ]
+              },
+              {
+                "name": "Insidiant w/ simulacrum",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Simulacrum imperialis",
+                  "Condemnor bolt pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -589,7 +1077,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "622e-1e15-13f1-601a",
@@ -607,7 +1096,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1b8d-2b8b-084a-feba",
@@ -626,7 +1116,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e59a-2a90-e102-940f",
@@ -643,7 +1134,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -902,7 +1394,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Somnus"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c8a6-a4c5-703e-b717",
@@ -917,10 +1412,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 2,
+        "maxModels": 6,
         "wargear": [
-          "Balistus grenade launcher"
+          "Balistus grenade launcher",
+          "Guardian Spear",
+          "Castellan Axe",
+          "Misericordia"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Allarus Custodians",
+            "groupMin": 2,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Allarus Custodian (Guardian Spear)",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Guardian Spear",
+                  "Balistus grenade launcher"
+                ]
+              },
+              {
+                "name": "Allarus Custodian (Castellan Axe)",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Castellan Axe",
+                  "Balistus grenade launcher"
+                ]
+              },
+              {
+                "name": "Allarus Custodian (Vexilla & Misericordia)",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Misericordia",
+                  "Balistus grenade launcher"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -939,7 +1474,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "48b7-e713-d5b1-f11c",
@@ -954,7 +1490,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "91b3-2e1c-e642-d213",
@@ -967,9 +1504,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 4,
+        "maxModels": 5,
+        "wargear": [
+          "Guardian Spear",
+          "Sentinel blade",
+          "Vexilla",
+          "Misericordia"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-5 Custodian Guard",
+            "groupMin": 4,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Custodian Guard (Guardian Spear)",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Guardian Spear"
+                ]
+              },
+              {
+                "name": "Custodian Guard (Sentinel Blade & Praesidium Shield)",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Sentinel blade"
+                ]
+              },
+              {
+                "name": "Custodian Guard (Vexilla, Praesidium Shield & Misericordia)",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vexilla",
+                  "Misericordia"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9610-b148-8433-93b8",
@@ -982,9 +1559,47 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 4,
+        "maxModels": 5,
+        "wargear": [
+          "Guardian Spear",
+          "Castellan Axe",
+          "Vexilla"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-5 Custodian Wardens",
+            "groupMin": 4,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Custodian Warden (Guardian Spear)",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Guardian Spear"
+                ]
+              },
+              {
+                "name": "Custodian Warden (Castellan axe)",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Castellan Axe"
+                ]
+              },
+              {
+                "name": "Custodian Warden w/ Vexilla",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vexilla"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7099-71b-56e8-7191",
@@ -1001,7 +1616,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3ec3-a4df-fdbf-5507",
@@ -1018,7 +1634,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 4,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Boltgun",
+          "Close combat weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "b61c-b815-65c0-b1cc",
@@ -1033,7 +1653,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6319-eeba-b717-bd86",
@@ -1051,7 +1672,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "58fa-4a25-a5af-1144",
@@ -1069,7 +1691,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7d7c-c212-47a3-38e4",
@@ -1084,7 +1707,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Watcher's Axe",
+          "Eagle's Scream"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8103-2e01-5d6a-b761",
@@ -1101,7 +1728,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Gnosis"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "188b-e48b-29f-1456",
@@ -1118,7 +1748,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "76be-3bcb-cf4-bcbd",
@@ -1133,7 +1764,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "918b-c9ed-7af7-74df",
@@ -1146,9 +1778,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 2,
+        "maxModels": 3,
+        "wargear": [
+          "Interceptor lance",
+          "Salvo launcher",
+          "Vertus hurricane bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-3 Vertus Praetors",
+            "groupMin": 2,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Vertus Praetor (Salvo Launcher)",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Interceptor lance",
+                  "Salvo launcher"
+                ]
+              },
+              {
+                "name": "Vertus Praetor (Hurricane Bolter)",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Interceptor lance",
+                  "Vertus hurricane bolter"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "dd2d-568a-9c56-1b6e",
@@ -1165,7 +1829,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 4,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Executioner greatblade"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "503b-f7be-eeeb-9e31",
@@ -1183,8 +1850,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 4,
         "maxModels": 10,
         "wargear": [
-          "Witchseeker flamer"
-        ]
+          "Witchseeker flamer",
+          "Close combat weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "af0f-5212-907e-7125",
@@ -1199,9 +1868,38 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Custodian Guard"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Adrasite spear",
+          "Pyrithite spear"
+        ],
+        "wargearOptions": [
+          {
+            "name": "5 Custodian Guard",
+            "groupMin": 5,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Custodian Guard (Adrasite spear)",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Adrasite spear"
+                ]
+              },
+              {
+                "name": "Custodian Guard (Pyrithite spear)",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Pyrithite spear"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6f9f-e6aa-ba13-aab1",
@@ -1216,7 +1914,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": []
+        "wargear": [
+          "Adrastus bolt caliver",
+          "Misericordia"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "03bc-0141-b967-40e0",
@@ -1231,9 +1933,55 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "Aquilon Custodians",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Aquilon Custodian (Gauntlet & Lastrum bolter)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Aquilon Custodian (Gauntlet & Twin adrathic destructor)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Aquilon Custodian (Gauntlet & Infernus firepike)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Aquilon Custodian (Talon & infernus firepike)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Aquilon Custodian (Talon & Lastrum bolter)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Aquilon Custodian (Talon & Twin adrathic destructor)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "00ab-41c4-cf52-4ad2",
@@ -1246,9 +1994,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Lastrum bolt cannon",
+          "Interceptor Lance",
+          "Adrathic devastator",
+          "Twin las-pulsar"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Agamatus Custodians",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Agamatus Custodian (Lastrum bolt cannon)",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Lastrum bolt cannon",
+                  "Interceptor Lance"
+                ]
+              },
+              {
+                "name": "Agamatus Custodian (Adrathic devastator)",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Adrathic devastator",
+                  "Interceptor Lance"
+                ]
+              },
+              {
+                "name": "Agamatus Custodian (Twin las-pulsar)",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Twin las-pulsar",
+                  "Interceptor Lance"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "201e-e502-a8d1-3974",
@@ -1263,9 +2053,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Jump Pack"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Venatari lance",
+          "Kinetic destroyer",
+          "Tarsis buckler"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3-6 Venatari Custodians",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Venatari Custodian (Venatari lance)",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Venatari lance"
+                ]
+              },
+              {
+                "name": "Venatari Custodian (Kinetic Destroyer & Tarsus Buckler)",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Kinetic destroyer",
+                  "Tarsis buckler"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4988-d93e-5034-2b3c",
@@ -1282,7 +2103,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "db3b-02cd-87a2-3b52",
@@ -1299,7 +2121,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "06df-2fb2-8dfa-2fce",
@@ -1314,7 +2137,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3ee2-62a9-af84-1a90",
@@ -1329,7 +2153,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e7d8-1c73-7d03-8b62",
@@ -1346,7 +2171,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f35e-ef9c-9ef4-77e1",
@@ -1361,7 +2187,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9c1a-7efd-ed36-440e",
@@ -1376,7 +2203,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9335-74d9-ad68-3ff7",
@@ -1391,7 +2219,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "de0b-37e9-b9f5-d3a6",
@@ -1409,7 +2238,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e58d-17d4-71f8-4137",
@@ -1428,7 +2258,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c11a-f70a-2877-ed27",
@@ -1447,7 +2278,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -1592,7 +2424,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d54e-1007-26b5-6a79",
@@ -1609,7 +2442,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "295-769-8893-2bb0",
@@ -1626,7 +2460,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1f1e-2989-4762-cf88",
@@ -1644,7 +2479,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Arc scourge",
+          "Cawl's Omnissian axe",
+          "Mechadendrite hive",
+          "Solar atomiser"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "fd5a-f7a3-833c-85b",
@@ -1663,7 +2504,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Electrostatic gauntlets"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "841-f339-8086-efe2",
@@ -1682,7 +2526,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Electroleech stave"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "bd6c-8683-8bc4-962d",
@@ -1699,7 +2546,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 4,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a46f-848-b87d-4484",
@@ -1716,9 +2564,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Kataphron",
           "Cult Mechanicus"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "Kataphron Breachers",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kataphron Breacher (Heavy arc rifle & arc claw)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Kataphron Breacher (Heavy arc rifle & hydraulic claw)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Kataphron Breacher (Torsion cannon & arc claw)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Kataphron Breacher (Torsion cannon & hydraulic claw)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7bee-a476-2167-76e7",
@@ -1735,9 +2617,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Kataphron",
           "Cult Mechanicus"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "Kataphron Destroyers",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kataphron Destroyer (Heavy grav-cannon & Cognis flamer)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Kataphron Destroyer (Heavy grav-cannon & phosphor blaster)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Kataphron Destroyer (Kataphron plasma culverin & Phosphor blaster)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Kataphron Destroyer (Kataphron plasma culverin & Cognis flamer)",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ea05-4db7-9ee6-7a87",
@@ -1754,7 +2670,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b31e-5003-5b63-a305",
@@ -1774,7 +2691,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Flechette blaster",
+          "Taser goad",
+          "Close combat weapon",
+          "Flechette carbine"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "958-a256-360-8620",
@@ -1794,7 +2717,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Flechette blaster",
+          "Taser goad",
+          "Pteraxii talons",
+          "Phosphor torch"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "5797-adb8-930-e832",
@@ -1809,10 +2738,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Skitarii"
         ],
-        "minModels": 2,
+        "minModels": 3,
         "maxModels": 6,
         "wargear": [
-          "Mechanicus pistol"
+          "Mechanicus pistol",
+          "Galvanic carbine",
+          "Cavalry sabre & clawed limbs",
+          "Enhanced data-tether"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Serberys Raiders",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Serberys Raider",
+                "min": 1,
+                "max": 5,
+                "weapons": [
+                  "Cavalry sabre & clawed limbs",
+                  "Galvanic carbine"
+                ]
+              },
+              {
+                "name": "Serberys Raider w/ data-tether",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cavalry sabre & clawed limbs",
+                  "Galvanic carbine",
+                  "Enhanced data-tether"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -1828,10 +2789,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Skitarii"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 6,
         "wargear": [
-          "Mechanicus pistol"
+          "Mechanicus pistol",
+          "Cavalry arc maul",
+          "Clawed limbs",
+          "Phosphor pistol",
+          "Phosphor blast carbine"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Serberys Sulphurhounds",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Serberys Sulphurhound (Twin phosphor pistols)",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Clawed limbs",
+                  "Phosphor pistol"
+                ]
+              },
+              {
+                "name": "Serberys Sulphurhound (Phosphor blast carbine & Phosphor pistol)",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Phosphor blast carbine",
+                  "Phosphor pistol",
+                  "Clawed limbs"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -1849,9 +2843,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Sicarian",
           "Infiltrators"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Power weapon",
+          "Stubcarbine",
+          "Flechette blaster",
+          "Taser goad"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Sicarian Infiltrators",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Sicarian Infiltrator (Power weapon & stubcarbine)",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Power weapon",
+                  "Stubcarbine"
+                ]
+              },
+              {
+                "name": "Sicarian Infiltrator (Taser goad & flechette blaster)",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Flechette blaster",
+                  "Taser goad"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Sicarian Infiltrator Princeps",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Sicarian Infiltrator Princeps (Power weapon & stub carbine)",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon",
+                  "Stubcarbine"
+                ]
+              },
+              {
+                "name": "Sicarian Infiltrator Princeps (Taser goad & flechette blaster)",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Taser goad",
+                  "Flechette blaster"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8863-9784-8377-aa7a",
@@ -1868,9 +2921,63 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Skitarii",
           "Sicarian"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Transonic razor & chordclaw",
+          "Transonic blades",
+          "Transonic blades & chordclaw"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Sicarian Ruststalkers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Sicarian Ruststalker (Transonic razor & chordclaw)",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Transonic razor & chordclaw"
+                ]
+              },
+              {
+                "name": "Sicarian Ruststalker (Transonic blades)",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Transonic blades"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Sicarian Ruststalker Princeps",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Sicarian Ruststalker Princeps (Transonic blades & chordclaw)",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transonic blades & chordclaw"
+                ]
+              },
+              {
+                "name": "Sicarian Ruststalker Princeps (Transonic razor & chordclaw)",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transonic razor & chordclaw"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b897-e4c6-fcb6-6538",
@@ -1888,7 +2995,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "de59-f65c-181a-8509",
@@ -1904,9 +3012,93 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Rangers",
           "Skitarii"
         ],
-        "minModels": 6,
+        "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Alpha combat weapon",
+          "Transuranic arquebus",
+          "Arc rifle",
+          "Plasma caliver",
+          "Galvanic rifle",
+          "Enhanced data-tether",
+          "Omnispex"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Skitarii Rangers",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Skitarii Ranger w/ transuranic arquebus",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transuranic arquebus"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ arc rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Arc rifle"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ plasma caliver",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma caliver"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ galvanic rifle",
+                "min": 5,
+                "max": 9,
+                "weapons": [
+                  "Galvanic rifle"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ data-tether",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Galvanic rifle",
+                  "Enhanced data-tether"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ omnispex",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Galvanic rifle",
+                  "Omnispex"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Skitarii Ranger Alpha",
+            "variants": [
+              {
+                "name": "Galvanic rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Galvanic rifle"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ba33-c21-bddc-ab0",
@@ -1922,9 +3114,93 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Vanguard",
           "Skitarii"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Alpha combat weapon",
+          "Transuranic arquebus",
+          "Arc rifle",
+          "Plasma caliver",
+          "Radium carbine",
+          "Enhanced data-tether",
+          "Omnispex"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Skitarii Vanguard",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Skitarii Vanguard w/ transuranic arquebus",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transuranic arquebus"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ arc rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Arc rifle"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ plasma caliver",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma caliver"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ radium carbine",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Radium carbine"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ data-tether",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Radium carbine",
+                  "Enhanced data-tether"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ omnispex",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Radium carbine",
+                  "Omnispex"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Skitarii Vanguard Alpha",
+            "variants": [
+              {
+                "name": "Radium carbine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Radium carbine"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3fcc-b6a1-399b-1a29",
@@ -1941,7 +3217,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2b9c-3982-701d-f8fd",
@@ -1958,7 +3235,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6424-ed86-9e15-3e14",
@@ -1977,7 +3255,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c0e0-4d86-96d2-ec86",
@@ -1996,7 +3275,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2d9b-610a-dc4d-15ae",
@@ -2015,7 +3295,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fa82-61cc-aa85-e94c",
@@ -2033,7 +3314,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d59d-ef1-9ef8-4f44",
@@ -2051,7 +3333,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "52e7-9347-3f16-9eec",
@@ -2070,7 +3353,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d99a-6563-8c08-23c",
@@ -2088,8 +3372,24 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Dragoons with Radium Jezzails"
         ],
         "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "maxModels": 3,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "1 -3 Sydonian Dragoons",
+            "groupMin": 1,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Sydonian Dragoon with radium jezzail",
+                "min": 0,
+                "max": 3,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a523-606f-b05c-851e",
@@ -2104,9 +3404,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Cult Mechanicus"
         ],
-        "minModels": 5,
+        "minModels": 9,
         "maxModels": 9,
-        "wargear": []
+        "wargear": [
+          "Mechanicus pistol",
+          "Dataspikes",
+          "Heavy arc rifle",
+          "Heavy bolter",
+          "Incendine igniter",
+          "Meltagun",
+          "Phosphor blaster"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Combat Servitors",
+            "groupMin": 6,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Combat Servitor w/ incendine igniter",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Incendine igniter"
+                ]
+              },
+              {
+                "name": "Combat Servitor w/ meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Combat Servitor w/ phophor blaster",
+                "min": 2,
+                "max": 6,
+                "weapons": [
+                  "Phosphor blaster"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "18e0-96d4-7d85-2b3b",
@@ -2126,7 +3468,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7d17-4620-8dbf-4ef6",
@@ -2146,7 +3489,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6b3e-11ad-7a9d-ca5d",
@@ -2165,7 +3509,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7135-8430-eb02-ded4",
@@ -2183,7 +3528,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Rod of the War Forge",
+          "Jericho-class conversion resonator"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "52d3-71a9-f755-d6aa",
@@ -2207,6 +3556,26 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hastarii arc blaster",
           "Eradication caster",
           "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 Hastarii Exterminators",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hastarii Exterminator",
+                "min": 4,
+                "max": 4,
+                "weapons": [
+                  "Hastarii arc blaster",
+                  "Eradication caster",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2231,6 +3600,26 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Neutron fusil",
           "Power weapon",
           "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 Hastarii Fusiliers",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hastarii Exterminator",
+                "min": 4,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Hastarii phosphor blaster",
+                  "Neutron fusil"
+                ]
+              }
+            ]
+          }
         ]
       }
     ],
@@ -2336,7 +3725,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 4,
+        "minModels": 5,
         "maxModels": 10,
         "wargear": [
           "Laspistol",
@@ -2344,6 +3733,38 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hunting lance",
           "Steed's hooves",
           "Goad lance"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Rough Riders",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Rough Rider w/ Hunting lance",
+                "min": 3,
+                "max": 9,
+                "weapons": [
+                  "Laspistol",
+                  "Lasgun",
+                  "Hunting lance",
+                  "Steed's hooves"
+                ]
+              },
+              {
+                "name": "Rough Rider w/ Goad lance",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Laspistol",
+                  "Lasgun",
+                  "Goad lance",
+                  "Steed's hooves"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2359,7 +3780,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d10-48db-3241-ec72",
@@ -2374,7 +3796,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "30f5-d90a-9811-d763",
@@ -2389,7 +3812,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bf53-4ab3-ff75-9aa0",
@@ -2407,7 +3831,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "37ad-63e5-1786-87cf",
@@ -2422,10 +3847,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Ogryn"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 6,
         "wargear": [
           "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Bullgryns",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Bullgryn",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2443,7 +3886,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4d28-f2a7-67c1-eb2e",
@@ -2467,7 +3911,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Lasgun",
           "Master vox",
           "Medi-pack"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "a2aa-7688-dcb1-4132",
@@ -2486,7 +3931,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cf23-58db-8ba4-9ec8",
@@ -2503,7 +3949,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a979-5b21-dc69-b949",
@@ -2520,7 +3967,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ade0-fa44-d4cf-4fc8",
@@ -2538,7 +3986,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e19f-b9b8-75d5-8520",
@@ -2556,7 +4005,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8342-57dd-69d3-e698",
@@ -2571,7 +4021,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "64a9-4cb2-400e-efd1",
@@ -2587,12 +4038,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Artillery",
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 2,
+        "maxModels": 2,
         "wargear": [
           "Lasgun",
           "Laspistol",
-          "Battery close combat weapons"
+          "Battery close combat weapons",
+          "Malleus rocket launcher",
+          "Bombast field gun",
+          "Heavy lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2 Ordnance Teams",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Ordnance Team w/ Malleus rocket launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Malleus rocket launcher",
+                  "Lasgun",
+                  "Laspistol",
+                  "Battery close combat weapons"
+                ]
+              },
+              {
+                "name": "Ordnance Team w/ Bombast field gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Bombast field gun",
+                  "Lasgun",
+                  "Laspistol",
+                  "Battery close combat weapons"
+                ]
+              },
+              {
+                "name": "Ordnance Team w/ Heavy lascannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Heavy lascannon",
+                  "Lasgun",
+                  "Laspistol",
+                  "Battery close combat weapons"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2609,8 +4106,17 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 6,
         "maxModels": 6,
         "wargear": [
-          "Straight silver knife"
-        ]
+          "Gaunt's chainsword",
+          "Bolt pistol",
+          "Straight silver knife",
+          "Corbec's hot-shot lascarbine",
+          "Larkin's long-las",
+          "Lascarbine",
+          "Mkoll's straight silver knife",
+          "Rawne's lascarbine",
+          "Bragg's autocannon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "91a9-15e-b5f0-700f",
@@ -2625,8 +4131,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 3,
         "wargear": [
           "Laspistol",
           "Weapons team close combat weapons",
@@ -2635,6 +4141,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Missile launcher",
           "Lascannon",
           "Autocannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3 Heavy Weapons Teams",
+            "groupMin": 3,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Heavy Weapons Team w/ Heavy bolter",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Laspistol",
+                  "Weapons team close combat weapons",
+                  "Heavy bolter"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Mortar",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Mortar",
+                  "Weapons team close combat weapons",
+                  "Laspistol"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Missile launcher",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Missile launcher",
+                  "Laspistol",
+                  "Weapons team close combat weapons"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Lascannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Laspistol",
+                  "Weapons team close combat weapons",
+                  "Lascannon"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Autocannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Laspistol",
+                  "Weapons team close combat weapons",
+                  "Autocannon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2650,7 +4216,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c28b-c3af-38b2-8865",
@@ -2667,7 +4234,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4967-19b6-1e2a-a300",
@@ -2684,7 +4252,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "abe4-ca71-d5a7-3883",
@@ -2699,18 +4268,121 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 3,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Hot-shot lasgun",
           "Close combat weapon",
+          "Hot-shot marksman rifle",
           "Hot-shot laspistol",
+          "Melta mine",
           "Vox-caster",
           "Flamer",
           "Plasma gun",
           "Hot-shot volley gun",
           "Meltagun",
           "Grenade launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Kasrkin Troopers",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kasrkin Trooper",
+                "min": 2,
+                "max": 9,
+                "weapons": [
+                  "Hot-shot lasgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Hot-shot marksman rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hot-shot marksman rifle",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Hot-shot laspistol and melta mine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Melta mine",
+                  "Close combat weapon",
+                  "Hot-shot laspistol"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Vox-caster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hot-shot lasgun",
+                  "Close combat weapon",
+                  "Vox-caster"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kasrkin Trooper w/ Special weapon",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kasrkin Trooper w/ Flamer",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Plasma gun",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Plasma gun"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Hot-shot volley gun",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Hot-shot volley gun"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Meltagun",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Grenade launcher",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Grenade launcher"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2728,7 +4400,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "286e-8e39-b807-5981",
@@ -2745,7 +4418,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cbcc-e0ad-4b9-2c76",
@@ -2762,7 +4436,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d8c8-ea02-21bf-de0b",
@@ -2779,7 +4454,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ddf2-228b-edd9-7e83",
@@ -2796,7 +4472,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e529-5853-d7e2-17ad",
@@ -2813,7 +4490,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a9d-55c1-3d24-fa25",
@@ -2830,7 +4508,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Sol's Righteous Gaze",
+          "Conquest",
+          "Konstantin's hooves"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "41be-48c9-5476-f47a",
@@ -2848,7 +4531,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "497-36ad-8ecb-f7c7",
@@ -2864,14 +4548,63 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Militarum Tempestus",
           "Command Squad"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 5,
         "wargear": [
           "Close combat weapon",
           "Regimental standard",
           "Hot-shot lasgun",
           "Master vox",
-          "Hot-shot laspistol"
+          "Hot-shot laspistol",
+          "Medi-pack"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Tempestus Scions",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Tempestus Scion",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tempestus Scion w/ Regimental Standard",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Regimental standard",
+                  "Hot-shot lasgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tempestus Scion w/ Master Vox",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Master vox",
+                  "Hot-shot laspistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tempestus Scion w/ Medi-pack",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Medi-pack",
+                  "Close combat weapon",
+                  "Hot-shot laspistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -2891,8 +4624,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Ripper gun"
-        ]
+          "Ripper gun",
+          "Huge knife"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "a7c2-1534-93b0-c0eb",
@@ -2911,7 +4646,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c9eb-2007-af01-a853",
@@ -2930,7 +4666,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Ripper gun"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "4ad0-e988-a513-9530",
@@ -2947,7 +4684,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f556-a33d-dc90-d6fc",
@@ -2962,7 +4700,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2127-efcc-1f62-7fab",
@@ -2979,7 +4718,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1b48-2f2-8e9c-1308",
@@ -2994,7 +4734,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4d50-e535-616a-259c",
@@ -3011,7 +4752,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Ripper pistol",
+          "Envenomed blade"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "892b-678c-72e6-ee58",
@@ -3026,7 +4771,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5430-18e-d7b0-1d54",
@@ -3044,7 +4790,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "11e5-d4ab-d140-ac38",
@@ -3061,7 +4808,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4b67-f814-358e-f776",
@@ -3078,7 +4826,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "679b-f37f-2388-748",
@@ -3094,8 +4843,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Regiment",
           "Militarum Tempestus"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Vox-caster",
           "Hot-shot laspistol",
@@ -3106,6 +4855,88 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hot-shot volley gun",
           "Meltagun",
           "Plasma gun"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Tempestus Scions",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Tempestus Scion w/ Vox-caster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vox-caster",
+                  "Hot-shot laspistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tempestus Scion",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Hot-shot lasgun",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tempestus Scions w/ Special weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Tempestus Scion w/ Flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Tempestus Scion w/ Grenade launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Grenade launcher"
+                ]
+              },
+              {
+                "name": "Tempestus Scion w/ Hot-shot volley gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Hot-shot volley gun"
+                ]
+              },
+              {
+                "name": "Tempestus Scion w/ Meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Tempestus Scion w/ Plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Plasma gun"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3124,8 +4955,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Power weapon"
-        ]
+          "Power weapon",
+          "Duty and Vengeance"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "9665-3160-8a04-d2bc",
@@ -3140,7 +4973,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d11b-c49d-41bf-1f36",
@@ -3158,7 +4992,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fe5a-764e-37ed-7cef",
@@ -3176,7 +5011,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "67bc-a760-7ed5-9952",
@@ -3191,7 +5027,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f1a-7c78-ffdc-bf5b",
@@ -3213,7 +5050,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Power sabre",
           "Death Rider lascarbine",
           "Frag lance"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "95b4-68d6-26cf-188e",
@@ -3228,7 +5066,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "532c-2c97-357a-fa1e",
@@ -3243,7 +5082,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c8fc-b9fa-d126-a296",
@@ -3260,7 +5100,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "aa9f-f137-1638-0369",
@@ -3276,12 +5117,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Regiment",
           "Militarum Tempestus"
         ],
-        "minModels": 5,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Hot-shot lascarbine",
           "Close combat weapon",
-          "Hot-shot laspistol"
+          "Hot-shot laspistol",
+          "Hot-shot long las"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Tempestus Aquilons",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Tempestus Aquilon",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Hot-shot lascarbine",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tempestus Aquilon w/ 2 Hot-shot laspistols",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hot-shot laspistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tempestus Aquilon w/ 1 Hot-shot laspistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Hot-shot laspistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tempestus Aquilon w/ Hot-shot long-las",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hot-shot long las",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tempestus Aquilon w/ Special weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3295,10 +5191,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 5,
+        "minModels": 1,
         "maxModels": 10,
         "wargear": [
-          "Sniper rifle"
+          "Sniper rifle",
+          "Close combat weapon",
+          "Tankstopper rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "5-10 Ratlings",
+            "groupMin": 0,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Ratlings",
+                "min": 5,
+                "max": 10,
+                "weapons": [
+                  "Close combat weapon",
+                  "Sniper rifle"
+                ]
+              },
+              {
+                "name": "Ratling w/ tankstopper rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Tankstopper rifle"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3317,8 +5243,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Laspistol"
-        ]
+          "Laspistol",
+          "Sabre of Sacrifice",
+          "Savage claws"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "fbcd-274b-0196-b4f6",
@@ -3340,10 +5269,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Close combat weapon",
           "Laspistol",
+          "Alchemyk Counteragents",
+          "Servo-scribes",
           "Lasgun",
           "Master vox",
           "Regimental standard"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "7d22-9fb6-a7e0-c21b",
@@ -3360,8 +5292,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Platoon",
           "Catachan"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 5,
         "wargear": [
           "Close combat weapon",
           "Laspistol",
@@ -3375,6 +5307,127 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Meltagun",
           "Plasma gun",
           "Sniper rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Veteran Guardsmen",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Veteran Guardsman",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Master vox",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Master vox",
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Regimental standard",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Regimental standard",
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Medi-pack",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Medi-pack",
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Lasgun"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special Weapons",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Veteran Guardsman w/ Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Grenade launcher"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Heavy flamer"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Plasma gun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Sniper rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Sniper rifle"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3393,7 +5446,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "78b6-f280-bba9-0594",
@@ -3411,7 +5465,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ba72-7b05-33c9-a1c0",
@@ -3426,7 +5481,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3e90-9359-2aaa-205e",
@@ -3441,14 +5497,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Autopistol",
           "Trench club",
           "Close combat weapon",
           "Flamer",
-          "Combat shotgun"
+          "Combat shotgun",
+          "Remote mine"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Krieg Combat Engineers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Krieg Combat Engineer",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Autopistol",
+                  "Trench club"
+                ]
+              },
+              {
+                "name": "Krieg Combat Engineer w/ Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Krieg Combat Engineer w/ Combat shotgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Close combat weapon",
+                  "Combat shotgun"
+                ]
+              },
+              {
+                "name": "Krieg Combat Engineer w/ Remote mine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Remote mine",
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3464,12 +5568,54 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 4,
+        "maxModels": 4,
         "wargear": [
           "Close combat weapon",
           "Laspistol",
+          "Krieg heavy flamer",
+          "Twin Krieg heavy stubber",
           "Lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3 Heavy Weapons Gunners",
+            "groupMin": 3,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Heavy Weapons Gunners w/ Krieg heavy flamer",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Krieg heavy flamer",
+                  "Close combat weapon",
+                  "Laspistol"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Gunners w/ Twin Krieg heavy stubber",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Twin Krieg heavy stubber",
+                  "Close combat weapon",
+                  "Laspistol"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Gunners w/ Lascannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Close combat weapon",
+                  "Lascannon",
+                  "Laspistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3485,8 +5631,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 3,
         "wargear": [
           "Weapons team close combat weapons",
           "Heavy bolter",
@@ -3495,6 +5641,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Missile launcher",
           "Lascannon",
           "Autocannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3 Heavy Weapons Teams",
+            "groupMin": 3,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Heavy Weapons Team w/ Heavy bolter",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Weapons team close combat weapons",
+                  "Heavy bolter",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Mortar",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Mortar",
+                  "Weapons team close combat weapons",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Missile launcher",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Missile launcher",
+                  "Weapons team close combat weapons",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Lascannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Weapons team close combat weapons",
+                  "Lascannon",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Autocannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Lasgun",
+                  "Weapons team close combat weapons",
+                  "Autocannon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -3514,7 +5720,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a040-9715-5d3a-52af",
@@ -3533,7 +5740,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7280-8daf-312a-b01d",
@@ -3553,7 +5761,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "50b8-1f13-9807-0069",
@@ -3571,7 +5780,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Prefectus heavy stubber",
+          "Enforcer crew",
+          "Armoured hull",
+          "Chiron gatling cannon",
+          "Power sword and Manus Mortis"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d624-2be1-87a3-41ca",
@@ -3588,7 +5804,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Bolt pistol",
+          "Power sword and Manus Mortis"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3962-1fa9-7088-aedd",
@@ -3605,7 +5825,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Laspistol",
+          "Power sword",
+          "Power klaw",
+          "Bale Eye",
+          "Storm bolter"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c871-4769-71ed-c4b3",
@@ -3622,7 +5849,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "05de-5701-33a0-b23d",
@@ -3637,14 +5865,91 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 4,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Lasgun",
           "Close combat weapon",
+          "Autostubber",
+          "Vox-caster",
+          "Vox-relay beacon",
           "Long-las",
           "Plasma gun",
           "Meltagun"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Recon Troopers",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Recon Trooper w/ Lasgun",
+                "min": 3,
+                "max": 9,
+                "weapons": [
+                  "Lasgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Recon Trooper w/ Autostubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autostubber",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Recon Trooper w/ Vox-caster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vox-caster",
+                  "Vox-relay beacon",
+                  "Lasgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Recon Trooper w/ Long-las",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Long-las",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special Weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Recon Trooper w/ Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Recon Trooper w/ Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       }
     ],
@@ -4089,7 +6394,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2c81-4e74-8707-3117",
@@ -4106,7 +6412,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b9b1-d698-1e98-da45",
@@ -4124,7 +6431,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5412-1f01-b7cc-bf12",
@@ -4142,7 +6450,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f667-5267-f241-37",
@@ -4159,7 +6468,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a037-a89c-f59f-8b1e",
@@ -4175,11 +6485,75 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Psyker",
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 4,
+        "maxModels": 10,
         "wargear": [
           "Nemesis force weapon",
-          "Storm bolter"
+          "Storm bolter",
+          "Ancient's Banner",
+          "Apothecary's narthecium"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3-9 Terminators",
+            "groupMin": 3,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Terminator",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Nemesis force weapon",
+                  "Storm bolter"
+                ]
+              },
+              {
+                "name": "Terminator with Ancient's Banner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ancient's Banner",
+                  "Nemesis force weapon"
+                ]
+              },
+              {
+                "name": "Terminator with Narthecium",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Apothecary's narthecium",
+                  "Nemesis force weapon"
+                ]
+              },
+              {
+                "name": "Terminator with Heavy Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nemesis force weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Justicar",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Justicar",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Nemesis force weapon",
+                  "Storm bolter"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -4198,8 +6572,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Storm bolter"
-        ]
+          "Storm bolter",
+          "Purifying Flame",
+          "Black Blade of Antwyr"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "1a56-706b-a8f1-631a",
@@ -4217,7 +6594,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3625-f9f1-122b-bf9d",
@@ -4234,7 +6612,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7256-bb3a-3e79-31fe",
@@ -4253,8 +6632,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Storm bolter"
-        ]
+          "Storm bolter",
+          "Malleus Argyrum",
+          "Searing Purity"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "512d-b972-911e-4cac",
@@ -4269,7 +6651,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4c63-cca-8d26-6330",
@@ -4284,7 +6667,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ada7-eb0b-c920-d77f",
@@ -4299,7 +6683,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "841f-98b-fbf3-c8ee",
@@ -4314,7 +6699,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5ffd-f698-a1bb-fba7",
@@ -4329,7 +6715,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fa-e288-2107-d22e",
@@ -4344,7 +6731,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2efe-459b-9562-e7a9",
@@ -4359,7 +6747,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "84ac-b9ea-921f-9082",
@@ -4374,7 +6763,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bd43-b303-66e0-4c10",
@@ -4391,7 +6781,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d9f7-71b7-8e67-7f44",
@@ -4406,7 +6797,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker"
         ],
-        "minModels": 4,
+        "minModels": 5,
         "maxModels": 10,
         "wargear": [
           "Nemesis force weapon",
@@ -4414,6 +6805,57 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Incinerator",
           "Psilencer",
           "Psycannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Interceptors",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Interceptor",
+                "min": 3,
+                "max": 9,
+                "weapons": [
+                  "Nemesis force weapon",
+                  "Storm bolter"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy weapons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Interceptor w/ incinerator",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Incinerator"
+                ]
+              },
+              {
+                "name": "Interceptor w/ psilencer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Psilencer"
+                ]
+              },
+              {
+                "name": "Interceptor w/ psycannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Psycannon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -4431,7 +6873,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6528-4634-c2cf-2840",
@@ -4447,11 +6890,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Psyker",
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 4,
+        "maxModels": 10,
         "wargear": [
           "Nemesis force weapon",
-          "Storm bolter"
+          "Storm bolter",
+          "Ancient's Banner",
+          "Apothecary's narthecium"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3-9 Paladins",
+            "groupMin": 3,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Paladin",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Nemesis force weapon",
+                  "Storm bolter"
+                ]
+              },
+              {
+                "name": "Paladin with Ancient's Banner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ancient's Banner",
+                  "Nemesis force weapon"
+                ]
+              },
+              {
+                "name": "Paladin with Heavy Weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Nemesis force weapon"
+                ]
+              },
+              {
+                "name": "Paladin with Narthecium",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Apothecary's narthecium",
+                  "Nemesis force weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -4475,6 +6965,57 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Incinerator",
           "Psilencer",
           "Psycannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Purgators",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Purgator",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Nemesis force weapon",
+                  "Storm bolter"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy Weapons",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Purgator w/ incinerator",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Incinerator"
+                ]
+              },
+              {
+                "name": "Purgator w/ psilencer",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Psilencer"
+                ]
+              },
+              {
+                "name": "Purgator w/ psycannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Psycannon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -4490,8 +7031,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Nemesis force weapon",
           "Storm bolter",
@@ -4499,6 +7040,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Incinerator",
           "Psilencer",
           "Psycannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Purifiers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Purifier",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Nemesis force weapon",
+                  "Storm bolter",
+                  "Purifying Flame"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Purifier w/ incinerator",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Incinerator",
+                  "Purifying Flame"
+                ]
+              },
+              {
+                "name": "Purifier w/ psilencer",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Psilencer",
+                  "Purifying Flame"
+                ]
+              },
+              {
+                "name": "Purifier w/ psycannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Psycannon",
+                  "Purifying Flame"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -4514,11 +7110,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Nemesis force weapon",
           "Storm bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Grey Knights",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Grey Knight",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Nemesis force weapon",
+                  "Storm bolter"
+                ]
+              },
+              {
+                "name": "Grey Knight with Heavy Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
         ]
       },
       {
@@ -4536,7 +7157,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "69d-a656-fde3-6c3e",
@@ -4551,7 +7173,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9782-7a59-9b65-21e4",
@@ -4570,7 +7193,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2a2d-1f49-9373-4084",
@@ -4589,7 +7213,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e60e-8ccf-41b2-292e",
@@ -4608,7 +7233,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -4953,7 +7579,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Exitus pistol",
+          "Exitus rifle",
+          "Micromelta Round",
+          "Vindicare combat knife"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "5e5e-d6b2-6a1c-aa69",
@@ -4970,7 +7602,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Life-draining touch",
+          "Animus speculum",
+          "Esoteric Explosives"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "f201-1f4a-b907-d9d1",
@@ -4987,7 +7624,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Executioner pistol",
+          "Intra-neural Biotech",
+          "Power sword and neuro gauntlet"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "1cfe-be05-5603-133",
@@ -5004,7 +7646,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Decoy Targets",
+          "Neural shredder",
+          "Phase sword and poison blades"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "9360-d8b2-cd92-9e7f",
@@ -5023,8 +7670,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 4,
         "maxModels": 4,
         "wargear": [
-          "Close combat weapon"
-        ]
+          "Dartmask",
+          "Death Cult power blade",
+          "Close combat weapon",
+          "Voltaic pistol",
+          "Healing Serum"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3953-4e12-fe7b-97e9",
@@ -5043,8 +7695,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 6,
         "maxModels": 6,
         "wargear": [
-          "Close combat weapon"
-        ]
+          "Close combat weapon",
+          "Artificer shotgun",
+          "Vicious bite",
+          "Lasgun",
+          "Voidsman rotor cannon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "24d5-9987-4d2-b42b",
@@ -5060,10 +7717,105 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Retinue",
           "Voidfarers"
         ],
-        "minModels": 8,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Navis heavy shotgun",
+          "Endurant shield",
+          "Autopistol",
+          "Power weapon",
+          "Navis shotgun",
+          "Chainfist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Armsmen",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Navis Armsman w/ heavy shotgun",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Navis heavy shotgun",
+                  "Endurant shield",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Navis Armsman w/ special weapon",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Navis Armsman w/ power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autopistol",
+                  "Power weapon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Navis Armsman",
+                "min": 5,
+                "max": 7,
+                "weapons": [
+                  "Navis shotgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Navis Armsman w/ chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autopistol",
+                  "Chainfist",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Navis Sergeant-at-Arms",
+            "variants": [
+              {
+                "name": "Navis shotgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Navis shotgun"
+                ]
+              },
+              {
+                "name": "Autopistol and chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autopistol and chainsword"
+                ]
+              },
+              {
+                "name": "Bolt pistol and power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol and power weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -5082,7 +7834,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ec63-524d-55a-3065",
@@ -5098,9 +7851,97 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Retinue",
           "Adeptus Arbites"
         ],
-        "minModels": 5,
+        "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Arbites medi-kit",
+          "Excruciator maul",
+          "Soulguilt scanner",
+          "Arbites grenade launcher",
+          "Executioner shotgun",
+          "Heavy stubber",
+          "Webber"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Exaction Vigilants",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Exaction Vigilant w/ medi-kit",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Arbites medi-kit"
+                ]
+              },
+              {
+                "name": "Exaction Vigilant w/ excruciator maul",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Excruciator maul"
+                ]
+              },
+              {
+                "name": "Exaction Vigilant w/ soulguilt scanner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Soulguilt scanner"
+                ]
+              },
+              {
+                "name": "Exaction Vigilant w/ shotgun",
+                "min": 4,
+                "max": 9,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Up to 2:",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Exaction Vigilant w/ grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Arbites grenade launcher"
+                ]
+              },
+              {
+                "name": "Exaction Vigilant w/ executioner shotgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Executioner shotgun"
+                ]
+              },
+              {
+                "name": "Exaction Vigilant w/ heavy stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy stubber"
+                ]
+              },
+              {
+                "name": "Exaction Vigilant w/ webber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Webber"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d44c-5cde-cb79-3ec3",
@@ -5116,9 +7957,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Retinue",
           "Adeptus Arbites"
         ],
-        "minModels": 8,
+        "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Arbites grenade launcher",
+          "Executioner shotgun",
+          "Heavy stubber",
+          "Webber"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Vigilants",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Vigilant w/ shotgun",
+                "min": 7,
+                "max": 9,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Up to 2:",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Vigilant w/ grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Arbites grenade launcher"
+                ]
+              },
+              {
+                "name": "Vigilant w/ executioner shotgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Executioner shotgun"
+                ]
+              },
+              {
+                "name": "Vigilant w/ heavy stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy stubber"
+                ]
+              },
+              {
+                "name": "Vigilant w/ webber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Webber"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f3a6-de9-584e-c394",
@@ -5138,7 +8040,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Dirgesinger",
+          "Psychic Tempest",
+          "Power fist"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "264a-fc24-3a98-31dc",
@@ -5158,7 +8065,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Bolt pistol",
+          "Psychic Blast",
+          "Nemesis daemon hammer",
+          "Glovodan Psyber-eagle"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "6e0e-b9a2-f53d-ad0e",
@@ -5178,7 +8091,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Castigation",
+          "Condemnor stake",
+          "Master-crafted power sword"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3e57-b15c-5580-1de1",
@@ -5193,7 +8111,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "55cf-8d86-affd-bc9b",
@@ -5212,7 +8131,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7554-37de-cd68-68a7",
@@ -5229,7 +8149,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4469-7239-717e-9abd",
@@ -5244,10 +8165,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Retinue"
         ],
-        "minModels": 2,
-        "maxModels": 10,
+        "minModels": 6,
+        "maxModels": 12,
         "wargear": [
-          "Multi-melta"
+          "Plasma pistol",
+          "Eviscerator",
+          "Mystic stave",
+          "Heavy bolter",
+          "Multi-melta",
+          "Plasma cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "5 - 10 Acolytes",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Agent",
+                "min": 2,
+                "max": 10,
+                "weapons": []
+              },
+              {
+                "name": "Agent w/ plasma pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma pistol"
+                ]
+              },
+              {
+                "name": "Agent w/ eviscerator",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Eviscerator"
+                ]
+              },
+              {
+                "name": "Agent w/ mystic stave",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Mystic stave"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "1 - 2 Gun Servitors",
+            "groupMin": 1,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Servitor w/ heavy bolter",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Heavy bolter"
+                ]
+              },
+              {
+                "name": "Servitor w/ multi-melta",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Multi-melta"
+                ]
+              },
+              {
+                "name": "Servitor w/ plasma cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma cannon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -5266,10 +8264,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ordo Malleus",
           "Requisitioned"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 5,
         "wargear": [
-          "Storm bolter"
+          "Storm bolter",
+          "Narthecium"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 Terminators",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Terminator",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Storm bolter"
+                ]
+              },
+              {
+                "name": "Terminator w/ heavy weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Terminator w/ narthecium",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Narthecium"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -5285,7 +8316,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cbbd-8e0a-fd90-fa0d",
@@ -5300,7 +8332,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "73fc-a193-7da1-d9c4",
@@ -5316,12 +8349,140 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ordo Hereticus",
           "Requisitioned"
         ],
-        "minModels": 7,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
           "Boltgun"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Battle Sisters",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Battle Sister",
+                "min": 6,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol",
+                  "Boltgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Battle Sister w/ Simulacrum Imperialis",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Boltgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Battle Sister w/ Special or Heavy Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Battle Sister w/ Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee Weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "Sister Superior",
+            "variants": [
+              {
+                "name": "Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainsword"
+                ]
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Sister Superior",
+            "variants": [
+              {
+                "name": "Condemnor boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Condemnor boltgun"
+                ]
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Ministorum hand flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum hand flamer"
+                ]
+              },
+              {
+                "name": "Inferno pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno pistol"
+                ]
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ]
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -5339,7 +8500,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8b98-0ac7-a0ba-dedf",
@@ -5358,7 +8520,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "0744-61ce-619d-ffe1",
@@ -5376,8 +8539,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Deathwatch",
           "Kill Team"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Boltgun",
           "Power weapon",
@@ -5389,6 +8552,95 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Stalker-pattern boltgun",
           "Deathwatch shotgun",
           "Black Shield blades"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Deathwatch Veterans",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Veteran w/ boltgun and power weapon",
+                "min": 0,
+                "max": 10,
+                "weapons": [
+                  "Boltgun",
+                  "Power weapon"
+                ]
+              },
+              {
+                "name": "Veteran w/ Deathwatch thunder hammer",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Deathwatch thunder hammer"
+                ]
+              },
+              {
+                "name": "Veteran w/ frag cannon and CCW",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Frag cannon"
+                ]
+              },
+              {
+                "name": "Veteran w/ infernus heavy bolter and CCW",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Infernus heavy bolter"
+                ]
+              },
+              {
+                "name": "Veteran w/ Astartes shield and boltgun",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Boltgun",
+                  "Astartes shield"
+                ]
+              },
+              {
+                "name": "Veteran w/ Astartes shield and power weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Power weapon",
+                  "Astartes shield"
+                ]
+              },
+              {
+                "name": "Veteran w/ stalker-pattern boltgun and CCW",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Stalker-pattern boltgun"
+                ]
+              },
+              {
+                "name": "Veteran w/ Deathwatch shotgun and CCW",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Deathwatch shotgun"
+                ]
+              },
+              {
+                "name": "Veteran w/ Black Shield blades",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Black Shield blades"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -5407,7 +8659,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Hellfire Extremis",
+          "Master-crafted power weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "cfa5-df26-a886-9975",
@@ -5426,7 +8682,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4e74-3710-7a66-9d6c",
@@ -5444,8 +8701,32 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 9,
         "maxModels": 9,
         "wargear": [
+          "Holy fire",
+          "Burning hands",
+          "Salvationist Medikit",
+          "Close combat weapon",
+          "Death Cult blades",
           "Ministorum flamer",
-          "Ministorum hand flamer"
+          "Ministorum hand flamer",
+          "Simulacrum Imperialis"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Missionary w/ plasma gun",
+            "variants": [
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -5465,7 +8746,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "90e0-c5a9-17c5-fba4",
@@ -5483,7 +8765,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9a75-f3a2-bff5-9f08",
@@ -5503,7 +8786,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2b47-b5e8-b297-7bd8",
@@ -5521,7 +8805,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2a3f-b53b-6ea4-6da9",
@@ -5540,7 +8825,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -5629,7 +8915,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b897-e4c6-fcb6-6538",
@@ -5647,7 +8934,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "de59-f65c-181a-8509",
@@ -5663,9 +8951,93 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Rangers",
           "Skitarii"
         ],
-        "minModels": 6,
+        "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Alpha combat weapon",
+          "Transuranic arquebus",
+          "Arc rifle",
+          "Plasma caliver",
+          "Galvanic rifle",
+          "Enhanced data-tether",
+          "Omnispex"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Skitarii Rangers",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Skitarii Ranger w/ transuranic arquebus",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transuranic arquebus"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ arc rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Arc rifle"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ plasma caliver",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma caliver"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ galvanic rifle",
+                "min": 5,
+                "max": 9,
+                "weapons": [
+                  "Galvanic rifle"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ data-tether",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Galvanic rifle",
+                  "Enhanced data-tether"
+                ]
+              },
+              {
+                "name": "Skitarii Ranger w/ omnispex",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Galvanic rifle",
+                  "Omnispex"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Skitarii Ranger Alpha",
+            "variants": [
+              {
+                "name": "Galvanic rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Galvanic rifle"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ba33-c21-bddc-ab0",
@@ -5681,9 +9053,93 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Vanguard",
           "Skitarii"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Alpha combat weapon",
+          "Transuranic arquebus",
+          "Arc rifle",
+          "Plasma caliver",
+          "Radium carbine",
+          "Enhanced data-tether",
+          "Omnispex"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Skitarii Vanguard",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Skitarii Vanguard w/ transuranic arquebus",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transuranic arquebus"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ arc rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Arc rifle"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ plasma caliver",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma caliver"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ radium carbine",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Radium carbine"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ data-tether",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Radium carbine",
+                  "Enhanced data-tether"
+                ]
+              },
+              {
+                "name": "Skitarii Vanguard w/ omnispex",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Radium carbine",
+                  "Omnispex"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Skitarii Vanguard Alpha",
+            "variants": [
+              {
+                "name": "Radium carbine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Radium carbine"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6424-ed86-9e15-3e14",
@@ -5702,7 +9158,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -5964,7 +9421,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a976-7cd5-9657-d91a",
@@ -5982,7 +9440,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "dc24-dd64-5d97-df3c",
@@ -6000,7 +9459,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1319-45d-bb95-dfd4",
@@ -6019,7 +9479,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8da0-4570-c3c-819f",
@@ -6041,6 +9502,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Close combat weapon",
           "Bolt Rifle",
           "Astartes grenade launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Intercessors",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Intercessor Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Intercessor",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Close combat weapon",
+                  "Bolt pistol",
+                  "Bolt Rifle"
+                ]
+              },
+              {
+                "name": "Intercessor w/ Grenade Launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Bolt pistol",
+                  "Bolt Rifle",
+                  "Astartes grenade launcher"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6062,6 +9562,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Pyreblaster",
           "Bolt pistol",
           "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Infernus Marines",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Infernus Marines",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Pyreblaster",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Infernus Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon",
+                  "Pyreblaster"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6082,6 +9612,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Astartes Chainsword",
           "Heavy Bolt Pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Assault Intercessors",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Assault Intercessor Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Assault Intercessors",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Astartes Chainsword",
+                  "Heavy Bolt Pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6097,12 +9652,53 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Gravis"
         ],
-        "minModels": 4,
+        "minModels": 5,
         "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
+          "Heavy Bolt Rifle",
           "Heavy Bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Heavy Intercessors",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Heavy Intercessors",
+                "min": 3,
+                "max": 9,
+                "weapons": [
+                  "Heavy Bolt Rifle",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Heavy Intercessor Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolt Rifle",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Heavy Intercessor w/Heavy Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolter",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6122,7 +9718,38 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Bolt pistol",
-          "Close combat weapon"
+          "Close combat weapon",
+          "Marksman Bolt Carbine"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Infiltrators",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Infiltrator",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Marksman Bolt Carbine",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Infiltrator Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Marksman Bolt Carbine",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6141,8 +9768,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Bolt pistol"
-        ]
+          "Bolt pistol",
+          "Occulus Bolt Carbine",
+          "Paired Combat Blades"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c09a-6504-d25f-477",
@@ -6155,12 +9785,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 8,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
           "Boltgun"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Tactical Marines",
+            "groupMin": 10,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Tactical Marine",
+                "min": 7,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon",
+                  "Boltgun"
+                ]
+              },
+              {
+                "name": "Tactical Marine Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tactical Marine w/Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tactical Marine w/Heavy or Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6179,7 +9855,78 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Close combat weapon",
           "Boltgun",
-          "Bolt pistol"
+          "Bolt pistol",
+          "Astartes Shotgun",
+          "Combat Knife",
+          "Scout Sniper Rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Scouts",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Scouts w/ Boltgun",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Close combat weapon",
+                  "Boltgun",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Scout Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Scouts w/ Astartes Shotgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Astartes Shotgun",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Scouts w/ Combat Knife",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combat Knife",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Scout w/ Heavy Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Scout w/ Scout Sniper Rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Scout Sniper Rifle",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6200,6 +9947,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Heavy Bolt Pistol",
           "Master-crafted power weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Bladeguard Veterans",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Bladeguard Veterans",
+                "min": 2,
+                "max": 5,
+                "weapons": [
+                  "Heavy Bolt Pistol",
+                  "Master-crafted power weapon"
+                ]
+              },
+              {
+                "name": "Bladeguard Veteran Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Master-crafted power weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6218,7 +9992,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Vanguard Veteran Weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Vanguard Veterans with Jump Packs",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Vanguard Veterans with Jump Packs",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Vanguard Veteran Weapon"
+                ]
+              },
+              {
+                "name": "Vanguard Veteran Sergeant with Jump Pack",
+                "min": 1,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "907f-11-c4d1-ec21",
@@ -6233,12 +10033,56 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Tacticus"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Sternguard Bolt Rifle",
           "Close combat weapon",
           "Combi-weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Sternguard Veterans",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Sternguard Veteran w/ Bolt Rifle",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Sternguard Bolt Rifle",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Sternguard Veteran Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Sternguard Veteran w/ Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Sternguard Veteran w/ Combi-weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combi-weapon",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6257,8 +10101,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Combat Knife"
-        ]
+          "Special Issue Bolt Pistol",
+          "Combat Knife",
+          "Bolt Carbine"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "129d-2da5-66f3-f4ec",
@@ -6277,7 +10124,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Twin power fist"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "ae9a-10e3-8091-20",
@@ -6292,9 +10140,46 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Storm Shield",
+          "Thunder Hammer",
+          "Twin Lightning Claws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Assault Terminators",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Assault Terminator w/ Thunder Hammer & Storm Shield",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Storm Shield",
+                  "Thunder Hammer"
+                ]
+              },
+              {
+                "name": "Assault Terminator w/ Twin Lightning Claws",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Twin Lightning Claws"
+                ]
+              },
+              {
+                "name": "Assault Terminator Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4808-a80b-309a-7933",
@@ -6309,12 +10194,54 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Storm bolter",
           "Power fist",
           "Chainfist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Terminators",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Terminator Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ]
+              },
+              {
+                "name": "Terminator w/ Power Fist",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Power fist",
+                  "Storm bolter"
+                ]
+              },
+              {
+                "name": "Terminator w/ Chain Fist",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Storm bolter",
+                  "Chainfist"
+                ]
+              },
+              {
+                "name": "Terminator w/ Heavy Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
         ]
       },
       {
@@ -6332,7 +10259,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Siege Drills"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Assault Centurions",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Assault Centurion Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Assault Centurion",
+                "min": 2,
+                "max": 5,
+                "weapons": [
+                  "Siege Drills"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6ba0-cede-e278-f86b",
@@ -6349,7 +10302,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Centurion Fists"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Devastator Centurions",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Devastator Centurion Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Devastator Centurion",
+                "min": 2,
+                "max": 5,
+                "weapons": [
+                  "Centurion Fists"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "24df-fdd6-4d7b-fc0e",
@@ -6366,7 +10345,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d204-13c6-dab1-ecdc",
@@ -6381,7 +10361,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1d94-b3c8-9205-827e",
@@ -6398,7 +10379,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5dc7-aa6c-7053-cede",
@@ -6415,7 +10397,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1c00-9398-b9e7-446a",
@@ -6432,7 +10415,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8d7b-3dfe-7b91-2490",
@@ -6447,7 +10431,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b5e8-c34b-566b-8bda",
@@ -6466,6 +10451,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Astartes Chainsword",
           "Heavy Bolt Pistol",
           "Twin bolt rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Outriders",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Outrider",
+                "min": 2,
+                "max": 5,
+                "weapons": [
+                  "Astartes Chainsword",
+                  "Heavy Bolt Pistol",
+                  "Twin bolt rifle"
+                ]
+              },
+              {
+                "name": "Outrider Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword",
+                  "Heavy Bolt Pistol",
+                  "Twin bolt rifle"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6485,8 +10500,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 3,
         "wargear": [
           "Close combat weapon",
-          "Bolt pistol"
-        ]
+          "Bolt pistol",
+          "Accelerator Autocannon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3e14-2a-d358-6ada",
@@ -6506,7 +10523,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Close combat weapon"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "9cb9-9ab5-727f-80e5",
@@ -6521,7 +10539,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "993a-9cbc-8052-e40",
@@ -6536,7 +10555,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9489-445c-f950-7292",
@@ -6551,7 +10571,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7102-b3a4-9bfc-1b84",
@@ -6570,7 +10591,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Close combat weapon",
-          "Bolt pistol"
+          "Bolt pistol",
+          "Plasma Incinerator"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hellblasters",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hellblaster Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Hellblaster",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Plasma Incinerator",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6591,7 +10641,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Close combat weapon",
           "Bolt pistol"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c570-c6ba-c9dc-5a44",
@@ -6606,13 +10657,53 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Gravis"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 6,
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
           "Melta rifle",
           "Multi-melta"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Eradicators",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Eradicator Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon",
+                  "Melta rifle"
+                ]
+              },
+              {
+                "name": "Eradicator",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon",
+                  "Melta rifle"
+                ]
+              },
+              {
+                "name": "Eradicator with Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6626,12 +10717,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Boltgun",
           "Close combat weapon",
           "Bolt pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Devastators",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Devastator Marine w/ Boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Boltgun",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Devastator Marine w/ Heavy Weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6653,6 +10773,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Bolt pistol",
           "Close combat weapon",
           "Castellan Launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Desolation Marines",
+            "groupMin": 5,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Desolation Marine",
+                "min": 4,
+                "max": 4,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon",
+                  "Castellan Launcher"
+                ]
+              },
+              {
+                "name": "Desolation Sergeant",
+                "min": 1,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon",
+                  "Castellan Launcher"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -6668,7 +10818,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d4c8-dd6a-cd7a-ccc3",
@@ -6683,7 +10834,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "31a-6c3e-5843-4023",
@@ -6698,7 +10850,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7814-107b-a498-96f6",
@@ -6713,7 +10866,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ed20-824b-7419-aebc",
@@ -6728,7 +10882,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6b89-8147-9b6b-6db1",
@@ -6743,7 +10898,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cb6d-201f-4888-3027",
@@ -6758,7 +10914,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8cca-9318-3bec-d360",
@@ -6773,7 +10930,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1d65-c592-2e16-b045",
@@ -6790,7 +10948,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d361-a36e-1448-264d",
@@ -6807,7 +10966,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e8e-fc5c-c689-99ca",
@@ -6822,7 +10982,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9259-f166-15f2-7f79",
@@ -6837,7 +10998,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a14e-75ca-ef91-397f",
@@ -6852,7 +11014,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ed11-25b9-a0eb-89f4",
@@ -6867,7 +11030,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bfb1-7512-e1a3-9fa2",
@@ -6882,7 +11046,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4d57-c5c8-c1a1-e8a6",
@@ -6897,7 +11062,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3d99-47aa-8cf3-883f",
@@ -6912,7 +11078,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1bb6-878e-7af1-5bdb",
@@ -6927,7 +11094,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "469b-3370-30f3-473a",
@@ -6942,7 +11110,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ce15-e87e-7cff-b129",
@@ -6959,7 +11128,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6dfd-beb0-5b01-b21e",
@@ -6977,7 +11147,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fe0e-6070-e7b-d4b8",
@@ -6995,7 +11166,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "78eb-9334-f5c0-6095",
@@ -7013,7 +11185,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "137c-2add-1a51-ee96",
@@ -7032,7 +11205,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2468-24f5-ad9b-8388",
@@ -7051,7 +11225,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ceb5-55c7-2d49-d952",
@@ -7068,7 +11243,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c026-b762-d0a6-5ef1",
@@ -7086,7 +11262,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5d1d-2230-8199-3ab3",
@@ -7103,7 +11280,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "23f1-2df2-7085-cf41",
@@ -7121,7 +11299,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e671-cd3a-2b03-3954",
@@ -7138,7 +11317,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "109f-f71d-56-d9eb",
@@ -7156,7 +11336,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8a9d-11f-fad-bd0f",
@@ -7173,7 +11354,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c6e9-c0c8-5f13-5771",
@@ -7192,7 +11374,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6562-d718-b8e0-c457",
@@ -7209,7 +11392,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9ca5-e5f4-f85d-bcca",
@@ -7227,7 +11411,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fc7f-8176-c10c-ca8",
@@ -7245,7 +11430,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8dcb-987c-1ab4-b976",
@@ -7262,7 +11448,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6c10-5b51-5bc0-8d2c",
@@ -7279,7 +11466,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "98db-fff3-b1b2-e22f",
@@ -7294,7 +11482,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3416-dfee-84ee-e21d",
@@ -7309,7 +11498,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cdd9-efda-95-e7b2",
@@ -7325,12 +11515,46 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tacticus",
           "Jump Pack"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Astartes Chainsword",
           "Heavy Bolt Pistol",
           "Plasma pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Assault Intercessors with Jump Packs",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Assault Intercessor Sergeant with Jump Pack",
+                "min": 1,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Assault Intercessors with Jump Pack",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Astartes Chainsword",
+                  "Heavy Bolt Pistol"
+                ]
+              },
+              {
+                "name": "Assault Intercessors with Jump Pack w/ Plasma Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword",
+                  "Plasma pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -7350,8 +11574,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 4,
         "wargear": [
           "Bolt pistol",
-          "Close combat weapon"
-        ]
+          "Close combat weapon",
+          "Bolt Rifle",
+          "Master-crafted Power Weapon",
+          "Master-crafted Bolt Rifle",
+          "Master-crafted Heavy Bolter"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "74ba-6762-ef01-32d6",
@@ -7370,7 +11599,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "0385-0e03-0eac-d91c",
@@ -7390,7 +11620,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3fe2-9d72-8251-adb4",
@@ -7409,7 +11640,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -9226,7 +13458,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6bf7-888c-7aa6-6831",
@@ -9241,9 +13474,76 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Damned"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Chainsword",
+          "Autopistol",
+          "Close combat weapon",
+          "Great weapon",
+          "Corrupted stave"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Beastmen",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Beastman",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Beastman w/ great weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Great weapon",
+                  "Autopistol"
+                ]
+              },
+              {
+                "name": "Beastman w/ corrupted stave",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corrupted stave",
+                  "Autopistol"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Fellgor Champion",
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d880-9968-2ed9-5a21",
@@ -9261,7 +13561,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "203d-c50f-a438-4982",
@@ -9276,8 +13577,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Combi-bolter",
           "Accursed weapon",
@@ -9285,6 +13586,84 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Power fist",
           "Chainfist",
           "Paired accursed weapons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Chaos Terminators",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Accursed weapon and combi-bolter",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combi-bolter",
+                  "Accursed weapon"
+                ]
+              },
+              {
+                "name": "Accursed weapon and combi-weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Accursed weapon",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Power fist and combi-weapon",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Power fist",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Chainfist and combi-bolter",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Chainfist",
+                  "Combi-bolter"
+                ]
+              },
+              {
+                "name": "Heavy weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              },
+              {
+                "name": "Power fist and combi-bolter",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Combi-bolter",
+                  "Power fist"
+                ]
+              },
+              {
+                "name": "Chainfist and combi-weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Chainfist",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Paired accursed weapons",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Paired accursed weapons"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -9298,8 +13677,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Boltgun",
@@ -9308,6 +13687,94 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Combi-weapon",
           "Paired accursed weapons",
           "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Chosen",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Chosen w/ boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol",
+                  "Boltgun",
+                  "Accursed weapon"
+                ]
+              },
+              {
+                "name": "Chosen w/ boltgun and plasma pistol",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Plasma pistol",
+                  "Accursed weapon",
+                  "Boltgun"
+                ]
+              },
+              {
+                "name": "Chosen w/ combi-weapon and bolt pistol",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Accursed weapon",
+                  "Bolt pistol",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Chosen w/ paired accursed weapons and plasma pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma pistol",
+                  "Paired accursed weapons"
+                ]
+              },
+              {
+                "name": "Chosen w/ power fist and bolt pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Boltgun",
+                  "Bolt pistol",
+                  "Power fist"
+                ]
+              },
+              {
+                "name": "Chosen w/ combi-weapon and plasma pistol",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Accursed weapon",
+                  "Plasma pistol",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Chosen w/ paired accursed weapons and bolt pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Bolt pistol",
+                  "Paired accursed weapons"
+                ]
+              },
+              {
+                "name": "Chosen w/ power fist and plasma pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Boltgun",
+                  "Plasma pistol",
+                  "Power fist"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -9321,13 +13788,74 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Boltgun",
           "Bolt pistol",
           "Close combat weapon",
-          "Astartes chainsword"
+          "Astartes chainsword",
+          "Heavy melee weapon",
+          "Balefire tome"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 - 9 Legionaries",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Legionary w/ boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Boltgun",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ chainsword",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Astartes chainsword",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ heavy melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy melee weapon",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ balefire tome",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Balefire tome",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ other weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -9343,7 +13871,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [
+          "Close combat weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "1780-25b8-ce0b-898d",
@@ -9361,8 +13892,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
-          "Chaos icon"
-        ]
+          "Commune blade",
+          "Chaos icon",
+          "Autopistol",
+          "Close combat weapon",
+          "Warp Curse"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "946c-d784-c8be-f21",
@@ -9375,10 +13911,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 5,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Havoc autocannon",
+          "Havoc lascannon",
+          "Havoc missile launcher",
+          "Havoc reaper chaincannon",
+          "Havoc heavy bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 Havocs",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Havoc w/ autocannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc autocannon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Havoc w/ lascannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc lascannon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Havoc w/ missile launcher",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc missile launcher",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Havoc w/ reaper chaincannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc reaper chaincannon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Havoc w/ heavy bolter",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc heavy bolter",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -9396,7 +13992,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cb1-5bcf-9e36-8136",
@@ -9411,9 +14008,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "5 - 10 Possessed",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Possessed",
+                "min": 0,
+                "max": 10,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "acb5-dbf2-e3a6-ad94",
@@ -9428,15 +14041,102 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Jump Pack"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Astartes chainsword",
           "Plasma pistol",
           "Heavy melee weapon",
+          "Mutations",
           "Close combat weapon",
-          "Meltagun"
+          "Meltagun",
+          "Plasma gun",
+          "Flamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Raptors",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Raptor",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol",
+                  "Astartes chainsword"
+                ]
+              },
+              {
+                "name": "Raptor w/ plasma pistol",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Astartes chainsword",
+                  "Plasma pistol"
+                ]
+              },
+              {
+                "name": "Raptor w/ heavy melee weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Heavy melee weapon",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Raptor w/ mutations",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Mutations",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "2 selections per 5 models",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Raptor w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Bolt pistol",
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Raptor w/ plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Raptor w/ flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Flamer",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -9454,7 +14154,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "683f-bfb2-f8d0-c39e",
@@ -9472,7 +14173,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9f33-ff4a-d948-4636",
@@ -9490,7 +14192,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "5-10 Warp Talons",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Warp Talon Champion",
+                "min": 1,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Warp Talon",
+                "min": 4,
+                "max": 9,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8dc5-4dcb-d77f-7d23",
@@ -9505,10 +14229,136 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Damned"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 10,
+        "maxModels": 10,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Lasgun",
+          "Flamer",
+          "Plasma gun",
+          "Meltagun",
+          "Cultist sniper rifle",
+          "Cultist grenade launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Traitor Guardsmen",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Guardsman w/ lasgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Lasgun",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Up to 3:",
+            "groupMin": 0,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Guardsman w/ flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ Cultist sniper rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cultist sniper rifle",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ Cultist grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cultist grenade launcher",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Traitor Sergeant",
+            "variants": [
+              {
+                "name": "Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainsword"
+                ]
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Traitor Sergeant",
+            "variants": [
+              {
+                "name": "Corrupted pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corrupted pistol"
+                ]
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -9526,7 +14376,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 20,
-        "wargear": []
+        "wargear": [
+          "Brutal assault weapon",
+          "Autopistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Cultist Champion",
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Autopistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autopistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b206-250d-84aa-fc42",
@@ -9544,7 +14423,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cb66-af7-2cca-1c85",
@@ -9561,7 +14441,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f69d-2171-5f95-9c88",
@@ -9578,7 +14459,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Ogryn weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "23aa-b45a-6d5d-e92b",
@@ -9595,7 +14479,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 8,
         "maxModels": 16,
-        "wargear": []
+        "wargear": [
+          "Hideous mutations",
+          "Blasphemous appendages"
+        ],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -9865,8 +14753,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
-          "Chaos icon"
-        ]
+          "Commune blade",
+          "Chaos icon",
+          "Autopistol",
+          "Close combat weapon",
+          "Warp Curse"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "f69d-2171-5f95-9c88",
@@ -9883,7 +14776,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Ogryn weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8dc5-4dcb-d77f-7d23",
@@ -9898,10 +14794,136 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Damned"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 10,
+        "maxModels": 10,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Lasgun",
+          "Flamer",
+          "Plasma gun",
+          "Meltagun",
+          "Cultist sniper rifle",
+          "Cultist grenade launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Traitor Guardsmen",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Guardsman w/ lasgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Lasgun",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Up to 3:",
+            "groupMin": 0,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Guardsman w/ flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ Cultist sniper rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cultist sniper rifle",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ Cultist grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cultist grenade launcher",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Traitor Sergeant",
+            "variants": [
+              {
+                "name": "Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainsword"
+                ]
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Traitor Sergeant",
+            "variants": [
+              {
+                "name": "Corrupted pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corrupted pistol"
+                ]
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -9917,9 +14939,76 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Damned"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Chainsword",
+          "Autopistol",
+          "Close combat weapon",
+          "Great weapon",
+          "Corrupted stave"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Beastmen",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Beastman",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Beastman w/ great weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Great weapon",
+                  "Autopistol"
+                ]
+              },
+              {
+                "name": "Beastman w/ corrupted stave",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corrupted stave",
+                  "Autopistol"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Fellgor Champion",
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cb66-af7-2cca-1c85",
@@ -9936,7 +15025,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1267-78f1-7774-859",
@@ -9953,7 +15043,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 20,
-        "wargear": []
+        "wargear": [
+          "Brutal assault weapon",
+          "Autopistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Cultist Champion",
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Autopistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autopistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "23aa-b45a-6d5d-e92b",
@@ -9970,7 +15089,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 8,
         "maxModels": 16,
-        "wargear": []
+        "wargear": [
+          "Hideous mutations",
+          "Blasphemous appendages"
+        ],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -10240,7 +15363,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Talon of Horus",
+          "Drach'nyen"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d93f-6d73-1792-cb18",
@@ -10258,7 +15385,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Hellspear",
+          "Herald's Talon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d9e3-8baf-128f-6389",
@@ -10275,7 +15406,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Tyrant's Claw heavy flamer",
+          "Tyrant's Claw and exalted power weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "9bbd-a535-a4ef-9680",
@@ -10293,7 +15428,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2a1d-2757-347c-58f2",
@@ -10312,7 +15448,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cd9c-96e7-6dcb-bedf",
@@ -10327,7 +15464,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Xyclos needler",
+          "The Chirurgeon",
+          "Rod of Torment",
+          "Surgeon Acolyte's tools"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "f399-fe33-375b-d1a2",
@@ -10344,7 +15487,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Cypher's bolt pistol",
+          "Cypher's plasma pistol"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "287f-7d48-59cf-dc1e",
@@ -10361,7 +15508,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e496-5a54-4cb2-4fc1",
@@ -10376,7 +15524,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b206-250d-84aa-fc42",
@@ -10394,7 +15543,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "980d-c80a-19b2-f641",
@@ -10411,7 +15561,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "683f-bfb2-f8d0-c39e",
@@ -10429,7 +15580,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "46e1-2159-7c26-9105",
@@ -10447,7 +15599,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "440-a22a-eac1-b107",
@@ -10462,7 +15615,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d2b8-454a-d061-b592",
@@ -10477,7 +15631,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [
+          "Close combat weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "1780-25b8-ce0b-898d",
@@ -10495,8 +15652,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
-          "Chaos icon"
-        ]
+          "Commune blade",
+          "Chaos icon",
+          "Autopistol",
+          "Close combat weapon",
+          "Warp Curse"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "615-e6bf-cfd2-9384",
@@ -10509,13 +15671,74 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Boltgun",
           "Bolt pistol",
           "Close combat weapon",
-          "Astartes chainsword"
+          "Astartes chainsword",
+          "Heavy melee weapon",
+          "Balefire tome"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 - 9 Legionaries",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Legionary w/ boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Boltgun",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ chainsword",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Astartes chainsword",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ heavy melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy melee weapon",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ balefire tome",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Balefire tome",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ other weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -10533,7 +15756,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 20,
-        "wargear": []
+        "wargear": [
+          "Brutal assault weapon",
+          "Autopistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Cultist Champion",
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Autopistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autopistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "23aa-b45a-6d5d-e92b",
@@ -10550,7 +15802,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 8,
         "maxModels": 16,
-        "wargear": []
+        "wargear": [
+          "Hideous mutations",
+          "Blasphemous appendages"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "203d-c50f-a438-4982",
@@ -10565,8 +15821,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Combi-bolter",
           "Accursed weapon",
@@ -10574,6 +15830,84 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Power fist",
           "Chainfist",
           "Paired accursed weapons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Chaos Terminators",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Accursed weapon and combi-bolter",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combi-bolter",
+                  "Accursed weapon"
+                ]
+              },
+              {
+                "name": "Accursed weapon and combi-weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Accursed weapon",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Power fist and combi-weapon",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Power fist",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Chainfist and combi-bolter",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Chainfist",
+                  "Combi-bolter"
+                ]
+              },
+              {
+                "name": "Heavy weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              },
+              {
+                "name": "Power fist and combi-bolter",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Combi-bolter",
+                  "Power fist"
+                ]
+              },
+              {
+                "name": "Chainfist and combi-weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Chainfist",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Paired accursed weapons",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Paired accursed weapons"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -10589,7 +15923,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cb1-5bcf-9e36-8136",
@@ -10604,9 +15939,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "5 - 10 Possessed",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Possessed",
+                "min": 0,
+                "max": 10,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4e85-615b-5d49-dfa4",
@@ -10619,8 +15970,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Boltgun",
@@ -10629,6 +15980,94 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Combi-weapon",
           "Paired accursed weapons",
           "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Chosen",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Chosen w/ boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol",
+                  "Boltgun",
+                  "Accursed weapon"
+                ]
+              },
+              {
+                "name": "Chosen w/ boltgun and plasma pistol",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Plasma pistol",
+                  "Accursed weapon",
+                  "Boltgun"
+                ]
+              },
+              {
+                "name": "Chosen w/ combi-weapon and bolt pistol",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Accursed weapon",
+                  "Bolt pistol",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Chosen w/ paired accursed weapons and plasma pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma pistol",
+                  "Paired accursed weapons"
+                ]
+              },
+              {
+                "name": "Chosen w/ power fist and bolt pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Boltgun",
+                  "Bolt pistol",
+                  "Power fist"
+                ]
+              },
+              {
+                "name": "Chosen w/ combi-weapon and plasma pistol",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Accursed weapon",
+                  "Plasma pistol",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Chosen w/ paired accursed weapons and bolt pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Bolt pistol",
+                  "Paired accursed weapons"
+                ]
+              },
+              {
+                "name": "Chosen w/ power fist and plasma pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Boltgun",
+                  "Plasma pistol",
+                  "Power fist"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -10646,7 +16085,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7373-47b7-11a3-2b48",
@@ -10659,15 +16099,94 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 6,
         "wargear": [
           "Combi-bolter",
           "Bolt pistol",
           "Close combat weapon",
           "Astartes chainsword",
+          "Flamer",
           "Meltagun",
+          "Plasma gun",
           "Combi-weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Bikers",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Biker w/ combi-bolter and bolt pistol",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Combi-bolter",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Biker w/ combi-bolter and chainsword",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Combi-bolter",
+                  "Astartes chainsword",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Up to two:",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Biker w/ flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Flamer",
+                  "Close combat weapon",
+                  "Combi-bolter"
+                ]
+              },
+              {
+                "name": "Biker w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Combi-bolter",
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Biker w/ plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon",
+                  "Combi-bolter"
+                ]
+              },
+              {
+                "name": "Biker w/ combi-weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Combi-weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -10683,15 +16202,102 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Jump Pack"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Bolt pistol",
           "Astartes chainsword",
           "Plasma pistol",
           "Heavy melee weapon",
+          "Mutations",
           "Close combat weapon",
-          "Meltagun"
+          "Meltagun",
+          "Plasma gun",
+          "Flamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Raptors",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Raptor",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol",
+                  "Astartes chainsword"
+                ]
+              },
+              {
+                "name": "Raptor w/ plasma pistol",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Astartes chainsword",
+                  "Plasma pistol"
+                ]
+              },
+              {
+                "name": "Raptor w/ heavy melee weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Heavy melee weapon",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Raptor w/ mutations",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Mutations",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "2 selections per 5 models",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Raptor w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Bolt pistol",
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Raptor w/ plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Raptor w/ flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Flamer",
+                  "Close combat weapon",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -10710,7 +16316,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "5-10 Warp Talons",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Warp Talon Champion",
+                "min": 1,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Warp Talon",
+                "min": 4,
+                "max": 9,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "946c-d784-c8be-f21",
@@ -10723,10 +16351,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 5,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Havoc autocannon",
+          "Havoc lascannon",
+          "Havoc missile launcher",
+          "Havoc reaper chaincannon",
+          "Havoc heavy bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 Havocs",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Havoc w/ autocannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc autocannon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Havoc w/ lascannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc lascannon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Havoc w/ missile launcher",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc missile launcher",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Havoc w/ reaper chaincannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc reaper chaincannon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Havoc w/ heavy bolter",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Havoc heavy bolter",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -10744,7 +16432,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "dcc0-b70c-9779-e6c9",
@@ -10761,7 +16450,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Vashtorr's claw",
+          "Vashtorr's hammer"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8dc5-4dcb-d77f-7d23",
@@ -10776,10 +16469,136 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Damned"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 10,
+        "maxModels": 10,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Lasgun",
+          "Flamer",
+          "Plasma gun",
+          "Meltagun",
+          "Cultist sniper rifle",
+          "Cultist grenade launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Traitor Guardsmen",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Guardsman w/ lasgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Lasgun",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Up to 3:",
+            "groupMin": 0,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Guardsman w/ flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ Cultist sniper rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cultist sniper rifle",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Guardsman w/ Cultist grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cultist grenade launcher",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Traitor Sergeant",
+            "variants": [
+              {
+                "name": "Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainsword"
+                ]
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Traitor Sergeant",
+            "variants": [
+              {
+                "name": "Corrupted pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corrupted pistol"
+                ]
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -10795,9 +16614,76 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Damned"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Chainsword",
+          "Autopistol",
+          "Close combat weapon",
+          "Great weapon",
+          "Corrupted stave"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Beastmen",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Beastman",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Beastman w/ great weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Great weapon",
+                  "Autopistol"
+                ]
+              },
+              {
+                "name": "Beastman w/ corrupted stave",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corrupted stave",
+                  "Autopistol"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Fellgor Champion",
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f69d-2171-5f95-9c88",
@@ -10814,7 +16700,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Ogryn weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "6de7-36d5-6015-7a51",
@@ -10831,7 +16720,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "279e-62d4-bff1-141",
@@ -10848,7 +16738,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3dfb-3b2a-94b-2fbe",
@@ -10865,7 +16756,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e687-6d7a-bb28-dcaa",
@@ -10882,7 +16774,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "45b-19f6-38d2-703f",
@@ -10899,7 +16792,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9ff2-45e0-fe97-65f8",
@@ -10914,7 +16808,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "79e5-a673-cca5-91a4",
@@ -10931,7 +16826,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d37d-7e8f-341b-c67c",
@@ -10948,7 +16844,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e981-27ae-112f-aa9a",
@@ -10965,7 +16862,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b27f-1c85-5e7f-4e7d",
@@ -10985,7 +16883,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7263-70e5-b424-61eb",
@@ -11002,7 +16901,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Hideous Mutations"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3832-4208-11e9-ca22",
@@ -11018,11 +16920,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Khorne",
           "Berzerkers"
         ],
-        "minModels": 6,
+        "minModels": 10,
         "maxModels": 20,
         "wargear": [
           "Bolt pistol",
           "Plasma pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 - 19 Khorne Berserkers",
+            "groupMin": 9,
+            "groupMax": 19,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Khorne Berzerker",
+                "min": 5,
+                "max": 19,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -11039,9 +16959,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Rubricae"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Inferno boltgun",
+          "Close combat weapon",
+          "Warpflamer",
+          "Soulreaper cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Rubric Marines",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Rubric Marine w/ inferno boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Inferno boltgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Rubric Marine w/ warpflamer",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Warpflamer",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Rubric Marine w/ soulreaper cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Soulreaper cannon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9030-f62d-417-fc92",
@@ -11056,13 +17018,109 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Nurgle"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Bubotic weapons",
           "Heavy plague weapon",
+          "Blight launcher",
           "Boltgun",
-          "Meltagun"
+          "Plague spewer",
+          "Icon of Despair",
+          "Meltagun",
+          "Plague belcher",
+          "Plasma gun"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Plague Marines",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Plague Marine w/ bubotic weapons",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Bubotic weapons"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ heavy plague weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Heavy plague weapon"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ blight launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Blight launcher"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Boltgun"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ plague spewer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plague spewer"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ icon of despair",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Icon of Despair",
+                  "Boltgun"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Plague Marine w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ plague belcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plague belcher"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma gun"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -11080,7 +17138,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [
+          "Fleshmetal weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d880-9968-2ed9-5a21",
@@ -11098,7 +17159,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cb66-af7-2cca-1c85",
@@ -11115,7 +17177,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f666-1f5d-0c20-06c1",
@@ -11130,15 +17193,106 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Boltgun",
           "Bolt pistol",
           "Close combat weapon",
           "Astartes chainsword",
           "Accursed weapon",
-          "Paired accursed weapons"
+          "Nostraman chainglaive",
+          "Paired accursed weapons",
+          "Voice eater"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 - 9 Legionaries",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Legionary w/ boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Boltgun",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ chainsword",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Astartes chainsword",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ heavy weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ special weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Accursed weapon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ Nostraman chainglaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nostraman chainglaive",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ paired accursed weapons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol",
+                  "Paired accursed weapons",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Legionary w/ voice eater",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Voice eater",
+                  "Astartes chainsword",
+                  "Bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -11155,11 +17309,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Slaanesh",
           "Cults of the Dark Gods"
         ],
-        "minModels": 4,
+        "minModels": 6,
         "maxModels": 6,
         "wargear": [
           "Sonic blaster",
-          "Close combat weapon"
+          "Close combat weapon",
+          "Blastmaster"
+        ],
+        "wargearOptions": [
+          {
+            "name": "5 Noise Marines",
+            "groupMin": 5,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Noise Marine w/ sonic blaster",
+                "min": 3,
+                "max": 5,
+                "weapons": [
+                  "Sonic blaster",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Noise Marine w/ blastmaster",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Blastmaster",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -11177,7 +17360,19 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": []
+        "wargear": [
+          "Absolver bolt pistol",
+          "Reductor array",
+          "Mind Wrench",
+          "Force stave",
+          "Axe of Ending",
+          "Bolt pistol",
+          "Power sabre",
+          "Laspistol",
+          "Londaxi maimer",
+          "Bionic gauntlet"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "2078-97ce-8793-3382",
@@ -11190,13 +17385,85 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 3,
+        "minModels": 5,
         "maxModels": 10,
         "wargear": [
           "Boltgun",
           "Bolt pistol",
           "Meltagun",
           "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 - 9 Raiders",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Red Corsairs Raider",
+                "min": 2,
+                "max": 9,
+                "weapons": [
+                  "Boltgun",
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Raiders with alternate weapons",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Red Corsairs Raider w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Meltagun",
+                  "Bolt pistol"
+                ]
+              },
+              {
+                "name": "Red Corsairs Raider w/ power fist",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Boltgun",
+                  "Bolt pistol",
+                  "Power fist"
+                ]
+              },
+              {
+                "name": "Red Corsairs Raider w/ power fist and meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Meltagun",
+                  "Bolt pistol",
+                  "Power fist"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pistol choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Red Corsairs Raider Champion",
+            "variants": [
+              {
+                "name": "Hand flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hand flamer"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -11212,7 +17479,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b9a4-a9c4-5f8d-ed3a",
@@ -11229,7 +17497,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b6c0-4be6-7487-73dc",
@@ -11247,7 +17516,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9573-8b24-3796-d9d9",
@@ -11266,7 +17536,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "29f9-fc47-787e-d9d3",
@@ -11283,7 +17554,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -11552,7 +17824,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f4d7-244d-16c4-f2f3",
@@ -11571,7 +17844,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e6a4-7055-fd23-5123",
@@ -11590,7 +17864,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Lakrimae"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c15c-2b5a-dcab-7627",
@@ -11608,7 +17885,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8700-3d3-efbb-ef8d",
@@ -11626,7 +17904,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9900-77d7-10e3-5c91",
@@ -11644,7 +17923,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8467-b3a2-2597-de0d",
@@ -11659,13 +17939,103 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Nurgle"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Bubotic weapons",
+          "Heavy plague weapon",
           "Boltgun",
           "Icon of Despair",
-          "Plasma gun"
+          "Meltagun",
+          "Plasma gun",
+          "Plague belcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Plague Marines",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Plague Marine w/ bubotic weapons",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Bubotic weapons"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ heavy plague weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Heavy plague weapon"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ blight launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              },
+              {
+                "name": "Plague Marine w/ boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Boltgun"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ plague spewer",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              },
+              {
+                "name": "Plague Marine w/ icon of despair",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun",
+                  "Icon of Despair"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Plague Marine w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma gun"
+                ]
+              },
+              {
+                "name": "Plague Marine w/ plague belcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plague belcher"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -11682,8 +18052,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Nurgle"
         ],
         "minModels": 10,
-        "maxModels": 20,
-        "wargear": []
+        "maxModels": 10,
+        "wargear": [
+          "Improvised weapons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "10-20 Poxwalkers",
+            "groupMin": 10,
+            "groupMax": 0,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Poxwalker",
+                "min": 10,
+                "max": 20,
+                "weapons": [
+                  "Improvised weapons"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1ffc-27de-8aea-e7bb",
@@ -11700,7 +18090,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c88f-d4dc-84b3-1b31",
@@ -11717,7 +18108,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "690b-a189-5935-f32e",
@@ -11734,7 +18126,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "506c-16a8-68f7-c08a",
@@ -11751,7 +18144,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9a82-ea13-3511-6c08",
@@ -11768,7 +18162,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "83e8-ebb7-785a-2115",
@@ -11786,7 +18181,23 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "2-5 Deathshroud Terminators",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Deathshroud Terminator",
+                "min": 2,
+                "max": 5,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2a2b-643e-860e-b524",
@@ -11803,7 +18214,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5b4e-dcf1-5c6f-4d35",
@@ -11819,10 +18231,92 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Nurgle",
           "Terminator"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 10,
         "wargear": [
-          "Combi-weapon"
+          "Combi-bolter",
+          "Combi-weapon",
+          "Close combat weapon",
+          "Flail of corruption",
+          "Reaper autocannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-9 Blightlord Terminators",
+            "groupMin": 2,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Blightlord Terminator w/ combi-bolter",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combi-bolter"
+                ]
+              },
+              {
+                "name": "Blightlord Terminator w/ combi-weapon",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Blightlord Terminator w/ plague spewer and CCW",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Blightlord Terminator w/ flail",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Flail of corruption"
+                ]
+              },
+              {
+                "name": "Blightlord Terminator w/ blight launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              },
+              {
+                "name": "Blightlord Terminator w/ reaper autocannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Reaper autocannon"
+                ]
+              },
+              {
+                "name": "Blightlord Terminator w/ plague spewer and bubotic blade",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Blightlord Champion",
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -11842,7 +18336,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Hideous Mutations"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "26d5-ec73-3517-f3f",
@@ -11860,7 +18357,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e58b-507a-937f-7abf",
@@ -11878,7 +18376,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "89d-b0c0-6e19-f017",
@@ -11896,7 +18395,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9b58-210d-c12f-4d46",
@@ -11914,7 +18414,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ab4e-466d-e9e8-89d5",
@@ -11932,7 +18433,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b899-92e2-693a-975f",
@@ -11950,7 +18452,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f5ac-4f37-fe7b-36b6",
@@ -11970,7 +18473,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Rotwind",
+          "Lantern",
+          "Silence"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3e5b-23db-4ccd-ea97",
@@ -11988,7 +18496,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c5a7-5f07-2b1a-8f98",
@@ -12005,7 +18514,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2425-13a7-77f0-0112",
@@ -12025,7 +18535,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Putrid vomit"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "66dd-f8c9-f9a6-0e6b",
@@ -12045,7 +18558,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Streams of brackish filth",
+          "Gnarlrod"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "904b-0319-7b2e-2145",
@@ -12064,7 +18581,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Plaguesword"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "cd03-e1f3-fa31-a271",
@@ -12083,7 +18603,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Death's heads",
+          "Foul mouthparts",
+          "Plaguesword"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "7e32-0162-71e2-57a0",
@@ -12103,7 +18628,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Diseased claws and teeth"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d055-25eb-eb2b-7f6a",
@@ -12122,7 +18650,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d037-162a-ac85-9c88",
@@ -12141,7 +18670,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "89d8-7e90-be47-59b6",
@@ -12159,7 +18689,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fa2a-1b44-a513-318d",
@@ -12177,7 +18708,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bc88-0833-743e-0146",
@@ -12195,7 +18727,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3594-bf68-4a46-fbf8",
@@ -12215,7 +18748,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8597-d6dd-511e-80ae",
@@ -12235,7 +18769,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3a39-0b56-25e0-eff8",
@@ -12256,7 +18791,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -12485,8 +19021,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Inferno bolt pistol"
-        ]
+          "Inferno bolt pistol",
+          "Transmogrifying Blast",
+          "Black Staff of Ahriman"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "dfde-eaff-e63e-3aae",
@@ -12504,7 +19043,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a619-beee-4bde-d049",
@@ -12522,7 +19062,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4819-dbbe-8547-4e23",
@@ -12540,7 +19081,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8d9b-b949-2557-dcc4",
@@ -12558,7 +19100,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "60de-4c77-95e1-1337",
@@ -12578,7 +19121,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Hideous Mutations"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3413-b8fd-e22c-da4f",
@@ -12596,7 +19142,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c3a6-8fab-45f0-2d45",
@@ -12614,7 +19161,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1724-8c9c-c385-16c6",
@@ -12633,7 +19181,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d2f1-7a0b-f7cd-9b46",
@@ -12651,7 +19200,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5b9d-e3c1-3d55-8276",
@@ -12668,7 +19218,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "637a-d542-35aa-e95c",
@@ -12685,7 +19236,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1693-5e00-da69-57bb",
@@ -12703,7 +19255,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "91dc-9aad-0505-52a8",
@@ -12723,7 +19276,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Gaze of Magnus",
+          "Blade of Magnus",
+          "Tzeentch's Firestorm"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "f2aa-19fd-335a-09b3",
@@ -12741,7 +19299,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "094c-c618-92c1-b394",
@@ -12759,7 +19318,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5d3d-e13b-8b76-dad3",
@@ -12775,9 +19335,77 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Rubricae"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Force weapon",
+          "Malefic Curse",
+          "Inferno boltgun",
+          "Close combat weapon",
+          "Warpflamer",
+          "Soulreaper cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Rubric Marines",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Rubric Marine w/ inferno boltgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Inferno boltgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Rubric Marine w/ warpflamer",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Warpflamer",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Rubric Marine w/ soulreaper cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Soulreaper cannon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Aspiring Sorcerer",
+            "variants": [
+              {
+                "name": "Inferno bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno bolt pistol"
+                ]
+              },
+              {
+                "name": "Warpflame pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Warpflame pistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b1cf-c5-5121-92a4",
@@ -12795,9 +19423,75 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Rubricae",
           "Terminator"
         ],
-        "minModels": 4,
+        "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Force weapon",
+          "Malefic Curse",
+          "Inferno combi-bolter",
+          "Prosperine khopesh",
+          "Soulreaper cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Scarab Occult Terminators",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Scarab Occult Terminator",
+                "min": 3,
+                "max": 9,
+                "weapons": [
+                  "Inferno combi-bolter",
+                  "Prosperine khopesh"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Scarab Occult Terminator w/ heavy warpflamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Prosperine khopesh"
+                ]
+              },
+              {
+                "name": "Scarab Occult Terminator w/ soulreaper cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Prosperine khopesh",
+                  "Soulreaper cannon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Scarab Occult Sorcerer",
+            "variants": [
+              {
+                "name": "Prosperine khopesh",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Prosperine khopesh"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "af1e-9a3d-785c-47f8",
@@ -12815,7 +19509,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c6d1-e73b-9d26-5d8b",
@@ -12835,7 +19530,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "eccd-e442-607b-3fd0",
@@ -12855,7 +19551,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "66f4-929e-1769-f277",
@@ -12875,7 +19572,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1703-3edd-5eb3-fcef",
@@ -12891,10 +19589,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Mutant"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 6,
         "wargear": [
           "Divining spear"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Enlightened",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Divining spear Enlightened",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Divining spear"
+                ]
+              },
+              {
+                "name": "Pistol and chainsword Enlightened",
+                "min": 0,
+                "max": 5,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Aviarch",
+            "variants": [
+              {
+                "name": "Autopistol and chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autopistol and chainsword"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -12914,7 +19652,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f5b9-50c8-5c60-d8ea",
@@ -12930,9 +19669,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Mutant"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": [
+          "Tzaangor blades",
+          "Chainsword"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9-19 Tzaangors",
+            "groupMin": 9,
+            "groupMax": 19,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Tzaangor w/ Tzaangor blades",
+                "min": 0,
+                "max": 19,
+                "weapons": [
+                  "Tzaangor blades"
+                ]
+              },
+              {
+                "name": "Tzaangor w/ pistol and chainsword",
+                "min": 0,
+                "max": 19,
+                "weapons": [
+                  "Chainsword"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Twistbray",
+            "variants": [
+              {
+                "name": "Pistol and chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pistol and chainsword"
+                ]
+              },
+              {
+                "name": "Tzaangor blades",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Tzaangor blades"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "fe4b-b3a4-69b7-3088",
@@ -12947,9 +19739,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Tzeentch"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 2,
+        "maxModels": 4,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "2-4 Sekhetar Robots",
+            "groupMin": 2,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Sekhetar Robot w/ pyreflux meltagun",
+                "min": 0,
+                "max": 4,
+                "weapons": []
+              },
+              {
+                "name": "Sekhetar Robot w/ warpflame projector and claw",
+                "min": 0,
+                "max": 4,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8b9f-917f-37c1-99c3",
@@ -12970,7 +19784,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Fatecaster greatbow"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8f70-9bec-9b83-216b",
@@ -12990,7 +19805,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Infernal Gateway",
+          "Staff of Tomorrow"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c964-c75a-2a9d-e451",
@@ -13010,7 +19829,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Bolt of Change",
+          "Staff of Tzeentch"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "694f-a205-b260-783c",
@@ -13029,7 +19852,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Flamer mouths",
+          "Flickering flames"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "7cbe-2406-8e67-aff5",
@@ -13049,7 +19876,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Lamprey bite"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "4c73-cbd1-f052-80c3",
@@ -13069,7 +19899,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Coruscating pink flames",
+          "Pink claws"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "aec5-4419-39e7-3e63",
@@ -13089,7 +19923,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Coruscating Blue flames",
+          "Blue claws"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "dd17-8cb8-ed8c-f6c8",
@@ -13109,7 +19947,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Hideous Mutations"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8e43-1b14-4d87-7d17",
@@ -13128,7 +19969,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d288-821d-7fef-f3ae",
@@ -13147,7 +19989,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f75a-a5e6-f478-6f55",
@@ -13167,7 +20010,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f158-2979-c38b-65b5",
@@ -13185,7 +20029,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8597-d6dd-511e-80ae",
@@ -13205,7 +20050,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3a39-0b56-25e0-eff8",
@@ -13226,7 +20072,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3594-bf68-4a46-fbf8",
@@ -13246,7 +20093,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -13437,7 +20285,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Samni’arius and Spinegrinder"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3449-7dac-6ac8-5d51",
@@ -13455,8 +20306,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Plasma pistol"
-        ]
+          "Plasma pistol",
+          "Gorechild"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3b15-b424-2059-71fa",
@@ -13473,7 +20326,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Bolt pistol",
+          "Coward's Bane",
+          "Bladed horn"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "40c5-9ebd-6d42-2855",
@@ -13492,7 +20350,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "0294-61a4-c6ed-b2e8",
@@ -13511,7 +20370,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ec72-f024-4283-0558",
@@ -13528,7 +20388,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1b56-682c-ac33-bc5f",
@@ -13545,7 +20406,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f909-00c7-8ba4-018a",
@@ -13561,11 +20423,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Khorne",
           "Berzerkers"
         ],
-        "minModels": 6,
+        "minModels": 10,
         "maxModels": 20,
         "wargear": [
           "Bolt pistol",
           "Plasma pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 - 19 Khorne Berzerkers",
+            "groupMin": 9,
+            "groupMax": 19,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Khorne Berzerker",
+                "min": 5,
+                "max": 19,
+                "weapons": [
+                  "Bolt pistol"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Khorne Berzerker Champion",
+            "variants": [
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -13583,8 +20479,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Terminator",
           "Terminator Squad"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Combi-bolter",
           "Accursed weapon",
@@ -13592,6 +20488,140 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Power fist",
           "Combi-weapon",
           "Paired accursed weapons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 - 9 Terminators",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Combi-bolter, accursed weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combi-bolter",
+                  "Accursed weapon"
+                ]
+              },
+              {
+                "name": "Combi-bolter, chainfist",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Chainfist",
+                  "Combi-bolter"
+                ]
+              },
+              {
+                "name": "Combi-bolter, power fist",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Combi-bolter",
+                  "Power fist"
+                ]
+              },
+              {
+                "name": "Combi-weapon, accursed weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combi-weapon",
+                  "Accursed weapon"
+                ]
+              },
+              {
+                "name": "Combi-weapon, chainfist",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Chainfist",
+                  "Combi-weapon"
+                ]
+              },
+              {
+                "name": "Combi-weapon, power fist",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Combi-weapon",
+                  "Power fist"
+                ]
+              },
+              {
+                "name": "Paired accursed weapons",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Paired accursed weapons"
+                ]
+              },
+              {
+                "name": "Heavy weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Terminator Champion",
+            "variants": [
+              {
+                "name": "Combi-weapon, power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon, power fist"
+                ]
+              },
+              {
+                "name": "Combi-weapon, accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon, accursed weapon"
+                ]
+              },
+              {
+                "name": "Combi-weapon, chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon, chainfist"
+                ]
+              },
+              {
+                "name": "Combi-bolter, accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter, accursed weapon"
+                ]
+              },
+              {
+                "name": "Combi-bolter, chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter, chainfist"
+                ]
+              },
+              {
+                "name": "Combi-bolter, power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter, power fist"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -13607,9 +20637,38 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Khorne"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": [
+          "Skullsmasher and mangler",
+          "Paired manglers"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Dishonoured",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Dishonoured w/ skullsmasher and mangler",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Skullsmasher and mangler"
+                ]
+              },
+              {
+                "name": "Dishonoured w/ paired manglers",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Paired manglers"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9435-1f44-7e5b-d510",
@@ -13628,7 +20687,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Chainblades"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "9932-3d2b-1e47-d53b",
@@ -13647,7 +20709,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Chainblades"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "4251-bd4f-f7ac-9487",
@@ -13665,7 +20730,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "497c-f787-5a7e-1020",
@@ -13683,7 +20749,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "04a0-269e-3bab-2c61",
@@ -13701,7 +20768,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ea51-5575-9e74-9346",
@@ -13719,7 +20787,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "81e1-b212-69c1-308f",
@@ -13737,7 +20806,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "273a-db24-3f7c-b977",
@@ -13754,7 +20824,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "de2e-8fae-9d22-24a4",
@@ -13772,7 +20843,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a619-8a52-be03-3bd5",
@@ -13790,7 +20862,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e849-ce40-ee43-7623",
@@ -13808,7 +20881,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "edde-57bf-bccc-d8b2",
@@ -13827,7 +20901,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Hideous Mutations"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "836c-f65b-6bcb-9663",
@@ -13847,7 +20924,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b399-9b66-e550-8050",
@@ -13865,7 +20943,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 8,
         "maxModels": 8,
         "wargear": [
-          "Chainblade"
+          "Chainblade",
+          "Blood harpoon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "7 Goremongers",
+            "groupMin": 7,
+            "groupMax": 7,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Goremonger w/ blood harpoon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blood harpoon"
+                ]
+              },
+              {
+                "name": "Goremonger w/ 2 pistols",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Goremonger w/ chainblade",
+                "min": 7,
+                "max": 7,
+                "weapons": [
+                  "Chainblade"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -13885,7 +20996,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "71d9-9dc2-2b9a-6db3",
@@ -13903,7 +21015,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Bellow of endless fury",
+          "Slaughter and Carnage"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "4ad2-bd20-6dfe-776b",
@@ -13922,7 +21038,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9188-4709-00ba-e5e0",
@@ -13941,7 +21058,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e65f-c7c7-1d18-1a60",
@@ -13960,7 +21078,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b657-1743-6e3a-0838",
@@ -13980,7 +21099,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Burning roar"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "85e5-721a-d505-3881",
@@ -13999,7 +21121,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "71ad-8562-f833-5872",
@@ -14018,7 +21141,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Bladed horn"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "544e-3db3-4878-3db3",
@@ -14037,7 +21163,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3594-bf68-4a46-fbf8",
@@ -14057,7 +21184,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8597-d6dd-511e-80ae",
@@ -14077,7 +21205,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3a39-0b56-25e0-eff8",
@@ -14098,7 +21227,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -14353,7 +21483,35 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": []
+        "wargear": [
+          "Close Combat Weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Wraithguard",
+            "variants": [
+              {
+                "name": "Wraithcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Wraithcannon"
+                ]
+              },
+              {
+                "name": "D-Scythe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "D-Scythe"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "592a-b255-6c58-19ec",
@@ -14369,9 +21527,47 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Ynnari"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Twin Shuriken Catapult",
+          "Scatter Laser",
+          "Shuriken Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Windriders",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Windrider with Twin Shuriken Catapult",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Twin Shuriken Catapult"
+                ]
+              },
+              {
+                "name": "Windrider with Scatter Laser",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Scatter Laser"
+                ]
+              },
+              {
+                "name": "Windrider with Shuriken Cannon",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Shuriken Cannon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "828d-840a-9a67-9074",
@@ -14390,7 +21586,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "The Bloody Twins",
+          "The Sword of Asur"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "df57-7a59-75eb-ce63",
@@ -14408,7 +21608,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "497a-263e-966a-5a15",
@@ -14427,7 +21628,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "554c-8b4f-1059-28a7",
@@ -14445,7 +21647,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "The Wailing Doom"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8732-df2f-a542-805f",
@@ -14465,7 +21670,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Fury of the Tempest",
+          "The Shining Blade"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "cc68-ad19-7285-7a11",
@@ -14483,9 +21692,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ynnari",
           "Corsairs and Travelling Players"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Shuriken rifle",
+          "Blaster",
+          "Shredder",
+          "Mistshield",
+          "Power sword"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Voidreavers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Voidreaver with Heavy weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Voidreaver with Shuriken rifle",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Shuriken rifle"
+                ]
+              },
+              {
+                "name": "Voidreaver with sword and pistol",
+                "min": 0,
+                "max": 9,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Voidreaver with special weapon",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Voidreaver with Blaster",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Blaster"
+                ]
+              },
+              {
+                "name": "Voidreaver with Shredder",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shredder"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cbb7-6669-a014-36fe",
@@ -14504,8 +21773,116 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Corsairs and Travelling Players"
         ],
         "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "maxModels": 10,
+        "wargear": [
+          "Paired Hekatarii blades",
+          "Power sword",
+          "Channeler stones",
+          "Executioner",
+          "Witch staff",
+          "Shuriken rifle",
+          "Faolchú",
+          "Fusion pistol",
+          "Long rifle",
+          "Mistshield"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 -9 Voidscarred",
+            "groupMin": 0,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Shade Runner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paired Hekatarii blades"
+                ]
+              },
+              {
+                "name": "Soul Weaver",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power sword",
+                  "Channeler stones"
+                ]
+              },
+              {
+                "name": "Way Seeker",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Executioner",
+                  "Witch staff"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Voidscarred",
+            "groupMin": 4,
+            "groupMax": 0,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Voidscarred w/ pistol and sword",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Power sword"
+                ]
+              },
+              {
+                "name": "Voidscarred w/ rifle",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Shuriken rifle"
+                ]
+              },
+              {
+                "name": "Voidscarred with Faolchú",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Faolchú",
+                  "Power sword"
+                ]
+              },
+              {
+                "name": "Voidscarred with fusion pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion pistol"
+                ]
+              },
+              {
+                "name": "Voidscarred with heavy weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Voidscarred with ranger long rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Long rifle"
+                ]
+              },
+              {
+                "name": "Voidscarred with special weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "90c9-aaac-5ef8-f043",
@@ -14524,7 +21901,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6863-bf42-238a-fd0b",
@@ -14543,7 +21921,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Reaper Launcher",
+          "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Dark Reapers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Dark Reaper",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Reaper Launcher",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5768-1f87-3a16-d901",
@@ -14562,7 +21962,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e6c2-f3b2-6d3e-c3d3",
@@ -14581,7 +21982,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Avenger Shuriken Catapult",
+          "Close Combat Weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Dire Avengers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Dire Avenger",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Avenger Shuriken Catapult",
+                  "Close Combat Weapon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f48e-276e-a997-c90e",
@@ -14601,7 +22024,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Shuriken Pistol",
+          "Staff of Ulthamar and witchblade",
+          "Mind War"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "1d83-167-486c-bac4",
@@ -14619,7 +22047,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b2f5-8219-f875-917e",
@@ -14638,7 +22067,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "833b-55bc-73be-8862",
@@ -14658,7 +22088,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5374-9e93-8af2-819e",
@@ -14677,7 +22108,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Dragon Fusion Gun",
+          "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Fire Dragons",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Fire Dragon",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Dragon Fusion Gun",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9940-a69b-682e-ccf4",
@@ -14695,7 +22148,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9262-3993-1368-be5a",
@@ -14714,7 +22168,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Searsong",
+          "The Fire Axe"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "e78a-4442-4ed2-66bf",
@@ -14733,7 +22191,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 11,
         "maxModels": 11,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "551b-900c-3681-8f11",
@@ -14753,7 +22212,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7fcb-9262-474a-7cec",
@@ -14771,7 +22231,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Banshee Blade",
+          "Shuriken Pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Howling Banshees",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Howling Banshee",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Banshee Blade",
+                  "Shuriken Pistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "77f9-e8de-225f-9e68",
@@ -14790,7 +22272,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Silent Death",
+          "The Blade of Destruction"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "6f18-95b7-2662-8925",
@@ -14809,7 +22295,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Maugetar"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "908a-fc2b-5a53-599f",
@@ -14826,7 +22315,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b98b-701f-9c0c-5437",
@@ -14844,7 +22334,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Long rifle"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8c34-52ba-cbd0-9ca4",
@@ -14864,7 +22357,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "433-faed-ea62-c531",
@@ -14883,7 +22377,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Twin Shuriken Catapult",
+          "Laser Lance",
+          "Shimmershield"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Shining Spears",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Shining Spear",
+                "min": 2,
+                "max": 5,
+                "weapons": [
+                  "Twin Shuriken Catapult",
+                  "Laser Lance"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "c1ff-dc11-9853-e3e3",
@@ -14901,7 +22418,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Long rifle",
+          "Scatter Laser"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "9270-4b93-ca59-f3ed",
@@ -14920,7 +22441,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 4,
-        "wargear": []
+        "wargear": [
+          "Close Combat Weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Bike Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Skyweaver",
+            "variants": [
+              {
+                "name": "Skyweaver Haywire Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skyweaver Haywire Cannon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rider Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Skyweaver",
+            "variants": [
+              {
+                "name": "Star Bolas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Star Bolas"
+                ]
+              },
+              {
+                "name": "Zephyrglaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Zephyrglaive"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f88f-60c5-3daf-3d2f",
@@ -14939,7 +22504,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Solitaire Weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "e53b-7d09-eb7c-c6c7",
@@ -14958,7 +22526,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "854b-f8e-28fa-8c24",
@@ -14978,7 +22547,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5452-c4a7-59fb-f05c",
@@ -14995,10 +22565,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Ynnari"
         ],
-        "minModels": 5,
+        "minModels": 11,
         "maxModels": 11,
         "wargear": [
           "Flamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "10 Storm Guardians",
+            "groupMin": 10,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Storm Guardian",
+                "min": 4,
+                "max": 10,
+                "weapons": []
+              },
+              {
+                "name": "Storm Guardian with Flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Storm Guardian with Fusion Gun",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              },
+              {
+                "name": "Storm Guardian with Power Sword",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              },
+              {
+                "name": "Storm Guardian with Flamer & Power Sword",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Storm Guardian with Fusion Gun & Power Sword",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              }
+            ]
+          }
         ]
       },
       {
@@ -15018,7 +22638,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "240f-70a4-7ba7-a538",
@@ -15038,7 +22659,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Lasblaster",
+          "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Swooping Hawks",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Swooping Hawk",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Lasblaster",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "dd79-c2fe-59d6-d2",
@@ -15055,7 +22698,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Asu-var"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "68fb-4b6f-2bf8-7105",
@@ -15074,7 +22720,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Vilith-zhar",
+          "Swirling soul energy"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "dac1-6a7f-a06a-82cf",
@@ -15091,11 +22741,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 12,
         "wargear": [
+          "Shuriken Pistol",
+          "Harlequin's Blade",
+          "Harlequin's Special Weapon",
           "Fusion Pistol",
           "Neuro Disruptor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-11 Players",
+            "groupMin": 4,
+            "groupMax": 11,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Player with Harlequin's Blade",
+                "min": 0,
+                "max": 11,
+                "weapons": [
+                  "Shuriken Pistol",
+                  "Harlequin's Blade"
+                ]
+              },
+              {
+                "name": "Player with Harlequin's Special Weapon",
+                "min": 0,
+                "max": 11,
+                "weapons": [
+                  "Shuriken Pistol",
+                  "Harlequin's Special Weapon"
+                ]
+              },
+              {
+                "name": "Player with Fusion Pistol",
+                "min": 0,
+                "max": 11,
+                "weapons": [
+                  "Fusion Pistol"
+                ]
+              },
+              {
+                "name": "Player with Neuro Disruptor",
+                "min": 0,
+                "max": 11,
+                "weapons": [
+                  "Neuro Disruptor"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -15115,7 +22812,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e011-d99d-f0de-5289",
@@ -15134,7 +22832,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "291f-2885-4512-f0cd",
@@ -15153,7 +22852,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d61-c058-6bd1-112f",
@@ -15171,9 +22871,38 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Warlock",
           "Ynnari"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 2,
+        "maxModels": 4,
+        "wargear": [
+          "Witchblade",
+          "Singing Spear"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-4 Warlocks",
+            "groupMin": 2,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Warlock with Witchblade",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Witchblade"
+                ]
+              },
+              {
+                "name": "Warlock with Singing Spear",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Singing Spear"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f52d-1814-7d66-1f7b",
@@ -15192,8 +22921,44 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ynnari"
         ],
         "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "maxModels": 2,
+        "wargear": [
+          "Twin Shuriken Catapult",
+          "Witchblade",
+          "Shuriken Pistol",
+          "Destructor",
+          "Singing Spear"
+        ],
+        "wargearOptions": [
+          {
+            "name": "1-2 Warlock Skyrunners",
+            "groupMin": 1,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Warlock Skyrunner with Witchblade",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Twin Shuriken Catapult",
+                  "Witchblade"
+                ]
+              },
+              {
+                "name": "Warlock Skyrunner with Singing Spear",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shuriken Pistol",
+                  "Twin Shuriken Catapult",
+                  "Destructor",
+                  "Singing Spear"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "57ec-47a8-a59a-6a46",
@@ -15213,7 +22978,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Death spinner"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Warp Spiders",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Warp Spider",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Death spinner"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ad88-f706-318c-e70e",
@@ -15231,7 +23016,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bb4f-4359-cc16-e6d5",
@@ -15250,7 +23036,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Wraithblade",
+            "variants": [
+              {
+                "name": "Ghostswords",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ghostswords"
+                ]
+              },
+              {
+                "name": "Ghostaxe and Forceshield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ghostaxe and Forceshield"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "bfd-df5a-b358-4cf9",
@@ -15270,7 +23082,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b9e9-397e-d83a-f77a",
@@ -15289,7 +23102,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ada5-25ce-d5d5-4ccb",
@@ -15307,7 +23121,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Kha-vir",
+          "Storm of Whispers"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c90f-a8e5-6afa-eb91",
@@ -15326,7 +23144,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Scorpion chainsword",
+          "Shuriken pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Striking Scorpions",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Striking Scorpion",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Scorpion chainsword",
+                  "Shuriken pistol"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "79b3-2cd1-d7b4-d7b1",
@@ -15345,7 +23185,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ca40-4a0d-567-852",
@@ -15364,7 +23205,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5f10-27fc-f1e4-af90",
@@ -15382,7 +23224,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5bf7-f905-8fab-43b4",
@@ -15400,7 +23243,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Klaive"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Incubi",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Incubi",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Klaive"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "807b-0b72-5908-a3d4",
@@ -15416,9 +23279,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Kabalite Warriors",
           "Aeldari"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Shredder",
+          "Splinter rifle",
+          "Blaster",
+          "Splinter cannon",
+          "Dark lance",
+          "Phantasm Grenade Launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Kabalite Warriors",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kabalite Warrior with Shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shredder"
+                ]
+              },
+              {
+                "name": "Kabalite Warrior",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Splinter rifle"
+                ]
+              },
+              {
+                "name": "Kabalite Warrior with Blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blaster"
+                ]
+              },
+              {
+                "name": "Kabalite Warrior with Splinter Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter cannon"
+                ]
+              },
+              {
+                "name": "Kabalite Warrior with Dark Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dark lance"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8e15-3c74-d36f-7669",
@@ -15436,7 +23356,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "915d-ad53-9518-7a85",
@@ -15454,7 +23375,54 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Splinter Rifle",
+          "Splinter Pistol",
+          "Bladevanes",
+          "Blaster",
+          "Heat Lance",
+          "Agonizer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Reavers",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Reaver",
+                "min": 2,
+                "max": 5,
+                "weapons": [
+                  "Splinter Rifle",
+                  "Splinter Pistol",
+                  "Bladevanes"
+                ]
+              },
+              {
+                "name": "Reaver with Blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blaster",
+                  "Splinter Pistol",
+                  "Bladevanes"
+                ]
+              },
+              {
+                "name": "Reaver with Heat Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter Pistol",
+                  "Heat Lance",
+                  "Bladevanes"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "c2e0-ca3e-e8c1-e019",
@@ -15472,7 +23440,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5443-6671-baeb-77a3",
@@ -15490,7 +23459,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "36fd-7c3f-b728-c5d4",
@@ -15508,7 +23478,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Splinter Pistol",
+          "Hekatarii Blade"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Wyches",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Wych",
+                "min": 9,
+                "max": 9,
+                "weapons": [
+                  "Splinter Pistol",
+                  "Hekatarii Blade"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2c93-f32d-64ea-b829",
@@ -15527,7 +23519,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5df4-e13a-f6f4-b672",
@@ -15546,7 +23539,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8bbc-7ae0-5d5c-a105",
@@ -15566,7 +23560,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Brood Twain",
+          "Spider's Fangs",
+          "Weaverender"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d756-653a-872b-5c1b",
@@ -15586,7 +23585,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "54dc-aa1f-817a-a5c5",
@@ -15604,7 +23604,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "The Eye of Wrath",
+          "The Spear of Twilight",
+          "Shuriken Pistol"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "4273-173c-e850-4071",
@@ -15623,7 +23628,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Dread of the Deep Void",
+          "Waystave"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "662e-14c3-c894-e830",
@@ -15640,9 +23649,73 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Anhrathe",
           "Jump Pack"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Corsair Blade",
+          "Corsair blaster",
+          "Flamer",
+          "Fusion gun",
+          "Shredder"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 -9 Skyreavers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Skyreaver w/ pistol and blade",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Corsair Blade"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skyreavers w/ alternative weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Skyreaver w/ blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corsair blaster"
+                ]
+              },
+              {
+                "name": "Skyreaver w/ flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Skyreaver w/ fusion gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion gun"
+                ]
+              },
+              {
+                "name": "Skyreaver w/ shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shredder"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8e2c-2234-8595-f191",
@@ -15661,7 +23734,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "915f-4ee6-3358-31ca",
@@ -15680,7 +23754,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5578-f918-6e88-3d0e",
@@ -15700,7 +23775,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -16561,7 +24637,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a5d3-e21b-bf13-a952",
@@ -16579,7 +24656,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Spirit Vortex"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "a30b-b966-d264-e935",
@@ -16597,7 +24677,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "The Executioner's demiklaives"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "32ff-aec4-9669-c8a2",
@@ -16615,7 +24698,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2311-9feb-9d0a-8154",
@@ -16633,7 +24717,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Hellglaive",
+          "Splinter Pods",
+          "Phantasm Grenade Launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Hellions",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hellion",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Hellglaive",
+                  "Splinter Pods"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1529-793d-481b-82bf",
@@ -16651,7 +24758,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Klaive"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Incubi",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Incubi",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Klaive"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d20b-783-ccf6-b29d",
@@ -16667,9 +24794,71 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Kabal"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Shredder",
+          "Close Combat Weapon",
+          "Splinter rifle",
+          "Blaster",
+          "Splinter cannon",
+          "Dark lance"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Kabalite Warriors",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kabalite Warrior with Shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shredder",
+                  "Close Combat Weapon"
+                ]
+              },
+              {
+                "name": "Kabalite Warrior",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Splinter rifle",
+                  "Close Combat Weapon"
+                ]
+              },
+              {
+                "name": "Kabalite Warrior with Blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blaster",
+                  "Close Combat Weapon"
+                ]
+              },
+              {
+                "name": "Kabalite Warrior with Splinter Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter cannon",
+                  "Close Combat Weapon"
+                ]
+              },
+              {
+                "name": "Kabalite Warrior with Dark Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dark lance",
+                  "Close Combat Weapon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ae1b-1a96-5b4c-cecc",
@@ -16688,7 +24877,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Lelith's blades"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "6a3a-7973-b509-532e",
@@ -16706,7 +24898,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Baleblast",
+          "Glimmersteel Blade"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Mandrakes",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Mandrake",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Baleblast",
+                  "Glimmersteel Blade"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "635b-21f4-f801-453",
@@ -16723,7 +24937,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3376-d337-6a33-4bca",
@@ -16741,7 +24956,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fbc4-c7d0-db5b-91c",
@@ -16758,7 +24974,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2c3a-9752-2516-69ab",
@@ -16776,7 +24993,53 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Splinter Rifle",
+          "Splinter Pistol",
+          "Bladevanes",
+          "Blaster",
+          "Heat Lance"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Reavers",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Reaver",
+                "min": 2,
+                "max": 5,
+                "weapons": [
+                  "Splinter Rifle",
+                  "Splinter Pistol",
+                  "Bladevanes"
+                ]
+              },
+              {
+                "name": "Reaver with Blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blaster",
+                  "Splinter Pistol",
+                  "Bladevanes"
+                ]
+              },
+              {
+                "name": "Reaver with Heat Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter Pistol",
+                  "Heat Lance",
+                  "Bladevanes"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7c93-baac-e65f-58bd",
@@ -16794,9 +25057,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Jump Pack",
           "Blades for Hire"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 Scourges",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Scourge with Heavy Weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b5a9-c802-10f0-6768",
@@ -16814,7 +25097,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Archite glaive and agoniser"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "5c5f-b70b-f6ee-a81e",
@@ -16832,7 +25118,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ee2c-6ca0-5e29-37a6",
@@ -16849,7 +25136,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "71e1-7d54-4856-4ce1",
@@ -16867,7 +25155,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2659-7a1b-3ce6-8e4b",
@@ -16883,14 +25172,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Haemonculus Covens",
           "Aeldari"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
+          "Twin torturer's tools",
           "Torturer's tool",
           "Hexrifle",
           "Liquifier gun",
           "Ossefactor",
           "Stinger pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Wracks",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Wrack",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Twin torturer's tools"
+                ]
+              },
+              {
+                "name": "Wrack with Hexrifle",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Torturer's tool",
+                  "Hexrifle"
+                ]
+              },
+              {
+                "name": "Wrack with Liquifier Gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Torturer's tool",
+                  "Liquifier gun"
+                ]
+              },
+              {
+                "name": "Wrack with Ossefactor",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Torturer's tool",
+                  "Ossefactor"
+                ]
+              },
+              {
+                "name": "Wrack with Stinger Pistol",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Torturer's tool",
+                  "Stinger pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -16907,9 +25251,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Wych Cult",
           "Aeldari"
         ],
-        "minModels": 7,
+        "minModels": 10,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Splinter Pistol",
+          "Hekatarii Blade",
+          "Gladiatorial weapons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Wyches",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Wych",
+                "min": 6,
+                "max": 9,
+                "weapons": [
+                  "Splinter Pistol",
+                  "Hekatarii Blade"
+                ]
+              },
+              {
+                "name": "Wych w/ Gladiatorial weapons",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Gladiatorial weapons"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cc68-ad19-7285-7a11",
@@ -16927,9 +25302,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ynnari",
           "Corsairs and Travelling Players"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Shuriken rifle",
+          "Blaster",
+          "Shredder",
+          "Mistshield",
+          "Power sword"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Voidreavers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Voidreaver with Heavy weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Voidreaver with Shuriken rifle",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Shuriken rifle"
+                ]
+              },
+              {
+                "name": "Voidreaver with sword and pistol",
+                "min": 0,
+                "max": 9,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Voidreaver with special weapon",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Voidreaver with Blaster",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Blaster"
+                ]
+              },
+              {
+                "name": "Voidreaver with Shredder",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shredder"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cbb7-6669-a014-36fe",
@@ -16948,8 +25383,116 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Corsairs and Travelling Players"
         ],
         "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "maxModels": 10,
+        "wargear": [
+          "Paired Hekatarii blades",
+          "Power sword",
+          "Channeler stones",
+          "Executioner",
+          "Witch staff",
+          "Shuriken rifle",
+          "Faolchú",
+          "Fusion pistol",
+          "Long rifle",
+          "Mistshield"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 -9 Voidscarred",
+            "groupMin": 0,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Shade Runner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paired Hekatarii blades"
+                ]
+              },
+              {
+                "name": "Soul Weaver",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power sword",
+                  "Channeler stones"
+                ]
+              },
+              {
+                "name": "Way Seeker",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Executioner",
+                  "Witch staff"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Voidscarred",
+            "groupMin": 4,
+            "groupMax": 0,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Voidscarred w/ pistol and sword",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Power sword"
+                ]
+              },
+              {
+                "name": "Voidscarred w/ rifle",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Shuriken rifle"
+                ]
+              },
+              {
+                "name": "Voidscarred with Faolchú",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Faolchú",
+                  "Power sword"
+                ]
+              },
+              {
+                "name": "Voidscarred with fusion pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion pistol"
+                ]
+              },
+              {
+                "name": "Voidscarred with heavy weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              },
+              {
+                "name": "Voidscarred with ranger long rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Long rifle"
+                ]
+              },
+              {
+                "name": "Voidscarred with special weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5768-1f87-3a16-d901",
@@ -16968,7 +25511,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f88f-60c5-3daf-3d2f",
@@ -16987,7 +25531,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Solitaire Weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8c34-52ba-cbd0-9ca4",
@@ -17007,7 +25554,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9270-4b93-ca59-f3ed",
@@ -17026,7 +25574,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 4,
-        "wargear": []
+        "wargear": [
+          "Close Combat Weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Bike Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Skyweaver",
+            "variants": [
+              {
+                "name": "Skyweaver Haywire Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skyweaver Haywire Cannon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rider Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Skyweaver",
+            "variants": [
+              {
+                "name": "Star Bolas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Star Bolas"
+                ]
+              },
+              {
+                "name": "Zephyrglaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Zephyrglaive"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "854b-f8e-28fa-8c24",
@@ -17046,7 +25638,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e011-d99d-f0de-5289",
@@ -17065,7 +25658,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "dac1-6a7f-a06a-82cf",
@@ -17082,11 +25676,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 12,
         "wargear": [
+          "Shuriken Pistol",
+          "Harlequin's Blade",
+          "Harlequin's Special Weapon",
           "Fusion Pistol",
           "Neuro Disruptor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-11 Players",
+            "groupMin": 4,
+            "groupMax": 11,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Player with Harlequin's Blade",
+                "min": 0,
+                "max": 11,
+                "weapons": [
+                  "Shuriken Pistol",
+                  "Harlequin's Blade"
+                ]
+              },
+              {
+                "name": "Player with Harlequin's Special Weapon",
+                "min": 0,
+                "max": 11,
+                "weapons": [
+                  "Shuriken Pistol",
+                  "Harlequin's Special Weapon"
+                ]
+              },
+              {
+                "name": "Player with Fusion Pistol",
+                "min": 0,
+                "max": 11,
+                "weapons": [
+                  "Fusion Pistol"
+                ]
+              },
+              {
+                "name": "Player with Neuro Disruptor",
+                "min": 0,
+                "max": 11,
+                "weapons": [
+                  "Neuro Disruptor"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -17106,7 +25747,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a223-234b-7886-fccc",
@@ -17125,7 +25767,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Melee Weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "f2d1-4574-223f-998f",
@@ -17145,7 +25790,37 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": []
+        "wargear": [
+          "Close combat weapon",
+          "Shardcarbine"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Scourge w/ special weapon",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Scourge with Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Scourge",
+                "min": 4,
+                "max": 4,
+                "weapons": [
+                  "Shardcarbine",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "662e-14c3-c894-e830",
@@ -17162,9 +25837,73 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Anhrathe",
           "Jump Pack"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Corsair Blade",
+          "Corsair blaster",
+          "Flamer",
+          "Fusion gun",
+          "Shredder"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 -9 Skyreavers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Skyreaver w/ pistol and blade",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Corsair Blade"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skyreavers w/ alternative weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Skyreaver w/ blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corsair blaster"
+                ]
+              },
+              {
+                "name": "Skyreaver w/ flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Skyreaver w/ fusion gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion gun"
+                ]
+              },
+              {
+                "name": "Skyreaver w/ shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shredder"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "54dc-aa1f-817a-a5c5",
@@ -17182,7 +25921,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "The Eye of Wrath",
+          "The Spear of Twilight",
+          "Shuriken Pistol"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "4273-173c-e850-4071",
@@ -17201,7 +25945,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Dread of the Deep Void",
+          "Waystave"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "62f8-6a75-5ffb-e83b",
@@ -17221,7 +25969,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b5a1-7e2b-7a1d-bbda",
@@ -17241,7 +25990,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -18103,7 +26853,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Aberrant weapons"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "97b1-4873-9fcb-5cb8",
@@ -18120,7 +26871,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cf71-a12a-2730-c40b",
@@ -18137,7 +26889,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a197-f6c3-5d4a-5326",
@@ -18153,12 +26906,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Acolyte Hybrids",
           "Great Devourer"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Hand flamer",
           "Cult claws and knife",
-          "Cult icon"
+          "Cult icon",
+          "Demolition charge"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Acolyte Hybrids",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Acolyte Hybrid w/ Hand Flamer",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Hand flamer",
+                  "Cult claws and knife"
+                ]
+              },
+              {
+                "name": "Acolyte Hybrid w/ Cult Icon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Cult icon",
+                  "Cult claws and knife"
+                ]
+              },
+              {
+                "name": "Acolyte Hybrid w/ Demolition Charge, and Cult Claws and Knife",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Demolition charge",
+                  "Cult claws and knife"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18176,7 +26967,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3a81-2b84-bf4c-4f85",
@@ -18191,13 +26983,59 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer"
         ],
-        "minModels": 2,
+        "minModels": 5,
         "maxModels": 9,
         "wargear": [
           "Grenade launcher",
           "Close combat weapon",
           "Atalan small arms",
           "Atalan power weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-8 Jackals",
+            "groupMin": 4,
+            "groupMax": 8,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Atalan Jackal w/ Grenade launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Grenade launcher",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Atalan Jackal",
+                "min": 1,
+                "max": 8,
+                "weapons": [
+                  "Close combat weapon",
+                  "Atalan small arms"
+                ]
+              },
+              {
+                "name": "Atalan Jackal w/ Atalan power weapon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Atalan small arms",
+                  "Atalan power weapon"
+                ]
+              },
+              {
+                "name": "Atalan Jackal w/ Grenade launcher & power weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Grenade launcher",
+                  "Atalan power weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18215,7 +27053,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5543-973a-cd2e-c941",
@@ -18232,7 +27071,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5ac1-3adb-212a-5e02",
@@ -18249,7 +27089,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1d1-f0d2-b810-12fe",
@@ -18266,7 +27107,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8a84-a8fd-977e-9118",
@@ -18281,13 +27123,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Metamorph mutations",
           "Autopistol",
           "Cult icon",
           "Hand flamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Hybrid Metamorphs",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hybrid Metamorph w/ Autopistol",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Metamorph mutations",
+                  "Autopistol"
+                ]
+              },
+              {
+                "name": "Hybrid Metamorph w/ Cult Icon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Cult icon",
+                  "Metamorph mutations"
+                ]
+              },
+              {
+                "name": "Hybrid Metamorph w/ Hand Flamer",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Hand flamer",
+                  "Metamorph mutations"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18305,7 +27184,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5e0e-11d9-181d-3481",
@@ -18322,7 +27202,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "51e8-dac1-561a-aaa9",
@@ -18339,7 +27220,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4f4-2157-2cb5-8bb",
@@ -18357,7 +27239,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b5d2-8681-6bba-f05b",
@@ -18372,12 +27255,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer"
         ],
-        "minModels": 5,
+        "minModels": 10,
         "maxModels": 20,
         "wargear": [
           "Hybrid firearm",
           "Autopistol",
-          "Close combat weapon"
+          "Close combat weapon",
+          "Cult Icon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9-19 Neophyte Hybrids",
+            "groupMin": 9,
+            "groupMax": 19,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Neophyte Hybrid w/ Hybrid Firearm",
+                "min": 4,
+                "max": 19,
+                "weapons": [
+                  "Hybrid firearm",
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Neophyte Hybrid w/ Hybrid Firearm & Cult Icon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cult Icon",
+                  "Hybrid firearm",
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Neophyte Hybrid w/ Heavy Weapon",
+                "min": 0,
+                "max": 19,
+                "weapons": [
+                  "Close combat weapon",
+                  "Autopistol"
+                ]
+              },
+              {
+                "name": "Neophyte Hybrid w/ Special Weapon",
+                "min": 0,
+                "max": 19,
+                "weapons": [
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18395,7 +27328,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2a91-a18e-bd08-fa66",
@@ -18413,7 +27347,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "30e9-42fa-3a6e-e8ef",
@@ -18430,7 +27365,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "965b-496a-3a1b-22a8",
@@ -18449,7 +27385,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Cult claws and talons"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "4565-bd65-9e8b-284d",
@@ -18466,7 +27403,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3d6c-357e-3c09-813c",
@@ -18483,7 +27421,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "908a-9fd8-2270-8dbd",
@@ -18501,7 +27440,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "04cc-6196-1755-ad58",
@@ -18517,12 +27457,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Acolyte Hybrids",
           "Great Devourer"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Autopistol",
           "Cult claws and knife",
-          "Cult icon"
+          "Cult icon",
+          "Heavy mining tool"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Acolyte Hybrids",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Acolyte Hybrid w/ Auto Pistol",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Autopistol",
+                  "Cult claws and knife"
+                ]
+              },
+              {
+                "name": "Acolyte Hybrid w/ Cult Icon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Cult icon",
+                  "Cult claws and knife"
+                ]
+              },
+              {
+                "name": "Acolyte Hybrid w/ Heavy Mining Tool",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Heavy mining tool"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18542,7 +27519,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5138-978e-c8e6-b90c",
@@ -18561,7 +27539,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "678c-b59c-f85d-0a43",
@@ -18581,7 +27560,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2299-bed9-3e-2b60",
@@ -18596,7 +27576,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 4,
+        "minModels": 5,
         "maxModels": 10,
         "wargear": [
           "Laspistol",
@@ -18604,6 +27584,38 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hunting lance",
           "Steed's hooves",
           "Goad lance"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Rough Riders",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Rough Rider w/ Hunting lance",
+                "min": 3,
+                "max": 9,
+                "weapons": [
+                  "Laspistol",
+                  "Lasgun",
+                  "Hunting lance",
+                  "Steed's hooves"
+                ]
+              },
+              {
+                "name": "Rough Rider w/ Goad lance",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Laspistol",
+                  "Lasgun",
+                  "Goad lance",
+                  "Steed's hooves"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18619,7 +27631,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d10-48db-3241-ec72",
@@ -18634,7 +27647,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "30f5-d90a-9811-d763",
@@ -18649,7 +27663,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bf53-4ab3-ff75-9aa0",
@@ -18667,7 +27682,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2b49-4d03-aaf5-3532",
@@ -18684,7 +27700,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4d28-f2a7-67c1-eb2e",
@@ -18708,7 +27725,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Lasgun",
           "Master vox",
           "Medi-pack"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "a2aa-7688-dcb1-4132",
@@ -18727,7 +27745,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cf23-58db-8ba4-9ec8",
@@ -18744,7 +27763,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ade0-fa44-d4cf-4fc8",
@@ -18762,7 +27782,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e19f-b9b8-75d5-8520",
@@ -18780,7 +27801,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8342-57dd-69d3-e698",
@@ -18795,7 +27817,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "64a9-4cb2-400e-efd1",
@@ -18811,12 +27834,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Artillery",
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 2,
+        "maxModels": 2,
         "wargear": [
           "Lasgun",
           "Laspistol",
-          "Battery close combat weapons"
+          "Battery close combat weapons",
+          "Malleus rocket launcher",
+          "Bombast field gun",
+          "Heavy lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2 Ordnance Teams",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Ordnance Team w/ Malleus rocket launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Malleus rocket launcher",
+                  "Lasgun",
+                  "Laspistol",
+                  "Battery close combat weapons"
+                ]
+              },
+              {
+                "name": "Ordnance Team w/ Bombast field gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Bombast field gun",
+                  "Lasgun",
+                  "Laspistol",
+                  "Battery close combat weapons"
+                ]
+              },
+              {
+                "name": "Ordnance Team w/ Heavy lascannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Heavy lascannon",
+                  "Lasgun",
+                  "Laspistol",
+                  "Battery close combat weapons"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18832,8 +27901,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 3,
         "wargear": [
           "Laspistol",
           "Weapons team close combat weapons",
@@ -18842,6 +27911,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Missile launcher",
           "Lascannon",
           "Autocannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3 Heavy Weapons Teams",
+            "groupMin": 3,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Heavy Weapons Team w/ Heavy bolter",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Laspistol",
+                  "Weapons team close combat weapons",
+                  "Heavy bolter"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Mortar",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Mortar",
+                  "Weapons team close combat weapons",
+                  "Laspistol"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Missile launcher",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Missile launcher",
+                  "Laspistol",
+                  "Weapons team close combat weapons"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Lascannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Laspistol",
+                  "Weapons team close combat weapons",
+                  "Lascannon"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Autocannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Laspistol",
+                  "Weapons team close combat weapons",
+                  "Autocannon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18857,7 +27986,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c28b-c3af-38b2-8865",
@@ -18874,7 +28004,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4967-19b6-1e2a-a300",
@@ -18891,7 +28022,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "abe4-ca71-d5a7-3883",
@@ -18906,18 +28038,121 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 3,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Hot-shot lasgun",
           "Close combat weapon",
+          "Hot-shot marksman rifle",
           "Hot-shot laspistol",
+          "Melta mine",
           "Vox-caster",
           "Flamer",
           "Plasma gun",
           "Hot-shot volley gun",
           "Meltagun",
           "Grenade launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Kasrkin Troopers",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kasrkin Trooper",
+                "min": 2,
+                "max": 9,
+                "weapons": [
+                  "Hot-shot lasgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Hot-shot marksman rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hot-shot marksman rifle",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Hot-shot laspistol and melta mine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Melta mine",
+                  "Close combat weapon",
+                  "Hot-shot laspistol"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Vox-caster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hot-shot lasgun",
+                  "Close combat weapon",
+                  "Vox-caster"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kasrkin Trooper w/ Special weapon",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kasrkin Trooper w/ Flamer",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Plasma gun",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Plasma gun"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Hot-shot volley gun",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Hot-shot volley gun"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Meltagun",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Kasrkin Trooper w/ Grenade launcher",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Grenade launcher"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -18935,7 +28170,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "286e-8e39-b807-5981",
@@ -18952,7 +28188,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cbcc-e0ad-4b9-2c76",
@@ -18969,7 +28206,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d8c8-ea02-21bf-de0b",
@@ -18986,7 +28224,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ddf2-228b-edd9-7e83",
@@ -19003,7 +28242,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e529-5853-d7e2-17ad",
@@ -19020,7 +28260,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "41be-48c9-5476-f47a",
@@ -19038,7 +28279,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4ad0-e988-a513-9530",
@@ -19055,7 +28297,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2127-efcc-1f62-7fab",
@@ -19072,7 +28315,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1b48-2f2-8e9c-1308",
@@ -19087,7 +28331,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "892b-678c-72e6-ee58",
@@ -19102,7 +28347,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5430-18e-d7b0-1d54",
@@ -19120,7 +28366,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "11e5-d4ab-d140-ac38",
@@ -19137,7 +28384,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4b67-f814-358e-f776",
@@ -19154,7 +28402,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d11b-c49d-41bf-1f36",
@@ -19172,7 +28421,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "f1a-7c78-ffdc-bf5b",
@@ -19194,7 +28444,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Power sabre",
           "Death Rider lascarbine",
           "Frag lance"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "95b4-68d6-26cf-188e",
@@ -19209,7 +28460,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c8fc-b9fa-d126-a296",
@@ -19226,7 +28478,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fe5a-764e-37ed-7cef",
@@ -19244,7 +28497,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "67bc-a760-7ed5-9952",
@@ -19259,7 +28513,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9bd8-ac8c-2d3b-79f6",
@@ -19277,7 +28532,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Leaper's talons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "da44-72c9-7a27-48aa",
@@ -19295,7 +28553,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "507d-5ea4-6ef1-bf66",
@@ -19314,7 +28573,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9ce8-7a63-15c3-0347",
@@ -19333,7 +28593,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 20,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bc36-92fe-ecc6-58b3",
@@ -19353,7 +28614,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Lictor claws and talons"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "2bbb-d811-15f7-1a81",
@@ -19371,7 +28633,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d213-efd8-a2b4-42d2",
@@ -19390,7 +28653,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fada-677a-f6a4-cd12",
@@ -19408,7 +28672,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "56db-d7c-b349-677f",
@@ -19426,7 +28691,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Trygon Character upgrade"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "3f5-f7d6-1ce8-e6b9",
@@ -19445,7 +28713,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": []
+        "wargear": [
+          "Ravener claws and talons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "642f-9302-4fdc-ab68",
@@ -19464,7 +28735,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fbcd-274b-0196-b4f6",
@@ -19486,10 +28758,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Close combat weapon",
           "Laspistol",
+          "Alchemyk Counteragents",
+          "Servo-scribes",
           "Lasgun",
           "Master vox",
           "Regimental standard"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "7d22-9fb6-a7e0-c21b",
@@ -19506,8 +28781,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Platoon",
           "Catachan"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 5,
         "wargear": [
           "Close combat weapon",
           "Laspistol",
@@ -19521,6 +28796,127 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Meltagun",
           "Plasma gun",
           "Sniper rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Veteran Guardsmen",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Veteran Guardsman",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Master vox",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Master vox",
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Regimental standard",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Regimental standard",
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Medi-pack",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Medi-pack",
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Lasgun"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special Weapons",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Veteran Guardsman w/ Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Grenade launcher"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Heavy flamer"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Meltagun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Plasma gun"
+                ]
+              },
+              {
+                "name": "Veteran Guardsman w/ Sniper rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Laspistol",
+                  "Sniper rifle"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -19539,7 +28935,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "0595-6d6c-a783-12ab",
@@ -19557,7 +28954,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3e90-9359-2aaa-205e",
@@ -19572,14 +28970,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Autopistol",
           "Trench club",
           "Close combat weapon",
           "Flamer",
-          "Combat shotgun"
+          "Combat shotgun",
+          "Remote mine"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Krieg Combat Engineers",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Krieg Combat Engineer",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Autopistol",
+                  "Trench club"
+                ]
+              },
+              {
+                "name": "Krieg Combat Engineer w/ Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Flamer"
+                ]
+              },
+              {
+                "name": "Krieg Combat Engineer w/ Combat shotgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Close combat weapon",
+                  "Combat shotgun"
+                ]
+              },
+              {
+                "name": "Krieg Combat Engineer w/ Remote mine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Remote mine",
+                  "Autopistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -19595,12 +29041,54 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 4,
+        "maxModels": 4,
         "wargear": [
           "Close combat weapon",
           "Laspistol",
+          "Krieg heavy flamer",
+          "Twin Krieg heavy stubber",
           "Lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3 Heavy Weapons Gunners",
+            "groupMin": 3,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Heavy Weapons Gunners w/ Krieg heavy flamer",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Krieg heavy flamer",
+                  "Close combat weapon",
+                  "Laspistol"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Gunners w/ Twin Krieg heavy stubber",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Twin Krieg heavy stubber",
+                  "Close combat weapon",
+                  "Laspistol"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Gunners w/ Lascannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Close combat weapon",
+                  "Lascannon",
+                  "Laspistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -19616,8 +29104,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 3,
         "wargear": [
           "Weapons team close combat weapons",
           "Heavy bolter",
@@ -19626,6 +29114,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Missile launcher",
           "Lascannon",
           "Autocannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3 Heavy Weapons Teams",
+            "groupMin": 3,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Heavy Weapons Team w/ Heavy bolter",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Weapons team close combat weapons",
+                  "Heavy bolter",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Mortar",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Mortar",
+                  "Weapons team close combat weapons",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Missile launcher",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Missile launcher",
+                  "Weapons team close combat weapons",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Lascannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Weapons team close combat weapons",
+                  "Lascannon",
+                  "Lasgun"
+                ]
+              },
+              {
+                "name": "Heavy Weapons Team w/ Autocannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Lasgun",
+                  "Weapons team close combat weapons",
+                  "Autocannon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -19647,7 +29195,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c10d-772e-a54f-a2b9",
@@ -19667,8 +29216,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
-          "Ravener heavy claws and talons"
-        ]
+          "Ravener heavy claws and talons",
+          "Venom bolt"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "a89f-8ad1-3d79-174f",
@@ -19687,7 +29238,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "527c-d3c6-c620-c7c6",
@@ -19707,7 +29259,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6f46-0c77-acd0-3f5d",
@@ -19726,7 +29279,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c871-4769-71ed-c4b3",
@@ -19743,7 +29297,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "05de-5701-33a0-b23d",
@@ -19758,14 +29313,91 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment"
         ],
-        "minModels": 4,
+        "minModels": 10,
         "maxModels": 10,
         "wargear": [
           "Lasgun",
           "Close combat weapon",
+          "Autostubber",
+          "Vox-caster",
+          "Vox-relay beacon",
           "Long-las",
           "Plasma gun",
           "Meltagun"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Recon Troopers",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Recon Trooper w/ Lasgun",
+                "min": 3,
+                "max": 9,
+                "weapons": [
+                  "Lasgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Recon Trooper w/ Autostubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autostubber",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Recon Trooper w/ Vox-caster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vox-caster",
+                  "Vox-relay beacon",
+                  "Lasgun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Recon Trooper w/ Long-las",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Long-las",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special Weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Recon Trooper w/ Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Recon Trooper w/ Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -19785,7 +29417,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -20228,8 +29861,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Rampart crest",
-          "Volkanite disintegrator"
-        ]
+          "Volkanite disintegrator",
+          "Blade of the Ancestors"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "ba4f-c3f9-6925-af0c",
@@ -20242,10 +29877,149 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 10,
+        "maxModels": 10,
         "wargear": [
-          "Weavefield crest"
+          "Weavefield crest",
+          "Close combat weapon",
+          "Theyn's melee weapon",
+          "Autoch-pattern bolt pistol",
+          "Autoch-pattern bolter",
+          "Ion blaster",
+          "HYLas rotary cannon",
+          "HYLas auto rifle",
+          "L7 missile launcher",
+          "Magna-rail rifle",
+          "EtaCarn plasma beamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hearthkyn Warriors",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hearthkyn Warrior w/ bolter",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Autoch-pattern bolt pistol",
+                  "Close combat weapon",
+                  "Autoch-pattern bolter"
+                ]
+              },
+              {
+                "name": "Hearthkyn Warrior w/ ion blaster",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Autoch-pattern bolt pistol",
+                  "Close combat weapon",
+                  "Ion blaster"
+                ]
+              },
+              {
+                "name": "Hearthkyn Warrior w/ plasma knife",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Autoch-pattern bolt pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hearthkyn Warrior w/ HYLas rotary cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autoch-pattern bolt pistol",
+                  "Close combat weapon",
+                  "HYLas rotary cannon"
+                ]
+              },
+              {
+                "name": "Hearthkyn Warrior w/ HYLas auto rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autoch-pattern bolt pistol",
+                  "Close combat weapon",
+                  "HYLas auto rifle"
+                ]
+              },
+              {
+                "name": "Hearthkyn Warrior w/ L7 missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autoch-pattern bolt pistol",
+                  "Close combat weapon",
+                  "L7 missile launcher"
+                ]
+              },
+              {
+                "name": "Hearthkyn Warrior w/ magna-rail rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autoch-pattern bolt pistol",
+                  "Close combat weapon",
+                  "Magna-rail rifle"
+                ]
+              },
+              {
+                "name": "Hearthkyn Warrior w/ EtaCarn plasma beamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autoch-pattern bolt pistol",
+                  "Close combat weapon",
+                  "EtaCarn plasma beamer"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Theyn",
+            "variants": [
+              {
+                "name": "Autoch-pattern bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autoch-pattern bolter"
+                ]
+              },
+              {
+                "name": "Ion blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ion blaster"
+                ]
+              },
+              {
+                "name": "Theyn's pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Theyn's pistol"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -20261,7 +30035,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2cc6-e2bf-635f-1260",
@@ -20278,7 +30053,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d3a3-2d20-bd7e-6778",
@@ -20293,7 +30069,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [
+          "Autoch-pattern bolter",
+          "Close combat weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8f33-5601-3707-78f4",
@@ -20310,7 +30090,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": []
+        "wargear": [
+          "Autoch-pattern bolt pistol",
+          "Close combat weapon",
+          "Plasma torch",
+          "Manipulator arms",
+          "Las-beam cutter"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "09d3-6357-7888-00d9",
@@ -20325,9 +30112,101 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Exoarmour"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Exo-armour grenade launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Hearthguard",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Einhyr Hearthguard",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Exo-armour grenade launcher"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Hesyr",
+            "variants": [
+              {
+                "name": "EtaCarn plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "EtaCarn plasma gun"
+                ]
+              },
+              {
+                "name": "Volkanite disintegrator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Volkanite disintegrator"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Exchange melee weapon for hammer",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "Hesyr",
+            "variants": [
+              {
+                "name": "Concussion gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Concussion gauntlet"
+                ]
+              },
+              {
+                "name": "Plasma blade gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma blade gauntlet"
+                ]
+              },
+              {
+                "name": "Graviton hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Graviton hammer"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Crest",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Hesyr",
+            "variants": [
+              {
+                "name": "Teleport crest",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Teleport crest"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "415a-e6f6-d17f-d700",
@@ -20343,9 +30222,44 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Cthonian",
           "Beserks"
         ],
-        "minModels": 3,
+        "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Twin concussion gauntlets",
+          "Mole grenade launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "5 - 10 Beserks",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Beserk",
+                "min": 3,
+                "max": 10,
+                "weapons": []
+              },
+              {
+                "name": "Beserk w/ twin concussion gauntlets",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Twin concussion gauntlets"
+                ]
+              },
+              {
+                "name": "Beserk w/ mole grenade launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Mole grenade launcher"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9086-5272-398b-bbce",
@@ -20358,9 +30272,79 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Comms array",
+          "Pan-spectral scanner",
+          "Rollbar searchlight",
+          "HYLas rotary cannon",
+          "Ion beamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3 - 6 Pioneers",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hernkyn Pioneer",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Hernkyn Pioneer w/ comms array",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Comms array"
+                ]
+              },
+              {
+                "name": "Hernkyn Pioneer w/ pan-spectral scanner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pan-spectral scanner"
+                ]
+              },
+              {
+                "name": "Hernkyn Pioneer w/ searchlight",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Rollbar searchlight"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Heavy weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hernkyn Pioneer w/ HYLas rotary cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "HYLas rotary cannon"
+                ]
+              },
+              {
+                "name": "Hernkyn Pioneer w/ ion beamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Ion beamer"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9655-8367-7467-9e6e",
@@ -20375,7 +30359,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ea1b-99f6-c398-06b1",
@@ -20394,7 +30379,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Brôkhyr Thunderkyn",
+            "variants": [
+              {
+                "name": "Bolt cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt cannon"
+                ]
+              },
+              {
+                "name": "Graviton blast cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Graviton blast cannon"
+                ]
+              },
+              {
+                "name": "SP conversion beamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "SP conversion beamer"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a110-e538-4e85-159b",
@@ -20409,7 +30430,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5b0b-c18d-1470-44bb",
@@ -20422,9 +30444,56 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt shotgun",
+          "APM launcher",
+          "Magna-coil rifle",
+          "Bolt revolver and plasma knife"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Hernkyn Yaegir",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hernkyn Yaegir w/ bolt shotgun",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Bolt shotgun"
+                ]
+              },
+              {
+                "name": "Hernkyn Yaegir w/ APM launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "APM launcher"
+                ]
+              },
+              {
+                "name": "Hernkyn Yaegir w/ magna-coil rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Magna-coil rifle"
+                ]
+              },
+              {
+                "name": "Hernkyn Yaegir w/ revolver and knife",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Bolt revolver and plasma knife"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b7e1-55fd-9aae-b690",
@@ -20439,7 +30508,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Autoch-pattern bolt pistol",
+          "Bane"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "7932-6aac-cd01-3181",
@@ -20454,7 +30527,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e5c2-d1a0-b54d-65df",
@@ -20469,7 +30543,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cfbc-9eeb-badb-b28c",
@@ -20488,7 +30563,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1e3f-209d-798f-3a42",
@@ -20505,7 +30581,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Steeljack Theyn",
+            "variants": [
+              {
+                "name": "Disintegrator and knife",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Disintegrator and knife"
+                ]
+              },
+              {
+                "name": "Bolter and sword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolter and sword"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2add-0a08-fbef-8f5e",
@@ -20520,12 +30622,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Ironkin Steeljacks"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 6,
         "wargear": [
           "Autoch-pattern bolter",
           "Concussion gauntlet",
           "Plasma sword"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-5 Ironkin Steeljacks",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Ironkin Steeljack w/ concussion gauntlet",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Autoch-pattern bolter",
+                  "Concussion gauntlet"
+                ]
+              },
+              {
+                "name": "Ironkin Steeljack w/ plasma sword",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Autoch-pattern bolter",
+                  "Plasma sword"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -20545,7 +30675,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Plasma picks",
+          "Autoch-pattern bolt pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Main weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Cthonian Earthshaker",
+            "variants": [
+              {
+                "name": "Breacher ordnance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Breacher ordnance"
+                ]
+              },
+              {
+                "name": "Tremor shells",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Tremor shells"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "0039-5b91-2e96-0e08",
@@ -20564,7 +30723,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "05b6-7622-edbe-7a9a",
@@ -20582,7 +30742,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4eaf-78d5-9195-0e36",
@@ -20601,7 +30762,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c7ea-1b76-c8c1-4786",
@@ -20618,7 +30780,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Kromlôk's Revenge",
+          "Warforge gauntlets"
+        ],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -20878,7 +31044,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Staff of Tomorrow"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "49fd-a80d-8cc0-c76b",
@@ -20895,7 +31064,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Gauntlet of Fire",
+          "Staff of the Destroyer"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d977-6a26-bc03-4722",
@@ -20912,7 +31085,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Eldritch lance",
+          "Impaling legs"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c1e6-b88a-2003-174d",
@@ -20929,7 +31106,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Empathic Obliterator"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "379b-d6a0-cd05-ef89",
@@ -20944,7 +31124,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c401-d95f-c5ce-7738",
@@ -20961,7 +31142,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8725-de36-7ef7-45f6",
@@ -20978,7 +31160,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e667-b37c-61c-4893",
@@ -20993,7 +31176,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "dbe5-257e-e2bd-1b40",
@@ -21010,7 +31194,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "852a-ba39-e93f-6b62",
@@ -21027,7 +31212,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "aea6-b6a1-a924-d31",
@@ -21044,7 +31230,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5b7d-54ea-f7a8-9688",
@@ -21061,7 +31248,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "84bc-87b1-1eec-f574",
@@ -21078,7 +31266,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "58e9-5212-f5a6-c12d",
@@ -21091,9 +31280,38 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": [
+          "Gauss flayer",
+          "Gauss reaper"
+        ],
+        "wargearOptions": [
+          {
+            "name": "10-20 Warriors",
+            "groupMin": 10,
+            "groupMax": 20,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Warrior w/ gauss flayer",
+                "min": 0,
+                "max": 20,
+                "weapons": [
+                  "Gauss flayer"
+                ]
+              },
+              {
+                "name": "Warrior w/ gauss reaper",
+                "min": 0,
+                "max": 20,
+                "weapons": [
+                  "Gauss reaper"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f81-b23c-e183-39d7",
@@ -21106,9 +31324,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "5-10 Immortals",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Immortal",
+                "min": 0,
+                "max": 10,
+                "weapons": [
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7c45-2aab-7526-febe",
@@ -21126,7 +31364,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d504-e79e-f4d9-90aa",
@@ -21143,7 +31382,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c4e3-f6b0-f3aa-9d90",
@@ -21156,9 +31396,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "5-10 Lychguard",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Lychguard",
+                "min": 0,
+                "max": 10,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b7d7-14c9-63c1-ded5",
@@ -21173,7 +31429,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Synaptic disintegrator",
+          "Close combat weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c219-a708-f5b0-f0e7",
@@ -21186,9 +31446,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Flayer claws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "5-10 Flayed Ones",
+            "groupMin": 5,
+            "groupMax": 10,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Flayed One",
+                "min": 0,
+                "max": 10,
+                "weapons": [
+                  "Flayer claws"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ef7a-c413-c779-2d18",
@@ -21203,7 +31483,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Scouring eye",
+          "Scythed limbs"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "66e-26f2-7c38-e4d8",
@@ -21218,9 +31502,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Destroyer Cult"
         ],
-        "minModels": 3,
-        "maxModels": 6,
-        "wargear": []
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Skorpekh hyperphase weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "14fa-6813-e51b-7942",
@@ -21235,7 +31522,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e09-d7d6-e4e3-42c1",
@@ -21250,7 +31538,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Cosmic insanity",
+          "Golden fists",
+          "Singularity Matrix"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "f926-a2fe-3494-24b7",
@@ -21265,7 +31558,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Gaze of death",
+          "Scythe of the Nightbringer",
+          "Quantum Goad"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8065-e9c0-dcb5-be1d",
@@ -21280,7 +31578,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Spear of the Void Dragon",
+          "Voltaic storm",
+          "Canoptek tail blades",
+          "Animus Damper"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "276e-bc21-e1d0-3c41",
@@ -21295,7 +31599,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "259b-a8e3-928f-1d0c",
@@ -21314,7 +31619,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Feeder mandibles"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c6db-9736-4d53-3ef6",
@@ -21329,9 +31637,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Destroyer Cult"
         ],
-        "minModels": 3,
-        "maxModels": 6,
-        "wargear": []
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Ophydian hyperphase weapons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "77d-d442-a3-422c",
@@ -21346,7 +31657,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Shieldvanes",
+          "Close combat weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "6829-6dcb-b342-afe4",
@@ -21361,7 +31676,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a022-9bf6-f08b-c416",
@@ -21378,9 +31694,55 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Canoptek",
           "Wraiths"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "3-6 Wraiths",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Wraith w/ claws and beamer",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Wraith w/ claws and particle caster",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Wraith w/ claws",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Wraith w/ coils",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Wraith w/ coils and beamer",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Wraith w/ coils and particle caster",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1ff-6384-ef1a-8297",
@@ -21395,7 +31757,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e046-8220-d8a2-1d19",
@@ -21410,7 +31773,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6f72-b8f7-fd8d-5c2c",
@@ -21427,7 +31791,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Gauss cannon",
+          "Close combat weapon"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "ff8f-2e43-8af1-3470",
@@ -21445,7 +31813,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9928-da6-4e86-ec9f",
@@ -21460,7 +31829,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2a86-2d6-6446-7f1",
@@ -21475,7 +31845,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "52fb-edb1-c747-415a",
@@ -21490,7 +31861,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "256d-92cd-5d14-bbab",
@@ -21507,7 +31879,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5451-67b5-a66c-71d2",
@@ -21524,7 +31897,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "db10-2662-da6a-516e",
@@ -21541,7 +31915,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7422-7fbf-8694-364c",
@@ -21558,7 +31933,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [
+          "Sceptre of Eternal Glory",
+          "Staff of Stars",
+          "Weapons of the Final Triarch",
+          "Annihilator beam",
+          "Armoured bulk"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "fa11-cd65-fcf6-427c",
@@ -21575,7 +31957,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2e4-afdd-efdd-c5c8",
@@ -21593,7 +31976,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "97d7-4b22-46b7-dae0",
@@ -21610,9 +31994,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Canoptek",
           "Macrocytes"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Atomiser beam",
+          "Nanoscarab projector",
+          "Tesla caster",
+          "Accelerator mandible",
+          "Gauss scalpel"
+        ],
+        "wargearOptions": [
+          {
+            "name": "5 Macrocytes",
+            "groupMin": 5,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Canoptek Macrocyte w/ atomiser beam",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Atomiser beam",
+                  "Nanoscarab projector"
+                ]
+              },
+              {
+                "name": "Canoptek Macrocyte w/ tesla caster",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Tesla caster"
+                ]
+              },
+              {
+                "name": "Canoptek Macrocyte w/ accelerator mandible",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accelerator mandible"
+                ]
+              },
+              {
+                "name": "Canoptek Macrocyte w/ gauss scalpel",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Gauss scalpel"
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b7ee-a0fa-5736-b58f",
@@ -21631,7 +32064,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Twin gauss reaper",
+          "Claws"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "92cc-9d54-5d0c-6663",
@@ -21648,7 +32085,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1d4b-a179-ae99-3283",
@@ -21665,7 +32103,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "be60-a5ae-6c7c-df47",
@@ -21684,7 +32123,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e884-dd7a-a1cd-bad8",
@@ -21703,7 +32143,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "50cd-aa29-f506-8ed1",
@@ -21723,7 +32164,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -21950,7 +32392,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b7c3-d00e-daf2-76fb",
@@ -21966,11 +32409,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Mob",
           "Beast Snagga"
         ],
-        "minModels": 9,
+        "minModels": 10,
         "maxModels": 20,
         "wargear": [
+          "Close combat weapon",
+          "Thump gun",
           "Slugga",
-          "Choppa"
+          "Choppa",
+          "Power snappa"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9-19 Beast Snagga Boyz",
+            "groupMin": 9,
+            "groupMax": 19,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Beast Snagga Boy w/ Thump gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon",
+                  "Thump gun"
+                ]
+              },
+              {
+                "name": "Beast Snagga Boy",
+                "min": 8,
+                "max": 19,
+                "weapons": [
+                  "Slugga",
+                  "Choppa"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -21989,7 +32463,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a8b7-351-d911-a4d6",
@@ -22007,7 +32482,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "95e9-6da3-5e75-2566",
@@ -22025,7 +32501,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "dde2-ca42-e3bc-2ef6",
@@ -22042,7 +32519,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a20-d3af-2c3e-3267",
@@ -22059,7 +32537,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c7c8-6b5b-6bfc-52d1",
@@ -22076,7 +32555,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e651-5901-35e5-dc35",
@@ -22092,8 +32572,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Slugga"
-        ]
+          "Slugga",
+          "Mork’s Teeth"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "e3b1-1240-2476-cd86",
@@ -22108,8 +32590,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Mob"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 10,
+        "maxModels": 20,
         "wargear": [
           "Choppa",
           "Slugga",
@@ -22117,6 +32599,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Close combat weapon",
           "Big shoota",
           "Rokkit launcha"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9-19 Boyz",
+            "groupMin": 9,
+            "groupMax": 19,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Boy w/ Slugga and choppa",
+                "min": 0,
+                "max": 19,
+                "weapons": [
+                  "Choppa",
+                  "Slugga"
+                ]
+              },
+              {
+                "name": "Boy w/ Shoota and close combat weapon",
+                "min": 0,
+                "max": 19,
+                "weapons": [
+                  "Shoota",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special Weapons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Boy w/ Big shoota and close combat weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Big shoota",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Boy w/ Rokkit launcha and close combat weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Rokkit launcha",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22132,7 +32668,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "93a1-386a-e40f-472f",
@@ -22149,7 +32686,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3b42-b41f-d11e-bdca",
@@ -22166,7 +32704,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1594-b986-e77e-d89d",
@@ -22181,7 +32720,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ca85-1d18-dc30-d64e",
@@ -22199,7 +32739,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2d6e-aa3b-c28c-5ef0",
@@ -22214,9 +32755,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Speed Freeks"
         ],
-        "minModels": 2,
+        "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "Deffkoptas (3-6)",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Deffkopta",
+                "min": 2,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Deffkopta w/ Kustom mega-blasta",
+                "min": 0,
+                "max": 2,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1de9-b138-28a1-9c4b",
@@ -22234,6 +32797,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Choppa",
           "Snazzgun"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Flash Gitz",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Flash Gitz",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Choppa",
+                  "Snazzgun"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22249,7 +32831,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": []
+        "wargear": [
+          "Mork’s Roar",
+          "Gork’s Klaw",
+          "Makari’s stabba"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "56d6-a7fc-fa08-4345",
@@ -22266,7 +32853,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "de8f-24f9-c543-92b7",
@@ -22283,7 +32871,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "70de-d621-8465-f7b8",
@@ -22300,7 +32889,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "eb21-c97f-2d9a-b363",
@@ -22318,7 +32908,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8c36-c946-2e0f-f648",
@@ -22333,9 +32924,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Grots"
         ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": []
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [],
+        "wargearOptions": [
+          {
+            "name": "Killa Kans (3-6)",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Killa Kan w/ Kan shoota",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Killa Kan w/ Grotzooka",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Killa Kan w/ Rokkit launcha",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              },
+              {
+                "name": "Killa Kan w/ Skorcha",
+                "min": 0,
+                "max": 6,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "303-267f-e45c-6aa9",
@@ -22348,15 +32973,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 10,
+        "maxModels": 10,
         "wargear": [
           "Slugga",
           "Choppa",
           "Kustom shoota",
           "Close combat weapon",
+          "Breacha ram",
           "Burna",
           "Rokkit launcha"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9 Kommandos",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kommandos w/ Slugga and choppa",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Slugga",
+                  "Choppa"
+                ]
+              },
+              {
+                "name": "Kommandos w/ Kustom shoota",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Kustom shoota",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kommandos w/ Breacha ram",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Breacha ram"
+                ]
+              },
+              {
+                "name": "Kommandos w/ Burna",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Burna",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kommandos w/ Rokkit launcha",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Rokkit launcha",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22374,7 +33054,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3bff-9fad-2d11-7866",
@@ -22389,7 +33070,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7067-34f4-5272-e05f",
@@ -22404,13 +33086,77 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Mega Armour"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 2,
+        "maxModels": 6,
         "wargear": [
           "Kustom shoota",
           "Power klaw",
           "Kombi-weapon",
-          "Killsaw"
+          "Killsaw",
+          "Twin killsaw"
+        ],
+        "wargearOptions": [
+          {
+            "name": "2-6 Meganobz",
+            "groupMin": 2,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Meganob w/ Kustom shoota and power klaw",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Kustom shoota",
+                  "Power klaw"
+                ]
+              },
+              {
+                "name": "Meganob w/ Kombi-weapon and power klaw",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Kombi-weapon",
+                  "Power klaw"
+                ]
+              },
+              {
+                "name": "Meganob w/ Kombi-weapon and killsaw",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Kombi-weapon",
+                  "Killsaw"
+                ]
+              },
+              {
+                "name": "Meganob w/ Kustom shoota and killsaw",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Kustom shoota",
+                  "Killsaw"
+                ]
+              },
+              {
+                "name": "Meganob w/ Killsaw and power klaw",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Power klaw",
+                  "Killsaw"
+                ]
+              },
+              {
+                "name": "Meganob w/ Twin killsaw",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Twin killsaw"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22428,7 +33174,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3b2-8c11-616a-1005",
@@ -22443,7 +33190,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9ee5-2b39-de06-dda6",
@@ -22460,7 +33208,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b42b-ea0-38f1-6300",
@@ -22479,8 +33228,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Thump gun"
-        ]
+          "Thump gun",
+          "Big Chompa’s jaws",
+          "Gutrippa"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "b16a-7132-3f8a-abe5",
@@ -22493,14 +33245,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 5,
+        "maxModels": 10,
         "wargear": [
           "Slugga",
           "Big choppa",
           "Power klaw",
           "Close combat weapon",
           "Kombi-weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Nobz",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Nob w/ Slugga and big choppa",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Slugga",
+                  "Big choppa"
+                ]
+              },
+              {
+                "name": "Nob w/ Slugga and power klaw",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Slugga",
+                  "Power klaw"
+                ]
+              },
+              {
+                "name": "Nob w/ Kombi-weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Close combat weapon",
+                  "Kombi-weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22518,7 +33307,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7669-1442-2c0b-e0c9",
@@ -22533,7 +33323,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a856-30b7-e56d-57db",
@@ -22550,7 +33341,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1d12-e2ae-33bb-4558",
@@ -22567,7 +33359,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6a83-8e1f-63ef-50c3",
@@ -22584,7 +33377,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6c08-9131-14a3-a3b4",
@@ -22601,7 +33395,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4adf-8249-c6b2-dd4f",
@@ -22621,6 +33416,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Slugga",
           "Choppa"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Stormboyz",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Stormboy",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Slugga",
+                  "Choppa"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22634,12 +33448,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 5,
+        "minModels": 6,
         "maxModels": 6,
         "wargear": [
           "Choppa",
           "Rokkit launcha",
-          "Close combat weapon"
+          "Close combat weapon",
+          "Pulsa rokkit"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Tankbustas",
+            "groupMin": 5,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Tankbusta w/ Rokkit launcha",
+                "min": 4,
+                "max": 5,
+                "weapons": [
+                  "Rokkit launcha",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tankbusta w/ Two rokkit launchas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Rokkit launcha",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Tankbusta w/ Pulsa rokkit",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulsa rokkit",
+                  "Rokkit launcha",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22655,7 +33508,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "83a7-ea20-ed9-d14a",
@@ -22670,13 +33524,52 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Speed Freeks"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 6,
         "wargear": [
           "Twin dakkagun",
           "Close combat weapon",
           "Slugga",
           "Choppa"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Warbikers (2-5)",
+            "groupMin": 2,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Warbiker",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Twin dakkagun",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Warbiker w/ Slugga",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Twin dakkagun",
+                  "Slugga",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Warbiker w/ Choppa",
+                "min": 0,
+                "max": 5,
+                "weapons": [
+                  "Twin dakkagun",
+                  "Choppa",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22692,7 +33585,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "494b-11ce-5af-5b50",
@@ -22710,7 +33604,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3832-ad97-2b3b-8775",
@@ -22727,7 +33622,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "260d-9ce4-ea1f-a957",
@@ -22744,7 +33640,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "290-ff5a-b14f-e432",
@@ -22762,7 +33659,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ce45-db08-3795-18a9",
@@ -22777,7 +33675,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Da Grabzappa",
+          "Squigstoppa"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "aeed-c6d9-4b90-376a",
@@ -22794,7 +33696,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fbee-427a-1c46-f621",
@@ -22811,7 +33714,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a596-3d99-257e-0ea1",
@@ -22824,11 +33728,47 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 4,
+        "minModels": 6,
         "maxModels": 6,
         "wargear": [
           "Smash hammer",
+          "Tankhammer",
+          "Knucklebustas",
           "Choppa"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Breaka Boyz",
+            "groupMin": 5,
+            "groupMax": 5,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Breaka Boy",
+                "min": 3,
+                "max": 5,
+                "weapons": [
+                  "Smash hammer"
+                ]
+              },
+              {
+                "name": "Breaka Boy w/ Tankhammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Tankhammer"
+                ]
+              },
+              {
+                "name": "Breaka Boy w/ Knucklebustas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Knucklebustas"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -22847,7 +33787,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "54de-2004-bbc1-3ac6",
@@ -22866,7 +33807,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6a69-8e75-49ae-408f",
@@ -22885,7 +33827,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2ab7-ab71-0af4-5d39",
@@ -22902,7 +33845,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Fixit's wrench",
+          "Psyko-gatler",
+          "Grabba dragga",
+          "Speeding bulk and flaming exhaust"
+        ],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -23485,8 +34434,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Pulse pistol"
-        ]
+          "Pulse pistol",
+          "Light missile pod",
+          "High-energy fusion blaster",
+          "Flechette launcher",
+          "Battlesuit fists"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "a67c-e2aa-41d7-e91e",
@@ -23504,7 +34458,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "High-intensity plasma rifle",
+          "Dawn Blade"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "99fa-35-ba6e-5354",
@@ -23522,7 +34480,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3a73-7255-c639-e89e",
@@ -23540,7 +34499,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8f32-9697-ed41-6e3",
@@ -23557,7 +34517,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5e66-6f0-a181-cc4d",
@@ -23574,7 +34535,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a0f5-5934-1570-5a21",
@@ -23593,8 +34555,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Close combat weapon"
-        ]
+          "Close combat weapon",
+          "Shade"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "acdd-2901-1a75-99f4",
@@ -23611,12 +34575,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Fire Warrior",
           "Non-Kroot"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 10,
+        "maxModels": 10,
         "wargear": [
           "Pulse pistol",
           "Close combat weapon",
+          "Pulse carbine",
           "Pulse rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Fire Warriors",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Fire Warrior w/ pulse carbine",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Pulse carbine",
+                  "Pulse pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Fire Warrior w/ pulse rifle",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Pulse pistol",
+                  "Close combat weapon",
+                  "Pulse rifle"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -23640,7 +34635,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Pulse pistol",
           "Close combat weapon",
           "Pulse blaster"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d631-3ca5-e206-4e6a",
@@ -23656,12 +34652,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Kroot",
           "Carnivores"
         ],
-        "minModels": 8,
+        "minModels": 10,
         "maxModels": 20,
         "wargear": [
           "Close combat weapon",
           "Kroot rifle",
           "Tanglebomb launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "9-19 Kroot Carnivores",
+            "groupMin": 9,
+            "groupMax": 19,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kroot Carnivores",
+                "min": 7,
+                "max": 19,
+                "weapons": [
+                  "Close combat weapon",
+                  "Kroot rifle"
+                ]
+              },
+              {
+                "name": "Kroot Carnivore w/ tanglebomb launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Tanglebomb launcher",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -23678,9 +34702,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Kroot"
         ],
         "minModels": 1,
-        "maxModels": 1,
+        "maxModels": 3,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Krootox fists",
+          "Repeater cannon",
+          "Tanglecannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Krootox Riders",
+            "groupMin": 1,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Krootox Rider w/ repeater cannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Krootox fists",
+                  "Repeater cannon",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Krootox Rider w/ tanglecannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Krootox fists",
+                  "Tanglecannon",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -23699,12 +34756,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Markerlight",
           "Non-Kroot"
         ],
-        "minModels": 3,
+        "minModels": 5,
         "maxModels": 5,
         "wargear": [
           "Battlesuit fists",
           "Burst cannon",
           "Fusion blaster"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4 Stealth Shas'ui",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Stealth Shas'ui w/ burst cannon",
+                "min": 2,
+                "max": 4,
+                "weapons": [
+                  "Battlesuit fists",
+                  "Burst cannon"
+                ]
+              },
+              {
+                "name": "Stealth Shas'ui w/ fusion blaster",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Battlesuit fists",
+                  "Fusion blaster"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -23724,7 +34809,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5fe4-86de-b88c-a47b",
@@ -23742,7 +34828,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2598-d700-9952-e439",
@@ -23763,7 +34850,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Pulse pistol",
           "Close combat weapon",
-          "Semi-automatic grenade launcher"
+          "Pulse carbine",
+          "Semi-automatic grenade launcher",
+          "Ion rifle",
+          "Rail rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pathfinders",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Pathfinders w/ pulse carbine",
+                "min": 9,
+                "max": 9,
+                "weapons": [
+                  "Pulse carbine",
+                  "Pulse pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Pathfinders w/ pulse carbine and grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulse carbine",
+                  "Semi-automatic grenade launcher",
+                  "Pulse pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special Weapons (0-3)",
+            "groupMin": 0,
+            "groupMax": 3,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Pathfinders w/ ion rifle",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Ion rifle",
+                  "Pulse pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Pathfinders w/ rail rifle",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Rail rifle",
+                  "Pulse pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -23784,7 +34933,55 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Stingwing claws",
           "Neutron blaster",
-          "T'au flamer"
+          "T'au flamer",
+          "Neutron grenade launcher",
+          "Neutron rail rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "4-9 Vespid Stingwings",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Vespid Stingwings w/ Neutron Blaster",
+                "min": 4,
+                "max": 9,
+                "weapons": [
+                  "Stingwing claws",
+                  "Neutron blaster"
+                ]
+              },
+              {
+                "name": "Vespid Stingwings w/ T'au Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "T'au flamer",
+                  "Stingwing claws"
+                ]
+              },
+              {
+                "name": "Vespid Stingwings w/ Neutron Grenade Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neutron grenade launcher",
+                  "Stingwing claws"
+                ]
+              },
+              {
+                "name": "Vespid Stingwings w/ Neutron Rail Rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neutron rail rifle",
+                  "Stingwing claws"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -23804,7 +35001,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [
+          "Ripping fangs"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "a594-317-b90a-a226",
@@ -23825,7 +35025,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Crushing bulk"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "5d8f-5530-263d-651b",
@@ -23844,7 +35045,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ca9-49ab-17c1-8556",
@@ -23861,7 +35063,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bfe0-2e9f-6f57-b48f",
@@ -23879,7 +35082,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "14f3-9aa6-21af-7fe3",
@@ -23896,7 +35100,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "cac0-2569-67c8-f492",
@@ -23913,7 +35118,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8d6a-3409-52db-a8c",
@@ -23930,7 +35136,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "439b-e08-4466-e162",
@@ -23948,7 +35155,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "72f2-7d0b-80f9-43b7",
@@ -23964,14 +35172,84 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Kroot",
           "Farstalkers"
         ],
-        "minModels": 11,
-        "maxModels": 11,
+        "minModels": 12,
+        "maxModels": 12,
         "wargear": [
+          "Ripping fangs",
           "Farstalker firearm",
           "Kroot pistol",
           "Close combat weapon",
           "Dvorgite skinner",
-          "Londaxi tribalest"
+          "Londaxi tribalest",
+          "Ritual blade"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Kroot Farstalkers",
+            "groupMin": 9,
+            "groupMax": 9,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kroot Farstalker",
+                "min": 8,
+                "max": 8,
+                "weapons": [
+                  "Farstalker firearm",
+                  "Kroot pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kroot Farstalker w/ Farstalker firearm and Pech'ra",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kroot pistol",
+                  "Farstalker firearm",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Special Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Kroot Farstalker w/ Dvorgite skinner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dvorgite skinner",
+                  "Kroot pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kroot Farstalker w/ Londaxi tribalest",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Londaxi tribalest",
+                  "Kroot pistol",
+                  "Close combat weapon"
+                ]
+              },
+              {
+                "name": "Kroot Farstalker",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Farstalker firearm",
+                  "Kroot pistol",
+                  "Close combat weapon"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -23990,7 +35268,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1c73-43dc-bef0-a468",
@@ -24007,7 +35286,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6a78-555-46c7-999b",
@@ -24024,7 +35304,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8e75-7545-e43b-7c67",
@@ -24042,7 +35323,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e88f-bc7a-c3f5-8e47",
@@ -24062,7 +35344,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9373-d0b3-94c9-e47",
@@ -24082,7 +35365,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fb32-c683-b38f-d339",
@@ -24102,7 +35386,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2ebe-a524-656d-7f0e",
@@ -24121,7 +35406,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "e9bc-7a6e-322c-87fd",
@@ -24140,7 +35426,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bb34-e371-33ee-397",
@@ -24159,7 +35446,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "4e8a-c3f4-e497-4901",
@@ -24177,7 +35465,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7f73-6728-df6f-1446",
@@ -24198,6 +35487,26 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hunting blades",
           "Kroot pistol and hunting javelins",
           "Rampager fists"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Krootox Rampagers",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Krootox Rampagers",
+                "min": 3,
+                "max": 6,
+                "weapons": [
+                  "Hunting blades",
+                  "Kroot pistol and hunting javelins",
+                  "Rampager fists"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -24216,7 +35525,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ed9c-6a08-c915-c757",
@@ -24235,7 +35545,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "86c3-1150-ef4d-d870",
@@ -24254,7 +35565,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6623-c2cb-6705-580b",
@@ -24275,8 +35587,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Shardstorm burst system",
           "MV15 Gun Drone",
-          "XV pulse pistol"
-        ]
+          "XV pulse pistol",
+          "Fusion eliminator",
+          "Ion scattercannon"
+        ],
+        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -24621,7 +35936,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "13f7-1a3-eff-7393",
@@ -24641,7 +35957,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b86a-b38a-380c-483d",
@@ -24661,7 +35978,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9184-9ab6-9238-f558",
@@ -24678,7 +35996,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Old One Eye’s claws and talons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "a125-b6fb-2945-56a",
@@ -24699,7 +36020,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Tyranid Warrior claws and talons"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "5815-871c-9260-287a",
@@ -24721,7 +36043,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Tyranid Warrior claws and talons"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "359c-db2c-681a-8d62",
@@ -24737,10 +36060,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Great Devourer",
           "Endless Multitude"
         ],
-        "minModels": 7,
+        "minModels": 10,
         "maxModels": 20,
         "wargear": [
-          "Chitinous claws and teeth"
+          "Chitinous claws and teeth",
+          "Shardlauncher",
+          "Spike rifle",
+          "Strangleweb"
+        ],
+        "wargearOptions": [
+          {
+            "name": "10-20 Termagants",
+            "groupMin": 10,
+            "groupMax": 20,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Termagants",
+                "min": 7,
+                "max": 20,
+                "weapons": [
+                  "Chitinous claws and teeth"
+                ]
+              },
+              {
+                "name": "Termagant w/ Shardlauncher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shardlauncher",
+                  "Chitinous claws and teeth"
+                ]
+              },
+              {
+                "name": "Termagant w/ Spike rifle",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Spike rifle",
+                  "Chitinous claws and teeth"
+                ]
+              },
+              {
+                "name": "Termagant w/ Strangleweb",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Strangleweb",
+                  "Chitinous claws and teeth"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -24759,7 +36130,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 20,
-        "wargear": []
+        "wargear": [
+          "Hormagaunt talons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "30d0-521c-1d45-f57b",
@@ -24776,7 +36150,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1645-5407-92c8-1441",
@@ -24793,7 +36168,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "1ae1-ed96-5100-eda5",
@@ -24812,7 +36188,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2c2d-a2f9-61a8-a6c6",
@@ -24832,7 +36209,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "d2c6-bd0b-3205-3319",
@@ -24851,8 +36229,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 3,
         "wargear": [
-          "Chitin-barbed limbs"
-        ]
+          "Chitin-barbed limbs",
+          "Flamespurt"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "6249-358f-27d7-ef60",
@@ -24870,7 +36250,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b563-c6d3-d0e5-1b78",
@@ -24887,7 +36268,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Toxic lashes"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "8ccc-3f27-7e4e-da81",
@@ -24907,7 +36291,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 21,
         "wargear": [
           "Chitinous claws and teeth"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "b622-a22-a04f-6303",
@@ -24929,7 +36314,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Chitinous claws and teeth",
           "Warp blast"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "c590-436d-4fd-ef26",
@@ -24947,7 +36333,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bbfd-5b01-5bd3-a28b",
@@ -24964,7 +36351,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "8e53-d4a-a69f-e71d",
@@ -24981,7 +36369,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "ac7a-2560-c083-45b8",
@@ -24996,10 +36385,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer"
         ],
-        "minModels": 1,
-        "maxModels": 1,
+        "minModels": 3,
+        "maxModels": 6,
         "wargear": [
-          "Chitinous claws and teeth"
+          "Chitinous claws and teeth",
+          "Shockcannon",
+          "Impaler cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "3-6 Hive Guard",
+            "groupMin": 3,
+            "groupMax": 6,
+            "modelContext": "",
+            "variants": [
+              {
+                "name": "Hive Guard w/ shockcannon",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Shockcannon",
+                  "Chitinous claws and teeth"
+                ]
+              },
+              {
+                "name": "Hive Guard w/ impaler cannon",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Impaler cannon",
+                  "Chitinous claws and teeth"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -25017,7 +36436,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "93aa-dd13-de9d-402b",
@@ -25035,7 +36455,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c679-b06a-750b-e7f7",
@@ -25053,7 +36474,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2cdd-3bf1-55e0-7641",
@@ -25070,7 +36492,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "b6ac-f091-a018-dab2",
@@ -25088,7 +36511,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6de-ccee-11b4-be3e",
@@ -25105,7 +36529,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9b5c-3b5a-1f80-9a74",
@@ -25122,7 +36547,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fbc0-3a2b-1d7d-23d9",
@@ -25140,7 +36566,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "853e-48b8-4cc5-3704",
@@ -25158,7 +36585,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6a9b-8e2f-edac-fa2d",
@@ -25177,7 +36605,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "5720-2873-8c2c-edc3",
@@ -25196,7 +36625,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3e96-8098-3401-77af",
@@ -25215,7 +36645,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "31f9-9730-853c-6f13",
@@ -25233,7 +36664,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "fa68-fcb9-38c-cd0f",
@@ -25254,7 +36686,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "9ce8-7a63-15c3-0347",
@@ -25273,7 +36706,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 20,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "507d-5ea4-6ef1-bf66",
@@ -25292,7 +36726,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "da44-72c9-7a27-48aa",
@@ -25310,7 +36745,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "bc36-92fe-ecc6-58b3",
@@ -25330,7 +36766,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Lictor claws and talons"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "9bd8-ac8c-2d3b-79f6",
@@ -25348,7 +36785,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": []
+        "wargear": [
+          "Leaper's talons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "1de2-b57b-aa0a-1f0d",
@@ -25370,7 +36810,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 3,
         "wargear": [
           "Chitinous claws and teeth"
-        ]
+        ],
+        "wargearOptions": []
       },
       {
         "id": "d213-efd8-a2b4-42d2",
@@ -25389,7 +36830,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "2bbb-d811-15f7-1a81",
@@ -25407,7 +36849,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "56db-d7c-b349-677f",
@@ -25425,7 +36868,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [
+          "Trygon Character upgrade"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "fada-677a-f6a4-cd12",
@@ -25443,7 +36889,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "3f5-f7d6-1ce8-e6b9",
@@ -25462,7 +36909,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": []
+        "wargear": [
+          "Ravener claws and talons"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "642f-9302-4fdc-ab68",
@@ -25481,7 +36931,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "c10d-772e-a54f-a2b9",
@@ -25501,8 +36952,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
-          "Ravener heavy claws and talons"
-        ]
+          "Ravener heavy claws and talons",
+          "Venom bolt"
+        ],
+        "wargearOptions": []
       },
       {
         "id": "527c-d3c6-c620-c7c6",
@@ -25522,7 +36975,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "6f46-0c77-acd0-3f5d",
@@ -25541,7 +36995,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "a89f-8ad1-3d79-174f",
@@ -25560,7 +37015,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       },
       {
         "id": "7173-1bd9-b60b-6555",
@@ -25579,7 +37035,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": []
+        "wargear": [],
+        "wargearOptions": []
       }
     ],
     "detachments": [
