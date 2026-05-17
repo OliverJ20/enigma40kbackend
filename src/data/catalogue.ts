@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-15T03:10:54.716Z
+// Last synced: 2026-05-17T02:17:19.667Z
 
 export interface CatalogueUnit {
   id: string;
@@ -9,6 +9,9 @@ export interface CatalogueUnit {
   role: string;
   costs: [number, number][];
   keywords: string[];
+  minModels: number;
+  maxModels: number;
+  wargear: string[];
 }
 
 export interface Detachment {
@@ -49,7 +52,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             70
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
       },
       {
         "id": "ca59-3760-5efc-9846",
@@ -63,7 +69,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Penitent"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "f26d-450d-1c55-caeb",
@@ -75,7 +84,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             105
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 7,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon",
+          "Boltgun",
+          "Special Weapons"
+        ]
+      },
+      {
+        "id": "c338-14f9-4ee-f223",
+        "name": "Canoness",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "820-1e76-78cc-931a",
+        "name": "Castigator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f1af-4984-1a52-c5",
@@ -87,7 +134,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             70
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "8569-2390-d4db-30fd",
@@ -99,7 +149,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             85
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": [
+          "Bolt pistol"
+        ]
+      },
+      {
+        "id": "91b8-3ccb-de30-6e54",
+        "name": "Dialogus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            40
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "76b1-f4d1-b2f0-6949",
+        "name": "Dogmata",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "d929-b22d-3040-9707",
@@ -111,7 +196,89 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon",
+          "Boltgun"
+        ]
+      },
+      {
+        "id": "684e-4dd3-340a-23ee",
+        "name": "Exorcist",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            210
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "938e-1c24-4e63-4cf3",
+        "name": "Hospitaller",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3ad3-558b-29f9-2e45",
+        "name": "Imagifier",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1001-80ff-c9a8-5d9b",
+        "name": "Immolator",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            115
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8f9a-8a8b-2539-547f",
+        "name": "Junith Eruita",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "3c3f-f02d-c05c-492a",
@@ -125,7 +292,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Penitent"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "7188-4d20-8216-c68a",
+        "name": "Morvenn Vahl",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            185
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fbeb-1caf-8f5c-ff8e",
+        "name": "Palatine",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "e75d-a7ac-7fcc-d302",
@@ -137,7 +337,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             210
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": [
+          "Bolt pistol"
+        ]
       },
       {
         "id": "327d-a6df-26b-bb9b",
@@ -151,7 +356,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Penitent"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "599d-1e2a-eb0e-430e",
+        "name": "Ministorum Priest",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Penitent"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7d63-7b55-a632-6a10",
@@ -165,6 +390,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Penitent"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol"
         ]
       },
       {
@@ -177,7 +407,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon"
+        ]
       },
       {
         "id": "21f1-8ed6-52c6-54c7",
@@ -191,7 +427,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "bee9-172b-7db7-f748",
@@ -205,6 +444,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack"
+        ],
+        "minModels": 3,
+        "maxModels": 10,
+        "wargear": [
+          "Close combat weapon"
         ]
       },
       {
@@ -217,7 +461,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             100
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon",
+          "Ministorum flamer"
+        ]
+      },
+      {
+        "id": "52c7-3f6b-cece-8101",
+        "name": "Sororitas Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9f5f-d769-7900-c8a1",
+        "name": "Triumph of Saint Katherine",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            235
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "22f0-a7d8-b2b6-e26",
@@ -231,7 +511,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol"
         ]
+      },
+      {
+        "id": "e80a-4a97-2c3b-710e",
+        "name": "Canoness with Jump Pack",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Canoness",
+          "Jump Pack"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "eade-6ec7-7236-bfdb",
@@ -243,7 +546,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             110
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 9,
+        "maxModels": 9,
+        "wargear": [
+          "Ministorum hand flamer",
+          "Ministorum flamer"
+        ]
       },
       {
         "id": "e286-849d-8f74-75e6",
@@ -255,7 +564,86 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 3,
+        "maxModels": 10,
+        "wargear": [
+          "Condemnor bolt pistol",
+          "Ministorum hand flamer"
+        ]
+      },
+      {
+        "id": "8f3c-d887-6e18-02e8",
+        "name": "Militant Commander [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Canoness",
+          "Militant Commander",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "622e-1e15-13f1-601a",
+        "name": "Inspiring Devotee [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Inspiring Devotee"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1b8d-2b8b-084a-feba",
+        "name": "Reliquant Knight [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Reliquant Knight",
+          "Paragon Warsuits"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e59a-2a90-e102-940f",
+        "name": "Intranzia Fraye",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Penitent"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -500,6 +888,23 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "adeptus-custodes": {
     "units": [
       {
+        "id": "9e42-7207-9c30-6122",
+        "name": "Aleya",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Anathema Psykana"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "c8a6-a4c5-703e-b717",
         "name": "Allarus Custodians",
         "role": "Infantry",
@@ -511,7 +916,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Balistus grenade launcher"
         ]
+      },
+      {
+        "id": "d7cb-7d30-715b-50d2",
+        "name": "Anathema Psykana Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Rhino",
+          "Anathema Psykana"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "48b7-e713-d5b1-f11c",
+        "name": "Blade Champion",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "91b3-2e1c-e642-d213",
@@ -523,7 +966,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9610-b148-8433-93b8",
@@ -535,7 +981,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             210
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7099-71b-56e8-7191",
+        "name": "Knight-Centura",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Anathema Psykana"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "3ec3-a4df-fdbf-5507",
@@ -549,7 +1015,125 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Anathema Psykana"
-        ]
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "b61c-b815-65c0-b1cc",
+        "name": "Shield-Captain",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6319-eeba-b717-bd86",
+        "name": "Shield-Captain in Allarus Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Shield-Captain"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "58fa-4a25-a5af-1144",
+        "name": "Shield-Captain on Dawneagle Jetbike",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Dawneagle Jetbike",
+          "Shield-Captain"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7d7c-c212-47a3-38e4",
+        "name": "Trajann Valoris",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8103-2e01-5d6a-b761",
+        "name": "Valerian",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Shield-Captain"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "188b-e48b-29f-1456",
+        "name": "Venerable Contemptor Dreadnought",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "AC Walker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "76be-3bcb-cf4-bcbd",
+        "name": "Venerable Land Raider",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "918b-c9ed-7af7-74df",
@@ -561,7 +1145,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             150
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "dd2d-568a-9c56-1b6e",
@@ -575,7 +1162,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Anathema Psykana"
-        ]
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "503b-f7be-eeeb-9e31",
@@ -589,6 +1179,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Anathema Psykana"
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": [
+          "Witchseeker flamer"
         ]
       },
       {
@@ -603,7 +1198,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Custodian Guard"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "6f9f-e6aa-ba13-aab1",
@@ -615,7 +1213,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             225
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": []
       },
       {
         "id": "03bc-0141-b967-40e0",
@@ -629,7 +1230,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "00ab-41c4-cf52-4ad2",
@@ -641,7 +1245,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             225
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "201e-e502-a8d1-3974",
@@ -655,7 +1262,192 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4988-d93e-5034-2b3c",
+        "name": "Contemptor-Galatus Dreadnought",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            165
+          ]
+        ],
+        "keywords": [
+          "AC Walker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "db3b-02cd-87a2-3b52",
+        "name": "Contemptor-Achillus Dreadnought",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            155
+          ]
+        ],
+        "keywords": [
+          "AC Walker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "06df-2fb2-8dfa-2fce",
+        "name": "Pallas Grav-attack",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            105
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3ee2-62a9-af84-1a90",
+        "name": "Caladius Grav-tank",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            215
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e7d8-1c73-7d03-8b62",
+        "name": "Telemon Heavy Dreadnought",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            225
+          ]
+        ],
+        "keywords": [
+          "AC Walker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f35e-ef9c-9ef4-77e1",
+        "name": "Coronus Grav-carrier",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            200
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9c1a-7efd-ed36-440e",
+        "name": "Orion Assault Dropship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            690
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9335-74d9-ad68-3ff7",
+        "name": "Ares Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            580
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "de0b-37e9-b9f5-d3a6",
+        "name": "Guardian of the Throne [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Guardian of the Throne",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e58d-17d4-71f8-4137",
+        "name": "Null Maiden [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Null Maiden",
+          "Anathema Psykana"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c11a-f70a-2877-ed27",
+        "name": "Kataphraktoi Exemplar [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Kataphraktoi Exemplar",
+          "Dawneagle Jetbike"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -786,6 +1578,75 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "adeptus-mechanicus": {
     "units": [
       {
+        "id": "7662-5fde-16f1-5267",
+        "name": "Archaeopter Fusilave",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d54e-1007-26b5-6a79",
+        "name": "Archaeopter Stratoraptor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            185
+          ]
+        ],
+        "keywords": [
+          "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "295-769-8893-2bb0",
+        "name": "Archaeopter Transvector",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1f1e-2989-4762-cf88",
+        "name": "Belisarius Cawl",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            210
+          ]
+        ],
+        "keywords": [
+          "Tech-Priest",
+          "Cult Mechanicus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "fd5a-f7a3-833c-85b",
         "name": "Corpuscarii Electro-Priests",
         "role": "Infantry",
@@ -799,7 +1660,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Electro-Priests",
           "Corpuscarii",
           "Cult Mechanicus"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "841-f339-8086-efe2",
@@ -815,7 +1679,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Electro-Priests",
           "Fulgurite",
           "Cult Mechanicus"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "bd6c-8683-8bc4-962d",
@@ -829,7 +1696,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Legio Cybernetica"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 4,
+        "wargear": []
       },
       {
         "id": "a46f-848-b87d-4484",
@@ -845,7 +1715,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Breachers",
           "Kataphron",
           "Cult Mechanicus"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7bee-a476-2167-76e7",
@@ -861,7 +1734,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Destroyers",
           "Kataphron",
           "Cult Mechanicus"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ea05-4db7-9ee6-7a87",
+        "name": "Onager Dunecrawler",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            155
+          ]
+        ],
+        "keywords": [
+          "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b31e-5003-5b63-a305",
@@ -878,7 +1771,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Jump Pack",
           "Skitarii",
           "Pteraxii"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "958-a256-360-8620",
@@ -895,7 +1791,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Jump Pack",
           "Skitarii",
           "Pteraxii"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "5797-adb8-930-e832",
@@ -909,6 +1808,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Skitarii"
+        ],
+        "minModels": 2,
+        "maxModels": 6,
+        "wargear": [
+          "Mechanicus pistol"
         ]
       },
       {
@@ -923,6 +1827,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Mechanicus pistol"
         ]
       },
       {
@@ -939,7 +1848,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Skitarii",
           "Sicarian",
           "Infiltrators"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "8863-9784-8377-aa7a",
@@ -955,7 +1867,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ruststalkers",
           "Skitarii",
           "Sicarian"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b897-e4c6-fcb6-6538",
+        "name": "Skitarii Marshal",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            35
+          ]
+        ],
+        "keywords": [
+          "Marshal",
+          "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "de59-f65c-181a-8509",
@@ -970,7 +1903,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Rangers",
           "Skitarii"
-        ]
+        ],
+        "minModels": 6,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "ba33-c21-bddc-ab0",
@@ -985,7 +1921,137 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Vanguard",
           "Skitarii"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3fcc-b6a1-399b-1a29",
+        "name": "Skorpius Disintegrator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            165
+          ]
+        ],
+        "keywords": [
+          "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2b9c-3982-701d-f8fd",
+        "name": "Skorpius Dunerider",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6424-ed86-9e15-3e14",
+        "name": "Tech-Priest Dominus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Dominus",
+          "Tech-Priest",
+          "Cult Mechanicus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c0e0-4d86-96d2-ec86",
+        "name": "Tech-Priest Enginseer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Enginseer",
+          "Tech-Priest",
+          "Cult Mechanicus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2d9b-610a-dc4d-15ae",
+        "name": "Tech-Priest Manipulus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Manipulus",
+          "Tech-Priest",
+          "Cult Mechanicus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fa82-61cc-aa85-e94c",
+        "name": "Technoarcheologist",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Tech-Priest",
+          "Cult Mechanicus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d59d-ef1-9ef8-4f44",
+        "name": "Cybernetica Datasmith",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            35
+          ]
+        ],
+        "keywords": [
+          "Tech-Priest",
+          "Legio Cybernetica"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "52e7-9347-3f16-9eec",
@@ -1001,7 +2067,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Skitarii",
           "Sydonian",
           "Skatros"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "d99a-6563-8c08-23c",
@@ -1017,7 +2086,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Skitarii",
           "Sydonian",
           "Dragoons with Radium Jezzails"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "a523-606f-b05c-851e",
@@ -1031,7 +2103,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Cult Mechanicus"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 9,
+        "wargear": []
+      },
+      {
+        "id": "18e0-96d4-7d85-2b3b",
+        "name": "Magos [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Cult Mechanicus",
+          "Magos",
+          "Tech-Priest",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7d17-4620-8dbf-4ef6",
+        "name": "Cohort Commander [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Skitarii",
+          "Marshal",
+          "Cohort Commander"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6b3e-11ad-7a9d-ca5d",
+        "name": "Ironstrider Alpha [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Skitarii",
+          "Ironstrider Alpha"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7135-8430-eb02-ded4",
+        "name": "Thulia Ghuld",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            210
+          ]
+        ],
+        "keywords": [
+          "Tech-Priest",
+          "Cult Mechanicus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "52d3-71a9-f755-d6aa",
@@ -1047,6 +2199,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Skitarii",
           "Hastarii",
           "Exterminators"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Power weapon",
+          "Hastarii arc blaster",
+          "Eradication caster",
+          "Close combat weapon"
         ]
       },
       {
@@ -1063,6 +2223,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Skitarii",
           "Hastarii",
           "Fusiliers"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Hastarii phosphor blaster",
+          "Neutron fusil",
+          "Power weapon",
+          "Close combat weapon"
         ]
       }
     ],
@@ -1167,7 +2335,79 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": [
+          "Laspistol",
+          "Lasgun",
+          "Hunting lance",
+          "Steed's hooves",
+          "Goad lance"
         ]
+      },
+      {
+        "id": "a6a1-1612-f982-31",
+        "name": "Baneblade",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            450
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d10-48db-3241-ec72",
+        "name": "Banehammer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            420
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "30f5-d90a-9811-d763",
+        "name": "Banesword",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            450
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "bf53-4ab3-ff75-9aa0",
+        "name": "Basilisk",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [
+          "Artillery",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "37ad-63e5-1786-87cf",
@@ -1181,7 +2421,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Ogryn"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon"
         ]
+      },
+      {
+        "id": "2b49-4d03-aaf5-3532",
+        "name": "Cadian Castellan",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "4d28-f2a7-67c1-eb2e",
@@ -1197,6 +2459,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Command Squad",
           "Cadian",
           "Platoon"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Close combat weapon",
+          "Lasgun",
+          "Master vox",
+          "Medi-pack"
         ]
       },
       {
@@ -1213,7 +2483,44 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Regiment",
           "Platoon",
           "Cadian"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cf23-58db-8ba4-9ec8",
+        "name": "Chimera",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a979-5b21-dc69-b949",
+        "name": "Commissar",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            30
+          ]
+        ],
+        "keywords": [
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "ade0-fa44-d4cf-4fc8",
@@ -1228,7 +2535,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment",
           "Platoon"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e19f-b9b8-75d5-8520",
+        "name": "Deathstrike",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Squadron",
+          "Artillery"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8342-57dd-69d3-e698",
+        "name": "Doomhammer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            415
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "64a9-4cb2-400e-efd1",
@@ -1243,6 +2586,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Artillery",
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Lasgun",
+          "Laspistol",
+          "Battery close combat weapons"
         ]
       },
       {
@@ -1255,7 +2605,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             100
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 6,
+        "maxModels": 6,
+        "wargear": [
+          "Straight silver knife"
+        ]
       },
       {
         "id": "91a9-15e-b5f0-700f",
@@ -1269,7 +2624,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Laspistol",
+          "Weapons team close combat weapons",
+          "Heavy bolter",
+          "Mortar",
+          "Missile launcher",
+          "Lascannon",
+          "Autocannon"
         ]
+      },
+      {
+        "id": "8277-6399-5d74-760d",
+        "name": "Hellhammer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            420
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c28b-c3af-38b2-8865",
+        "name": "Hellhound",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4967-19b6-1e2a-a300",
+        "name": "Hydra",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "abe4-ca71-d5a7-3883",
@@ -1283,7 +2698,157 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 3,
+        "maxModels": 10,
+        "wargear": [
+          "Hot-shot lasgun",
+          "Close combat weapon",
+          "Hot-shot laspistol",
+          "Vox-caster",
+          "Flamer",
+          "Plasma gun",
+          "Hot-shot volley gun",
+          "Meltagun",
+          "Grenade launcher"
         ]
+      },
+      {
+        "id": "c581-3ab5-49a0-9ec0",
+        "name": "Leman Russ Battle Tank",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            185
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "286e-8e39-b807-5981",
+        "name": "Leman Russ Eradicator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cbcc-e0ad-4b9-2c76",
+        "name": "Leman Russ Demolisher",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            190
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d8c8-ea02-21bf-de0b",
+        "name": "Leman Russ Exterminator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ddf2-228b-edd9-7e83",
+        "name": "Leman Russ Vanquisher",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e529-5853-d7e2-17ad",
+        "name": "Leman Russ Punisher",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a9d-55c1-3d24-fa25",
+        "name": "Lord Solar Leontus",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "41be-48c9-5476-f47a",
+        "name": "Manticore",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            165
+          ]
+        ],
+        "keywords": [
+          "Artillery",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "497-36ad-8ecb-f7c7",
@@ -1298,7 +2863,55 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Militarum Tempestus",
           "Command Squad"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon",
+          "Regimental standard",
+          "Hot-shot lasgun",
+          "Master vox",
+          "Hot-shot laspistol"
         ]
+      },
+      {
+        "id": "bcda-f4bb-e726-9bfe",
+        "name": "Nork Deddog",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Ogryn",
+          "Loyal Protector"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Ripper gun"
+        ]
+      },
+      {
+        "id": "a7c2-1534-93b0-c0eb",
+        "name": "Ogryn Bodyguard",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            40
+          ]
+        ],
+        "keywords": [
+          "Bodyguard",
+          "Loyal Protector",
+          "Ogryn"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "c9eb-2007-af01-a853",
@@ -1312,7 +2925,160 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Ogryn"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Ripper gun"
         ]
+      },
+      {
+        "id": "4ad0-e988-a513-9530",
+        "name": "Primaris Psyker",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f556-a33d-dc90-d6fc",
+        "name": "Tech-Priest Enginseer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2127-efcc-1f62-7fab",
+        "name": "Rogal Dorn Battle Tank",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            260
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1b48-2f2-8e9c-1308",
+        "name": "Shadowsword",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            410
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4d50-e535-616a-259c",
+        "name": "Sly Marbo",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "892b-678c-72e6-ee58",
+        "name": "Stormlord",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            430
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5430-18e-d7b0-1d54",
+        "name": "Leman Russ Commander",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            235
+          ]
+        ],
+        "keywords": [
+          "Officer",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "11e5-d4ab-d140-ac38",
+        "name": "Taurox",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4b67-f814-358e-f776",
+        "name": "Taurox Prime",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "679b-f37f-2388-748",
@@ -1327,7 +3093,72 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment",
           "Militarum Tempestus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Vox-caster",
+          "Hot-shot laspistol",
+          "Close combat weapon",
+          "Hot-shot lasgun",
+          "Flamer",
+          "Grenade launcher",
+          "Hot-shot volley gun",
+          "Meltagun",
+          "Plasma gun"
         ]
+      },
+      {
+        "id": "b6b2-9971-ec0c-349e",
+        "name": "Ursula Creed",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Power weapon"
+        ]
+      },
+      {
+        "id": "9665-3160-8a04-d2bc",
+        "name": "Valkyrie",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            190
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d11b-c49d-41bf-1f36",
+        "name": "Wyvern",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Artillery",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "fe5a-764e-37ed-7cef",
@@ -1342,7 +3173,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Platoon",
           "Regiment"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "67bc-a760-7ed5-9952",
+        "name": "Stormsword",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            465
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f1a-7c78-ffdc-bf5b",
@@ -1356,7 +3205,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Steed's savage claws",
+          "Power sabre",
+          "Death Rider lascarbine",
+          "Frag lance"
         ]
+      },
+      {
+        "id": "95b4-68d6-26cf-188e",
+        "name": "Cyclops Demolition Vehicle",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            25
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "532c-2c97-357a-fa1e",
+        "name": "Avenger Strike Fighter",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c8fc-b9fa-d126-a296",
+        "name": "Leman Russ Executioner",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "aa9f-f137-1638-0369",
@@ -1371,6 +3275,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment",
           "Militarum Tempestus"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Hot-shot lascarbine",
+          "Close combat weapon",
+          "Hot-shot laspistol"
         ]
       },
       {
@@ -1383,7 +3294,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Sniper rifle"
+        ]
+      },
+      {
+        "id": "9033-d07c-3e1c-f6f0",
+        "name": "Lord Marshal Dreir",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Laspistol"
+        ]
       },
       {
         "id": "fbcd-274b-0196-b4f6",
@@ -1399,6 +3334,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Command Squad",
           "Platoon",
           "Krieg"
+        ],
+        "minModels": 6,
+        "maxModels": 6,
+        "wargear": [
+          "Close combat weapon",
+          "Laspistol",
+          "Lasgun",
+          "Master vox",
+          "Regimental standard"
         ]
       },
       {
@@ -1415,7 +3359,74 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Command Squad",
           "Platoon",
           "Catachan"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon",
+          "Laspistol",
+          "Lasgun",
+          "Master vox",
+          "Regimental standard",
+          "Medi-pack",
+          "Flamer",
+          "Grenade launcher",
+          "Heavy flamer",
+          "Meltagun",
+          "Plasma gun",
+          "Sniper rifle"
         ]
+      },
+      {
+        "id": "0595-6d6c-a783-12ab",
+        "name": "Artillery Team",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Artillery",
+          "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "78b6-f280-bba9-0594",
+        "name": "Rogal Dorn Commander",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            290
+          ]
+        ],
+        "keywords": [
+          "Squadron",
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ba72-7b05-33c9-a1c0",
+        "name": "Ministorum Priest",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            35
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "3e90-9359-2aaa-205e",
@@ -1429,6 +3440,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Autopistol",
+          "Trench club",
+          "Close combat weapon",
+          "Flamer",
+          "Combat shotgun"
         ]
       },
       {
@@ -1443,6 +3463,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon",
+          "Laspistol",
+          "Lascannon"
         ]
       },
       {
@@ -1457,7 +3484,145 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Weapons team close combat weapons",
+          "Heavy bolter",
+          "Lasgun",
+          "Mortar",
+          "Missile launcher",
+          "Lascannon",
+          "Autocannon"
         ]
+      },
+      {
+        "id": "4fc5-184d-b305-3551",
+        "name": "Front-line Commander [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Officer",
+          "Front-line Commander"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a040-9715-5d3a-52af",
+        "name": "Sentinel Commander [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Officer",
+          "Sentinel Commander"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7280-8daf-312a-b01d",
+        "name": "Augmented Bone 'Ead [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Regiment",
+          "Augmented Bone 'Ead",
+          "Ogryn"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "50b8-1f13-9807-0069",
+        "name": "Commissar Graves",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Officer",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d624-2be1-87a3-41ca",
+        "name": "Commissar Graves on Foot",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Commissar Graves"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3962-1fa9-7088-aedd",
+        "name": "Commissar Yarrick",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c871-4769-71ed-c4b3",
+        "name": "Centaur RSV",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "05de-5701-33a0-b23d",
@@ -1471,6 +3636,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": [
+          "Lasgun",
+          "Close combat weapon",
+          "Long-las",
+          "Plasma gun",
+          "Meltagun"
         ]
       }
     ],
@@ -1900,6 +4074,94 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "grey-knights": {
     "units": [
       {
+        "id": "dce9-6eb4-fa33-e869",
+        "name": "Brother-Captain",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2c81-4e74-8707-3117",
+        "name": "Brotherhood Champion",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b9b1-d698-1e98-da45",
+        "name": "Brotherhood Chaplain",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5412-1f01-b7cc-bf12",
+        "name": "Brotherhood Librarian",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f667-5267-f241-37",
+        "name": "Brotherhood Techmarine",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "a037-a89c-f59f-8b1e",
         "name": "Brotherhood Terminator Squad",
         "role": "Battleline",
@@ -1912,7 +4174,224 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Nemesis force weapon",
+          "Storm bolter"
         ]
+      },
+      {
+        "id": "9ddb-760d-8cf7-1c8a",
+        "name": "Castellan Crowe",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Storm bolter"
+        ]
+      },
+      {
+        "id": "1a56-706b-a8f1-631a",
+        "name": "Grand Master",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3625-f9f1-122b-bf9d",
+        "name": "Grand Master in Nemesis Dreadknight",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            225
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7256-bb3a-3e79-31fe",
+        "name": "Grand Master Voldus",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Storm bolter"
+        ]
+      },
+      {
+        "id": "512d-b972-911e-4cac",
+        "name": "Land Raider",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4c63-cca-8d26-6330",
+        "name": "Land Raider Crusader",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ada7-eb0b-c920-d77f",
+        "name": "Land Raider Redeemer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            270
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "841f-98b-fbf3-c8ee",
+        "name": "Razorback",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5ffd-f698-a1bb-fba7",
+        "name": "Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fa-e288-2107-d22e",
+        "name": "Stormhawk Interceptor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2efe-459b-9562-e7a9",
+        "name": "Stormraven Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            280
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "84ac-b9ea-921f-9082",
+        "name": "Stormtalon Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "bd43-b303-66e0-4c10",
+        "name": "Venerable Dreadnought",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "d9f7-71b7-8e67-7f44",
@@ -1926,7 +4405,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker"
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": [
+          "Nemesis force weapon",
+          "Storm bolter",
+          "Incinerator",
+          "Psilencer",
+          "Psycannon"
         ]
+      },
+      {
+        "id": "5458-a458-c51d-c4e9",
+        "name": "Nemesis Dreadknight",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            210
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "6528-4634-c2cf-2840",
@@ -1941,6 +4446,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Nemesis force weapon",
+          "Storm bolter"
         ]
       },
       {
@@ -1955,6 +4466,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Nemesis force weapon",
+          "Storm bolter",
+          "Incinerator",
+          "Psilencer",
+          "Psycannon"
         ]
       },
       {
@@ -1969,6 +4489,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Nemesis force weapon",
+          "Storm bolter",
+          "Purifying Flame",
+          "Incinerator",
+          "Psilencer",
+          "Psycannon"
         ]
       },
       {
@@ -1983,7 +4513,102 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Nemesis force weapon",
+          "Storm bolter"
         ]
+      },
+      {
+        "id": "8989-2fd2-4d29-e795",
+        "name": "Grey Knights Thunderhawk Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            805
+          ]
+        ],
+        "keywords": [
+          "Thunderhawk Gunship"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "69d-a656-fde3-6c3e",
+        "name": "Land Raider Banisher",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            255
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9782-7a59-9b65-21e4",
+        "name": "Champion of Titan [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Psyker",
+          "Champion of Titan"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2a2d-1f49-9373-4084",
+        "name": "Venerable Daemon Slayer [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            175
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Psyker",
+          "Venerable Daemon Slayer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e60e-8ccf-41b2-292e",
+        "name": "Dreadknight Champion [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            210
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Psyker",
+          "Dreadknight Champion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -2314,6 +4939,74 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "imperial-agents": {
     "units": [
       {
+        "id": "efa3-2cf5-dcfb-b976",
+        "name": "Vindicare Assassin",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Officio Assassinorum"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5e5e-d6b2-6a1c-aa69",
+        "name": "Culexus Assassin",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Officio Assassinorum"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f201-1f4a-b907-d9d1",
+        "name": "Eversor Assassin",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Officio Assassinorum"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1cfe-be05-5603-133",
+        "name": "Callidus Assassin",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Officio Assassinorum"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "9360-d8b2-cd92-9e7f",
         "name": "Rogue Trader Entourage",
         "role": "Character",
@@ -2326,6 +5019,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Voidfarers",
           "Voidfarer Character"
+        ],
+        "minModels": 4,
+        "maxModels": 4,
+        "wargear": [
+          "Close combat weapon"
         ]
       },
       {
@@ -2341,6 +5039,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Retinue",
           "Voidfarers"
+        ],
+        "minModels": 6,
+        "maxModels": 6,
+        "wargear": [
+          "Close combat weapon"
         ]
       },
       {
@@ -2356,6 +5059,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Retinue",
           "Voidfarers"
+        ],
+        "minModels": 8,
+        "maxModels": 10,
+        "wargear": [
+          "Close combat weapon"
         ]
       },
       {
@@ -2371,7 +5079,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Retinue",
           "Adeptus Arbites"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "ec63-524d-55a-3065",
@@ -2386,7 +5097,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Retinue",
           "Adeptus Arbites"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "d44c-5cde-cb79-3ec3",
@@ -2401,7 +5115,121 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Retinue",
           "Adeptus Arbites"
-        ]
+        ],
+        "minModels": 8,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "f3a6-de9-584e-c394",
+        "name": "Inquisitor Draxus",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Inquisitor",
+          "Draxus",
+          "Ordo Xenos"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "264a-fc24-3a98-31dc",
+        "name": "Inquisitor Coteaz",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Inquisitor",
+          "Coteaz",
+          "Ordo Malleus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6e0e-b9a2-f53d-ad0e",
+        "name": "Inquisitor Greyfax",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Inquisitor",
+          "Greyfax",
+          "Ordo Hereticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3e57-b15c-5580-1de1",
+        "name": "Inquisitor",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "55cf-8d86-affd-bc9b",
+        "name": "Navigator",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Voidfarers",
+          "Voidfarer Character"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7554-37de-cd68-68a7",
+        "name": "Ministorum Priest",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            40
+          ]
+        ],
+        "keywords": [
+          "Ordo Hereticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "4469-7239-717e-9abd",
@@ -2415,6 +5243,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Retinue"
+        ],
+        "minModels": 2,
+        "maxModels": 10,
+        "wargear": [
+          "Multi-melta"
         ]
       },
       {
@@ -2432,7 +5265,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Terminator",
           "Ordo Malleus",
           "Requisitioned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Storm bolter"
         ]
+      },
+      {
+        "id": "ede2-ae50-5f5b-cced",
+        "name": "Inquisitorial Chimera",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cbbd-8e0a-fd90-fa0d",
+        "name": "Imperial Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "73fc-a193-7da1-d9c4",
@@ -2447,7 +5315,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Ordo Hereticus",
           "Requisitioned"
+        ],
+        "minModels": 7,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon",
+          "Boltgun"
         ]
+      },
+      {
+        "id": "a5c9-2cb7-d874-8169",
+        "name": "Sisters of Battle Immolator",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Ordo Hereticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8b98-0ac7-a0ba-dedf",
+        "name": "Corvus Blackstar",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Retinue",
+          "Ordo Xenos",
+          "Deathwatch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "0744-61ce-619d-ffe1",
@@ -2464,7 +5375,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ordo Xenos",
           "Deathwatch",
           "Kill Team"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Boltgun",
+          "Power weapon",
+          "Deathwatch thunder hammer",
+          "Close combat weapon",
+          "Frag cannon",
+          "Infernus heavy bolter",
+          "Astartes shield",
+          "Stalker-pattern boltgun",
+          "Deathwatch shotgun",
+          "Black Shield blades"
         ]
+      },
+      {
+        "id": "f158-1e0b-585b-bf40",
+        "name": "Watch Captain Artemis",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Deathwatch",
+          "Ordo Xenos"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cfa5-df26-a886-9975",
+        "name": "Watch Master",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Captain",
+          "Deathwatch",
+          "Ordo Xenos"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "4e74-3710-7a66-9d6c",
@@ -2478,6 +5440,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Retinue"
+        ],
+        "minModels": 9,
+        "maxModels": 9,
+        "wargear": [
+          "Ministorum flamer",
+          "Ministorum hand flamer"
         ]
       },
       {
@@ -2494,7 +5462,85 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Deathwatch",
           "Retinue",
           "Ordo Xenos"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "90e0-c5a9-17c5-fba4",
+        "name": "Martial Agent [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Martial Agent",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9a75-f3a2-bff5-9f08",
+        "name": "Deathwatch Agent [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            105
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Ordo Xenos",
+          "Deathwatch",
+          "Deathwatch Agent"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2b47-b5e8-b297-7bd8",
+        "name": "Enthroned Agent [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Enthroned Agent"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2a3f-b53b-6ea4-6da9",
+        "name": "Inquisitor Kroyle",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Ordo Xenos",
+          "Inquisitor",
+          "Kroyle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -2567,6 +5613,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "imperial-knights": {
     "units": [
       {
+        "id": "2d9b-610a-dc4d-15ae",
+        "name": "Tech-Priest Manipulus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Manipulus",
+          "Tech-Priest",
+          "Cult Mechanicus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b897-e4c6-fcb6-6538",
+        "name": "Skitarii Marshal",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            35
+          ]
+        ],
+        "keywords": [
+          "Marshal",
+          "Skitarii"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "de59-f65c-181a-8509",
         "name": "Skitarii Rangers",
         "role": "Battleline",
@@ -2579,7 +5662,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Rangers",
           "Skitarii"
-        ]
+        ],
+        "minModels": 6,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "ba33-c21-bddc-ab0",
@@ -2594,7 +5680,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Vanguard",
           "Skitarii"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6424-ed86-9e15-3e14",
+        "name": "Tech-Priest Dominus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Dominus",
+          "Tech-Priest",
+          "Cult Mechanicus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -2841,6 +5949,79 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "space-marines": {
     "units": [
       {
+        "id": "1d56-1cc3-de57-10e2",
+        "name": "Captain in Gravis Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Captain",
+          "Gravis"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a976-7cd5-9657-d91a",
+        "name": "Captain in Phobos Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Captain",
+          "Phobos"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "dc24-dd64-5d97-df3c",
+        "name": "Captain in Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Captain",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1319-45d-bb95-dfd4",
+        "name": "Captain with Jump Pack",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Captain",
+          "Jump Pack",
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "8da0-4570-c3c-819f",
         "name": "Intercessor Squad",
         "role": "Battleline",
@@ -2852,6 +6033,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tacticus"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon",
+          "Bolt Rifle",
+          "Astartes grenade launcher"
         ]
       },
       {
@@ -2866,6 +6055,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tacticus"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Pyreblaster",
+          "Bolt pistol",
+          "Close combat weapon"
         ]
       },
       {
@@ -2880,6 +6076,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tacticus"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Astartes Chainsword",
+          "Heavy Bolt Pistol"
         ]
       },
       {
@@ -2894,6 +6096,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Gravis"
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon",
+          "Heavy Bolter"
         ]
       },
       {
@@ -2908,6 +6117,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phobos"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon"
         ]
       },
       {
@@ -2922,6 +6137,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phobos"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol"
         ]
       },
       {
@@ -2934,7 +6154,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 8,
+        "maxModels": 10,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon",
+          "Boltgun"
+        ]
       },
       {
         "id": "1117-cda-7f74-196b",
@@ -2946,7 +6173,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             70
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Close combat weapon",
+          "Boltgun",
+          "Bolt pistol"
+        ]
       },
       {
         "id": "7044-bf1-f949-c32d",
@@ -2960,6 +6194,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tacticus"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Heavy Bolt Pistol",
+          "Master-crafted power weapon"
         ]
       },
       {
@@ -2975,7 +6215,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Jump Pack",
           "Vanguard Veteran Squad"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "907f-11-c4d1-ec21",
@@ -2989,6 +6232,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Sternguard Bolt Rifle",
+          "Close combat weapon",
+          "Combi-weapon"
         ]
       },
       {
@@ -3003,6 +6253,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phobos"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Combat Knife"
         ]
       },
       {
@@ -3017,6 +6272,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Gravis"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Twin power fist"
         ]
       },
       {
@@ -3031,7 +6291,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "4808-a80b-309a-7933",
@@ -3045,6 +6308,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Storm bolter",
+          "Power fist",
+          "Chainfist"
         ]
       },
       {
@@ -3059,7 +6329,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Centurion"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "6ba0-cede-e278-f86b",
@@ -3073,7 +6346,108 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Centurion"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "24df-fdd6-4d7b-fc0e",
+        "name": "Invictor Tactical Warsuit",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Phobos"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d204-13c6-dab1-ecdc",
+        "name": "Dreadnought",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1d94-b3c8-9205-827e",
+        "name": "Redemptor Dreadnought",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            205
+          ]
+        ],
+        "keywords": [
+          "Dreadnought"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5dc7-aa6c-7053-cede",
+        "name": "Ballistus Dreadnought",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Dreadnought"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1c00-9398-b9e7-446a",
+        "name": "Brutalis Dreadnought",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Dreadnought"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8d7b-3dfe-7b91-2490",
+        "name": "Invader ATV",
+        "role": "Fast Attack",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b5e8-c34b-566b-8bda",
@@ -3085,7 +6459,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             80
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Astartes Chainsword",
+          "Heavy Bolt Pistol",
+          "Twin bolt rifle"
+        ]
       },
       {
         "id": "97f6-b1f8-c72d-e826",
@@ -3099,6 +6480,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack"
+        ],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": [
+          "Close combat weapon",
+          "Bolt pistol"
         ]
       },
       {
@@ -3114,7 +6501,57 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Jump Pack",
           "Gravis"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Close combat weapon"
         ]
+      },
+      {
+        "id": "9cb9-9ab5-727f-80e5",
+        "name": "Storm Speeder Hailstrike",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            115
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "993a-9cbc-8052-e40",
+        "name": "Storm Speeder Thunderstrike",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9489-445c-f950-7292",
+        "name": "Storm Speeder Hammerstrike",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7102-b3a4-9bfc-1b84",
@@ -3128,6 +6565,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tacticus"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Close combat weapon",
+          "Bolt pistol"
         ]
       },
       {
@@ -3142,6 +6585,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phobos"
+        ],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": [
+          "Close combat weapon",
+          "Bolt pistol"
         ]
       },
       {
@@ -3156,6 +6605,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Gravis"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon",
+          "Melta rifle",
+          "Multi-melta"
         ]
       },
       {
@@ -3168,7 +6625,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Boltgun",
+          "Close combat weapon",
+          "Bolt pistol"
+        ]
       },
       {
         "id": "a3ea-7a0d-fef8-23bf",
@@ -3182,7 +6646,670 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tacticus"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon",
+          "Castellan Launcher"
         ]
+      },
+      {
+        "id": "ae85-3e33-217d-7413",
+        "name": "Whirlwind",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            190
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d4c8-dd6a-cd7a-ccc3",
+        "name": "Predator Destructor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "31a-6c3e-5843-4023",
+        "name": "Predator Annihilator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7814-107b-a498-96f6",
+        "name": "Gladiator Lancer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ed20-824b-7419-aebc",
+        "name": "Gladiator Reaper",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6b89-8147-9b6b-6db1",
+        "name": "Gladiator Valiant",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cb6d-201f-4888-3027",
+        "name": "Vindicator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            185
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8cca-9318-3bec-d360",
+        "name": "Land Raider",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1d65-c592-2e16-b045",
+        "name": "Land Raider Crusader",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [
+          "Land Raider"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d361-a36e-1448-264d",
+        "name": "Land Raider Redeemer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            270
+          ]
+        ],
+        "keywords": [
+          "Land Raider"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e8e-fc5c-c689-99ca",
+        "name": "Repulsor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9259-f166-15f2-7f79",
+        "name": "Repulsor Executioner",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            230
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a14e-75ca-ef91-397f",
+        "name": "Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ed11-25b9-a0eb-89f4",
+        "name": "Razorback",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "bfb1-7512-e1a3-9fa2",
+        "name": "Impulsor",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4d57-c5c8-c1a1-e8a6",
+        "name": "Drop Pod",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3d99-47aa-8cf3-883f",
+        "name": "Stormhawk Interceptor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            155
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1bb6-878e-7af1-5bdb",
+        "name": "Stormtalon Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            165
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "469b-3370-30f3-473a",
+        "name": "Stormraven Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            280
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ce15-e87e-7cff-b129",
+        "name": "Lieutenant",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6dfd-beb0-5b01-b21e",
+        "name": "Lieutenant in Reiver Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Phobos",
+          "Lieutenant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fe0e-6070-e7b-d4b8",
+        "name": "Lieutenant in Phobos Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Phobos",
+          "Lieutenant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "78eb-9334-f5c0-6095",
+        "name": "Librarian",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "137c-2add-1a51-ee96",
+        "name": "Librarian in Phobos Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Phobos",
+          "Librarian"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2468-24f5-ad9b-8388",
+        "name": "Librarian in Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Terminator",
+          "Librarian"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ceb5-55c7-2d49-d952",
+        "name": "Chaplain",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c026-b762-d0a6-5ef1",
+        "name": "Chaplain in Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Chaplain"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5d1d-2230-8199-3ab3",
+        "name": "Chaplain on Bike",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Chaplain"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "23f1-2df2-7085-cf41",
+        "name": "Chaplain with Jump Pack",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Chaplain",
+          "Jump Pack"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e671-cd3a-2b03-3954",
+        "name": "Techmarine",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "109f-f71d-56-d9eb",
+        "name": "Lieutenant with Combi-weapon",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Phobos",
+          "Lieutenant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8a9d-11f-fad-bd0f",
+        "name": "Apothecary",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c6e9-c0c8-5f13-5771",
+        "name": "Apothecary Biologis",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Gravis",
+          "Apothecary",
+          "Biologis"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6562-d718-b8e0-c457",
+        "name": "Ancient",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9ca5-e5f4-f85d-bcca",
+        "name": "Bladeguard Ancient",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Tacticus",
+          "Ancient"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fc7f-8176-c10c-ca8",
+        "name": "Ancient in Terminator Armor",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Ancient"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8dcb-987c-1ab4-b976",
+        "name": "Judiciar",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6c10-5b51-5bc0-8d2c",
+        "name": "Captain",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Tacticus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "98db-fff3-b1b2-e22f",
+        "name": "Astraeus",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            525
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3416-dfee-84ee-e21d",
+        "name": "Thunderhawk Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            840
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "cdd9-efda-95-e7b2",
@@ -3197,6 +7324,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Tacticus",
           "Jump Pack"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Astartes Chainsword",
+          "Heavy Bolt Pistol",
+          "Plasma pistol"
         ]
       },
       {
@@ -3211,7 +7345,71 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tacticus"
+        ],
+        "minModels": 4,
+        "maxModels": 4,
+        "wargear": [
+          "Bolt pistol",
+          "Close combat weapon"
         ]
+      },
+      {
+        "id": "74ba-6762-ef01-32d6",
+        "name": "Champion of the Chapter [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Champion of the Chapter",
+          "Tacticus",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "0385-0e03-0eac-d91c",
+        "name": "Librarius Adept [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tacticus",
+          "Librarius Adept",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3fe2-9d72-8251-adb4",
+        "name": "Venerable Battle-Brother [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Dreadnought",
+          "Venerable Battle-Brother",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -5016,6 +9214,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "chaos-daemons": {
     "units": [
       {
+        "id": "e496-5a54-4cb2-4fc1",
+        "name": "Chaos Lord",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "6bf7-888c-7aa6-6831",
         "name": "Fellgor Beastmen",
         "role": "Infantry",
@@ -5027,7 +9240,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d880-9968-2ed9-5a21",
+        "name": "Chaos Lord with Jump Pack",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Chaos Lord",
+          "Jump Pack"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "203d-c50f-a438-4982",
@@ -5041,6 +9275,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Combi-bolter",
+          "Accursed weapon",
+          "Combi-weapon",
+          "Power fist",
+          "Chainfist",
+          "Paired accursed weapons"
         ]
       },
       {
@@ -5053,7 +9297,18 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             125
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Bolt pistol",
+          "Boltgun",
+          "Accursed weapon",
+          "Plasma pistol",
+          "Combi-weapon",
+          "Paired accursed weapons",
+          "Power fist"
+        ]
       },
       {
         "id": "615-e6bf-cfd2-9384",
@@ -5065,7 +9320,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Boltgun",
+          "Bolt pistol",
+          "Close combat weapon",
+          "Astartes chainsword"
+        ]
       },
       {
         "id": "d2b8-454a-d061-b592",
@@ -5077,7 +9340,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
       },
       {
         "id": "1780-25b8-ce0b-898d",
@@ -5091,6 +9357,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Chaos icon"
         ]
       },
       {
@@ -5103,7 +9374,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             125
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon"
+        ]
+      },
+      {
+        "id": "287f-7d48-59cf-dc1e",
+        "name": "Master of Possession",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "cb1-5bcf-9e36-8136",
@@ -5117,7 +9410,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Daemon"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "acb5-dbf2-e3a6-ad94",
@@ -5131,7 +9427,52 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Bolt pistol",
+          "Astartes chainsword",
+          "Plasma pistol",
+          "Heavy melee weapon",
+          "Close combat weapon",
+          "Meltagun"
         ]
+      },
+      {
+        "id": "980d-c80a-19b2-f641",
+        "name": "Sorcerer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "683f-bfb2-f8d0-c39e",
+        "name": "Sorcerer in Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9f33-ff4a-d948-4636",
@@ -5146,7 +9487,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Jump Pack",
           "Daemon"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "8dc5-4dcb-d77f-7d23",
@@ -5160,6 +9504,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon"
         ]
       },
       {
@@ -5174,7 +9523,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": []
+      },
+      {
+        "id": "b206-250d-84aa-fc42",
+        "name": "Chaos Lord in Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Chaos Lord"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cb66-af7-2cca-1c85",
+        "name": "Cultist Firebrand",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Damned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f69d-2171-5f95-9c88",
@@ -5188,7 +9575,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
       },
       {
         "id": "23aa-b45a-6d5d-e92b",
@@ -5202,7 +9592,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 8,
+        "maxModels": 16,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -5468,6 +9861,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Chaos icon"
         ]
       },
       {
@@ -5482,7 +9880,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
       },
       {
         "id": "8dc5-4dcb-d77f-7d23",
@@ -5496,6 +9897,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon"
         ]
       },
       {
@@ -5510,7 +9916,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cb66-af7-2cca-1c85",
+        "name": "Cultist Firebrand",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Damned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "1267-78f1-7774-859",
@@ -5524,7 +9950,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": []
       },
       {
         "id": "23aa-b45a-6d5d-e92b",
@@ -5538,7 +9967,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 8,
+        "maxModels": 16,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -5793,6 +10225,96 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "chaos-space-marines": {
     "units": [
       {
+        "id": "76b4-a2c4-208e-ceb9",
+        "name": "Abaddon the Despoiler",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            270
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Chaos Undivided"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d93f-6d73-1792-cb18",
+        "name": "Haarken Worldclaimer",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Jump Pack",
+          "Chaos Undivided"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d9e3-8baf-128f-6389",
+        "name": "Huron Blackheart",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Chaos Undivided"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9bbd-a535-a4ef-9680",
+        "name": "Heretic Astartes Daemon Prince",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            165
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Daemon Prince"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2a1d-2757-347c-58f2",
+        "name": "Heretic Astartes Daemon Prince with wings",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Daemon Prince with Wings",
+          "Daemon Prince"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "cd9c-96e7-6dcb-bedf",
         "name": "Fabius Bile",
         "role": "Epic Hero",
@@ -5802,7 +10324,145 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             100
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "f399-fe33-375b-d1a2",
+        "name": "Cypher",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Fallen"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "287f-7d48-59cf-dc1e",
+        "name": "Master of Possession",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e496-5a54-4cb2-4fc1",
+        "name": "Chaos Lord",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b206-250d-84aa-fc42",
+        "name": "Chaos Lord in Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Terminator",
+          "Chaos Lord"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "980d-c80a-19b2-f641",
+        "name": "Sorcerer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "683f-bfb2-f8d0-c39e",
+        "name": "Sorcerer in Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "46e1-2159-7c26-9105",
+        "name": "Lord Discordant on Helstalker",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Lord Discordant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "440-a22a-eac1-b107",
+        "name": "Warpsmith",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "d2b8-454a-d061-b592",
@@ -5814,7 +10474,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
       },
       {
         "id": "1780-25b8-ce0b-898d",
@@ -5828,6 +10491,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Chaos icon"
         ]
       },
       {
@@ -5840,7 +10508,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Boltgun",
+          "Bolt pistol",
+          "Close combat weapon",
+          "Astartes chainsword"
+        ]
       },
       {
         "id": "1267-78f1-7774-859",
@@ -5854,7 +10530,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": []
       },
       {
         "id": "23aa-b45a-6d5d-e92b",
@@ -5868,7 +10547,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 8,
+        "maxModels": 16,
+        "wargear": []
       },
       {
         "id": "203d-c50f-a438-4982",
@@ -5882,7 +10564,32 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Combi-bolter",
+          "Accursed weapon",
+          "Combi-weapon",
+          "Power fist",
+          "Chainfist",
+          "Paired accursed weapons"
         ]
+      },
+      {
+        "id": "da34-7071-8658-a453",
+        "name": "Master of Executions",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "cb1-5bcf-9e36-8136",
@@ -5896,7 +10603,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Daemon"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "4e85-615b-5d49-dfa4",
@@ -5908,7 +10618,35 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             125
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Bolt pistol",
+          "Boltgun",
+          "Accursed weapon",
+          "Plasma pistol",
+          "Combi-weapon",
+          "Paired accursed weapons",
+          "Power fist"
+        ]
+      },
+      {
+        "id": "3e98-7689-8bf0-96e0",
+        "name": "Venomcrawler",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7373-47b7-11a3-2b48",
@@ -5920,7 +10658,17 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             70
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Combi-bolter",
+          "Bolt pistol",
+          "Close combat weapon",
+          "Astartes chainsword",
+          "Meltagun",
+          "Combi-weapon"
+        ]
       },
       {
         "id": "acb5-dbf2-e3a6-ad94",
@@ -5934,6 +10682,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Bolt pistol",
+          "Astartes chainsword",
+          "Plasma pistol",
+          "Heavy melee weapon",
+          "Close combat weapon",
+          "Meltagun"
         ]
       },
       {
@@ -5949,7 +10707,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Jump Pack",
           "Daemon"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "946c-d784-c8be-f21",
@@ -5961,7 +10722,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             125
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon"
+        ]
       },
       {
         "id": "2311-fa63-364-22a3",
@@ -5975,7 +10741,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Daemon"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "dcc0-b70c-9779-e6c9",
+        "name": "Vashtorr the Arkifane",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            175
+          ]
+        ],
+        "keywords": [
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "8dc5-4dcb-d77f-7d23",
@@ -5989,6 +10775,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon"
         ]
       },
       {
@@ -6003,7 +10794,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f69d-2171-5f95-9c88",
@@ -6017,7 +10811,181 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Damned"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "6de7-36d5-6015-7a51",
+        "name": "Chaos Land Raider",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [
+          "Land Raider"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "279e-62d4-bff1-141",
+        "name": "Chaos Predator Annihilator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Predator Annihilator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3dfb-3b2a-94b-2fbe",
+        "name": "Chaos Predator Destructor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [
+          "Predator Destructor"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e687-6d7a-bb28-dcaa",
+        "name": "Chaos Vindicator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            185
+          ]
+        ],
+        "keywords": [
+          "Vindicator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "45b-19f6-38d2-703f",
+        "name": "Forgefiend",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9ff2-45e0-fe97-65f8",
+        "name": "Helbrute",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "79e5-a673-cca5-91a4",
+        "name": "Heldrake",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            205
+          ]
+        ],
+        "keywords": [
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d37d-7e8f-341b-c67c",
+        "name": "Maulerfiend",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e981-27ae-112f-aa9a",
+        "name": "Chaos Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Rhino"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b27f-1c85-5e7f-4e7d",
+        "name": "Khorne Lord of Skulls",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            450
+          ]
+        ],
+        "keywords": [
+          "Towering",
+          "Khorne",
+          "Daemon",
+          "Lord of Skulls"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7263-70e5-b424-61eb",
@@ -6031,7 +10999,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Beast"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
       },
       {
         "id": "3832-4208-11e9-ca22",
@@ -6046,6 +11017,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Khorne",
           "Berzerkers"
+        ],
+        "minModels": 6,
+        "maxModels": 20,
+        "wargear": [
+          "Bolt pistol",
+          "Plasma pistol"
         ]
       },
       {
@@ -6061,7 +11038,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Tzeentch",
           "Rubricae"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9030-f62d-417-fc92",
@@ -6075,6 +11055,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Bubotic weapons",
+          "Heavy plague weapon",
+          "Boltgun",
+          "Meltagun"
         ]
       },
       {
@@ -6089,7 +11077,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Daemon"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
+      },
+      {
+        "id": "d880-9968-2ed9-5a21",
+        "name": "Chaos Lord with Jump Pack",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Chaos Lord",
+          "Jump Pack"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cb66-af7-2cca-1c85",
+        "name": "Cultist Firebrand",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Damned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f666-1f5d-0c20-06c1",
@@ -6103,6 +11129,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Boltgun",
+          "Bolt pistol",
+          "Close combat weapon",
+          "Astartes chainsword",
+          "Accursed weapon",
+          "Paired accursed weapons"
         ]
       },
       {
@@ -6118,6 +11154,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Slaanesh",
           "Cults of the Dark Gods"
+        ],
+        "minModels": 4,
+        "maxModels": 6,
+        "wargear": [
+          "Sonic blaster",
+          "Close combat weapon"
         ]
       },
       {
@@ -6132,7 +11174,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Chaos Undivided"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": []
       },
       {
         "id": "2078-97ce-8793-3382",
@@ -6144,7 +11189,101 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             110
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 3,
+        "maxModels": 10,
+        "wargear": [
+          "Boltgun",
+          "Bolt pistol",
+          "Meltagun",
+          "Power fist"
+        ]
+      },
+      {
+        "id": "beed-356b-2fec-2c2a",
+        "name": "Red Corsairs Reave-captain",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b9a4-a9c4-5f8d-ed3a",
+        "name": "Exalted Champion [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Exalted Champion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b6c0-4be6-7487-73dc",
+        "name": "Sorcerous Champion [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Sorcerous Champion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9573-8b24-3796-d9d9",
+        "name": "Soul Forge Tyrant [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Helstalker",
+          "Soul Forge Tyrant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "29f9-fc47-787e-d9d3",
+        "name": "Defiler",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            250
+          ]
+        ],
+        "keywords": [
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -6397,6 +11536,117 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "death-guard": {
     "units": [
       {
+        "id": "4cb3-e6b6-4e82-23bf",
+        "name": "Daemon Prince of Nurgle",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            195
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Daemon",
+          "Daemon Prince"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f4d7-244d-16c4-f2f3",
+        "name": "Daemon Prince of Nurgle with wings",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Daemon",
+          "Daemon Prince with Wings"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e6a4-7055-fd23-5123",
+        "name": "Typhus",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Psyker",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c15c-2b5a-dcab-7627",
+        "name": "Lord of Virulence",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8700-3d3-efbb-ef8d",
+        "name": "Lord of Contagion",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9900-77d7-10e3-5c91",
+        "name": "Malignant Plaguecaster",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "8467-b3a2-2597-de0d",
         "name": "Plague Marines",
         "role": "Battleline",
@@ -6408,6 +11658,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Bubotic weapons",
+          "Boltgun",
+          "Icon of Despair",
+          "Plasma gun"
         ]
       },
       {
@@ -6422,7 +11680,95 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Nurgle"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": []
+      },
+      {
+        "id": "1ffc-27de-8aea-e7bb",
+        "name": "Noxious Blightbringer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c88f-d4dc-84b3-1b31",
+        "name": "Foul Blightspawn",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "690b-a189-5935-f32e",
+        "name": "Biologus Putrifier",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "506c-16a8-68f7-c08a",
+        "name": "Tallyman",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9a82-ea13-3511-6c08",
+        "name": "Plague Surgeon",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "83e8-ebb7-785a-2115",
@@ -6437,7 +11783,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Nurgle",
           "Terminator"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "2a2b-643e-860e-b524",
+        "name": "Helbrute",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            115
+          ]
+        ],
+        "keywords": [
+          "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "5b4e-dcf1-5c6f-4d35",
@@ -6452,6 +11818,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Nurgle",
           "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Combi-weapon"
         ]
       },
       {
@@ -6468,7 +11839,213 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Nurgle",
           "Spawn"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "26d5-ec73-3517-f3f",
+        "name": "Foetid Bloat-drone",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e58b-507a-937f-7abf",
+        "name": "Plagueburst Crawler",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            210
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "89d-b0c0-6e19-f017",
+        "name": "Chaos Land Raider",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Land Raider"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9b58-210d-c12f-4d46",
+        "name": "Chaos Predator Annihilator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Predator Annihilator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ab4e-466d-e9e8-89d5",
+        "name": "Chaos Predator Destructor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Predator Destructor"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b899-92e2-693a-975f",
+        "name": "Chaos Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Rhino"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f5ac-4f37-fe7b-36b6",
+        "name": "Mortarion",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            380
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Daemon",
+          "Nurgle",
+          "Primarch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3e5b-23db-4ccd-ea97",
+        "name": "Icon Bearer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Death Guard Icon Bearer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c5a7-5f07-2b1a-8f98",
+        "name": "Lord of Poxes",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2425-13a7-77f0-0112",
+        "name": "Great Unclean One",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            250
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Daemon",
+          "Nurgle",
+          "Summoned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "66dd-f8c9-f9a6-0e6b",
+        "name": "Rotigus",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            265
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Daemon",
+          "Nurgle",
+          "Summoned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "904b-0319-7b2e-2145",
@@ -6484,7 +12061,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Nurgle",
           "Summoned"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "cd03-e1f3-fa31-a271",
@@ -6500,7 +12080,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Nurgle",
           "Summoned"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "7e32-0162-71e2-57a0",
@@ -6517,7 +12100,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Nurgle",
           "Summoned"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "d055-25eb-eb2b-7f6a",
+        "name": "Foetid Bloat-drone with heavy blight launcher",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Daemon",
+          "Foetid Bloat-drone"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d037-162a-ac85-9c88",
+        "name": "Plague Sorcerer [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Nurgle",
+          "Plague Sorcerer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "89d8-7e90-be47-59b6",
+        "name": "Plague Lord [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Plague Lord"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "fa2a-1b44-a513-318d",
@@ -6532,7 +12174,89 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Nurgle",
           "Tri-lobe Vectors"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
+      },
+      {
+        "id": "bc88-0833-743e-0146",
+        "name": "Defiler",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            250
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Nurgle"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3594-bf68-4a46-fbf8",
+        "name": "Immortal Champion [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Crucible",
+          "Immortal Champion",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8597-d6dd-511e-80ae",
+        "name": "Daemonic Charioteer [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Crucible",
+          "Daemonic Charioteer",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3a39-0b56-25e0-eff8",
+        "name": "Daemonic Herald [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Summoned",
+          "Daemonic Herald",
+          "Crucible",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -6745,6 +12469,98 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "thousand-sons": {
     "units": [
       {
+        "id": "3bfa-bf00-b5ed-cc81",
+        "name": "Ahriman",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Inferno bolt pistol"
+        ]
+      },
+      {
+        "id": "dfde-eaff-e63e-3aae",
+        "name": "Chaos Land Raider",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [
+          "Tzeentch",
+          "Land Raider"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a619-beee-4bde-d049",
+        "name": "Chaos Predator Annihilator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Tzeentch",
+          "Predator Annihilator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4819-dbbe-8547-4e23",
+        "name": "Chaos Predator Destructor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Tzeentch",
+          "Predator Destructor"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8d9b-b949-2557-dcc4",
+        "name": "Chaos Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Tzeentch",
+          "Rhino"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "60de-4c77-95e1-1337",
         "name": "Chaos Spawn",
         "role": "Infantry",
@@ -6759,7 +12575,191 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Spawn",
           "Mutant"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "3413-b8fd-e22c-da4f",
+        "name": "Chaos Vindicator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            185
+          ]
+        ],
+        "keywords": [
+          "Tzeentch",
+          "Vindicator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c3a6-8fab-45f0-2d45",
+        "name": "Exalted Sorcerer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1724-8c9c-c385-16c6",
+        "name": "Exalted Sorcerer on Disc of Tzeentch",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tzeentch",
+          "Exalted Sorcerer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d2f1-7a0b-f7cd-9b46",
+        "name": "Forgefiend",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5b9d-e3c1-3d55-8276",
+        "name": "Helbrute",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "637a-d542-35aa-e95c",
+        "name": "Heldrake",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            215
+          ]
+        ],
+        "keywords": [
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1693-5e00-da69-57bb",
+        "name": "Infernal Master",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "91dc-9aad-0505-52a8",
+        "name": "Magnus the Red",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            435
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Daemon",
+          "Tzeentch",
+          "Primarch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f2aa-19fd-335a-09b3",
+        "name": "Maulerfiend",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "094c-c618-92c1-b394",
+        "name": "Mutalith Vortex Beast",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Tzeentch",
+          "Mutant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "5d3d-e13b-8b76-dad3",
@@ -6774,7 +12774,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Tzeentch",
           "Rubricae"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b1cf-c5-5121-92a4",
@@ -6791,7 +12794,88 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Scarab Occult",
           "Rubricae",
           "Terminator"
-        ]
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "af1e-9a3d-785c-47f8",
+        "name": "Sorcerer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c6d1-e73b-9d26-5d8b",
+        "name": "Sorcerer in Terminator Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tzeentch",
+          "Sorcerer",
+          "Terminator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "eccd-e442-607b-3fd0",
+        "name": "Daemon Prince of Tzeentch",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Psyker",
+          "Tzeentch",
+          "Daemon Prince"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "66f4-929e-1769-f277",
+        "name": "Daemon Prince of Tzeentch with wings",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Psyker",
+          "Tzeentch",
+          "Daemon Prince"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "1703-3edd-5eb3-fcef",
@@ -6806,7 +12890,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Tzeentch",
           "Mutant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Divining spear"
         ]
+      },
+      {
+        "id": "c251-bd54-441-4799",
+        "name": "Tzaangor Shaman",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tzeentch",
+          "Mutant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f5b9-50c8-5c60-d8ea",
@@ -6821,7 +12929,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Tzeentch",
           "Mutant"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "fe4b-b3a4-69b7-3088",
@@ -6835,7 +12946,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tzeentch"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "8b9f-917f-37c1-99c3",
@@ -6851,7 +12965,52 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Tzaangor Enlightened",
           "Mutant"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Fatecaster greatbow"
         ]
+      },
+      {
+        "id": "8f70-9bec-9b83-216b",
+        "name": "Kairos Fateweaver",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            295
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Daemon",
+          "Tzeentch",
+          "Summoned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c964-c75a-2a9d-e451",
+        "name": "Lord of Change",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            285
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Daemon",
+          "Tzeentch",
+          "Summoned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "694f-a205-b260-783c",
@@ -6867,7 +13026,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Tzeentch",
           "Summoned"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "7cbe-2406-8e67-aff5",
@@ -6884,7 +13046,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Tzeentch",
           "Summoned"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "4c73-cbd1-f052-80c3",
@@ -6901,7 +13066,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Summoned",
           "Horrors"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "aec5-4419-39e7-3e63",
@@ -6918,7 +13086,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Summoned",
           "Horrors"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "dd17-8cb8-ed8c-f6c8",
@@ -6935,7 +13106,147 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tzeentch",
           "Spawn",
           "Mutant"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8e43-1b14-4d87-7d17",
+        "name": "Magister [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            105
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Tzeentch",
+          "Magister"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d288-821d-7fef-f3ae",
+        "name": "Brayherd Chieftain [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Tzeentch",
+          "Mutant",
+          "Brayherd Chieftain"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f75a-a5e6-f478-6f55",
+        "name": "Brayherd Shaman [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Tzeentch",
+          "Mutant",
+          "Psyker",
+          "Brayherd Shaman"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f158-2979-c38b-65b5",
+        "name": "Defiler",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            250
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Tzeentch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8597-d6dd-511e-80ae",
+        "name": "Daemonic Charioteer [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Crucible",
+          "Daemonic Charioteer",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3a39-0b56-25e0-eff8",
+        "name": "Daemonic Herald [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Summoned",
+          "Daemonic Herald",
+          "Crucible",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3594-bf68-4a46-fbf8",
+        "name": "Immortal Champion [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Crucible",
+          "Immortal Champion",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -7110,6 +13421,133 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "world-eaters": {
     "units": [
       {
+        "id": "f4b8-1179-de57-4d69",
+        "name": "Angron",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            340
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Daemon",
+          "Primarch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3449-7dac-6ac8-5d51",
+        "name": "Khârn the Betrayer",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Khorne"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Plasma pistol"
+        ]
+      },
+      {
+        "id": "3b15-b424-2059-71fa",
+        "name": "Lord Invocatus",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Khorne"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "40c5-9ebd-6d42-2855",
+        "name": "Daemon Prince of Khorne",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            200
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Daemon",
+          "Daemon Prince"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "0294-61a4-c6ed-b2e8",
+        "name": "Daemon Prince of Khorne with wings",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Daemon",
+          "Daemon Prince"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ec72-f024-4283-0558",
+        "name": "Lord on Juggernaut",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            105
+          ]
+        ],
+        "keywords": [
+          "Khorne"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1b56-682c-ac33-bc5f",
+        "name": "Master of Executions",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Khorne"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "f909-00c7-8ba4-018a",
         "name": "Khorne Berzerkers",
         "role": "Battleline",
@@ -7122,6 +13560,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Khorne",
           "Berzerkers"
+        ],
+        "minModels": 6,
+        "maxModels": 20,
+        "wargear": [
+          "Bolt pistol",
+          "Plasma pistol"
         ]
       },
       {
@@ -7138,6 +13582,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Khorne",
           "Terminator",
           "Terminator Squad"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Combi-bolter",
+          "Accursed weapon",
+          "Chainfist",
+          "Power fist",
+          "Combi-weapon",
+          "Paired accursed weapons"
         ]
       },
       {
@@ -7152,7 +13606,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Khorne"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9435-1f44-7e5b-d510",
@@ -7168,7 +13625,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Khorne",
           "Daemon",
           "Possessed"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "9932-3d2b-1e47-d53b",
@@ -7184,7 +13644,171 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Khorne",
           "Daemon",
           "Possessed"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "4251-bd4f-f7ac-9487",
+        "name": "Chaos Land Raider",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Land Raider"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "497c-f787-5a7e-1020",
+        "name": "Chaos Predator Annihilator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Predator Annihilator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "04a0-269e-3bab-2c61",
+        "name": "Chaos Predator Destructor",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Predator Destructor"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ea51-5575-9e74-9346",
+        "name": "Defiler",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            250
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "81e1-b212-69c1-308f",
+        "name": "Forgefiend",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            165
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "273a-db24-3f7c-b977",
+        "name": "Helbrute",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Khorne"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "de2e-8fae-9d22-24a4",
+        "name": "Heldrake",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            200
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a619-8a52-be03-3bd5",
+        "name": "Maulerfiend",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e849-ce40-ee43-7623",
+        "name": "Chaos Rhino",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Rhino"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "edde-57bf-bccc-d8b2",
@@ -7200,7 +13824,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Khorne",
           "Spawn"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "836c-f65b-6bcb-9663",
+        "name": "Khorne Lord of Skulls",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            505
+          ]
+        ],
+        "keywords": [
+          "Towering",
+          "Khorne",
+          "Daemon",
+          "Lord of Skulls"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b399-9b66-e550-8050",
@@ -7214,7 +13861,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Khorne"
+        ],
+        "minModels": 8,
+        "maxModels": 8,
+        "wargear": [
+          "Chainblade"
         ]
+      },
+      {
+        "id": "71c9-b10b-b55f-483e",
+        "name": "Slaughterbound",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Daemon",
+          "Possessed"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "71d9-9dc2-2b9a-6db3",
+        "name": "Skarbrand",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            305
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Khorne"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4ad2-bd20-6dfe-776b",
+        "name": "Bloodthirster",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            305
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Khorne",
+          "Summoned"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9188-4709-00ba-e5e0",
@@ -7230,7 +13938,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Khorne",
           "Summoned"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "e65f-c7c7-1d18-1a60",
@@ -7246,7 +13957,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Khorne",
           "Summoned"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "b657-1743-6e3a-0838",
@@ -7263,7 +13977,128 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Khorne",
           "Summoned"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "85e5-721a-d505-3881",
+        "name": "Butcherlord [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Butcherlord",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "71ad-8562-f833-5872",
+        "name": "Eight-blessed Lord [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Eight-blessed Lord",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "544e-3db3-4878-3db3",
+        "name": "Bloodcult Champion [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Khorne",
+          "Bloodcult Champion",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3594-bf68-4a46-fbf8",
+        "name": "Immortal Champion [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Crucible",
+          "Immortal Champion",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8597-d6dd-511e-80ae",
+        "name": "Daemonic Charioteer [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Crucible",
+          "Daemonic Charioteer",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3a39-0b56-25e0-eff8",
+        "name": "Daemonic Herald [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Summoned",
+          "Daemonic Herald",
+          "Crucible",
+          "Shadow Legion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -7515,7 +14350,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Wraith Construct",
           "Aeldari",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": []
       },
       {
         "id": "592a-b255-6c58-19ec",
@@ -7530,7 +14368,104 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Ynnari"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "828d-840a-9a67-9074",
+        "name": "Asurmen",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Phoenix Lord",
+          "Aeldari",
+          "Aspect Warrior"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "df57-7a59-75eb-ce63",
+        "name": "Autarch",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "497a-263e-966a-5a15",
+        "name": "Autarch Wayleaper",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Jump Pack",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "554c-8b4f-1059-28a7",
+        "name": "Avatar of Khaine",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            280
+          ]
+        ],
+        "keywords": [
+          "Daemon",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8732-df2f-a542-805f",
+        "name": "Baharroth",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            115
+          ]
+        ],
+        "keywords": [
+          "Phoenix Lord",
+          "Aspect Warrior",
+          "Aeldari",
+          "Jump Pack"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "cc68-ad19-7285-7a11",
@@ -7547,7 +14482,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Ynnari",
           "Corsairs and Travelling Players"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "cbb7-6669-a014-36fe",
@@ -7564,7 +14502,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Ynnari",
           "Corsairs and Travelling Players"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "90c9-aaac-5ef8-f043",
+        "name": "Crimson Hunter",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Aspect Warrior",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "6863-bf42-238a-fd0b",
@@ -7580,7 +14540,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aspect Warrior",
           "Aeldari",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "5768-1f87-3a16-d901",
+        "name": "Death Jester",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "e6c2-f3b2-6d3e-c3d3",
@@ -7596,7 +14578,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "f48e-276e-a997-c90e",
+        "name": "Eldrad Ulthran",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Farseer",
+          "Eldrad Ultran",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1d83-167-486c-bac4",
+        "name": "Falcon",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b2f5-8219-f875-917e",
+        "name": "Farseer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "833b-55bc-73be-8862",
+        "name": "Farseer Skyrunner",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Farseer",
+          "Psyker",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "5374-9e93-8af2-819e",
@@ -7612,7 +14674,47 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "9940-a69b-682e-ccf4",
+        "name": "Fire Prism",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9262-3993-1368-be5a",
+        "name": "Fuegan",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Phoenix Lord",
+          "Aeldari",
+          "Aspect Warrior"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "e78a-4442-4ed2-66bf",
@@ -7628,7 +14730,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Guardians",
           "Aeldari",
           "Ynnari"
-        ]
+        ],
+        "minModels": 11,
+        "maxModels": 11,
+        "wargear": []
+      },
+      {
+        "id": "551b-900c-3681-8f11",
+        "name": "Hemlock Wraithfighter",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            155
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Wraith Construct",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7fcb-9262-474a-7cec",
@@ -7643,7 +14768,65 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Ynnari",
           "Aspect Warrior"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "77f9-e8de-225f-9e68",
+        "name": "Jain Zar",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Phoenix Lord",
+          "Aeldari",
+          "Aspect Warrior"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6f18-95b7-2662-8925",
+        "name": "Maugan Ra",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Phoenix Lord",
+          "Aeldari",
+          "Aspect Warrior"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "908a-fc2b-5a53-599f",
+        "name": "Night Spinner",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            190
+          ]
+        ],
+        "keywords": [
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b98b-701f-9c0c-5437",
@@ -7658,7 +14841,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "8c34-52ba-cbd0-9ca4",
+        "name": "Shadowseer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "433-faed-ea62-c531",
@@ -7674,7 +14880,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "c1ff-dc11-9853-e3e3",
@@ -7689,7 +14898,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Ynnari"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "9270-4b93-ca59-f3ed",
@@ -7705,7 +14917,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Harlequin Allies",
           "Aeldari",
           "Corsairs and Travelling Players"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 4,
+        "wargear": []
+      },
+      {
+        "id": "f88f-60c5-3daf-3d2f",
+        "name": "Solitaire",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            115
+          ]
+        ],
+        "keywords": [
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e53b-7d09-eb7c-c6c7",
+        "name": "Spiritseer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "854b-f8e-28fa-8c24",
+        "name": "Starweaver",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Star Weaver",
+          "Aeldari",
+          "Harlequin Allies",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "5452-c4a7-59fb-f05c",
@@ -7721,7 +14994,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Guardians",
           "Aeldari",
           "Ynnari"
+        ],
+        "minModels": 5,
+        "maxModels": 11,
+        "wargear": [
+          "Flamer"
         ]
+      },
+      {
+        "id": "82ac-7d93-df55-5504",
+        "name": "D-Cannon Platform",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Support Weapon",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "240f-70a4-7ba7-a538",
@@ -7738,7 +15035,46 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Jump Pack",
           "Aspect Warrior",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "dd79-c2fe-59d6-d2",
+        "name": "The Visarch",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "68fb-4b6f-2bf8-7105",
+        "name": "The Yncarne",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            260
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Daemon",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "dac1-6a7f-a06a-82cf",
@@ -7754,7 +15090,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Harlequin Allies",
           "Aeldari",
           "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Fusion Pistol",
+          "Neuro Disruptor"
         ]
+      },
+      {
+        "id": "dada-b81b-37bd-1f3b",
+        "name": "Troupe Master",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e011-d99d-f0de-5289",
+        "name": "Voidweaver",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "291f-2885-4512-f0cd",
+        "name": "Warlock",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "d61-c058-6bd1-112f",
@@ -7771,7 +15170,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Warlock",
           "Ynnari"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f52d-1814-7d66-1f7b",
@@ -7788,7 +15190,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Warlock",
           "Aeldari",
           "Ynnari"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "57ec-47a8-a59a-6a46",
@@ -7805,7 +15210,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "ad88-f706-318c-e70e",
+        "name": "Wave Serpent",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "bb4f-4359-cc16-e6d5",
@@ -7821,7 +15247,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Wraith Construct",
           "Aeldari",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": []
+      },
+      {
+        "id": "bfd-df5a-b358-4cf9",
+        "name": "Wraithknight",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            435
+          ]
+        ],
+        "keywords": [
+          "Wraith Construct",
+          "Towering",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b9e9-397e-d83a-f77a",
+        "name": "Wraithlord",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Wraith Construct",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ada5-25ce-d5d5-4ccb",
+        "name": "Yvraine",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "c90f-a8e5-6afa-eb91",
@@ -7837,7 +15323,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "79b3-2cd1-d7b4-d7b1",
+        "name": "Phantom Titan",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            2100
+          ]
+        ],
+        "keywords": [
+          "Towering",
+          "Aeldari",
+          "Wraith Construct"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ca40-4a0d-567-852",
+        "name": "Revenant Titan",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            1100
+          ]
+        ],
+        "keywords": [
+          "Towering",
+          "Wraith Construct",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5f10-27fc-f1e4-af90",
+        "name": "Ynnari Archon",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Archon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "5bf7-f905-8fab-43b4",
@@ -7852,7 +15397,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Incubi",
           "Aeldari"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "807b-0b72-5908-a3d4",
@@ -7867,7 +15415,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Kabalite Warriors",
           "Aeldari"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8e15-3c74-d36f-7669",
+        "name": "Ynnari Raider",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Raider",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "915d-ad53-9518-7a85",
@@ -7882,7 +15451,46 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Reavers",
           "Aeldari"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "c2e0-ca3e-e8c1-e019",
+        "name": "Ynnari Succubus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Succubus",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5443-6671-baeb-77a3",
+        "name": "Ynnari Venom",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Venom",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "36fd-7c3f-b728-c5d4",
@@ -7897,7 +15505,125 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Wyches",
           "Aeldari"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "2c93-f32d-64ea-b829",
+        "name": "Shadow Weaver Platform",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Support Weapon",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5df4-e13a-f6f4-b672",
+        "name": "Vibro Cannon Platform",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Support Weapon",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8bbc-7ae0-5d5c-a105",
+        "name": "Lhykhis",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Jump Pack",
+          "Aspect Warrior",
+          "Phoenix Lord"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d756-653a-872b-5c1b",
+        "name": "Wraithknight with Ghostglaive",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            420
+          ]
+        ],
+        "keywords": [
+          "Wraith Construct",
+          "Towering",
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "54dc-aa1f-817a-a5c5",
+        "name": "Prince Yriel",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Anhrathe"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4273-173c-e850-4071",
+        "name": "Kharseth",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Psyker",
+          "Anhrathe"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "662e-14c3-c894-e830",
@@ -7913,7 +15639,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Anhrathe",
           "Jump Pack"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8e2c-2234-8595-f191",
+        "name": "Craftworld Warleader [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Craftworld Warleader",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "915f-4ee6-3358-31ca",
+        "name": "Skyrunner [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Crucible",
+          "Skyrunner"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5578-f918-6e88-3d0e",
+        "name": "Ghost Warrior [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Crucible",
+          "Ghost Warrior",
+          "Wraith Construct"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -8759,6 +16546,24 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "drukhari": {
     "units": [
       {
+        "id": "5c1c-fa4a-3234-c711",
+        "name": "Archon",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Kabal",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "a5d3-e21b-bf13-a952",
         "name": "Cronos",
         "role": "Monster",
@@ -8771,7 +16576,46 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Haemonculus Covens"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "a30b-b966-d264-e935",
+        "name": "Drazhar",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Blades for Hire"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "32ff-aec4-9669-c8a2",
+        "name": "Haemonculus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Haemonculus Covens",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "2311-9feb-9d0a-8154",
@@ -8786,7 +16630,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Wych Cult"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "1529-793d-481b-82bf",
@@ -8801,7 +16648,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Blades for Hire"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "d20b-783-ccf6-b29d",
@@ -8816,7 +16666,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Kabal"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ae1b-1a96-5b4c-cecc",
+        "name": "Lelith Hesperax",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Wych Cult",
+          "Succubus"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "6a3a-7973-b509-532e",
@@ -8831,7 +16703,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Blades for Hire"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "635b-21f4-f801-453",
+        "name": "Raider",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3376-d337-6a33-4bca",
+        "name": "Ravager",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Kabal"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fbc4-c7d0-db5b-91c",
+        "name": "Razorwing Jetfighter",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "2c3a-9752-2516-69ab",
@@ -8846,7 +16773,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Wych Cult",
           "Aeldari"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "7c93-baac-e65f-58bd",
@@ -8863,7 +16793,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Jump Pack",
           "Blades for Hire"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b5a9-c802-10f0-6768",
+        "name": "Succubus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Wych Cult",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "5c5f-b70b-f6ee-a81e",
@@ -8878,7 +16829,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Haemonculus Covens"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "ee2c-6ca0-5e29-37a6",
+        "name": "Venom",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "71e1-7d54-4856-4ce1",
+        "name": "Voidraven Bomber",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            245
+          ]
+        ],
+        "keywords": [
+          "Voidraven",
+          "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "2659-7a1b-3ce6-8e4b",
@@ -8893,6 +16882,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Haemonculus Covens",
           "Aeldari"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Torturer's tool",
+          "Hexrifle",
+          "Liquifier gun",
+          "Ossefactor",
+          "Stinger pistol"
         ]
       },
       {
@@ -8908,7 +16906,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Wych Cult",
           "Aeldari"
-        ]
+        ],
+        "minModels": 7,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "cc68-ad19-7285-7a11",
@@ -8925,7 +16926,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Ynnari",
           "Corsairs and Travelling Players"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "cbb7-6669-a014-36fe",
@@ -8942,7 +16946,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Ynnari",
           "Corsairs and Travelling Players"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5768-1f87-3a16-d901",
+        "name": "Death Jester",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f88f-60c5-3daf-3d2f",
+        "name": "Solitaire",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            115
+          ]
+        ],
+        "keywords": [
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8c34-52ba-cbd0-9ca4",
+        "name": "Shadowseer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9270-4b93-ca59-f3ed",
@@ -8958,7 +17023,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Harlequin Allies",
           "Aeldari",
           "Corsairs and Travelling Players"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 4,
+        "wargear": []
+      },
+      {
+        "id": "854b-f8e-28fa-8c24",
+        "name": "Starweaver",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Star Weaver",
+          "Aeldari",
+          "Harlequin Allies",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e011-d99d-f0de-5289",
+        "name": "Voidweaver",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "dac1-6a7f-a06a-82cf",
@@ -8974,7 +17081,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Harlequin Allies",
           "Aeldari",
           "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Fusion Pistol",
+          "Neuro Disruptor"
         ]
+      },
+      {
+        "id": "dada-b81b-37bd-1f3b",
+        "name": "Troupe Master",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Harlequin Allies",
+          "Aeldari",
+          "Corsairs and Travelling Players"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a223-234b-7886-fccc",
+        "name": "Lady Malys",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Kabal",
+          "Aeldari",
+          "Archon"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f2d1-4574-223f-998f",
@@ -8991,7 +17142,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Jump Pack",
           "Blades for Hire"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": []
       },
       {
         "id": "662e-14c3-c894-e830",
@@ -9007,7 +17161,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Aeldari",
           "Anhrathe",
           "Jump Pack"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "54dc-aa1f-817a-a5c5",
+        "name": "Prince Yriel",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Anhrathe"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4273-173c-e850-4071",
+        "name": "Kharseth",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Psyker",
+          "Anhrathe"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "62f8-6a75-5ffb-e83b",
+        "name": "Archtormentor [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Wych Cult",
+          "Aeldari",
+          "Archtormentor"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b5a1-7e2b-7a1d-bbda",
+        "name": "Flesh Crafter [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Aeldari",
+          "Haemonculus Covens",
+          "Flesh Crafter"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -9864,7 +18098,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Aberrant weapons"
         ]
+      },
+      {
+        "id": "97b1-4873-9fcb-5cb8",
+        "name": "Abominant",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "cf71-a12a-2730-c40b",
@@ -9878,7 +18134,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": []
       },
       {
         "id": "a197-f6c3-5d4a-5326",
@@ -9893,7 +18152,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Acolyte Hybrids",
           "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Hand flamer",
+          "Cult claws and knife",
+          "Cult icon"
         ]
+      },
+      {
+        "id": "e367-b2cb-d22a-b17c",
+        "name": "Acolyte Iconward",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "3a81-2b84-bf4c-4f85",
@@ -9907,7 +18190,83 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
+        ],
+        "minModels": 2,
+        "maxModels": 9,
+        "wargear": [
+          "Grenade launcher",
+          "Close combat weapon",
+          "Atalan small arms",
+          "Atalan power weapon"
         ]
+      },
+      {
+        "id": "725f-8a41-dc78-52f5",
+        "name": "Biophagus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5543-973a-cd2e-c941",
+        "name": "Clamavus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5ac1-3adb-212a-5e02",
+        "name": "Goliath Rockgrinder",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1d1-f0d2-b810-12fe",
+        "name": "Goliath Truck",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "8a84-a8fd-977e-9118",
@@ -9921,7 +18280,84 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Metamorph mutations",
+          "Autopistol",
+          "Cult icon",
+          "Hand flamer"
         ]
+      },
+      {
+        "id": "6426-ca59-402a-d399",
+        "name": "Jackal Alphus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5e0e-11d9-181d-3481",
+        "name": "Kelermorph",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "51e8-dac1-561a-aaa9",
+        "name": "Locus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4f4-2157-2cb5-8bb",
+        "name": "Magus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b5d2-8681-6bba-f05b",
@@ -9935,7 +18371,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
+        ],
+        "minModels": 5,
+        "maxModels": 20,
+        "wargear": [
+          "Hybrid firearm",
+          "Autopistol",
+          "Close combat weapon"
         ]
+      },
+      {
+        "id": "55c7-90e0-419-44f9",
+        "name": "Nexos",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2a91-a18e-bd08-fa66",
+        "name": "Patriarch",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "30e9-42fa-3a6e-e8ef",
+        "name": "Primus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "965b-496a-3a1b-22a8",
@@ -9949,7 +18444,64 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Cult claws and talons"
         ]
+      },
+      {
+        "id": "4565-bd65-9e8b-284d",
+        "name": "Reductus Saboteur",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3d6c-357e-3c09-813c",
+        "name": "Sanctus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "908a-9fd8-2270-8dbd",
+        "name": "Benefictus",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "04cc-6196-1755-ad58",
@@ -9964,7 +18516,72 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Acolyte Hybrids",
           "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Autopistol",
+          "Cult claws and knife",
+          "Cult icon"
         ]
+      },
+      {
+        "id": "0f8d-ba1b-c2cf-c8e7",
+        "name": "Cult Insurrectionist [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Cult Insurrectionist"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5138-978e-c8e6-b90c",
+        "name": "Cult Guerrilla [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Cult Guerrilla"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "678c-b59c-f85d-0a43",
+        "name": "Voice of the Patriarch [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Psyker",
+          "Voice of the Patriarch"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "2299-bed9-3e-2b60",
@@ -9978,7 +18595,96 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": [
+          "Laspistol",
+          "Lasgun",
+          "Hunting lance",
+          "Steed's hooves",
+          "Goad lance"
         ]
+      },
+      {
+        "id": "a6a1-1612-f982-31",
+        "name": "Baneblade",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            450
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d10-48db-3241-ec72",
+        "name": "Banehammer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            420
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "30f5-d90a-9811-d763",
+        "name": "Banesword",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            450
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "bf53-4ab3-ff75-9aa0",
+        "name": "Basilisk",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [
+          "Artillery",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2b49-4d03-aaf5-3532",
+        "name": "Cadian Castellan",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "4d28-f2a7-67c1-eb2e",
@@ -9994,6 +18700,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Command Squad",
           "Cadian",
           "Platoon"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Close combat weapon",
+          "Lasgun",
+          "Master vox",
+          "Medi-pack"
         ]
       },
       {
@@ -10010,7 +18724,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Regiment",
           "Platoon",
           "Cadian"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cf23-58db-8ba4-9ec8",
+        "name": "Chimera",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "ade0-fa44-d4cf-4fc8",
@@ -10025,7 +18759,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Regiment",
           "Platoon"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e19f-b9b8-75d5-8520",
+        "name": "Deathstrike",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Squadron",
+          "Artillery"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8342-57dd-69d3-e698",
+        "name": "Doomhammer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            415
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "64a9-4cb2-400e-efd1",
@@ -10040,6 +18810,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Artillery",
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Lasgun",
+          "Laspistol",
+          "Battery close combat weapons"
         ]
       },
       {
@@ -10054,7 +18831,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Laspistol",
+          "Weapons team close combat weapons",
+          "Heavy bolter",
+          "Mortar",
+          "Missile launcher",
+          "Lascannon",
+          "Autocannon"
         ]
+      },
+      {
+        "id": "8277-6399-5d74-760d",
+        "name": "Hellhammer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            420
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c28b-c3af-38b2-8865",
+        "name": "Hellhound",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4967-19b6-1e2a-a300",
+        "name": "Hydra",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "abe4-ca71-d5a7-3883",
@@ -10068,7 +18905,274 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 3,
+        "maxModels": 10,
+        "wargear": [
+          "Hot-shot lasgun",
+          "Close combat weapon",
+          "Hot-shot laspistol",
+          "Vox-caster",
+          "Flamer",
+          "Plasma gun",
+          "Hot-shot volley gun",
+          "Meltagun",
+          "Grenade launcher"
         ]
+      },
+      {
+        "id": "c581-3ab5-49a0-9ec0",
+        "name": "Leman Russ Battle Tank",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            185
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "286e-8e39-b807-5981",
+        "name": "Leman Russ Eradicator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cbcc-e0ad-4b9-2c76",
+        "name": "Leman Russ Demolisher",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            190
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d8c8-ea02-21bf-de0b",
+        "name": "Leman Russ Exterminator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            180
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ddf2-228b-edd9-7e83",
+        "name": "Leman Russ Vanquisher",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e529-5853-d7e2-17ad",
+        "name": "Leman Russ Punisher",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "41be-48c9-5476-f47a",
+        "name": "Manticore",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            165
+          ]
+        ],
+        "keywords": [
+          "Artillery",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4ad0-e988-a513-9530",
+        "name": "Primaris Psyker",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2127-efcc-1f62-7fab",
+        "name": "Rogal Dorn Battle Tank",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            260
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1b48-2f2-8e9c-1308",
+        "name": "Shadowsword",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            410
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "892b-678c-72e6-ee58",
+        "name": "Stormlord",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            430
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5430-18e-d7b0-1d54",
+        "name": "Leman Russ Commander",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            235
+          ]
+        ],
+        "keywords": [
+          "Officer",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "11e5-d4ab-d140-ac38",
+        "name": "Taurox",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4b67-f814-358e-f776",
+        "name": "Taurox Prime",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d11b-c49d-41bf-1f36",
+        "name": "Wyvern",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Artillery",
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f1a-7c78-ffdc-bf5b",
@@ -10082,7 +19186,47 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Steed's savage claws",
+          "Power sabre",
+          "Death Rider lascarbine",
+          "Frag lance"
         ]
+      },
+      {
+        "id": "95b4-68d6-26cf-188e",
+        "name": "Cyclops Demolition Vehicle",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            25
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c8fc-b9fa-d126-a296",
+        "name": "Leman Russ Executioner",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "fe5a-764e-37ed-7cef",
@@ -10097,7 +19241,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Platoon",
           "Regiment"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "67bc-a760-7ed5-9952",
+        "name": "Stormsword",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            465
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9bd8-ac8c-2d3b-79f6",
@@ -10112,7 +19274,47 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Vanguard Invader"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "da44-72c9-7a27-48aa",
+        "name": "Lictor",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "507d-5ea4-6ef1-bf66",
+        "name": "Winged Tyranid Prime",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Synapse",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9ce8-7a63-15c3-0347",
@@ -10128,7 +19330,103 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Great Devourer",
           "Endless Multitude",
           "Vanguard Invader"
+        ],
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": []
+      },
+      {
+        "id": "bc36-92fe-ecc6-58b3",
+        "name": "Deathleaper",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Lictor claws and talons"
         ]
+      },
+      {
+        "id": "2bbb-d811-15f7-1a81",
+        "name": "Mawloc",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d213-efd8-a2b4-42d2",
+        "name": "Parasite of Mortrex",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fada-677a-f6a4-cd12",
+        "name": "Tyrannocyte",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            105
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "56db-d7c-b349-677f",
+        "name": "Trygon",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "3f5-f7d6-1ce8-e6b9",
@@ -10144,7 +19442,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Great Devourer",
           "Vanguard Invader",
           "Burrowers"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": []
+      },
+      {
+        "id": "642f-9302-4fdc-ab68",
+        "name": "Neurolictor",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "fbcd-274b-0196-b4f6",
@@ -10160,6 +19480,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Command Squad",
           "Platoon",
           "Krieg"
+        ],
+        "minModels": 6,
+        "maxModels": 6,
+        "wargear": [
+          "Close combat weapon",
+          "Laspistol",
+          "Lasgun",
+          "Master vox",
+          "Regimental standard"
         ]
       },
       {
@@ -10176,7 +19505,59 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Command Squad",
           "Platoon",
           "Catachan"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon",
+          "Laspistol",
+          "Lasgun",
+          "Master vox",
+          "Regimental standard",
+          "Medi-pack",
+          "Flamer",
+          "Grenade launcher",
+          "Heavy flamer",
+          "Meltagun",
+          "Plasma gun",
+          "Sniper rifle"
         ]
+      },
+      {
+        "id": "78b6-f280-bba9-0594",
+        "name": "Rogal Dorn Commander",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            290
+          ]
+        ],
+        "keywords": [
+          "Squadron",
+          "Officer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "0595-6d6c-a783-12ab",
+        "name": "Artillery Team",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Artillery",
+          "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "3e90-9359-2aaa-205e",
@@ -10190,6 +19571,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Autopistol",
+          "Trench club",
+          "Close combat weapon",
+          "Flamer",
+          "Combat shotgun"
         ]
       },
       {
@@ -10204,6 +19594,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon",
+          "Laspistol",
+          "Lascannon"
         ]
       },
       {
@@ -10218,7 +19615,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Weapons team close combat weapons",
+          "Heavy bolter",
+          "Lasgun",
+          "Mortar",
+          "Missile launcher",
+          "Lascannon",
+          "Autocannon"
         ]
+      },
+      {
+        "id": "fa68-fcb9-38c-cd0f",
+        "name": "Winged Hive Tyrant",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer",
+          "Synapse",
+          "Vanguard Invader",
+          "Hive Tyrant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "c10d-772e-a54f-a2b9",
@@ -10234,7 +19663,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Great Devourer",
           "Vanguard Invader",
           "Burrowers"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Ravener heavy claws and talons"
         ]
+      },
+      {
+        "id": "a89f-8ad1-3d79-174f",
+        "name": "Macro Organism [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Macro Organism"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "527c-d3c6-c620-c7c6",
+        "name": "Node Organism [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Synapse",
+          "Node Organism"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6f46-0c77-acd0-3f5d",
+        "name": "Prime Organism [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Prime Organism"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c871-4769-71ed-c4b3",
+        "name": "Centaur RSV",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Squadron"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "05de-5701-33a0-b23d",
@@ -10248,7 +19757,35 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment"
+        ],
+        "minModels": 4,
+        "maxModels": 10,
+        "wargear": [
+          "Lasgun",
+          "Close combat weapon",
+          "Long-las",
+          "Plasma gun",
+          "Meltagun"
         ]
+      },
+      {
+        "id": "7173-1bd9-b60b-6555",
+        "name": "The Red Terror",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader",
+          "Burrowers"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -10677,6 +20214,24 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "leagues-of-votann": {
     "units": [
       {
+        "id": "2e6e-95a1-60ad-7b1c",
+        "name": "Ûthar the Destined",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Rampart crest",
+          "Volkanite disintegrator"
+        ]
+      },
+      {
         "id": "ba4f-c3f9-6925-af0c",
         "name": "Hearthkyn Warriors",
         "role": "Battleline",
@@ -10686,7 +20241,44 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             100
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Weavefield crest"
+        ]
+      },
+      {
+        "id": "1b00-2abb-718f-def6",
+        "name": "Kâhl",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2cc6-e2bf-635f-1260",
+        "name": "Einhyr Champion",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Exoarmour"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "d3a3-2d20-bd7e-6778",
@@ -10698,7 +20290,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
       },
       {
         "id": "8f33-5601-3707-78f4",
@@ -10712,7 +20307,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Brôkhyr"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": []
       },
       {
         "id": "09d3-6357-7888-00d9",
@@ -10726,7 +20324,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Exoarmour"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "415a-e6f6-d17f-d700",
@@ -10741,7 +20342,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Cthonian",
           "Beserks"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "9086-5272-398b-bbce",
@@ -10753,7 +20357,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             80
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9655-8367-7467-9e6e",
+        "name": "Sagitaur",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "ea1b-99f6-c398-06b1",
@@ -10769,7 +20391,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Exoframe",
           "Thunderkyn",
           "Brôkhyr"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "a110-e538-4e85-159b",
+        "name": "Hekaton Land Fortress",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            240
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "5b0b-c18d-1470-44bb",
@@ -10781,7 +20421,74 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b7e1-55fd-9aae-b690",
+        "name": "Buri Aegnirssen",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7932-6aac-cd01-3181",
+        "name": "Memnyr Strategist",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e5c2-d1a0-b54d-65df",
+        "name": "Arkanyst Evaluator",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cfbc-9eeb-badb-b28c",
+        "name": "Kapricus Carrier",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Hernkyn",
+          "Kapricus",
+          "Carrier"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "1e3f-209d-798f-3a42",
@@ -10795,7 +20502,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Ironkin Steeljacks"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "2add-0a08-fbef-8f5e",
@@ -10809,6 +20519,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Ironkin Steeljacks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Autoch-pattern bolter",
+          "Concussion gauntlet",
+          "Plasma sword"
         ]
       },
       {
@@ -10825,7 +20542,83 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Artillery",
           "Cthonian",
           "Earthshakers"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "0039-5b91-2e96-0e08",
+        "name": "Living Ancestor [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Psyker",
+          "Living Ancestor"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "05b6-7622-edbe-7a9a",
+        "name": "Kinhost Commander [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Kinhost Commander",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4eaf-78d5-9195-0e36",
+        "name": "Steeljack Elder [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Ironkin Steeljacks",
+          "Steeljack Elder"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c7ea-1b76-c8c1-4786",
+        "name": "Berehk Stornbröw",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Cthonian"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -11070,6 +20863,224 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "necrons": {
     "units": [
       {
+        "id": "ba86-eaad-5396-fc07",
+        "name": "Orikan the Diviner",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Cryptek",
+          "Chronomancer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "49fd-a80d-8cc0-c76b",
+        "name": "Imotekh the Stormlord",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Noble"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d977-6a26-bc03-4722",
+        "name": "Illuminor Szeras",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            165
+          ]
+        ],
+        "keywords": [
+          "Cryptek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c1e6-b88a-2003-174d",
+        "name": "Trazyn the Infinite",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Noble"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "379b-d6a0-cd05-ef89",
+        "name": "Royal Warden",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c401-d95f-c5ce-7738",
+        "name": "Skorpekh Lord",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Destroyer Cult"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8725-de36-7ef7-45f6",
+        "name": "Lokhust Lord",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Destroyer Cult"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e667-b37c-61c-4893",
+        "name": "Catacomb Command Barge",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "dbe5-257e-e2bd-1b40",
+        "name": "Overlord",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Noble"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "852a-ba39-e93f-6b62",
+        "name": "Technomancer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Cryptek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "aea6-b6a1-a924-d31",
+        "name": "Psychomancer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Cryptek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5b7d-54ea-f7a8-9688",
+        "name": "Chronomancer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Cryptek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "84bc-87b1-1eec-f574",
+        "name": "Plasmancer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Cryptek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "58e9-5212-f5a6-c12d",
         "name": "Necron Warriors",
         "role": "Battleline",
@@ -11079,7 +21090,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "f81-b23c-e183-39d7",
@@ -11091,7 +21105,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             70
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7c45-2aab-7526-febe",
+        "name": "Canoptek Reanimator",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Canoptek",
+          "Reanimator"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "d504-e79e-f4d9-90aa",
+        "name": "Hexmark Destroyer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Destroyer Cult"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "c4e3-f6b0-f3aa-9d90",
@@ -11103,7 +21155,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             85
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b7d7-14c9-63c1-ded5",
@@ -11115,7 +21170,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "c219-a708-f5b0-f0e7",
@@ -11127,7 +21185,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "ef7a-c413-c779-2d18",
@@ -11139,7 +21200,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
       },
       {
         "id": "66e-26f2-7c38-e4d8",
@@ -11153,7 +21217,85 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Destroyer Cult"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "14fa-6813-e51b-7942",
+        "name": "Triarch Stalker",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e09-d7d6-e4e3-42c1",
+        "name": "C'tan Shard of the Deceiver",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            310
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "f926-a2fe-3494-24b7",
+        "name": "C'tan Shard of the Nightbringer",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            340
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8065-e9c0-dcb5-be1d",
+        "name": "C'tan Shard of the Void Dragon",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            330
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "276e-bc21-e1d0-3c41",
+        "name": "Transcendent C'tan",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            325
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "259b-a8e3-928f-1d0c",
@@ -11169,7 +21311,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Swarm",
           "Canoptek",
           "Scarab Swarms"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "c6db-9736-4d53-3ef6",
@@ -11183,7 +21328,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Destroyer Cult"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "77d-d442-a3-422c",
@@ -11195,7 +21343,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             75
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "6829-6dcb-b342-afe4",
@@ -11207,7 +21358,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "a022-9bf6-f08b-c416",
@@ -11223,7 +21377,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Canoptek",
           "Wraiths"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1ff-6384-ef1a-8297",
+        "name": "Annihilation Barge",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            105
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e046-8220-d8a2-1d19",
+        "name": "Doomsday Ark",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            200
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "6f72-b8f7-fd8d-5c2c",
@@ -11237,7 +21424,124 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Destroyer Cult"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "ff8f-2e43-8af1-3470",
+        "name": "Canoptek Doomstalker",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [
+          "Canoptek",
+          "Doomstalker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9928-da6-4e86-ec9f",
+        "name": "Ghost Ark",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            115
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2a86-2d6-6446-7f1",
+        "name": "Night Scythe",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "52fb-edb1-c747-415a",
+        "name": "Doom Scythe",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            230
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "256d-92cd-5d14-bbab",
+        "name": "Obelisk",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            300
+          ]
+        ],
+        "keywords": [
+          "Towering"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5451-67b5-a66c-71d2",
+        "name": "Tesseract Vault",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            425
+          ]
+        ],
+        "keywords": [
+          "Towering"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "db10-2662-da6a-516e",
+        "name": "Monolith",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            400
+          ]
+        ],
+        "keywords": [
+          "Towering"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7422-7fbf-8694-364c",
@@ -11251,7 +21555,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Triarch"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
+      },
+      {
+        "id": "fa11-cd65-fcf6-427c",
+        "name": "Seraptek Heavy Construct",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            540
+          ]
+        ],
+        "keywords": [
+          "Towering"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2e4-afdd-efdd-c5c8",
+        "name": "Overlord with Translocation Shroud",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Noble",
+          "Overlord"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "97d7-4b22-46b7-dae0",
@@ -11267,7 +21609,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Canoptek",
           "Macrocytes"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b7ee-a0fa-5736-b58f",
@@ -11283,7 +21628,102 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Canoptek",
           "Tomb Crawlers"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "92cc-9d54-5d0c-6663",
+        "name": "Geomancer",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Cryptek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1d4b-a179-ae99-3283",
+        "name": "Nekrosor Ammentar",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            185
+          ]
+        ],
+        "keywords": [
+          "Destroyer Cult"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "be60-a5ae-6c7c-df47",
+        "name": "Dynastic Conqueror [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Noble",
+          "Dynastic Conqueror",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e884-dd7a-a1cd-bad8",
+        "name": "Hyperscientist [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Hyperscientist",
+          "Cryptek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "50cd-aa29-f506-8ed1",
+        "name": "Triarchal Overseer [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Triarch",
+          "Triarchal Overseer",
+          "Stalker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -11498,6 +21938,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "orks": {
     "units": [
       {
+        "id": "306a-b2ac-aaf1-9a7c",
+        "name": "Battlewagon",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "b7c3-d00e-daf2-76fb",
         "name": "Beast Snagga Boyz",
         "role": "Battleline",
@@ -11510,6 +21965,134 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Mob",
           "Beast Snagga"
+        ],
+        "minModels": 9,
+        "maxModels": 20,
+        "wargear": [
+          "Slugga",
+          "Choppa"
+        ]
+      },
+      {
+        "id": "5a5d-c5a4-39b8-4a3f",
+        "name": "Beastboss",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Beast Snagga",
+          "Warboss"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a8b7-351-d911-a4d6",
+        "name": "Beastboss on Squigosaur",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Beast Snagga",
+          "Warboss"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "95e9-6da3-5e75-2566",
+        "name": "Big Mek in Mega Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [
+          "Mega Armour",
+          "Mek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "dde2-ca42-e3bc-2ef6",
+        "name": "Big Mek with Shokk Attack Gun",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Mek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a20-d3af-2c3e-3267",
+        "name": "Blitza-bommer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            115
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c7c8-6b5b-6bfc-52d1",
+        "name": "Boomdakka Snazzwagon",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e651-5901-35e5-dc35",
+        "name": "Boss Snikrot",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Slugga"
         ]
       },
       {
@@ -11524,6 +22107,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Mob"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Choppa",
+          "Slugga",
+          "Shoota",
+          "Close combat weapon",
+          "Big shoota",
+          "Rokkit launcha"
         ]
       },
       {
@@ -11536,7 +22129,77 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "93a1-386a-e40f-472f",
+        "name": "Burna-bommer",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3b42-b41f-d11e-bdca",
+        "name": "Dakkajet",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1594-b986-e77e-d89d",
+        "name": "Deff Dread",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            120
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ca85-1d18-dc30-d64e",
+        "name": "Deffkilla Wartrike",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Warboss",
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "2d6e-aa3b-c28c-5ef0",
@@ -11550,7 +22213,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Speed Freeks"
-        ]
+        ],
+        "minModels": 2,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "1de9-b138-28a1-9c4b",
@@ -11562,7 +22228,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             80
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Choppa",
+          "Snazzgun"
+        ]
       },
       {
         "id": "4ea0-6b70-c17c-bc00",
@@ -11574,7 +22246,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             235
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": []
+      },
+      {
+        "id": "56d6-a7fc-fa08-4345",
+        "name": "Gorkanaut",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            265
+          ]
+        ],
+        "keywords": [
+          "Towering"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "de8f-24f9-c543-92b7",
@@ -11588,7 +22280,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Grots"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "70de-d621-8465-f7b8",
+        "name": "Hunta Rig",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Beast Snagga"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "eb21-c97f-2d9a-b363",
+        "name": "Kill Rig",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            155
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Beast Snagga"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "8c36-c946-2e0f-f648",
@@ -11602,7 +22332,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Grots"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "303-267f-e45c-6aa9",
@@ -11614,7 +22347,34 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Slugga",
+          "Choppa",
+          "Kustom shoota",
+          "Close combat weapon",
+          "Burna",
+          "Rokkit launcha"
+        ]
+      },
+      {
+        "id": "b803-bafc-2b52-160d",
+        "name": "Kustom Boosta-blasta",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "3bff-9fad-2d11-7866",
@@ -11626,7 +22386,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             50
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7067-34f4-5272-e05f",
@@ -11640,6 +22403,83 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Mega Armour"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Kustom shoota",
+          "Power klaw",
+          "Kombi-weapon",
+          "Killsaw"
+        ]
+      },
+      {
+        "id": "8dd-f235-ef18-d36",
+        "name": "Megatrakk Scrapjet",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3b2-8c11-616a-1005",
+        "name": "Mek",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9ee5-2b39-de06-dda6",
+        "name": "Morkanaut",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            280
+          ]
+        ],
+        "keywords": [
+          "Towering"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b42b-ea0-38f1-6300",
+        "name": "Mozrog Skragbad",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Beast Snagga",
+          "Warboss"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Thump gun"
         ]
       },
       {
@@ -11652,7 +22492,82 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             105
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Slugga",
+          "Big choppa",
+          "Power klaw",
+          "Close combat weapon",
+          "Kombi-weapon"
+        ]
+      },
+      {
+        "id": "a74a-107a-e2ac-7e4c",
+        "name": "Painboss",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Beast Snagga"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7669-1442-2c0b-e0c9",
+        "name": "Painboy",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a856-30b7-e56d-57db",
+        "name": "Rukkatrukk Squigbuggy",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1d12-e2ae-33bb-4558",
+        "name": "Shokkjump Dragsta",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "6a83-8e1f-63ef-50c3",
@@ -11666,7 +22581,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Beast Snagga"
-        ]
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6c08-9131-14a3-a3b4",
+        "name": "Stompa",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            800
+          ]
+        ],
+        "keywords": [
+          "Towering"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "4adf-8249-c6b2-dd4f",
@@ -11680,6 +22615,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Slugga",
+          "Choppa"
         ]
       },
       {
@@ -11692,7 +22633,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 5,
+        "maxModels": 6,
+        "wargear": [
+          "Choppa",
+          "Rokkit launcha",
+          "Close combat weapon"
+        ]
+      },
+      {
+        "id": "1291-7ba8-2c5a-4a92",
+        "name": "Trukk",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "83a7-ea20-ed9-d14a",
@@ -11706,7 +22669,149 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Twin dakkagun",
+          "Close combat weapon",
+          "Slugga",
+          "Choppa"
         ]
+      },
+      {
+        "id": "2efc-c4b3-2ecc-5a37",
+        "name": "Warboss",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "494b-11ce-5af-5b50",
+        "name": "Warboss in Mega Armour",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Mega Armour",
+          "Warboss"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3832-ad97-2b3b-8775",
+        "name": "Wazbom Blastajet",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            175
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "260d-9ce4-ea1f-a957",
+        "name": "Weirdboy",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Psyker"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "290-ff5a-b14f-e432",
+        "name": "Wurrboy",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Beast Snagga"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ce45-db08-3795-18a9",
+        "name": "Zodgrod Wortsnagga",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            90
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "aeed-c6d9-4b90-376a",
+        "name": "Gargantuan Squiggoth",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            440
+          ]
+        ],
+        "keywords": [
+          "Towering"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fbee-427a-1c46-f621",
+        "name": "Big Mek",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Mek"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "a596-3d99-257e-0ea1",
@@ -11718,7 +22823,86 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": []
+        "keywords": [],
+        "minModels": 4,
+        "maxModels": 6,
+        "wargear": [
+          "Smash hammer",
+          "Choppa"
+        ]
+      },
+      {
+        "id": "2ba9-e97a-909d-3ac5",
+        "name": "Hordeboss [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            75
+          ]
+        ],
+        "keywords": [
+          "Hordeboss",
+          "Crucible"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "54de-2004-bbc1-3ac6",
+        "name": "Warphead [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Psyker",
+          "Warphead"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6a69-8e75-49ae-408f",
+        "name": "Upstart Gretchin [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            40
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Grots",
+          "Upstart Gretchin"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2ab7-ab71-0af4-5d39",
+        "name": "Wazdakka Gutsmek",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            175
+          ]
+        ],
+        "keywords": [
+          "Speed Freeks"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [
@@ -12285,6 +23469,134 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "tau-empire": {
     "units": [
       {
+        "id": "4d0d-af9d-53c2-bc31",
+        "name": "Commander Shadowsun",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            100
+          ]
+        ],
+        "keywords": [
+          "Battlesuit",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Pulse pistol"
+        ]
+      },
+      {
+        "id": "a67c-e2aa-41d7-e91e",
+        "name": "Commander Farsight",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Battlesuit",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "99fa-35-ba6e-5354",
+        "name": "Commander in Enforcer Battlesuit",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Battlesuit",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3a73-7255-c639-e89e",
+        "name": "Commander in Coldstar Battlesuit",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            95
+          ]
+        ],
+        "keywords": [
+          "Battlesuit",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8f32-9697-ed41-6e3",
+        "name": "Cadre Fireblade",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5e66-6f0-a181-cc4d",
+        "name": "Ethereal",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a0f5-5934-1570-5a21",
+        "name": "Darkstrider",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Markerlight",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon"
+        ]
+      },
+      {
         "id": "acdd-2901-1a75-99f4",
         "name": "Strike Team",
         "role": "Battleline",
@@ -12298,6 +23610,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Markerlight",
           "Fire Warrior",
           "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Pulse pistol",
+          "Close combat weapon",
+          "Pulse rifle"
         ]
       },
       {
@@ -12314,6 +23633,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Markerlight",
           "Fire Warrior",
           "Non-Kroot"
+        ],
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Pulse pistol",
+          "Close combat weapon",
+          "Pulse blaster"
         ]
       },
       {
@@ -12329,6 +23655,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Kroot",
           "Carnivores"
+        ],
+        "minModels": 8,
+        "maxModels": 20,
+        "wargear": [
+          "Close combat weapon",
+          "Kroot rifle",
+          "Tanglebomb launcher"
         ]
       },
       {
@@ -12343,6 +23676,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Close combat weapon"
         ]
       },
       {
@@ -12360,7 +23698,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Stealth",
           "Markerlight",
           "Non-Kroot"
+        ],
+        "minModels": 3,
+        "maxModels": 5,
+        "wargear": [
+          "Battlesuit fists",
+          "Burst cannon",
+          "Fusion blaster"
         ]
+      },
+      {
+        "id": "5268-6e9-8f5c-c810",
+        "name": "Ghostkeel Battlesuit",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Battlesuit",
+          "Ghostkeel",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5fe4-86de-b88c-a47b",
+        "name": "Firesight Team",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Markerlight",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "2598-d700-9952-e439",
@@ -12375,6 +23757,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Markerlight",
           "Non-Kroot"
+        ],
+        "minModels": 10,
+        "maxModels": 10,
+        "wargear": [
+          "Pulse pistol",
+          "Close combat weapon",
+          "Semi-automatic grenade launcher"
         ]
       },
       {
@@ -12389,6 +23778,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Non-Kroot"
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": [
+          "Stingwing claws",
+          "Neutron blaster",
+          "T'au flamer"
         ]
       },
       {
@@ -12405,7 +23801,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Kroot",
           "Hounds"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
       },
       {
         "id": "a594-317-b90a-a226",
@@ -12421,7 +23820,135 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Battlesuit",
           "Broadside",
           "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Crushing bulk"
         ]
+      },
+      {
+        "id": "5d8f-5530-263d-651b",
+        "name": "Riptide Battlesuit",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            200
+          ]
+        ],
+        "keywords": [
+          "Battlesuit",
+          "Riptide",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ca9-49ab-17c1-8556",
+        "name": "Hammerhead Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "bfe0-2e9f-6f57-b48f",
+        "name": "Sky Ray Gunship",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Markerlight",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "14f3-9aa6-21af-7fe3",
+        "name": "Devilfish",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            85
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "cac0-2569-67c8-f492",
+        "name": "Razorshark Strike Fighter",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8d6a-3409-52db-a8c",
+        "name": "Sun Shark Bomber",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "439b-e08-4466-e162",
+        "name": "Stormsurge",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            360
+          ]
+        ],
+        "keywords": [
+          "Towering",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "72f2-7d0b-80f9-43b7",
@@ -12436,7 +23963,86 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Kroot",
           "Farstalkers"
+        ],
+        "minModels": 11,
+        "maxModels": 11,
+        "wargear": [
+          "Farstalker firearm",
+          "Kroot pistol",
+          "Close combat weapon",
+          "Dvorgite skinner",
+          "Londaxi tribalest"
         ]
+      },
+      {
+        "id": "16d6-79b5-817d-f084",
+        "name": "Ta'unar Supremacy Armour",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            790
+          ]
+        ],
+        "keywords": [
+          "Towering",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "1c73-43dc-bef0-a468",
+        "name": "Tiger Shark",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            325
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6a78-555-46c7-999b",
+        "name": "AX-1-0 Tiger Shark",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            315
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8e75-7545-e43b-7c67",
+        "name": "Manta",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            2100
+          ]
+        ],
+        "keywords": [
+          "Markerlight",
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "e88f-bc7a-c3f5-8e47",
@@ -12453,7 +24059,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Crisis",
           "Sunforge",
           "Non-Kroot"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
       },
       {
         "id": "9373-d0b3-94c9-e47",
@@ -12470,7 +24079,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Crisis",
           "Fireknife",
           "Non-Kroot"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
       },
       {
         "id": "fb32-c683-b38f-d339",
@@ -12487,7 +24099,85 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Crisis",
           "Starscythe",
           "Non-Kroot"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 3,
+        "wargear": []
+      },
+      {
+        "id": "2ebe-a524-656d-7f0e",
+        "name": "Kroot Trail Shaper",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Kroot",
+          "Shaper",
+          "Trail Shaper"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "e9bc-7a6e-322c-87fd",
+        "name": "Kroot War Shaper",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Kroot",
+          "Shaper",
+          "War Shaper"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "bb34-e371-33ee-397",
+        "name": "Kroot Flesh Shaper",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            45
+          ]
+        ],
+        "keywords": [
+          "Kroot",
+          "Shaper",
+          "Flesh Shaper"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "4e8a-c3f4-e497-4901",
+        "name": "Kroot Lone-spear",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Kroot",
+          "Lone-spear"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "7f73-6728-df6f-1446",
@@ -12501,7 +24191,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Kroot"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Hunting blades",
+          "Kroot pistol and hunting javelins",
+          "Rampager fists"
         ]
+      },
+      {
+        "id": "2e61-8399-60bf-1c85",
+        "name": "Shas'nel [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            50
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Shas'nel"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "ed9c-6a08-c915-c757",
+        "name": "Battlesuit Veteran [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Battlesuit",
+          "Battlesuit Veteran"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "86c3-1150-ef4d-d870",
+        "name": "Kinband Champion [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            55
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Kroot",
+          "Kinband Champion"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "6623-c2cb-6705-580b",
@@ -12516,6 +24269,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Battlesuit",
           "Non-Kroot"
+        ],
+        "minModels": 2,
+        "maxModels": 2,
+        "wargear": [
+          "Shardstorm burst system",
+          "MV15 Gun Drone",
+          "XV pulse pistol"
         ]
       }
     ],
@@ -12845,6 +24605,82 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
   "tyranids": {
     "units": [
       {
+        "id": "cd6d-87b3-125a-f372",
+        "name": "Tervigon",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            160
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "13f7-1a3-eff-7393",
+        "name": "The Swarmlord",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            220
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Synapse",
+          "Psyker",
+          "Hive Tyrant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b86a-b38a-380c-483d",
+        "name": "Broodlord",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer",
+          "Vanguard Invader",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "9184-9ab6-9238-f558",
+        "name": "Old One Eye",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
         "id": "a125-b6fb-2945-56a",
         "name": "Tyranid Warriors with Ranged Bio-Weapons",
         "role": "Infantry",
@@ -12858,6 +24694,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Tyranid Warriors with Ranged Bio-weapons",
           "Synapse",
           "Great Devourer"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Tyranid Warrior claws and talons"
         ]
       },
       {
@@ -12875,6 +24716,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Great Devourer",
           "Synapse",
           "Tyranid Warriors"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Tyranid Warrior claws and talons"
         ]
       },
       {
@@ -12890,6 +24736,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Endless Multitude"
+        ],
+        "minModels": 7,
+        "maxModels": 20,
+        "wargear": [
+          "Chitinous claws and teeth"
         ]
       },
       {
@@ -12905,7 +24756,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Endless Multitude"
-        ]
+        ],
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": []
+      },
+      {
+        "id": "30d0-521c-1d45-f57b",
+        "name": "Toxicrene",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "1645-5407-92c8-1441",
@@ -12919,7 +24790,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "1ae1-ed96-5100-eda5",
+        "name": "Neurotyrant",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            105
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2c2d-a2f9-61a8-a6c6",
+        "name": "Maleceptor",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer",
+          "Malceptor",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "d2c6-bd0b-3205-3319",
@@ -12934,7 +24847,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Harvester"
+        ],
+        "minModels": 1,
+        "maxModels": 3,
+        "wargear": [
+          "Chitin-barbed limbs"
         ]
+      },
+      {
+        "id": "6249-358f-27d7-ef60",
+        "name": "Haruspex",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Harvester"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "b563-c6d3-d0e5-1b78",
@@ -12948,7 +24884,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "8ccc-3f27-7e4e-da81",
@@ -12963,6 +24902,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Endless Multitude"
+        ],
+        "minModels": 11,
+        "maxModels": 21,
+        "wargear": [
+          "Chitinous claws and teeth"
         ]
       },
       {
@@ -12979,6 +24923,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Psyker",
           "Great Devourer",
           "Synapse"
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": [
+          "Chitinous claws and teeth",
+          "Warp blast"
         ]
       },
       {
@@ -12994,7 +24944,44 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Beast",
           "Great Devourer"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
+      },
+      {
+        "id": "bbfd-5b01-5bd3-a28b",
+        "name": "Exocrine",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "8e53-d4a-a69f-e71d",
+        "name": "Screamer-killer",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            125
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "ac7a-2560-c083-45b8",
@@ -13008,7 +24995,100 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Chitinous claws and teeth"
         ]
+      },
+      {
+        "id": "1705-379b-330d-36d4",
+        "name": "Tyrannofex",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            200
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "93aa-dd13-de9d-402b",
+        "name": "Hive Crone",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            200
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "c679-b06a-750b-e7f7",
+        "name": "Harpy",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            215
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2cdd-3bf1-55e0-7641",
+        "name": "Sporocyst",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            145
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "b6ac-f091-a018-dab2",
+        "name": "Psychophage",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            110
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Harvester"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "6de-ccee-11b4-be3e",
@@ -13022,7 +25102,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "9b5c-3b5a-1f80-9a74",
+        "name": "Harridan",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            610
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fbc0-3a2b-1d7d-23d9",
+        "name": "Hierophant",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            810
+          ]
+        ],
+        "keywords": [
+          "Towering",
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "853e-48b8-4cc5-3704",
@@ -13037,7 +25155,106 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Vanguard Invader"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 10,
+        "wargear": []
+      },
+      {
+        "id": "6a9b-8e2f-edac-fa2d",
+        "name": "Norn Assimilator",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            275
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Synapse",
+          "Harvester"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "5720-2873-8c2c-edc3",
+        "name": "Norn Emissary",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            260
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "3e96-8098-3401-77af",
+        "name": "Hive Tyrant",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            195
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "31f9-9730-853c-6f13",
+        "name": "Tyranid Prime with Lash Whip",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fa68-fcb9-38c-cd0f",
+        "name": "Winged Hive Tyrant",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            170
+          ]
+        ],
+        "keywords": [
+          "Psyker",
+          "Great Devourer",
+          "Synapse",
+          "Vanguard Invader",
+          "Hive Tyrant"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "9ce8-7a63-15c3-0347",
@@ -13053,6 +25270,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Great Devourer",
           "Endless Multitude",
           "Vanguard Invader"
+        ],
+        "minModels": 10,
+        "maxModels": 20,
+        "wargear": []
+      },
+      {
+        "id": "507d-5ea4-6ef1-bf66",
+        "name": "Winged Tyranid Prime",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            65
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Synapse",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "da44-72c9-7a27-48aa",
+        "name": "Lictor",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            60
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "bc36-92fe-ecc6-58b3",
+        "name": "Deathleaper",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": [
+          "Lictor claws and talons"
         ]
       },
       {
@@ -13068,7 +25345,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Vanguard Invader"
-        ]
+        ],
+        "minModels": 3,
+        "maxModels": 6,
+        "wargear": []
       },
       {
         "id": "1de2-b57b-aa0a-1f0d",
@@ -13085,7 +25365,85 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Swarm",
           "Great Devourer",
           "Harvester"
+        ],
+        "minModels": 1,
+        "maxModels": 3,
+        "wargear": [
+          "Chitinous claws and teeth"
         ]
+      },
+      {
+        "id": "d213-efd8-a2b4-42d2",
+        "name": "Parasite of Mortrex",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "2bbb-d811-15f7-1a81",
+        "name": "Mawloc",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "56db-d7c-b349-677f",
+        "name": "Trygon",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            140
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "fada-677a-f6a4-cd12",
+        "name": "Tyrannocyte",
+        "role": "Transport",
+        "costs": [
+          [
+            1,
+            105
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "3f5-f7d6-1ce8-e6b9",
@@ -13101,7 +25459,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Great Devourer",
           "Vanguard Invader",
           "Burrowers"
-        ]
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": []
+      },
+      {
+        "id": "642f-9302-4fdc-ab68",
+        "name": "Neurolictor",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            70
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader",
+          "Synapse"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       },
       {
         "id": "c10d-772e-a54f-a2b9",
@@ -13117,7 +25497,89 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Great Devourer",
           "Vanguard Invader",
           "Burrowers"
+        ],
+        "minModels": 5,
+        "maxModels": 5,
+        "wargear": [
+          "Ravener heavy claws and talons"
         ]
+      },
+      {
+        "id": "527c-d3c6-c620-c7c6",
+        "name": "Node Organism [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            80
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Synapse",
+          "Node Organism"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "6f46-0c77-acd0-3f5d",
+        "name": "Prime Organism [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            135
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Prime Organism"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "a89f-8ad1-3d79-174f",
+        "name": "Macro Organism [Crucible]",
+        "role": "Character",
+        "costs": [
+          [
+            1,
+            150
+          ]
+        ],
+        "keywords": [
+          "Crucible",
+          "Great Devourer",
+          "Macro Organism"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
+      },
+      {
+        "id": "7173-1bd9-b60b-6555",
+        "name": "The Red Terror",
+        "role": "Epic Hero",
+        "costs": [
+          [
+            1,
+            130
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Vanguard Invader",
+          "Burrowers"
+        ],
+        "minModels": 1,
+        "maxModels": 1,
+        "wargear": []
       }
     ],
     "detachments": [

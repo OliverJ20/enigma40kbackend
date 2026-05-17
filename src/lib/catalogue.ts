@@ -17,6 +17,9 @@ export function getUnits(factionId: string) {
     role: u.role as UnitRole,
     costs: u.costs,
     keywords: u.keywords,
+    minModels: u.minModels,
+    maxModels: u.maxModels,
+    wargear: u.wargear,
   }));
 }
 

@@ -37,6 +37,9 @@ export interface CatalogueUnit {
   role: string;
   costs: [number, number][];
   keywords: string[];
+  minModels: number;
+  maxModels: number;
+  wargear: string[];
 }
 
 export interface Detachment {
@@ -96,6 +99,7 @@ const parser = new XMLParser({
       "selectionEntry", "selectionEntryGroup", "entryLink",
       "categoryLink", "profile", "characteristic", "cost",
       "catalogueLink", "rule", "modifier", "condition", "conditionGroup",
+      "constraint",
     ].includes(name),
   removeNSPrefix: true,
 });
@@ -447,14 +451,107 @@ function extractEnhancementsPatternC(
 
 // ── Units ──────────────────────────────────────────────────────
 
+const WARGEAR_SKIP_NAMES = new Set([
+  "Warlord", "Enhancements", "Crusade", "Configuration",
+  "Show/Hide Options", "Order of Battle", "Weapon Modifications",
+]);
+
+function isWargearName(name: string): boolean {
+  return (
+    !WARGEAR_SKIP_NAMES.has(name) &&
+    !name.includes("[") &&
+    !name.startsWith("Crusade") &&
+    !name.includes("Modifications")
+  );
+}
+
+/**
+ * Collects names of fixed equipment (min≥1 constraint) from a list of entryLinks.
+ */
+function collectFixedWargear(entryLinks: any[], out: Set<string>): void {
+  for (const link of entryLinks) {
+    const name = String(link["@_name"] ?? "");
+    if (!isWargearName(name)) continue;
+    const constraints: any[] = link["constraints"]?.["constraint"] ?? [];
+    const hasMin = constraints.some(
+      (c: any) => c["@_type"] === "min" && parseInt(String(c["@_value"] ?? "0")) >= 1,
+    );
+    if (hasMin) out.add(name);
+  }
+}
+
+/** Yields all model selectionEntries from direct children and inside SEGs. */
+function* iterModelSEs(container: Record<string, any>): Generator<Record<string, any>> {
+  for (const se of (container["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (se["@_type"] === "model") yield se;
+  }
+  for (const seg of (container["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+    yield* iterModelSEs(seg);
+  }
+}
+
+function extractWargearNames(e: Record<string, any>): string[] {
+  const names = new Set<string>();
+  if (e["@_type"] === "model") {
+    collectFixedWargear(e["entryLinks"]?.["entryLink"] ?? [], names);
+  } else {
+    for (const model of iterModelSEs(e)) {
+      collectFixedWargear(model["entryLinks"]?.["entryLink"] ?? [], names);
+    }
+  }
+  return Array.from(names);
+}
+
+/**
+ * Returns min/max model counts for a unit.
+ * For type="model" (standalone characters) always returns 1/1.
+ * For type="unit", sums mandatory child model constraints (including inside SEGs).
+ */
+function extractModelCounts(e: Record<string, any>): { minModels: number; maxModels: number } {
+  if (e["@_type"] === "model") return { minModels: 1, maxModels: 1 };
+
+  let minModels = 0;
+  let maxModels = 0;
+
+  for (const model of iterModelSEs(e)) {
+    const constraints: any[] = model["constraints"]?.["constraint"] ?? [];
+    let modelMin = 0;
+    let modelMax = 0;
+    for (const c of constraints) {
+      if (c["@_field"] === "selections" && c["@_scope"] === "parent") {
+        const val = Math.round(parseFloat(String(c["@_value"] ?? "0")));
+        if (c["@_type"] === "min" && val > 0) modelMin = val;
+        if (c["@_type"] === "max") modelMax = val;
+      }
+    }
+    // Only count models with a minimum requirement (mandatory slots)
+    if (modelMin > 0) {
+      minModels += modelMin;
+      maxModels += modelMax || modelMin;
+    }
+  }
+
+  return {
+    minModels: minModels > 0 ? minModels : 1,
+    maxModels: maxModels > 0 ? maxModels : 1,
+  };
+}
+
 function extractUnit(e: Record<string, any>): CatalogueUnit | null {
-  if (e["@_type"] !== "unit") return null;
+  const type = e["@_type"];
+  // Accept both type="unit" (squads) and type="model" (standalone characters)
+  if (type !== "unit" && type !== "model") return null;
   const name = String(e["@_name"] ?? "");
   if (name.includes("[Legends]")) return null;
 
   const catLinks: any[] = e["categoryLinks"]?.["categoryLink"] ?? [];
   const primary = catLinks.find((c: any) => c["@_primary"] === "true");
-  const role = ROLE_MAP[String(primary?.["@_name"] ?? "")] ?? "Infantry";
+  const primaryName = String(primary?.["@_name"] ?? "");
+  const mappedRole = ROLE_MAP[primaryName];
+
+  // type="model" without a known role are squad members, not standalone units — skip them
+  if (type === "model" && !mappedRole) return null;
+  const role = mappedRole ?? "Infantry";
 
   const keywords = catLinks
     .map((c: any) => String(c["@_name"]))
@@ -471,7 +568,10 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
   const pts = Math.round(parseFloat(String(ptsCost?.["@_value"] ?? "0")));
   if (pts <= 0) return null;
 
-  return { id: String(e["@_id"]), name, role, costs: [[1, pts]], keywords };
+  const { minModels, maxModels } = extractModelCounts(e);
+  const wargear = extractWargearNames(e);
+
+  return { id: String(e["@_id"]), name, role, costs: [[1, pts]], keywords, minModels, maxModels, wargear };
 }
 
 // ── Per-faction parsing ────────────────────────────────────────
@@ -617,6 +717,9 @@ export interface CatalogueUnit {
   role: string;
   costs: [number, number][];
   keywords: string[];
+  minModels: number;
+  maxModels: number;
+  wargear: string[];
 }
 
 export interface Detachment {
