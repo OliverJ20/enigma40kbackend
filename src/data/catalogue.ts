@@ -17936,13 +17936,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Close combat weapon"
                 ],
                 "isDefault": false
-              },
+              }
+            ]
+          },
+          {
+            "name": "Soulreaper cannon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
               {
-                "name": "Rubric Marine w/ soulreaper cannon",
+                "name": "Soulreaper cannon",
                 "min": 0,
                 "max": 1,
                 "weapons": [
-                  "Close combat weapon",
                   "Soulreaper cannon"
                 ],
                 "isDefault": false
@@ -20286,13 +20294,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Close combat weapon"
                 ],
                 "isDefault": false
-              },
+              }
+            ]
+          },
+          {
+            "name": "Soulreaper cannon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
               {
-                "name": "Rubric Marine w/ soulreaper cannon",
+                "name": "Soulreaper cannon",
                 "min": 0,
                 "max": 1,
                 "weapons": [
-                  "Close combat weapon",
                   "Soulreaper cannon"
                 ],
                 "isDefault": false
@@ -20394,27 +20410,55 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           },
           {
-            "name": "Heavy weapons",
+            "name": "Heavy weapon",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
+            "modelMin": 5,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Scarab Occult Terminator w/ heavy warpflamer",
+                "name": "Heavy warpflamer",
                 "min": 0,
-                "max": 2,
+                "max": 1,
                 "weapons": [
-                  "Prosperine khopesh"
+                  "Heavy warpflamer"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Scarab Occult Terminator w/ soulreaper cannon",
+                "name": "Soulreaper cannon",
                 "min": 0,
-                "max": 2,
+                "max": 1,
                 "weapons": [
-                  "Prosperine khopesh",
+                  "Soulreaper cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Heavy weapon (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelMin": 10,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy warpflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy warpflamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Soulreaper cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
                   "Soulreaper cannon"
                 ],
                 "isDefault": false
@@ -20451,14 +20495,32 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Hellfyre missile rack",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
+            "modelMin": 5,
             "modelContext": "",
             "isUpgrade": true,
             "variants": [
               {
                 "name": "Hellfyre missile rack",
                 "min": 0,
-                "max": 2,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hellfyre missile rack (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelMin": 10,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hellfyre missile rack",
+                "min": 0,
+                "max": 1,
                 "weapons": [],
                 "isDefault": false
               }
