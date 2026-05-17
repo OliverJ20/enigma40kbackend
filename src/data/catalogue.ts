@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T09:35:13.783Z
+// Last synced: 2026-05-17T09:47:22.825Z
 
 export interface WargearVariant {
   name: string;
@@ -18099,21 +18099,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Close combat weapon"
                 ],
                 "isDefault": false
-              }
-            ]
-          },
-          {
-            "name": "Soulreaper cannon",
-            "groupMin": 0,
-            "groupMax": 1,
-            "modelContext": "",
-            "isUpgrade": true,
-            "variants": [
+              },
               {
-                "name": "Soulreaper cannon",
+                "name": "Rubric Marine w/ soulreaper cannon",
                 "min": 0,
                 "max": 1,
-                "weapons": ["Soulreaper cannon"],
+                "weapons": [
+                  "Close combat weapon",
+                  "Soulreaper cannon"
+                ],
                 "isDefault": false
               }
             ]
@@ -20473,21 +20467,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Close combat weapon"
                 ],
                 "isDefault": false
-              }
-            ]
-          },
-          {
-            "name": "Soulreaper cannon",
-            "groupMin": 0,
-            "groupMax": 1,
-            "modelContext": "",
-            "isUpgrade": true,
-            "variants": [
+              },
               {
-                "name": "Soulreaper cannon",
+                "name": "Rubric Marine w/ soulreaper cannon",
                 "min": 0,
                 "max": 1,
-                "weapons": ["Soulreaper cannon"],
+                "weapons": [
+                  "Close combat weapon",
+                  "Soulreaper cannon"
+                ],
                 "isDefault": false
               }
             ]
@@ -20587,49 +20575,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           },
           {
-            "name": "Heavy weapon",
+            "name": "Heavy weapons",
             "groupMin": 0,
-            "groupMax": 1,
-            "modelMin": 5,
+            "groupMax": 2,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Heavy warpflamer",
+                "name": "Scarab Occult Terminator w/ heavy warpflamer",
                 "min": 0,
-                "max": 1,
-                "weapons": ["Heavy warpflamer"],
+                "max": 2,
+                "weapons": [
+                  "Prosperine khopesh"
+                ],
                 "isDefault": false
               },
               {
-                "name": "Soulreaper cannon",
+                "name": "Scarab Occult Terminator w/ soulreaper cannon",
                 "min": 0,
-                "max": 1,
-                "weapons": ["Soulreaper cannon"],
-                "isDefault": false
-              }
-            ]
-          },
-          {
-            "name": "Heavy weapon (2nd)",
-            "groupMin": 0,
-            "groupMax": 1,
-            "modelMin": 10,
-            "modelContext": "",
-            "isUpgrade": false,
-            "variants": [
-              {
-                "name": "Heavy warpflamer",
-                "min": 0,
-                "max": 1,
-                "weapons": ["Heavy warpflamer"],
-                "isDefault": false
-              },
-              {
-                "name": "Soulreaper cannon",
-                "min": 0,
-                "max": 1,
-                "weapons": ["Soulreaper cannon"],
+                "max": 2,
+                "weapons": [
+                  "Prosperine khopesh",
+                  "Soulreaper cannon"
+                ],
                 "isDefault": false
               }
             ]
@@ -20642,50 +20610,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Inferno combi-bolter",
-                "min": 0,
-                "max": 1,
-                "weapons": ["Inferno combi-bolter"],
-                "isDefault": true
-              },
-              {
                 "name": "Prosperine khopesh",
                 "min": 0,
                 "max": 1,
-                "weapons": ["Prosperine khopesh"],
+                "weapons": [
+                  "Prosperine khopesh"
+                ],
                 "isDefault": false
+              },
+              {
+                "name": "Inferno combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-bolter"
+                ],
+                "isDefault": true
               }
             ]
           },
           {
             "name": "Hellfyre missile rack",
             "groupMin": 0,
-            "groupMax": 1,
-            "modelMin": 5,
+            "groupMax": 2,
             "modelContext": "",
             "isUpgrade": true,
             "variants": [
               {
                 "name": "Hellfyre missile rack",
                 "min": 0,
-                "max": 1,
-                "weapons": [],
-                "isDefault": false
-              }
-            ]
-          },
-          {
-            "name": "Hellfyre missile rack (2nd)",
-            "groupMin": 0,
-            "groupMax": 1,
-            "modelMin": 10,
-            "modelContext": "",
-            "isUpgrade": true,
-            "variants": [
-              {
-                "name": "Hellfyre missile rack",
-                "min": 0,
-                "max": 1,
+                "max": 2,
                 "weapons": [],
                 "isDefault": false
               }
