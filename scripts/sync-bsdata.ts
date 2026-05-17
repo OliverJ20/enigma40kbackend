@@ -453,7 +453,18 @@ function extractEnhancementsPatternC(
     const comment = String(e["comment"] ?? "").trim();
     if (!comment) continue;
 
-    const detachment = detachmentBySlug.get(slugify(comment));
+    const commentSlug = slugify(comment);
+    let detachment = detachmentBySlug.get(commentSlug);
+    if (!detachment) {
+      // Some factions use abbreviated comments (e.g. "Hexwarp" instead of "Hexwarp Thrallband").
+      // Fall back to prefix matching so these still link to the correct detachment.
+      for (const [slug, det] of detachmentBySlug) {
+        if (slug.startsWith(commentSlug)) {
+          detachment = det;
+          break;
+        }
+      }
+    }
     if (!detachment) continue;
 
     // Must have an Abilities profile
@@ -724,6 +735,9 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
   if (type !== "unit" && type !== "model") return null;
   const name = String(e["@_name"] ?? "");
   if (name.includes("[Legends]")) return null;
+  if (name.includes("[Crucible]")) return null;
+  // Crusade-only mutation results (e.g. "Chaos Spawn (Flesh Change)") are not list-building units
+  if (name.includes("(Flesh Change)")) return null;
 
   const catLinks: any[] = e["categoryLinks"]?.["categoryLink"] ?? [];
   const primary = catLinks.find((c: any) => c["@_primary"] === "true");
@@ -753,7 +767,10 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
   const wargear = extractWargearNames(e);
   const wargearOptions = extractWargearOptions(e);
 
-  return { id: String(e["@_id"]), name, role, costs: [[1, pts]], keywords, minModels, maxModels, wargear, wargearOptions };
+  const costs: [number, number][] = minModels === maxModels
+    ? [[minModels, pts]]
+    : [[minModels, pts], [maxModels, pts * 2]];
+  return { id: String(e["@_id"]), name, role, costs, keywords, minModels, maxModels, wargear, wargearOptions };
 }
 
 // ── Per-faction parsing ────────────────────────────────────────

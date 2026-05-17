@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T05:53:14.816Z
+// Last synced: 2026-05-17T07:13:39.562Z
 
 export interface WargearVariant {
   name: string;
@@ -69,7 +69,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Epic Hero",
         "costs": [
           [
-            1,
+            2,
             70
           ]
         ],
@@ -89,8 +89,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             45
+          ],
+          [
+            10,
+            90
           ]
         ],
         "keywords": [
@@ -109,7 +113,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             105
           ]
         ],
@@ -215,8 +219,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             70
+          ],
+          [
+            10,
+            140
           ]
         ],
         "keywords": [],
@@ -250,7 +258,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Epic Hero",
         "costs": [
           [
-            1,
+            2,
             85
           ]
         ],
@@ -302,7 +310,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             120
           ]
         ],
@@ -449,6 +457,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             70
+          ],
+          [
+            2,
+            140
           ]
         ],
         "keywords": [
@@ -501,7 +513,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Vehicle",
         "costs": [
           [
-            1,
+            3,
             210
           ]
         ],
@@ -603,6 +615,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             75
+          ],
+          [
+            2,
+            150
           ]
         ],
         "keywords": [
@@ -637,8 +653,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -659,7 +679,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             120
           ]
         ],
@@ -718,8 +738,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -831,7 +855,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             100
           ]
         ],
@@ -963,8 +987,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -1004,7 +1032,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            9,
             110
           ]
         ],
@@ -1029,7 +1057,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             120
           ]
         ],
@@ -1110,65 +1138,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           }
         ]
-      },
-      {
-        "id": "8f3c-d887-6e18-02e8",
-        "name": "Militant Commander [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            75
-          ]
-        ],
-        "keywords": [
-          "Canoness",
-          "Militant Commander",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "622e-1e15-13f1-601a",
-        "name": "Inspiring Devotee [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            50
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Inspiring Devotee"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "1b8d-2b8b-084a-feba",
-        "name": "Reliquant Knight [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            100
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Reliquant Knight",
-          "Paragon Warsuits"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
       },
       {
         "id": "e59a-2a90-e102-940f",
@@ -1456,8 +1425,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             110
+          ],
+          [
+            6,
+            220
           ]
         ],
         "keywords": [
@@ -1554,8 +1527,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            4,
             160
+          ],
+          [
+            5,
+            320
           ]
         ],
         "keywords": [],
@@ -1613,8 +1590,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            4,
             210
+          ],
+          [
+            5,
+            420
           ]
         ],
         "keywords": [],
@@ -1688,8 +1669,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            4,
             40
+          ],
+          [
+            10,
+            80
           ]
         ],
         "keywords": [
@@ -1836,8 +1821,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            2,
             150
+          ],
+          [
+            3,
+            300
           ]
         ],
         "keywords": [],
@@ -1886,8 +1875,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            4,
             45
+          ],
+          [
+            10,
+            90
           ]
         ],
         "keywords": [
@@ -1906,8 +1899,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            4,
             45
+          ],
+          [
+            10,
+            90
           ]
         ],
         "keywords": [
@@ -1927,7 +1924,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             250
           ]
         ],
@@ -1976,7 +1973,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             225
           ]
         ],
@@ -1995,8 +1992,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             195
+          ],
+          [
+            6,
+            390
           ]
         ],
         "keywords": [
@@ -2065,8 +2066,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             225
+          ],
+          [
+            6,
+            450
           ]
         ],
         "keywords": [],
@@ -2126,8 +2131,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             165
+          ],
+          [
+            6,
+            330
           ]
         ],
         "keywords": [
@@ -2300,65 +2309,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "de0b-37e9-b9f5-d3a6",
-        "name": "Guardian of the Throne [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            130
-          ]
-        ],
-        "keywords": [
-          "Guardian of the Throne",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "e58d-17d4-71f8-4137",
-        "name": "Null Maiden [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            65
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Null Maiden",
-          "Anathema Psykana"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "c11a-f70a-2877-ed27",
-        "name": "Kataphraktoi Exemplar [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            150
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Kataphraktoi Exemplar",
-          "Dawneagle Jetbike"
-        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
@@ -2576,8 +2526,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             65
+          ],
+          [
+            10,
+            130
           ]
         ],
         "keywords": [
@@ -2598,8 +2552,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             70
+          ],
+          [
+            10,
+            140
           ]
         ],
         "keywords": [
@@ -2620,8 +2578,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Vehicle",
         "costs": [
           [
-            1,
+            2,
             180
+          ],
+          [
+            4,
+            360
           ]
         ],
         "keywords": [
@@ -2638,8 +2600,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             160
+          ],
+          [
+            6,
+            320
           ]
         ],
         "keywords": [
@@ -2696,8 +2662,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             105
+          ],
+          [
+            6,
+            210
           ]
         ],
         "keywords": [
@@ -2772,8 +2742,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -2798,8 +2772,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -2824,8 +2802,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             60
+          ],
+          [
+            6,
+            120
           ]
         ],
         "keywords": [
@@ -2878,8 +2860,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             55
+          ],
+          [
+            6,
+            110
           ]
         ],
         "keywords": [
@@ -2933,8 +2919,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -3017,8 +3007,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -3115,7 +3109,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             85
           ]
         ],
@@ -3226,7 +3220,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             95
           ]
         ],
@@ -3493,6 +3487,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             55
+          ],
+          [
+            3,
+            110
           ]
         ],
         "keywords": [
@@ -3528,7 +3526,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            9,
             60
           ]
         ],
@@ -3586,68 +3584,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ]
       },
       {
-        "id": "18e0-96d4-7d85-2b3b",
-        "name": "Magos [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            70
-          ]
-        ],
-        "keywords": [
-          "Cult Mechanicus",
-          "Magos",
-          "Tech-Priest",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "7d17-4620-8dbf-4ef6",
-        "name": "Cohort Commander [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            45
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Skitarii",
-          "Marshal",
-          "Cohort Commander"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "6b3e-11ad-7a9d-ca5d",
-        "name": "Ironstrider Alpha [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            80
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Skitarii",
-          "Ironstrider Alpha"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
         "id": "7135-8430-eb02-ded4",
         "name": "Thulia Ghuld",
         "role": "Epic Hero",
@@ -3675,7 +3611,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             135
           ]
         ],
@@ -3721,7 +3657,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             145
           ]
         ],
@@ -3857,8 +3793,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [
@@ -3982,8 +3922,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             100
+          ],
+          [
+            6,
+            200
           ]
         ],
         "keywords": [
@@ -4039,7 +3983,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             65
           ]
         ],
@@ -4174,7 +4118,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             110
           ]
         ],
@@ -4246,7 +4190,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Epic Hero",
         "costs": [
           [
-            1,
+            6,
             100
           ]
         ],
@@ -4272,7 +4216,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             65
           ]
         ],
@@ -4415,7 +4359,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             110
           ]
         ],
@@ -4705,7 +4649,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             85
           ]
         ],
@@ -4825,8 +4769,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             60
+          ],
+          [
+            6,
+            120
           ]
         ],
         "keywords": [
@@ -5005,8 +4953,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             70
+          ],
+          [
+            10,
+            140
           ]
         ],
         "keywords": [
@@ -5215,8 +5167,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [
@@ -5288,7 +5244,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             100
           ]
         ],
@@ -5373,6 +5329,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [],
@@ -5443,7 +5403,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            6,
             65
           ]
         ],
@@ -5471,7 +5431,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             65
           ]
         ],
@@ -5690,8 +5650,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [
@@ -5766,7 +5730,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            4,
             75
           ]
         ],
@@ -5833,7 +5797,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             65
           ]
         ],
@@ -5917,67 +5881,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           }
         ]
-      },
-      {
-        "id": "4fc5-184d-b305-3551",
-        "name": "Front-line Commander [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            55
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Officer",
-          "Front-line Commander"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "a040-9715-5d3a-52af",
-        "name": "Sentinel Commander [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            75
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Officer",
-          "Sentinel Commander"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "7280-8daf-312a-b01d",
-        "name": "Augmented Bone 'Ead [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Regiment",
-          "Augmented Bone 'Ead",
-          "Ogryn"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
       },
       {
         "id": "50b8-1f13-9807-0069",
@@ -6073,7 +5976,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             80
           ]
         ],
@@ -6700,8 +6603,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            4,
             150
+          ],
+          [
+            10,
+            300
           ]
         ],
         "keywords": [
@@ -7020,8 +6927,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
+          ],
+          [
+            10,
+            250
           ]
         ],
         "keywords": [
@@ -7118,8 +7029,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            4,
             180
+          ],
+          [
+            10,
+            360
           ]
         ],
         "keywords": [
@@ -7191,8 +7106,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             115
+          ],
+          [
+            10,
+            230
           ]
         ],
         "keywords": [
@@ -7271,8 +7190,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
+          ],
+          [
+            10,
+            250
           ]
         ],
         "keywords": [
@@ -7356,8 +7279,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             120
+          ],
+          [
+            10,
+            240
           ]
         ],
         "keywords": [
@@ -7427,66 +7354,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "9782-7a59-9b65-21e4",
-        "name": "Champion of Titan [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            90
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Psyker",
-          "Champion of Titan"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "2a2d-1f49-9373-4084",
-        "name": "Venerable Daemon Slayer [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            175
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Psyker",
-          "Venerable Daemon Slayer"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "e60e-8ccf-41b2-292e",
-        "name": "Dreadknight Champion [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            210
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Psyker",
-          "Dreadknight Champion"
-        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
@@ -7915,7 +7782,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            4,
             75
           ]
         ],
@@ -7940,7 +7807,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            6,
             50
           ]
         ],
@@ -7965,7 +7832,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -8106,7 +7973,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             85
           ]
         ],
@@ -8125,7 +7992,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -8241,7 +8108,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             85
           ]
         ],
@@ -8457,8 +8324,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            6,
             50
+          ],
+          [
+            12,
+            100
           ]
         ],
         "keywords": [
@@ -8562,7 +8433,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             190
           ]
         ],
@@ -8653,7 +8524,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             100
           ]
         ],
@@ -8856,8 +8727,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             100
+          ],
+          [
+            10,
+            200
           ]
         ],
         "keywords": [
@@ -9028,7 +8903,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            9,
             100
           ]
         ],
@@ -9082,65 +8957,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Deathwatch",
           "Retinue",
           "Ordo Xenos"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "90e0-c5a9-17c5-fba4",
-        "name": "Martial Agent [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Martial Agent",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "9a75-f3a2-bff5-9f08",
-        "name": "Deathwatch Agent [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            105
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Ordo Xenos",
-          "Deathwatch",
-          "Deathwatch Agent"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "2b47-b5e8-b297-7bd8",
-        "name": "Enthroned Agent [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            120
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Enthroned Agent"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -9282,7 +9098,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             85
           ]
         ],
@@ -9393,7 +9209,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             95
           ]
         ],
@@ -9845,8 +9661,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -9910,8 +9730,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             90
+          ],
+          [
+            10,
+            180
           ]
         ],
         "keywords": [
@@ -9964,8 +9788,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -10012,8 +9840,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             100
+          ],
+          [
+            10,
+            200
           ]
         ],
         "keywords": [
@@ -10078,8 +9910,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             100
+          ],
+          [
+            10,
+            200
           ]
         ],
         "keywords": [
@@ -10164,8 +10000,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -10203,7 +10043,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             140
           ]
         ],
@@ -10273,8 +10113,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             70
+          ],
+          [
+            10,
+            140
           ]
         ],
         "keywords": [],
@@ -10370,8 +10214,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [
@@ -10420,8 +10268,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             100
+          ],
+          [
+            10,
+            200
           ]
         ],
         "keywords": [
@@ -10467,8 +10319,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             100
+          ],
+          [
+            10,
+            200
           ]
         ],
         "keywords": [
@@ -10537,8 +10393,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -10592,8 +10452,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             95
+          ],
+          [
+            6,
+            190
           ]
         ],
         "keywords": [
@@ -10612,8 +10476,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             180
+          ],
+          [
+            10,
+            360
           ]
         ],
         "keywords": [
@@ -10670,8 +10538,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             170
+          ],
+          [
+            10,
+            340
           ]
         ],
         "keywords": [
@@ -10738,8 +10610,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             150
+          ],
+          [
+            6,
+            300
           ]
         ],
         "keywords": [
@@ -10784,8 +10660,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             175
+          ],
+          [
+            6,
+            350
           ]
         ],
         "keywords": [
@@ -10934,8 +10814,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [],
@@ -10986,7 +10870,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             75
           ]
         ],
@@ -11008,8 +10892,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             120
+          ],
+          [
+            6,
+            240
           ]
         ],
         "keywords": [
@@ -11077,8 +10965,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             110
+          ],
+          [
+            10,
+            220
           ]
         ],
         "keywords": [
@@ -11129,7 +11021,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             85
           ]
         ],
@@ -11150,8 +11042,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             90
+          ],
+          [
+            6,
+            180
           ]
         ],
         "keywords": [
@@ -11216,8 +11112,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             120
+          ],
+          [
+            10,
+            240
           ]
         ],
         "keywords": [],
@@ -11267,7 +11167,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             200
           ]
         ],
@@ -12017,8 +11917,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             90
+          ],
+          [
+            10,
+            180
           ]
         ],
         "keywords": [
@@ -12077,7 +11981,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            4,
             105
           ]
         ],
@@ -12094,67 +11998,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Master-crafted Bolt Rifle",
           "Master-crafted Heavy Bolter"
         ],
-        "wargearOptions": []
-      },
-      {
-        "id": "74ba-6762-ef01-32d6",
-        "name": "Champion of the Chapter [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            70
-          ]
-        ],
-        "keywords": [
-          "Champion of the Chapter",
-          "Tacticus",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "0385-0e03-0eac-d91c",
-        "name": "Librarius Adept [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            70
-          ]
-        ],
-        "keywords": [
-          "Psyker",
-          "Tacticus",
-          "Librarius Adept",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "3fe2-9d72-8251-adb4",
-        "name": "Venerable Battle-Brother [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            160
-          ]
-        ],
-        "keywords": [
-          "Dreadnought",
-          "Venerable Battle-Brother",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
         "wargearOptions": []
       }
     ],
@@ -13981,7 +13824,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             70
           ]
         ],
@@ -14091,8 +13934,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             180
+          ],
+          [
+            10,
+            360
           ]
         ],
         "keywords": [
@@ -14202,8 +14049,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
+          ],
+          [
+            10,
+            250
           ]
         ],
         "keywords": [],
@@ -14322,8 +14173,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             90
+          ],
+          [
+            10,
+            180
           ]
         ],
         "keywords": [],
@@ -14409,7 +14264,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            3,
             65
           ]
         ],
@@ -14427,7 +14282,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             90
           ]
         ],
@@ -14451,7 +14306,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
           ]
         ],
@@ -14552,8 +14407,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             120
+          ],
+          [
+            10,
+            240
           ]
         ],
         "keywords": [
@@ -14587,8 +14446,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             110
+          ],
+          [
+            10,
+            220
           ]
         ],
         "keywords": [
@@ -14744,8 +14607,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
+          ],
+          [
+            10,
+            250
           ]
         ],
         "keywords": [
@@ -14787,7 +14654,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             70
           ]
         ],
@@ -14946,8 +14813,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             50
+          ],
+          [
+            20,
+            100
           ]
         ],
         "keywords": [
@@ -15032,7 +14903,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            2,
             55
           ]
         ],
@@ -15052,8 +14923,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            8,
             90
+          ],
+          [
+            16,
+            180
           ]
         ],
         "keywords": [
@@ -15325,7 +15200,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             90
           ]
         ],
@@ -15349,7 +15224,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            2,
             55
           ]
         ],
@@ -15369,7 +15244,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             70
           ]
         ],
@@ -15528,7 +15403,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             70
           ]
         ],
@@ -15637,8 +15512,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             50
+          ],
+          [
+            20,
+            100
           ]
         ],
         "keywords": [
@@ -15686,8 +15565,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            8,
             90
+          ],
+          [
+            16,
+            180
           ]
         ],
         "keywords": [
@@ -16063,7 +15946,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Epic Hero",
         "costs": [
           [
-            1,
+            2,
             100
           ]
         ],
@@ -16230,7 +16113,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            3,
             65
           ]
         ],
@@ -16248,7 +16131,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             90
           ]
         ],
@@ -16272,8 +16155,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             90
+          ],
+          [
+            10,
+            180
           ]
         ],
         "keywords": [],
@@ -16359,8 +16246,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             50
+          ],
+          [
+            20,
+            100
           ]
         ],
         "keywords": [
@@ -16408,8 +16299,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            8,
             90
+          ],
+          [
+            16,
+            180
           ]
         ],
         "keywords": [
@@ -16429,8 +16324,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             180
+          ],
+          [
+            10,
+            360
           ]
         ],
         "keywords": [
@@ -16556,8 +16455,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             120
+          ],
+          [
+            10,
+            240
           ]
         ],
         "keywords": [
@@ -16591,8 +16494,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
+          ],
+          [
+            10,
+            250
           ]
         ],
         "keywords": [],
@@ -16729,8 +16636,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             70
+          ],
+          [
+            6,
+            140
           ]
         ],
         "keywords": [],
@@ -16838,8 +16749,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             110
+          ],
+          [
+            10,
+            220
           ]
         ],
         "keywords": [
@@ -16958,8 +16873,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
+          ],
+          [
+            10,
+            250
           ]
         ],
         "keywords": [
@@ -17001,7 +16920,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
           ]
         ],
@@ -17084,7 +17003,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             160
           ]
         ],
@@ -17123,7 +17042,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             70
           ]
         ],
@@ -17282,7 +17201,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             70
           ]
         ],
@@ -17373,7 +17292,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            2,
             55
           ]
         ],
@@ -17574,7 +17493,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             70
           ]
         ],
@@ -17594,8 +17513,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             180
+          ],
+          [
+            20,
+            360
           ]
         ],
         "keywords": [
@@ -17635,8 +17558,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             100
+          ],
+          [
+            10,
+            200
           ]
         ],
         "keywords": [
@@ -17715,8 +17642,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             95
+          ],
+          [
+            10,
+            190
           ]
         ],
         "keywords": [
@@ -17844,7 +17775,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             200
           ]
         ],
@@ -17901,8 +17832,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             110
+          ],
+          [
+            10,
+            220
           ]
         ],
         "keywords": [
@@ -18025,7 +17960,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            6,
             145
           ]
         ],
@@ -18078,7 +18013,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Epic Hero",
         "costs": [
           [
-            1,
+            5,
             115
           ]
         ],
@@ -18107,8 +18042,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             110
+          ],
+          [
+            10,
+            220
           ]
         ],
         "keywords": [],
@@ -18212,63 +18151,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "b9a4-a9c4-5f8d-ed3a",
-        "name": "Exalted Champion [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            90
-          ]
-        ],
-        "keywords": [
-          "Exalted Champion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "b6c0-4be6-7487-73dc",
-        "name": "Sorcerous Champion [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            80
-          ]
-        ],
-        "keywords": [
-          "Psyker",
-          "Sorcerous Champion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "9573-8b24-3796-d9d9",
-        "name": "Soul Forge Tyrant [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            160
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Helstalker",
-          "Soul Forge Tyrant"
-        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
@@ -18667,8 +18549,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             95
+          ],
+          [
+            10,
+            190
           ]
         ],
         "keywords": [
@@ -18790,7 +18676,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             65
           ]
         ],
@@ -18919,8 +18805,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             160
+          ],
+          [
+            6,
+            320
           ]
         ],
         "keywords": [
@@ -18973,8 +18863,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             115
+          ],
+          [
+            10,
+            230
           ]
         ],
         "keywords": [
@@ -19085,7 +18979,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             80
           ]
         ],
@@ -19330,7 +19224,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             110
           ]
         ],
@@ -19352,8 +19246,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             115
+          ],
+          [
+            6,
+            230
           ]
         ],
         "keywords": [
@@ -19376,8 +19274,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             40
+          ],
+          [
+            6,
+            80
           ]
         ],
         "keywords": [
@@ -19414,64 +19316,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargearOptions": []
       },
       {
-        "id": "d037-162a-ac85-9c88",
-        "name": "Plague Sorcerer [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            70
-          ]
-        ],
-        "keywords": [
-          "Psyker",
-          "Nurgle",
-          "Plague Sorcerer"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "89d8-7e90-be47-59b6",
-        "name": "Plague Lord [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            80
-          ]
-        ],
-        "keywords": [
-          "Nurgle",
-          "Plague Lord"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "fa2a-1b44-a513-318d",
-        "name": "Tri-lobe Vectors [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            120
-          ]
-        ],
-        "keywords": [
-          "Nurgle",
-          "Tri-lobe Vectors"
-        ],
-        "minModels": 3,
-        "maxModels": 3,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
         "id": "bc88-0833-743e-0146",
         "name": "Defiler",
         "role": "Vehicle",
@@ -19484,70 +19328,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon",
           "Nurgle"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "3594-bf68-4a46-fbf8",
-        "name": "Immortal Champion [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            180
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Crucible",
-          "Immortal Champion",
-          "Shadow Legion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "8597-d6dd-511e-80ae",
-        "name": "Daemonic Charioteer [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            120
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Crucible",
-          "Daemonic Charioteer",
-          "Shadow Legion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "3a39-0b56-25e0-eff8",
-        "name": "Daemonic Herald [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Summoned",
-          "Daemonic Herald",
-          "Crucible",
-          "Shadow Legion"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -19869,7 +19649,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             65
           ]
         ],
@@ -20087,8 +19867,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             100
+          ],
+          [
+            10,
+            200
           ]
         ],
         "keywords": [
@@ -20196,8 +19980,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             180
+          ],
+          [
+            10,
+            360
           ]
         ],
         "keywords": [
@@ -20270,6 +20058,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "modelContext": "Scarab Occult Sorcerer",
             "isUpgrade": false,
             "variants": [
+              {
+                "name": "Inferno combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-bolter"
+                ],
+                "isDefault": true
+              },
               {
                 "name": "Prosperine khopesh",
                 "min": 0,
@@ -20387,8 +20184,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             45
+          ],
+          [
+            6,
+            90
           ]
         ],
         "keywords": [
@@ -20472,8 +20273,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             70
+          ],
+          [
+            20,
+            140
           ]
         ],
         "keywords": [
@@ -20549,8 +20354,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Vehicle",
         "costs": [
           [
-            1,
+            2,
             80
+          ],
+          [
+            4,
+            160
           ]
         ],
         "keywords": [
@@ -20591,8 +20400,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             55
+          ],
+          [
+            6,
+            110
           ]
         ],
         "keywords": [
@@ -20661,8 +20474,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             65
+          ],
+          [
+            6,
+            130
           ]
         ],
         "keywords": [
@@ -20684,8 +20501,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [
@@ -20707,7 +20528,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             115
           ]
         ],
@@ -20764,7 +20585,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -20783,90 +20604,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargearOptions": []
       },
       {
-        "id": "dd17-8cb8-ed8c-f6c8",
-        "name": "Chaos Spawn (Flesh Change)",
-        "role": "Infantry",
-        "costs": [
-          [
-            1,
-            65
-          ]
-        ],
-        "keywords": [
-          "Beast",
-          "Tzeentch",
-          "Spawn",
-          "Mutant"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [
-          "Hideous Mutations"
-        ],
-        "wargearOptions": []
-      },
-      {
-        "id": "8e43-1b14-4d87-7d17",
-        "name": "Magister [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            105
-          ]
-        ],
-        "keywords": [
-          "Psyker",
-          "Tzeentch",
-          "Magister"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "d288-821d-7fef-f3ae",
-        "name": "Brayherd Chieftain [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Tzeentch",
-          "Mutant",
-          "Brayherd Chieftain"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "f75a-a5e6-f478-6f55",
-        "name": "Brayherd Shaman [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Tzeentch",
-          "Mutant",
-          "Psyker",
-          "Brayherd Shaman"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
         "id": "f158-2979-c38b-65b5",
         "name": "Defiler",
         "role": "Vehicle",
@@ -20879,70 +20616,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon",
           "Tzeentch"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "8597-d6dd-511e-80ae",
-        "name": "Daemonic Charioteer [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            120
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Crucible",
-          "Daemonic Charioteer",
-          "Shadow Legion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "3a39-0b56-25e0-eff8",
-        "name": "Daemonic Herald [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Summoned",
-          "Daemonic Herald",
-          "Crucible",
-          "Shadow Legion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "3594-bf68-4a46-fbf8",
-        "name": "Immortal Champion [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            180
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Crucible",
-          "Immortal Champion",
-          "Shadow Legion"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -21018,6 +20691,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "name": "Incandeum",
         "detachmentId": "grand-coven",
         "description": "Once per battle, when selecting a Ritual for the bearer to attempt, you can select Doombolt, even if a model from your army has already attempted to manifest that Ritual this phase.",
+        "allowedKeywords": [],
+        "allowedUnitNames": []
+      },
+      {
+        "id": "hexwarp-thrallband__arcane-might",
+        "name": "Arcane Might",
+        "detachmentId": "hexwarp-thrallband",
+        "description": "Add 1 to the Strength characteristic of Psychic weapons equipped by models in the bearer’s unit. While the bearer’s unit is wholly within your army’s Flow of Magic, add 2 to the Strength characteristic of Psychic weapons equipped by models in that unit instead.",
+        "allowedKeywords": [],
+        "allowedUnitNames": []
+      },
+      {
+        "id": "hexwarp-thrallband__empowered-manifestation",
+        "name": "Empowered Manifestation",
+        "detachmentId": "hexwarp-thrallband",
+        "description": "While the bearer’s unit is wholly within your army’s Flow of Magic, you can add 6\" to the range of Psychic abilities the bearer has that specify a range (including Rituals) and each time a model in the bearer’s unit takes a Hazardous test for a Psychic weapon, you can re‑roll the result.",
+        "allowedKeywords": [],
+        "allowedUnitNames": []
+      },
+      {
+        "id": "hexwarp-thrallband__empyric-onslaught",
+        "name": "Empyric Onslaught",
+        "detachmentId": "hexwarp-thrallband",
+        "description": "While the bearer’s unit is wholly within your army’s Flow of Magic, add 3 to the Attacks characteristic of ranged Psychic weapons equipped by the bearer.",
+        "allowedKeywords": [],
+        "allowedUnitNames": []
+      },
+      {
+        "id": "hexwarp-thrallband__noctilith-mantle",
+        "name": "Noctilith Mantle",
+        "detachmentId": "hexwarp-thrallband",
+        "description": "While the bearer’s unit is on the battlefield, it is wholly within your army’s Flow of Magic. Models in that unit cannot be selected to use any Rituals.",
+        "allowedKeywords": [],
+        "allowedUnitNames": []
+      },
+      {
+        "id": "changehost-of-deceit__nethershriek-mind-eater",
+        "name": "Nethershriek Mind-eater",
+        "detachmentId": "changehost-of-deceit",
+        "description": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to the bearer. That unit must take a Battle-shock test; if that test is failed, that unit suffers 3 mortal wounds.",
+        "allowedKeywords": [],
+        "allowedUnitNames": []
+      },
+      {
+        "id": "changehost-of-deceit__diabolic-servant",
+        "name": "Diabolic Servant",
+        "detachmentId": "changehost-of-deceit",
+        "description": "While the bearer is within 6\" of one or more friendly ^^**Scintillating Legion^^** units, each time the bearer Channels the Warp, add 1 to the Psychic test result.",
+        "allowedKeywords": [],
+        "allowedUnitNames": []
+      },
+      {
+        "id": "changehost-of-deceit__duplicitous-malediction",
+        "name": "Duplicitous Malediction",
+        "detachmentId": "changehost-of-deceit",
+        "description": "After both players have deployed their armies, select up to three ^^**Thousand Sons^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserve if you wish, regardless of how many units are already in Strategic Reserves.",
+        "allowedKeywords": [],
+        "allowedUnitNames": []
+      },
+      {
+        "id": "changehost-of-deceit__tome-of-true-names",
+        "name": "Tome of True Names",
+        "detachmentId": "changehost-of-deceit",
+        "description": "Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer has a 2+ invulnerable save.",
         "allowedKeywords": [],
         "allowedUnitNames": []
       },
@@ -21268,8 +21005,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             180
+          ],
+          [
+            20,
+            360
           ]
         ],
         "keywords": [
@@ -21327,8 +21068,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             175
+          ],
+          [
+            10,
+            350
           ]
         ],
         "keywords": [
@@ -21503,7 +21248,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             65
           ]
         ],
@@ -21552,8 +21297,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             135
+          ],
+          [
+            6,
+            270
           ]
         ],
         "keywords": [
@@ -21574,8 +21323,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             140
+          ],
+          [
+            6,
+            280
           ]
         ],
         "keywords": [
@@ -21766,7 +21519,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             90
           ]
         ],
@@ -21809,7 +21562,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            8,
             75
           ]
         ],
@@ -21927,7 +21680,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -21947,8 +21700,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             110
+          ],
+          [
+            6,
+            220
           ]
         ],
         "keywords": [
@@ -21967,8 +21724,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -21982,132 +21743,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Burning roar"
         ],
-        "wargearOptions": []
-      },
-      {
-        "id": "85e5-721a-d505-3881",
-        "name": "Butcherlord [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            90
-          ]
-        ],
-        "keywords": [
-          "Khorne",
-          "Butcherlord",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "71ad-8562-f833-5872",
-        "name": "Eight-blessed Lord [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            90
-          ]
-        ],
-        "keywords": [
-          "Khorne",
-          "Eight-blessed Lord",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [
-          "Bladed horn"
-        ],
-        "wargearOptions": []
-      },
-      {
-        "id": "544e-3db3-4878-3db3",
-        "name": "Bloodcult Champion [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Khorne",
-          "Bloodcult Champion",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "3594-bf68-4a46-fbf8",
-        "name": "Immortal Champion [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            180
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Crucible",
-          "Immortal Champion",
-          "Shadow Legion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "8597-d6dd-511e-80ae",
-        "name": "Daemonic Charioteer [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            120
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Crucible",
-          "Daemonic Charioteer",
-          "Shadow Legion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "3a39-0b56-25e0-eff8",
-        "name": "Daemonic Herald [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Daemon",
-          "Summoned",
-          "Daemonic Herald",
-          "Crucible",
-          "Shadow Legion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
         "wargearOptions": []
       }
     ],
@@ -22352,7 +21987,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             160
           ]
         ],
@@ -22402,8 +22037,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [
@@ -22569,8 +22208,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             65
+          ],
+          [
+            10,
+            130
           ]
         ],
         "keywords": [
@@ -22658,6 +22301,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -22816,8 +22463,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             90
+          ],
+          [
+            10,
+            180
           ]
         ],
         "keywords": [
@@ -22879,8 +22530,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -23007,8 +22662,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             120
+          ],
+          [
+            10,
+            240
           ]
         ],
         "keywords": [
@@ -23092,7 +22751,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            11,
             100
           ]
         ],
@@ -23133,8 +22792,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             95
+          ],
+          [
+            10,
+            190
           ]
         ],
         "keywords": [
@@ -23238,8 +22901,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             55
+          ],
+          [
+            10,
+            110
           ]
         ],
         "keywords": [
@@ -23280,8 +22947,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             110
+          ],
+          [
+            6,
+            220
           ]
         ],
         "keywords": [
@@ -23324,8 +22995,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [
@@ -23346,8 +23021,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            2,
             95
+          ],
+          [
+            4,
+            190
           ]
         ],
         "keywords": [
@@ -23477,7 +23156,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            11,
             110
           ]
         ],
@@ -23575,8 +23254,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             95
+          ],
+          [
+            10,
+            190
           ]
         ],
         "keywords": [
@@ -23662,8 +23345,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             85
+          ],
+          [
+            12,
+            170
           ]
         ],
         "keywords": [
@@ -23796,8 +23483,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             55
+          ],
+          [
+            4,
+            110
           ]
         ],
         "keywords": [
@@ -23850,6 +23541,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             45
+          ],
+          [
+            2,
+            90
           ]
         ],
         "keywords": [
@@ -23907,8 +23602,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             105
+          ],
+          [
+            10,
+            210
           ]
         ],
         "keywords": [
@@ -23968,7 +23667,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             150
           ]
         ],
@@ -24079,8 +23778,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             85
+          ],
+          [
+            10,
+            170
           ]
         ],
         "keywords": [
@@ -24181,8 +23884,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             85
+          ],
+          [
+            10,
+            170
           ]
         ],
         "keywords": [
@@ -24221,7 +23928,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             110
           ]
         ],
@@ -24321,8 +24028,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             65
+          ],
+          [
+            6,
+            130
           ]
         ],
         "keywords": [
@@ -24428,7 +24139,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -24602,8 +24313,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -24685,67 +24400,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           }
         ]
-      },
-      {
-        "id": "8e2c-2234-8595-f191",
-        "name": "Craftworld Warleader [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            75
-          ]
-        ],
-        "keywords": [
-          "Aeldari",
-          "Craftworld Warleader",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "915f-4ee6-3358-31ca",
-        "name": "Skyrunner [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            80
-          ]
-        ],
-        "keywords": [
-          "Aeldari",
-          "Crucible",
-          "Skyrunner"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "5578-f918-6e88-3d0e",
-        "name": "Ghost Warrior [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            160
-          ]
-        ],
-        "keywords": [
-          "Aeldari",
-          "Crucible",
-          "Ghost Warrior",
-          "Wraith Construct"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
       }
     ],
     "detachments": [
@@ -25617,6 +25271,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             55
+          ],
+          [
+            2,
+            110
           ]
         ],
         "keywords": [
@@ -25676,8 +25334,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            5,
             85
+          ],
+          [
+            10,
+            170
           ]
         ],
         "keywords": [
@@ -25719,8 +25381,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             90
+          ],
+          [
+            10,
+            180
           ]
         ],
         "keywords": [
@@ -25775,7 +25441,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             115
           ]
         ],
@@ -25883,8 +25549,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -25980,8 +25650,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             70
+          ],
+          [
+            6,
+            140
           ]
         ],
         "keywords": [
@@ -26048,7 +25722,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             130
           ]
         ],
@@ -26113,6 +25787,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             80
+          ],
+          [
+            2,
+            160
           ]
         ],
         "keywords": [
@@ -26167,8 +25845,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [
@@ -26252,7 +25934,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -26304,8 +25986,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             65
+          ],
+          [
+            10,
+            130
           ]
         ],
         "keywords": [
@@ -26393,6 +26079,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [
@@ -26594,8 +26284,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            2,
             95
+          ],
+          [
+            4,
+            190
           ]
         ],
         "keywords": [
@@ -26703,8 +26397,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             85
+          ],
+          [
+            12,
+            170
           ]
         ],
         "keywords": [
@@ -26819,7 +26517,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
           ]
         ],
@@ -26872,8 +26570,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -27000,48 +26702,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Dread of the Deep Void",
           "Waystave"
         ],
-        "wargearOptions": []
-      },
-      {
-        "id": "62f8-6a75-5ffb-e83b",
-        "name": "Archtormentor [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Wych Cult",
-          "Aeldari",
-          "Archtormentor"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "b5a1-7e2b-7a1d-bbda",
-        "name": "Flesh Crafter [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Aeldari",
-          "Haemonculus Covens",
-          "Flesh Crafter"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
         "wargearOptions": []
       }
     ],
@@ -27893,8 +27553,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             135
+          ],
+          [
+            10,
+            270
           ]
         ],
         "keywords": [
@@ -27933,6 +27597,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             95
+          ],
+          [
+            2,
+            190
           ]
         ],
         "keywords": [
@@ -27949,8 +27617,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             70
+          ],
+          [
+            10,
+            140
           ]
         ],
         "keywords": [
@@ -28031,8 +27703,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            5,
             85
+          ],
+          [
+            9,
+            170
           ]
         ],
         "keywords": [
@@ -28176,8 +27852,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             70
+          ],
+          [
+            10,
+            140
           ]
         ],
         "keywords": [
@@ -28312,8 +27992,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             65
+          ],
+          [
+            20,
+            130
           ]
         ],
         "keywords": [
@@ -28443,8 +28127,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -28518,8 +28206,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             65
+          ],
+          [
+            10,
+            130
           ]
         ],
         "keywords": [
@@ -28576,74 +28268,17 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ]
       },
       {
-        "id": "0f8d-ba1b-c2cf-c8e7",
-        "name": "Cult Insurrectionist [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            80
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Cult Insurrectionist"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "5138-978e-c8e6-b90c",
-        "name": "Cult Guerrilla [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Cult Guerrilla"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "678c-b59c-f85d-0a43",
-        "name": "Voice of the Patriarch [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            70
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Psyker",
-          "Voice of the Patriarch"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
         "id": "2299-bed9-3e-2b60",
         "name": "Attilan Rough Riders",
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [
@@ -28785,7 +28420,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             65
           ]
         ],
@@ -28902,7 +28537,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             110
           ]
         ],
@@ -28974,7 +28609,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             65
           ]
         ],
@@ -29117,7 +28752,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             110
           ]
         ],
@@ -29527,8 +29162,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [
@@ -29619,8 +29258,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             70
+          ],
+          [
+            6,
+            140
           ]
         ],
         "keywords": [
@@ -29679,8 +29322,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             85
+          ],
+          [
+            20,
+            170
           ]
         ],
         "keywords": [
@@ -29799,7 +29446,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
           ]
         ],
@@ -29841,7 +29488,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            6,
             65
           ]
         ],
@@ -29869,7 +29516,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             65
           ]
         ],
@@ -30072,8 +29719,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [
@@ -30148,7 +29799,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            4,
             75
           ]
         ],
@@ -30215,7 +29866,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             65
           ]
         ],
@@ -30328,7 +29979,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             165
           ]
         ],
@@ -30343,67 +29994,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ravener heavy claws and talons",
           "Venom bolt"
         ],
-        "wargearOptions": []
-      },
-      {
-        "id": "a89f-8ad1-3d79-174f",
-        "name": "Macro Organism [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            150
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Macro Organism"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "527c-d3c6-c620-c7c6",
-        "name": "Node Organism [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            80
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Synapse",
-          "Node Organism"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "6f46-0c77-acd0-3f5d",
-        "name": "Prime Organism [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            135
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Prime Organism"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
         "wargearOptions": []
       },
       {
@@ -30430,7 +30020,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             80
           ]
         ],
@@ -31004,7 +30594,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             100
           ]
         ],
@@ -31208,7 +30798,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            3,
             65
           ]
         ],
@@ -31227,7 +30817,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             75
           ]
         ],
@@ -31251,8 +30841,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             135
+          ],
+          [
+            10,
+            270
           ]
         ],
         "keywords": [
@@ -31371,8 +30965,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             100
+          ],
+          [
+            10,
+            200
           ]
         ],
         "keywords": [
@@ -31428,8 +31026,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [],
@@ -31537,8 +31139,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [
@@ -31612,7 +31218,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -31750,8 +31356,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             85
+          ],
+          [
+            6,
+            170
           ]
         ],
         "keywords": [
@@ -31796,8 +31406,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             85
+          ],
+          [
+            6,
+            170
           ]
         ],
         "keywords": [
@@ -31848,7 +31462,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             110
           ]
         ],
@@ -31892,65 +31506,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           }
         ]
-      },
-      {
-        "id": "0039-5b91-2e96-0e08",
-        "name": "Living Ancestor [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            70
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Psyker",
-          "Living Ancestor"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "05b6-7622-edbe-7a9a",
-        "name": "Kinhost Commander [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            65
-          ]
-        ],
-        "keywords": [
-          "Kinhost Commander",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "4eaf-78d5-9195-0e36",
-        "name": "Steeljack Elder [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            80
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Ironkin Steeljacks",
-          "Steeljack Elder"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
       },
       {
         "id": "c7ea-1b76-c8c1-4786",
@@ -32462,8 +32017,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             90
+          ],
+          [
+            20,
+            180
           ]
         ],
         "keywords": [],
@@ -32509,8 +32068,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            5,
             70
+          ],
+          [
+            10,
+            140
           ]
         ],
         "keywords": [],
@@ -32583,8 +32146,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             85
+          ],
+          [
+            10,
+            170
           ]
         ],
         "keywords": [],
@@ -32616,8 +32183,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [],
@@ -32635,8 +32206,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             60
+          ],
+          [
+            10,
+            120
           ]
         ],
         "keywords": [],
@@ -32672,7 +32247,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             60
           ]
         ],
@@ -32804,8 +32379,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             40
+          ],
+          [
+            6,
+            80
           ]
         ],
         "keywords": [
@@ -32846,8 +32425,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             75
+          ],
+          [
+            6,
+            150
           ]
         ],
         "keywords": [],
@@ -32865,8 +32448,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             90
+          ],
+          [
+            10,
+            180
           ]
         ],
         "keywords": [],
@@ -32881,8 +32468,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             110
+          ],
+          [
+            6,
+            220
           ]
         ],
         "keywords": [
@@ -32987,6 +32578,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             40
+          ],
+          [
+            6,
+            80
           ]
         ],
         "keywords": [
@@ -33127,7 +32722,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Epic Hero",
         "costs": [
           [
-            1,
+            3,
             400
           ]
         ],
@@ -33188,7 +32783,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             85
           ]
         ],
@@ -33261,7 +32856,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             50
           ]
         ],
@@ -33308,67 +32903,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Destroyer Cult"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "be60-a5ae-6c7c-df47",
-        "name": "Dynastic Conqueror [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            85
-          ]
-        ],
-        "keywords": [
-          "Noble",
-          "Dynastic Conqueror",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "e884-dd7a-a1cd-bad8",
-        "name": "Hyperscientist [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            85
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Hyperscientist",
-          "Cryptek"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "50cd-aa29-f506-8ed1",
-        "name": "Triarchal Overseer [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            120
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Triarch",
-          "Triarchal Overseer",
-          "Stalker"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -33609,8 +33143,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             95
+          ],
+          [
+            20,
+            190
           ]
         ],
         "keywords": [
@@ -33794,8 +33332,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             80
+          ],
+          [
+            20,
+            160
           ]
         ],
         "keywords": [
@@ -33965,8 +33507,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Vehicle",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [
@@ -34007,8 +33553,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             80
+          ],
+          [
+            10,
+            160
           ]
         ],
         "keywords": [],
@@ -34046,7 +33596,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Epic Hero",
         "costs": [
           [
-            1,
+            2,
             235
           ]
         ],
@@ -34139,8 +33689,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Vehicle",
         "costs": [
           [
-            1,
+            3,
             125
+          ],
+          [
+            6,
+            250
           ]
         ],
         "keywords": [
@@ -34195,7 +33749,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             120
           ]
         ],
@@ -34312,8 +33866,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            2,
             65
+          ],
+          [
+            6,
+            130
           ]
         ],
         "keywords": [
@@ -34480,8 +34038,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             105
+          ],
+          [
+            10,
+            210
           ]
         ],
         "keywords": [],
@@ -34648,8 +34210,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             65
+          ],
+          [
+            10,
+            130
           ]
         ],
         "keywords": [
@@ -34689,7 +34255,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            6,
             140
           ]
         ],
@@ -34767,8 +34333,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             65
+          ],
+          [
+            6,
+            130
           ]
         ],
         "keywords": [
@@ -34977,7 +34547,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            6,
             140
           ]
         ],
@@ -35028,65 +34598,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           }
         ]
-      },
-      {
-        "id": "2ba9-e97a-909d-3ac5",
-        "name": "Hordeboss [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            75
-          ]
-        ],
-        "keywords": [
-          "Hordeboss",
-          "Crucible"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "54de-2004-bbc1-3ac6",
-        "name": "Warphead [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            65
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Psyker",
-          "Warphead"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "6a69-8e75-49ae-408f",
-        "name": "Upstart Gretchin [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            40
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Grots",
-          "Upstart Gretchin"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
       },
       {
         "id": "2ab7-ab71-0af4-5d39",
@@ -35824,7 +35335,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             70
           ]
         ],
@@ -35881,7 +35392,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -35905,8 +35416,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             65
+          ],
+          [
+            20,
+            130
           ]
         ],
         "keywords": [
@@ -35960,6 +35475,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             40
+          ],
+          [
+            3,
+            80
           ]
         ],
         "keywords": [
@@ -36013,7 +35532,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             100
           ]
         ],
@@ -36107,7 +35626,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            10,
             90
           ]
         ],
@@ -36197,8 +35716,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             65
+          ],
+          [
+            10,
+            130
           ]
         ],
         "keywords": [
@@ -36271,8 +35794,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             40
+          ],
+          [
+            10,
+            80
           ]
         ],
         "keywords": [
@@ -36445,7 +35972,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            12,
             85
           ]
         ],
@@ -36620,7 +36147,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Vehicle",
         "costs": [
           [
-            1,
+            3,
             140
           ]
         ],
@@ -36641,7 +36168,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Vehicle",
         "costs": [
           [
-            1,
+            3,
             120
           ]
         ],
@@ -36662,7 +36189,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Vehicle",
         "costs": [
           [
-            1,
+            3,
             110
           ]
         ],
@@ -36762,8 +36289,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Fast Attack",
         "costs": [
           [
-            1,
+            3,
             85
+          ],
+          [
+            6,
+            170
           ]
         ],
         "keywords": [
@@ -36800,71 +36331,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ]
       },
       {
-        "id": "2e61-8399-60bf-1c85",
-        "name": "Shas'nel [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            50
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Shas'nel"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "ed9c-6a08-c915-c757",
-        "name": "Battlesuit Veteran [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            60
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Battlesuit",
-          "Battlesuit Veteran"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "86c3-1150-ef4d-d870",
-        "name": "Kinband Champion [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            55
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Kroot",
-          "Kinband Champion"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
         "id": "6623-c2cb-6705-580b",
         "name": "The Twin Lance",
         "role": "Epic Hero",
         "costs": [
           [
-            1,
+            2,
             185
           ]
         ],
@@ -37297,8 +36769,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             65
+          ],
+          [
+            6,
+            130
           ]
         ],
         "keywords": [
@@ -37319,8 +36795,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             75
+          ],
+          [
+            6,
+            150
           ]
         ],
         "keywords": [
@@ -37342,8 +36822,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             60
+          ],
+          [
+            20,
+            120
           ]
         ],
         "keywords": [
@@ -37415,8 +36899,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             65
+          ],
+          [
+            20,
+            130
           ]
         ],
         "keywords": [
@@ -37454,8 +36942,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             80
+          ],
+          [
+            6,
+            160
           ]
         ],
         "keywords": [
@@ -37515,6 +37007,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             40
+          ],
+          [
+            3,
+            80
           ]
         ],
         "keywords": [
@@ -37554,8 +37050,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             70
+          ],
+          [
+            6,
+            140
           ]
         ],
         "keywords": [
@@ -37574,8 +37074,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            11,
             45
+          ],
+          [
+            21,
+            90
           ]
         ],
         "keywords": [
@@ -37595,8 +37099,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             100
+          ],
+          [
+            6,
+            200
           ]
         ],
         "keywords": [
@@ -37618,8 +37126,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             55
+          ],
+          [
+            6,
+            110
           ]
         ],
         "keywords": [
@@ -37673,8 +37185,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             90
+          ],
+          [
+            6,
+            180
           ]
         ],
         "keywords": [
@@ -37818,8 +37334,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             55
+          ],
+          [
+            10,
+            110
           ]
         ],
         "keywords": [
@@ -37873,8 +37393,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             75
+          ],
+          [
+            10,
+            150
           ]
         ],
         "keywords": [
@@ -37993,8 +37517,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Battleline",
         "costs": [
           [
-            1,
+            10,
             85
+          ],
+          [
+            20,
+            170
           ]
         ],
         "keywords": [
@@ -38073,8 +37601,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            3,
             70
+          ],
+          [
+            6,
+            140
           ]
         ],
         "keywords": [
@@ -38096,6 +37628,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             25
+          ],
+          [
+            3,
+            50
           ]
         ],
         "keywords": [
@@ -38196,7 +37732,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             125
           ]
         ],
@@ -38238,7 +37774,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Character",
         "costs": [
           [
-            1,
+            5,
             165
           ]
         ],
@@ -38253,67 +37789,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ravener heavy claws and talons",
           "Venom bolt"
         ],
-        "wargearOptions": []
-      },
-      {
-        "id": "527c-d3c6-c620-c7c6",
-        "name": "Node Organism [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            80
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Synapse",
-          "Node Organism"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "6f46-0c77-acd0-3f5d",
-        "name": "Prime Organism [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            135
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Prime Organism"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
-      },
-      {
-        "id": "a89f-8ad1-3d79-174f",
-        "name": "Macro Organism [Crucible]",
-        "role": "Character",
-        "costs": [
-          [
-            1,
-            150
-          ]
-        ],
-        "keywords": [
-          "Crucible",
-          "Great Devourer",
-          "Macro Organism"
-        ],
-        "minModels": 1,
-        "maxModels": 1,
-        "wargear": [],
         "wargearOptions": []
       },
       {
