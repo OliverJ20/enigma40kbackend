@@ -52,6 +52,8 @@ export interface WargearGroup {
   name: string;
   groupMin: number;   // total mandatory slots in this group
   groupMax: number;   // total available slots in this group
+  /** Minimum unit model count required to show this group (for "per N models" split groups). */
+  modelMin?: number;
   modelContext: string; // "" for unit-level SEGs; model name for leader choices
   /** True for unit-level add-on upgrades (icons, banners) — rendered separately from squad composition. */
   isUpgrade: boolean;
@@ -849,6 +851,34 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
       ? [[minModels, pts]]
       : [[minModels, pts], [maxModels, pts * 2]];
   }
+  // Auto-split "per N models" groups into per-slot groups with modelMin.
+  // Heuristic: variable-size unit where groupMax == maxModels / minModels and
+  // no variant is marked isDefault (ruling out squad-composition SEGs).
+  if (minModels < maxModels && maxModels % minModels === 0) {
+    const slots = maxModels / minModels;
+    const ordinals = ["", " (2nd)", " (3rd)", " (4th)", " (5th)"];
+    const expanded: WargearGroup[] = [];
+    for (const group of wargearOptions) {
+      if (
+        group.groupMax === slots &&
+        slots >= 2 &&
+        !group.variants.some((v) => v.isDefault)
+      ) {
+        for (let i = 0; i < slots; i++) {
+          expanded.push({
+            ...group,
+            name: group.name + (ordinals[i] ?? ` (${i + 1}th)`),
+            groupMax: 1,
+            modelMin: (i + 1) * minModels,
+          });
+        }
+      } else {
+        expanded.push(group);
+      }
+    }
+    wargearOptions = expanded;
+  }
+
   return { id: String(e["@_id"]), name, role, costs, keywords, minModels, maxModels, wargear, wargearOptions };
 }
 
@@ -1002,6 +1032,8 @@ export interface WargearGroup {
   name: string;
   groupMin: number;
   groupMax: number;
+  /** Minimum unit model count required to show this group (for "per N models" split groups). */
+  modelMin?: number;
   /** Empty string for unit-level groups; model name (e.g. "Theyn") for leader weapon choices. */
   modelContext: string;
   /** True for unit-level add-on upgrades (icons, banners) rendered separately from squad composition. */
