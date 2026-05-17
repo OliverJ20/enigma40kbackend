@@ -767,17 +767,62 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
     );
 
   const costsArr: any[] = e["costs"]?.["cost"] ?? [];
-  const ptsCost = costsArr.find((c: any) => c["@_name"] === "pts");
+  const costsNorm = Array.isArray(costsArr) ? costsArr : [costsArr];
+  const ptsCost = costsNorm.find((c: any) => c["@_name"] === "pts");
   const pts = Math.round(parseFloat(String(ptsCost?.["@_value"] ?? "0")));
   if (pts <= 0) return null;
+  const ptsTypeId: string = String(ptsCost?.["@_typeId"] ?? "");
 
   const { minModels, maxModels } = extractModelCounts(e);
   const wargear = extractWargearNames(e);
   const wargearOptions = extractWargearOptions(e);
 
-  const costs: [number, number][] = minModels === maxModels
-    ? [[minModels, pts]]
-    : [[minModels, pts], [maxModels, pts * 2]];
+  // Build cost tiers from BSData modifiers (e.g. "atLeast 3 models → 95pts").
+  // BSData stores multi-tier costs as a base pts value + cascading set-modifiers.
+  const costTierMap = new Map<number, number>([[minModels, pts]]);
+  const rawMods: any[] = e["modifiers"]?.["modifier"] ?? [];
+  const modsArr = Array.isArray(rawMods) ? rawMods : [rawMods];
+  for (const mod of modsArr) {
+    if (mod["@_type"] !== "set") continue;
+    if (ptsTypeId && String(mod["@_field"]) !== ptsTypeId) continue;
+    const modPts = Math.round(parseFloat(String(mod["@_value"] ?? "0")));
+    if (modPts <= 0) continue;
+    const rawConds: any[] = mod["conditions"]?.["condition"] ?? [];
+    const condsArr = Array.isArray(rawConds) ? rawConds : [rawConds];
+    for (const cond of condsArr) {
+      if (cond["@_type"] !== "atLeast") continue;
+      if (cond["@_field"] !== "selections") continue;
+      if (cond["@_scope"] !== "self") continue;
+      const count = Math.round(parseFloat(String(cond["@_value"] ?? "0")));
+      if (count > 0) costTierMap.set(count, modPts);
+    }
+  }
+
+  let costs: [number, number][];
+  if (costTierMap.size > 1) {
+    const sortedTiers = [...costTierMap.entries()].sort((a, b) => a[0] - b[0]) as [number, number][];
+    const hasIntermediateTiers = sortedTiers.some(([m]) => m > minModels && m < maxModels);
+    if (hasIntermediateTiers) {
+      // Multi-tier unit (e.g. Meganobz: 2=65, 3=95, 4-5=160, 6=190).
+      // BSData stores "atLeast N" thresholds; convert to "atMost N" so that
+      // pointsForCount (which finds first m >= modelCount) returns the right tier.
+      costs = sortedTiers.map(([m, p], i) => {
+        const atMostCount = i + 1 < sortedTiers.length ? sortedTiers[i + 1]![0] - 1 : maxModels;
+        return [Math.max(m, atMostCount), p] as [number, number];
+      });
+    } else {
+      // Binary-size unit (e.g. Rubric Marines: 5=100, 10=200).
+      // Raw atLeast tiers already work correctly with m>=modelCount lookup.
+      costs = sortedTiers;
+      if (!costTierMap.has(maxModels)) {
+        costs.push([maxModels, sortedTiers[sortedTiers.length - 1]![1]]);
+      }
+    }
+  } else {
+    costs = minModels === maxModels
+      ? [[minModels, pts]]
+      : [[minModels, pts], [maxModels, pts * 2]];
+  }
   return { id: String(e["@_id"]), name, role, costs, keywords, minModels, maxModels, wargear, wargearOptions };
 }
 

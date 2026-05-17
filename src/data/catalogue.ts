@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T07:27:03.853Z
+// Last synced: 2026-05-17T09:24:40.862Z
 
 export interface WargearVariant {
   name: string;
@@ -5362,12 +5362,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "role": "Infantry",
         "costs": [
           [
-            1,
+            5,
             60
           ],
           [
             10,
-            120
+            100
           ]
         ],
         "keywords": [],
@@ -11240,7 +11240,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            240
+            200
           ]
         ],
         "keywords": [],
@@ -20421,18 +20421,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Heavy warpflamer",
                 "min": 0,
                 "max": 1,
-                "weapons": [
-                  "Heavy warpflamer"
-                ],
+                "weapons": ["Heavy warpflamer"],
                 "isDefault": false
               },
               {
                 "name": "Soulreaper cannon",
                 "min": 0,
                 "max": 1,
-                "weapons": [
-                  "Soulreaper cannon"
-                ],
+                "weapons": ["Soulreaper cannon"],
                 "isDefault": false
               }
             ]
@@ -20449,18 +20445,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Heavy warpflamer",
                 "min": 0,
                 "max": 1,
-                "weapons": [
-                  "Heavy warpflamer"
-                ],
+                "weapons": ["Heavy warpflamer"],
                 "isDefault": false
               },
               {
                 "name": "Soulreaper cannon",
                 "min": 0,
                 "max": 1,
-                "weapons": [
-                  "Soulreaper cannon"
-                ],
+                "weapons": ["Soulreaper cannon"],
                 "isDefault": false
               }
             ]
@@ -20476,18 +20468,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Inferno combi-bolter",
                 "min": 0,
                 "max": 1,
-                "weapons": [
-                  "Inferno combi-bolter"
-                ],
+                "weapons": ["Inferno combi-bolter"],
                 "isDefault": true
               },
               {
                 "name": "Prosperine khopesh",
                 "min": 0,
                 "max": 1,
-                "weapons": [
-                  "Prosperine khopesh"
-                ],
+                "weapons": ["Prosperine khopesh"],
                 "isDefault": false
               }
             ]
@@ -28224,7 +28212,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             2,
-            190
+            170
           ]
         ],
         "keywords": [
@@ -34570,8 +34558,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ],
           [
+            3,
+            95
+          ],
+          [
+            5,
+            160
+          ],
+          [
             6,
-            130
+            190
           ]
         ],
         "keywords": [
@@ -36226,7 +36222,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             3,
-            80
+            90
           ]
         ],
         "keywords": [
@@ -36570,6 +36566,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             80
+          ],
+          [
+            3,
+            270
           ]
         ],
         "keywords": [
