@@ -89,6 +89,7 @@ export interface Enhancement {
   id: string;
   name: string;
   detachmentId: string;   // matches Detachment.id (slug)
+  points: number;
   description: string;
   /** Unit must have ANY of these keywords to be eligible */
   allowedKeywords: string[];
@@ -299,10 +300,13 @@ function extractEnhancementsPatternA(
       if (name.includes("[Legends]")) continue;
       const description = enhancementDescription(e);
       const { allowedKeywords, allowedUnitNames } = parseRestriction(description);
+      const eCosts: any[] = e["costs"]?.["cost"] ?? [];
+      const ePts = Math.round(parseFloat(String(eCosts.find((c: any) => c["@_name"] === "pts")?.["@_value"] ?? "0")));
       enhancements.push({
         id: `${detachment.id}__${slugify(name)}`,
         name,
         detachmentId: detachment.id,
+        points: ePts,
         description,
         allowedKeywords,
         allowedUnitNames,
@@ -411,10 +415,13 @@ function extractEnhancementsPatternB(
 
     const description = enhancementDescription(e);
     const { allowedKeywords, allowedUnitNames } = parseRestriction(description);
+    const bCosts: any[] = e["costs"]?.["cost"] ?? [];
+    const bPts = Math.round(parseFloat(String(bCosts.find((c: any) => c["@_name"] === "pts")?.["@_value"] ?? "0")));
     enhancements.push({
       id: `${detachment.id}__${slugify(name)}`,
       name,
       detachmentId: detachment.id,
+      points: bPts,
       description,
       allowedKeywords,
       allowedUnitNames,
@@ -487,6 +494,7 @@ function extractEnhancementsPatternC(
       id: uid,
       name,
       detachmentId: detachment.id,
+      points: Math.round(pts),
       description,
       allowedKeywords,
       allowedUnitNames,
@@ -954,6 +962,7 @@ export interface Enhancement {
   name: string;
   /** Matches Detachment.id */
   detachmentId: string;
+  points: number;
   description: string;
   /** Unit must have ANY of these keywords to be eligible */
   allowedKeywords: string[];

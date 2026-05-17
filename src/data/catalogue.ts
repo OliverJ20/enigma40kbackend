@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T07:13:39.562Z
+// Last synced: 2026-05-17T07:27:03.853Z
 
 export interface WargearVariant {
   name: string;
@@ -47,6 +47,7 @@ export interface Enhancement {
   name: string;
   /** Matches Detachment.id */
   detachmentId: string;
+  points: number;
   description: string;
   /** Unit must have ANY of these keywords to be eligible */
   allowedKeywords: string[];
@@ -1195,6 +1196,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "army-of-faith__divine-aspect",
         "name": "Divine Aspect",
         "detachmentId": "army-of-faith",
+        "points": 5,
         "description": "ADEPTA SORORITAS model only. In your Movement phase, you can select one enemy unit within 12\" of that bearer; that unit must take a Battle-shock test. If that test is failed, you gain 1 Miracle dice.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1205,6 +1207,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "army-of-faith__triptych-of-the-macharian-crusade",
         "name": "Triptych of the Macharian Crusade",
         "detachmentId": "army-of-faith",
+        "points": 20,
         "description": "ADEPTA SORORITAS model only. Each time the bearer uses an Act of Faith to substitute a saving throw, that saving throw is successful, irrespective of the value of the Miracle dice used.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1215,6 +1218,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "army-of-faith__blade-of-saint-ellynor",
         "name": "Blade of Saint Ellynor",
         "detachmentId": "army-of-faith",
+        "points": 15,
         "description": "ADEPTA SORORITAS model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1, and those weapons have the [Precision] ability. In addition, each time the bearer fights, if one or more enemy models is destroyed by those attacks, you gain 1 Miracle dice.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1225,6 +1229,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "army-of-faith__litanies-of-faith",
         "name": "Litanies of Faith",
         "detachmentId": "army-of-faith",
+        "points": 10,
         "description": "CANONESS or PALATINE model only. At the start of your Command phase, if the bearer is on the battlefield, take a Leadership test for the bearer. If that test is passed, you gain 1 Miracle dice.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1236,6 +1241,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hallowed-martyrs__saintly-example",
         "name": "Saintly Example",
         "detachmentId": "hallowed-martyrs",
+        "points": 10,
         "description": "ADEPTA SORORITAS model only. When the bearer is destroyed, you gain an additional D3 Miracle dice.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1246,6 +1252,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hallowed-martyrs__through-suffering-strength",
         "name": "Through Suffering, Strength",
         "detachmentId": "hallowed-martyrs",
+        "points": 25,
         "description": "**^^Adepta Sororitas^^** model only. Add 1 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons. If the bearer has lost one or more wounds, add 2 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons instead.",
         "allowedKeywords": [
           "Adepta Sororitas"
@@ -1256,6 +1263,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hallowed-martyrs__chaplet-of-sacrifice",
         "name": "Chaplet of Sacrifice",
         "detachmentId": "hallowed-martyrs",
+        "points": 25,
         "description": "ADEPTA SORORITAS model only. At the end of your Command phase, if the bearer is on the battlefield, you can re-roll one Miracle dice from your Miracle dice pool and return it to your Miracle dice pool with the new result you rolled. When doing so, if the bearer's unit is below its Starting Strength, you can re-roll up to 3 Miracle dice in this way instead.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1266,6 +1274,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hallowed-martyrs__mantle-of-ophelia",
         "name": "Mantle of Ophelia",
         "detachmentId": "hallowed-martyrs",
+        "points": 20,
         "description": "**^^Canoness^^** or **^^Palatine^^** model only. Each time an attack is allocated to the bearer, change the Damage characteristic of that attack to 1.",
         "allowedKeywords": [
           "Canoness",
@@ -1277,6 +1286,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "penitent-host__catechism-of-divine-penitence",
         "name": "Catechism of Divine Penitence",
         "detachmentId": "penitent-host",
+        "points": 20,
         "description": "CANONESS, PALATINE, or MINISTORUM PRIEST model only. The bearer gains the PENITENT keyword and, during the Declare Battle Formations step, can be attached to a REPENTIA SQUAD unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1288,6 +1298,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "penitent-host__psalm-of-righteous-judgement",
         "name": "Psalm of Righteous Judgement",
         "detachmentId": "penitent-host",
+        "points": 30,
         "description": "ADEPTA SORORITAS model only. While the bearer is on the battlefield, each time an enemy unit is destroyed by a PENITENT unit from your army, you can discard 1 Miracle dice to gain 1 Miracle dice showing a value of 6.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1298,6 +1309,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "penitent-host__verse-of-holy-piety",
         "name": "Verse of Holy Piety",
         "detachmentId": "penitent-host",
+        "points": 15,
         "description": "PENITENT model only. Once per battle, at the start of the battle round, select one Vow of Atonement. Until the start of the next battle round, that Vow of Atonement is active for the bearer's unit in addition to any that is active for your army, even if you have already selected that Vow of Atonement this battle.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1308,6 +1320,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "penitent-host__refrain-of-enduring-faith",
         "name": "Refrain of Enduring Faith",
         "detachmentId": "penitent-host",
+        "points": 25,
         "description": "PENITENT model only. While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1318,6 +1331,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bringers-of-flame__iron-surplice-of-saint-istalela",
         "name": "Iron Surplice of Saint Istalela",
         "detachmentId": "bringers-of-flame",
+        "points": 10,
         "description": "CANONESS or PALATINE model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1329,6 +1343,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bringers-of-flame__righteous-rage",
         "name": "Righteous Rage",
         "detachmentId": "bringers-of-flame",
+        "points": 15,
         "description": "**^^Adepta Sororitas^^** model only. Each time the bearer is selected to fight, you can first discard up to 3 Miracle dice. For each Miracle dice just discarded, until the end of the phase, add 1 to the Attacks and Strength characteristics of the bearer's melee weapons.",
         "allowedKeywords": [
           "Adepta Sororitas"
@@ -1339,6 +1354,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bringers-of-flame__manual-of-saint-griselda",
         "name": "Manual of Saint Griselda",
         "detachmentId": "bringers-of-flame",
+        "points": 20,
         "description": "ADEPTA SORORITAS model only. At the start of your Command phase, you can discard up to 2 Miracle dice. Then, add 1 Miracle dice to your Miracle Dice pool showing a value equal to the sum of the two Miracle dice you discarded (to a maximum of 6).",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1349,6 +1365,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bringers-of-flame__fire-and-fury",
         "name": "Fire and Fury",
         "detachmentId": "bringers-of-flame",
+        "points": 30,
         "description": "**^^Adepta Sororitas^^** model only. While the bearer is leading a unit, add 1 to the Attacks characteristic of Torrent weapons equipped by models in that unit, and all other ranged weapons equipped by models that unit have the **[SUSTAINED HITS 1]** ability.",
         "allowedKeywords": [
           "Adepta Sororitas"
@@ -1359,6 +1376,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-faith__triptych-of-judgement",
         "name": "Triptych of Judgement",
         "detachmentId": "champions-of-faith",
+        "points": 15,
         "description": "ADEPTA SORORITAS model only. Each time a model in the bearer’s unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristics and/or any or all modifiers to the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1369,6 +1387,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-faith__mark-of-devotion",
         "name": "Mark of Devotion",
         "detachmentId": "champions-of-faith",
+        "points": 30,
         "description": "**^^Adepta Sororitas^^** model only. Add 1 to the Attacks characteristic of the bearer’s melee weapons. While the bearer’s unit is Righteous, add 2 to the Attacks characteristic and add 1 to the Damage characteristic of the bearer’s melee weapons instead.",
         "allowedKeywords": [
           "Adepta Sororitas"
@@ -1379,6 +1398,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-faith__eyes-of-the-oracle",
         "name": "Eyes of the Oracle",
         "detachmentId": "champions-of-faith",
+        "points": 10,
         "description": "ADEPTA SORORITAS model only. The bearer’s weapons have the [PRECISION] ability. Each time the bearer’s unit destroys an enemy Character model, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -1389,6 +1409,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-faith__sanctified-amulet",
         "name": "Sanctified Amulet",
         "detachmentId": "champions-of-faith",
+        "points": 25,
         "description": "ADEPTA SORORITAS model only. Enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of the bearer",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -2358,6 +2379,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "talons-of-the-emperor__radiant-mantle",
         "name": "Radiant Mantle",
         "detachmentId": "talons-of-the-emperor",
+        "points": 30,
         "description": "Each time an attack targets the bearer's unit, if the attacking model is within 12\", subtract 1 from the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -2366,6 +2388,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "talons-of-the-emperor__aegis-projector",
         "name": "Aegis Projector",
         "detachmentId": "talons-of-the-emperor",
+        "points": 20,
         "description": "Once per turn, the first time a saving throw is failed for the bearer's unit, change the Damage characteristic of that attack to 0.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -2374,6 +2397,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "talons-of-the-emperor__gift-of-terran-artifice",
         "name": "Gift of Terran Artifice",
         "detachmentId": "talons-of-the-emperor",
+        "points": 15,
         "description": "Each time the bearer makes a melee attack, add 1 to the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -2382,6 +2406,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "talons-of-the-emperor__champion-of-the-imperium",
         "name": "Champion of the Imperium",
         "detachmentId": "talons-of-the-emperor",
+        "points": 25,
         "description": "The range of the bearer’s Null Aegis or Deadly Unity ability (see left) is increased to 9\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -2390,6 +2415,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "auric-champions__blade-imperator",
         "name": "Blade Imperator",
         "detachmentId": "auric-champions",
+        "points": 25,
         "description": "Each time the bearer's unit ends a Charge move, select one enemy unit within Engagement Range of the bearer and roll one D6: on a 4+, that enemy unit suffers D3 mortal wounds. Once per battle, when the bearer's unit ends a Charge move, all enemy units within 6\" of the bearer must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -2398,6 +2424,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "auric-champions__inspirational-exemplar",
         "name": "Inspirational Exemplar",
         "detachmentId": "auric-champions",
+        "points": 10,
         "description": "The bearer has a Leadership characteristic of 5+. Once per battle, at the start of any phase, you can select one friendly **^^Adeptus Custodes^^** unit that is Battle-shocked and within 12\" of the bearer: that unit is no longer Battle-shocked.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -2406,6 +2433,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "auric-champions__veiled-blade",
         "name": "Veiled Blade",
         "detachmentId": "auric-champions",
+        "points": 25,
         "description": "Add 2 to the Attacks characteristic of the bearer's melee weapons. Once per battle, at the start of any Command phase, triple the bearer's Objective Control characteristic until the end of the turn.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -2414,6 +2442,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "auric-champions__martial-philosopher",
         "name": "Martial Philosopher",
         "detachmentId": "auric-champions",
+        "points": 30,
         "description": "The bearer's unit is eligible to shoot and/or declare a charge in a turn in which it Fell Back. Once per battle, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of the bearer, if the bearer's unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -2422,6 +2451,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "solar-spearhead__augury-uplink",
         "name": "Augury Uplink",
         "detachmentId": "solar-spearhead",
+        "points": 35,
         "description": "ADEPTUS CUSTODES model only. The bearer has the Feel No Pain 5+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -2432,6 +2462,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "solar-spearhead__adamantine-talisman",
         "name": "Adamantine Talisman",
         "detachmentId": "solar-spearhead",
+        "points": 25,
         "description": "**^^Adeptus Custodes^^** model only. Improve the Attacks, Strength and Damage characteristics of melee weapons equipped by the bearer by 1.",
         "allowedKeywords": [
           "Adeptus Custodes"
@@ -3747,6 +3778,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eradication-cohort__omnicogitator",
         "name": "Omnicogitator",
         "detachmentId": "eradication-cohort",
+        "points": 25,
         "description": "**^^Skitarii Marshal^^** model only. The Conqueror Imperative and Protector Imperative are both active for the bearer’s unit.",
         "allowedKeywords": [
           "Skitarii Marshal"
@@ -3757,6 +3789,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eradication-cohort__martial-signatum-amplificator",
         "name": "Martial Signatum Amplificator",
         "detachmentId": "eradication-cohort",
+        "points": 15,
         "description": "**^^Tech‑Priest^^** model only. Models in the bearer’s unit have the **^^Skitarii^^** keyword.",
         "allowedKeywords": [
           "Tech‑Priest"
@@ -3767,6 +3800,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eradication-cohort__belicosa-class-capacitor-vanes",
         "name": "Belicosa-class Capacitor Vanes",
         "detachmentId": "eradication-cohort",
+        "points": 30,
         "description": "**^^Adeptus Mechanicus^^** model only. Add 6\" to the Range characteristic of ranged weapons equipped by models in the bearer’s unit, and add 1 to the Strength characteristic of those weapons.",
         "allowedKeywords": [
           "Adeptus Mechanicus"
@@ -3777,6 +3811,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eradication-cohort__omnissiah-s-fury",
         "name": "Omnissiah's Fury",
         "detachmentId": "eradication-cohort",
+        "points": 10,
         "description": "**^^Skitarii Marshal^^** model only. Add 2 to the Attacks characteristic of melee weapons equipped by the bearer, and improve the Armour Penetration and Damage characteristics of those weapons by 1.",
         "allowedKeywords": [
           "Skitarii Marshal"
@@ -6152,6 +6187,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "combined-arms__death-mask-of-ollanius",
         "name": "Death Mask of Ollanius",
         "detachmentId": "combined-arms",
+        "points": 10,
         "description": "**^^Officer^^** model only. While the bearer’s unit is Battle-shocked, subtract 1 from the Objective Control characteristic of models in that unit, instead of changing it to 0",
         "allowedKeywords": [
           "Officer"
@@ -6162,6 +6198,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "combined-arms__drill-commander",
         "name": "Drill Commander",
         "detachmentId": "combined-arms",
+        "points": 20,
         "description": "**^^Officer^^** model only. While the bearer is leading a unit, each time a model in that unit makes a ranged attack, if that unit Remained Stationary this turn, a Critical Hit is scored on a successful unmodified Hit roll of 5+.",
         "allowedKeywords": [
           "Officer"
@@ -6172,6 +6209,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "combined-arms__reactive-command",
         "name": "Reactive Command",
         "detachmentId": "combined-arms",
+        "points": 15,
         "description": "**^^Officer^^** model only. Each time an enemy unit is set up within 9\" of the bearer's unit, the bearer can issue one Order. This is not counted towards the number of Orders the bearer can issue each battle round.",
         "allowedKeywords": [
           "Officer"
@@ -6182,6 +6220,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "combined-arms__grand-strategist",
         "name": "Grand Strategist",
         "detachmentId": "combined-arms",
+        "points": 15,
         "description": "**^^Officer^^** model only. In your Command phase, the bearer can issue one additional Order.",
         "allowedKeywords": [
           "Officer"
@@ -6192,6 +6231,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bridgehead-strike__bombast-class-vox-array",
         "name": "Bombast-class Vox-array",
         "detachmentId": "bridgehead-strike",
+        "points": 35,
         "description": "**^^Militarum Tempestus Officer^^** model only. Each time the bearer issues an Order, if the bearer’s unit contains one or more models equipped with a master vox, it can issue that Order to up to three different **^^Regiment^^** units, instead of only one.",
         "allowedKeywords": [
           "Militarum Tempestus Officer"
@@ -6202,6 +6242,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bridgehead-strike__priority-drop-beacon",
         "name": "Priority-drop Beacon",
         "detachmentId": "bridgehead-strike",
+        "points": 30,
         "description": "**^^Militarum Tempestus Officer^^** model only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
         "allowedKeywords": [
           "Militarum Tempestus Officer"
@@ -6212,6 +6253,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bridgehead-strike__advance-augury",
         "name": "Advance Augury",
         "detachmentId": "bridgehead-strike",
+        "points": 15,
         "description": "**^^Infantry Officer^^** model only. After both players have deployed their armies, select up to three **^^Regiment^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in 1 Strategic Reserves.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -6222,6 +6264,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bridgehead-strike__shroud-projector",
         "name": "Shroud Projector",
         "detachmentId": "bridgehead-strike",
+        "points": 15,
         "description": "**^^Militarum Tempestus Officer^^** model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
         "allowedKeywords": [
           "Militarum Tempestus Officer"
@@ -6232,6 +6275,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "siege-regiment__eager-advance",
         "name": "Eager Advance",
         "detachmentId": "siege-regiment",
+        "points": 20,
         "description": "**^^Infantry Officer^^** model only. While the bearer is leading a **^^Regiment^^** unit, that unit has the Scouts 6\" ability.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -6242,6 +6286,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "siege-regiment__flash-grenades",
         "name": "Flash Grenades",
         "detachmentId": "siege-regiment",
+        "points": 20,
         "description": "**^^Infantry Officer^^** model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer's unit.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -6252,6 +6297,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "siege-regiment__stalwart-s-honours",
         "name": "Stalwart's Honours",
         "detachmentId": "siege-regiment",
+        "points": 15,
         "description": "**^^Officer^^** model only. While the bearer is leading a unit, when that unit is issued an Order, it is also affected by the Take Cover! Order.",
         "allowedKeywords": [
           "Officer"
@@ -6262,6 +6308,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "siege-regiment__legacy-sidearm",
         "name": "Legacy Sidearm",
         "detachmentId": "siege-regiment",
+        "points": 10,
         "description": "**^^Infantry Officer^^** model only. Add 2 to the Attacks characteristics of the bearer's Pistols.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -6272,6 +6319,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mechanised-assault__bold-leadership",
         "name": "Bold Leadership",
         "detachmentId": "mechanised-assault",
+        "points": 25,
         "description": "**^^Infantry Officer^^** model only. If you control an objective marker at the end of your Command phase, and the bearer's unit (or any **^^Transport^^** it is embarked within) is within range of that objective marker, that objective marker remains under you control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -6282,6 +6330,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mechanised-assault__sacred-unguents",
         "name": "Sacred Unguents",
         "detachmentId": "mechanised-assault",
+        "points": 10,
         "description": "**^^Astra Militarum Tech-Priest Enginseer^^** model only. At the start of your Shooting phase, select one **^^Transport^^** from your army (excluding **^^Aircraft^^** and **^^Titanic^^** units) within 3\" of the bearer. Until the end of the phase, each time that **^^Transport^^** makes an attack, you can re-roll the Hit roll.",
         "allowedKeywords": [
           "Astra Militarum Tech-Priest Enginseer"
@@ -6292,6 +6341,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mechanised-assault__vanguard-honours",
         "name": "Vanguard Honours",
         "detachmentId": "mechanised-assault",
+        "points": 15,
         "description": "**^^Infantry Officer^^** model only. The bearer's unit can disembark from a **^^Transport^^** after it has Advanced. If it does, it counts as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -6302,6 +6352,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mechanised-assault__smoke-grenades",
         "name": "Smoke Grenades",
         "detachmentId": "mechanised-assault",
+        "points": 10,
         "description": "**^^Infantry Officer^^** model only. The bearer's unit has the Benefit of Cover and the Stealth ability while the bearer's unit is wholly within 3\" of one or more friendly **^^Transport^^** models.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -6312,6 +6363,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-the-emperor__indomitable-steed",
         "name": "Indomitable Steed",
         "detachmentId": "hammer-of-the-emperor",
+        "points": 15,
         "description": "**^^Vehicle Officer^^** model only. The bearer has the Feel No Pain 6+ ability.",
         "allowedKeywords": [
           "Vehicle Officer"
@@ -6322,6 +6374,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-the-emperor__calm-under-fire",
         "name": "Calm Under Fire",
         "detachmentId": "hammer-of-the-emperor",
+        "points": 15,
         "description": "**^^Vehicle Officer^^** model only. Once per turn, after the bearer issues an Order to a **^^Squadron^^** unit from your army, it can issue the same Order to another **^^Squadron^^** unit from your army.",
         "allowedKeywords": [
           "Vehicle Officer"
@@ -6332,6 +6385,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-the-emperor__veteran-crew",
         "name": "Veteran Crew",
         "detachmentId": "hammer-of-the-emperor",
+        "points": 20,
         "description": "**^^Vehicle Officer^^** model only. Each time a model in the bearer's unit makes a ranged attack, re-roll a Hit roll of 1.",
         "allowedKeywords": [
           "Vehicle Officer"
@@ -6342,6 +6396,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-the-emperor__regimental-banner",
         "name": "Regimental Banner",
         "detachmentId": "hammer-of-the-emperor",
+        "points": 20,
         "description": "**^^Vehicle Officer^^** model only. Add 3 to the bearer's Objective Control characteristic.",
         "allowedKeywords": [
           "Vehicle Officer"
@@ -6352,6 +6407,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grizzled-company__abhuman-detail",
         "name": "Abhuman Detail",
         "detachmentId": "grizzled-company",
+        "points": 20,
         "description": "**^^Commissar^^** model only. Add the **^^Ogryn^^** keyword to the list of units this model can issue Orders too (as stated on its datasheet).\n\nIn the Declare Battle Formations step, the bearer can be attached to an **^^Ogryn Squad^^** or **^^Bullgryn squad^^** unit.",
         "allowedKeywords": [
           "Commissar"
@@ -6362,6 +6418,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grizzled-company__aquilan-eye",
         "name": "Aquilan Eye",
         "detachmentId": "grizzled-company",
+        "points": 20,
         "description": "**^^Astra Militarum Officer^^** model only. Each time you select an Order for the bearer to issue, you can select the Order below:\n\n**Target Weak Spot (Order):** Each time a model in this unit makes a ranged attack that targets an enemy unit within 12\", improve the Armour Penetration characteristic of that attack by 1.",
         "allowedKeywords": [
           "Astra Militarum Officer"
@@ -6372,6 +6429,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grizzled-company__laud-hailer",
         "name": "Laud Hailer",
         "detachmentId": "grizzled-company",
+        "points": 10,
         "description": "**^^Astra Militarum Officer^^** model only. Each time you select a unit for this **^^Officer^^** model to issue an Order to, that unit can be within 12\" instead of within 6\".",
         "allowedKeywords": [
           "Astra Militarum Officer"
@@ -6382,6 +6440,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grizzled-company__spec-ops-veteran",
         "name": "Spec Ops Veteran",
         "detachmentId": "grizzled-company",
+        "points": 15,
         "description": "**^^Astra Militarum Infantry Officer^^** model only. Each time you select an Order for the bearer to issue, you can select the Order below:\n\n**Move to the Shadows (Order):** Each time a ranged attack targets this unit, until those attacks are resolved, models in this unit have the Stealth ability.",
         "allowedKeywords": [
           "Astra Militarum Infantry Officer"
@@ -6392,6 +6451,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "embarked-regiment__rigged-blind-grenades",
         "name": "Rigged Blind Grenades",
         "detachmentId": "embarked-regiment",
+        "points": 0,
         "description": "Once per battle, when an enemy unit opens a Hatchway, if the bearer is on the battlefield, it can use this Enhancement. If it does, roll one D6: on a 2+, that enemy unit is Battle-shocked.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -6400,6 +6460,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "embarked-regiment__shipboard-veteran",
         "name": "Shipboard Veteran",
         "detachmentId": "embarked-regiment",
+        "points": 0,
         "description": "Each time you target an **^^Astra Militarum^^** unit from your army with a Stratagem, if that unit is visible to the bearer, roll one D6: on a 4+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -6408,6 +6469,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tempestus-boarding-regiment__covert-breach",
         "name": "Covert Breach",
         "detachmentId": "tempestus-boarding-regiment",
+        "points": 0,
         "description": "At the start of the first battle round, the bearer's unit can make a Normal move of up to 6\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -6416,6 +6478,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tempestus-boarding-regiment__elimination-force",
         "name": "Elimination Force",
         "detachmentId": "tempestus-boarding-regiment",
+        "points": 0,
         "description": "At the start of the first battle round, select one enemy unit. Each time a model in the bearer's unit makes an attack that targets that enemy unit, if the Strength characteristic of that attack is less than the Toughness characteristic of that enemy unit, add 1 to the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -6424,6 +6487,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "steel-hammer__battalion-commander",
         "name": "Battalion Commander",
         "detachmentId": "steel-hammer",
+        "points": 30,
         "description": "**^^Astra Militarum Titanic Character^^** model only. The bearer has the Voice of Command ability and the **^^Officer^^** keyword, and can issue up to 2 Orders to **^^Astra Militarum Titanic^^** and **^^Squadron^^** units.",
         "allowedKeywords": [
           "Astra Militarum Titanic Character"
@@ -6434,6 +6498,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "steel-hammer__titan-killer",
         "name": "Titan Killer",
         "detachmentId": "steel-hammer",
+        "points": 20,
         "description": "**^^Astra Militarum Titanic Character^^** model only. Each time the bearer makes a ranged attack, you can re‑roll the Damage roll.",
         "allowedKeywords": [
           "Astra Militarum Titanic Character"
@@ -6444,6 +6509,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "steel-hammer__assault-hatches",
         "name": "Assault Hatches",
         "detachmentId": "steel-hammer",
+        "points": 25,
         "description": "**^^Astra Militarum Titanic Character Transport^^** model only. Each time a unit disembarks from the bearer after it has made a Normal move, that unit is still eligible to declare a charge this turn.",
         "allowedKeywords": [
           "Astra Militarum Titanic Character Transport"
@@ -6454,6 +6520,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "steel-hammer__engine-speaker",
         "name": "Engine Speaker",
         "detachmentId": "steel-hammer",
+        "points": 15,
         "description": "**^^Astra Militarum Tech‑Priest Enginseer^^** model only. Each time the bearer uses its Omnissiah’s Blessing ability, until the start of your next Command phase, add 3\" to the Move characteristic of the selected Vehicle model.",
         "allowedKeywords": [
           "Astra Militarum Tech‑Priest Enginseer"
@@ -6464,6 +6531,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-infantry__omnissian-unguents-aura",
         "name": "Omnissian Unguents (Aura)",
         "detachmentId": "armoured-infantry",
+        "points": 30,
         "description": "**^^Astra Militarum Tech‑Priest Enginseer^^** model only. While a friendly **^^Armoured Skirmisher^^** unit is within 3\" of the bearer, that unit has the Feel No Pain 5+ ability.",
         "allowedKeywords": [
           "Astra Militarum Tech‑Priest Enginseer"
@@ -6474,6 +6542,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-infantry__grand-strategist",
         "name": "Grand Strategist",
         "detachmentId": "armoured-infantry",
+        "points": 20,
         "description": "**^^Officer^^** model only. After both players have deployed their armies, if the bearer’s unit (or any **^^Transport^^** it is embarked within) is on the battlefield, select up to two units with the **^^Regiment^^** or **^^Squadron^^** keywords from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Officer"
@@ -6484,6 +6553,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-infantry__exemplary-officer",
         "name": "Exemplary Officer",
         "detachmentId": "armoured-infantry",
+        "points": 25,
         "description": "**^^Infantry Officer^^** model only. Each time the bearer issues an Order to its own unit, you can select up to two other **^^Platoon^^** units within 3\" of the bearer’s unit. That Order is also issued to each of those units.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -6494,6 +6564,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-infantry__master-manoeuvrist",
         "name": "Master Manoeuvrist",
         "detachmentId": "armoured-infantry",
+        "points": 15,
         "description": "**^^Infantry Officer^^** model only. At the end of your opponent’s Fight phase, if the bearer’s unit is not within Engagement Range of one or more enemy units and every model in that unit is within 3\" of an **^^Astra Militarum Transport^^** from your army, it can embark within that **^^Transport^^**.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -7415,6 +7486,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpbane-task-force__paragon-of-sanctity",
         "name": "Paragon of Sanctity",
         "detachmentId": "warpbane-task-force",
+        "points": 10,
         "description": "**^^Grey Knights^^** model only. Once per battle, at the start of any phase, the bearer can select one friendly **^^Grey Knights^^** unit within 18\" of and visible to it. If it does, until the end of the phase, that unit is within your army’s Hallowed Ground.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7425,6 +7497,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpbane-task-force__phial-of-the-abyss",
         "name": "Phial of the Abyss",
         "detachmentId": "warpbane-task-force",
+        "points": 25,
         "description": "**^^Grey Knights Infantry^^** model only. Models in the bearer’s unit have the Stealth ability.",
         "allowedKeywords": [
           "Grey Knights Infantry"
@@ -7435,6 +7508,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpbane-task-force__mandulian-reliquary",
         "name": "Mandulian Reliquary",
         "detachmentId": "warpbane-task-force",
+        "points": 20,
         "description": "**^^Grey Knights^^** model only. While the bearer’s unit is not Battle‑shocked, add 3 to the bearer’s Objective Control characteristic.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7445,6 +7519,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpbane-task-force__radiant-champion",
         "name": "Radiant Champion",
         "detachmentId": "warpbane-task-force",
+        "points": 15,
         "description": "**^^Grey Knights Infantry^^** model only. The bearer’s melee weapons have the [^^**Precision**^^] ability, and while the bearer is wholly within your army’s Hallowed Ground, each time a melee attack made by the bearer scores a wound, the target of that attack suffers 1 mortal wound in addition to any normal damage.",
         "allowedKeywords": [
           "Grey Knights Infantry"
@@ -7455,6 +7530,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hallowed-conclave__eye-of-the-augurium",
         "name": "Eye of the Augurium",
         "detachmentId": "hallowed-conclave",
+        "points": 25,
         "description": "^^**Grey Knights^^** model only. Once per battle round, the bearer can use this Enhancement. If it does, you can target the bearer's unit with the Fire Overwatch Stratagem or Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this turn.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7465,6 +7541,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hallowed-conclave__sanctic-reaper",
         "name": "Sanctic Reaper",
         "detachmentId": "hallowed-conclave",
+        "points": 15,
         "description": "^^**Grey Knights Terminator^^** model only. Add 3 to the Attacks characteristic of the bearer's melee weapons.",
         "allowedKeywords": [
           "Grey Knights Terminator"
@@ -7475,6 +7552,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hallowed-conclave__inescapable-judgement-psychic",
         "name": "Inescapable Judgement (Psychic)",
         "detachmentId": "hallowed-conclave",
+        "points": 20,
         "description": "^^**Grey Knights^^** model only.  Each time an enemy unit within Engagement Range of the bearer's unit Falls Back, the bearer can use this Enhancement. If it does, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds. These mortal wounds are Psychic Attacks.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7485,6 +7563,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hallowed-conclave__nemesis-rounds",
         "name": "Nemesis Rounds",
         "detachmentId": "hallowed-conclave",
+        "points": 10,
         "description": "^^**Grey Knights Terminator^^** model only.  Each time you target the bearer's unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem.",
         "allowedKeywords": [
           "Grey Knights Terminator"
@@ -7495,6 +7574,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "sanctic-spearhead__sigil-of-exigence",
         "name": "Sigil of Exigence",
         "detachmentId": "sanctic-spearhead",
+        "points": 30,
         "description": "^^**Grey Knights^^** model only. Once per battle, in your opponent's Shooting phase, when the bearer's unit is selected as the target of a ranged attack, you can remove the bearer's unit from the battlefield and then set it back up again anywhere on the battlefield that is more than 9\" horizontally away from all enemy units. If the bearer's unit is no longer an eligible target, your opponent can then select new targets for any attacks that had targeted the bearer's unit.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7505,6 +7585,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "sanctic-spearhead__driven-by-duty",
         "name": "Driven by Duty",
         "detachmentId": "sanctic-spearhead",
+        "points": 10,
         "description": "^^**Grey Knights Walker^^** model only. Each time the bearer's unit Piles In or Consolidates, the bearer can move up to 6\" instead of 3\".",
         "allowedKeywords": [
           "Grey Knights Walker"
@@ -7515,6 +7596,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "sanctic-spearhead__quickening-foci",
         "name": "Quickening Foci",
         "detachmentId": "sanctic-spearhead",
+        "points": 15,
         "description": "^^**Grey Knights Infantry^^** model only.  In your Movement phase, each time the bearer's unit disembarks from a ^^**Transport**^^, until the end of the turn, you can re-roll Charge rolls made for that unit.",
         "allowedKeywords": [
           "Grey Knights Infantry"
@@ -7525,6 +7607,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "sanctic-spearhead__spiritus-machina",
         "name": "Spiritus Machina",
         "detachmentId": "sanctic-spearhead",
+        "points": 25,
         "description": "^^**Grey Knights Infantry^^** model only. In your Shooting phase, each time the bearer's unit is selected to shoot, if the bearer's unit disembarked from a ^^**Transport^^** this turn, until the end of the phase, each time a model in the bearer's unit makes an attack, you can re-roll the Wound roll.",
         "allowedKeywords": [
           "Grey Knights Infantry"
@@ -7535,6 +7618,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "brotherhood-strike__blinding-aura",
         "name": "Blinding Aura",
         "detachmentId": "brotherhood-strike",
+        "points": 10,
         "description": "^^**Grey Knights^^** model only. Each time the bearer's unit is set up using the Deep Strike ability, until the end of the turn, enemy units cannot use the Fire Overwatch ability to shoot at the bearer's unit.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7545,6 +7629,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "brotherhood-strike__tome-of-forbidden-ways",
         "name": "Tome of Forbidden Ways",
         "detachmentId": "brotherhood-strike",
+        "points": 25,
         "description": "^^**Grey Knights^^** model only. While the bearer is on the battlefield or in Strategic Reserves, add 1 to the number of units from your army that you can select for the Gate of Infinity rule.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7555,6 +7640,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "brotherhood-strike__banishing-wave-psychic",
         "name": "Banishing Wave (Psychic)",
         "detachmentId": "brotherhood-strike",
+        "points": 20,
         "description": "^^**Grey Knights^^** model only.  Each time the bearer's unit is set up using the Deep Strike ability, roll one D6 for each enemy unit within 12\" of the bearer: on a 2-5, that unit suffers 1 mortal wound; on a 6, that unit suffers D3 mortal wounds.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7565,6 +7651,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "brotherhood-strike__purity-of-purpose",
         "name": "Purity of Purpose",
         "detachmentId": "brotherhood-strike",
+        "points": 15,
         "description": "^^**Grey Knights^^** model only. Each time the bearer's unit is set up using the Deep Strike ability, until the end of the turn, you can re-roll Charge rolls made for the bearer's unit.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7575,6 +7662,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "banishers__pyresoul-psychic",
         "name": "Pyresoul (Psychic)",
         "detachmentId": "banishers",
+        "points": 20,
         "description": "^^**Grey Knights^^** model only. At the start of your Shooting phase, the bearer can use this Enhancement. If it does, select one enemy unit within 24\" of and visible to the bearer; that enemy unit suffers D3 mortal wounds.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7585,6 +7673,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "banishers__ephemeral-tome",
         "name": "Ephemeral Tome",
         "detachmentId": "banishers",
+        "points": 15,
         "description": "^^**Grey Knights^^** model only. At the start of your Shooting phase, if the bearer's unit is not within Engagement Range of one or more enemy units, the bearer can use this Enhancement. If it does, the bearer's unit can make a Normal Move of up to D6\" and, until the end of the turn, the bearer's unit is not eligible to declare a Charge.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7595,6 +7684,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "banishers__sixty-sixth-seal",
         "name": "Sixty-sixth Seal",
         "detachmentId": "banishers",
+        "points": 25,
         "description": "^^**Grey Knights^^** model only.  In your Shooting phase, each time a model in the bearer's unit makes an attack, improve the Armour Penetration characteristic of that attack by 1.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7605,6 +7695,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "banishers__sigil-of-the-hunt",
         "name": "Sigil of the Hunt",
         "detachmentId": "banishers",
+        "points": 10,
         "description": "^^**Grey Knights^^** model only. In your Shooting phase, each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7615,6 +7706,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "augurium-task-force__one-foot-in-the-future",
         "name": "One Foot in the Future",
         "detachmentId": "augurium-task-force",
+        "points": 15,
         "description": "^^**Grey Knights^^** model only. Each time the bearer's unit is set up in your Reinforcements step, the bearer can use this Enhancement. If it does, the bearer's unit can make a Normal Move of up to D6\", and until the end of the turn, the bearer's unit is not eligible to declare a Charge.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7625,6 +7717,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "augurium-task-force__doomseer-s-amulet",
         "name": "Doomseer's Amulet",
         "detachmentId": "augurium-task-force",
+        "points": 25,
         "description": "^^**Grey Knights^^** model only. Each time the bearer's unit is set up in your Reinforcements step, the bearer can use this Enhancement. If it does, select one enemy unit within 12\" of and visible to the bearer. That enemy unit must take a Battle-shock test, subtracting one from that test.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7635,6 +7728,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "augurium-task-force__grimoire-of-conjunctions",
         "name": "Grimoire of Conjunctions",
         "detachmentId": "augurium-task-force",
+        "points": 10,
         "description": "^^**Grey Knights^^** model only.  Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 4 to the Strength characteristic of melee weapons equipped by the bearer.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7645,6 +7739,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "augurium-task-force__shield-of-prophecy",
         "name": "Shield of Prophecy",
         "detachmentId": "augurium-task-force",
+        "points": 20,
         "description": "^^**Grey Knights^^** model only. Once per battle, at the start of the battle round, the bearer can use this Enhancement. If it does, until the end of the battle round, add 2 to the Toughness characteristic of models in the bearer's unit.",
         "allowedKeywords": [
           "Grey Knights"
@@ -7655,6 +7750,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "void-purge-force__tactical-haruspexy",
         "name": "Tactical Haruspexy",
         "detachmentId": "void-purge-force",
+        "points": 0,
         "description": "Once per battle, when the bearer declares a charge, it can use this Enhancement. If it does, it can select units that are not visible to it as targets of that charge, provided they are within 9\" of it.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -7663,6 +7759,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "void-purge-force__sigil-of-warding",
         "name": "Sigil of Warding",
         "detachmentId": "void-purge-force",
+        "points": 0,
         "description": "Once per battle, at the end of your Shooting phase, the bearer can use this Enhancement. If it does, it can make a Normal move of up to 3\" and can then attempt to operate a Hatchway. The bearer is then not eligible to declare a charge this turn.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -7671,6 +7768,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "baneslayer-strike__close-and-sanction",
         "name": "Close and Sanction",
         "detachmentId": "baneslayer-strike",
+        "points": 0,
         "description": "In your opponent's Shooting phase, each time an enemy unit is selected to shoot, after that unit has shot, if the bearer was hit by one or more of those attacks, the bearer can make a Dash move. To do so, roll one D6: the bearer can be moved a distance in inches up to the result, but it must finish that move as close as possible to the closest visible enemy unit. When doing so, it can be moved within Engagement Range of that enemy unit. The bearer can only make one Dash move per phase.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -7679,6 +7777,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "baneslayer-strike__shield-of-admonishment",
         "name": "Shield of Admonishment",
         "detachmentId": "baneslayer-strike",
+        "points": 0,
         "description": "Each time a melee attack targets the bearer, subtract 1 from the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -9021,6 +9120,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "alien-hunters-ordo-xenos__universal-anathema",
         "name": "Universal Anathema",
         "detachmentId": "alien-hunters-ordo-xenos",
+        "points": 10,
         "description": "Melee weapons equipped by the bearer have the [ANTI-INFANTRY 2+] and [ANTI-MONSTER 4+] abilities",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -9029,6 +9129,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "alien-hunters-ordo-xenos__blackweave-shroud",
         "name": "Blackweave Shroud",
         "detachmentId": "alien-hunters-ordo-xenos",
+        "points": 15,
         "description": "The bearer has the Feel No Pain 4+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -9037,6 +9138,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "imperialis-fleet__digital-weapons",
         "name": "Digital Weapons",
         "detachmentId": "imperialis-fleet",
+        "points": 10,
         "description": "Each time the bearer is selected to fight, roll three D6; for each 4+, one enemy unit within Engagement Range of the bearer suffers 1 mortal wound. Mortal wounds inflicted by this Enhancement are allocated as if they have the [PRECISION] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -9045,6 +9147,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "imperialis-fleet__clandestine-operation",
         "name": "Clandestine Operation",
         "detachmentId": "imperialis-fleet",
+        "points": 15,
         "description": "At the start of the Declare Battle Formations step, you can select up to three AGENTS OF THE IMPERIUM INFANTRY units from your army (excluding GREY KNIGHTS TERMINATOR SQUAD units) - those units gain the Infiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -9378,6 +9481,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "valourstrike-lance__bearer-of-the-iron-chalice",
         "name": "Bearer of the Iron Chalice",
         "detachmentId": "valourstrike-lance",
+        "points": 20,
         "description": "**^^Imperial Knights^^** model only. At the end of your Movement phase, select one other **^^Imperial Knights^^** model from your army that is within 12\" of and visible to the bearer. That selected model regains up to D3 lost wounds, or up to 3 lost wounds if your army is Honoured.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9388,6 +9492,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "valourstrike-lance__bearer-of-the-evanescent-ion",
         "name": "Bearer of the Evanescent Ion",
         "detachmentId": "valourstrike-lance",
+        "points": 15,
         "description": "**^^Imperial Knights^^** model only. At the end of your Movement phase, select one other **^^Imperial Knights^^** model from your army that is within 12\" of and visible to the bearer. Until the start of your next Movement phase, that selected model has the Stealth ability.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9398,6 +9503,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "valourstrike-lance__bearer-of-the-judicant-s-helm",
         "name": "Bearer of the Judicant's Helm",
         "detachmentId": "valourstrike-lance",
+        "points": 25,
         "description": "**^^Imperial Knights^^** model only. At the start of your Shooting phase, select one other **^^Imperial Knights^^** model from your army that is within 12\" of and visible to the bearer. Until the end of the phase, ranged weapons equipped by that selected model have the **[IGNORES COVER]** ability.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9408,6 +9514,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "valourstrike-lance__bearer-of-the-lancer-s-sigil",
         "name": "Bearer of the Lancer's Sigil",
         "detachmentId": "valourstrike-lance",
+        "points": 25,
         "description": "**^^Imperial Knights^^** model only. At the start of your Charge phase, select one other **^^Imperial Knights^^** model from your army that is within 12\" of and visible to the bearer. Until the end of the phase, you can re-roll Charge rolls made for that selected model.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9418,6 +9525,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "gate-warden-lance__vengeful-tread",
         "name": "Vengeful Tread",
         "detachmentId": "gate-warden-lance",
+        "points": 15,
         "description": "**^^Imperial Knights^^** model only. Once per turn, you can target the bearer with the Tank Shock Stratagem for 0CP.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9428,6 +9536,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "gate-warden-lance__acquisitor-at-arms",
         "name": "Acquisitor-at-Arms",
         "detachmentId": "gate-warden-lance",
+        "points": 15,
         "description": "**^^Imperial Knights^^** model only. While the bearer is on your defensive line and there are no enemy units on your defensive line, add the bearer's Objective Control characteristic to that of each model affected by the bearer's Bondsman ability.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9438,6 +9547,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "gate-warden-lance__purgation-s-hand",
         "name": "Purgation's Hand",
         "detachmentId": "gate-warden-lance",
+        "points": 20,
         "description": "**^^Imperial Knights^^** model only. Each time the bearer makes a melee attack, if the bearer is on your defensive line, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9448,6 +9558,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "gate-warden-lance__augury-halo",
         "name": "Augury Halo",
         "detachmentId": "gate-warden-lance",
+        "points": 20,
         "description": "**^^Imperial Knights^^** model only. Each time the bearer makes a ranged attack, while the bearer is on your defensive line, weapons equipped by the bearer have the **[IGNORES COVER]** ability.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9458,6 +9569,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "questoris-companions__crushing-condemnation",
         "name": "Crushing Condemnation",
         "detachmentId": "questoris-companions",
+        "points": 10,
         "description": "**^^Imperial Knights^^** model only. When the bearer is selected to fight, after resolving its attacks, if one or more enemy units were destroyed by those attacks, the bearer can use this Enhancement. If it does, this Enhancement is expended, then select one enemy unit that is not within Engagement Range of any units from your army and is within 12\" of and visible to the bearer. Roll six D6: for each 4+, that enemy unit suffers 1 mortal wound.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9468,6 +9580,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "questoris-companions__herald-of-triumph",
         "name": "Herald of Triumph",
         "detachmentId": "questoris-companions",
+        "points": 15,
         "description": "**^^Imperial Knights^^** model only. When the bearer ends a Charge move, it can use this Enhancement. If it does, this Enhancement is expended, the each enemy unit within Engagement Range of the bearer must take a Battle-shock test, subtracting 1 from the result.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9478,6 +9591,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "questoris-companions__wyrmslayer-divination",
         "name": "Wyrmslayer Divination",
         "detachmentId": "questoris-companions",
+        "points": 10,
         "description": "**^^Imperial Knights^^** model only. In your Shooting phase, when the bearer is selected to shoot, it can use this Enhancement. If it does, this Enhancement is expended, then until the end of the phase, each time it makes an attack that targets a unit that can **^^Fly^^**, you can re-roll the Hit roll.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9488,6 +9602,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "questoris-companions__pennant-of-silvered-fury",
         "name": "Pennant of Silvered Fury",
         "detachmentId": "questoris-companions",
+        "points": 15,
         "description": "**^^Imperial Knights^^** model only. When the bearer is selected to fight, it can use this Enhancement. If it does, this Enhancement is expended, then until the end of the phase, melee equipped by the bearer have the **[SUSTAINED HITS 2]** ability.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9498,6 +9613,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spearhead-at-arms__martial-tuition",
         "name": "Martial Tuition",
         "detachmentId": "spearhead-at-arms",
+        "points": 15,
         "description": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, once per turn, you can target one of those **^^Armiger^^** models with the Counter-offensive Stratagem for 0CP.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9508,6 +9624,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spearhead-at-arms__mentor-s-pride",
         "name": "Mentor's Pride",
         "detachmentId": "spearhead-at-arms",
+        "points": 20,
         "description": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, each time each of those **^^Armiger^^** models makes an attack, you can re-roll a Hit roll of 1.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9518,6 +9635,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spearhead-at-arms__fables-of-nightmare",
         "name": "Fables of Nightmare",
         "detachmentId": "spearhead-at-arms",
+        "points": 10,
         "description": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, melee weapons equipped by those **^^Armiger^^** models have the **[PRECISION]** ability.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9528,6 +9646,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spearhead-at-arms__tales-of-heroism",
         "name": "Tales of Heroism",
         "detachmentId": "spearhead-at-arms",
+        "points": 10,
         "description": "**^^Imperial Knights^^** model only. While two or more **^^Armiger^^** models are under the effects of the bearer's Bondsman ability, each time one of those **^^Armiger^^** models makes a melee attack, you can ignore any or all modifiers to the Hit roll and/or the Wound roll.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9538,6 +9657,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "freeblade-company__sanctuary",
         "name": "Sanctuary",
         "detachmentId": "freeblade-company",
+        "points": 20,
         "description": "**^^Imperial Knights^^** model only. The bearer has a 5+ invulnerable save.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9548,6 +9668,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "freeblade-company__mysterious-guardian",
         "name": "Mysterious Guardian",
         "detachmentId": "freeblade-company",
+        "points": 35,
         "description": "**^^Imperial Knights^^** model only. The bearer has the Deep Strike ability. Once per battle, at the end of your opponent’s turn, if the bearer is not within Engagement Range of one or more enemy units, it can use this Enhancement. If it does, remove the bearer from the battlefield. In the Reinforcements step of your subsequent Movement phase, set the bearer up anywhere on the battlefield that is more than 9” horizontally away from all enemy units. If the battle ends and the bearer is not on the battlefield, it is destroyed.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9558,6 +9679,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "freeblade-company__bringer-of-justice",
         "name": "Bringer of Justice",
         "detachmentId": "freeblade-company",
+        "points": 30,
         "description": "**^^Imperial Knights^^** model only. Improve the Attacks characteristic of melee weapons equipped by the bearer by 2, and each time the bearer makes a melee attack, add 1 to the Hit roll.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -9568,6 +9690,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "freeblade-company__hunter-s-eye",
         "name": "Hunter's Eye",
         "detachmentId": "freeblade-company",
+        "points": 25,
         "description": "**^^Imperial Knights^^** model only. Ranged weapons equipped by the bearer have the **[IGNORES COVER]** ability.",
         "allowedKeywords": [
           "Imperial Knights"
@@ -12248,6 +12371,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "gladius-task-force__artificer-armour",
         "name": "Artificer Armour",
         "detachmentId": "gladius-task-force",
+        "points": 10,
         "description": "**^^Adeptus Astartes^^** model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -12258,6 +12382,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "gladius-task-force__the-honour-vehement",
         "name": "The Honour Vehement",
         "detachmentId": "gladius-task-force",
+        "points": 15,
         "description": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is under the effects of the Assault Doctrine, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -12268,6 +12393,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "gladius-task-force__adept-of-the-codex",
         "name": "Adept of the Codex",
         "detachmentId": "gladius-task-force",
+        "points": 20,
         "description": "Captain model only. At the start of your Command phase, if the bearer is on the battlefield, instead of selecting a Combat Doctrine to be active for your army, you can select the Tactical Doctrine. If you do, until the start of your next Command phase, that doctrine is active for the bearer’s unit only, even if you have already selected that doctrine to be active for your army this battle.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12278,6 +12404,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "gladius-task-force__fire-discipline",
         "name": "Fire Discipline",
         "detachmentId": "gladius-task-force",
+        "points": 25,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability. In addition, while the bearer’s unit is under the effects of the Devastator Doctrine, , you can reroll Advance rolls made for that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12288,6 +12415,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "liberator-assault-group__icon-of-the-angel",
         "name": "Icon of the Angel",
         "detachmentId": "liberator-assault-group",
+        "points": 20,
         "description": "Adeptus Astartes model only. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer’s unit is selected to Fall Back, models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked. When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12298,6 +12426,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "liberator-assault-group__speed-of-the-primarch",
         "name": "Speed of the Primarch",
         "detachmentId": "liberator-assault-group",
+        "points": 25,
         "description": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12308,6 +12437,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "liberator-assault-group__rage-fuelled-warrior",
         "name": "Rage-Fuelled Warrior",
         "detachmentId": "liberator-assault-group",
+        "points": 35,
         "description": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer's melee weapons have the [SUSTAINED HITS 3] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12318,6 +12448,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "liberator-assault-group__gift-of-foresight",
         "name": "Gift of Foresight",
         "detachmentId": "liberator-assault-group",
+        "points": 15,
         "description": "Adeptus Astartes model only. Once per battle round, just after making a Hit roll, a Wound roll or a saving throw for the bearer, you can treat the result as a unmodified 6 instead.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12328,6 +12459,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "black-spear-task-force__thief-of-secrets",
         "name": "Thief of Secrets",
         "detachmentId": "black-spear-task-force",
+        "points": 25,
         "description": "**^^Adeptus Astartes^^** model only. Improve the Strength, Damage and Armour Penetration characteristics of the bearer’s melee weapons by 1. At the end of the Fight phase, if one or more enemy models were destroyed as a result of a melee attack made by the bearer this phase, until the end of the battle, improve the Strength, Damage and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -12338,6 +12470,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "black-spear-task-force__beacon-angelis",
         "name": "Beacon Angelis",
         "detachmentId": "black-spear-task-force",
+        "points": 25,
         "description": "ADEPTUS ASTARTES model only. Models in the bearer’s unit have the Deep Strike ability. In addition, you can target the bearer’s unit with the Rapid Ingress Stratagem for 0CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12348,6 +12481,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "black-spear-task-force__osseus-key",
         "name": "Osseus Key",
         "detachmentId": "black-spear-task-force",
+        "points": 15,
         "description": "WATCH MASTER or TECHMARINE model only. At the start of your opponent’s Shooting phase, select one enemy VEHICLE unit (excluding TITANIC units) within 12\" of and visible to the bearer. That model must take a Leadership test. If that test is passed, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; if that test is failed, that unit is not eligible to shoot this phase.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12359,6 +12493,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "black-spear-task-force__the-tome-of-ectoclades",
         "name": "The Tome of Ectoclades",
         "detachmentId": "black-spear-task-force",
+        "points": 30,
         "description": "WATCH MASTER or CAPTAIN model only. Once per battle, after you have selected your Oath of Moment target, the bearer can use this Enhancement. If it does, select a second enemy unit to be an Oath of Moment target. \n\n\n**Designer’s Note:** *This means that each time a model with the Oath of Moment ability makes an attack that targets either of your Oath of Moment targets, you can re-roll the Hit roll.*",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12370,6 +12505,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "unforgiven-task-force__shroud-of-heroes",
         "name": "Shroud of Heroes",
         "detachmentId": "unforgiven-task-force",
+        "points": 25,
         "description": "Adeptus Astartes model only. The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining (if the bearer was Battle-shocked when it was destroyed, it is instead returned with its full wounds remaining).",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12380,6 +12516,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "unforgiven-task-force__stubborn-tenacity",
         "name": "Stubborn Tenacity",
         "detachmentId": "unforgiven-task-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, each time a model in that unit makes an attack, add 1 to the Hit roll if that unit is below its Starting Strength, and add 1 to the Wound roll as well if that unit is Battle-shocked and below its Starting Strength.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12390,6 +12527,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "unforgiven-task-force__weapons-of-the-first-legion",
         "name": "Weapons of the First Legion",
         "detachmentId": "unforgiven-task-force",
+        "points": 15,
         "description": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons. While the bearer is Battle-shocked, add 2 to the Attacks, Strength and Damage characteristics of the bearer’s melee weapons instead.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -12400,6 +12538,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "unforgiven-task-force__pennant-of-remembrance",
         "name": "Pennant of Remembrance",
         "detachmentId": "unforgiven-task-force",
+        "points": 10,
         "description": "Ancient model only. While the bearer is leading a unit, models in that unit have the Feel No Pain 6+ ability. While that unit\nis Battle-shocked, models in that unit have the Feel No Pain 4+ ability instead.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12410,6 +12549,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vanguard-spearhead__execute-and-redeploy",
         "name": "Execute and Redeploy",
         "detachmentId": "vanguard-spearhead",
+        "points": 20,
         "description": "Phobos model only. In your Shooting phase, after the bearer's unit has shot, if that unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\". If it does until the end of the turn, that unit is not eligible to delcare a charge. This cannot allow the bearer's unit to move more than once in your Shooting phase.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12420,6 +12560,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vanguard-spearhead__ghostweave-cloak",
         "name": "Ghostweave Cloak",
         "detachmentId": "vanguard-spearhead",
+        "points": 15,
         "description": "Adeptus Astartes model only. The bearer has the Stealth and Lone Operative Abilities",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12430,6 +12571,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vanguard-spearhead__shadow-war-veteran",
         "name": "Shadow War Veteran",
         "detachmentId": "vanguard-spearhead",
+        "points": 30,
         "description": "Phobos model only.  Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12\" of this model, increase the cost of that use of that Stratagem by 1CP",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12440,6 +12582,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vanguard-spearhead__the-blade-driven-deep",
         "name": "The Blade Driven Deep",
         "detachmentId": "vanguard-spearhead",
+        "points": 25,
         "description": "Adpetus Astartes Infantry model only. While the bearer is leading a unit, models in that unit have the Infiltrators Ability",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12450,6 +12593,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "stormlance-task-force__feinting-withdrawal",
         "name": "Feinting Withdrawal",
         "detachmentId": "stormlance-task-force",
+        "points": 10,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, that unit is eligible to shoot in a turn in which it fell back",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12460,6 +12604,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "stormlance-task-force__fury-of-the-storm",
         "name": "Fury of the Storm",
         "detachmentId": "stormlance-task-force",
+        "points": 25,
         "description": "Adeptus Astartes Mounted model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1. Each time the bearer ends a Charge move, until the end of the turn, improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 2 instead.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12470,6 +12615,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "stormlance-task-force__portents-of-wisdom",
         "name": "Portents of Wisdom",
         "detachmentId": "stormlance-task-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, you can re-roll Advance rolls made for that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12480,6 +12626,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "stormlance-task-force__hunter-s-instincts",
         "name": "Hunter's Instincts",
         "detachmentId": "stormlance-task-force",
+        "points": 25,
         "description": "Adeptus Astartes Mounted model only. If the bearer's unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round as being one higher than it actually is",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12490,6 +12637,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ironstorm-spearhead__adept-of-the-omnissiah",
         "name": "Adept of the Omnissiah",
         "detachmentId": "ironstorm-spearhead",
+        "points": 35,
         "description": "**^^Techmarine^^** model only. Once per battle round, when a saving throw is failed for a friendly **^^Adeptus Astartes Vehicle^^** model within 6\" of the bearer, you can change the Damage characteristic of that attack to 0.",
         "allowedKeywords": [
           "Techmarine"
@@ -12500,6 +12648,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ironstorm-spearhead__master-of-the-machine-war",
         "name": "Master of the Machine War",
         "detachmentId": "ironstorm-spearhead",
+        "points": 20,
         "description": "ADEPTUS ASTARTES model only. In your Command phase, select one ADEPTUS ASTARTES VEHICLE within 6\" of the bearer. Until the start of your next Command phase, that VEHICLE is eligible to shoot even if it Fell Back or Advanced this turn.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12510,6 +12659,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ironstorm-spearhead__target-augury-web",
         "name": "Target Augury Web",
         "detachmentId": "ironstorm-spearhead",
+        "points": 30,
         "description": "TECHMARINE model only. In your Command phase, select one ADEPTUS ASTARTES VEHICLE model within 6\" of the bearer. Until the start of your next Command phase, weapons equipped by that VEHICLE have the [Lethal Hits] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12520,6 +12670,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ironstorm-spearhead__the-flesh-is-weak",
         "name": "The Flesh is Weak",
         "detachmentId": "ironstorm-spearhead",
+        "points": 10,
         "description": "Adeptus Astartes model only. The bearer has the Feel No Pain 4+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12530,6 +12681,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "firestorm-assault-force__adamantine-mantle",
         "name": "Adamantine Mantle",
         "detachmentId": "firestorm-assault-force",
+        "points": 20,
         "description": "**^^Adeptus Astartes^^** model only. Each time an attack is allocated the bearer, subtract 1 from the Damage characteristic of that attack. If that attack was made with a **[MELTA]** or **[TORRENT]** weapon, change the Damage characteristic of that attack to 1 instead.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -12540,6 +12692,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "firestorm-assault-force__champion-of-humanity",
         "name": "Champion of Humanity",
         "detachmentId": "firestorm-assault-force",
+        "points": 10,
         "description": "Tacticus model only. While the bearer is leading a unit, models in that unit can ignore any or all modifiers to their characteristics and/or to any roll or test made for them (excluding modifiers to saving throws).",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12550,6 +12703,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "firestorm-assault-force__forged-in-battle",
         "name": "Forged in Battle",
         "detachmentId": "firestorm-assault-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, once per turn after making a Hit roll or a saving throw for a model in that unit, you can change the result of that roll to an umodified 6.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12560,6 +12714,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "firestorm-assault-force__war-tempered-artifice",
         "name": "War-tempered Artifice",
         "detachmentId": "firestorm-assault-force",
+        "points": 25,
         "description": "**^^Adeptus Astartes Infantry^^** model only. Add 3 to the Strength characteristic of the bearer's melee weapons.",
         "allowedKeywords": [
           "Adeptus Astartes Infantry"
@@ -12570,6 +12725,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "anvil-siege-force__architect-of-war",
         "name": "Architect of War",
         "detachmentId": "anvil-siege-force",
+        "points": 25,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [IGNORES COVER] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12580,6 +12736,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "anvil-siege-force__fleet-commander",
         "name": "Fleet Commander",
         "detachmentId": "anvil-siege-force",
+        "points": 15,
         "description": "Captain model only. Once per battle, at the start of your Shooting phase, you can select one point on the battlefield and place a marker on that point. At the start of your next Shooting phase, place another marker on the battlefield within 12\" of the center of the first marker, then draw a straight line between the center of each of these markers. Roll one D6 for each unit that line passes over or through: on a 3+ that unit suffers D3 mortal wounds. Both markers are then removed.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12590,6 +12747,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "anvil-siege-force__indomitable-fury",
         "name": "Indomitable Fury",
         "detachmentId": "anvil-siege-force",
+        "points": 20,
         "description": "Gravis Model only. The first time the bearer is destroyed, roll on D6 at the end of the phase. On a 2+ set the bearer back on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12600,6 +12758,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "anvil-siege-force__stoic-defender",
         "name": "Stoic Defender",
         "detachmentId": "anvil-siege-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, models in that unit have the Feel No Pain 6+ ability while they are within range of an objective marker you control and, while that unit is Battle-shocked, halve the Objective Control characteristic of models in that unit instead of changing it to 0",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12610,6 +12769,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "1st-company-task-force__fear-made-manifest-aura",
         "name": "Fear Made Manifest [Aura]",
         "detachmentId": "1st-company-task-force",
+        "points": 30,
         "description": "Adeptus Astartes model only. While an enemy unit (excluding Monsters and Vehicles) is within 6\" of the bearer, each time that unit fails a Battle-Shock test, one model in that unit is destroyed (chosen by it's controlling player.) Once per battle, when such an enemy unit fails a Battle-Shock test, you can choose for D3 models in that unit to be destroyed in this way instead.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12620,6 +12780,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "1st-company-task-force__iron-resolve",
         "name": "Iron Resolve",
         "detachmentId": "1st-company-task-force",
+        "points": 15,
         "description": "Adeptus Astartes Terminator model only. The bearer has the Feel No Pain 5+ ability. Once per battle, after the bearer's unit is selected as the target of one or more attacks, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Feel No Pain 5+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12630,6 +12791,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "1st-company-task-force__rites-of-war",
         "name": "Rites of War",
         "detachmentId": "1st-company-task-force",
+        "points": 10,
         "description": "Adeptus Astartes Terminator model only. Improve the Objective Control characteristic of the bearer by 1. Once per battle, at the start of any phase the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Objective Control characteristic of all other models in the bearer's unit as well.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12640,6 +12802,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "1st-company-task-force__the-imperium-s-sword",
         "name": "The Imperium's Sword",
         "detachmentId": "1st-company-task-force",
+        "points": 25,
         "description": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks characteristic of the bearer's melee weapons. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by all other models in the bearer's unit.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -12650,6 +12813,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "company-of-hunters__master-crafted-weapon",
         "name": "Master-crafted Weapon",
         "detachmentId": "company-of-hunters",
+        "points": 10,
         "description": "RAVENWING model only. Melee weapons equipped by the bearer have the Precision ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12660,6 +12824,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "company-of-hunters__mounted-strategist",
         "name": "Mounted Strategist",
         "detachmentId": "company-of-hunters",
+        "points": 30,
         "description": "RAVENWING model only. You can re‑roll Advance and Charge rolls made for the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12670,6 +12835,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "company-of-hunters__master-of-manoeuvre",
         "name": "Master of Manoeuvre",
         "detachmentId": "company-of-hunters",
+        "points": 15,
         "description": "RAVENWING model only. If the bearer's unit starts the battle in Strategic Reserves, its points value does not count towards the combined points limit for units from your army that are in Strategic Reserve, and for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12680,6 +12846,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "company-of-hunters__recon-hunter",
         "name": "Recon Hunter",
         "detachmentId": "company-of-hunters",
+        "points": 20,
         "description": "RAVENWING model only. Models in the bearer's unit have the Scouts 9\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12690,6 +12857,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "inner-circle-task-force__eye-of-the-unseen",
         "name": "Eye of the Unseen",
         "detachmentId": "inner-circle-task-force",
+        "points": 10,
         "description": "Deathwing model only. Each time you target the bearer's unit with a Stratagem, roll one D6, adding 1 if the bearer is within range of your Vowed objective marker: on a 5+ you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12700,6 +12868,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "inner-circle-task-force__champion-of-the-deathwing",
         "name": "Champion of the Deathwing",
         "detachmentId": "inner-circle-task-force",
+        "points": 15,
         "description": "**^^Deathwing^^** model only. Melee weapons equipped by the bearer have the **[LETHAL HITS]** ability, and each time the bearer makes a melee attack, if it is within range of your Vowed objective marker, a Critical Hit is scored on an unmodified Hit roll of 5+.",
         "allowedKeywords": [
           "Deathwing"
@@ -12710,6 +12879,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "inner-circle-task-force__singular-will",
         "name": "Singular Will",
         "detachmentId": "inner-circle-task-force",
+        "points": 20,
         "description": "Deathwing model only. Each time the bearer's unit Pile In or Consolidates, models in that unit can move an additional 3\".",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12720,6 +12890,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "inner-circle-task-force__deathwing-assault",
         "name": "Deathwing Assault",
         "detachmentId": "inner-circle-task-force",
+        "points": 30,
         "description": "Deathwing model with the Deep Strike ability only. The bearer's unit can set up using the Deep Strike ability in the Reinforcement step of your first, second or third Movement phase, regardless of any mission rules.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -12728,6 +12899,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "the-angelic-host__archangel-s-shard",
         "name": "Archangel's Shard",
         "detachmentId": "the-angelic-host",
+        "points": 15,
         "description": "Adeptus Astartes model only. The bearer’s melee weapons have the [ANTI-CHAOS 5+] and [LANCE] abilities.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12738,6 +12910,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "the-angelic-host__artisan-of-war",
         "name": "Artisan of War",
         "detachmentId": "the-angelic-host",
+        "points": 20,
         "description": "Adeptus Astartes Jump Pack model only. Improve the Armour Penetration characteristic of the bearer’s weapons by 1, and the bearer has a Save characteristic of 2+.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12748,6 +12921,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "the-angelic-host__gleaming-pinions",
         "name": "Gleaming Pinions",
         "detachmentId": "the-angelic-host",
+        "points": 25,
         "description": "Adeptus Astartes Jump Pack model only. Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of the bearer, if this bearer's unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\"",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12758,6 +12932,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "the-angelic-host__visage-of-death",
         "name": "Visage of Death",
         "detachmentId": "the-angelic-host",
+        "points": 15,
         "description": "Adeptus Astartes Jump Pack model only. In the Battle-shock step of your opponent's Command phase, each enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12768,6 +12943,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "the-lost-brethren__blood-shard",
         "name": "Blood Shard",
         "detachmentId": "the-lost-brethren",
+        "points": 25,
         "description": "Death Company model only. The first time the bearer is destroyed, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12778,6 +12954,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "the-lost-brethren__sanguinius-grace",
         "name": "Sanguinius' Grace",
         "detachmentId": "the-lost-brethren",
+        "points": 20,
         "description": "Death Company model only. Once per battle at the end of the Fight phase, if the bearer is within Engagement Range of three or more enemy models. the bearer can fight one additional time.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12788,6 +12965,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "the-lost-brethren__to-slay-the-warmaster",
         "name": "To Slay the Warmaster",
         "detachmentId": "the-lost-brethren",
+        "points": 15,
         "description": "Death Company Model only. Once per battle, at the start of the Fight Phase, if the bearer is within Engagement Range of one or more enemy Character units, you can select one of those Character units and roll six D6: for each 4+, one Character model in that unit suffers 1 mortal wound.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12798,6 +12976,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "the-lost-brethren__vengeful-onslaught",
         "name": "Vengeful Onslaught",
         "detachmentId": "the-lost-brethren",
+        "points": 10,
         "description": "Death Company model only. If the bearer is destroyed, until the end of your next turn, each time a friendly Death Company model make an attack, add 1 to the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12808,6 +12987,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lion-s-blade-task-force__calibanite-armaments",
         "name": "Calibanite Armaments",
         "detachmentId": "lion-s-blade-task-force",
+        "points": 15,
         "description": "**^^Adeptus Astartes^^** model only. Add 1 to the Damage characteristic of the bearer’s melee weapons.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -12818,6 +12998,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lion-s-blade-task-force__lord-of-the-hunt",
         "name": "Lord of the Hunt",
         "detachmentId": "lion-s-blade-task-force",
+        "points": 15,
         "description": "Ravenwing model only. The bearer’s unit is eligible to shoot and declare a charge in a turn in which it Fell Back and you can re‑roll Desperate Escape tests taken for models in the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12828,6 +13009,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lion-s-blade-task-force__stalwart-champion",
         "name": "Stalwart Champion",
         "detachmentId": "lion-s-blade-task-force",
+        "points": 25,
         "description": "Captain, Chaplain or Lieutenant model only. While the bearer’s unit is not Battle‑shocked, add 1 to the Objective Control characteristic of models in the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12839,6 +13021,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lion-s-blade-task-force__fulgus-magna",
         "name": "Fulgus Magna",
         "detachmentId": "lion-s-blade-task-force",
+        "points": 20,
         "description": "Deathwing model only. Once per battle, at the end of your opponent’s turn, if the bearer’s unit is not within Engagement Range of one or more enemy units, the bearer can use this Enhancement. If it does, remove the bearer’s unit from the battlefield and place it into Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12849,6 +13032,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "librarius-conclave__prescience",
         "name": "Prescience",
         "detachmentId": "librarius-conclave",
+        "points": 25,
         "description": "Adeptus Astartes Psyker model only (excluding Terminator models). Once per turn, when an enemy\nunit ends a Normal, Advance or Fall Back move within 9\" of the bearer’s unit, the bearer’s unit can\nmake a Normal move of up to D6\", or up to 6\" instead if the Divination Discipline is active for your army",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12859,6 +13043,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "librarius-conclave__celerity",
         "name": "Celerity",
         "detachmentId": "librarius-conclave",
+        "points": 30,
         "description": "Adeptus Astartes Psyker model only. The bearer’s unit is eligible to declare a charge in a turn in which it Advanced, and if the Biomancy Discipline is active for your army, it is eligible to declare a charge in a turn in which it Fell Back.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12869,6 +13054,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "librarius-conclave__obfuscation",
         "name": "Obfuscation",
         "detachmentId": "librarius-conclave",
+        "points": 20,
         "description": "Adeptus Astartes Psyker model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot\nat the bearer’s unit, and if the Telepathy Discipline is active for your army, the bearer’s unit cannot be\ntargeted by ranged attacks unless the attacking model is within 18\".",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12879,6 +13065,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "librarius-conclave__fusillade",
         "name": "Fusillade",
         "detachmentId": "librarius-conclave",
+        "points": 35,
         "description": "Adeptus Astartes Psyker model only. Ranged weapons equipped by models in the bearer’s unit have\nthe [ANTI‑MONSTER 5+] and [ANTI‑VEHICLE 5+] abilities, and:\n\n\n■ The [SUSTAINED HITS 1] ability if the Pyromancy\nDiscipline is active for your army.\n■ Add 6\" to the Range characteristic of those\nweapons if the Telekinesis Discipline is active for\nyour army",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12889,6 +13076,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "wrathful-procession__pyrebrand",
         "name": "Pyrebrand",
         "detachmentId": "wrathful-procession",
+        "points": 25,
         "description": "Black Templars model only. Models in the bearer’s unit have the Stealth ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12899,6 +13087,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "wrathful-procession__sacred-rage",
         "name": "Sacred Rage",
         "detachmentId": "wrathful-procession",
+        "points": 30,
         "description": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use\nthis Enhancement. If it does, until the end of the phase, models in the bearer’s unit have the Fights First ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12909,6 +13098,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "wrathful-procession__taramond-s-censer",
         "name": "Taramond's Censer",
         "detachmentId": "wrathful-procession",
+        "points": 15,
         "description": "Black Templars model only. At the start of the Fight phase, each enemy unit within Engagement Range of the bearer’s unit must take a Battle‑shock test. When doing so, subtract 1 from the result",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12919,6 +13109,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "wrathful-procession__benediction-of-fury",
         "name": "Benediction of Fury",
         "detachmentId": "wrathful-procession",
+        "points": 10,
         "description": "Chaplain model only. The bearer’s melee weapons have the [DEVASTATING WOUNDS] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12929,6 +13120,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-fenris__wolves-wisdom",
         "name": "Wolves' Wisdom",
         "detachmentId": "champions-of-fenris",
+        "points": 30,
         "description": "Adeptus Astartes Infantry model only. The bearer’s unit can declare a charge against one or more units within 6\" instead of within 3\" when using The Great Wolf Watches Detachment rule.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12939,6 +13131,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-fenris__foes-fate",
         "name": "Foes' Fate",
         "detachmentId": "champions-of-fenris",
+        "points": 15,
         "description": "Adeptus Astartes Terminator model only. Each time an enemy unit (excluding Monsters and  Vehicles) within Engagement Range of the bearer’s unit Falls Back, all models in that enemy unit must take Desperate Escape tests. When doing so, if that enemy unit is Battle‑shocked, subtract 1 from each of\nthose tests.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12949,6 +13142,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-fenris__fangrune-pendant",
         "name": "Fangrune Pendant",
         "detachmentId": "champions-of-fenris",
+        "points": 15,
         "description": "Adeptus Astartes Terminator model only. The bearer’s unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12959,6 +13153,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-fenris__longstrider",
         "name": "Longstrider",
         "detachmentId": "champions-of-fenris",
+        "points": 20,
         "description": "Adeptus Astartes model only. You can re‑roll Charge rolls made for the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12969,6 +13164,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "angelic-inheritors__prescient-flash",
         "name": "Prescient Flash",
         "detachmentId": "angelic-inheritors",
+        "points": 20,
         "description": "Adeptus Astartes model only. Models in the bearer’s unit have the Scouts 6\" ability",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12979,6 +13175,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "angelic-inheritors__troubling-visions",
         "name": "Troubling Visions",
         "detachmentId": "angelic-inheritors",
+        "points": 15,
         "description": "Adeptus Astartes model only. Once per battle, in your Command phase, the bearer can use this\nEnhancement. When it does, until the start of your next Command phase, all Angelic Legacy abilities\n(see left) are active for the bearer’s unit, instead of only two of them.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12989,6 +13186,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "angelic-inheritors__blazing-icon",
         "name": "Blazing Icon",
         "detachmentId": "angelic-inheritors",
+        "points": 20,
         "description": "Adeptus Astartes Infantry model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -12999,6 +13197,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "angelic-inheritors__ordained-sacrifice",
         "name": "Ordained Sacrifice",
         "detachmentId": "angelic-inheritors",
+        "points": 25,
         "description": "Adeptus Astartes model only. The first time the bearer is destroyed, roll one D6 at the end of the phase: on a 2+, set the bearer back up on the battlefield as close as possible to where it was  destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13009,6 +13208,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "wrath-of-the-rock__deathwing-assault",
         "name": "Deathwing Assault",
         "detachmentId": "wrath-of-the-rock",
+        "points": 15,
         "description": "**^^Deathwing**^^ model with the Deep Strike ability only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -13017,6 +13217,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "wrath-of-the-rock__tempered-in-battle-aura",
         "name": "Tempered in Battle (Aura)",
         "detachmentId": "wrath-of-the-rock",
+        "points": 10,
         "description": "**^^Adeptus Astartes**^^ model only. While a friendly **^^Adeptus Astartes**^^ unit is within 6\" of this model, you can re-roll Battle-shock and Leadership tests taken for that unit.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13027,6 +13228,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "wrath-of-the-rock__lord-of-the-ravenwing",
         "name": "Lord of the Ravenwing",
         "detachmentId": "wrath-of-the-rock",
+        "points": 10,
         "description": "**^^Ravenwing**^^ model only. You can re-roll Advance and Charge rolls made for the bearer’s unit.",
         "allowedKeywords": [
           "Ravenwing"
@@ -13037,6 +13239,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "wrath-of-the-rock__ancient-weapons",
         "name": "Ancient Weapons",
         "detachmentId": "wrath-of-the-rock",
+        "points": 25,
         "description": "^^**Adeptus Astartes**^^ model only. Improve the Strength characteristic of melee weapons equipped by the bearer by 2, and improve the Armour Penetration and Damage characteristics of those weapons by 1.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13047,6 +13250,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-hunter__swift-hunter",
         "name": "Swift Hunter",
         "detachmentId": "saga-of-the-hunter",
+        "points": 20,
         "description": "SPACE WOLVES model only. Model's in the bearer's unit have the Scouts 7\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13057,6 +13261,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-hunter__fenrisian-grit",
         "name": "Fenrisian Grit",
         "detachmentId": "saga-of-the-hunter",
+        "points": 15,
         "description": "ADEPTUS ASTARTES model only. The bearer has the Feel No Pain 4+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13067,6 +13272,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-hunter__feral-rage",
         "name": "Feral Rage",
         "detachmentId": "saga-of-the-hunter",
+        "points": 10,
         "description": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks characteristic of melee weapons equipped by the bearer. Each time the bearer ends a Charge move, until the end of the turn, add an additional 1 to the Attacks characteristic of those weapons.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13077,6 +13283,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-hunter__wolf-master",
         "name": "Wolf Master",
         "detachmentId": "saga-of-the-hunter",
+        "points": 5,
         "description": "SPACE WOLVES model only. In your Command phase, select one friendly SPACE WOLVES unit within 9\" of the bearer. Until the start of your next Command phase, teeth and claws and Tyrnak and Fenrir weapons equipped by models in that unit have the [LETHAL HITS] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13087,6 +13294,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-bold__braggart-s-steel",
         "name": "Braggart's Steel",
         "detachmentId": "saga-of-the-bold",
+        "points": 20,
         "description": "**^^Space Wolves^^** model only. Add 2 to the Strength characteristic of melee weapons equipped by the bearer. If the bearer's unit has achieved one or more Boasts, add 1 to the Damage characteristic as well.",
         "allowedKeywords": [
           "Space Wolves"
@@ -13097,6 +13305,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-bold__hordeslayer",
         "name": "Hordeslayer",
         "detachmentId": "saga-of-the-bold",
+        "points": 15,
         "description": "**^^Space Wolves^^** model only. At the start of the Fight phase, if there are more enemy models than friendly models wholly within 6\" of the bearer, until the end of the phase, add 2 to the Attacks characteristic of melee weapons equipped by the bearer. If the bearer's unit has achieved one or more Boasts, add 3 to the Attacks characteristic instead.",
         "allowedKeywords": [
           "Space Wolves"
@@ -13107,6 +13316,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-bold__skjald",
         "name": "Skjald",
         "detachmentId": "saga-of-the-bold",
+        "points": 15,
         "description": "ADEPTUS ASTARTES model only. Each time a SPACE WOLVES CHARACTER unit from your army achieves a Boast, if the bearer is on the battlefield, you gain 1 CP",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13117,6 +13327,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-bold__thunderwolf-s-fortitude",
         "name": "Thunderwolf's Fortitude",
         "detachmentId": "saga-of-the-bold",
+        "points": 25,
         "description": "ADEPTUS ASTARTES model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13127,6 +13338,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-beastslayer__wolf-touched",
         "name": "Wolf-Touched",
         "detachmentId": "saga-of-the-beastslayer",
+        "points": 15,
         "description": "SPACE WOLVES model only. Add 2\" to the Move characteristic of the bearer. In the Declare Battle Formations step, the bearer can be attached to a WULFEN INFANTRY unit",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13137,6 +13349,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-beastslayer__hunter-s-guile",
         "name": "Hunter's Guile",
         "detachmentId": "saga-of-the-beastslayer",
+        "points": 20,
         "description": "ADEPTUS ASTARTES model only. After both players have deployed their armies, select up to three THUNDERWOLF CAVALRY, WULFEN and/or BLOOD CLAWS units from your army and redeploy them. When doing so you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13147,6 +13360,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-beastslayer__elder-s-guidance",
         "name": "Elder's Guidance",
         "detachmentId": "saga-of-the-beastslayer",
+        "points": 20,
         "description": "SPACE WOLVES model only. Once per battle, at the start of the Fight phase, if the bearer is leading a BLOOD CLAWS unit, the bearer can use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13157,6 +13371,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-beastslayer__helm-of-the-beastslayer",
         "name": "Helm of the Beastslayer",
         "detachmentId": "saga-of-the-beastslayer",
+        "points": 15,
         "description": "ADEPTUS ASTARTES model only. Each time an attack is made by a CHARACTER, MONSTER, or VEHICLE model that targets the bearer's unit, reduce the Armour Penetration characteristic of that attack by 1.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13167,6 +13382,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "companions-of-vehemence__incendiary-animus",
         "name": "Incendiary Animus",
         "detachmentId": "companions-of-vehemence",
+        "points": 25,
         "description": "CHAPLAIN or JUDICIAR model only. Improve the Armour Penetration characteristic of melee weapons equipped by models in the bearer's unit by 1",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13178,6 +13394,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "companions-of-vehemence__oathbound-exemplar",
         "name": "Oathbound Exemplar",
         "detachmentId": "companions-of-vehemence",
+        "points": 15,
         "description": "ADEPTUS ASTARTES INFANTRY model only. Add 1 to the Advance rolls made for the bearer's unit. If the mission pack you are playing features Actions, the bearer's unit is eligible to start to perform an Action in a turn in which it Advanced.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13188,6 +13405,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "companions-of-vehemence__merciless-denunciation",
         "name": "Merciless Denunciation",
         "detachmentId": "companions-of-vehemence",
+        "points": 25,
         "description": "CHAPLAIN or JUDICIAR model only. Each time a model in the bearer's unit makes a melee attack, you can re-roll the hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13199,6 +13417,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "companions-of-vehemence__zealous-vanguard",
         "name": "Zealous Vanguard",
         "detachmentId": "companions-of-vehemence",
+        "points": 20,
         "description": "ADEPTUS ASTARTES model only. Models in the bearer's unit have the Scouts 6\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13209,6 +13428,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vindication-task-force__consecrating-aura",
         "name": "Consecrating Aura",
         "detachmentId": "vindication-task-force",
+        "points": 25,
         "description": "ADEPTUS ASTARTES model only. Model's in the bearer's unit have a 5+ invulnerable save.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13219,6 +13439,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vindication-task-force__imperialis-of-the-eternal-crusade",
         "name": "Imperialis of the Eternal Crusade",
         "detachmentId": "vindication-task-force",
+        "points": 15,
         "description": "ANCIENT model only. Each time an enemy unit selects the bearer's unit as a target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other negative modifiers to that Charge roll)",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13229,6 +13450,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vindication-task-force__warden-of-honour",
         "name": "Warden of Honour",
         "detachmentId": "vindication-task-force",
+        "points": 20,
         "description": "CRUSADE ANCIENT model only. While the bearer is leading a unit, each time you roll one D6 for the bearer's Vengeful Exhortation ability, add 1 to the result.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13239,6 +13461,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vindication-task-force__orb-of-the-emperor-s-aegis",
         "name": "Orb of the Emperor's Aegis",
         "detachmentId": "vindication-task-force",
+        "points": 10,
         "description": "ADEPTUS ASTARTES model only. Models in the bearer's unit have the Deep Strike ability",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13249,6 +13472,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "godhammer-assault-force__paragon-of-fury",
         "name": "Paragon of Fury",
         "detachmentId": "godhammer-assault-force",
+        "points": 25,
         "description": "**^^Adeptus Astartes^^** model only. Add 2 the Strength characteristic of melee weapons equipped by the bearer. Each time a melee attack made by the bearer is allocated to an enemy model, if the bearer disembarked from a **^^Transport^^** this turn, add 1 to the Damage characteristic of that attack.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13259,6 +13483,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "godhammer-assault-force__battle-psalm-precentor",
         "name": "Battle-Psalm Precentor",
         "detachmentId": "godhammer-assault-force",
+        "points": 10,
         "description": "ADEPTUS ASTARTES model only. Each time the bearer's unit declares a charge, if an enemy unit takes a Battle-shock test as a result of the Shock and Awe detachment rule, subtract 1 from that Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13269,6 +13494,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "godhammer-assault-force__augury-servo-host",
         "name": "Augury Servo-Host",
         "detachmentId": "godhammer-assault-force",
+        "points": 15,
         "description": "ADEPTUS ASTARTES model only. At the start of your shooting phase, select one enemy unit within 12\" of and visible to the bearer. Until the end of the phase, models in that unit cannot have the Benefit of Cover.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13279,6 +13505,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "godhammer-assault-force__herald-of-the-sacred-slaughter",
         "name": "Herald of the Sacred Slaughter",
         "detachmentId": "godhammer-assault-force",
+        "points": 15,
         "description": "ADEPTUS ASTARTES model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a DEDICATED TRANSPORT, that DEDICATED TRANSPORT has the Scouts 9\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13289,6 +13516,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "forgefather-s-seekers__adamantine-mantle",
         "name": "Adamantine Mantle",
         "detachmentId": "forgefather-s-seekers",
+        "points": 20,
         "description": "**^^Adeptus Astartes^^** model only. Each time an attack is allocated the bearer, subtract 1 from the Damage characteristic of that attack. If that attack was made with a **[MELTA]** or **[TORRENT]** weapon, change the Damage characteristic of that attack to 1 instead.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13299,6 +13527,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "forgefather-s-seekers__war-tempered-artifice",
         "name": "War-tempered Artifice",
         "detachmentId": "forgefather-s-seekers",
+        "points": 25,
         "description": "**^^Adeptus Astartes Infantry^^** model only. Add 3 to the Strength characteristic of the bearer's melee weapons.",
         "allowedKeywords": [
           "Adeptus Astartes Infantry"
@@ -13309,6 +13538,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "forgefather-s-seekers__forged-in-battle",
         "name": "Forged in Battle",
         "detachmentId": "forgefather-s-seekers",
+        "points": 15,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, once per turn after making a Hit roll or a saving throw for a model in that unit, you can change the result of that roll to an umodified 6.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13319,6 +13549,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "forgefather-s-seekers__immolator",
         "name": "Immolator",
         "detachmentId": "forgefather-s-seekers",
+        "points": 10,
         "description": "Adeptus Astartes model only. Add 1 to the attacks characteristics of Torrent weapons equipped by models in the bearer's unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13329,6 +13560,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "emperor-s-shield__champion-of-the-feast",
         "name": "Champion of the Feast",
         "detachmentId": "emperor-s-shield",
+        "points": 25,
         "description": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks characteristic of the bearer's melee weapons. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by all other models in the bearer's unit.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13339,6 +13571,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "emperor-s-shield__disciple-of-rhetoricus",
         "name": "Disciple of Rhetoricus",
         "detachmentId": "emperor-s-shield",
+        "points": 10,
         "description": "Adeptus Astartes Terminator model only. Improve the Objective Control characteristic of the bearer by 1. Once per battle, at the start of any phase the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Objective Control characteristic of all other models in the bearer's unit as well.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13349,6 +13582,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "emperor-s-shield__indomitable-champion",
         "name": "Indomitable Champion",
         "detachmentId": "emperor-s-shield",
+        "points": 20,
         "description": "Adeptus Astartes Terminator model only. The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 3 wounds remaining.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13359,6 +13593,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "emperor-s-shield__malodraxian-standard",
         "name": "Malodraxian Standard",
         "detachmentId": "emperor-s-shield",
+        "points": 20,
         "description": "Adeptus Astartes Ancient model only. Each time an attack targets the bearer’s unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of the bearer’s unit, subtract 1 from the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13369,6 +13604,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "shadowmark-talon__blackwing-shroud",
         "name": "Blackwing Shroud",
         "detachmentId": "shadowmark-talon",
+        "points": 25,
         "description": "Adeptus Astartes Infantry model only. While the bearer is leading a unit, models in that unit have the\nInfiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13379,6 +13615,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "shadowmark-talon__coronal-susurrant",
         "name": "Coronal Susurrant",
         "detachmentId": "shadowmark-talon",
+        "points": 30,
         "description": "Phobos model only. The bearer has the following ability:\n\n\nLord of Deceit (Aura): Each time your opponent targets a unit from their army with a Stratagem, if that\nunit is within 12\" of this model, increase the cost of that usage of that Stratagem by 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13389,6 +13626,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "shadowmark-talon__umbral-raptor",
         "name": "Umbral Raptor",
         "detachmentId": "shadowmark-talon",
+        "points": 15,
         "description": "Adeptus Astartes model only. The bearer has the Stealth and Lone Operative abilities.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13399,6 +13637,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "shadowmark-talon__hunter-s-instincts",
         "name": "Hunter's Instincts",
         "detachmentId": "shadowmark-talon",
+        "points": 25,
         "description": "^^**Adeptus Astartes**^^ model only. In your Movement phase, if the bearer’s unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13409,6 +13648,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-avernii__spiritus-ferrum",
         "name": "Spiritus Ferrum",
         "detachmentId": "hammer-of-avernii",
+        "points": 25,
         "description": "Adeptus Astartes model only. Add 1 to the Attacks characteristic of the bearer’s melee weapons. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by all other models in the bearer’s unit as well.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13419,6 +13659,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-avernii__medusan-roar-aura",
         "name": "Medusan Roar [Aura]",
         "detachmentId": "hammer-of-avernii",
+        "points": 30,
         "description": "Adeptus Astartes model only. While an enemy unit (excluding Monsters and Vehicles) is within 6\" of\nthe bearer, each time that unit fails a Battle‑shock test, one model in that unit is destroyed (chosen by\nits controlling player). Once per battle, when such an enemy unit fails a Battle‑shock test, you can choose for D3 models in that unit to be destroyed in this way instead.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13429,6 +13670,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-avernii__iron-laurel",
         "name": "Iron Laurel",
         "detachmentId": "hammer-of-avernii",
+        "points": 10,
         "description": "Adeptus Astartes model only. Improve the Objective Control characteristic of the bearer by 1. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Objective Control characteristic of all other models in the bearer’s unit as well.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13439,6 +13681,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-avernii__steel-font",
         "name": "Steel Font",
         "detachmentId": "hammer-of-avernii",
+        "points": 15,
         "description": "Adeptus Astartes Terminator model only. While the bearer is leading a unit, in your Command phase, you can return 1 destroyed Bodyguard model to that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13449,6 +13692,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spearpoint-task-force__spearpoint-paragon",
         "name": "Spearpoint Paragon",
         "detachmentId": "spearpoint-task-force",
+        "points": 25,
         "description": "Adeptus Astartes model only. Improve the Strength and Armour Penetration characteristics of the bearer’s melee weapons by 1. Each time the bearer ends a Charge move, until the end of the turn, improve the Strength and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13459,6 +13703,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spearpoint-task-force__stormseer-s-wisdom",
         "name": "Stormseer's Wisdom",
         "detachmentId": "spearpoint-task-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, you can re‑roll Advance rolls made for that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13469,6 +13714,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spearpoint-task-force__hunter-s-eye",
         "name": "Hunter's Eye",
         "detachmentId": "spearpoint-task-force",
+        "points": 20,
         "description": "Adeptus Astartes model only. Ranged weapons equipped by models in the bearer’s unit have the\n[SUSTAINED HITS 1] and [IGNORES COVER] abilities.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13479,6 +13725,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spearpoint-task-force__chogorian-huntmaster",
         "name": "Chogorian Huntmaster",
         "detachmentId": "spearpoint-task-force",
+        "points": 25,
         "description": "Adeptus Astartes Mounted model only. If the bearer’s unit is in Strategic Reserves, for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13489,6 +13736,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "blade-of-ultramar__armour-of-antoninus",
         "name": "Armour of Antoninus",
         "detachmentId": "blade-of-ultramar",
+        "points": 10,
         "description": "**^^Adeptus Astartes^^** model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13499,6 +13747,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "blade-of-ultramar__oath-of-macragge",
         "name": "Oath of Macragge",
         "detachmentId": "blade-of-ultramar",
+        "points": 15,
         "description": "**^^Adeptus Astartes^^** model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is under the effects of the Assault Doctrine, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead.",
         "allowedKeywords": [
           "Adeptus Astartes"
@@ -13509,6 +13758,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "blade-of-ultramar__student-of-the-codex",
         "name": "Student of the Codex",
         "detachmentId": "blade-of-ultramar",
+        "points": 20,
         "description": "Adeptus Astartes model only. At the start of your Command phase, if the bearer is on the battlefield, it\ncan use this Enhancement. If it does, until the start of your next Command phase, the Tactical  doctrine is active for this unit (instead of any other Combat Doctrine you select to be active for your army, and even if there is no Combat Doctrine active for your army).",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13519,6 +13769,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "blade-of-ultramar__veteran-of-behemoth",
         "name": "Veteran of Behemoth",
         "detachmentId": "blade-of-ultramar",
+        "points": 25,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability. In addition, while the bearer’s unit is under the effects of the Devastator Doctrine, , you can reroll Advance rolls made for that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13529,6 +13780,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-great-wolf__grimnar-s-mark",
         "name": "Grimnar's Mark",
         "detachmentId": "saga-of-the-great-wolf",
+        "points": 20,
         "description": "Adeptus Astartes Terminator Captain model only. Once per battle round, from the second battle round\nonwards, you can target the bearer’s unit with the Rapid Ingress or Heroic Intervention Stratagem for\n0CP, and can do so even if you have already targeted a different unit with that Stratagem this turn.\n\n\nIn the Declare Battle Formations step, the bearer can be attached to a Wolf Guard Terminators unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13539,6 +13791,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-great-wolf__howlmaw",
         "name": "Howlmaw",
         "detachmentId": "saga-of-the-great-wolf",
+        "points": 15,
         "description": "Wolf priest model only. At the start of the Fight phase, you can select one enemy unit within 6\" of the\nbearer. That unit must take a Battle-shock, subtracting 1 from the result.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13549,6 +13802,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-great-wolf__chariots-of-the-storm",
         "name": "Chariots of the Storm",
         "detachmentId": "saga-of-the-great-wolf",
+        "points": 25,
         "description": "Adeptus Astartes model only. After both players have deployed their armies, select up to three Adeptus Astartes units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13559,6 +13813,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "saga-of-the-great-wolf__skjald-s-foretelling",
         "name": "Skjald's Foretelling",
         "detachmentId": "saga-of-the-great-wolf",
+        "points": 25,
         "description": "Wolf Guard Battle Leader model only. While the bearer is leading a unit, weapons equipped by models in that unit have the [LANCE] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13569,6 +13824,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "rage-cursed-onslaught__carmine-reliquary",
         "name": "Carmine Reliquary",
         "detachmentId": "rage-cursed-onslaught",
+        "points": 30,
         "description": "Chaplain model only. Models in the bearer’s unit have the Scouts 6\" ability. Each time you take a\nBattle-shock test for an Adeptus Astartes unit within 6\" of the bearer, you can re-roll the result",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13579,6 +13835,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "rage-cursed-onslaught__master-of-the-red-thirst",
         "name": "Master of the Red Thirst",
         "detachmentId": "rage-cursed-onslaught",
+        "points": 25,
         "description": "Adeptus Astartes model only. Once per battle, at the start of the Fight phase, the bearer can use\nthis Enhancement. If it does, until the end of the phase, models in the bearer’s unit have the Fights\nFirst ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13589,6 +13846,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "rage-cursed-onslaught__sanguinary-tear-aura",
         "name": "Sanguinary Tear (Aura)",
         "detachmentId": "rage-cursed-onslaught",
+        "points": 35,
         "description": "Adeptus Astartes model only. While a friendly Death Company unit is within 6\" of the bearer, add 1 to\nthe Strength characteristic of weapons equipped by models in that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13599,6 +13857,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "rage-cursed-onslaught__angel-s-fang",
         "name": "Angel's Fang",
         "detachmentId": "rage-cursed-onslaught",
+        "points": 25,
         "description": "Adeptus Astartes model only. Each time the bearer makes a melee attack that targets a Character,\nMonster or Vehicle unit, that attack has the [SUSTAINED HITS 2] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13609,6 +13868,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bastion-task-force__eye-of-the-primarch",
         "name": "Eye of the Primarch",
         "detachmentId": "bastion-task-force",
+        "points": 10,
         "description": "Adeptus Astartes model only. Ranged weapons equipped by the bearer and Battleline models in the\nbearer’s unit have the [PRECISION] ability",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13619,6 +13879,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bastion-task-force__hero-of-the-chapter",
         "name": "Hero of the Chapter",
         "detachmentId": "bastion-task-force",
+        "points": 20,
         "description": "Adeptus Astartes model only. While the bearer is leading a unit, the bearer has the Battleline keyword.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13629,6 +13890,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bastion-task-force__blades-of-valour",
         "name": "Blades of Valour",
         "detachmentId": "bastion-task-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. Improve the Armour Penetration characteristic of melee weapons equipped by the bearer and Battleline models in the bearer’s unit by 1.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13639,6 +13901,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bastion-task-force__bombast-omnivox",
         "name": "Bombast Omnivox",
         "detachmentId": "bastion-task-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. Each time you select the bearer’s unit as the target of a Stratagem, roll one D6, adding 1 if the bearer’s unit has the Battleline keyword: on a 4+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13649,6 +13912,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "orbital-assault-force__laurels-of-thunder",
         "name": "Laurels of Thunder",
         "detachmentId": "orbital-assault-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. You can re‑roll Charge rolls made for the bearer’s unit in a turn in which it was set up on the battlefield.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13659,6 +13923,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "orbital-assault-force__orbital-uplink-reliquary",
         "name": "Orbital Uplink Reliquary",
         "detachmentId": "orbital-assault-force",
+        "points": 25,
         "description": "Adeptus Astartes model only. After both players have deployed their armies, select up to three Adeptus Astartes units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13669,6 +13934,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "orbital-assault-force__veteran-of-the-vanguard",
         "name": "Veteran of the Vanguard",
         "detachmentId": "orbital-assault-force",
+        "points": 20,
         "description": "Adeptus Astartes model only. Models in the bearer’s unit have the Scouts 6\" ability",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13679,6 +13945,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "orbital-assault-force__dedicated-gunship",
         "name": "Dedicated Gunship",
         "detachmentId": "orbital-assault-force",
+        "points": 15,
         "description": "Adeptus Astartes Terminator model only. Once per battle, at the end of your opponent’s Fight\nphase, if the bearer’s unit is not within Engagement Range of one or more enemy units, the bearer\ncan use this Enhancement. If it does, remove the bearer’s unit from the battlefield and place it into\nStrategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13689,6 +13956,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reclamation-force__seals-of-reconquest",
         "name": "Seals of Reconquest",
         "detachmentId": "reclamation-force",
+        "points": 20,
         "description": "Adeptus Astartes model only. Models in the bearer’s unit have a 5+ invulnerable save.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13699,6 +13967,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reclamation-force__avenging-avatar-aura",
         "name": "Avenging Avatar (Aura)",
         "detachmentId": "reclamation-force",
+        "points": 10,
         "description": "Adeptus Astartes model only. In the Battle‑shock step of your opponent’s Command phase, if an enemy unit that is below its Starting Strength is within 9\" of the bearer, that enemy unit must take a Battle‑shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13709,6 +13978,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reclamation-force__scroll-of-proclamation",
         "name": "Scroll of Proclamation",
         "detachmentId": "reclamation-force",
+        "points": 15,
         "description": "Adeptus Astartes model only. Each time the bearer’s unit declares a charge, if one or more targets of that charge are within range of an objective marker, you can re‑roll the Charge roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13719,6 +13989,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reclamation-force__liberatum",
         "name": "Liberatum",
         "detachmentId": "reclamation-force",
+        "points": 25,
         "description": "Adeptus Astartes model only. Each time the bearer makes an attack that targets an enemy unit, if the\ntarget is within range of an objective marker, you can re‑roll the Hit roll and you can re‑roll the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13729,6 +14000,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ceramite-sentinels__honour-indefatigable",
         "name": "Honour Indefatigable",
         "detachmentId": "ceramite-sentinels",
+        "points": 25,
         "description": "The first time the bearer is destroyed, roll one D6 at the end of the phase. On a 2+, set the bearer back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with its full wounds remaining.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -13737,6 +14009,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ceramite-sentinels__castellum-omnivox",
         "name": "Castellum Omnivox",
         "detachmentId": "ceramite-sentinels",
+        "points": 20,
         "description": "Each time the bearer’s unit makes a Fall Back move, select one of the following to apply to that unit until the end of the turn: \n- That unit is eligible to perform an Action in a turn in which it Fell Back. \n- That unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -13745,6 +14018,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ceramite-sentinels__spy-skull-datalink",
         "name": "Spy-skull Datalink",
         "detachmentId": "ceramite-sentinels",
+        "points": 15,
         "description": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -13753,6 +14027,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ceramite-sentinels__defensive-mastery",
         "name": "Defensive Mastery",
         "detachmentId": "ceramite-sentinels",
+        "points": 25,
         "description": "After both players have deployed their armies, select up to three ^^**Adeptus Astartes**^^ units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -13761,6 +14036,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-speartip__liberator",
         "name": "Liberator",
         "detachmentId": "armoured-speartip",
+        "points": 15,
         "description": "Adeptus Astartes model only. If you control an objective marker at the end of your Command phase,\nand the bearer’s unit (or any Heavy Transport it is embarked within) is within range of that objective\nmarker, that objective marker remains under your control until your opponent’s Level of Control over\nthat objective marker is greater than yours at the end of a phase.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13771,6 +14047,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-speartip__tip-of-the-spear",
         "name": "Tip of the Spear",
         "detachmentId": "armoured-speartip",
+        "points": 40,
         "description": "Adeptus Astartes model only. If the bearer starts the battle embarked within a Transport, that transport\nhas the Scouts 9\" ability",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13781,6 +14058,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-speartip__shock-deployment",
         "name": "Shock Deployment",
         "detachmentId": "armoured-speartip",
+        "points": 20,
         "description": "Adeptus Astartes Terminator or Gravis model only. In your Shooting phase, each time the bearer’s unit is selected to shoot, if it disembarked from a Transport this turn, until the end of the phase, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -13792,6 +14070,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-speartip__armoured-commander",
         "name": "Armoured Commander",
         "detachmentId": "armoured-speartip",
+        "points": 25,
         "description": "Adeptus Astartes model only. Once per turn, in your Movement phase, the bearer can use this\nEnhancement. If it does, select one friendly Adeptus Astartes Transport that is in Strategic Reserves. Until the end of the phase, for the purposes of setting up that Transport on the battlefield, treat the current battle round number as being one higher than it actually is.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -14986,6 +15265,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "traitoris-lance__malevolent-heraldry",
         "name": "Malevolent Heraldry",
         "detachmentId": "traitoris-lance",
+        "points": 30,
         "description": "Each time you roll dice to randomly select which Dread abilities are active for your army, if the bearer is on the battlefield, you can re-roll one or both results rolled.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -14994,6 +15274,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "traitoris-lance__veil-of-medrengard",
         "name": "Veil of Medrengard",
         "detachmentId": "traitoris-lance",
+        "points": 35,
         "description": "The bearer has a 4+ invulnerable save against ranged attacks, and a 5+ invulnerable save against melee attacks.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15002,6 +15283,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "traitoris-lance__tyrant-s-shadow",
         "name": "Tyrant's Shadow",
         "detachmentId": "traitoris-lance",
+        "points": 25,
         "description": "At the end of your Command phase, select one objective marker the bearer is in range of and that you control. That objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase. In addition, until you lose control of that objective marker, it has the Deathly Terror ability as if it were a ^^**Chaos Knights^^** model from your army.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15010,6 +15292,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "traitoris-lance__nightmare-s-master",
         "name": "Nightmare's Master",
         "detachmentId": "traitoris-lance",
+        "points": 20,
         "description": "At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15018,6 +15301,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__warp-borne-stalker",
         "name": "Warp-borne Stalker",
         "detachmentId": "lords-of-dread",
+        "points": 25,
         "description": "The bearer has the Deep Strike ability. In addition, once per battle, at the end of your opponent's turn, if the bearer is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15026,6 +15310,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__blade-of-celerity",
         "name": "Blade of Celerity",
         "detachmentId": "lords-of-dread",
+        "points": 35,
         "description": "The bearer's ranged weapons have the [Assault] ability. In addition, once per battle, in the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15034,6 +15319,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__putrid-carapace",
         "name": "Putrid Carapace",
         "detachmentId": "lords-of-dread",
+        "points": 30,
         "description": "The bearer has a Save characteristic of 2+. In addition, once per battle, at the start of either player's Command phase, the bearer can use this Enhancement. If it does, the bearer regains up to D6 lost wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15042,6 +15328,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__mirror-of-fates",
         "name": "Mirror of Fates",
         "detachmentId": "lords-of-dread",
+        "points": 30,
         "description": "Once per battle round, you can target the bearer with the Command Re-roll Stratagem for 0CP, and can do so even if another unit from your army has already been targeted by that Stratagem this phase. In addition, you gain the Lord of Deceit abiity.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15050,6 +15337,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__blessing-of-the-dark-master",
         "name": "Blessing of the Dark Master",
         "detachmentId": "lords-of-dread",
+        "points": 20,
         "description": "The bearer has the Stealth ability. In addition, once per battle, after you make a saving throw for the bearer, you can change the Damage characteristic of that attack to 0.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15058,6 +15346,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__throne-mechanicum-of-skulls",
         "name": "Throne Mechanicum of Skulls",
         "detachmentId": "lords-of-dread",
+        "points": 25,
         "description": "You can re-roll Charge rolls made for the bearer's unit. In addition, once per battle, in your Charge phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer's unit is eligible to declare a charge in a turn in which it Advanced.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15066,6 +15355,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "houndpack-lance__loping-predator",
         "name": "Loping Predator",
         "detachmentId": "houndpack-lance",
+        "points": 10,
         "description": "The bearer's ranged weapons have the [Assault] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15074,6 +15364,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "houndpack-lance__final-howl-aura",
         "name": "Final Howl (Aura)",
         "detachmentId": "houndpack-lance",
+        "points": 20,
         "description": "While a friendly ^^**War Dog^^** model is within 6\" of the bearer, each time that model makes an attack, re-roll a Wound roll of 1.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15082,6 +15373,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "houndpack-lance__panoply-of-the-cursed-knights",
         "name": "Panoply of the Cursed Knights",
         "detachmentId": "houndpack-lance",
+        "points": 15,
         "description": "Each time an attack targets the bearer, worsen the Armour Penetration characteristic of that attack by 1.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15090,6 +15382,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "houndpack-lance__preyslayer-s-mantle",
         "name": "Preyslayer's Mantle",
         "detachmentId": "houndpack-lance",
+        "points": 15,
         "description": "The bearer has the Super-Heavy Walker ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15098,6 +15391,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "infernal-lance__fleshmetal-fusion",
         "name": "Fleshmetal Fusion",
         "detachmentId": "infernal-lance",
+        "points": 35,
         "description": "Add 1 to the bearer's Toughness characteristic. While the bearer is using the Unnatural Fortitude ability, each time an attack with a Damage characteristic of 1 is allocated to the bearer, add 1 to any armour saving throw made against that attack.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15106,6 +15400,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "infernal-lance__blasphemous-engine",
         "name": "Blasphemous Engine",
         "detachmentId": "infernal-lance",
+        "points": 35,
         "description": "Add 2 to the bearer's Wounds characteristic. Each time the bearer's unit makes a Malefic Surge, you can re-roll the Leadership test taken to see if it suffers any mortal wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15114,6 +15409,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "infernal-lance__bestial-aspect",
         "name": "Bestial Aspect",
         "detachmentId": "infernal-lance",
+        "points": 20,
         "description": "The bearer's ranged weapons have the [Assault] ability. While the bearer is using the Unholy Hunger ability, it can ignore any or all modifiers to its Move characteristic and/or to Advance rolls made for its unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15122,6 +15418,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "infernal-lance__knight-diabolus",
         "name": "Knight Diabolus",
         "detachmentId": "infernal-lance",
+        "points": 25,
         "description": "Improve the Weapon Skill characteristic of the bearer's melee weapons by 1. While the bearer is using the Diabolic Power ability, its melee weapons have the [Lance] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15130,6 +15427,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "iconoclast-fiefdom__diabolical-resilience",
         "name": "Diabolical Resilience",
         "detachmentId": "iconoclast-fiefdom",
+        "points": 35,
         "description": "The bearer has the Feel No Pain 6+ ability and you can ignore any or all modifiers to its Move characteristic and/or to any Advance or Charge rolls made for it.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15138,6 +15436,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "iconoclast-fiefdom__pave-the-way",
         "name": "Pave The Way",
         "detachmentId": "iconoclast-fiefdom",
+        "points": 15,
         "description": "At the start of the Declare Battle Formations step, you can select up to three DAMNED units from your army. The selected units have the Scouts 6\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15146,6 +15445,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "iconoclast-fiefdom__profane-altar",
         "name": "Profane Altar",
         "detachmentId": "iconoclast-fiefdom",
+        "points": 20,
         "description": "Each time the bearer makes a Dark Sacrifice, the maximum number of models are destroyed in the selected DAMNED unit (i.e. 3 if the unit’s Leadership test is passed, or 6 if it is failed) but, until the end of the phase, the bearer’s weapons have both [LETHAL HITS] and [SUSTAINED HITS 1].",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15154,6 +15454,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "iconoclast-fiefdom__tyrant-s-banner",
         "name": "Tyrant's Banner",
         "detachmentId": "iconoclast-fiefdom",
+        "points": 5,
         "description": "Each time the bearer makes a Dark Sacrifice, select one visible friendly DAMNED unit to take a Leadership test instead of a friendly DAMNED unit within 6\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15162,6 +15463,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "helhunt-lance__hunter-s-helm",
         "name": "Hunter's Helm",
         "detachmentId": "helhunt-lance",
+        "points": 15,
         "description": "You can re‑roll Advance and Charge rolls made for the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15170,6 +15472,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "helhunt-lance__octagram-of-conjuration",
         "name": "Octagram of Conjuration",
         "detachmentId": "helhunt-lance",
+        "points": 40,
         "description": "While a friendly ^^**War Dog**^^ model is within 9” of this model, after that ^^**War Dog**^^ model has shot, you can select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle‑shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15178,6 +15481,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "helhunt-lance__throne-tyrannicus",
         "name": "Throne Tyrannicus",
         "detachmentId": "helhunt-lance",
+        "points": 25,
         "description": "In your Command phase, select one other ^^**Chaos Knights Character**^^ model within 9” of the bearer. If the bearer has one or more Aura abilities that affect friendly **^^War Dog**^^ units, until the start of your next Command phase, the selected **^^Chaos Knights Character**^^ model is affected by those Aura abilities as well.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15186,6 +15490,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "helhunt-lance__aspect-of-the-beast",
         "name": "Aspect of the Beast",
         "detachmentId": "helhunt-lance",
+        "points": 30,
         "description": "At the start of your Command phase, select one Dread ability to be active for the bearer until the start of your next Command phase, in addition to the Dread abilities active for your army.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15628,6 +15933,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "traitoris-lance__malevolent-heraldry",
         "name": "Malevolent Heraldry",
         "detachmentId": "traitoris-lance",
+        "points": 30,
         "description": "Each time you roll dice to randomly select which Dread abilities are active for your army, if the bearer is on the battlefield, you can re-roll one or both results rolled.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15636,6 +15942,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "traitoris-lance__veil-of-medrengard",
         "name": "Veil of Medrengard",
         "detachmentId": "traitoris-lance",
+        "points": 35,
         "description": "The bearer has a 4+ invulnerable save against ranged attacks, and a 5+ invulnerable save against melee attacks.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15644,6 +15951,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "traitoris-lance__tyrant-s-shadow",
         "name": "Tyrant's Shadow",
         "detachmentId": "traitoris-lance",
+        "points": 25,
         "description": "At the end of your Command phase, select one objective marker the bearer is in range of and that you control. That objective marker remains under your control until your opponent's Level of Control over that objective marker is greater than yours at the end of a phase. In addition, until you lose control of that objective marker, it has the Deathly Terror ability as if it were a ^^**Chaos Knights^^** model from your army.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15652,6 +15960,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "traitoris-lance__nightmare-s-master",
         "name": "Nightmare's Master",
         "detachmentId": "traitoris-lance",
+        "points": 20,
         "description": "At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15660,6 +15969,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__warp-borne-stalker",
         "name": "Warp-borne Stalker",
         "detachmentId": "lords-of-dread",
+        "points": 25,
         "description": "The bearer has the Deep Strike ability. In addition, once per battle, at the end of your opponent's turn, if the bearer is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15668,6 +15978,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__blade-of-celerity",
         "name": "Blade of Celerity",
         "detachmentId": "lords-of-dread",
+        "points": 35,
         "description": "The bearer's ranged weapons have the [Assault] ability. In addition, once per battle, in the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15676,6 +15987,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__putrid-carapace",
         "name": "Putrid Carapace",
         "detachmentId": "lords-of-dread",
+        "points": 30,
         "description": "The bearer has a Save characteristic of 2+. In addition, once per battle, at the start of either player's Command phase, the bearer can use this Enhancement. If it does, the bearer regains up to D6 lost wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15684,6 +15996,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__mirror-of-fates",
         "name": "Mirror of Fates",
         "detachmentId": "lords-of-dread",
+        "points": 30,
         "description": "Once per battle round, you can target the bearer with the Command Re-roll Stratagem for 0CP, and can do so even if another unit from your army has already been targeted by that Stratagem this phase. In addition, you gain the Lord of Deceit abiity.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15692,6 +16005,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__blessing-of-the-dark-master",
         "name": "Blessing of the Dark Master",
         "detachmentId": "lords-of-dread",
+        "points": 20,
         "description": "The bearer has the Stealth ability. In addition, once per battle, after you make a saving throw for the bearer, you can change the Damage characteristic of that attack to 0.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15700,6 +16014,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "lords-of-dread__throne-mechanicum-of-skulls",
         "name": "Throne Mechanicum of Skulls",
         "detachmentId": "lords-of-dread",
+        "points": 25,
         "description": "You can re-roll Charge rolls made for the bearer's unit. In addition, once per battle, in your Charge phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer's unit is eligible to declare a charge in a turn in which it Advanced.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15708,6 +16023,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "houndpack-lance__loping-predator",
         "name": "Loping Predator",
         "detachmentId": "houndpack-lance",
+        "points": 10,
         "description": "The bearer's ranged weapons have the [Assault] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15716,6 +16032,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "houndpack-lance__final-howl-aura",
         "name": "Final Howl (Aura)",
         "detachmentId": "houndpack-lance",
+        "points": 20,
         "description": "While a friendly ^^**War Dog^^** model is within 6\" of the bearer, each time that model makes an attack, re-roll a Wound roll of 1.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15724,6 +16041,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "houndpack-lance__panoply-of-the-cursed-knights",
         "name": "Panoply of the Cursed Knights",
         "detachmentId": "houndpack-lance",
+        "points": 15,
         "description": "Each time an attack targets the bearer, worsen the Armour Penetration characteristic of that attack by 1.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15732,6 +16050,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "houndpack-lance__preyslayer-s-mantle",
         "name": "Preyslayer's Mantle",
         "detachmentId": "houndpack-lance",
+        "points": 15,
         "description": "The bearer has the Super-Heavy Walker ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15740,6 +16059,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "infernal-lance__fleshmetal-fusion",
         "name": "Fleshmetal Fusion",
         "detachmentId": "infernal-lance",
+        "points": 35,
         "description": "Add 1 to the bearer's Toughness characteristic. While the bearer is using the Unnatural Fortitude ability, each time an attack with a Damage characteristic of 1 is allocated to the bearer, add 1 to any armour saving throw made against that attack.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15748,6 +16068,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "infernal-lance__blasphemous-engine",
         "name": "Blasphemous Engine",
         "detachmentId": "infernal-lance",
+        "points": 35,
         "description": "Add 2 to the bearer's Wounds characteristic. Each time the bearer's unit makes a Malefic Surge, you can re-roll the Leadership test taken to see if it suffers any mortal wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15756,6 +16077,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "infernal-lance__bestial-aspect",
         "name": "Bestial Aspect",
         "detachmentId": "infernal-lance",
+        "points": 20,
         "description": "The bearer's ranged weapons have the [Assault] ability. While the bearer is using the Unholy Hunger ability, it can ignore any or all modifiers to its Move characteristic and/or to Advance rolls made for its unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15764,6 +16086,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "infernal-lance__knight-diabolus",
         "name": "Knight Diabolus",
         "detachmentId": "infernal-lance",
+        "points": 25,
         "description": "Improve the Weapon Skill characteristic of the bearer's melee weapons by 1. While the bearer is using the Diabolic Power ability, its melee weapons have the [Lance] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15772,6 +16095,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "iconoclast-fiefdom__diabolical-resilience",
         "name": "Diabolical Resilience",
         "detachmentId": "iconoclast-fiefdom",
+        "points": 35,
         "description": "The bearer has the Feel No Pain 6+ ability and you can ignore any or all modifiers to its Move characteristic and/or to any Advance or Charge rolls made for it.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15780,6 +16104,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "iconoclast-fiefdom__pave-the-way",
         "name": "Pave The Way",
         "detachmentId": "iconoclast-fiefdom",
+        "points": 15,
         "description": "At the start of the Declare Battle Formations step, you can select up to three DAMNED units from your army. The selected units have the Scouts 6\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15788,6 +16113,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "iconoclast-fiefdom__profane-altar",
         "name": "Profane Altar",
         "detachmentId": "iconoclast-fiefdom",
+        "points": 20,
         "description": "Each time the bearer makes a Dark Sacrifice, the maximum number of models are destroyed in the selected DAMNED unit (i.e. 3 if the unit’s Leadership test is passed, or 6 if it is failed) but, until the end of the phase, the bearer’s weapons have both [LETHAL HITS] and [SUSTAINED HITS 1].",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15796,6 +16122,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "iconoclast-fiefdom__tyrant-s-banner",
         "name": "Tyrant's Banner",
         "detachmentId": "iconoclast-fiefdom",
+        "points": 5,
         "description": "Each time the bearer makes a Dark Sacrifice, select one visible friendly DAMNED unit to take a Leadership test instead of a friendly DAMNED unit within 6\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15804,6 +16131,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "helhunt-lance__hunter-s-helm",
         "name": "Hunter's Helm",
         "detachmentId": "helhunt-lance",
+        "points": 15,
         "description": "You can re‑roll Advance and Charge rolls made for the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15812,6 +16140,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "helhunt-lance__octagram-of-conjuration",
         "name": "Octagram of Conjuration",
         "detachmentId": "helhunt-lance",
+        "points": 40,
         "description": "While a friendly ^^**War Dog**^^ model is within 9” of this model, after that ^^**War Dog**^^ model has shot, you can select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle‑shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15820,6 +16149,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "helhunt-lance__throne-tyrannicus",
         "name": "Throne Tyrannicus",
         "detachmentId": "helhunt-lance",
+        "points": 25,
         "description": "In your Command phase, select one other ^^**Chaos Knights Character**^^ model within 9” of the bearer. If the bearer has one or more Aura abilities that affect friendly **^^War Dog**^^ units, until the start of your next Command phase, the selected **^^Chaos Knights Character**^^ model is affected by those Aura abilities as well.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -15828,6 +16158,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "helhunt-lance__aspect-of-the-beast",
         "name": "Aspect of the Beast",
         "detachmentId": "helhunt-lance",
+        "points": 30,
         "description": "At the start of your Command phase, select one Dread ability to be active for the bearer until the start of your next Command phase, in addition to the Dread abilities active for your army.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18272,6 +18603,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "renegade-raiders__despot-s-claim",
         "name": "Despot's Claim",
         "detachmentId": "renegade-raiders",
+        "points": 15,
         "description": "At the start of your Command phase, if the bearer is on the battlefield, roll one D6, adding one to the result if the bearer is wholly within 12\" of your opponent's deployment zone; on a 5+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18280,6 +18612,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "renegade-raiders__dread-reaver",
         "name": "Dread Reaver",
         "detachmentId": "renegade-raiders",
+        "points": 15,
         "description": "Each time the bearer makes a melee attack, if the bearer is wholly within 12\" of your opponent's deployment zone, you can re-roll the Hit roll and you can re-roll the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18288,6 +18621,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "renegade-raiders__mark-of-the-hound",
         "name": "Mark of the Hound",
         "detachmentId": "renegade-raiders",
+        "points": 25,
         "description": "Models in the bearer's unit have the Scouts 6\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18296,6 +18630,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "renegade-raiders__tyrant-s-lash",
         "name": "Tyrant's Lash",
         "detachmentId": "renegade-raiders",
+        "points": 20,
         "description": "You can re-roll Advance rolls made for the bearer's unit, and the bearer's unit is eligible to shoot in a turn in which it Fell Back.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18304,6 +18639,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "dread-talons__willbreaker",
         "name": "Willbreaker",
         "detachmentId": "dread-talons",
+        "points": 10,
         "description": "In the Fight phase, after the bearer has made its attacks, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18312,6 +18648,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "soulforged-warpack__forge-s-blessing",
         "name": "Forge's Blessing",
         "detachmentId": "soulforged-warpack",
+        "points": 20,
         "description": "In your Command phase, select one friendly HERETIC ASTARTES VEHICLE unit within 12\" of the bearer. Until the start of your next Command phase, that unit has the Feel No Pain 6+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18320,6 +18657,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "dread-talons__eater-of-dread",
         "name": "Eater of Dread",
         "detachmentId": "dread-talons",
+        "points": 15,
         "description": "At the start of your Command phase, if the bearer is on the battlefield, roll one D6, adding 1 to the result for each Battle-shocked enemy unit that is on the battlefield: on a 5+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18328,6 +18666,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "fellhammer-siege-host__ironbound-enmity",
         "name": "Ironbound Enmity",
         "detachmentId": "fellhammer-siege-host",
+        "points": 15,
         "description": "Each time the bearer makes an attack while within range of an objective marker, add 1 to the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18336,6 +18675,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "fellhammer-siege-host__warp-tracer",
         "name": "Warp Tracer",
         "detachmentId": "fellhammer-siege-host",
+        "points": 20,
         "description": "In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, that enemy unit cannot have the Benefit of Cover.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18344,6 +18684,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "soulforged-warpack__soul-harvester",
         "name": "Soul Harvester",
         "detachmentId": "soulforged-warpack",
+        "points": 15,
         "description": "While the bearer is on the battlefield, each time an enemy unit within 12\" of the bearer is destroyed, roll one D6; on a 5+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18352,6 +18693,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "soulforged-warpack__tempting-addendum",
         "name": "Tempting Addendum",
         "detachmentId": "soulforged-warpack",
+        "points": 25,
         "description": "Each time a HERETIC ASTARTES DAEMON VEHICLE from your army invokes its contract while within 3\" of the bearer:\n- If it suffers one or more mortal wounds as a result of that Dark Pact, add 1 to the number of mortal wounds it suffers.\n- Until the end of the phase, each time a model in that unit makes an attack, you can re-roll the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18360,6 +18702,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cabal-of-chaos__eye-of-z-desh",
         "name": "Eye of Z'Desh",
         "detachmentId": "cabal-of-chaos",
+        "points": 25,
         "description": "Models in the bearer's unit have the Scouts 6\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18368,6 +18711,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cabal-of-chaos__mind-blade",
         "name": "Mind Blade",
         "detachmentId": "cabal-of-chaos",
+        "points": 25,
         "description": "Melee weapons equipped by models in the bearer’s unit have the [LANCE] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18376,6 +18720,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cabal-of-chaos__infernal-avatar",
         "name": "Infernal Avatar",
         "detachmentId": "cabal-of-chaos",
+        "points": 20,
         "description": "Improve the Strength characteristic of melee weapons equipped by the bearer by 2, and improve the Armour Penetration characteristic of those weapons by 1.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18384,6 +18729,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "nightmare-hunt__terrorglut-parasite",
         "name": "Terrorglut Parasite",
         "detachmentId": "nightmare-hunt",
+        "points": 20,
         "description": "At the start of the Fight phase, each enemy unit within Engagement Range of the bearer must take a Battle‑shock test, subtracting 1 from the result.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18392,6 +18738,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "huron-s-marauders__eager-for-bloodshed",
         "name": "Eager for Bloodshed",
         "detachmentId": "huron-s-marauders",
+        "points": 30,
         "description": "The bearer has the Infiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18400,6 +18747,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "renegade-warband__weaponised-hatred",
         "name": "Weaponised Hatred",
         "detachmentId": "renegade-warband",
+        "points": 35,
         "description": "Once per battle round, after your Vendetta target is destroyed, if the bearer is on the battlefield, you can select one enemy unit visible to the bearer. That enemy unit becomes your Vendetta target until you select a new one.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18408,6 +18756,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "renegade-warband__eyes-of-the-hunter",
         "name": "Eyes of the Hunter",
         "detachmentId": "renegade-warband",
+        "points": 15,
         "description": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -18416,6 +18765,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "renegade-warband__empyric-symbiote",
         "name": "Empyric Symbiote",
         "detachmentId": "renegade-warband",
+        "points": 15,
         "description": "Add 1 to Advance and Charge rolls made for the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19384,6 +19734,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "flyblown-host__droning-chorus",
         "name": "Droning Chorus",
         "detachmentId": "flyblown-host",
+        "points": 15,
         "description": "Ranged weapons equipped by models in the bearer’s unit have the [ASSAULT] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19392,6 +19743,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "flyblown-host__insectile-murmuration",
         "name": "Insectile Murmuration",
         "detachmentId": "flyblown-host",
+        "points": 20,
         "description": "Each time a model in the bearer’s unit makes an attack that targets a unit that is within Contagion Range of one or more DEATH GUARD units from your army, re‑roll a Wound roll of 1.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19400,6 +19752,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "flyblown-host__rejuvenating-swarm",
         "name": "Rejuvenating Swarm",
         "detachmentId": "flyblown-host",
+        "points": 10,
         "description": "At the end of each phase, the bearer regains all of its lost wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19408,6 +19761,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "flyblown-host__plagueveil",
         "name": "Plagueveil",
         "detachmentId": "flyblown-host",
+        "points": 25,
         "description": "While the bearer’s unit is within range of one or more objective markers that you control, that unit can only be selected as the target of a ranged attack if the attacking model is within 18\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19416,6 +19770,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "shamblerot-vectorium__witherbone-pipes",
         "name": "Witherbone Pipes",
         "detachmentId": "shamblerot-vectorium",
+        "points": 25,
         "description": "While the bearer is leading a ^^**Poxwalkers**^^ unit, add 1 to the Objective Control characteristic of models in that unit, and each time that unit takes a Battle-shock or Leadership test, add 1 to that test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19424,6 +19779,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "shamblerot-vectorium__sorrowsyphon",
         "name": "Sorrowsyphon",
         "detachmentId": "shamblerot-vectorium",
+        "points": 10,
         "description": "While the bearer is leading a ^^**Poxwalkers**^^ unit, add 1 to the Damage characteristic of the bearer's Plague Wind weapon. Each time the bearer makes one or more attacks with a Plague Wind weapon, after the bearer's unit has resolved its attacks, D3 Bodyguard models from the bearer's unit are destroyed.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19432,6 +19788,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "death-lord-s-chosen__face-of-death",
         "name": "Face of Death",
         "detachmentId": "death-lord-s-chosen",
+        "points": 10,
         "description": "At the start of the Fight phase, each enemy unit within Engagement Range of the bearer's unit must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19440,6 +19797,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "death-lord-s-chosen__vile-vigour",
         "name": "Vile Vigour",
         "detachmentId": "death-lord-s-chosen",
+        "points": 15,
         "description": "While the bearer is leading a unit, add 1\" to the Movement characteristics of models in that unit and you can re-roll Advance rolls made for that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19448,6 +19806,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "death-lord-s-chosen__warprot-talisman",
         "name": "Warprot Talisman",
         "detachmentId": "death-lord-s-chosen",
+        "points": 30,
         "description": "Once per battle, at the end of your opponent's turn, if the bearer's unit is not within Engagement Range of one or more enemy units, you can remove it from the battle field and place it into Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19456,6 +19815,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "death-lord-s-chosen__helm-of-the-fly-king",
         "name": "Helm of the Fly King",
         "detachmentId": "death-lord-s-chosen",
+        "points": 20,
         "description": "While the bearer is leading a unit, models in that unit cannot be targeted by ranged attacks unless the attacking model is within 18\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19464,6 +19824,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mortarion-s-hammer__bilemaw-blight",
         "name": "Bilemaw Blight",
         "detachmentId": "mortarion-s-hammer",
+        "points": 10,
         "description": "At the start of your Shooting phase, until the end of the phase, add 12\" to the Range characteristics of the bearer's Plague Wind weapon.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19472,6 +19833,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mortarion-s-hammer__tendrilous-emissions",
         "name": "Tendrilous Emissions",
         "detachmentId": "mortarion-s-hammer",
+        "points": 30,
         "description": "While the bearer is within 3\" of one or more friendly ^^**Death Guard Vehicle**^^ units, the bearer has the Lone Operative ability, and each time one of those ^^**Vehicle**^^ units makes a ranged attack that targets an enemy unit visible to the bearer, re-roll a Wound roll of 1.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19480,6 +19842,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-contagion__final-ingredient",
         "name": "Final Ingredient",
         "detachmentId": "champions-of-contagion",
+        "points": 20,
         "description": "Once per battle, after the bearer's unit has fought, if one or more ^^**Character**^^ models were destroyed by those attacks, select one Plague. Until the end of the battle, if an enemy unit is Afflicted, that unit has the effect of the selected Plague in addition to any other.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19488,6 +19851,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-contagion__visions-of-virulence",
         "name": "Visions of Virulence",
         "detachmentId": "champions-of-contagion",
+        "points": 15,
         "description": "While an enemy unit is enfeebled by the bearer's Pestilent Fallout ability, that unit is also Afflicted.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19496,6 +19860,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-contagion__needle-of-nurgle",
         "name": "Needle of Nurgle",
         "detachmentId": "champions-of-contagion",
+        "points": 25,
         "description": "Each time the bearer uses its Tainted Narthecium ability, you can return up to D3 destroyed models to the bearer's unit (instead of 1).",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19504,6 +19869,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "champions-of-contagion__cornucophagus",
         "name": "Cornucophagus",
         "detachmentId": "champions-of-contagion",
+        "points": 35,
         "description": "In the Declare Battle Formations step, select one Plague. Until the end of the battle, while an enemy is within Contagion Range of the bearer, that enemy unit has the effect of that Plague in addition to any other.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19512,6 +19878,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tallyband-summoners__beckoning-blight",
         "name": "Beckoning Blight",
         "detachmentId": "tallyband-summoners",
+        "points": 20,
         "description": "Each time a ^^**Plague Legions^^** unit from your army is set up on the battle field using the Deep Strike ability, if it is set up wholly within 12\" of the bearer, it can be set up anywhere that is more than 6\" horizontally away from any enemy models, instead of more than 9\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19520,6 +19887,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tallyband-summoners__fell-harvester",
         "name": "Fell Harvester",
         "detachmentId": "tallyband-summoners",
+        "points": 10,
         "description": "Add 2 to the Attacks characteristic of the bearer's melee weapons.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19528,6 +19896,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tallyband-summoners__entropic-knell",
         "name": "Entropic Knell",
         "detachmentId": "tallyband-summoners",
+        "points": 15,
         "description": "In the Battle-shock step of your opponent's Command phase, each enemy unit within 6\" of the bearer that is below its Starting Strength must take a Battle-shock test, subtracting 1 from that test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -19536,6 +19905,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tallyband-summoners__tome-of-bounteous-blessings",
         "name": "Tome of Bounteous Blessings",
         "detachmentId": "tallyband-summoners",
+        "points": 20,
         "description": "Each time a ^^**Plague Legions^^** unit within 12\" of the bearer takes a Battle-shock test, add 1 to that test and, if that test is passed, one model in that unit regains up to D3 lost wounds (if that unit is a ^^**Battleline^^** unit and that test is passed, up to D3 destroyed models can be returned to that unit instead).",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20666,6 +21036,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grand-coven__lord-of-forbidden-lore",
         "name": "Lord of Forbidden Lore",
         "detachmentId": "grand-coven",
+        "points": 20,
         "description": "Each time the bearer manifests a Ritual, while resolving the Ritual, add 6\" to its range.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20674,6 +21045,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grand-coven__umbralefic-crystal",
         "name": "Umbralefic Crystal",
         "detachmentId": "grand-coven",
+        "points": 20,
         "description": "Once per battle, in your Command phase, if the bearer's unit is not within Engagement Range of one or more enemy units, you can remove that unit from the battlefield and place it into Strategic Reserves. In the Reinforcements step of your next Movement phase, set that unit back up anywhere on the battlefield that is more than 9\" horizontally away from all enemy units.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20682,6 +21054,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grand-coven__eldritch-vortex-of-e-taph",
         "name": "Eldritch Vortex of E'taph",
         "detachmentId": "grand-coven",
+        "points": 35,
         "description": "Add 1 to the Strength and Damage characteristics of Psychic weapons equipped by the bearer.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20690,6 +21063,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grand-coven__incandeum",
         "name": "Incandeum",
         "detachmentId": "grand-coven",
+        "points": 15,
         "description": "Once per battle, when selecting a Ritual for the bearer to attempt, you can select Doombolt, even if a model from your army has already attempted to manifest that Ritual this phase.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20698,6 +21072,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hexwarp-thrallband__arcane-might",
         "name": "Arcane Might",
         "detachmentId": "hexwarp-thrallband",
+        "points": 20,
         "description": "Add 1 to the Strength characteristic of Psychic weapons equipped by models in the bearer’s unit. While the bearer’s unit is wholly within your army’s Flow of Magic, add 2 to the Strength characteristic of Psychic weapons equipped by models in that unit instead.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20706,6 +21081,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hexwarp-thrallband__empowered-manifestation",
         "name": "Empowered Manifestation",
         "detachmentId": "hexwarp-thrallband",
+        "points": 20,
         "description": "While the bearer’s unit is wholly within your army’s Flow of Magic, you can add 6\" to the range of Psychic abilities the bearer has that specify a range (including Rituals) and each time a model in the bearer’s unit takes a Hazardous test for a Psychic weapon, you can re‑roll the result.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20714,6 +21090,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hexwarp-thrallband__empyric-onslaught",
         "name": "Empyric Onslaught",
         "detachmentId": "hexwarp-thrallband",
+        "points": 25,
         "description": "While the bearer’s unit is wholly within your army’s Flow of Magic, add 3 to the Attacks characteristic of ranged Psychic weapons equipped by the bearer.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20722,6 +21099,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hexwarp-thrallband__noctilith-mantle",
         "name": "Noctilith Mantle",
         "detachmentId": "hexwarp-thrallband",
+        "points": 15,
         "description": "While the bearer’s unit is on the battlefield, it is wholly within your army’s Flow of Magic. Models in that unit cannot be selected to use any Rituals.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20730,6 +21108,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "changehost-of-deceit__nethershriek-mind-eater",
         "name": "Nethershriek Mind-eater",
         "detachmentId": "changehost-of-deceit",
+        "points": 10,
         "description": "At the start of your Shooting phase, select one enemy unit within 12\" of and visible to the bearer. That unit must take a Battle-shock test; if that test is failed, that unit suffers 3 mortal wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20738,6 +21117,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "changehost-of-deceit__diabolic-servant",
         "name": "Diabolic Servant",
         "detachmentId": "changehost-of-deceit",
+        "points": 20,
         "description": "While the bearer is within 6\" of one or more friendly ^^**Scintillating Legion^^** units, each time the bearer Channels the Warp, add 1 to the Psychic test result.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20746,6 +21126,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "changehost-of-deceit__duplicitous-malediction",
         "name": "Duplicitous Malediction",
         "detachmentId": "changehost-of-deceit",
+        "points": 15,
         "description": "After both players have deployed their armies, select up to three ^^**Thousand Sons^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserve if you wish, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20754,6 +21135,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "changehost-of-deceit__tome-of-true-names",
         "name": "Tome of True Names",
         "detachmentId": "changehost-of-deceit",
+        "points": 20,
         "description": "Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer has a 2+ invulnerable save.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20762,6 +21144,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpmeld-pact__warpmeld-dagger",
         "name": "Warpmeld Dagger",
         "detachmentId": "warpmeld-pact",
+        "points": 10,
         "description": "Each time the bearer attempts a Ritual, just before determining the Psychic test result, the bearer can use this Enhancement. If it does, the bearer suffers D3 mortal wounds; if it is not destroyed as a result, add 1 to that Psychic test result for each of those mortal wounds suffered.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20770,6 +21153,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpmeld-pact__diamond-of-distortion",
         "name": "Diamond of Distortion",
         "detachmentId": "warpmeld-pact",
+        "points": 20,
         "description": "While the bearer is leading a unit, each time an attack targets that unit, subtract 1 from the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20778,6 +21162,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpmeld-pact__bray-lord",
         "name": "Bray Lord",
         "detachmentId": "warpmeld-pact",
+        "points": 15,
         "description": "The bearer has the Scouts 6\" ability. During the Declare Battle Formations step, the bearer can be attached to a ^^**Tzaangors^^** unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20786,6 +21171,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpmeld-pact__flowing-flesh",
         "name": "Flowing Flesh",
         "detachmentId": "warpmeld-pact",
+        "points": 10,
         "description": "The bearer has the Feel No Pain 4+ ability and a Wounds characteristic of 5.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20794,6 +21180,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "rubricae-phalanx__risen-rubricae",
         "name": "Risen Rubricae",
         "detachmentId": "rubricae-phalanx",
+        "points": 30,
         "description": "At the start of the Declare Battle Formations step, select either two ^^**Rubricae Battleline^^** units from your army or one other ^^**Rubricae^^** unit from your army; models in the selected units have the Infiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20802,6 +21189,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "rubricae-phalanx__arcane-thralls-aura",
         "name": "Arcane Thralls (Aura)",
         "detachmentId": "rubricae-phalanx",
+        "points": 5,
         "description": "While a friendly ^^**Rubricae^^** unit is within 9\" of the bearer, you can re-roll Battle-shock tests taken for that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20810,6 +21198,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "rubricae-phalanx__lord-of-the-rubricae",
         "name": "Lord of the Rubricae",
         "detachmentId": "rubricae-phalanx",
+        "points": 15,
         "description": "While the bearer is leading a unit, each time a ^^**Rubricae^^** model in that unit makes an attack, add 1 to the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20818,6 +21207,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "rubricae-phalanx__stave-abominus",
         "name": "Stave Abominus",
         "detachmentId": "rubricae-phalanx",
+        "points": 20,
         "description": "The bearer's melee weapons have the [Sustained Hits D3] and [Devastating Wounds] abilities.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20826,6 +21216,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpforged-cabal__warp-syphon",
         "name": "Warp Syphon",
         "detachmentId": "warpforged-cabal",
+        "points": 5,
         "description": "While the bearer is within 6\" of one or more friendly ^^**Thousand Sons Vehicle^^** units, each time the bearer Channels the Warp, after you roll that additional D6 but before checking for doubles or triples, the bearer can use this Enhancement. If it does, select one of those ^^**Vehicle^^** units; that ^^**Vehicle^^** unit suffers 1 mortal wound and you can re-roll that additional D6.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20834,6 +21225,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpforged-cabal__perplexing-cloak",
         "name": "Perplexing Cloak",
         "detachmentId": "warpforged-cabal",
+        "points": 20,
         "description": "While the bearer is within 3\" of one or more friendly ^^**Thousand Sons Vehicle^^** units, the bearer has the Lone Operative ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20842,6 +21234,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpforged-cabal__biomechanical-mutation",
         "name": "Biomechanical Mutation",
         "detachmentId": "warpforged-cabal",
+        "points": 15,
         "description": "In your Command phase, you can select one friendly ^^**Thousand Sons Vehicle^^** model within 6\" of this model. That model regains up to D3 lost wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -20850,6 +21243,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warpforged-cabal__warp-cursed-runemaster",
         "name": "Warp-cursed Runemaster",
         "detachmentId": "warpforged-cabal",
+        "points": 10,
         "description": "While the bearer is within 6\" of one or more friendly ^^**Thousand Sons Vehicle^^** units, each time the bearer manifests a Ritual, while resolving that Ritual, add 6\" to its range.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21789,6 +22183,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "berzerker-warband__berzerker-glaive",
         "name": "Berzerker Glaive",
         "detachmentId": "berzerker-warband",
+        "points": 35,
         "description": "Add 1 to the Attacks and Damage characteristics of melee weapons (excluding Extra Attacks weapons) equipped by the bearer.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21797,6 +22192,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "berzerker-warband__battle-lust",
         "name": "Battle-lust",
         "detachmentId": "berzerker-warband",
+        "points": 10,
         "description": "You can re-roll Charge rolls made for the bearer's unit. In addition, while the Unbridled Bloodlust Blessing of Khorne is active for your army, add 1 to Charge rolls made for the bearer's unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21805,6 +22201,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "berzerker-warband__helm-of-brazen-ire",
         "name": "Helm of Brazen Ire",
         "detachmentId": "berzerker-warband",
+        "points": 30,
         "description": "Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21813,6 +22210,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "berzerker-warband__favoured-of-khorne",
         "name": "Favoured of Khorne",
         "detachmentId": "berzerker-warband",
+        "points": 15,
         "description": "Each time you make a Blessings of Khorne roll, if the bearer is on the battlefield, you can re-roll up to 2 of the D6 rolled.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21821,6 +22219,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vessels-of-wrath__archslaughterer",
         "name": "Archslaughterer",
         "detachmentId": "vessels-of-wrath",
+        "points": 25,
         "description": "Improve the Armour Penetration characteristic of melee weapons equipped by the bearer by 1. While the bearer is a **^^Vessel Of Wrath^^**, improve the Damage characteristic of those weapons by 1 as well.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21829,6 +22228,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vessels-of-wrath__vox-diabolus",
         "name": "Vox-Diabolus",
         "detachmentId": "vessels-of-wrath",
+        "points": 20,
         "description": "Each time the bearer’s unit destroys an enemy unit with a melee attack, roll one D6, adding 1 to the result if the bearer is a VESSEL OF WRATH: on a 4+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21837,6 +22237,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vessels-of-wrath__avenger-s-crown",
         "name": "Avenger's Crown",
         "detachmentId": "vessels-of-wrath",
+        "points": 15,
         "description": "If the bearer is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 2+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21845,6 +22246,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vessels-of-wrath__gateways-to-glory",
         "name": "Gateways to Glory",
         "detachmentId": "vessels-of-wrath",
+        "points": 10,
         "description": "Each time the bearer makes a Normal, Advance or Charge move, it can move horizontally through models and terrain features. When doing so, it can move within Engagement Range of such models but cannot end a Normal or Advance move within Engagement Range of them.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21853,6 +22255,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cult-of-blood__brazen-form",
         "name": "Brazen Form",
         "detachmentId": "cult-of-blood",
+        "points": 25,
         "description": "Add 1 to the bearer's Toughness characteristic and the bearer has the Feel No Pain 5+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21861,6 +22264,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cult-of-blood__butcher-lord",
         "name": "Butcher Lord",
         "detachmentId": "cult-of-blood",
+        "points": 10,
         "description": "During the Declare Battle Formations step, the bearer can be attached to a ^^**Jakhals^^** or ^^**Goremongers^^** unit. If attached to a ^^**Goremongers^^** unit, the bearer has the Infiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21869,6 +22273,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cult-of-blood__chosen-of-the-blood-god",
         "name": "Chosen of the Blood God",
         "detachmentId": "cult-of-blood",
+        "points": 15,
         "description": "Add 3\" to the range of the bearer's Aura abilities.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21877,6 +22282,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cult-of-blood__strategic-slaughter",
         "name": "Strategic Slaughter",
         "detachmentId": "cult-of-blood",
+        "points": 20,
         "description": "After both players have deployed their armies, select up to 3 ^^**Jakhals^^** and/or ^^**Goremongers^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21885,6 +22291,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "khorne-daemonkin__disciple-of-khorne",
         "name": "Disciple of Khorne",
         "detachmentId": "khorne-daemonkin",
+        "points": 15,
         "description": "During the Declare Battle Formations step, the bearer can be attached to a ^^**Bloodcrushers^^** or ^^**Flesh Hounds^^** unit. While leading one of these units, the bearer has the Deep Strike ability, and it has the ^^**Blood Legions^^** Faction keyword instead of the ^^**World Eaters^^** Faction keyword.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21893,6 +22300,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "khorne-daemonkin__blood-forged-armour",
         "name": "Blood-forged Armour",
         "detachmentId": "khorne-daemonkin",
+        "points": 20,
         "description": "The bearer has a Save characteristic of 2+. If the bearer is destroyed, you gain 1 Blood Tithe point.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21901,6 +22309,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "khorne-daemonkin__icon-of-war",
         "name": "Icon of War",
         "detachmentId": "khorne-daemonkin",
+        "points": 25,
         "description": "While a friendly ^^**Blood Legions^^** unit is within 6\" of the bearer, that unit has the Blessings of Khorne ability. If the Might of Khorne ability is active for your army, then while a friendly ^^**Blood Legions^^** unit is within 6\" of the bearer, you can re-roll Battle-shock tests taken for that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21909,6 +22318,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "khorne-daemonkin__blade-of-endless-bloodshed",
         "name": "Blade of Endless Bloodshed",
         "detachmentId": "khorne-daemonkin",
+        "points": 30,
         "description": "Add 1 to the Attacks, Strength and Damage characteristics of the bearer's melee weapons. Each time the bearer's unit destroys an enemy unit with a melee attack, do not roll to gain a Blood Tithe point, you automatically gain 1 Blood Tithe point instead.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21917,6 +22327,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "possessed-slaughterband__frenzied-focus",
         "name": "Frenzied Focus",
         "detachmentId": "possessed-slaughterband",
+        "points": 20,
         "description": "Each time a model in the bearer's unit makes an attack, a Critical Hit is scored on an unmodified Hit roll of 5+, instead of only a 6.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21925,6 +22336,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "possessed-slaughterband__killing-clarity",
         "name": "Killing Clarity",
         "detachmentId": "possessed-slaughterband",
+        "points": 15,
         "description": "Each time the bearer's unit destroys an enemy unit, roll one D6: on a 4+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21933,6 +22345,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "possessed-slaughterband__violent-demise",
         "name": "Violent Demise",
         "detachmentId": "possessed-slaughterband",
+        "points": 10,
         "description": "The bearer's Deadly Demise ability inflicts mortal wounds on a D6 roll of 2+ instead of on a 6. In addition, the bearer has the Deadly Demise D3+1 ability, instead of the Deadly Demise D3 ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21941,6 +22354,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "possessed-slaughterband__malicious-vigour",
         "name": "Malicious Vigour",
         "detachmentId": "possessed-slaughterband",
+        "points": 30,
         "description": "Each time the bearer's unit makes a Brazen Fury move, it is treated as having rolled a 6 for the distance the unit can be moved.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21949,6 +22363,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "goretrack-onslaught__aggressive-deployment",
         "name": "Aggressive Deployment",
         "detachmentId": "goretrack-onslaught",
+        "points": 20,
         "description": "In the Declare Battle Formations step, if the bearer starts the battle embarked within a ^^**Dedicated Transport^^**, that ^^**Dedicated Transport^^** has the Scouts 9\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21957,6 +22372,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "goretrack-onslaught__unleash-hell",
         "name": "Unleash Hell",
         "detachmentId": "goretrack-onslaught",
+        "points": 10,
         "description": "At the start of your Shooting phase, you can select one ^^**Vehicle^^** model within 6\" of the bearer or, if the bearer is embarked within a ^^**Transport^^**, you can select that ^^**Transport^^** model. Until the end of the phase, after the selected model has shot, select one enemy unit hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21965,6 +22381,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "goretrack-onslaught__infernal-infusion",
         "name": "Infernal Infusion",
         "detachmentId": "goretrack-onslaught",
+        "points": 25,
         "description": "Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, the bearer's unit has the Fights First ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -21973,6 +22390,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "goretrack-onslaught__murderous-onslaught",
         "name": "Murderous Onslaught",
         "detachmentId": "goretrack-onslaught",
+        "points": 5,
         "description": "If the bearer's unit disembarked from a ^^**Transport^^** this turn, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer's unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -24517,6 +24935,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-warhost__guiding-presence",
         "name": "Guiding Presence",
         "detachmentId": "armoured-warhost",
+        "points": 25,
         "description": "Aeldari Psyker model only. At the start of your Shooting phase, select one friendly Aeldari Vehicle model within 9\" of the bearer. Until the end of the phase, each time that model makes an attack, add 1 to the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24527,6 +24946,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-warhost__harmonisation-matrix",
         "name": "Harmonisation Matrix",
         "detachmentId": "armoured-warhost",
+        "points": 30,
         "description": "Aeldari model only. In your Command phase, if the bearer (or any Transport it is embarked within) is within range of an objective marker you control, roll one D6: on a 3+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24537,6 +24957,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-warhost__spirit-stone-of-raelyth",
         "name": "Spirit Stone of Raelyth",
         "detachmentId": "armoured-warhost",
+        "points": 20,
         "description": "Aeldari Psyker model only. While the bearer is within 3\" of one or more friendly Aeldari Vehicle units, the bearer has the Lone Operative ability. In your Command phase, you can select one friendly Aeldari Vehicle model within 3\" of the bearer. That model regains up to D3 lost wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24547,6 +24968,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-warhost__guileful-strategist",
         "name": "Guileful Strategist",
         "detachmentId": "armoured-warhost",
+        "points": 15,
         "description": "Aeldari model only. If your army includes the bearer, after both players have deployed their armies, select up to three Aeldari Vehicle units from your army and redeploy them. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24557,6 +24979,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "aspect-host__aspect-of-murder",
         "name": "Aspect of Murder",
         "detachmentId": "aspect-host",
+        "points": 25,
         "description": "**^^Autarch^^** or **^^Autarch Wayleaper^^** model only. Add 1 to the Damage characteristics of melee weapons equipped by the bearer, and those weapons have the **[PRECISION]** ability.",
         "allowedKeywords": [
           "Autarch",
@@ -24568,6 +24991,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "aspect-host__mantle-of-wisdom",
         "name": "Mantle of Wisdom",
         "detachmentId": "aspect-host",
+        "points": 30,
         "description": "^^**Autarch^^** or ^^**Autarch Wayleaper^^** model only. While the bearer is leading an ^^**Aspect Warriors^^** unit, each time that unit is selected to shoot or fight, until the end of the phase, models in that unit gain both of the abilities from the Path of the Warrior Detachment rule.",
         "allowedKeywords": [
           "Autarch",
@@ -24579,6 +25003,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "aspect-host__shimmerstone",
         "name": "Shimmerstone",
         "detachmentId": "aspect-host",
+        "points": 15,
         "description": "Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, each time a ranged attack targets that unit, subtract 1 from the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24590,6 +25015,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "aspect-host__strategic-savant",
         "name": "Strategic Savant",
         "detachmentId": "aspect-host",
+        "points": 15,
         "description": "Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, add 1 to the Objective Control characteristic of models in that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24601,6 +25027,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "devoted-of-ynnead__gaze-of-ynnead",
         "name": "Gaze of Ynnead",
         "detachmentId": "devoted-of-ynnead",
+        "points": 15,
         "description": "Farseer model only. The bearer's Eldritch Storm weapon has the [Devastating Wounds] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24611,6 +25038,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "devoted-of-ynnead__storm-of-whispers",
         "name": "Storm of Whispers",
         "detachmentId": "devoted-of-ynnead",
+        "points": 10,
         "description": "Warlock model only. In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24621,6 +25049,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "devoted-of-ynnead__borrowed-vigour",
         "name": "Borrowed Vigour",
         "detachmentId": "devoted-of-ynnead",
+        "points": 10,
         "description": "**^^Archon^^** model only. Add 2 to the Attacks characteristic of the bearer's melee weapons.",
         "allowedKeywords": [
           "Archon"
@@ -24631,6 +25060,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "devoted-of-ynnead__morbid-might",
         "name": "Morbid Might",
         "detachmentId": "devoted-of-ynnead",
+        "points": 15,
         "description": "Succubus model only. Each time the bearer makes a melee attack, you can re-roll the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24641,6 +25071,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ghosts-of-the-webway__cegorach-s-coil",
         "name": "Cegorach's Coil",
         "detachmentId": "ghosts-of-the-webway",
+        "points": 25,
         "description": "Troupe Master model only. Each time the bearer's unit ends a Charge move, select one enemy unit within Engagement Range of the bearer's unit, then roll one D6 for each model in the bearer's unit that is within Engagment Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24651,6 +25082,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ghosts-of-the-webway__mask-of-secrets",
         "name": "Mask of Secrets",
         "detachmentId": "ghosts-of-the-webway",
+        "points": 15,
         "description": "Harlequins model only. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer's unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24661,6 +25093,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ghosts-of-the-webway__murder-s-jest",
         "name": "Murder's Jest",
         "detachmentId": "ghosts-of-the-webway",
+        "points": 20,
         "description": "Death Jester model only. Each time the bearer makes an attack that targets a unit that is below Half-strength, each successful Hit scores a Critical Hit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24671,6 +25104,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ghosts-of-the-webway__mistweave",
         "name": "Mistweave",
         "detachmentId": "ghosts-of-the-webway",
+        "points": 15,
         "description": "Shadowseer model only. While the bearer is leading a unit, models in that unit have the Infiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24681,6 +25115,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "guardian-battlehost__craftworld-s-champion",
         "name": "Craftworld's Champion",
         "detachmentId": "guardian-battlehost",
+        "points": 25,
         "description": "Asuryani model only. The bearer has an Objective Control characteristic of 5.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24691,6 +25126,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "guardian-battlehost__ethereal-pathway",
         "name": "Ethereal Pathway",
         "detachmentId": "guardian-battlehost",
+        "points": 30,
         "description": "Asuryani model only. In the Deploy Armies step, select up to two Guardians units from your army. Models in the selected units have the Infiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24701,6 +25137,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "guardian-battlehost__protector-of-the-paths",
         "name": "Protector of the Paths",
         "detachmentId": "guardian-battlehost",
+        "points": 20,
         "description": "Asuryani model only. While the bearer is leading a Dire Avengers or Guardians unit, once per battle round, you can target the bearer's unit with the Fire Overwatch Stratagem for 0CP, and while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or unmodified Hit rolls of 4+ instead if the bearer's unit is within range of an objective marker you control.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24711,6 +25148,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "guardian-battlehost__breath-of-vaul",
         "name": "Breath of Vaul",
         "detachmentId": "guardian-battlehost",
+        "points": 10,
         "description": "**^^Asuryani^^** model only. While the bearer is leading a **^^Storm Guardians^^** unit, each time you roll to determine the number of attacks made with a flamer equipped by a model in that unit, you can re-roll the result, and each time you make a Damage roll for a model equipped with a Guardian fusion gun in that unit, you can re-roll the result.",
         "allowedKeywords": [
           "Asuryani"
@@ -24721,6 +25159,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "realspace-raiders__crucible-of-malediction",
         "name": "Crucible of Malediction",
         "detachmentId": "realspace-raiders",
+        "points": 20,
         "description": "**^^Haemonculus^^** model only. Once per battle, in your Shooting phase, the bearer can use this Enhancement. If it does, you can spend 1 Pain token. Then, each enemy unit within 12\" of the bearer must take a Battle-shock test, subtracting 1 from that test if you spent 1 Pain token. Each time a **^^Psyker^^** unit fails that test, it suffers 3 mortal wounds.",
         "allowedKeywords": [
           "Haemonculus"
@@ -24731,6 +25170,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "realspace-raiders__eye-of-spite",
         "name": "Eye of Spite",
         "detachmentId": "realspace-raiders",
+        "points": 15,
         "description": "**^^Succubus^^** model only. Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 1. Each time the bearer's unit is selected to fight, you can spend 1 Pain token; if you do, until the end of the phase, improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
         "allowedKeywords": [
           "Succubus"
@@ -24741,6 +25181,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "realspace-raiders__labyrinthine-cunning",
         "name": "Labyrinthine Cunning",
         "detachmentId": "realspace-raiders",
+        "points": 25,
         "description": "**^^Archon^^** model only. At the start of your Command phase, if the bearer is on the battlefield, you can do one of the following:\nSpend 1 Pain token and gain 1CP.\nRoll one D6: on a 4+, you gain 1CP.",
         "allowedKeywords": [
           "Archon"
@@ -24751,6 +25192,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "realspace-raiders__dark-vitality",
         "name": "Dark Vitality",
         "detachmentId": "realspace-raiders",
+        "points": 25,
         "description": "**^^Drukhari^^** model only. The bearer's unit is always Empowered - you do not need to spend any Pain tokens to activate that unit's Pain abilities",
         "allowedKeywords": [
           "Drukhari"
@@ -24761,6 +25203,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reaper-s-wager__archraider",
         "name": "Archraider",
         "detachmentId": "reaper-s-wager",
+        "points": 15,
         "description": "^^**Harlequins**^^ or ^^**Drukhari**^^ model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a ^^**Dedicated Transport**^^, that ^^**Dedicated Transport**^^ has the Scouts 9\" ability.",
         "allowedKeywords": [
           "Harlequins",
@@ -24772,6 +25215,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reaper-s-wager__webway-walker",
         "name": "Webway walker",
         "detachmentId": "reaper-s-wager",
+        "points": 15,
         "description": "^^**Harlequins**^^ or ^^**Drukhari**^^ model only. Models in the bearer’s unit have the Deep Strike ability. Each time the bearer’s unit is set up on the battlefield using the Deep Strike ability, if that unit is currently losing the wager, until the end of the turn, you can re‑roll Charge rolls made for that unit.",
         "allowedKeywords": [
           "Harlequins",
@@ -24783,6 +25227,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reaper-s-wager__reaper-s-cowl",
         "name": "Reaper's Cowl",
         "detachmentId": "reaper-s-wager",
+        "points": 25,
         "description": "^^**Harlequins**^^ model only. Models in the bearer’s unit have the Stealth and Infiltrators abilities.",
         "allowedKeywords": [
           "Harlequins"
@@ -24793,6 +25238,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reaper-s-wager__conductor-of-torment",
         "name": "Conductor of Torment",
         "detachmentId": "reaper-s-wager",
+        "points": 20,
         "description": "^^**Drukhari**^^ model only. In your Command phase, you can do one of the following:\n■ If your ^^**Drukhari**^^ units are currently losing the wager, you can gain 1 Pain token. If you do, ^^**Drukhari**^^ units from your army are now winning the wager.\n■ If your ^^**Drukhari**^^ units are currently winning the wager, you can discard 1 Pain token. If you do, ^^**Harlequins**^^ units from your army are now winning the wager.",
         "allowedKeywords": [
           "Drukhari"
@@ -24803,6 +25249,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "seer-council__lucid-eye",
         "name": "Lucid Eye",
         "detachmentId": "seer-council",
+        "points": 30,
         "description": "Asuryani Psyker model only. In your Command phase, you can add 1 to or subtract 1 from the value of one Fate dice in your Fate dice pool.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24813,6 +25260,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "seer-council__runes-of-warding",
         "name": "Runes of Warding",
         "detachmentId": "seer-council",
+        "points": 25,
         "description": "Asuryani Psyker model only. Models in the bearer's unit have the Feel No Pain 4+ ability against mortal wounds, Psychic Attacks and Critical Wounds caused by attacks with the [Devastating Wounds] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24823,6 +25271,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "seer-council__stone-of-eldritch-fury",
         "name": "Stone of Eldritch Fury",
         "detachmentId": "seer-council",
+        "points": 15,
         "description": "Asuryani Psyker model only. Add 12\" to the Range characteristic of ranged Psychic weapons equipped by the bearer.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24833,6 +25282,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "seer-council__torc-of-morai-heg",
         "name": "Torc of Morai-Heg",
         "detachmentId": "seer-council",
+        "points": 20,
         "description": "Asuryani Psyker model only. Once per turn, when your opponent targets a unit from their army within 12\" of the bearer with a Stratagem, the bearer can use this Enhancement. If it does, increase the CP cost of that usage of that Stratagem by 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24843,6 +25293,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "skysplinter-assault__phantasmal-smoke",
         "name": "Phantasmal Smoke",
         "detachmentId": "skysplinter-assault",
+        "points": 15,
         "description": "^^**Drukhari**^^ model only. While the bearer’s unit is wholly within 6\" of a friendly ^^**Drukhari Transport**^^:\nModels in the bearer’s unit have the  Stealth ability\nEach time a ranged attack targets the bearer's unit, models in that unit have the Benefit of Cover against that attack.",
         "allowedKeywords": [
           "Drukhari"
@@ -24853,6 +25304,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "skysplinter-assault__sadistic-fulcrum",
         "name": "Sadistic Fulcrum",
         "detachmentId": "skysplinter-assault",
+        "points": 15,
         "description": "^^**Drukhari**^^ model only. Each time you spend 1 Pain token to Empower the bearer’s unit in the Shooting phase, select one friendly ^^**Drukhari Transport**^^ within 6\" of the bearer’s unit; until the end of the phase, each time that ^^**Transport**^^ makes an attack, you can re-roll the Hit roll.",
         "allowedKeywords": [
           "Drukhari"
@@ -24863,6 +25315,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "skysplinter-assault__spiteful-raider",
         "name": "Spiteful Raider",
         "detachmentId": "skysplinter-assault",
+        "points": 10,
         "description": "^^**Drukhari**^^ model only. Each time the bearer’s unit destroys an enemy unit in the Fight phase, if that enemy unit was within range of one or more objective markers when the bearer’s unit was selected to fight, you gain 1 additional Pain token.",
         "allowedKeywords": [
           "Drukhari"
@@ -24873,6 +25326,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "skysplinter-assault__nightmare-shroud",
         "name": "Nightmare Shroud",
         "detachmentId": "skysplinter-assault",
+        "points": 20,
         "description": "^^**Drukhari**^^ model only. Each time the bearer’s unit disembarks from a ^^**Transport**^^, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
         "allowedKeywords": [
           "Drukhari"
@@ -24883,6 +25337,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spirit-conclave__light-of-clarity",
         "name": "Light of Clarity",
         "detachmentId": "spirit-conclave",
+        "points": 30,
         "description": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer. Until the start of your next Command phase, add 1 to the Objective Control characteristic of Infanty models in that unit and add 3 to the Objective Control characteristic of Monster models in that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24893,6 +25348,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spirit-conclave__stave-of-kurnous",
         "name": "Stave of Kurnous",
         "detachmentId": "spirit-conclave",
+        "points": 15,
         "description": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer (excluding Titanic units). Until the start of your next Command phase, each time a model in that unit makes an attack, on a Critical Wound, that attack has the [Precision] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24903,6 +25359,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spirit-conclave__rune-of-mists",
         "name": "Rune of Mists",
         "detachmentId": "spirit-conclave",
+        "points": 10,
         "description": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer. Until the start of your next Command phase, each time a ranged attack targets that unit, unless the attacking model is within 18, models in that unit have the Benefit of Cover against that attack.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24913,6 +25370,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spirit-conclave__higher-duty",
         "name": "Higher Duty",
         "detachmentId": "spirit-conclave",
+        "points": 25,
         "description": "Spiritseer model only. Oncer per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of the bearer, the bearer's unit can make a normal move of up to 6\".",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24923,6 +25381,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warhost__psychic-destroyer",
         "name": "Psychic Destroyer",
         "detachmentId": "warhost",
+        "points": 30,
         "description": "^^Asuryani^^ ^^Psyker^^ model only. Add 1 to the Damage characteristic of ranged Psychic weapons equipped by the bearer.",
         "allowedKeywords": [
           "Asuryani",
@@ -24934,6 +25393,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warhost__phoenix-gem",
         "name": "Phoenix Gem",
         "detachmentId": "warhost",
+        "points": 35,
         "description": "^^Asuryani^^ model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one of more enemy units, with its full wounds remaining.",
         "allowedKeywords": [
           "Asuryani"
@@ -24944,6 +25404,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warhost__gift-of-foresight",
         "name": "Gift of Foresight",
         "detachmentId": "warhost",
+        "points": 15,
         "description": "^^Asuryani^^ model only. Once per battle round, you can target the bearer's unit with the Command Re-roll Stratagem for 0CP.",
         "allowedKeywords": [
           "Asuryani"
@@ -24954,6 +25415,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warhost__timeless-strategist",
         "name": "Timeless Strategist",
         "detachmentId": "warhost",
+        "points": 15,
         "description": "^^Asuryani^^ model only. At the start of the battle round, if the bearer is on the battlefield (or any Transport it is embarked within is on the battlefield), you receive 1 additional Battle Focus token.",
         "allowedKeywords": [
           "Asuryani"
@@ -24964,6 +25426,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "windrider-host__firstdrawn-blade",
         "name": "Firstdrawn Blade",
         "detachmentId": "windrider-host",
+        "points": 10,
         "description": "Asuryani Mounted model only. Models in the bearer's unit have the Scouts 9\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24974,6 +25437,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "windrider-host__mirage-field",
         "name": "Mirage Field",
         "detachmentId": "windrider-host",
+        "points": 25,
         "description": "Asuryani Mounted model only. Each time an attack targets the bearer's unit, subtract 1 from the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24984,6 +25448,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "windrider-host__seersight-strike",
         "name": "Seersight Strike",
         "detachmentId": "windrider-host",
+        "points": 15,
         "description": "Asuryani Mounted Psyker model only. Psychic weapons equipped by the bearer have the [Anti-Monster 2+] and [Anti-Vehicle 2+] abilities.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -24994,6 +25459,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "windrider-host__echoes-of-ulthanesh",
         "name": "Echoes of Ulthanesh",
         "detachmentId": "windrider-host",
+        "points": 20,
         "description": "Asuryani Mounted model only. In your Command phase, roll one D6, adding 1 to the result if the bearer is not within your deployment zone, and adding an additional 1 to the result if the bearer is within your opponent's deployment zone: on a 5+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -25004,6 +25470,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "covenite-coterie__master-regenesist",
         "name": "Master Regenesist",
         "detachmentId": "covenite-coterie",
+        "points": 25,
         "description": "^^**Haemonculus**^^ model only. Each time the bearer uses its Fleshcraft ability, you can return up to D3+3 destroyed Bodyguard models to the bearer's unit instead of D3+1.",
         "allowedKeywords": [
           "Haemonculus"
@@ -25014,6 +25481,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "covenite-coterie__master-nemesine",
         "name": "Master Nemesine",
         "detachmentId": "covenite-coterie",
+        "points": 5,
         "description": "^^**Haemonculus**^^ model only. The bearer's weapons have the ^^**[Anti-Beast 2+]**^^ and ^^**[Anti-Monster 4+]**^^ abilities.",
         "allowedKeywords": [
           "Haemonculus"
@@ -25024,6 +25492,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "covenite-coterie__master-artisan",
         "name": "Master Artisan",
         "detachmentId": "covenite-coterie",
+        "points": 20,
         "description": "^^**Haemonculus**^^ model only. Add 1 to the bearer's Wounds characteristic and add 1 to the Toughness characteristic of models in the bearer's unit.",
         "allowedKeywords": [
           "Haemonculus"
@@ -25034,6 +25503,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "covenite-coterie__master-repugnomancer-aura",
         "name": "Master Repugnomancer [Aura]",
         "detachmentId": "covenite-coterie",
+        "points": 15,
         "description": "^^**Haemonculus**^^ model only. Add 3\" to the range of the bearer's Fear Incarnate ability, and each time a friendly ^^**Drukhari**^^ within 9\" of the bearer fails a Battle-shock test or is destroyed, roll one D6; on a 4+, you gain 1 Pain token.",
         "allowedKeywords": [
           "Haemonculus"
@@ -25044,6 +25514,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kabalite-cartel__leechbite-plate",
         "name": "Leechbite Plate",
         "detachmentId": "kabalite-cartel",
+        "points": 5,
         "description": "^^**Archon**^^ model only. The bearer has a Save characteristic of 3+. At the start of either player's Command phase, you can spend 1 Pain token; if you do, the bearer regains all of its lost wounds.",
         "allowedKeywords": [
           "Archon"
@@ -25054,6 +25525,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kabalite-cartel__webway-awl",
         "name": "Webway Awl",
         "detachmentId": "kabalite-cartel",
+        "points": 25,
         "description": "^^**Archon**^^ model only. Models in the bearer's unit have the Deep Strike ability, and you can target the bearer's unit with the Rapid Ingress Stratagem for 0CP.",
         "allowedKeywords": [
           "Archon"
@@ -25064,6 +25536,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kabalite-cartel__informant-network",
         "name": "Informant Network",
         "detachmentId": "kabalite-cartel",
+        "points": 30,
         "description": "^^**Archon**^^ model only. At the start of the Declare Battle Formations step, select up to three ^^**Kabalite Warriors**^^ and/or ^^**Hand of the Archon**^^ units from your army; those units gain the Infiltrators ability.",
         "allowedKeywords": [
           "Archon"
@@ -25074,6 +25547,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kabalite-cartel__towering-arrogance",
         "name": "Towering Arrogance",
         "detachmentId": "kabalite-cartel",
+        "points": 20,
         "description": "^^**Archon**^^ models only. While the bearer is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1.",
         "allowedKeywords": [
           "Archon"
@@ -25084,6 +25558,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spectacle-of-spite__pharmacophex",
         "name": "Pharmacophex",
         "detachmentId": "spectacle-of-spite",
+        "points": 15,
         "description": "^^**Succubus**^^ model only. At the start of your Command phase, after selecting which Combat Drugs will be active for your army, roll one D6 and consult the Combat Drugs list. The result rolled applies to the bearer's unit until the start of your next Command phase in addition to any other Combat Drugs that are active for your army. If you randomly select one that is already active for your army, it has no additional effect.",
         "allowedKeywords": [
           "Succubus"
@@ -25094,6 +25569,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spectacle-of-spite__chronoshard",
         "name": "Chronoshard",
         "detachmentId": "spectacle-of-spite",
+        "points": 15,
         "description": "^^** Succubus**^^ model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability.",
         "allowedKeywords": [
           "Succubus"
@@ -25104,6 +25580,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spectacle-of-spite__periapt-of-torments",
         "name": "Periapt of Torments",
         "detachmentId": "spectacle-of-spite",
+        "points": 25,
         "description": "^^**Succubus**^^ model only. Enemy units cannot use the Fire Overwatch stratagem to shoot at the bearer's unit.",
         "allowedKeywords": [
           "Succubus"
@@ -25114,6 +25591,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spectacle-of-spite__morghenna-s-curse",
         "name": "Morghenna's Curse",
         "detachmentId": "spectacle-of-spite",
+        "points": 20,
         "description": "^^**Succubus**^^ model only. Improve the Armour Penetration and Damage characteristics of the bearer's melee weapons by 1.",
         "allowedKeywords": [
           "Succubus"
@@ -25124,6 +25602,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "serpent-s-brood__key-of-ghosts",
         "name": "Key of Ghosts",
         "detachmentId": "serpent-s-brood",
+        "points": 20,
         "description": "^^**Harlequins**^^ model only (excluding ^^**Solitaire**^^ models). Models in the bearer’s unit have the Scouts 6\" ability.",
         "allowedKeywords": [
           "Harlequins"
@@ -25134,6 +25613,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "serpent-s-brood__fanged-leer",
         "name": "Fanged Leer",
         "detachmentId": "serpent-s-brood",
+        "points": 10,
         "description": "^^**Death Jester**^^ model only. When using the bearer’s Cruel Amusement ability, you can select two of the abilities for its shrieker cannon to gain, instead of one.",
         "allowedKeywords": [
           "Death Jester"
@@ -25144,6 +25624,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "serpent-s-brood__shedskin-raiment",
         "name": "Shedskin Raiment",
         "detachmentId": "serpent-s-brood",
+        "points": 25,
         "description": "^^**Shadowseer**^^ model only. After both players have deployed their armies, select up to three Harlequins units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Shadowseer"
@@ -25154,6 +25635,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "serpent-s-brood__weavers-wail",
         "name": "Weavers' Wail",
         "detachmentId": "serpent-s-brood",
+        "points": 20,
         "description": "^^**Troupe Master**^^ model only. Add 3 to the Strength and add 1 to the Attacks characteristics of the bearer’s melee weapons.",
         "allowedKeywords": [
           "Troupe Master"
@@ -25164,6 +25646,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eldritch-raiders__pirate-prince",
         "name": "Pirate Prince",
         "detachmentId": "eldritch-raiders",
+        "points": 15,
         "description": "^^**Prince Yriel**^^ unit only. Each time you spend a Battle Focus token to enable this unit to perform an Agile Manoeuvre, roll one D6: on a 3+, you gain 1 Battle Focus token.",
         "allowedKeywords": [
           "Prince Yriel"
@@ -25174,6 +25657,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eldritch-raiders__alacritous-assault",
         "name": "Alacritous Assault",
         "detachmentId": "eldritch-raiders",
+        "points": 20,
         "description": "^^**Anhrathe**^^ unit only. Melee weapons equipped by models in this unit have the ^^**[LANCE]**^^ ability.",
         "allowedKeywords": [
           "Anhrathe"
@@ -25184,6 +25668,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eldritch-raiders__exotic-munitions",
         "name": "Exotic Munitions",
         "detachmentId": "eldritch-raiders",
+        "points": 15,
         "description": "^^**Anhrathe**^^ unit only. Ranged weapons equipped by models in this unit have the ^^**[ANTI‑MONSTER 5+]**^^ and ^^**[ANTI‑VEHICLE 5+]**^^ abilities.",
         "allowedKeywords": [
           "Anhrathe"
@@ -25194,6 +25679,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eldritch-raiders__adrenal-infusions",
         "name": "Adrenal Infusions",
         "detachmentId": "eldritch-raiders",
+        "points": 20,
         "description": "^^**Anhrathe Infantry**^^ unit only. This unit can perform the Fade Back Agile Manoeuvre without spending a Battle Focus token to do so. It can do so even if other units have done so in the same phase, and doing so does not prevent other units from performing the same Agile Manoeuvre in the same phase.",
         "allowedKeywords": [
           "Anhrathe Infantry"
@@ -25204,6 +25690,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "corsair-coterie__infamy-aura",
         "name": "Infamy (Aura)",
         "detachmentId": "corsair-coterie",
+        "points": 25,
         "description": "^^**Anhrathe**^^ unit only. While an enemy unit is within 3” of this unit, subtract 1 from the Objective Control characteristic of models in that unit (to a minimum of 1).",
         "allowedKeywords": [
           "Anhrathe"
@@ -25214,6 +25701,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "corsair-coterie__webway-pathstone",
         "name": "Webway Pathstone",
         "detachmentId": "corsair-coterie",
+        "points": 25,
         "description": "^^**Anhrathe**^^ unit only. Models in this unit have the Deep Strike ability. In addition, once per battle, at the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, it can use this ability. If it does, remove this unit from the battlefield and place it into Strategic Reserves.",
         "allowedKeywords": [
           "Anhrathe"
@@ -25224,6 +25712,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "corsair-coterie__archraider",
         "name": "Archraider",
         "detachmentId": "corsair-coterie",
+        "points": 35,
         "description": "^^**Anhrathe Character**^^ unit only. At the start of the battle, select one ^^**Character**^^ model in this unit. That model has the following ability: \n\n\n**Lord of Deceit (Aura):** Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12” of this model, increase the cost of that use of that Stratagem by 1CP.",
         "allowedKeywords": [
           "Anhrathe Character"
@@ -25234,6 +25723,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "corsair-coterie__voidstone",
         "name": "Voidstone",
         "detachmentId": "corsair-coterie",
+        "points": 15,
         "description": "^^**Anhrathe Infantry**^^ unit only. Models in this unit have a 5+ invulnerable save.",
         "allowedKeywords": [
           "Anhrathe Infantry"
@@ -26820,6 +27310,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-warhost__guiding-presence",
         "name": "Guiding Presence",
         "detachmentId": "armoured-warhost",
+        "points": 25,
         "description": "Aeldari Psyker model only. At the start of your Shooting phase, select one friendly Aeldari Vehicle model within 9\" of the bearer. Until the end of the phase, each time that model makes an attack, add 1 to the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26830,6 +27321,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-warhost__harmonisation-matrix",
         "name": "Harmonisation Matrix",
         "detachmentId": "armoured-warhost",
+        "points": 30,
         "description": "Aeldari model only. In your Command phase, if the bearer (or any Transport it is embarked within) is within range of an objective marker you control, roll one D6: on a 3+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26840,6 +27332,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-warhost__spirit-stone-of-raelyth",
         "name": "Spirit Stone of Raelyth",
         "detachmentId": "armoured-warhost",
+        "points": 20,
         "description": "Aeldari Psyker model only. While the bearer is within 3\" of one or more friendly Aeldari Vehicle units, the bearer has the Lone Operative ability. In your Command phase, you can select one friendly Aeldari Vehicle model within 3\" of the bearer. That model regains up to D3 lost wounds.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26850,6 +27343,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-warhost__guileful-strategist",
         "name": "Guileful Strategist",
         "detachmentId": "armoured-warhost",
+        "points": 15,
         "description": "Aeldari model only. If your army includes the bearer, after both players have deployed their armies, select up to three Aeldari Vehicle units from your army and redeploy them. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26860,6 +27354,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "aspect-host__aspect-of-murder",
         "name": "Aspect of Murder",
         "detachmentId": "aspect-host",
+        "points": 25,
         "description": "**^^Autarch^^** or **^^Autarch Wayleaper^^** model only. Add 1 to the Damage characteristics of melee weapons equipped by the bearer, and those weapons have the **[PRECISION]** ability.",
         "allowedKeywords": [
           "Autarch",
@@ -26871,6 +27366,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "aspect-host__mantle-of-wisdom",
         "name": "Mantle of Wisdom",
         "detachmentId": "aspect-host",
+        "points": 30,
         "description": "^^**Autarch^^** or ^^**Autarch Wayleaper^^** model only. While the bearer is leading an ^^**Aspect Warriors^^** unit, each time that unit is selected to shoot or fight, until the end of the phase, models in that unit gain both of the abilities from the Path of the Warrior Detachment rule.",
         "allowedKeywords": [
           "Autarch",
@@ -26882,6 +27378,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "aspect-host__shimmerstone",
         "name": "Shimmerstone",
         "detachmentId": "aspect-host",
+        "points": 15,
         "description": "Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, each time a ranged attack targets that unit, subtract 1 from the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26893,6 +27390,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "aspect-host__strategic-savant",
         "name": "Strategic Savant",
         "detachmentId": "aspect-host",
+        "points": 15,
         "description": "Autarch or Autarch Wayleaper model only. While the bearer is leading an Aspect Warriors unit, add 1 to the Objective Control characteristic of models in that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26904,6 +27402,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "devoted-of-ynnead__gaze-of-ynnead",
         "name": "Gaze of Ynnead",
         "detachmentId": "devoted-of-ynnead",
+        "points": 15,
         "description": "Farseer model only. The bearer's Eldritch Storm weapon has the [Devastating Wounds] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26914,6 +27413,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "devoted-of-ynnead__storm-of-whispers",
         "name": "Storm of Whispers",
         "detachmentId": "devoted-of-ynnead",
+        "points": 10,
         "description": "Warlock model only. In your Shooting phase, after the bearer has shot, select one enemy unit hit by one or more of those attacks. That unit must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26924,6 +27424,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "devoted-of-ynnead__borrowed-vigour",
         "name": "Borrowed Vigour",
         "detachmentId": "devoted-of-ynnead",
+        "points": 10,
         "description": "**^^Archon^^** model only. Add 2 to the Attacks characteristic of the bearer's melee weapons.",
         "allowedKeywords": [
           "Archon"
@@ -26934,6 +27435,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "devoted-of-ynnead__morbid-might",
         "name": "Morbid Might",
         "detachmentId": "devoted-of-ynnead",
+        "points": 15,
         "description": "Succubus model only. Each time the bearer makes a melee attack, you can re-roll the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26944,6 +27446,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ghosts-of-the-webway__cegorach-s-coil",
         "name": "Cegorach's Coil",
         "detachmentId": "ghosts-of-the-webway",
+        "points": 25,
         "description": "Troupe Master model only. Each time the bearer's unit ends a Charge move, select one enemy unit within Engagement Range of the bearer's unit, then roll one D6 for each model in the bearer's unit that is within Engagment Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound (to a maximum of 6 mortal wounds).",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26954,6 +27457,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ghosts-of-the-webway__mask-of-secrets",
         "name": "Mask of Secrets",
         "detachmentId": "ghosts-of-the-webway",
+        "points": 15,
         "description": "Harlequins model only. Each time an enemy unit (excluding Monsters and Vehicles) within Engagement Range of the bearer's unit Falls Back, all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 1 from each of those tests.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26964,6 +27468,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ghosts-of-the-webway__murder-s-jest",
         "name": "Murder's Jest",
         "detachmentId": "ghosts-of-the-webway",
+        "points": 20,
         "description": "Death Jester model only. Each time the bearer makes an attack that targets a unit that is below Half-strength, each successful Hit scores a Critical Hit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26974,6 +27479,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ghosts-of-the-webway__mistweave",
         "name": "Mistweave",
         "detachmentId": "ghosts-of-the-webway",
+        "points": 15,
         "description": "Shadowseer model only. While the bearer is leading a unit, models in that unit have the Infiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26984,6 +27490,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "guardian-battlehost__craftworld-s-champion",
         "name": "Craftworld's Champion",
         "detachmentId": "guardian-battlehost",
+        "points": 25,
         "description": "Asuryani model only. The bearer has an Objective Control characteristic of 5.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -26994,6 +27501,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "guardian-battlehost__ethereal-pathway",
         "name": "Ethereal Pathway",
         "detachmentId": "guardian-battlehost",
+        "points": 30,
         "description": "Asuryani model only. In the Deploy Armies step, select up to two Guardians units from your army. Models in the selected units have the Infiltrators ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27004,6 +27512,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "guardian-battlehost__protector-of-the-paths",
         "name": "Protector of the Paths",
         "detachmentId": "guardian-battlehost",
+        "points": 20,
         "description": "Asuryani model only. While the bearer is leading a Dire Avengers or Guardians unit, once per battle round, you can target the bearer's unit with the Fire Overwatch Stratagem for 0CP, and while resolving that Stratagem, hits are scored on unmodified Hit rolls of 5+, or unmodified Hit rolls of 4+ instead if the bearer's unit is within range of an objective marker you control.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27014,6 +27523,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "guardian-battlehost__breath-of-vaul",
         "name": "Breath of Vaul",
         "detachmentId": "guardian-battlehost",
+        "points": 10,
         "description": "**^^Asuryani^^** model only. While the bearer is leading a **^^Storm Guardians^^** unit, each time you roll to determine the number of attacks made with a flamer equipped by a model in that unit, you can re-roll the result, and each time you make a Damage roll for a model equipped with a Guardian fusion gun in that unit, you can re-roll the result.",
         "allowedKeywords": [
           "Asuryani"
@@ -27024,6 +27534,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "realspace-raiders__crucible-of-malediction",
         "name": "Crucible of Malediction",
         "detachmentId": "realspace-raiders",
+        "points": 20,
         "description": "**^^Haemonculus^^** model only. Once per battle, in your Shooting phase, the bearer can use this Enhancement. If it does, you can spend 1 Pain token. Then, each enemy unit within 12\" of the bearer must take a Battle-shock test, subtracting 1 from that test if you spent 1 Pain token. Each time a **^^Psyker^^** unit fails that test, it suffers 3 mortal wounds.",
         "allowedKeywords": [
           "Haemonculus"
@@ -27034,6 +27545,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "realspace-raiders__eye-of-spite",
         "name": "Eye of Spite",
         "detachmentId": "realspace-raiders",
+        "points": 15,
         "description": "**^^Succubus^^** model only. Improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 1. Each time the bearer's unit is selected to fight, you can spend 1 Pain token; if you do, until the end of the phase, improve the Attacks and Armour Penetration characteristics of the bearer’s melee weapons by 2 instead.",
         "allowedKeywords": [
           "Succubus"
@@ -27044,6 +27556,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "realspace-raiders__labyrinthine-cunning",
         "name": "Labyrinthine Cunning",
         "detachmentId": "realspace-raiders",
+        "points": 25,
         "description": "**^^Archon^^** model only. At the start of your Command phase, if the bearer is on the battlefield, you can do one of the following:\nSpend 1 Pain token and gain 1CP.\nRoll one D6: on a 4+, you gain 1CP.",
         "allowedKeywords": [
           "Archon"
@@ -27054,6 +27567,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "realspace-raiders__dark-vitality",
         "name": "Dark Vitality",
         "detachmentId": "realspace-raiders",
+        "points": 25,
         "description": "**^^Drukhari^^** model only. The bearer's unit is always Empowered - you do not need to spend any Pain tokens to activate that unit's Pain abilities",
         "allowedKeywords": [
           "Drukhari"
@@ -27064,6 +27578,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reaper-s-wager__archraider",
         "name": "Archraider",
         "detachmentId": "reaper-s-wager",
+        "points": 15,
         "description": "^^**Harlequins**^^ or ^^**Drukhari**^^ model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a ^^**Dedicated Transport**^^, that ^^**Dedicated Transport**^^ has the Scouts 9\" ability.",
         "allowedKeywords": [
           "Harlequins",
@@ -27075,6 +27590,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reaper-s-wager__webway-walker",
         "name": "Webway walker",
         "detachmentId": "reaper-s-wager",
+        "points": 15,
         "description": "^^**Harlequins**^^ or ^^**Drukhari**^^ model only. Models in the bearer’s unit have the Deep Strike ability. Each time the bearer’s unit is set up on the battlefield using the Deep Strike ability, if that unit is currently losing the wager, until the end of the turn, you can re‑roll Charge rolls made for that unit.",
         "allowedKeywords": [
           "Harlequins",
@@ -27086,6 +27602,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reaper-s-wager__reaper-s-cowl",
         "name": "Reaper's Cowl",
         "detachmentId": "reaper-s-wager",
+        "points": 25,
         "description": "^^**Harlequins**^^ model only. Models in the bearer’s unit have the Stealth and Infiltrators abilities.",
         "allowedKeywords": [
           "Harlequins"
@@ -27096,6 +27613,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "reaper-s-wager__conductor-of-torment",
         "name": "Conductor of Torment",
         "detachmentId": "reaper-s-wager",
+        "points": 20,
         "description": "^^**Drukhari**^^ model only. In your Command phase, you can do one of the following:\n■ If your ^^**Drukhari**^^ units are currently losing the wager, you can gain 1 Pain token. If you do, ^^**Drukhari**^^ units from your army are now winning the wager.\n■ If your ^^**Drukhari**^^ units are currently winning the wager, you can discard 1 Pain token. If you do, ^^**Harlequins**^^ units from your army are now winning the wager.",
         "allowedKeywords": [
           "Drukhari"
@@ -27106,6 +27624,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "seer-council__lucid-eye",
         "name": "Lucid Eye",
         "detachmentId": "seer-council",
+        "points": 30,
         "description": "Asuryani Psyker model only. In your Command phase, you can add 1 to or subtract 1 from the value of one Fate dice in your Fate dice pool.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27116,6 +27635,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "seer-council__runes-of-warding",
         "name": "Runes of Warding",
         "detachmentId": "seer-council",
+        "points": 25,
         "description": "Asuryani Psyker model only. Models in the bearer's unit have the Feel No Pain 4+ ability against mortal wounds, Psychic Attacks and Critical Wounds caused by attacks with the [Devastating Wounds] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27126,6 +27646,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "seer-council__stone-of-eldritch-fury",
         "name": "Stone of Eldritch Fury",
         "detachmentId": "seer-council",
+        "points": 15,
         "description": "Asuryani Psyker model only. Add 12\" to the Range characteristic of ranged Psychic weapons equipped by the bearer.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27136,6 +27657,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "seer-council__torc-of-morai-heg",
         "name": "Torc of Morai-Heg",
         "detachmentId": "seer-council",
+        "points": 20,
         "description": "Asuryani Psyker model only. Once per turn, when your opponent targets a unit from their army within 12\" of the bearer with a Stratagem, the bearer can use this Enhancement. If it does, increase the CP cost of that usage of that Stratagem by 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27146,6 +27668,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "skysplinter-assault__phantasmal-smoke",
         "name": "Phantasmal Smoke",
         "detachmentId": "skysplinter-assault",
+        "points": 15,
         "description": "^^**Drukhari**^^ model only. While the bearer’s unit is wholly within 6\" of a friendly ^^**Drukhari Transport**^^:\nModels in the bearer’s unit have the  Stealth ability\nEach time a ranged attack targets the bearer's unit, models in that unit have the Benefit of Cover against that attack.",
         "allowedKeywords": [
           "Drukhari"
@@ -27156,6 +27679,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "skysplinter-assault__sadistic-fulcrum",
         "name": "Sadistic Fulcrum",
         "detachmentId": "skysplinter-assault",
+        "points": 15,
         "description": "^^**Drukhari**^^ model only. Each time you spend 1 Pain token to Empower the bearer’s unit in the Shooting phase, select one friendly ^^**Drukhari Transport**^^ within 6\" of the bearer’s unit; until the end of the phase, each time that ^^**Transport**^^ makes an attack, you can re-roll the Hit roll.",
         "allowedKeywords": [
           "Drukhari"
@@ -27166,6 +27690,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "skysplinter-assault__spiteful-raider",
         "name": "Spiteful Raider",
         "detachmentId": "skysplinter-assault",
+        "points": 10,
         "description": "^^**Drukhari**^^ model only. Each time the bearer’s unit destroys an enemy unit in the Fight phase, if that enemy unit was within range of one or more objective markers when the bearer’s unit was selected to fight, you gain 1 additional Pain token.",
         "allowedKeywords": [
           "Drukhari"
@@ -27176,6 +27701,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "skysplinter-assault__nightmare-shroud",
         "name": "Nightmare Shroud",
         "detachmentId": "skysplinter-assault",
+        "points": 20,
         "description": "^^**Drukhari**^^ model only. Each time the bearer’s unit disembarks from a ^^**Transport**^^, until the end of the turn, enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
         "allowedKeywords": [
           "Drukhari"
@@ -27186,6 +27712,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spirit-conclave__light-of-clarity",
         "name": "Light of Clarity",
         "detachmentId": "spirit-conclave",
+        "points": 30,
         "description": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer. Until the start of your next Command phase, add 1 to the Objective Control characteristic of Infanty models in that unit and add 3 to the Objective Control characteristic of Monster models in that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27196,6 +27723,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spirit-conclave__stave-of-kurnous",
         "name": "Stave of Kurnous",
         "detachmentId": "spirit-conclave",
+        "points": 15,
         "description": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer (excluding Titanic units). Until the start of your next Command phase, each time a model in that unit makes an attack, on a Critical Wound, that attack has the [Precision] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27206,6 +27734,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spirit-conclave__rune-of-mists",
         "name": "Rune of Mists",
         "detachmentId": "spirit-conclave",
+        "points": 10,
         "description": "Spiritseer model only. In your Command phase, select one friendly Wraith Construct unit within 12\" of the bearer. Until the start of your next Command phase, each time a ranged attack targets that unit, unless the attacking model is within 18, models in that unit have the Benefit of Cover against that attack.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27216,6 +27745,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spirit-conclave__higher-duty",
         "name": "Higher Duty",
         "detachmentId": "spirit-conclave",
+        "points": 25,
         "description": "Spiritseer model only. Oncer per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9\" of the bearer, the bearer's unit can make a normal move of up to 6\".",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27226,6 +27756,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warhost__psychic-destroyer",
         "name": "Psychic Destroyer",
         "detachmentId": "warhost",
+        "points": 30,
         "description": "^^Asuryani^^ ^^Psyker^^ model only. Add 1 to the Damage characteristic of ranged Psychic weapons equipped by the bearer.",
         "allowedKeywords": [
           "Asuryani",
@@ -27237,6 +27768,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warhost__phoenix-gem",
         "name": "Phoenix Gem",
         "detachmentId": "warhost",
+        "points": 35,
         "description": "^^Asuryani^^ model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one of more enemy units, with its full wounds remaining.",
         "allowedKeywords": [
           "Asuryani"
@@ -27247,6 +27779,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warhost__gift-of-foresight",
         "name": "Gift of Foresight",
         "detachmentId": "warhost",
+        "points": 15,
         "description": "^^Asuryani^^ model only. Once per battle round, you can target the bearer's unit with the Command Re-roll Stratagem for 0CP.",
         "allowedKeywords": [
           "Asuryani"
@@ -27257,6 +27790,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warhost__timeless-strategist",
         "name": "Timeless Strategist",
         "detachmentId": "warhost",
+        "points": 15,
         "description": "^^Asuryani^^ model only. At the start of the battle round, if the bearer is on the battlefield (or any Transport it is embarked within is on the battlefield), you receive 1 additional Battle Focus token.",
         "allowedKeywords": [
           "Asuryani"
@@ -27267,6 +27801,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "windrider-host__firstdrawn-blade",
         "name": "Firstdrawn Blade",
         "detachmentId": "windrider-host",
+        "points": 10,
         "description": "Asuryani Mounted model only. Models in the bearer's unit have the Scouts 9\" ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27277,6 +27812,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "windrider-host__mirage-field",
         "name": "Mirage Field",
         "detachmentId": "windrider-host",
+        "points": 25,
         "description": "Asuryani Mounted model only. Each time an attack targets the bearer's unit, subtract 1 from the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27287,6 +27823,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "windrider-host__seersight-strike",
         "name": "Seersight Strike",
         "detachmentId": "windrider-host",
+        "points": 15,
         "description": "Asuryani Mounted Psyker model only. Psychic weapons equipped by the bearer have the [Anti-Monster 2+] and [Anti-Vehicle 2+] abilities.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27297,6 +27834,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "windrider-host__echoes-of-ulthanesh",
         "name": "Echoes of Ulthanesh",
         "detachmentId": "windrider-host",
+        "points": 20,
         "description": "Asuryani Mounted model only. In your Command phase, roll one D6, adding 1 to the result if the bearer is not within your deployment zone, and adding an additional 1 to the result if the bearer is within your opponent's deployment zone: on a 5+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -27307,6 +27845,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "covenite-coterie__master-regenesist",
         "name": "Master Regenesist",
         "detachmentId": "covenite-coterie",
+        "points": 25,
         "description": "^^**Haemonculus**^^ model only. Each time the bearer uses its Fleshcraft ability, you can return up to D3+3 destroyed Bodyguard models to the bearer's unit instead of D3+1.",
         "allowedKeywords": [
           "Haemonculus"
@@ -27317,6 +27856,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "covenite-coterie__master-nemesine",
         "name": "Master Nemesine",
         "detachmentId": "covenite-coterie",
+        "points": 5,
         "description": "^^**Haemonculus**^^ model only. The bearer's weapons have the ^^**[Anti-Beast 2+]**^^ and ^^**[Anti-Monster 4+]**^^ abilities.",
         "allowedKeywords": [
           "Haemonculus"
@@ -27327,6 +27867,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "covenite-coterie__master-artisan",
         "name": "Master Artisan",
         "detachmentId": "covenite-coterie",
+        "points": 20,
         "description": "^^**Haemonculus**^^ model only. Add 1 to the bearer's Wounds characteristic and add 1 to the Toughness characteristic of models in the bearer's unit.",
         "allowedKeywords": [
           "Haemonculus"
@@ -27337,6 +27878,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "covenite-coterie__master-repugnomancer-aura",
         "name": "Master Repugnomancer [Aura]",
         "detachmentId": "covenite-coterie",
+        "points": 15,
         "description": "^^**Haemonculus**^^ model only. Add 3\" to the range of the bearer's Fear Incarnate ability, and each time a friendly ^^**Drukhari**^^ within 9\" of the bearer fails a Battle-shock test or is destroyed, roll one D6; on a 4+, you gain 1 Pain token.",
         "allowedKeywords": [
           "Haemonculus"
@@ -27347,6 +27889,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kabalite-cartel__leechbite-plate",
         "name": "Leechbite Plate",
         "detachmentId": "kabalite-cartel",
+        "points": 5,
         "description": "^^**Archon**^^ model only. The bearer has a Save characteristic of 3+. At the start of either player's Command phase, you can spend 1 Pain token; if you do, the bearer regains all of its lost wounds.",
         "allowedKeywords": [
           "Archon"
@@ -27357,6 +27900,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kabalite-cartel__webway-awl",
         "name": "Webway Awl",
         "detachmentId": "kabalite-cartel",
+        "points": 25,
         "description": "^^**Archon**^^ model only. Models in the bearer's unit have the Deep Strike ability, and you can target the bearer's unit with the Rapid Ingress Stratagem for 0CP.",
         "allowedKeywords": [
           "Archon"
@@ -27367,6 +27911,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kabalite-cartel__informant-network",
         "name": "Informant Network",
         "detachmentId": "kabalite-cartel",
+        "points": 30,
         "description": "^^**Archon**^^ model only. At the start of the Declare Battle Formations step, select up to three ^^**Kabalite Warriors**^^ and/or ^^**Hand of the Archon**^^ units from your army; those units gain the Infiltrators ability.",
         "allowedKeywords": [
           "Archon"
@@ -27377,6 +27922,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kabalite-cartel__towering-arrogance",
         "name": "Towering Arrogance",
         "detachmentId": "kabalite-cartel",
+        "points": 20,
         "description": "^^**Archon**^^ models only. While the bearer is leading a unit, improve the Leadership and Objective Control characteristics of models in that unit by 1.",
         "allowedKeywords": [
           "Archon"
@@ -27387,6 +27933,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spectacle-of-spite__pharmacophex",
         "name": "Pharmacophex",
         "detachmentId": "spectacle-of-spite",
+        "points": 15,
         "description": "^^**Succubus**^^ model only. At the start of your Command phase, after selecting which Combat Drugs will be active for your army, roll one D6 and consult the Combat Drugs list. The result rolled applies to the bearer's unit until the start of your next Command phase in addition to any other Combat Drugs that are active for your army. If you randomly select one that is already active for your army, it has no additional effect.",
         "allowedKeywords": [
           "Succubus"
@@ -27397,6 +27944,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spectacle-of-spite__chronoshard",
         "name": "Chronoshard",
         "detachmentId": "spectacle-of-spite",
+        "points": 15,
         "description": "^^** Succubus**^^ model only. Once per battle, at the start of the Fight phase, the bearer can use this Enhancement. If it does, until the end of the phase, models in the bearer's unit have the Fights First ability.",
         "allowedKeywords": [
           "Succubus"
@@ -27407,6 +27955,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spectacle-of-spite__periapt-of-torments",
         "name": "Periapt of Torments",
         "detachmentId": "spectacle-of-spite",
+        "points": 25,
         "description": "^^**Succubus**^^ model only. Enemy units cannot use the Fire Overwatch stratagem to shoot at the bearer's unit.",
         "allowedKeywords": [
           "Succubus"
@@ -27417,6 +27966,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "spectacle-of-spite__morghenna-s-curse",
         "name": "Morghenna's Curse",
         "detachmentId": "spectacle-of-spite",
+        "points": 20,
         "description": "^^**Succubus**^^ model only. Improve the Armour Penetration and Damage characteristics of the bearer's melee weapons by 1.",
         "allowedKeywords": [
           "Succubus"
@@ -27427,6 +27977,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "serpent-s-brood__key-of-ghosts",
         "name": "Key of Ghosts",
         "detachmentId": "serpent-s-brood",
+        "points": 20,
         "description": "^^**Harlequins**^^ model only (excluding ^^**Solitaire**^^ models). Models in the bearer’s unit have the Scouts 6\" ability.",
         "allowedKeywords": [
           "Harlequins"
@@ -27437,6 +27988,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "serpent-s-brood__fanged-leer",
         "name": "Fanged Leer",
         "detachmentId": "serpent-s-brood",
+        "points": 10,
         "description": "^^**Death Jester**^^ model only. When using the bearer’s Cruel Amusement ability, you can select two of the abilities for its shrieker cannon to gain, instead of one.",
         "allowedKeywords": [
           "Death Jester"
@@ -27447,6 +27999,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "serpent-s-brood__shedskin-raiment",
         "name": "Shedskin Raiment",
         "detachmentId": "serpent-s-brood",
+        "points": 25,
         "description": "^^**Shadowseer**^^ model only. After both players have deployed their armies, select up to three Harlequins units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Shadowseer"
@@ -27457,6 +28010,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "serpent-s-brood__weavers-wail",
         "name": "Weavers' Wail",
         "detachmentId": "serpent-s-brood",
+        "points": 20,
         "description": "^^**Troupe Master**^^ model only. Add 3 to the Strength and add 1 to the Attacks characteristics of the bearer’s melee weapons.",
         "allowedKeywords": [
           "Troupe Master"
@@ -27467,6 +28021,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eldritch-raiders__pirate-prince",
         "name": "Pirate Prince",
         "detachmentId": "eldritch-raiders",
+        "points": 15,
         "description": "^^**Prince Yriel**^^ unit only. Each time you spend a Battle Focus token to enable this unit to perform an Agile Manoeuvre, roll one D6: on a 3+, you gain 1 Battle Focus token.",
         "allowedKeywords": [
           "Prince Yriel"
@@ -27477,6 +28032,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eldritch-raiders__alacritous-assault",
         "name": "Alacritous Assault",
         "detachmentId": "eldritch-raiders",
+        "points": 20,
         "description": "^^**Anhrathe**^^ unit only. Melee weapons equipped by models in this unit have the ^^**[LANCE]**^^ ability.",
         "allowedKeywords": [
           "Anhrathe"
@@ -27487,6 +28043,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eldritch-raiders__exotic-munitions",
         "name": "Exotic Munitions",
         "detachmentId": "eldritch-raiders",
+        "points": 15,
         "description": "^^**Anhrathe**^^ unit only. Ranged weapons equipped by models in this unit have the ^^**[ANTI‑MONSTER 5+]**^^ and ^^**[ANTI‑VEHICLE 5+]**^^ abilities.",
         "allowedKeywords": [
           "Anhrathe"
@@ -27497,6 +28054,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "eldritch-raiders__adrenal-infusions",
         "name": "Adrenal Infusions",
         "detachmentId": "eldritch-raiders",
+        "points": 20,
         "description": "^^**Anhrathe Infantry**^^ unit only. This unit can perform the Fade Back Agile Manoeuvre without spending a Battle Focus token to do so. It can do so even if other units have done so in the same phase, and doing so does not prevent other units from performing the same Agile Manoeuvre in the same phase.",
         "allowedKeywords": [
           "Anhrathe Infantry"
@@ -27507,6 +28065,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "corsair-coterie__infamy-aura",
         "name": "Infamy (Aura)",
         "detachmentId": "corsair-coterie",
+        "points": 25,
         "description": "^^**Anhrathe**^^ unit only. While an enemy unit is within 3” of this unit, subtract 1 from the Objective Control characteristic of models in that unit (to a minimum of 1).",
         "allowedKeywords": [
           "Anhrathe"
@@ -27517,6 +28076,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "corsair-coterie__webway-pathstone",
         "name": "Webway Pathstone",
         "detachmentId": "corsair-coterie",
+        "points": 25,
         "description": "^^**Anhrathe**^^ unit only. Models in this unit have the Deep Strike ability. In addition, once per battle, at the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, it can use this ability. If it does, remove this unit from the battlefield and place it into Strategic Reserves.",
         "allowedKeywords": [
           "Anhrathe"
@@ -27527,6 +28087,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "corsair-coterie__archraider",
         "name": "Archraider",
         "detachmentId": "corsair-coterie",
+        "points": 35,
         "description": "^^**Anhrathe Character**^^ unit only. At the start of the battle, select one ^^**Character**^^ model in this unit. That model has the following ability: \n\n\n**Lord of Deceit (Aura):** Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12” of this model, increase the cost of that use of that Stratagem by 1CP.",
         "allowedKeywords": [
           "Anhrathe Character"
@@ -27537,6 +28098,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "corsair-coterie__voidstone",
         "name": "Voidstone",
         "detachmentId": "corsair-coterie",
+        "points": 15,
         "description": "^^**Anhrathe Infantry**^^ unit only. Models in this unit have a 5+ invulnerable save.",
         "allowedKeywords": [
           "Anhrathe Infantry"
@@ -30216,6 +30778,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "combined-arms__death-mask-of-ollanius",
         "name": "Death Mask of Ollanius",
         "detachmentId": "combined-arms",
+        "points": 10,
         "description": "**^^Officer^^** model only. While the bearer’s unit is Battle-shocked, subtract 1 from the Objective Control characteristic of models in that unit, instead of changing it to 0",
         "allowedKeywords": [
           "Officer"
@@ -30226,6 +30789,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "combined-arms__drill-commander",
         "name": "Drill Commander",
         "detachmentId": "combined-arms",
+        "points": 20,
         "description": "**^^Officer^^** model only. While the bearer is leading a unit, each time a model in that unit makes a ranged attack, if that unit Remained Stationary this turn, a Critical Hit is scored on a successful unmodified Hit roll of 5+.",
         "allowedKeywords": [
           "Officer"
@@ -30236,6 +30800,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "combined-arms__reactive-command",
         "name": "Reactive Command",
         "detachmentId": "combined-arms",
+        "points": 15,
         "description": "**^^Officer^^** model only. Each time an enemy unit is set up within 9\" of the bearer's unit, the bearer can issue one Order. This is not counted towards the number of Orders the bearer can issue each battle round.",
         "allowedKeywords": [
           "Officer"
@@ -30246,6 +30811,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "combined-arms__grand-strategist",
         "name": "Grand Strategist",
         "detachmentId": "combined-arms",
+        "points": 15,
         "description": "**^^Officer^^** model only. In your Command phase, the bearer can issue one additional Order.",
         "allowedKeywords": [
           "Officer"
@@ -30256,6 +30822,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bridgehead-strike__bombast-class-vox-array",
         "name": "Bombast-class Vox-array",
         "detachmentId": "bridgehead-strike",
+        "points": 35,
         "description": "**^^Militarum Tempestus Officer^^** model only. Each time the bearer issues an Order, if the bearer’s unit contains one or more models equipped with a master vox, it can issue that Order to up to three different **^^Regiment^^** units, instead of only one.",
         "allowedKeywords": [
           "Militarum Tempestus Officer"
@@ -30266,6 +30833,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bridgehead-strike__priority-drop-beacon",
         "name": "Priority-drop Beacon",
         "detachmentId": "bridgehead-strike",
+        "points": 30,
         "description": "**^^Militarum Tempestus Officer^^** model only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
         "allowedKeywords": [
           "Militarum Tempestus Officer"
@@ -30276,6 +30844,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bridgehead-strike__advance-augury",
         "name": "Advance Augury",
         "detachmentId": "bridgehead-strike",
+        "points": 15,
         "description": "**^^Infantry Officer^^** model only. After both players have deployed their armies, select up to three **^^Regiment^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in 1 Strategic Reserves.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -30286,6 +30855,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bridgehead-strike__shroud-projector",
         "name": "Shroud Projector",
         "detachmentId": "bridgehead-strike",
+        "points": 15,
         "description": "**^^Militarum Tempestus Officer^^** model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer’s unit.",
         "allowedKeywords": [
           "Militarum Tempestus Officer"
@@ -30296,6 +30866,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "siege-regiment__eager-advance",
         "name": "Eager Advance",
         "detachmentId": "siege-regiment",
+        "points": 20,
         "description": "**^^Infantry Officer^^** model only. While the bearer is leading a **^^Regiment^^** unit, that unit has the Scouts 6\" ability.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -30306,6 +30877,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "siege-regiment__flash-grenades",
         "name": "Flash Grenades",
         "detachmentId": "siege-regiment",
+        "points": 20,
         "description": "**^^Infantry Officer^^** model only. Enemy units cannot use the Fire Overwatch Stratagem to shoot at the bearer's unit.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -30316,6 +30888,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "siege-regiment__stalwart-s-honours",
         "name": "Stalwart's Honours",
         "detachmentId": "siege-regiment",
+        "points": 15,
         "description": "**^^Officer^^** model only. While the bearer is leading a unit, when that unit is issued an Order, it is also affected by the Take Cover! Order.",
         "allowedKeywords": [
           "Officer"
@@ -30326,6 +30899,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "siege-regiment__legacy-sidearm",
         "name": "Legacy Sidearm",
         "detachmentId": "siege-regiment",
+        "points": 10,
         "description": "**^^Infantry Officer^^** model only. Add 2 to the Attacks characteristics of the bearer's Pistols.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -30336,6 +30910,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mechanised-assault__bold-leadership",
         "name": "Bold Leadership",
         "detachmentId": "mechanised-assault",
+        "points": 25,
         "description": "**^^Infantry Officer^^** model only. If you control an objective marker at the end of your Command phase, and the bearer's unit (or any **^^Transport^^** it is embarked within) is within range of that objective marker, that objective marker remains under you control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -30346,6 +30921,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mechanised-assault__sacred-unguents",
         "name": "Sacred Unguents",
         "detachmentId": "mechanised-assault",
+        "points": 10,
         "description": "**^^Astra Militarum Tech-Priest Enginseer^^** model only. At the start of your Shooting phase, select one **^^Transport^^** from your army (excluding **^^Aircraft^^** and **^^Titanic^^** units) within 3\" of the bearer. Until the end of the phase, each time that **^^Transport^^** makes an attack, you can re-roll the Hit roll.",
         "allowedKeywords": [
           "Astra Militarum Tech-Priest Enginseer"
@@ -30356,6 +30932,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mechanised-assault__vanguard-honours",
         "name": "Vanguard Honours",
         "detachmentId": "mechanised-assault",
+        "points": 15,
         "description": "**^^Infantry Officer^^** model only. The bearer's unit can disembark from a **^^Transport^^** after it has Advanced. If it does, it counts as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -30366,6 +30943,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mechanised-assault__smoke-grenades",
         "name": "Smoke Grenades",
         "detachmentId": "mechanised-assault",
+        "points": 10,
         "description": "**^^Infantry Officer^^** model only. The bearer's unit has the Benefit of Cover and the Stealth ability while the bearer's unit is wholly within 3\" of one or more friendly **^^Transport^^** models.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -30376,6 +30954,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-the-emperor__indomitable-steed",
         "name": "Indomitable Steed",
         "detachmentId": "hammer-of-the-emperor",
+        "points": 15,
         "description": "**^^Vehicle Officer^^** model only. The bearer has the Feel No Pain 6+ ability.",
         "allowedKeywords": [
           "Vehicle Officer"
@@ -30386,6 +30965,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-the-emperor__calm-under-fire",
         "name": "Calm Under Fire",
         "detachmentId": "hammer-of-the-emperor",
+        "points": 15,
         "description": "**^^Vehicle Officer^^** model only. Once per turn, after the bearer issues an Order to a **^^Squadron^^** unit from your army, it can issue the same Order to another **^^Squadron^^** unit from your army.",
         "allowedKeywords": [
           "Vehicle Officer"
@@ -30396,6 +30976,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-the-emperor__veteran-crew",
         "name": "Veteran Crew",
         "detachmentId": "hammer-of-the-emperor",
+        "points": 20,
         "description": "**^^Vehicle Officer^^** model only. Each time a model in the bearer's unit makes a ranged attack, re-roll a Hit roll of 1.",
         "allowedKeywords": [
           "Vehicle Officer"
@@ -30406,6 +30987,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hammer-of-the-emperor__regimental-banner",
         "name": "Regimental Banner",
         "detachmentId": "hammer-of-the-emperor",
+        "points": 20,
         "description": "**^^Vehicle Officer^^** model only. Add 3 to the bearer's Objective Control characteristic.",
         "allowedKeywords": [
           "Vehicle Officer"
@@ -30416,6 +30998,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grizzled-company__abhuman-detail",
         "name": "Abhuman Detail",
         "detachmentId": "grizzled-company",
+        "points": 20,
         "description": "**^^Commissar^^** model only. Add the **^^Ogryn^^** keyword to the list of units this model can issue Orders too (as stated on its datasheet).\n\nIn the Declare Battle Formations step, the bearer can be attached to an **^^Ogryn Squad^^** or **^^Bullgryn squad^^** unit.",
         "allowedKeywords": [
           "Commissar"
@@ -30426,6 +31009,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grizzled-company__aquilan-eye",
         "name": "Aquilan Eye",
         "detachmentId": "grizzled-company",
+        "points": 20,
         "description": "**^^Astra Militarum Officer^^** model only. Each time you select an Order for the bearer to issue, you can select the Order below:\n\n**Target Weak Spot (Order):** Each time a model in this unit makes a ranged attack that targets an enemy unit within 12\", improve the Armour Penetration characteristic of that attack by 1.",
         "allowedKeywords": [
           "Astra Militarum Officer"
@@ -30436,6 +31020,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grizzled-company__laud-hailer",
         "name": "Laud Hailer",
         "detachmentId": "grizzled-company",
+        "points": 10,
         "description": "**^^Astra Militarum Officer^^** model only. Each time you select a unit for this **^^Officer^^** model to issue an Order to, that unit can be within 12\" instead of within 6\".",
         "allowedKeywords": [
           "Astra Militarum Officer"
@@ -30446,6 +31031,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "grizzled-company__spec-ops-veteran",
         "name": "Spec Ops Veteran",
         "detachmentId": "grizzled-company",
+        "points": 15,
         "description": "**^^Astra Militarum Infantry Officer^^** model only. Each time you select an Order for the bearer to issue, you can select the Order below:\n\n**Move to the Shadows (Order):** Each time a ranged attack targets this unit, until those attacks are resolved, models in this unit have the Stealth ability.",
         "allowedKeywords": [
           "Astra Militarum Infantry Officer"
@@ -30456,6 +31042,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "embarked-regiment__rigged-blind-grenades",
         "name": "Rigged Blind Grenades",
         "detachmentId": "embarked-regiment",
+        "points": 0,
         "description": "Once per battle, when an enemy unit opens a Hatchway, if the bearer is on the battlefield, it can use this Enhancement. If it does, roll one D6: on a 2+, that enemy unit is Battle-shocked.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -30464,6 +31051,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "embarked-regiment__shipboard-veteran",
         "name": "Shipboard Veteran",
         "detachmentId": "embarked-regiment",
+        "points": 0,
         "description": "Each time you target an **^^Astra Militarum^^** unit from your army with a Stratagem, if that unit is visible to the bearer, roll one D6: on a 4+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -30472,6 +31060,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tempestus-boarding-regiment__covert-breach",
         "name": "Covert Breach",
         "detachmentId": "tempestus-boarding-regiment",
+        "points": 0,
         "description": "At the start of the first battle round, the bearer's unit can make a Normal move of up to 6\".",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -30480,6 +31069,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tempestus-boarding-regiment__elimination-force",
         "name": "Elimination Force",
         "detachmentId": "tempestus-boarding-regiment",
+        "points": 0,
         "description": "At the start of the first battle round, select one enemy unit. Each time a model in the bearer's unit makes an attack that targets that enemy unit, if the Strength characteristic of that attack is less than the Toughness characteristic of that enemy unit, add 1 to the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -30488,6 +31078,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "steel-hammer__battalion-commander",
         "name": "Battalion Commander",
         "detachmentId": "steel-hammer",
+        "points": 30,
         "description": "**^^Astra Militarum Titanic Character^^** model only. The bearer has the Voice of Command ability and the **^^Officer^^** keyword, and can issue up to 2 Orders to **^^Astra Militarum Titanic^^** and **^^Squadron^^** units.",
         "allowedKeywords": [
           "Astra Militarum Titanic Character"
@@ -30498,6 +31089,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "steel-hammer__titan-killer",
         "name": "Titan Killer",
         "detachmentId": "steel-hammer",
+        "points": 20,
         "description": "**^^Astra Militarum Titanic Character^^** model only. Each time the bearer makes a ranged attack, you can re‑roll the Damage roll.",
         "allowedKeywords": [
           "Astra Militarum Titanic Character"
@@ -30508,6 +31100,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "steel-hammer__assault-hatches",
         "name": "Assault Hatches",
         "detachmentId": "steel-hammer",
+        "points": 25,
         "description": "**^^Astra Militarum Titanic Character Transport^^** model only. Each time a unit disembarks from the bearer after it has made a Normal move, that unit is still eligible to declare a charge this turn.",
         "allowedKeywords": [
           "Astra Militarum Titanic Character Transport"
@@ -30518,6 +31111,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "steel-hammer__engine-speaker",
         "name": "Engine Speaker",
         "detachmentId": "steel-hammer",
+        "points": 15,
         "description": "**^^Astra Militarum Tech‑Priest Enginseer^^** model only. Each time the bearer uses its Omnissiah’s Blessing ability, until the start of your next Command phase, add 3\" to the Move characteristic of the selected Vehicle model.",
         "allowedKeywords": [
           "Astra Militarum Tech‑Priest Enginseer"
@@ -30528,6 +31122,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-infantry__omnissian-unguents-aura",
         "name": "Omnissian Unguents (Aura)",
         "detachmentId": "armoured-infantry",
+        "points": 30,
         "description": "**^^Astra Militarum Tech‑Priest Enginseer^^** model only. While a friendly **^^Armoured Skirmisher^^** unit is within 3\" of the bearer, that unit has the Feel No Pain 5+ ability.",
         "allowedKeywords": [
           "Astra Militarum Tech‑Priest Enginseer"
@@ -30538,6 +31133,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-infantry__grand-strategist",
         "name": "Grand Strategist",
         "detachmentId": "armoured-infantry",
+        "points": 20,
         "description": "**^^Officer^^** model only. After both players have deployed their armies, if the bearer’s unit (or any **^^Transport^^** it is embarked within) is on the battlefield, select up to two units with the **^^Regiment^^** or **^^Squadron^^** keywords from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Officer"
@@ -30548,6 +31144,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-infantry__exemplary-officer",
         "name": "Exemplary Officer",
         "detachmentId": "armoured-infantry",
+        "points": 25,
         "description": "**^^Infantry Officer^^** model only. Each time the bearer issues an Order to its own unit, you can select up to two other **^^Platoon^^** units within 3\" of the bearer’s unit. That Order is also issued to each of those units.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -30558,6 +31155,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-infantry__master-manoeuvrist",
         "name": "Master Manoeuvrist",
         "detachmentId": "armoured-infantry",
+        "points": 15,
         "description": "**^^Infantry Officer^^** model only. At the end of your opponent’s Fight phase, if the bearer’s unit is not within Engagement Range of one or more enemy units and every model in that unit is within 3\" of an **^^Astra Militarum Transport^^** from your army, it can embark within that **^^Transport^^**.",
         "allowedKeywords": [
           "Infantry Officer"
@@ -31578,6 +32176,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hearthband__bastion-shield",
         "name": "Bastion Shield",
         "detachmentId": "hearthband",
+        "points": 25,
         "description": "Each time a ranged attack targets the bearer’s unit, if the attacking model is within 12\" of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1. If you spend 1YP, until the end of the phase, if the attacking model is within 18\" of the bearer’s unit, worsen the Armour Penetration characteristic of that attack by 1 instead.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31586,6 +32185,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hearthband__high-k-hl",
         "name": "High Kâhl",
         "detachmentId": "hearthband",
+        "points": 30,
         "description": "Each time a model in the bearer’s unit is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 4+, do not remove it from play. The destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31594,6 +32194,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hearthband__ironskein",
         "name": "Ironskein",
         "detachmentId": "hearthband",
+        "points": 10,
         "description": "Add 2 to the bearer’s Wounds characteristic.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31602,6 +32203,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hearthband__quake-multigenerator",
         "name": "Quake Multigenerator",
         "detachmentId": "hearthband",
+        "points": 15,
         "description": "In your Shooting phase, after the bearer has shot, select one enemy unit (excluding TITANIC units) hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31610,6 +32212,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "persecution-prospect__writ-of-acquisition",
         "name": "Writ of Acquisition",
         "detachmentId": "persecution-prospect",
+        "points": 10,
         "description": "In your Shooting phase, after the bearer's unit has shot, you gain 1YP for each assailed unit hit by one or more of those attacks (to a maximum of 3YP).",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31618,6 +32221,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "persecution-prospect__surgical-saboteur",
         "name": "Surgical Saboteur",
         "detachmentId": "persecution-prospect",
+        "points": 10,
         "description": "In your Shooting phase, after this model has shot, select one ^^**Monster^^** or ^^**Vehicle^^** unit hit by one or more of those attacks; until the start of your next Shooting phase, that model is pinned.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31626,6 +32230,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "persecution-prospect__nomad-strategist",
         "name": "Nomad Strategist",
         "detachmentId": "persecution-prospect",
+        "points": 20,
         "description": "Once per battle, at the end of your opponent's Fight phase, if the bearer is on the battlefield, it can use this Enhancement. If it does, select one ^^**Hernkyn^^** unit from your army, and, for every 2YP you just spent, select up to one additional ^^**Hernkyn^^** unit from your army. You can remove those units from the battlefield and place them into Strategic Reserves. You cannot select a unit that is within Engagement Range of one or more enemy units (excluding assailed units).",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31634,6 +32239,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "persecution-prospect__eye-for-weakness",
         "name": "Eye For Weakness",
         "detachmentId": "persecution-prospect",
+        "points": 25,
         "description": "Each time a model in the bearer's unit makes an attack that targets an assailed unit, add 1 to the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31642,6 +32248,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hearthfyre-arsenal__f-rstryder-node",
         "name": "Fârstryder Node",
         "detachmentId": "hearthfyre-arsenal",
+        "points": 20,
         "description": "Models in the bearer's unit have the Deep Strike abilty.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31650,6 +32257,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hearthfyre-arsenal__graviton-vault",
         "name": "Graviton Vault",
         "detachmentId": "hearthfyre-arsenal",
+        "points": 5,
         "description": "In your Shooting phase, after the bearer has shot, and in the Fight phase, after the bearer has fought, select one enemy ^^**Monster^^** or ^^**Vehicle**^^ unit hit by one or more of those attacks. Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31658,6 +32266,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hearthfyre-arsenal__mantle-of-elders",
         "name": "Mantle of Elders",
         "detachmentId": "hearthfyre-arsenal",
+        "points": 10,
         "description": "Each time the bearer's unit is selected to shoot, if you spend YP using the Optimal Application Detachment rule when doing so, you can roll one D6: on a 2+, you gain 1YP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31666,6 +32275,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hearthfyre-arsenal__calculated-tenacity",
         "name": "Calculated Tenacity",
         "detachmentId": "hearthfyre-arsenal",
+        "points": 15,
         "description": "While the bearer is leading a unit, add 1 to the Objective Control characteristic of models in that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31674,6 +32284,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "d-lve-assault-shift__d-lvwerke-navigator",
         "name": "Dêlvwerke Navigator",
         "detachmentId": "d-lve-assault-shift",
+        "points": 25,
         "description": "In the Reinforcements step of your Movement phase, the bearer can use this Enhancement. If it does, select one friendly ^^**Cthonian Beserks^^** unit visible to the bearer and then spend any number of YP. Return one destroyed model to that unit, and then, for every 2YP you just spent, return up to one additional destroyed model to that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31682,6 +32293,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "d-lve-assault-shift__quake-supervisor",
         "name": "Quake Supervisor",
         "detachmentId": "d-lve-assault-shift",
+        "points": 20,
         "description": "While the bearer is within 3\" of one or more friendly ^^**Leagues of Votann Artillery^^** units, the bearer has the Lone Operative ability, and each time one of those ^^**Artillery^^** units makes a ranged attack that targets an enemy unit visible to the bearer, add 1 to the Hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31690,6 +32302,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "d-lve-assault-shift__piledriver",
         "name": "Piledriver",
         "detachmentId": "d-lve-assault-shift",
+        "points": 15,
         "description": "Each time the bearer's unit is selected to fight, the bearer can use this Enhancement. If it does, spend up to 2YP and, until the end of the phase, add the number of YP you just spent to the Damage characteristic of the bearer's melee weapons.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31698,6 +32311,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "d-lve-assault-shift__multiwave-system-jammer",
         "name": "Multiwave System Jammer",
         "detachmentId": "d-lve-assault-shift",
+        "points": 10,
         "description": "Once per battle, in your Movement phase, if the bearer is on the battlefield, it can use this Enhancement. If it does, select one friendly ^^**Cthonian^^** unit that is in Reserves. Until the end of the phase, for the purposes of setting up that unit on the battlefield, treat the current battle round number as one higher than it actually is.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31706,6 +32320,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "brandfast-oathband__tactical-alchemy",
         "name": "Tactical Alchemy",
         "detachmentId": "brandfast-oathband",
+        "points": 10,
         "description": "In your Command phase, if the bearer's unit is in range of one or more objective markers you control that are not in your deployment zone, you can spend 1YP. If you do, roll one D6: on a 4+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31714,6 +32329,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "brandfast-oathband__triv-rg-cyber-implant",
         "name": "Trivârg Cyber Implant",
         "detachmentId": "brandfast-oathband",
+        "points": 40,
         "description": "In your Shooting phase, each time the bearer's unit is selected to shoot, if it disembarked from a ^^**Transport^^** this turn, or if you spend 2YP, until the end of the phase, ranged weapons equipped by model in that unit have the [**^^Sustained Hits 2^^**] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31722,6 +32338,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "brandfast-oathband__precursive-judgement",
         "name": "Precursive Judgement",
         "detachmentId": "brandfast-oathband",
+        "points": 15,
         "description": "While the bearer's unit is wholly within 6\" of one or more friendly ^^**Leagues of Votann Transport^^** units, you can target the bearer's unit with the Fire Overwatch Stratagem for 0CP and hits are scored on an unmodified Hit roll of 5+ while resolving that Stratagem.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31730,6 +32347,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "brandfast-oathband__signature-restoration",
         "name": "Signature Restoration",
         "detachmentId": "brandfast-oathband",
+        "points": 5,
         "description": "Each time a friendly ^^**Leagues of Votann^^** model is repaired using the bearer's Forgewrought Expertise ability, that model regains one additional lost wound.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31738,6 +32356,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mercenary-oathband__mercenary-prospector",
         "name": "Mercenary Prospector",
         "detachmentId": "mercenary-oathband",
+        "points": 20,
         "description": "Each time an enemy unit is destroyed by the bearer’s unit, gain 2YP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31746,6 +32365,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mercenary-oathband__metaphysical-brokerage",
         "name": "Metaphysical Brokerage",
         "detachmentId": "mercenary-oathband",
+        "points": 20,
         "description": "At the end of your turn, if the bearer is on the battlefield and you gained fewer than 3YP this turn, you gain an amount of YP equal to the difference.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31754,6 +32374,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mercenary-oathband__etacarn-sb9-targeting-implant",
         "name": "Etacarn SB9 Targeting Implant",
         "detachmentId": "mercenary-oathband",
+        "points": 15,
         "description": "Each time a model in the bearer’s unit makes an attack, re‑roll a Hit roll of 1. Each time the bearer’s unit is selected to shoot or fight, you can spend 3YP. If you do, until the end of the phase, each time a model in the bearer’s unit makes an attack, that attack has the [SUSTAINED HITS 1] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -31762,6 +32383,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mercenary-oathband__asset-manipulator",
         "name": "Asset Manipulator",
         "detachmentId": "mercenary-oathband",
+        "points": 25,
         "description": "At the start of the Command phase, you can spend 3YP. If you do, until the end of the turn, while an enemy unit is within 3” of the bearer, subtract 1 from the Objective Control characteristic of models in that enemy unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -32971,6 +33593,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "awakened-dynasty__veil-of-darkness",
         "name": "Veil of Darkness",
         "detachmentId": "awakened-dynasty",
+        "points": 20,
         "description": "NECRONS model only. Once per battle, at the end of your opponent’s turn, if the bearer’s unit is not within Engagement Range of one or more enemy units, the bearer can use this Enhancement. If it does, remove that unit from the battlefield. Then, in the Reinforcements step of your next Movement phase, set up that unit anywhere on the battlefield that is more than 9\" horizontally away from all enemy models.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -32981,6 +33604,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "awakened-dynasty__nether-realm-casket",
         "name": "Nether-realm Casket",
         "detachmentId": "awakened-dynasty",
+        "points": 20,
         "description": "NECRONS model only. While the bearer is leading a unit, models in that unit have the Stealth ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -32991,6 +33615,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "awakened-dynasty__phasal-subjugator",
         "name": "Phasal Subjugator",
         "detachmentId": "awakened-dynasty",
+        "points": 35,
         "description": "NECRONS model only. While a friendly NECRONS unit (excluding CHARACTER units) is within 6\" of the bearer, each time a model in that unit makes an attack, add 1 to the hit roll.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33001,6 +33626,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hypercrypt-legion__dimensional-overseer",
         "name": "Dimensional Overseer",
         "detachmentId": "hypercrypt-legion",
+        "points": 25,
         "description": "NECRONS model only. While the bearer is on the battlefield or in Strategic Reserves, add 1 to the number of units from your army that you can select for the Hyperphasing rule.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33011,6 +33637,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "annihilation-legion__eternal-madness",
         "name": "Eternal Madness",
         "detachmentId": "annihilation-legion",
+        "points": 25,
         "description": "NECRONS model only. In the Fight phase, each time a model in the bearer's unit is destroyed, if that model had not fought this phase, roll one D6. On a 4+, do not remove the destroyed model from play; it can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33021,6 +33648,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "annihilation-legion__ingrained-superiority",
         "name": "Ingrained Superiority",
         "detachmentId": "annihilation-legion",
+        "points": 10,
         "description": "NECRONS model only. Each time a model in the bearer's unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33031,6 +33659,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "annihilation-legion__soulless-reaper",
         "name": "Soulless Reaper",
         "detachmentId": "annihilation-legion",
+        "points": 20,
         "description": "DESTROYER CULT model only. Each time an enemy unit within Engagement Range of the bearer's unit is selected to Fall Back, roll one D6. On a 3+, that unit cannot Fall Back and must Remain Stationary.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33041,6 +33670,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "awakened-dynasty__enaegic-dermal-bond",
         "name": "Enaegic Dermal Bond",
         "detachmentId": "awakened-dynasty",
+        "points": 30,
         "description": "NECRONS model only. The bearer has the Feel No Pain 4+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33051,6 +33681,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hypercrypt-legion__arisen-tyrant",
         "name": "Arisen Tyrant",
         "detachmentId": "hypercrypt-legion",
+        "points": 25,
         "description": "NECRONS model only. Each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1. If the bearer's unit was set up on the battlefield this turn, you can re-roll the Hit roll instead.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33061,6 +33692,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hypercrypt-legion__hyperspatial-transfer-node",
         "name": "Hyperspatial Transfer Node",
         "detachmentId": "hypercrypt-legion",
+        "points": 15,
         "description": "NECRONS model only. Each time the bearer's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in the bearer's unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33071,6 +33703,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "hypercrypt-legion__osteoclave-fulcrum",
         "name": "Osteoclave Fulcrum",
         "detachmentId": "hypercrypt-legion",
+        "points": 20,
         "description": "NECRONS model only. Models in the bearer's unit have the Deep Strike ability.",
         "allowedKeywords": [],
         "allowedUnitNames": [
@@ -33081,6 +33714,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "starshatter-arsenal__miniaturised-nebuloscope",
         "name": "Miniaturised Nebuloscope",
         "detachmentId": "starshatter-arsenal",
+        "points": 15,
         "description": "Ranged weapons equipped by models in the bearer’s unit have the [IGNORES COVER] ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -33089,6 +33723,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "starshatter-arsenal__demanding-leader",
         "name": "Demanding Leader",
         "detachmentId": "starshatter-arsenal",
+        "points": 10,
         "description": "In your Command phase, select one friendly NECRONS VEHICLE or NECRONS MOUNTED unit (excluding TITANIC units) within 6\" of the bearer. Until the start of your next Command phase, that unit is eligible to shoot in a turn in which it Fell Back.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -33097,6 +33732,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "starshatter-arsenal__chrono-impedance-fields",
         "name": "Chrono-impedance Fields",
         "detachmentId": "starshatter-arsenal",
+        "points": 25,
         "description": "In your Command phase, select one friendly **^^Necrons Vehicle^^** or **^^Necrons Mounted^^** unit (excluding Titanic units) within 6\" of the bearer. Until the start of your next Command phase, each time an attack is allocated to a model in that unit, subtract 1 from the Damage characteristic of that attack.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -33105,6 +33741,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cryptek-conclave__gauntlet-of-compression",
         "name": "Gauntlet of Compression",
         "detachmentId": "cryptek-conclave",
+        "points": 20,
         "description": "Add 6\" to the Range characteristic of ranged weapons equipped by models in the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -33113,6 +33750,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "cryptek-conclave__quantum-abacus",
         "name": "Quantum Abacus",
         "detachmentId": "cryptek-conclave",
+        "points": 15,
         "description": "Each time you select the bearer’s unit as the target of a Stratagem, roll one D6, adding 1 if it is within range of one or more objectives: on a 4+, you gain 1CP.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -34708,6 +35346,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "war-horde__supa-cybork-body",
         "name": "Supa-Cybork Body",
         "detachmentId": "war-horde",
+        "points": 15,
         "description": "**^^Orks^^** model only. The bearer has the Feel No Pain 4+ ability.",
         "allowedKeywords": [
           "Orks"
@@ -34718,6 +35357,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "war-horde__headwoppa-s-killchoppa",
         "name": "Headwoppa’s Killchoppa",
         "detachmentId": "war-horde",
+        "points": 20,
         "description": "**^^Orks^^** model only. Melee weapons equipped by the bearer (excluding Extra Attacks weapons) have the **[DEVASTATING WOUNDS]** ability.",
         "allowedKeywords": [
           "Orks"
@@ -34728,6 +35368,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "war-horde__kunnin-but-brutal",
         "name": "Kunnin’ But Brutal",
         "detachmentId": "war-horde",
+        "points": 15,
         "description": "**^^Orks^^** model only. While the bearer is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back.",
         "allowedKeywords": [
           "Orks"
@@ -34738,6 +35379,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "war-horde__follow-me-ladz",
         "name": "Follow Me Ladz",
         "detachmentId": "war-horde",
+        "points": 25,
         "description": "**^^Orks^^** model only. While the bearer is leading a unit, add 2\" to the Move characteristic of models in that unit.",
         "allowedKeywords": [
           "Orks"
@@ -34748,6 +35390,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "da-big-hunt__surly-as-a-squiggoth",
         "name": "Surly As A Squiggoth",
         "detachmentId": "da-big-hunt",
+        "points": 20,
         "description": "**^^Beastboss On Squigosaur^^** model only. While the bearer is leading a unit, each time an attack targets that unit, if the Strength characteristic of that attack is greater than the Toughness characteristic of that unit, subtract 1 from the Wound roll.",
         "allowedKeywords": [
           "Beastboss On Squigosaur"
@@ -34758,6 +35401,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "da-big-hunt__skrag-every-stash",
         "name": "Skrag Every Stash!",
         "detachmentId": "da-big-hunt",
+        "points": 25,
         "description": "**^^Beast Snagga^^** model only. At the end of your Command phase, if the bearer is within range of an objective marker you control, that objective market remains under your control, even if you have no models within range of it, until your opponent controls it at the start of end of any turn.",
         "allowedKeywords": [
           "Beast Snagga"
@@ -34768,6 +35412,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "da-big-hunt__proper-killy",
         "name": "Proper Killy",
         "detachmentId": "da-big-hunt",
+        "points": 15,
         "description": "**^^Beast Snagga^^** model only. Add 1 to the Damage characteristic of melee weapons equipped by the bearer.",
         "allowedKeywords": [
           "Beast Snagga"
@@ -34778,6 +35423,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "da-big-hunt__glory-hog",
         "name": "Glory Hog",
         "detachmentId": "da-big-hunt",
+        "points": 30,
         "description": "**^^Beastboss On Squigosaur^^** model only. Models in the bearer's unit have the Scouts 9\" ability.",
         "allowedKeywords": [
           "Beastboss On Squigosaur"
@@ -34788,6 +35434,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "dread-mob__gitfinder-gogglez",
         "name": "Gitfinder Gogglez",
         "detachmentId": "dread-mob",
+        "points": 10,
         "description": "**^^Mek^^** model only. Ranged weapons equipped by models in the bearer's unit have the **[IGNORES COVER]** ability.",
         "allowedKeywords": [
           "Mek"
@@ -34798,6 +35445,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "dread-mob__press-it-fasta",
         "name": "Press It Fasta!",
         "detachmentId": "dread-mob",
+        "points": 35,
         "description": "**^^Mek^^** model only. Each time the bearer's unit is selected to shoot, when rolling to determine which ability that unit's weapons gain from the Try Dat Button! Detachment rule, roll one additional D6; until the end of the phase, ranged weapons equipped by models in that unit gain both Button Effects generated by those rolls. If a duplicate Button Effect is rolled, it has no additional effect.",
         "allowedKeywords": [
           "Mek"
@@ -34808,6 +35456,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "dread-mob__supa-glowy-fing",
         "name": "Supa-glowy Fing",
         "detachmentId": "dread-mob",
+        "points": 20,
         "description": "**^^Mek^^** model only. In your Command phase, select one enemy unit within 18\" and visible to the bearer, then roll one D6: on a 1-2, that enemy unit must take a Battle-shock test; on a 3-4, that enemy unit suffers D3 mortal wounds; on a 5-6, until the start of your next Command phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.",
         "allowedKeywords": [
           "Mek"
@@ -34818,6 +35467,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "dread-mob__smoky-gubbinz",
         "name": "Smoky Gubbinz",
         "detachmentId": "dread-mob",
+        "points": 15,
         "description": "**^^Mek^^** model only. Models in the bearer's unit have the Stealth ability.",
         "allowedKeywords": [
           "Mek"
@@ -34828,6 +35478,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "green-tide__ferocious-show-off",
         "name": "Ferocious Show Off",
         "detachmentId": "green-tide",
+        "points": 10,
         "description": "**^^Orks Infantry^^** model only. Each time the bearer fights, while resolving those attacks, add 1 to the Strength characteristic of the bearer's melee weapons. If the bearer's unit contains 10 or more models, while resolving those attacks, add 3 to the Strength characteristic instead.",
         "allowedKeywords": [
           "Orks Infantry"
@@ -34838,6 +35489,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "green-tide__brutal-but-kunnin",
         "name": "Brutal But Kunnin'",
         "detachmentId": "green-tide",
+        "points": 25,
         "description": "**^^Orks Infantry^^** model only. In your Command phase, if the bearer is on the battlefield (or is embarked within a **^^Transport^^** that is on the battlefield), roll one D6, adding 2 to the result if the bearer's unit contains 10 or more models: on a 5+, you gain 1 CP.",
         "allowedKeywords": [
           "Orks Infantry"
@@ -34848,6 +35500,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "green-tide__raucous-warcaller",
         "name": "Raucous Warcaller",
         "detachmentId": "green-tide",
+        "points": 20,
         "description": "**^^Orks Infantry^^** model only. While the bearer is leading a unit, that unit always counts as containing 10 or more models for the purposes of your Detachment rule and any Stratagems you use.",
         "allowedKeywords": [
           "Orks Infantry"
@@ -34858,6 +35511,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "green-tide__bloodthirsty-belligerence",
         "name": "Bloodthirsty Belligerence",
         "detachmentId": "green-tide",
+        "points": 15,
         "description": "**^^Orks Infantry^^** model only. While the bearer is leading a unit, you can re-roll Advance rolls made for that unit. While that unit contains 10 or more models, you can re-roll Charge rolls made for that unit as well.",
         "allowedKeywords": [
           "Orks Infantry"
@@ -34868,6 +35522,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bully-boyz__da-biggest-boss",
         "name": "Da Biggest Boss",
         "detachmentId": "bully-boyz",
+        "points": 15,
         "description": "**^^Infantry Warboss^^** model only. Add 2 to the bearer's Wounds characteristic.",
         "allowedKeywords": [
           "Infantry Warboss"
@@ -34878,6 +35533,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bully-boyz__big-gob",
         "name": "Big Gob",
         "detachmentId": "bully-boyz",
+        "points": 20,
         "description": "**^^Infantry Warboss^^** model only. At the start of the Fight phase, select one enemy unit within Engagement range of the bearer. That unit must take a Battle-shock test, and when doing so, subtract 1 from the result.",
         "allowedKeywords": [
           "Infantry Warboss"
@@ -34888,6 +35544,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bully-boyz__eadstompa",
         "name": "'Eadstompa",
         "detachmentId": "bully-boyz",
+        "points": 10,
         "description": "**^^Infantry Warboss^^** model only. Each time the bearer makes an attack that targets a unit that is below its Starting Strength, re-roll a Wound roll of 1. If that unit is Below Half-strength, you can re-roll the Wound roll instead.",
         "allowedKeywords": [
           "Infantry Warboss"
@@ -34898,6 +35555,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "bully-boyz__tellyporta",
         "name": "Tellyporta",
         "detachmentId": "bully-boyz",
+        "points": 25,
         "description": "**^^Warboss In Mega Armour^^** model only. Models in the bearer's unit have the Deep Strike ability.",
         "allowedKeywords": [
           "Warboss In Mega Armour"
@@ -34908,6 +35566,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kult-of-speed__fasta-than-yooz",
         "name": "Fasta Than Yooz",
         "detachmentId": "kult-of-speed",
+        "points": 35,
         "description": "**^^Orks Infantry^^** model only. Each time the bearer's unit disembarks from a **^^Transport^^** after that **^^Transport^^** has made a Normal move, the bearer's unit is still eligible to declare a charge this turn.",
         "allowedKeywords": [
           "Orks Infantry"
@@ -34918,6 +35577,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kult-of-speed__squig-hide-tyres",
         "name": "Squig-hide Tyres",
         "detachmentId": "kult-of-speed",
+        "points": 15,
         "description": "**^^Deffkilla Wartrike^^** model only. Each time a model in the bearer's unit makes a Consolidation move, it can move up to 6\" instead of up to 3\".",
         "allowedKeywords": [
           "Deffkilla Wartrike"
@@ -34928,6 +35588,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kult-of-speed__speed-makes-right",
         "name": "Speed Makes Right",
         "detachmentId": "kult-of-speed",
+        "points": 25,
         "description": "**^^Orks^^** model only. In your Command phase, if the bearer (or a **^^Transport^^** the bearer is embarked within) is within 9\" of one or more enemy units, roll one D6; on a 3+, you gain 1CP.",
         "allowedKeywords": [
           "Orks"
@@ -34938,6 +35599,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kult-of-speed__wazblasta",
         "name": "Wazblasta",
         "detachmentId": "kult-of-speed",
+        "points": 10,
         "description": "**^^Deffkilla Wartrike^^** model only. In your Shooting phase, after the bearer's unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, it is not eligible to declare a charge.",
         "allowedKeywords": [
           "Deffkilla Wartrike"
@@ -34948,6 +35610,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "taktikal-brigade__gob-boomer",
         "name": "Gob Boomer",
         "detachmentId": "taktikal-brigade",
+        "points": 10,
         "description": "**^^Warboss^^** or **^^Mek^^** model only. Each time the bearer issues Taktiks, it can do so to a friendly **^^Orks Infantry^^** or **^^Orks Mounted^^** unit within 18\", instead of 6\".",
         "allowedKeywords": [
           "Warboss",
@@ -34959,6 +35622,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "taktikal-brigade__mork-s-kunnin",
         "name": "Mork's Kunnin'",
         "detachmentId": "taktikal-brigade",
+        "points": 15,
         "description": "**^^Orks^^** model only. After both players have deployed their armies, select up to three **^^Orks^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Orks"
@@ -34969,6 +35633,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "taktikal-brigade__mek-kaptin",
         "name": "Mek Kaptin",
         "detachmentId": "taktikal-brigade",
+        "points": 45,
         "description": "**^^Big Mek^^**, **^^Big Mek In Mega Armour^^** or **^^Big Mek With Shokk Attack Gun^^** model only. During the Declare Battle Formations step, the bearer can be attached to a **^^Flash Gitz^^** unit. Each time a model in the bearer’s unit makes a ranged attack, you can re‑roll the Hit roll.",
         "allowedKeywords": [
           "Big Mek",
@@ -34981,6 +35646,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "taktikal-brigade__skwad-leader",
         "name": "Skwad Leader",
         "detachmentId": "taktikal-brigade",
+        "points": 15,
         "description": "**^^Warboss Infantry^^** model only. During the Declare Battle Formations step, the bearer can be attached to a **^^Kommandos^^** unit. While leading a **^^Kommandos^^** unit, it has the Infiltrators and Stealth abilities.",
         "allowedKeywords": [
           "Warboss Infantry"
@@ -34991,6 +35657,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "more-dakka__da-gobshot-thunderbuss",
         "name": "Da Gobshot Thunderbuss",
         "detachmentId": "more-dakka",
+        "points": 15,
         "description": "**^^Orks^^** models only. Ranged weapons equipped by the bearer have the **[DEVASTATING WOUNDS]** and **[HAZARDOUS]** abilities.",
         "allowedKeywords": [
           "Orks"
@@ -35001,6 +35668,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "more-dakka__targetin-squigs",
         "name": "Targetin' Squigs",
         "detachmentId": "more-dakka",
+        "points": 15,
         "description": "**^^Orks^^** model only. Each time a model in the bearer's unit makes a ranged attack, add 1 to the Hit roll.",
         "allowedKeywords": [
           "Orks"
@@ -35011,6 +35679,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "more-dakka__dead-shiny-shootas",
         "name": "Dead Shiny Shootas",
         "detachmentId": "more-dakka",
+        "points": 35,
         "description": "**^^Orks^^** model only. Ranged weapons equipped by models in the bearer's unit have the **[RAPID FIRE 1]** ability.",
         "allowedKeywords": [
           "Orks"
@@ -35021,6 +35690,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "more-dakka__zog-off-and-eat-dakka",
         "name": "Zog Off And Eat Dakka!",
         "detachmentId": "more-dakka",
+        "points": 10,
         "description": "**^^Orks^^** model only. The bearer's unit is eligible to shoot in a turn in which it Fell Back.",
         "allowedKeywords": [
           "Orks"
@@ -35031,6 +35701,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "freebooter-krew__razgit-s-magik-map",
         "name": "Razgit's Magik Map",
         "detachmentId": "freebooter-krew",
+        "points": 25,
         "description": "**^^Orks^^** model only. After both players have deployed their armies, select up to three **^^Orks Infantry^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Orks"
@@ -35041,6 +35712,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "freebooter-krew__git-spotter-squig",
         "name": "Git-spotter Squig",
         "detachmentId": "freebooter-krew",
+        "points": 20,
         "description": "**^^Orks^^** model only. Ranged weapons equipped by models in the bearer’s unit have the **[IGNORES COVER]** ability.",
         "allowedKeywords": [
           "Orks"
@@ -35051,6 +35723,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "freebooter-krew__bionik-workshop",
         "name": "Bionik Workshop",
         "detachmentId": "freebooter-krew",
+        "points": 15,
         "description": "**^^Big Mek^^** or **^^Painboy^^** model only. At the start of the battle, roll one D3 and compare the result to the list below. Until the end of the battle, models in the bearer’s unit have that bioniks ability.\n**1. Bionik Legs:** Add 2\" to the Move characteristic of this model.\n**2. Bionik Arms:** Add 1 to the Strength characteristic of melee weapons equipped by this model.\n**3. Bionik Bonce:** Improve the Weapon Skill characteristic of melee weapons equipped by this model by 1.",
         "allowedKeywords": [
           "Big Mek",
@@ -35062,6 +35735,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "freebooter-krew__da-kaptin",
         "name": "Da Kaptin",
         "detachmentId": "freebooter-krew",
+        "points": 10,
         "description": "**^^Warboss^^** model only. Once per battle round, at the start of any phase, you can select one friendly **^^Orks^^** unit that is Battle‑shocked and within 12\" of the bearer. That unit suffers D3 mortal wounds and it is no longer Battle‑shocked.",
         "allowedKeywords": [
           "Warboss"
@@ -35072,6 +35746,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ramship-raiders__living-battering-ram",
         "name": "Living Battering Ram",
         "detachmentId": "ramship-raiders",
+        "points": 0,
         "description": "Each time the bearer attempts to operate a closed Hatchway, your opponent cannot try to prevent it. In addition, each time the bearer opens a Hatchway, each enemy unit within 6\" of that Hatchway and wholly on the opposite side of it from the bearer must take a Battle-shock test.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -35080,6 +35755,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "ramship-raiders__scarred-brute",
         "name": "Scarred Brute",
         "detachmentId": "ramship-raiders",
+        "points": 0,
         "description": "The bearer has the Feel No Pain 5+ ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -35088,6 +35764,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kaptin-killers__tellyporta",
         "name": "Tellyporta",
         "detachmentId": "kaptin-killers",
+        "points": 0,
         "description": "In the Deploy Armies step, select one **^^Meganobz^^** unit from your army. Until the end of the battle, models in that unit have the Deep Strike ability.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -35096,6 +35773,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kaptin-killers__gnasher-squig-crates",
         "name": "Gnasher Squig Crates",
         "detachmentId": "kaptin-killers",
+        "points": 0,
         "description": "**^^Warboss^^** model only. In your Command phase, you can select one **^^Nobz^^** or **^^Meganobz^^** unit from your army (excluding Battle-shocked units) that is within 6\" of the bearer and is within range of an objective marker. If there are no enemy models within range of that objective marker, it is Secured by your army.",
         "allowedKeywords": [
           "Warboss"
@@ -35106,6 +35784,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "speedwaaagh__master-meknologist",
         "name": "Master Meknologist",
         "detachmentId": "speedwaaagh",
+        "points": 20,
         "description": "**^^Big Mek^^** model only. Improve the Ballistic Skill characteristic of the bearer’s ranged weapons by 1.",
         "allowedKeywords": [
           "Big Mek"
@@ -35116,6 +35795,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "speedwaaagh__dakkamek",
         "name": "Dakkamek",
         "detachmentId": "speedwaaagh",
+        "points": 25,
         "description": "**^^Mek^^** model only. Each time the bearer uses its Mekaniak ability, until the start of your next Command phase, ranged weapons equipped by the selected **^^Vehicle^^** model have the **[RAPID FIRE 1]** ability",
         "allowedKeywords": [
           "Mek"
@@ -35126,6 +35806,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "speedwaaagh__supa-burny-fuel",
         "name": "Supa-burny Fuel",
         "detachmentId": "speedwaaagh",
+        "points": 15,
         "description": "**^^Deffkilla Wartrike^^** model only. Change the Attacks characteristic of the bearer’s killa jet – burna weapon to 3D6, and change the Attacks characteristic of the bearer’s killa jet – cutta weapon to 3.",
         "allowedKeywords": [
           "Deffkilla Wartrike"
@@ -35136,6 +35817,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "speedwaaagh__kustom-shokk-box",
         "name": "Kustom Shokk Box",
         "detachmentId": "speedwaaagh",
+        "points": 10,
         "description": "**^^Deffkilla Wartrike^^** model only. Each time the bearer uses its turbo, its unit can move horizontally through terrain features.",
         "allowedKeywords": [
           "Deffkilla Wartrike"
@@ -35146,6 +35828,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "blitz-brigade__supercharged-squig-oil",
         "name": "Supercharged Squig Oil",
         "detachmentId": "blitz-brigade",
+        "points": 10,
         "description": "**^^Mek^^** model only. Each time the bearer uses its Mekaniak ability, until the end of the turn, you can re‑roll Charge rolls for the selected **^^Vehicle^^** model’s unit.",
         "allowedKeywords": [
           "Mek"
@@ -35156,6 +35839,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "blitz-brigade__runnin-boots",
         "name": "Runnin' Boots",
         "detachmentId": "blitz-brigade",
+        "points": 10,
         "description": "**^^Orks Infantry Character^^** model only. Each time you make a Charge roll for the bearer’s unit, if that unit disembarked from a **^^Transport^^** this turn, add 1 to the result.",
         "allowedKeywords": [
           "Orks Infantry Character"
@@ -35166,6 +35850,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "blitz-brigade__tuff-git",
         "name": "Tuff Git",
         "detachmentId": "blitz-brigade",
+        "points": 5,
         "description": "**^^Orks Infantry Character^^** model only. At the end of a phase in which the bearer’s unit disembarked from a **^^Transport^^**, if that unit is Battle‑shocked, it is no longer Battle‑shocked.",
         "allowedKeywords": [
           "Orks Infantry Character"
@@ -35176,6 +35861,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "blitz-brigade__blitzkaptin",
         "name": "Blitzkaptin",
         "detachmentId": "blitz-brigade",
+        "points": 25,
         "description": "**^^Orks Character^^** model only. After both players have deployed their armies, if the bearer’s unit (or any **^^Transport^^** it is embarked within) is on the battlefield, select up to three **^^Orks Vehicle^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Orks Character"
@@ -36411,6 +37097,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kauyon__exemplar-of-the-kauyon",
         "name": "Exemplar of the Kauyon",
         "detachmentId": "kauyon",
+        "points": 20,
         "description": "**^^T’au Empire^^** model only (excluding **^^Kroot Shaper^^** models). While the bearer is leading a unit, the Patient Hunter Detachment rule applies to that unit from the second battle round onwards instead of the third.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36421,6 +37108,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kauyon__precision-of-the-patient-hunter",
         "name": "Precision of the Patient Hunter",
         "detachmentId": "kauyon",
+        "points": 15,
         "description": "**^^T’au Empire^^** model only. Each time the bearer makes a ranged attack, add 1 to the Hit roll. From the third battle round onwards, add 1 to the Wound roll as well.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36431,6 +37119,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kauyon__solid-image-projection-unit",
         "name": "Solid-image Projection Unit",
         "detachmentId": "kauyon",
+        "points": 30,
         "description": "**^^T’au Empire^^** model only. After both players have deployed their armies, select up to three **^^T’au Empire^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36441,6 +37130,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kauyon__through-unity-devastation",
         "name": "Through Unity, Devastation",
         "detachmentId": "kauyon",
+        "points": 40,
         "description": "**^^T’au Empire^^** model only (excluding **^^Kroot Shaper^^** models). While this model is leading a unit, each time that unit is an Observer unit, until the end of the phase, ranged weapons equipped by models in a Guided unit have the **[LETHAL HITS]** ability while targeting their Spotted unit.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36451,6 +37141,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mont-ka__exemplar-of-the-mont-ka",
         "name": "Exemplar of the Mont'ka",
         "detachmentId": "mont-ka",
+        "points": 10,
         "description": "**^^T’au Empire^^** model only (excluding **^^Kroot Shaper^^** models). While the bearer is leading a unit, the Killing Blow Detachment rule applies to that unit during the fourth battle round as well.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36461,6 +37152,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mont-ka__strike-swiftly",
         "name": "Strike Swiftly",
         "detachmentId": "mont-ka",
+        "points": 25,
         "description": "**^^T’au Empire^^** model only. At the start of the battle, before any moves are made using the Scouts ability, you can select up to two friendly **^^T’au Empire^^** units within 6\" of the bearer that do not have the Scouts ability. Until the end of the battle, all models in the selected units have the Scouts 6\" ability.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36471,6 +37163,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mont-ka__strategic-conqueror",
         "name": "Strategic Conqueror",
         "detachmentId": "mont-ka",
+        "points": 15,
         "description": "**^^T’au Empire^^** model only. At the start of the first battle round, before the first turn begins, select one objective marker on the battlefield. While a friendly **^^T’au Empire^^** model is within range of that objective marker and the bearer is on the battlefield, add 1 to that friendly model's Objective Control characteristic.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36481,6 +37174,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "mont-ka__coordinated-exploitation",
         "name": "Coordinated Exploitation",
         "detachmentId": "mont-ka",
+        "points": 40,
         "description": "**^^T’au Empire^^** model only (excluding **^^Kroot Shaper^^** models). While this model is leading a unit, each time that unit is an Observer unit, until the end of the phase, ranged weapons equipped by models in a Guided unit have the **[SUSTAINED HITS 1]** ability while targeting their Spotted unit.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36491,6 +37185,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "retaliation-cadre__starflare-ignition-system",
         "name": "Starflare Ignition System",
         "detachmentId": "retaliation-cadre",
+        "points": 20,
         "description": "**^^T’au Empire Battlesuit^^** model only. At the end of your opponent's turn, if the bearer's unit is not within Engagement Range of one or more enemy units, you can remove that unit from the battlefield and place it into Strategic Reserves.",
         "allowedKeywords": [
           "T’au Empire Battlesuit"
@@ -36501,6 +37196,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "retaliation-cadre__prototype-weapon-system",
         "name": "Prototype Weapon System",
         "detachmentId": "retaliation-cadre",
+        "points": 15,
         "description": "**^^T’au Empire Battlesuit^^** model only. Each time the bearer is select to shoot, select either the **[LETHAL HITS]** or **[SUSTAINED HITS 1]** ability. Until those attacks are resolved, ranged weapons equipped by the bearer have the select ability.",
         "allowedKeywords": [
           "T’au Empire Battlesuit"
@@ -36511,6 +37207,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "retaliation-cadre__internal-grenade-racks",
         "name": "Internal Grenade Racks",
         "detachmentId": "retaliation-cadre",
+        "points": 20,
         "description": "**^^T’au Empire Battlesuit^^** model only. The bearer has the **^^Grenades^^** keyword, and each time the bearer ends a Normal move, you can select one enemy unit that it moved over during that move. If you do, roll six D6: for each 4+, that enemy unit suffers 1 mortal wound.",
         "allowedKeywords": [
           "T’au Empire Battlesuit"
@@ -36521,6 +37218,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "retaliation-cadre__puretide-engram-neurochip",
         "name": "Puretide Engram Neurochip",
         "detachmentId": "retaliation-cadre",
+        "points": 25,
         "description": "**^^T’au Empire Battlesuit^^** model only. Each time you target the bearer’s unit with a Stratagem, roll one D6: on a 4+, you gain 1CP.",
         "allowedKeywords": [
           "T’au Empire Battlesuit"
@@ -36531,6 +37229,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kroot-hunting-pack__nomadic-hunter",
         "name": "Nomadic Hunter",
         "detachmentId": "kroot-hunting-pack",
+        "points": 20,
         "description": "**^^Kroot Trail Shaper^^** model only. While the bearer is leading a unit, add 3\" to the Move characteristic of models in that unit and ranged weapons equipped by the models in that unit have the **[ASSAULT]** ability.",
         "allowedKeywords": [
           "Kroot Trail Shaper"
@@ -36541,6 +37240,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kroot-hunting-pack__borthrod-gland",
         "name": "Borthrod Gland",
         "detachmentId": "kroot-hunting-pack",
+        "points": 15,
         "description": "**^^Kroot Flesh Shaper^^** only. While the bearer is leading a unit, each time a model in that unit makes a melee attack, an unmodified Hit roll of 5+ scores a Critical Hit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -36549,6 +37249,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kroot-hunting-pack__root-carved-weapons",
         "name": "Root-carved Weapons",
         "detachmentId": "kroot-hunting-pack",
+        "points": 10,
         "description": "**^^Kroot War Shaper^^** model only. All weapons equipped by the bearer have the **[PRECISION]** and **[DEVASTATING WOUNDS]** abilities.",
         "allowedKeywords": [
           "Kroot War Shaper"
@@ -36559,6 +37260,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kroot-hunting-pack__kroothawk-flock",
         "name": "Kroothawk Flock",
         "detachmentId": "kroot-hunting-pack",
+        "points": 10,
         "description": "**^^Kroot^^** model only. Ranged weapons equipped by models in the bearer's unit have the **[IGNORES COVER]** ability, and enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" horizontally of the bearer.",
         "allowedKeywords": [
           "Kroot"
@@ -36569,6 +37271,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "auxiliary-cadre__student-of-kauyon",
         "name": "Student of Kauyon",
         "detachmentId": "auxiliary-cadre",
+        "points": 15,
         "description": "**^^Kroot Shaper^^** model only. In the Declare Battle Formations step, you can select up to three **^^Kroot Carnivores^^** or **^^Kroot Farstalkers^^** units from your army. Models in those units have the Deep Strike ability.",
         "allowedKeywords": [
           "Kroot Shaper"
@@ -36579,6 +37282,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "auxiliary-cadre__admired-leader",
         "name": "Admired Leader",
         "detachmentId": "auxiliary-cadre",
+        "points": 20,
         "description": "**^^T'au Empire^^** model (excluding **^^Kroot^^** models) only. In your Command phase, you can select one **^^Kroot^^** or **^^Vespid Stingwings^^** unit within 12\" of the bearer. If you do, until the start of your next Command phase, improve the Leadership characteristic of models in that unit by 1, and while such a unit is not Battle‑shocked, add 1 to the Objective Control characteristic of models in that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -36587,6 +37291,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "auxiliary-cadre__fanatical-convert",
         "name": "Fanatical Convert",
         "detachmentId": "auxiliary-cadre",
+        "points": 10,
         "description": "**^^Kroot^^** model only. The bearer’s unit has the For the Greater Good ability.",
         "allowedKeywords": [
           "Kroot"
@@ -36597,6 +37302,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "auxiliary-cadre__transponder-lock-module",
         "name": "Transponder Lock Module",
         "detachmentId": "auxiliary-cadre",
+        "points": 25,
         "description": "**^^T’au Empire Walker^^** model with the Deep Strike ability only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. During your first Movement phase, when you set up the bearer’s unit, it must be set up within 12\" of one or more friendly **^^Kroot^^** or **^^Vespid Stingwings^^** units and not within 9\" horizontally of one or more enemy units.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -36605,6 +37311,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "experimental-prototype-cadre__fusion-blades",
         "name": "Fusion Blades",
         "detachmentId": "experimental-prototype-cadre",
+        "points": 25,
         "description": "**^^T’au Empire^^** model only. Select one fusion blaster equipped by the bearer. Improve the Attacks characteristic of that weapon by 1, improve the Strength characteristic of that weapon by 3, and that weapon has the **[MELTA 4]** ability.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36615,6 +37322,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "experimental-prototype-cadre__thermoneutronic-projector",
         "name": "Thermoneutronic Projector",
         "detachmentId": "experimental-prototype-cadre",
+        "points": 20,
         "description": "**^^T’au Empire^^** model only. Select one T'au flamer equipped by the bearer. Improve the Strength characteristic of that weapon by 2, and improve the Armour Penetration and Damage characteristics of that weapon by 1.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36625,6 +37333,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "experimental-prototype-cadre__plasma-accelerator-rifle",
         "name": "Plasma Accelerator Rifle",
         "detachmentId": "experimental-prototype-cadre",
+        "points": 10,
         "description": "**^^T’au Empire^^** model only. Select one plasma rifle equipped by the bearer. Improve the Strength characteristic of that weapon by 2, and improve the Attacks, Armour Penetration and Damage characteristics of that weapon by 1.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36635,6 +37344,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "experimental-prototype-cadre__supernova-launcher",
         "name": "Supernova Launcher",
         "detachmentId": "experimental-prototype-cadre",
+        "points": 15,
         "description": "**^^T’au Empire^^** model only. Select one airbursting fragmentation projector equipped by the bearer. Improve the Strength characteristic of that weapon by 3, and improve the Armour Penetration and Damage characteristics of that weapon by 1.",
         "allowedKeywords": [
           "T’au Empire"
@@ -36645,6 +37355,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kroot-raiding-party__quill-marker",
         "name": "Quill Marker",
         "detachmentId": "kroot-raiding-party",
+        "points": 0,
         "description": "At the start of your Charge phase, select one enemy unit within 12\" of the bearer. Until the end of the phase, each time a **^^Kroot^^** unit from your army declares a charge, if it is within 6\" of that enemy unit, it can include that enemy unit as a target of that charge, even if it is not visible to it.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -36653,6 +37364,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "kroot-raiding-party__experienced-leader",
         "name": "Experienced Leader",
         "detachmentId": "kroot-raiding-party",
+        "points": 0,
         "description": "At the start of the first battle round, select one enemy unit on the battlefield. Until the end of the battle, each time a **^^Kroot^^** model from your army makes an attack that targets that enemy unit, if the bearer is on the battlefield, you can re-roll the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -36661,6 +37373,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "starfire-cadre__target-optimisation-microdrones",
         "name": "Target Optimisation Microdrones",
         "detachmentId": "starfire-cadre",
+        "points": 0,
         "description": "**^^Cadre Fireblade^^** model only. Once per turn, in your Shooting phase, when a friendly **^^Fire Warrior^^**, **^^Pathfinder Team^^** or **^^Cadre Fireblade^^** unit within 6\" of the bearer is selected to shoot, the bearer use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of ranged weapons equipped by models in that unit by 1.",
         "allowedKeywords": [
           "Cadre Fireblade"
@@ -36671,6 +37384,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "starfire-cadre__duty-s-echo",
         "name": "Duty's Echo",
         "detachmentId": "starfire-cadre",
+        "points": 0,
         "description": "**^^Ethereal^^** model only. At the end of your Shooting phase, you can select one friendly **^^Fire Warrior^^** or **^^Pathfinder Team^^** unit within 6\" of the bearer. If you do, that unit can make a Normal move of up to 3\" and then counts as having performed the Set Overwatch Tactical Manoeuvre this turn.",
         "allowedKeywords": [
           "Ethereal"
@@ -37885,6 +38599,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "invasion-fleet__alien-cunning",
         "name": "Alien Cunning",
         "detachmentId": "invasion-fleet",
+        "points": 30,
         "description": "**^^Tyranids^^** model only. After both players have deployed their armies, select up to three **^^Tyranids^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Tyranids"
@@ -37895,6 +38610,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "invasion-fleet__perfectly-adapted",
         "name": "Perfectly Adapted",
         "detachmentId": "invasion-fleet",
+        "points": 15,
         "description": "**^^Tyranids^^** model only. Once per turn, you can re-roll one Hit roll, one Wound roll, one Damage roll, one Advance roll, one Charge roll or one saving throw made for the bearer",
         "allowedKeywords": [
           "Tyranids"
@@ -37905,6 +38621,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "invasion-fleet__synaptic-linchpin",
         "name": "Synaptic Linchpin",
         "detachmentId": "invasion-fleet",
+        "points": 20,
         "description": "**^^Tyranids^^** model only. While a friendly **^^Tyranids^^** unit is within 9\" of the bearer, that unit is within Synapse Range of your army.",
         "allowedKeywords": [
           "Tyranids"
@@ -37915,6 +38632,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "invasion-fleet__adaptive-biology",
         "name": "Adaptive Biology",
         "detachmentId": "invasion-fleet",
+        "points": 25,
         "description": "**^^Tyranids^^** model only. The bearer has the Feel No Pain 5+ ability. At the start of any turn, if the bearer has fewer than its starting number of wounds remaining, until the end of the battle, it has the Feel No Pain 4+ ability instead.",
         "allowedKeywords": [
           "Tyranids"
@@ -37925,6 +38643,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "assimilation-swarm__instinctive-defense",
         "name": "Instinctive Defense",
         "detachmentId": "assimilation-swarm",
+        "points": 15,
         "description": "**^^Tyranids^^** model only. While the bearer is within 6\" of one or more **^^Harvester^^** units, you can target the bearer's unit with the Heroic Intervention Stratagem for 0CP. In addition, while the bearer is within 6\" of one or more friendly **^^Harvester^^** units, models in the bearer's unit have the Fights First ability.",
         "allowedKeywords": [
           "Tyranids"
@@ -37935,6 +38654,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "assimilation-swarm__parasitic-biomorphology",
         "name": "Parasitic Biomorphology",
         "detachmentId": "assimilation-swarm",
+        "points": 25,
         "description": "**^^Tyranids^^** model only. Add 1 to the Strength characteristic of melee weapons equipped by models in the bearer's unit. The first time the bearer's unit destroys an enemy unit in the Fight phase while the bearer is within 6\" of one or more **^^Harvester^^** units, until the end of battle, add 1 to the Attacks characteristic of melee weapons equipped by models in the bearer's unit.",
         "allowedKeywords": [
           "Tyranids"
@@ -37945,6 +38665,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "assimilation-swarm__regenerating-monstrosity",
         "name": "Regenerating Monstrosity",
         "detachmentId": "assimilation-swarm",
+        "points": 20,
         "description": "**^^Tyranids^^** model only (excluding **^^Monsters^^** models) The bearer's unit can be regenerated up to twice per phase, instead of once.",
         "allowedKeywords": [
           "Tyranids"
@@ -37955,6 +38676,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "assimilation-swarm__biophagic-flow-aura",
         "name": "Biophagic Flow (Aura)",
         "detachmentId": "assimilation-swarm",
+        "points": 10,
         "description": "**^^Tyranids^^** model only. While a friendly **^^Harvester^^** model is within 12\" of the bearer, when using the Feed the Swarm ability, that **^^Harvester^^** model can Regenerate one friendly **^^Tyranids^^** unit that is within 9\" instead of one within 6\".",
         "allowedKeywords": [
           "Tyranids"
@@ -37965,6 +38687,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "crusher-stampede__monstrous-nemesis",
         "name": "Monstrous Nemesis",
         "detachmentId": "crusher-stampede",
+        "points": 25,
         "description": "**^^Tyranids Monster^^** only. Each time the bearer makes a melee attack that targets a **^^Monster^^**or **^^Vehicle^^**unit, add 1 to the Wound roll.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -37973,6 +38696,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "crusher-stampede__null-nodules",
         "name": "Null Nodules",
         "detachmentId": "crusher-stampede",
+        "points": 10,
         "description": "**^^Tyranids Monster^^** only. Once per battle, when a Psychic Attack is allocated to the bearer, it can use this ability. If it does, until the end of the phase, the bearer has the Feel No Pain 5+ ability against Psychic Attacks.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -37981,6 +38705,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "crusher-stampede__ominous-presence",
         "name": "Ominous Presence",
         "detachmentId": "crusher-stampede",
+        "points": 15,
         "description": "**^^Tyranids Monster^^** only. Add 3 to the bearer's Objective Control characteristic.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -37989,6 +38714,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "crusher-stampede__enraged-reserves",
         "name": "Enraged Reserves",
         "detachmentId": "crusher-stampede",
+        "points": 20,
         "description": "**^^Tyranids Monster^^** only. If the bearer is destroyed by a melee attack, if it has not fought this phase, roll one D6: on a 3+, do not remove it from play. It can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -37997,6 +38723,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "synaptic-nexus__psychostatic-disruption",
         "name": "Psychostatic Disruption",
         "detachmentId": "synaptic-nexus",
+        "points": 30,
         "description": "**^^Tyranids Synapse^^** model only. Enemy units that arrive on the battlefield from Reserves cannot be set up with 12\" of the bearer. In addition, once per battle, during the first or second battle round, when your opponent declares that a unit will arrive on the battlefield from Strategic Reserves, the bearer can use this enhancement. If it does, roll one D6: on a 4+, that enemy cannot arrive on the battlefield this turn.",
         "allowedKeywords": [
           "Tyranids Synapse"
@@ -38007,6 +38734,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "synaptic-nexus__synaptic-control",
         "name": "Synaptic Control",
         "detachmentId": "synaptic-nexus",
+        "points": 20,
         "description": "**^^Tyranids Synapse^^** model only. Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of the attack.",
         "allowedKeywords": [
           "Tyranids Synapse"
@@ -38017,6 +38745,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "synaptic-nexus__the-dirgeheart-of-kharis-aura",
         "name": "The Dirgeheart of Kharis (Aura)",
         "detachmentId": "synaptic-nexus",
+        "points": 15,
         "description": "**^^Tyranids Synapse^^** model only. While an enemy unit is within 9\" of the bearer, worsen that unit's Leadership characteristic by 1.",
         "allowedKeywords": [
           "Tyranids Synapse"
@@ -38027,6 +38756,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "synaptic-nexus__power-of-the-hive-mind",
         "name": "Power of the Hive Mind",
         "detachmentId": "synaptic-nexus",
+        "points": 10,
         "description": "**^^Tyranids Psyker^^** model only. Improve the Strength and Armour Penetration characteristic of psychic weapons equipped by the wearer of 1.",
         "allowedKeywords": [
           "Tyranids Psyker"
@@ -38037,6 +38767,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "unending-swarm__naturalised-camoflage",
         "name": "Naturalised Camoflage",
         "detachmentId": "unending-swarm",
+        "points": 30,
         "description": "**^^Tyranids^^** model only. At the start of the first battle round, select up to three friendly **^^Endless Multitude^^** units within 9\" of the bearer. Until the end of the battle round, each time a ranged attack targets one of those units, models in that unit have the Benefit of Cover against that attack.",
         "allowedKeywords": [
           "Tyranids"
@@ -38047,6 +38778,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "unending-swarm__piercing-talons",
         "name": "Piercing Talons",
         "detachmentId": "unending-swarm",
+        "points": 25,
         "description": "**^^Tyranids^^** model only. Each time a model in the Bearer's unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
         "allowedKeywords": [
           "Tyranids"
@@ -38057,6 +38789,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "unending-swarm__relentless-hunger",
         "name": "Relentless Hunger",
         "detachmentId": "unending-swarm",
+        "points": 20,
         "description": "**^^Tyranids^^** model only. Add 2\" to the Move characteristic of models in the bearer's unit.",
         "allowedKeywords": [
           "Tyranids"
@@ -38067,6 +38800,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "unending-swarm__adrenalised-onslaught",
         "name": "Adrenalised Onslaught",
         "detachmentId": "unending-swarm",
+        "points": 15,
         "description": "**^^Tyranids^^** model only. Each time the bearer's unit makes a Pile In or Consolidation, models in this unit can move an additional 3\"",
         "allowedKeywords": [
           "Tyranids"
@@ -38077,6 +38811,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vanguard-onslaught__hunting-grounds",
         "name": "Hunting Grounds",
         "detachmentId": "vanguard-onslaught",
+        "points": 20,
         "description": "**^^Tyranids^^** model only. While the bearer is on the battlefield, each time your opponent sets up a Reserves unit on the battlefield, roll one D6: on a 2+ that unit must make a Battle-shock test.",
         "allowedKeywords": [
           "Tyranids"
@@ -38087,6 +38822,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vanguard-onslaught__neuronode",
         "name": "Neuronode",
         "detachmentId": "vanguard-onslaught",
+        "points": 20,
         "description": "**^^Tyranids^^** model only. After both players have deployed their armies, you can select up to three **^^Vanguard Invader^^** units from your army and redeploy all of those units. When doing so, any of those units can be placed into Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Tyranids"
@@ -38097,6 +38833,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vanguard-onslaught__stalker",
         "name": "Stalker",
         "detachmentId": "vanguard-onslaught",
+        "points": 10,
         "description": "**^^Vanguard Invader^^** model only. At the start of the battle, select one enemy unit. Each time the bearer makes an attack that targets that enemy unit, add 1 to the Hit roll and Wound roll.",
         "allowedKeywords": [
           "Vanguard Invader"
@@ -38107,6 +38844,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "vanguard-onslaught__chameleonic",
         "name": "Chameleonic",
         "detachmentId": "vanguard-onslaught",
+        "points": 15,
         "description": "**^^Vanguard Invader^^** only. The bearer has the Stealth ability and each time a ranged attack targets the bearer's unit, models in that unit have the Benefit of Cover against that attack.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -38115,6 +38853,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warrior-bioform-onslaught__sensory-assimilation",
         "name": "Sensory Assimilation",
         "detachmentId": "warrior-bioform-onslaught",
+        "points": 20,
         "description": "**^^Winged Tyranid Prime^^** model only. Each time an attack targets the bearer’s unit, subtract 1 from the Hit roll.",
         "allowedKeywords": [
           "Winged Tyranid Prime"
@@ -38125,6 +38864,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warrior-bioform-onslaught__elevated-might",
         "name": "Elevated Might",
         "detachmentId": "warrior-bioform-onslaught",
+        "points": 30,
         "description": "**^^Tyranids^^** model only. The bearer’s unit is eligible to declare a charge in a turn in which it Advanced.",
         "allowedKeywords": [
           "Tyranids"
@@ -38135,6 +38875,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warrior-bioform-onslaught__ocular-adaptation",
         "name": "Ocular Adaptation",
         "detachmentId": "warrior-bioform-onslaught",
+        "points": 20,
         "description": "**^^Winged Tyranid Prime^^** model only. Each time a model in the bearer’s unit makes an attack, add 1 to the Hit roll.",
         "allowedKeywords": [
           "Winged Tyranid Prime"
@@ -38145,6 +38886,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "warrior-bioform-onslaught__synaptic-tyrant",
         "name": "Synaptic Tyrant",
         "detachmentId": "warrior-bioform-onslaught",
+        "points": 10,
         "description": "**^^Neurotyrant^^** model only. During the Declare Battle Formations step, the bearer can be attached to a **^^Tyranid Warriors^^** unit.",
         "allowedKeywords": [
           "Neurotyrant"
@@ -38155,6 +38897,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "subterranean-assault__vanguard-intellect",
         "name": "Vanguard Intellect",
         "detachmentId": "subterranean-assault",
+        "points": 15,
         "description": "**^^Tyranids^^** model with the Deep Strike ability only. The bearer’s unit can be set up using the Deep Strike ability in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -38163,6 +38906,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "subterranean-assault__trygon-prime",
         "name": "Trygon Prime",
         "detachmentId": "subterranean-assault",
+        "points": 20,
         "description": "**^^Trygon^^** model only. The bearer gains the **^^Synapse^^** keyword. Improve the Strength and Weapon Skill characteristics of melee weapons equipped by the bearer by 1.",
         "allowedKeywords": [
           "Trygon"
@@ -38173,6 +38917,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "subterranean-assault__synaptic-synergy",
         "name": "Synaptic Synergy",
         "detachmentId": "subterranean-assault",
+        "points": 15,
         "description": "**^^Tyranids^^** model only. Once per battle, you can target the bearer’s unit with the Rapid Ingress stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
         "allowedKeywords": [
           "Tyranids"
@@ -38183,6 +38928,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "subterranean-assault__tremor-senses",
         "name": "Tremor Senses",
         "detachmentId": "subterranean-assault",
+        "points": 20,
         "description": "**^^Tyranids^^** model only. After both players have deployed their armies, select up to three friendly **^^Tyranids^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [
           "Tyranids"
@@ -38193,6 +38939,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tyranid-attack__reinforced-carapace",
         "name": "Reinforced Carapace",
         "detachmentId": "tyranid-attack",
+        "points": 0,
         "description": "Each time an attack is allocated to the bearer, subtract 1 from the Damage characteristic of that attack (note that if given to a Tyranid Prime model, this only affects that model and not other models in its unit).",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -38201,6 +38948,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "tyranid-attack__synaptic-goad",
         "name": "Synaptic Goad",
         "detachmentId": "tyranid-attack",
+        "points": 0,
         "description": "In your Command phase, select one friendly **^^Tyranid Warriors with Melee Bio-weapons^^** or **^^Tyranid Warriors with Ranged Bio-weapons^^** unit within 6\" of the bearer. Until the end of the turn, add 2\" to the Move characteristic of models in that unit.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -38209,6 +38957,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "biotide__synaptic-beacon",
         "name": "Synaptic Beacon",
         "detachmentId": "biotide",
+        "points": 0,
         "description": "While a friendly **^^Tyranids^^** unit is within 9\" of the bearer (ignoring Walls and closed Hatchways), that unit is within Synapse Range of the bearer and of your army.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -38217,6 +38966,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "biotide__hypersurge-gland",
         "name": "Hypersurge Gland",
         "detachmentId": "biotide",
+        "points": 0,
         "description": "Once per battle, at the end of your opponent's Charge phase, the bearer can use this Enhancement. If it does, it can declare a charge as if it were your Charge phase.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -38225,6 +38975,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "biotide__psi-spoor-sensitivity",
         "name": "Psi-spoor Sensitivity",
         "detachmentId": "biotide",
+        "points": 0,
         "description": "Each time the bearer declares a charge, it can target enemy units that are not visible to it.",
         "allowedKeywords": [],
         "allowedUnitNames": []
@@ -38233,6 +38984,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "biotide__stalking-menace",
         "name": "Stalking Menace",
         "detachmentId": "biotide",
+        "points": 0,
         "description": "Once per battle, at the end of your opponent's Fight phase, if the bearer is not within Engagement Range of one or more enemy units, it can use this Enhancement. If it does, remove the bearer from the battlefield and place it into Strategic Reserves. It will arrive back on the battlefield in the Reinforcements step of your next Movement phase as if it had the Deep Strike ability. If this is not possible, the bearer is destroyed. When the bearer is set back up on the battlefield, until the end of the turn, it cannot declare a charge.",
         "allowedKeywords": [],
         "allowedUnitNames": []
