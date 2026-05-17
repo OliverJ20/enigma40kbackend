@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T09:47:22.825Z
+// Last synced: 2026-05-17T21:28:51.073Z
 
 export interface WargearVariant {
   name: string;
@@ -16,6 +16,8 @@ export interface WargearGroup {
   name: string;
   groupMin: number;
   groupMax: number;
+  /** Minimum unit model count required to show this group (for "per N models" split groups). */
+  modelMin?: number;
   /** Empty string for unit-level groups; model name (e.g. "Theyn") for leader weapon choices. */
   modelContext: string;
   /** True for unit-level add-on upgrades (icons, banners) rendered separately from squad composition. */
@@ -5147,7 +5149,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Tempestus Scions w/ Special weapons",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -5201,7 +5203,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Tempestus Scions w/ Special weapons (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Tempestus Scion w/ Flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Tempestus Scion w/ Grenade launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Grenade launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Tempestus Scion w/ Hot-shot volley gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Hot-shot volley gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Tempestus Scion w/ Meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Tempestus Scion w/ Plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -7406,7 +7469,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Heavy weapons",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -7440,7 +7503,48 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Heavy weapons (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Purifier w/ incinerator",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Incinerator",
+                  "Purifying Flame"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Purifier w/ psilencer",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Psilencer",
+                  "Purifying Flame"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Purifier w/ psycannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Psycannon",
+                  "Purifying Flame"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -8591,7 +8695,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "1 - 2 Gun Servitors",
             "groupMin": 1,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -8622,7 +8726,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 6
+          },
+          {
+            "name": "1 - 2 Gun Servitors (2nd)",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Servitor w/ heavy bolter",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Servitor w/ multi-melta",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Servitor w/ plasma cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma cannon"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 12
           }
         ]
       },
@@ -17177,7 +17319,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Up to two:",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -17224,7 +17366,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 3
+          },
+          {
+            "name": "Up to two: (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Biker w/ flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Flamer",
+                  "Close combat weapon",
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Biker w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Combi-bolter",
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Biker w/ plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma gun",
+                  "Close combat weapon",
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Biker w/ combi-weapon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Close combat weapon",
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 6
           }
         ]
       },
@@ -18228,7 +18424,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Special weapons",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -18259,7 +18455,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Special weapons (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plague Marine w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plague Marine w/ plague belcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plague belcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plague Marine w/ plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -19157,7 +19391,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Special weapons",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -19188,7 +19422,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Special weapons (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plague Marine w/ meltagun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plague Marine w/ plasma gun",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plague Marine w/ plague belcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plague belcher"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -20577,7 +20849,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Heavy weapons",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -20600,7 +20872,37 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Heavy weapons (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Scarab Occult Terminator w/ heavy warpflamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Prosperine khopesh"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Scarab Occult Terminator w/ soulreaper cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Prosperine khopesh",
+                  "Soulreaper cannon"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           },
           {
             "name": "Weapon",
@@ -20632,7 +20934,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Hellfyre missile rack",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": true,
             "variants": [
@@ -20643,7 +20945,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "weapons": [],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Hellfyre missile rack (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hellfyre missile rack",
+                "min": 0,
+                "max": 2,
+                "weapons": [],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -22893,7 +23213,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Voidreaver with special weapon",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -22915,7 +23235,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Voidreaver with special weapon (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Voidreaver with Blaster",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Voidreaver with Shredder",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shredder"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -24992,7 +25341,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Skyreavers w/ alternative weapons",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -25032,7 +25381,54 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Skyreavers w/ alternative weapons (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Skyreaver w/ blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corsair blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyreaver w/ flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyreaver w/ fusion gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyreaver w/ shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shredder"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       }
@@ -26127,7 +26523,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Incubi Shrine Token",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": true,
             "variants": [
@@ -26138,7 +26534,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "weapons": [],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Incubi Shrine Token (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Incubi Shrine Token",
+                "min": 0,
+                "max": 2,
+                "weapons": [],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -26752,7 +27166,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Voidreaver with special weapon",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -26774,7 +27188,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Voidreaver with special weapon (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Voidreaver with Blaster",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Voidreaver with Shredder",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shredder"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -27330,7 +27773,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Skyreavers w/ alternative weapons",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -27370,7 +27813,54 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 5
+          },
+          {
+            "name": "Skyreavers w/ alternative weapons (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Skyreaver w/ blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Corsair blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyreaver w/ flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyreaver w/ fusion gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyreaver w/ shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shredder"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 10
           }
         ]
       },
@@ -31924,7 +32414,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           {
             "name": "Heavy weapons",
             "groupMin": 0,
-            "groupMax": 2,
+            "groupMax": 1,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
@@ -31946,7 +32436,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ],
                 "isDefault": false
               }
-            ]
+            ],
+            "modelMin": 3
+          },
+          {
+            "name": "Heavy weapons (2nd)",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hernkyn Pioneer w/ HYLas rotary cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "HYLas rotary cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hernkyn Pioneer w/ ion beamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Ion beamer"
+                ],
+                "isDefault": false
+              }
+            ],
+            "modelMin": 6
           }
         ]
       },

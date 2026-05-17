@@ -803,7 +803,7 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
 
   const { minModels, maxModels } = extractModelCounts(e);
   const wargear = extractWargearNames(e);
-  const wargearOptions = extractWargearOptions(e);
+  let wargearOptions = extractWargearOptions(e);
 
   // Build cost tiers from BSData modifiers (e.g. "atLeast 3 models → 95pts").
   // BSData stores multi-tier costs as a base pts value + cascading set-modifiers.
@@ -859,11 +859,16 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
     const ordinals = ["", " (2nd)", " (3rd)", " (4th)", " (5th)"];
     const expanded: WargearGroup[] = [];
     for (const group of wargearOptions) {
-      if (
+      const allSameMax = group.variants.length > 0 &&
+        group.variants.every((v) => v.max === group.variants[0]!.max);
+      const shouldSplit =
         group.groupMax === slots &&
         slots >= 2 &&
-        !group.variants.some((v) => v.isDefault)
-      ) {
+        !group.variants.some((v) => v.isDefault) &&
+        // Single-variant: only split explicit upgrade tokens (not squad-composition SEGs)
+        // Multi-variant: only split if all options have the same max (mutually exclusive choices)
+        (group.variants.length === 1 ? group.isUpgrade : allSameMax);
+      if (shouldSplit) {
         for (let i = 0; i < slots; i++) {
           expanded.push({
             ...group,
