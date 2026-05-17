@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T05:00:10.971Z
+// Last synced: 2026-05-17T05:29:05.469Z
 
 export interface WargearVariant {
   name: string;
@@ -16,6 +16,8 @@ export interface WargearGroup {
   groupMax: number;
   /** Empty string for unit-level groups; model name (e.g. "Theyn") for leader weapon choices. */
   modelContext: string;
+  /** True for unit-level add-on upgrades (icons, banners) rendered separately from squad composition. */
+  isUpgrade: boolean;
   variants: WargearVariant[];
 }
 
@@ -124,6 +126,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Battle Sister",
@@ -220,6 +223,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Sacresant Superior",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Spear of the Faithful",
@@ -309,6 +313,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Dominion",
@@ -502,6 +507,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Paragon Warsuit",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Paragon Storm Bolters",
@@ -526,6 +532,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Paragon Warsuit",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Paragon War Blade",
@@ -550,6 +557,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Paragon Warsuit",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Heavy Bolter",
@@ -652,6 +660,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Retributor",
@@ -711,6 +720,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Seraphim",
@@ -736,6 +746,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Seraphim Superior",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "2 Bolt Pistols",
@@ -814,6 +825,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Novitiate with Sacred Banner",
@@ -849,6 +861,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Novitiate Superior",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bolt Pistol and Boltgun",
@@ -1006,6 +1019,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Insidiant",
@@ -1426,6 +1440,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Allarus Custodian (Guardian Spear)",
@@ -1518,6 +1533,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Custodian Guard (Guardian Spear)",
@@ -1572,6 +1588,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Custodian Warden (Guardian Spear)",
@@ -1791,6 +1808,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Vertus Praetor (Salvo Launcher)",
@@ -1880,6 +1898,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Custodian Guard (Adrasite spear)",
@@ -1942,6 +1961,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Aquilon Custodian (Gauntlet & Lastrum bolter)",
@@ -2008,6 +2028,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Agamatus Custodian (Lastrum bolt cannon)",
@@ -2066,6 +2087,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Venatari Custodian (Venatari lance)",
@@ -2573,6 +2595,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kataphron Breacher (Heavy arc rifle & arc claw)",
@@ -2626,6 +2649,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kataphron Destroyer (Heavy grav-cannon & Cognis flamer)",
@@ -2752,6 +2776,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Serberys Raider",
@@ -2804,6 +2829,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Serberys Sulphurhound (Twin phosphor pistols)",
@@ -2857,6 +2883,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Sicarian Infiltrator (Power weapon & stubcarbine)",
@@ -2883,6 +2910,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Sicarian Infiltrator Princeps (Power weapon & stub carbine)",
@@ -2934,6 +2962,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Sicarian Ruststalker (Transonic razor & chordclaw)",
@@ -2958,6 +2987,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Sicarian Ruststalker Princeps (Transonic blades & chordclaw)",
@@ -3029,6 +3059,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skitarii Ranger w/ transuranic arquebus",
@@ -3087,6 +3118,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Skitarii Ranger Alpha",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Galvanic rifle",
@@ -3131,6 +3163,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skitarii Vanguard w/ transuranic arquebus",
@@ -3189,6 +3222,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Skitarii Vanguard Alpha",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Radium carbine",
@@ -3380,6 +3414,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Sydonian Dragoon with radium jezzail",
@@ -3421,6 +3456,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 6,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Combat Servitor w/ incendine igniter",
@@ -3563,6 +3599,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hastarii Exterminator",
@@ -3607,6 +3644,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hastarii Exterminator",
@@ -3740,6 +3778,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Rough Rider w/ Hunting lance",
@@ -3858,6 +3897,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bullgryn",
@@ -4054,6 +4094,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Ordnance Team w/ Malleus rocket launcher",
@@ -4148,6 +4189,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Heavy Weapons Team w/ Heavy bolter",
@@ -4289,6 +4331,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kasrkin Trooper",
@@ -4335,6 +4378,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kasrkin Trooper w/ Flamer",
@@ -4564,6 +4608,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Tempestus Scion",
@@ -4862,6 +4907,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Tempestus Scion w/ Vox-caster",
@@ -4889,6 +4935,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Tempestus Scion w/ Flamer",
@@ -5131,6 +5178,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Tempestus Aquilon",
@@ -5204,6 +5252,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Ratlings",
@@ -5314,6 +5363,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Veteran Guardsman",
@@ -5365,6 +5415,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Veteran Guardsman w/ Flamer",
@@ -5513,6 +5564,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Krieg Combat Engineer",
@@ -5583,6 +5635,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Heavy Weapons Gunners w/ Krieg heavy flamer",
@@ -5648,6 +5701,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Heavy Weapons Team w/ Heavy bolter",
@@ -5883,6 +5937,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Recon Trooper w/ Lasgun",
@@ -5929,6 +5984,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Recon Trooper w/ Plasma gun",
@@ -6499,6 +6555,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Terminator",
@@ -6542,6 +6599,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Justicar",
@@ -6812,6 +6870,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Interceptor",
@@ -6829,6 +6888,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Interceptor w/ incinerator",
@@ -6904,6 +6964,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Paladin",
@@ -6972,6 +7033,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Purgator",
@@ -6989,6 +7051,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Purgator w/ incinerator",
@@ -7047,6 +7110,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Purifier",
@@ -7065,6 +7129,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Purifier w/ incinerator",
@@ -7122,6 +7187,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Grey Knight",
@@ -7720,7 +7786,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
-          "Demolition charge",
           "Close combat weapon",
           "Navis heavy shotgun",
           "Endurant shield",
@@ -7735,6 +7800,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Navis Armsman w/ heavy shotgun",
@@ -7790,6 +7856,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Navis Sergeant-at-Arms",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Navis shotgun",
@@ -7814,6 +7881,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "weapons": [
                   "Bolt pistol and power weapon"
                 ]
+              }
+            ]
+          },
+          {
+            "name": "Demolition charge",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Demolition charge",
+                "min": 0,
+                "max": 1,
+                "weapons": []
               }
             ]
           }
@@ -7869,6 +7951,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Exaction Vigilant w/ medi-kit",
@@ -7907,6 +7990,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Exaction Vigilant w/ grenade launcher",
@@ -7972,6 +8056,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Vigilant w/ shotgun",
@@ -7986,6 +8071,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Vigilant w/ grenade launcher",
@@ -8182,6 +8268,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Agent",
@@ -8220,6 +8307,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Servitor w/ heavy bolter",
@@ -8277,6 +8365,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Terminator",
@@ -8363,6 +8452,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Battle Sister",
@@ -8409,6 +8499,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 1,
             "modelContext": "Sister Superior",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Chainsword",
@@ -8433,6 +8524,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Sister Superior",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Condemnor boltgun",
@@ -8560,6 +8652,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Veteran w/ boltgun and power weapon",
@@ -8717,6 +8810,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Missionary w/ plasma gun",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Plasma gun",
@@ -8969,6 +9063,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skitarii Ranger w/ transuranic arquebus",
@@ -9027,6 +9122,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Skitarii Ranger Alpha",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Galvanic rifle",
@@ -9071,6 +9167,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skitarii Vanguard w/ transuranic arquebus",
@@ -9129,6 +9226,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Skitarii Vanguard Alpha",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Radium carbine",
@@ -9510,6 +9608,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Intercessor Sergeant",
@@ -9570,6 +9669,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Infernus Marines",
@@ -9620,6 +9720,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Assault Intercessor Sergeant",
@@ -9667,6 +9768,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Heavy Intercessors",
@@ -9718,8 +9820,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Helix Gauntlet",
-          "Infiltrator Comms Array",
           "Bolt pistol",
           "Close combat weapon",
           "Marksman Bolt Carbine"
@@ -9730,6 +9830,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Infiltrator",
@@ -9752,6 +9853,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 ]
               }
             ]
+          },
+          {
+            "name": "Helix Gauntlet",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Helix Gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Infiltrator Comms Array",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Infiltrator Comms Array",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
           }
         ]
       },
@@ -9771,12 +9902,27 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Haywire Mine",
           "Bolt pistol",
           "Occulus Bolt Carbine",
           "Paired Combat Blades"
         ],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Haywire Mine",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Haywire Mine",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "c09a-6504-d25f-477",
@@ -9802,6 +9948,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 10,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Tactical Marine",
@@ -9870,6 +10017,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Scouts w/ Boltgun",
@@ -9958,6 +10106,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bladeguard Veterans",
@@ -10005,6 +10154,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Vanguard Veterans with Jump Packs",
@@ -10050,6 +10200,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Sternguard Veteran w/ Bolt Rifle",
@@ -10105,13 +10256,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Grapnel Launchers",
-          "Reiver Grav-chute",
           "Special Issue Bolt Pistol",
           "Combat Knife",
           "Bolt Carbine"
         ],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Grapnel Launchers",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Grapnel Launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Reiver Grav-chute",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Reiver Grav-chute",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "129d-2da5-66f3-f4ec",
@@ -10159,6 +10339,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Assault Terminator w/ Thunder Hammer & Storm Shield",
@@ -10213,6 +10394,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Terminator Sergeant",
@@ -10274,6 +10456,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Assault Centurion Sergeant",
@@ -10317,6 +10500,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Devastator Centurion Sergeant",
@@ -10464,6 +10648,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Outrider",
@@ -10606,6 +10791,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hellblaster Sergeant",
@@ -10677,6 +10863,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Eradicator Sergeant",
@@ -10736,6 +10923,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Devastator Marine w/ Boltgun",
@@ -10786,6 +10974,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Desolation Marine",
@@ -11534,6 +11723,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Assault Intercessor Sergeant with Jump Pack",
@@ -13495,6 +13685,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Beastman",
@@ -13530,6 +13721,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Fellgor Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bolt pistol",
@@ -13599,6 +13791,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Accursed weapon and combi-bolter",
@@ -13700,6 +13893,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Chosen w/ boltgun",
@@ -13810,6 +14004,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Legionary w/ boltgun",
@@ -13933,6 +14128,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Havoc w/ autocannon",
@@ -14023,6 +14219,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Possessed",
@@ -14066,6 +14263,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Raptor",
@@ -14110,6 +14308,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Raptor w/ meltagun",
@@ -14205,6 +14404,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Warp Talon Champion",
@@ -14252,6 +14452,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Guardsman w/ lasgun",
@@ -14269,6 +14470,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Guardsman w/ flamer",
@@ -14322,6 +14524,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Traitor Sergeant",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Chainsword",
@@ -14346,6 +14549,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Traitor Sergeant",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Corrupted pistol",
@@ -14392,6 +14596,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Cultist Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bolt pistol",
@@ -14817,6 +15022,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Guardsman w/ lasgun",
@@ -14834,6 +15040,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Guardsman w/ flamer",
@@ -14887,6 +15094,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Traitor Sergeant",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Chainsword",
@@ -14911,6 +15119,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Traitor Sergeant",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Corrupted pistol",
@@ -14960,6 +15169,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Beastman",
@@ -14995,6 +15205,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Fellgor Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bolt pistol",
@@ -15059,6 +15270,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Cultist Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bolt pistol",
@@ -15693,6 +15905,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Legionary w/ boltgun",
@@ -15772,6 +15985,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Cultist Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bolt pistol",
@@ -15843,6 +16057,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Accursed weapon and combi-bolter",
@@ -15954,6 +16169,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Possessed",
@@ -15993,6 +16209,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Chosen w/ boltgun",
@@ -16123,6 +16340,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Biker w/ combi-bolter and bolt pistol",
@@ -16151,6 +16369,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Biker w/ flamer",
@@ -16227,6 +16446,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Raptor",
@@ -16271,6 +16491,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Raptor w/ meltagun",
@@ -16329,6 +16550,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Warp Talon Champion",
@@ -16373,6 +16595,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Havoc w/ autocannon",
@@ -16492,6 +16715,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Guardsman w/ lasgun",
@@ -16509,6 +16733,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Guardsman w/ flamer",
@@ -16562,6 +16787,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Traitor Sergeant",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Chainsword",
@@ -16586,6 +16812,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Traitor Sergeant",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Corrupted pistol",
@@ -16635,6 +16862,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Beastman",
@@ -16670,6 +16898,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Fellgor Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bolt pistol",
@@ -16938,6 +17167,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 19,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Khorne Berzerker",
@@ -16968,7 +17198,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Icon of Flame",
           "Inferno boltgun",
           "Close combat weapon",
           "Warpflamer",
@@ -16980,6 +17209,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Rubric Marine w/ inferno boltgun",
@@ -17007,6 +17237,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Close combat weapon",
                   "Soulreaper cannon"
                 ]
+              }
+            ]
+          },
+          {
+            "name": "Icon of Flame",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Icon of Flame",
+                "min": 0,
+                "max": 1,
+                "weapons": []
               }
             ]
           }
@@ -17044,6 +17289,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Plague Marine w/ bubotic weapons",
@@ -17101,6 +17347,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Plague Marine w/ meltagun",
@@ -17218,6 +17465,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Legionary w/ boltgun",
@@ -17329,6 +17577,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Noise Marine w/ sonic blaster",
@@ -17406,6 +17655,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Red Corsairs Raider",
@@ -17423,6 +17673,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Red Corsairs Raider w/ meltagun",
@@ -17460,6 +17711,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Red Corsairs Raider Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hand flamer",
@@ -17963,6 +18215,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Plague Marine w/ bubotic weapons",
@@ -18016,6 +18269,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Plague Marine w/ meltagun",
@@ -18069,6 +18323,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 10,
             "groupMax": 0,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Poxwalker",
@@ -18195,6 +18450,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Deathshroud Terminator",
@@ -18253,6 +18509,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Blightlord Terminator w/ combi-bolter",
@@ -18313,6 +18570,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Blightlord Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Combi-bolter",
@@ -19345,7 +19603,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Icon of Flame",
           "Force weapon",
           "Malefic Curse",
           "Inferno boltgun",
@@ -19359,6 +19616,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Rubric Marine w/ inferno boltgun",
@@ -19394,6 +19652,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Aspiring Sorcerer",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Inferno bolt pistol",
@@ -19410,6 +19669,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "weapons": [
                   "Warpflame pistol"
                 ]
+              }
+            ]
+          },
+          {
+            "name": "Icon of Flame",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Icon of Flame",
+                "min": 0,
+                "max": 1,
+                "weapons": []
               }
             ]
           }
@@ -19434,7 +19708,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Hellfyre missile rack",
           "Force weapon",
           "Malefic Curse",
           "Inferno combi-bolter",
@@ -19447,6 +19720,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Scarab Occult Terminator",
@@ -19464,6 +19738,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Scarab Occult Terminator w/ heavy warpflamer",
@@ -19489,6 +19764,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Scarab Occult Sorcerer",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Prosperine khopesh",
@@ -19497,6 +19773,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "weapons": [
                   "Prosperine khopesh"
                 ]
+              }
+            ]
+          },
+          {
+            "name": "Hellfyre missile rack",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hellfyre missile rack",
+                "min": 0,
+                "max": 2,
+                "weapons": []
               }
             ]
           }
@@ -19609,6 +19900,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Divining spear Enlightened",
@@ -19631,6 +19923,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Aviarch",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Autopistol and chainsword",
@@ -19690,6 +19983,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 19,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Tzaangor w/ Tzaangor blades",
@@ -19714,6 +20008,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Twistbray",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Pistol and chainsword",
@@ -19757,6 +20052,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Sekhetar Robot w/ pyreflux meltagun",
@@ -19909,12 +20205,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
-          "Daemonic Icon",
-          "Instrument of Chaos",
           "Coruscating pink flames",
           "Pink claws"
         ],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Daemonic Icon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Daemonic Icon",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          },
+          {
+            "name": "Instrument of Chaos",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Instrument of Chaos",
+                "min": 0,
+                "max": 1,
+                "weapons": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "aec5-4419-39e7-3e63",
@@ -20446,6 +20771,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 19,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Khorne Berzerker",
@@ -20462,6 +20788,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Khorne Berzerker Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Plasma pistol",
@@ -20506,6 +20833,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Combi-bolter, accursed weapon",
@@ -20582,6 +20910,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Terminator Champion",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Combi-weapon, power fist",
@@ -20660,6 +20989,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Dishonoured w/ skullsmasher and mangler",
@@ -20963,6 +21293,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 7,
             "groupMax": 7,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Goremonger w/ blood harpoon",
@@ -21503,6 +21834,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Wraithguard",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Wraithcannon",
@@ -21551,6 +21883,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Windrider with Twin Shuriken Catapult",
@@ -21718,6 +22051,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Voidreaver with Heavy weapon",
@@ -21746,6 +22080,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Voidreaver with Blaster",
@@ -21803,6 +22138,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Shade Runner",
@@ -21837,6 +22173,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 0,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Voidscarred w/ pistol and sword",
@@ -21942,6 +22279,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Dark Reaper",
@@ -22003,6 +22341,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Dire Avenger",
@@ -22129,6 +22468,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Fire Dragon",
@@ -22252,6 +22592,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Howling Banshee",
@@ -22399,6 +22740,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Shining Spear",
@@ -22461,6 +22803,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Skyweaver",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skyweaver Haywire Cannon",
@@ -22477,6 +22820,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Skyweaver",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Star Bolas",
@@ -22587,6 +22931,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 10,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Storm Guardian",
@@ -22680,6 +23025,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Swooping Hawk",
@@ -22767,6 +23113,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 11,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Player with Harlequin's Blade",
@@ -22894,6 +23241,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Warlock with Witchblade",
@@ -22946,6 +23294,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Warlock Skyrunner with Witchblade",
@@ -22998,6 +23347,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Warp Spider",
@@ -23054,6 +23404,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Wraithblade",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Ghostswords",
@@ -23165,6 +23516,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Striking Scorpion",
@@ -23263,6 +23615,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Incubi",
@@ -23306,6 +23659,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kabalite Warrior with Shredder",
@@ -23400,6 +23754,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Reaver",
@@ -23499,6 +23854,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Wych",
@@ -23675,6 +24031,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skyreaver w/ pistol and blade",
@@ -23691,6 +24048,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skyreaver w/ blaster",
@@ -24739,6 +25097,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hellion",
@@ -24770,7 +25129,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Incubi Shrine Token",
           "Klaive"
         ],
         "wargearOptions": [
@@ -24779,6 +25137,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Incubi",
@@ -24787,6 +25146,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "weapons": [
                   "Klaive"
                 ]
+              }
+            ]
+          },
+          {
+            "name": "Incubi Shrine Token",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Incubi Shrine Token",
+                "min": 0,
+                "max": 2,
+                "weapons": []
               }
             ]
           }
@@ -24822,6 +25196,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kabalite Warrior with Shredder",
@@ -24920,6 +25295,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Mandrake",
@@ -25018,6 +25394,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Reaver",
@@ -25080,6 +25457,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Scourge with Heavy Weapon",
@@ -25200,6 +25578,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Wrack",
@@ -25276,6 +25655,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Wych",
@@ -25329,6 +25709,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Voidreaver with Heavy weapon",
@@ -25357,6 +25738,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Voidreaver with Blaster",
@@ -25414,6 +25796,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Shade Runner",
@@ -25448,6 +25831,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 0,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Voidscarred w/ pistol and sword",
@@ -25595,6 +25979,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Skyweaver",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skyweaver Haywire Cannon",
@@ -25611,6 +25996,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Skyweaver",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Star Bolas",
@@ -25703,6 +26089,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 11,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Player with Harlequin's Blade",
@@ -25812,6 +26199,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Scourge with Special Weapon",
@@ -25864,6 +26252,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skyreaver w/ pistol and blade",
@@ -25880,6 +26269,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Skyreaver w/ blaster",
@@ -26932,6 +27322,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Acolyte Hybrid w/ Hand Flamer",
@@ -27009,6 +27400,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 8,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Atalan Jackal w/ Grenade launcher",
@@ -27149,6 +27541,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hybrid Metamorph w/ Autopistol",
@@ -27281,6 +27674,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 19,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Neophyte Hybrid w/ Hybrid Firearm",
@@ -27483,6 +27877,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Acolyte Hybrid w/ Auto Pistol",
@@ -27603,6 +27998,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Rough Rider w/ Hunting lance",
@@ -27862,6 +28258,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Ordnance Team w/ Malleus rocket launcher",
@@ -27930,6 +28327,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Heavy Weapons Team w/ Heavy bolter",
@@ -28071,6 +28469,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kasrkin Trooper",
@@ -28117,6 +28516,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kasrkin Trooper w/ Flamer",
@@ -28815,6 +29215,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Veteran Guardsman",
@@ -28866,6 +29267,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Veteran Guardsman w/ Flamer",
@@ -28998,6 +29400,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Krieg Combat Engineer",
@@ -29068,6 +29471,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Heavy Weapons Gunners w/ Krieg heavy flamer",
@@ -29133,6 +29537,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Heavy Weapons Team w/ Heavy bolter",
@@ -29343,6 +29748,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Recon Trooper w/ Lasgun",
@@ -29389,6 +29795,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Recon Trooper w/ Plasma gun",
@@ -29910,6 +30317,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hearthkyn Warrior w/ bolter",
@@ -29947,6 +30355,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hearthkyn Warrior w/ HYLas rotary cannon",
@@ -30005,6 +30414,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Theyn",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Autoch-pattern bolter",
@@ -30135,6 +30545,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Einhyr Hearthguard",
@@ -30151,6 +30562,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Hesyr",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "EtaCarn plasma gun",
@@ -30175,6 +30587,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 1,
             "modelContext": "Hesyr",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Concussion gauntlet",
@@ -30207,6 +30620,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Hesyr",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Teleport crest",
@@ -30246,6 +30660,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Beserk",
@@ -30299,6 +30714,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hernkyn Pioneer",
@@ -30337,6 +30753,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 2,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hernkyn Pioneer w/ HYLas rotary cannon",
@@ -30400,6 +30817,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Brôkhyr Thunderkyn",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Bolt cannon",
@@ -30470,6 +30888,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hernkyn Yaegir w/ bolt shotgun",
@@ -30600,6 +31019,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Steeljack Theyn",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Disintegrator and knife",
@@ -30647,6 +31067,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Ironkin Steeljack w/ concussion gauntlet",
@@ -30697,6 +31118,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "Cthonian Earthshaker",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Breacher ordnance",
@@ -31304,6 +31726,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 10,
             "groupMax": 20,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Warrior w/ gauss flayer",
@@ -31347,6 +31770,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Immortal",
@@ -31417,6 +31841,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Lychguard",
@@ -31469,6 +31894,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 10,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Flayed One",
@@ -31715,6 +32141,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Wraith w/ claws and beamer",
@@ -32021,6 +32448,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Canoptek Macrocyte w/ atomiser beam",
@@ -32436,6 +32864,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 19,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Beast Snagga Boy w/ Thump gun",
@@ -32618,6 +33047,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 19,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Boy w/ Slugga and choppa",
@@ -32644,6 +33074,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Boy w/ Big shoota and close combat weapon",
@@ -32776,6 +33207,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Deffkopta",
@@ -32816,6 +33248,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Flash Gitz",
@@ -32945,6 +33378,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Killa Kan w/ Kan shoota",
@@ -33002,6 +33436,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kommandos w/ Slugga and choppa",
@@ -33113,6 +33548,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Meganob w/ Kustom shoota and power klaw",
@@ -33272,6 +33708,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Nob w/ Slugga and big choppa",
@@ -33435,6 +33872,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Stormboy",
@@ -33474,6 +33912,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Tankbusta w/ Rokkit launcha",
@@ -33550,6 +33989,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 2,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Warbiker",
@@ -33754,6 +34194,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 5,
             "groupMax": 5,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Breaka Boy",
@@ -34601,6 +35042,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Fire Warrior w/ pulse carbine",
@@ -34677,6 +35119,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 19,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kroot Carnivores",
@@ -34727,6 +35170,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Krootox Rider w/ repeater cannon",
@@ -34781,6 +35225,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 4,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Stealth Shas'ui w/ burst cannon",
@@ -34873,6 +35318,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Pathfinders w/ pulse carbine",
@@ -34902,6 +35348,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 0,
             "groupMax": 3,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Pathfinders w/ ion rifle",
@@ -34955,6 +35402,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Vespid Stingwings w/ Neutron Blaster",
@@ -35201,6 +35649,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 9,
             "groupMax": 9,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kroot Farstalker",
@@ -35229,6 +35678,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 1,
             "groupMax": 1,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Kroot Farstalker w/ Dvorgite skinner",
@@ -35506,6 +35956,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Krootox Rampagers",
@@ -36086,6 +36537,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 10,
             "groupMax": 20,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Termagants",
@@ -36410,6 +36862,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
+            "isUpgrade": false,
             "variants": [
               {
                 "name": "Hive Guard w/ shockcannon",

@@ -51,6 +51,8 @@ export interface WargearGroup {
   groupMin: number;   // total mandatory slots in this group
   groupMax: number;   // total available slots in this group
   modelContext: string; // "" for unit-level SEGs; model name for leader choices
+  /** True for unit-level add-on upgrades (icons, banners) — rendered separately from squad composition. */
+  isUpgrade: boolean;
   variants: WargearVariant[];
 }
 
@@ -545,28 +547,12 @@ function collectUpgradeWeapons(modelSE: Record<string, any>, out: Set<string>): 
   }
 }
 
-/**
- * Collects optional unit-level upgrade SEs (icons, banners, abilities like "Icon of Flame").
- * These sit directly on the unit entry — not inside any model SE or SEG — and are missed by
- * the per-model walk. We include them when they have max≥1 (i.e. the player can select them).
- */
-function collectUnitLevelUpgrades(unitSE: Record<string, any>, out: Set<string>): void {
-  for (const se of (unitSE["selectionEntries"]?.["selectionEntry"] ?? [])) {
-    if (se["@_type"] !== "upgrade") continue;
-    const name = String(se["@_name"] ?? "");
-    if (!isWargearName(name)) continue;
-    const { max } = readSelectionConstraints(se);
-    if (max >= 1) out.add(name);
-  }
-}
-
 function extractWargearNames(e: Record<string, any>): string[] {
   const names = new Set<string>();
   if (e["@_type"] === "model") {
     collectFixedWargear(e["entryLinks"]?.["entryLink"] ?? [], names);
     collectUpgradeWeapons(e, names);
   } else {
-    collectUnitLevelUpgrades(e, names);
     for (const model of iterModelSEs(e)) {
       collectFixedWargear(model["entryLinks"]?.["entryLink"] ?? [], names);
       collectUpgradeWeapons(model, names);
@@ -623,7 +609,7 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
 
     const variants = segToVariants(seg, segMax);
     if (variants.length > 0) {
-      groups.push({ name: segName, groupMin: segMin, groupMax: segMax, modelContext: "", variants });
+      groups.push({ name: segName, groupMin: segMin, groupMax: segMax, modelContext: "", isUpgrade: false, variants });
     }
 
     // Nested SEGs (e.g. "Heavy weapons" inside "Hearthkyn Warriors")
@@ -634,7 +620,7 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
       if (!isWargearName(nestedName)) continue;
       const nestedVariants = segToVariants(nested, nestedMax);
       if (nestedVariants.length > 0) {
-        groups.push({ name: nestedName, groupMin: nestedMin, groupMax: nestedMax, modelContext: "", variants: nestedVariants });
+        groups.push({ name: nestedName, groupMin: nestedMin, groupMax: nestedMax, modelContext: "", isUpgrade: false, variants: nestedVariants });
       }
     }
   }
@@ -650,9 +636,27 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
       if (!isWargearName(segName)) continue;
       const upgradeVariants = segToUpgradeVariants(internalSeg, segMax);
       if (upgradeVariants.length > 0) {
-        groups.push({ name: segName, groupMin: segMin, groupMax: segMax, modelContext: modelName, variants: upgradeVariants });
+        groups.push({ name: segName, groupMin: segMin, groupMax: segMax, modelContext: modelName, isUpgrade: false, variants: upgradeVariants });
       }
     }
+  }
+
+  // Unit-level optional upgrade SEs (icons, banners — e.g. "Icon of Flame" on Rubric Marines).
+  // These sit directly on the unit entry (not inside any model SE or SEG) with max≥1.
+  for (const se of (e["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (se["@_type"] !== "upgrade") continue;
+    const name = String(se["@_name"] ?? "");
+    if (!isWargearName(name)) continue;
+    const { min, max } = readSelectionConstraints(se);
+    if (max < 1) continue;
+    groups.push({
+      name,
+      groupMin: min,
+      groupMax: max,
+      modelContext: "",
+      isUpgrade: true,
+      variants: [{ name, min: 0, max, weapons: [] }],
+    });
   }
 
   return groups;
@@ -896,6 +900,8 @@ export interface WargearGroup {
   groupMax: number;
   /** Empty string for unit-level groups; model name (e.g. "Theyn") for leader weapon choices. */
   modelContext: string;
+  /** True for unit-level add-on upgrades (icons, banners) rendered separately from squad composition. */
+  isUpgrade: boolean;
   variants: WargearVariant[];
 }
 
