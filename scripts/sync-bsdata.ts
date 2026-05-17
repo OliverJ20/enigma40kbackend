@@ -37,6 +37,8 @@ export interface WargearVariant {
   min: number;       // min of this specific variant (usually 0)
   max: number;       // max of this variant within the group
   weapons: string[]; // weapons this variant carries
+  /** True when this is the SEG's defaultSelectionEntry — i.e. the base loadout all models start with. */
+  isDefault: boolean;
 }
 
 /**
@@ -562,29 +564,33 @@ function extractWargearNames(e: Record<string, any>): string[] {
 }
 
 function segToVariants(seg: Record<string, any>, fallbackMax: number): WargearVariant[] {
+  const defaultId = String(seg["@_defaultSelectionEntryId"] ?? "");
   const variants: WargearVariant[] = [];
   for (const childSe of (seg["selectionEntries"]?.["selectionEntry"] ?? [])) {
     if (childSe["@_type"] !== "model") continue;
     const variantName = String(childSe["@_name"] ?? "");
     if (!isWargearName(variantName)) continue;
     const { min: varMin, max: varMax } = readSelectionConstraints(childSe);
+    const isDefault = defaultId !== "" && String(childSe["@_id"] ?? "") === defaultId;
     const weapons = new Set<string>();
     collectUpgradeWeapons(childSe, weapons);
     collectFixedWargear(childSe["entryLinks"]?.["entryLink"] ?? [], weapons);
-    variants.push({ name: variantName, min: varMin, max: varMax || fallbackMax, weapons: Array.from(weapons) });
+    variants.push({ name: variantName, min: varMin, max: varMax || fallbackMax, weapons: Array.from(weapons), isDefault });
   }
   return variants;
 }
 
 /** Extracts upgrade-type weapon choice options from a leader model's internal SEG. */
 function segToUpgradeVariants(seg: Record<string, any>, fallbackMax: number): WargearVariant[] {
+  const defaultId = String(seg["@_defaultSelectionEntryId"] ?? "");
   const variants: WargearVariant[] = [];
   for (const childSe of (seg["selectionEntries"]?.["selectionEntry"] ?? [])) {
     if (childSe["@_type"] !== "upgrade") continue;
     const name = String(childSe["@_name"] ?? "");
     if (!isWargearName(name)) continue;
     const { min, max } = readSelectionConstraints(childSe);
-    variants.push({ name, min, max: max || fallbackMax, weapons: [name] });
+    const isDefault = defaultId !== "" && String(childSe["@_id"] ?? "") === defaultId;
+    variants.push({ name, min, max: max || fallbackMax, weapons: [name], isDefault });
   }
   return variants;
 }
@@ -655,7 +661,7 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
       groupMax: max,
       modelContext: "",
       isUpgrade: true,
-      variants: [{ name, min: 0, max, weapons: [] }],
+      variants: [{ name, min: 0, max, weapons: [], isDefault: false }],
     });
   }
 
@@ -892,6 +898,8 @@ export interface WargearVariant {
   min: number;
   max: number;
   weapons: string[];
+  /** True when this is the SEG's default entry — the base loadout all models start with. */
+  isDefault: boolean;
 }
 
 export interface WargearGroup {
