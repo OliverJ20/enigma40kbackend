@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T03:25:58.484Z
+// Last synced: 2026-05-17T05:00:10.971Z
 
 export interface WargearVariant {
   name: string;
@@ -7720,6 +7720,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
+          "Demolition charge",
           "Close combat weapon",
           "Navis heavy shotgun",
           "Endurant shield",
@@ -9717,6 +9718,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Helix Gauntlet",
+          "Infiltrator Comms Array",
           "Bolt pistol",
           "Close combat weapon",
           "Marksman Bolt Carbine"
@@ -9768,6 +9771,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Haywire Mine",
           "Bolt pistol",
           "Occulus Bolt Carbine",
           "Paired Combat Blades"
@@ -10101,6 +10105,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Grapnel Launchers",
+          "Reiver Grav-chute",
           "Special Issue Bolt Pistol",
           "Combat Knife",
           "Bolt Carbine"
@@ -16962,6 +16968,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Icon of Flame",
           "Inferno boltgun",
           "Close combat weapon",
           "Warpflamer",
@@ -19338,6 +19345,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Icon of Flame",
           "Force weapon",
           "Malefic Curse",
           "Inferno boltgun",
@@ -19426,6 +19434,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Hellfyre missile rack",
           "Force weapon",
           "Malefic Curse",
           "Inferno combi-bolter",
@@ -19900,6 +19909,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
+          "Daemonic Icon",
+          "Instrument of Chaos",
           "Coruscating pink flames",
           "Pink claws"
         ],
@@ -24759,6 +24770,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Incubi Shrine Token",
           "Klaive"
         ],
         "wargearOptions": [

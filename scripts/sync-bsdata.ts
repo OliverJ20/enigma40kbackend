@@ -545,12 +545,28 @@ function collectUpgradeWeapons(modelSE: Record<string, any>, out: Set<string>): 
   }
 }
 
+/**
+ * Collects optional unit-level upgrade SEs (icons, banners, abilities like "Icon of Flame").
+ * These sit directly on the unit entry — not inside any model SE or SEG — and are missed by
+ * the per-model walk. We include them when they have max≥1 (i.e. the player can select them).
+ */
+function collectUnitLevelUpgrades(unitSE: Record<string, any>, out: Set<string>): void {
+  for (const se of (unitSE["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (se["@_type"] !== "upgrade") continue;
+    const name = String(se["@_name"] ?? "");
+    if (!isWargearName(name)) continue;
+    const { max } = readSelectionConstraints(se);
+    if (max >= 1) out.add(name);
+  }
+}
+
 function extractWargearNames(e: Record<string, any>): string[] {
   const names = new Set<string>();
   if (e["@_type"] === "model") {
     collectFixedWargear(e["entryLinks"]?.["entryLink"] ?? [], names);
     collectUpgradeWeapons(e, names);
   } else {
+    collectUnitLevelUpgrades(e, names);
     for (const model of iterModelSEs(e)) {
       collectFixedWargear(model["entryLinks"]?.["entryLink"] ?? [], names);
       collectUpgradeWeapons(model, names);
