@@ -536,6 +536,23 @@ function collectFixedWargear(entryLinks: any[], out: Set<string>): void {
   }
 }
 
+/**
+ * Like collectFixedWargear but also includes entryLinks with NO constraints.
+ * BSData vehicle Wargear containers often omit min/max constraints entirely for
+ * always-present weapons; unconstrained links at the container level are always selected.
+ */
+function collectContainerTopLevelLinks(entryLinks: any[], out: Set<string>): void {
+  for (const link of entryLinks) {
+    const name = String(link["@_name"] ?? "");
+    if (!isWargearName(name)) continue;
+    const constraints: any[] = link["constraints"]?.["constraint"] ?? [];
+    const hasMin = constraints.some(
+      (c: any) => c["@_type"] === "min" && parseInt(String(c["@_value"] ?? "0")) >= 1,
+    );
+    if (hasMin || constraints.length === 0) out.add(name);
+  }
+}
+
 /** Reads the min/max selections constraint from a selectionEntry or selectionEntryGroup. */
 function readSelectionConstraints(entry: Record<string, any>): { min: number; max: number } {
   const constraints: any[] = entry["constraints"]?.["constraint"] ?? [];
@@ -570,15 +587,43 @@ function collectUpgradeWeapons(modelSE: Record<string, any>, out: Set<string>): 
   }
 }
 
+/**
+ * Collects weapon names from inside a "Wargear" container SEG.
+ * Vehicles store weapons in a SEG named "Wargear" that wraps entryLinks (fixed),
+ * upgrade SEs (fixed or optional), and nested SEGs (weapon choice groups).
+ */
+function collectWargearFromContainer(container: Record<string, any>, names: Set<string>): void {
+  collectContainerTopLevelLinks(container["entryLinks"]?.["entryLink"] ?? [], names);
+  for (const se of (container["selectionEntries"]?.["selectionEntry"] ?? [])) {
+    if (se["@_type"] !== "upgrade") continue;
+    const name = String(se["@_name"] ?? "");
+    if (isWargearName(name)) names.add(name);
+  }
+  for (const nested of (container["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+    collectFixedWargear(nested["entryLinks"]?.["entryLink"] ?? [], names);
+    for (const se of (nested["selectionEntries"]?.["selectionEntry"] ?? [])) {
+      if (se["@_type"] !== "upgrade") continue;
+      const name = String(se["@_name"] ?? "");
+      if (isWargearName(name)) names.add(name);
+    }
+  }
+}
+
 function extractWargearNames(e: Record<string, any>): string[] {
   const names = new Set<string>();
   if (e["@_type"] === "model") {
     collectFixedWargear(e["entryLinks"]?.["entryLink"] ?? [], names);
     collectUpgradeWeapons(e, names);
+    for (const seg of (e["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+      collectWargearFromContainer(seg, names);
+    }
   } else {
     for (const model of iterModelSEs(e)) {
       collectFixedWargear(model["entryLinks"]?.["entryLink"] ?? [], names);
       collectUpgradeWeapons(model, names);
+      for (const seg of (model["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+        collectWargearFromContainer(seg, names);
+      }
     }
   }
   return Array.from(names);
@@ -649,9 +694,69 @@ function normaliseSegName(name: string): string {
  * Also extracts internal SEGs from direct child model SEs (leader weapon choices,
  * e.g. Theyn's "Weapon (1/1)": Autoch-pattern bolter / Ion blaster / Theyn's pistol).
  */
+/**
+ * Extracts wargear groups from a single model's SEGs, handling both:
+ * - Direct SEGs with their own constraints (weapon choice groups, existing leader behaviour)
+ * - Container SEGs with no constraints (the "Wargear" wrapper used by vehicles)
+ *   by unwrapping one level and processing nested SEGs and optional upgrade SEs inside.
+ */
+function extractOptionsFromModelSEGs(
+  modelSe: Record<string, any>,
+  modelContext: string,
+  groups: WargearGroup[],
+): void {
+  for (const seg of (modelSe["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+    const { min: segMin, max: segMax } = readSelectionConstraints(seg);
+
+    if (segMax === 0 && segMin === 0) {
+      // Container SEG (e.g. "Wargear") — unwrap and process its children.
+      for (const nested of (seg["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+        const { min: nestedMin, max: nestedMax } = readSelectionConstraints(nested);
+        if (nestedMax === 0 && nestedMin === 0) continue;
+        const nestedName = normaliseSegName(String(nested["@_name"] ?? ""));
+        if (!isWargearName(nestedName)) continue;
+        const variants = segToUpgradeVariants(nested, nestedMax);
+        if (variants.length > 0) {
+          groups.push({ name: nestedName, groupMin: nestedMin, groupMax: nestedMax, modelContext, isUpgrade: false, variants });
+        }
+      }
+      for (const se of (seg["selectionEntries"]?.["selectionEntry"] ?? [])) {
+        if (se["@_type"] !== "upgrade") continue;
+        const name = String(se["@_name"] ?? "");
+        if (!isWargearName(name)) continue;
+        const { min, max } = readSelectionConstraints(se);
+        if (min >= 1 || max < 1) continue; // skip fixed items (always included)
+        groups.push({ name, groupMin: min, groupMax: max, modelContext, isUpgrade: true, variants: [{ name, min: 0, max, weapons: [], isDefault: false }] });
+      }
+      for (const link of (seg["entryLinks"]?.["entryLink"] ?? [])) {
+        if (String(link["@_type"] ?? "") !== "selectionEntry") continue;
+        const name = String(link["@_name"] ?? "");
+        if (!isWargearName(name)) continue;
+        const { min, max } = readSelectionConstraints(link);
+        if (min >= 1 || max < 1) continue;
+        groups.push({ name, groupMin: min, groupMax: max, modelContext, isUpgrade: true, variants: [{ name, min: 0, max, weapons: [], isDefault: false }] });
+      }
+    } else {
+      // Direct SEG with own constraints — weapon choice group (e.g. Theyn weapon pick).
+      const segName = normaliseSegName(String(seg["@_name"] ?? ""));
+      if (!isWargearName(segName)) continue;
+      const upgradeVariants = segToUpgradeVariants(seg, segMax);
+      if (upgradeVariants.length > 0) {
+        groups.push({ name: segName, groupMin: segMin, groupMax: segMax, modelContext, isUpgrade: false, variants: upgradeVariants });
+      }
+    }
+  }
+}
+
 function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
-  if (e["@_type"] === "model") return [];
   const groups: WargearGroup[] = [];
+
+  if (e["@_type"] === "model") {
+    // Standalone model-type entries (vehicles, characters with no child model SEs).
+    // Weapons live inside a "Wargear" container SEG on the entry itself.
+    extractOptionsFromModelSEGs(e, "", groups);
+    return groups;
+  }
 
   // Unit-level SEGs (squad composition + optional weapons)
   for (const seg of (e["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
@@ -678,20 +783,16 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
     }
   }
 
-  // Leader model weapon choices — SEGs nested inside direct child model SEs
-  for (const directSe of (e["selectionEntries"]?.["selectionEntry"] ?? [])) {
-    if (directSe["@_type"] !== "model") continue;
-    const modelName = String(directSe["@_name"] ?? "");
-    for (const internalSeg of (directSe["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
-      const { min: segMin, max: segMax } = readSelectionConstraints(internalSeg);
-      if (segMax === 0 && segMin === 0) continue;
-      const segName = normaliseSegName(String(internalSeg["@_name"] ?? ""));
-      if (!isWargearName(segName)) continue;
-      const upgradeVariants = segToUpgradeVariants(internalSeg, segMax);
-      if (upgradeVariants.length > 0) {
-        groups.push({ name: segName, groupMin: segMin, groupMax: segMax, modelContext: modelName, isUpgrade: false, variants: upgradeVariants });
-      }
-    }
+  // Weapon choices nested inside direct child model SEs.
+  // For units with a single model type (vehicles, simple squads) use "" as modelContext.
+  // For units with multiple model types (leader + squad) use the model name as context.
+  const directModelSEs = (e["selectionEntries"]?.["selectionEntry"] ?? []).filter(
+    (se: any) => se["@_type"] === "model",
+  );
+  const singleModelType = directModelSEs.length === 1;
+  for (const directSe of directModelSEs) {
+    const modelContext = singleModelType ? "" : String(directSe["@_name"] ?? "");
+    extractOptionsFromModelSEGs(directSe, modelContext, groups);
   }
 
   // Unit-level optional upgrade SEs (icons, banners — e.g. "Icon of Flame" on Rubric Marines).
@@ -796,8 +897,21 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
 
   const costsArr: any[] = e["costs"]?.["cost"] ?? [];
   const costsNorm = Array.isArray(costsArr) ? costsArr : [costsArr];
-  const ptsCost = costsNorm.find((c: any) => c["@_name"] === "pts");
-  const pts = Math.round(parseFloat(String(ptsCost?.["@_value"] ?? "0")));
+  let ptsCost = costsNorm.find((c: any) => c["@_name"] === "pts");
+  let pts = Math.round(parseFloat(String(ptsCost?.["@_value"] ?? "0")));
+  // Fallback: some multi-model units (e.g. Kapricus Defenders) store pts on the child model
+  // rather than the unit entry. Check direct child model SEs when the unit has no pts.
+  let modsSource: Record<string, any> = e;
+  if (pts <= 0) {
+    for (const childSe of (e["selectionEntries"]?.["selectionEntry"] ?? [])) {
+      if (childSe["@_type"] !== "model") continue;
+      const childCosts = childSe["costs"]?.["cost"] ?? [];
+      const childCostsNorm = Array.isArray(childCosts) ? childCosts : [childCosts];
+      const childPtsCost = childCostsNorm.find((c: any) => c["@_name"] === "pts");
+      const childPts = Math.round(parseFloat(String(childPtsCost?.["@_value"] ?? "0")));
+      if (childPts > 0) { ptsCost = childPtsCost; pts = childPts; modsSource = childSe; break; }
+    }
+  }
   if (pts <= 0) return null;
   const ptsTypeId: string = String(ptsCost?.["@_typeId"] ?? "");
 
@@ -808,7 +922,7 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
   // Build cost tiers from BSData modifiers (e.g. "atLeast 3 models → 95pts").
   // BSData stores multi-tier costs as a base pts value + cascading set-modifiers.
   const costTierMap = new Map<number, number>([[minModels, pts]]);
-  const rawMods: any[] = e["modifiers"]?.["modifier"] ?? [];
+  const rawMods: any[] = modsSource["modifiers"]?.["modifier"] ?? [];
   const modsArr = Array.isArray(rawMods) ? rawMods : [rawMods];
   for (const mod of modsArr) {
     if (mod["@_type"] !== "set") continue;

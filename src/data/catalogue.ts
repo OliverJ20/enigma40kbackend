@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-17T21:28:51.073Z
+// Last synced: 2026-05-18T11:13:17.314Z
 
 export interface WargearVariant {
   name: string;
@@ -127,6 +127,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Bolt pistol",
           "Close combat weapon",
           "Boltgun",
+          "Heavy Weapons",
           "Special Weapons"
         ],
         "wargearOptions": [
@@ -197,8 +198,137 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Null Rod",
+          "Brazier of Holy Fire",
+          "Rod of Office",
+          "Blessed blade",
+          "Power weapon",
+          "Hallowed Chainsword",
+          "Bolt Pistol",
+          "Condemnor boltgun",
+          "Inferno pistol",
+          "Plasma pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "May have:",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Null Rod",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Null Rod"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Brazier of Holy Fire",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Brazier of Holy Fire"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Rod of Office",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Rod of Office"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Blessed blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blessed blade"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hallowed Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hallowed Chainsword"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ranged Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Condemnor boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Condemnor boltgun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "820-1e76-78cc-931a",
@@ -213,8 +343,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Heavy bolter",
+          "Castigator autocannons",
+          "Castigator battle cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Main gun",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Castigator autocannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castigator autocannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Castigator battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castigator battle cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f1af-4984-1a52-c5",
@@ -233,13 +396,17 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Anointed Halberd",
+          "Hallowed Mace",
+          "Spear of the Faithful"
+        ],
         "wargearOptions": [
           {
             "name": "Melee Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Sacresant Superior",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -306,7 +473,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Dialogus Staff"
+        ],
         "wargearOptions": []
       },
       {
@@ -322,7 +492,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Mace of the Righteous"
+        ],
         "wargearOptions": []
       },
       {
@@ -341,7 +514,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
-          "Boltgun"
+          "Boltgun",
+          "Artificer-crafted storm bolter",
+          "Meltagun",
+          "Ministorum Flamer"
         ],
         "wargearOptions": [
           {
@@ -400,8 +576,57 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Heavy Bolter",
+          "Exorcist Missile Launcher",
+          "Exorcist Conflagration Rockets"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Main Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Exorcist Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Exorcist Missile Launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Exorcist Conflagration Rockets",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Exorcist Conflagration Rockets"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-Killer Missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-Killer Missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "938e-1c24-4e63-4cf3",
@@ -416,7 +641,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Chirugeon's tools"
+        ],
         "wargearOptions": []
       },
       {
@@ -432,7 +660,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Boltgun",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -448,8 +680,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Heavy Bolter",
+          "Immolation Flamers",
+          "Twin Heavy Bolter",
+          "Twin Multi-melta"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Immolator Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Immolation Flamers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Immolation Flamers"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin Heavy Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Heavy Bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Multi-melta"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-Killer Missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-Killer Missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8f9a-8a8b-2539-547f",
@@ -466,7 +757,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Twin Ministorum Heavy Flamer",
-          "Mace of Castigation"
+          "Mace of Castigation",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -489,7 +781,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": [],
+        "wargear": [
+          "Anchorite Sarcophagus",
+          "Twin Penitent Buzz-Blades",
+          "Twin Penitent Flails",
+          "Penitent Buzz-Blade and Penitent Flail",
+          "2 Heavy Bolters",
+          "2 Mortifier Flamers",
+          "Heavy Bolter and Mortifier Flamer"
+        ],
         "wargearOptions": []
       },
       {
@@ -508,7 +808,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Lance of Illumination",
           "Fidelis",
-          "Paragon missile launcher"
+          "Paragon missile launcher",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -525,8 +826,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Palatine blade",
+          "Bolt pistol",
+          "Plasma pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistols",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e75d-a7ac-7fcc-d302",
@@ -542,7 +875,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 3,
         "wargear": [
-          "Bolt pistol"
+          "Bolt pistol",
+          "Paragon Storm Bolters",
+          "Paragon Grenade Launchers",
+          "Paragon War Blade",
+          "Paragon War Mace",
+          "Heavy Bolter",
+          "Multi-melta"
         ],
         "wargearOptions": [
           {
@@ -634,6 +973,96 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Paragon Carapace Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Paragon Superior",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Paragon Storm Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paragon Storm Bolters"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Paragon Grenade Launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paragon Grenade Launchers"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Paragon Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Paragon Superior",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Paragon War Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paragon War Blade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Paragon War Mace",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paragon War Mace"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Paragon Ranged Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "Paragon Superior",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ministorum heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum heavy flamer"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -656,7 +1085,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": [],
+        "wargear": [
+          "Penitent Flamers",
+          "Twin Penitent Buzz-Blades",
+          "Twin Penitent Flails",
+          "Penitent Buzz-Blade and Penitent Flail"
+        ],
         "wargearOptions": []
       },
       {
@@ -674,8 +1108,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Holy Pistol and Power Weapon",
+          "Zealot's vindictor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Holy Pistol and Power Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Holy Pistol and Power Weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Zealot's vindictor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Zealot's vindictor"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7d63-7b55-a632-6a10",
@@ -783,7 +1248,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Close combat weapon",
-          "2 Bolt Pistols"
+          "2 Bolt Pistols",
+          "Bolt Pistol and Plasma Pistol",
+          "Plasma Pistol and Power Weapon",
+          "Bolt Pistol and Power Weapon",
+          "Bolt Pistol and Chainsword",
+          "Plasma Pistol and Chainsword",
+          "2x Ministorum Hand Flamers",
+          "2x Inferno Pistols"
         ],
         "wargearOptions": [
           {
@@ -818,7 +1290,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Weapons",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Seraphim Superior",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -893,6 +1365,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
+          "Bolt Pistol and Boltgun",
+          "Bolt Pistol and Power Weapon",
+          "Plasma Pistol and Power Weapon",
           "Close combat weapon",
           "Sacred Banner",
           "Autopistol",
@@ -942,7 +1417,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Weapons",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Novitiate Superior",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -989,8 +1464,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Storm bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-Killer Missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-Killer Missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9f5f-d769-7900-c8a1",
@@ -1007,7 +1502,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Bolt Pistols",
-          "Relic Weapons"
+          "Relic Weapons",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -1081,8 +1577,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Blessed Halberd",
+          "Ministorum Hand Flamer and Power Weapon",
+          "Holy Eviscerator"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Blessed Halberd",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blessed Halberd"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Ministorum Hand Flamer and Power Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum Hand Flamer and Power Weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Holy Eviscerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Holy Eviscerator"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "eade-6ec7-7236-bfdb",
@@ -1102,6 +1639,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Close combat weapon",
           "Simulacrum Imperialis",
           "Holy fire",
+          "Plasma gun",
+          "Meltagun",
           "Burning hands",
           "Death Cult blades",
           "Ministorum flamer",
@@ -1123,6 +1662,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
+          "Inferno pistol",
           "Condemnor bolt pistol",
           "Ministorum hand flamer",
           "Blessed sword",
@@ -1199,7 +1739,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Pistol",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Celestian Insidiant Superior",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -1239,7 +1779,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Mighty Champions",
+          "Ministorum heavy flamer",
+          "Heavy bolter",
+          "Melta missile array",
+          "Mace of Saint Praxedes",
+          "Throne of Blame"
+        ],
         "wargearOptions": []
       }
     ],
@@ -1520,7 +2067,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Somnus"
+          "Somnus",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -1607,8 +2155,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Storm Bolter",
+          "Armoured tracks"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "48b7-e713-d5b1-f11c",
@@ -1623,7 +2191,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Vaultswords"
+        ],
         "wargearOptions": []
       },
       {
@@ -1765,8 +2335,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Executioner Greatblade",
+          "Witchseeker Flamer and CCW",
+          "Master-crafted boltgun and CCW"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Executioner Greatblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Executioner Greatblade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Witchseeker Flamer and CCW",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Witchseeker Flamer and CCW"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Master-crafted boltgun and CCW",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Master-crafted boltgun and CCW"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3ec3-a4df-fdbf-5507",
@@ -1806,8 +2417,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Guardian Spear",
+          "Castellan Axe",
+          "Sentinel Blade & Praesidium Shield",
+          "Sentinel Blade",
+          "Pyrithite Spear & Praesidium shield"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Guardian Spear",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Guardian Spear"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Castellan Axe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castellan Axe"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Sentinel Blade & Praesidium Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sentinel Blade & Praesidium Shield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Sentinel Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sentinel Blade"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Pyrithite Spear & Praesidium shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pyrithite Spear & Praesidium shield"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6319-eeba-b717-bd86",
@@ -1825,8 +2497,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Balistus grenade launcher",
+          "Guardian Spear",
+          "Castellan Axe"
+        ],
+        "wargearOptions": [
+          {
+            "name": "equipped with",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Guardian Spear",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Guardian Spear"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Castellan Axe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castellan Axe"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "58fa-4a25-a5af-1144",
@@ -1844,8 +2548,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Interceptor lance",
+          "Vertus hurricane bolter",
+          "Salvo launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "equipped with",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Vertus hurricane bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vertus hurricane bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Salvo launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Salvo launcher"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7d7c-c212-47a3-38e4",
@@ -1862,7 +2598,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Watcher's Axe",
-          "Eagle's Scream"
+          "Eagle's Scream",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -1882,7 +2619,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Gnosis"
+          "Gnosis",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -1901,8 +2639,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Combi-bolter",
+          "Contemptor combat weapon",
+          "Multi-melta",
+          "Kheres-pattern assault cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "equipped with",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Kheres-pattern assault cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kheres-pattern assault cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "76be-3bcb-cf4-bcbd",
@@ -1917,8 +2688,46 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Godhammer lascannon",
+          "Storm bolter",
+          "Twin heavy bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "918b-c9ed-7af7-74df",
@@ -2300,7 +3109,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Galatus warblade"
+        ],
         "wargearOptions": []
       },
       {
@@ -2318,8 +3129,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Achillus dreadspear",
+          "Infernus incinerator",
+          "Lastrum storm bolter",
+          "Twin adrathic destructor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "equipped with",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Infernus incinerator",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Infernus incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lastrum storm bolter",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Lastrum storm bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin adrathic destructor",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Twin adrathic destructor"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "06df-2fb2-8dfa-2fce",
@@ -2334,7 +3187,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured hull",
+          "Twin arachnus blaze cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -2350,8 +3206,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Twin lastrum bolt cannon",
+          "Twin iliastus accelerator cannon",
+          "Twin arachnus heavy blaze cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Equipped with",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin iliastus accelerator cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin iliastus accelerator cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin arachnus heavy blaze cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin arachnus heavy blaze cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e7d8-1c73-7d03-8b62",
@@ -2368,8 +3257,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured feet",
+          "Spiculus bolt launcher",
+          "Arachnus storm cannon",
+          "Iliastus accelerator culverin",
+          "Telemon caestus and twin plasma projector"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear Options",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Arachnus storm cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Arachnus storm cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Iliastus accelerator culverin",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Iliastus accelerator culverin"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Telemon caestus and twin plasma projector",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Telemon caestus and twin plasma projector"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f35e-ef9c-9ef4-77e1",
@@ -2384,7 +3316,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured hull",
+          "Twin arachnus blaze cannon",
+          "Twin lastrum bolt cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -2400,7 +3336,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Arachnus heavy blaze cannon",
+          "Armoured hull",
+          "Spiculus heavy bolt launcher",
+          "Twin lastrum bolt cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -2416,7 +3357,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Arachnus heavy blaze cannon",
+          "Arachnus magna-blaze cannon",
+          "Armoured hull"
+        ],
         "wargearOptions": []
       }
     ],
@@ -2572,8 +3517,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Cognis heavy stubber array",
+          "Chaff Launcher",
+          "Command Uplink"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace command uplink",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Chaff Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chaff Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Command Uplink",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Command Uplink"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d54e-1007-26b5-6a79",
@@ -2590,8 +3568,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Cognis heavy stubber",
+          "Heavy phosphor blaster",
+          "Twin cognis lascannon",
+          "Chaff Launcher",
+          "Command Uplink"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace command uplink",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Chaff Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chaff Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Command Uplink",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Command Uplink"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "295-769-8893-2bb0",
@@ -2608,8 +3621,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Cognis heavy stubber array",
+          "Chaff Launcher",
+          "Command Uplink"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace command uplink",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Chaff Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chaff Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Command Uplink",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Command Uplink"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1f1e-2989-4762-cf88",
@@ -2631,7 +3677,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Arc scourge",
           "Cawl's Omnissian axe",
           "Mechadendrite hive",
-          "Solar atomiser"
+          "Solar atomiser",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -2706,8 +3753,78 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 4,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin Kastelan phosphor blaster and CCW",
+          "Twin Kastelan fist",
+          "Kastelan phosphor blaster & Kastelan fist",
+          "Incendine combustor",
+          "Heavy phosphor blaster"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Arm weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Kastelan phosphor blaster and CCW",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Kastelan phosphor blaster and CCW"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Kastelan fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Kastelan fist"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Kastelan phosphor blaster & Kastelan fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kastelan phosphor blaster & Kastelan fist"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Shoulder mount",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Incendine combustor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incendine combustor"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy phosphor blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy phosphor blaster"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a46f-848-b87d-4484",
@@ -2848,8 +3965,94 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Broad spectrum data-tether",
+          "Cognis heavy stubber",
+          "Dunecrawler legs",
+          "Eradication beamer",
+          "Daedalus missile launcher & Icarus array",
+          "Neutron laser & Cognis heavy stubber",
+          "Twin Onager heavy phosphor blaster"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace eradication beamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Eradication beamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Eradication beamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Daedalus missile launcher & Icarus array",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Daedalus missile launcher & Icarus array"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Neutron laser & Cognis heavy stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neutron laser & Cognis heavy stubber"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Onager heavy phosphor blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Onager heavy phosphor blaster"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Broad spectrum data-tether",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Broad spectrum data-tether",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Cognis heavy stubber",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Cognis heavy stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b31e-5003-5b63-a305",
@@ -3215,7 +4418,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Mechanicus pistol",
+          "Control stave"
+        ],
         "wargearOptions": []
       },
       {
@@ -3236,10 +4442,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Alpha combat weapon",
+          "Mechanicus pistol",
+          "Galvanic rifle",
           "Transuranic arquebus",
           "Arc rifle",
           "Plasma caliver",
-          "Galvanic rifle",
           "Enhanced data-tether",
           "Omnispex"
         ],
@@ -3313,7 +4520,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Skitarii Ranger Alpha",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -3356,10 +4563,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Alpha combat weapon",
+          "Mechanicus pistol",
+          "Radium carbine",
           "Transuranic arquebus",
           "Arc rifle",
           "Plasma caliver",
-          "Radium carbine",
           "Enhanced data-tether",
           "Omnispex"
         ],
@@ -3433,7 +4641,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Skitarii Vanguard Alpha",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -3473,8 +4681,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Cognis heavy stubber",
+          "Disruptor missile launcher",
+          "Belleros energy cannon",
+          "Ferrumite cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "equipped with",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Belleros energy cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Belleros energy cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Ferrumite cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ferrumite cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2b9c-3982-701d-f8fd",
@@ -3491,7 +4733,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured hull",
+          "Cognis heavy stubber array"
+        ],
         "wargearOptions": []
       },
       {
@@ -3511,8 +4756,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Omnissian axe",
+          "Macrostubber",
+          "Phosphor serpenta",
+          "Eradication ray",
+          "Volkite blaster"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace macrostubber",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Macrostubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Macrostubber"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Phosphor serpenta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Phosphor serpenta"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace volkite blaster",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Eradication ray",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Eradication ray"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Volkite blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Volkite blaster"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "c0e0-4d86-96d2-ec86",
@@ -3531,7 +4837,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Mechanicus pistol",
+          "Servo arm",
+          "Omnissian axe"
+        ],
         "wargearOptions": []
       },
       {
@@ -3551,8 +4861,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Omnissian staff",
+          "Magnarail lance",
+          "Transonic cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace magnarail lance",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Magnarail lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Magnarail lance"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Transonic cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transonic cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "fa82-61cc-aa85-e94c",
@@ -3570,7 +4912,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Mechanicus pistol",
+          "Servo-arc claw"
+        ],
         "wargearOptions": []
       },
       {
@@ -3589,7 +4934,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Mechanicus pistol",
+          "Power fist"
+        ],
         "wargearOptions": []
       },
       {
@@ -3633,7 +4981,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 3,
-        "wargear": [],
+        "wargear": [
+          "Ironstrider feet",
+          "Phosphor serpenta",
+          "Radium jezzail"
+        ],
         "wargearOptions": [
           {
             "name": "1 -3 Sydonian Dragoons",
@@ -3734,7 +5086,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Rod of the War Forge",
-          "Jericho-class conversion resonator"
+          "Jericho-class conversion resonator",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -3948,7 +5301,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Lasgun",
           "Hunting lance",
           "Steed's hooves",
-          "Goad lance"
+          "Goad lance",
+          "Power sabre"
         ],
         "wargearOptions": [
           {
@@ -3999,7 +5353,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Coaxial autocannon",
+          "Demolisher cannon",
+          "Heavy stubber",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Baneblade cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4015,7 +5378,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Tremor cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4031,7 +5400,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Quake cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4050,7 +5425,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Wargear Options",
+          "Earthshaker cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4073,7 +5452,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Slabshield",
+          "Brute shield",
+          "Bullgryn maul",
+          "Grenadier gauntlet"
         ],
         "wargearOptions": [
           {
@@ -4111,8 +5494,93 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Boltgun and close combat weapon",
+          "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Laspistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Laspistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Laspistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Chainsword",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Boltgun and close combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun and close combat weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainsword"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4d28-f2a7-67c1-eb2e",
@@ -4133,6 +5601,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 5,
         "wargear": [
           "Close combat weapon",
+          "Flamer",
+          "Grenade launcher",
+          "Meltagun",
+          "Plasma gun",
+          "Regimental standard and lasgun",
+          "Chainsword",
+          "Power fist",
+          "Power weapon",
+          "Flamer and close combat weapon",
+          "Grenade launcher and close combat weapon",
+          "Plasma gun and close combat weapon",
+          "Meltagun and close combat weapon",
+          "Bolt pistol",
+          "Laspistol",
+          "Plasma pistol",
           "Lasgun",
           "Master vox",
           "Medi-pack"
@@ -4174,7 +5657,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lasgun array"
+        ],
         "wargearOptions": []
       },
       {
@@ -4192,8 +5678,66 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Power weapon",
+          "Chainsword"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Bolt Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Chainsword",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainsword"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ade0-fa44-d4cf-4fc8",
@@ -4230,7 +5774,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Wargear Options",
+          "Deathstrike Missile"
+        ],
         "wargearOptions": []
       },
       {
@@ -4246,7 +5794,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Magma cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4451,7 +6005,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Coaxial autocannon",
+          "Demolisher cannon",
+          "Heavy stubber",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Hellhammer cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4469,8 +6032,102 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Chem cannon",
+          "Inferno cannon",
+          "Melta cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Heavy Flamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Inferno Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Chem cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chem cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Melta cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Melta cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4967-19b6-1e2a-a300",
@@ -4487,7 +6144,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Wargear Options",
+          "Hydra autocannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4516,7 +6177,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Plasma gun",
           "Hot-shot volley gun",
           "Meltagun",
-          "Grenade launcher"
+          "Grenade launcher",
+          "Plasma pistol",
+          "Bolt pistol",
+          "Chainsword",
+          "Power weapon"
         ],
         "wargearOptions": [
           {
@@ -4646,7 +6311,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Leman Russ battle cannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -4664,7 +6333,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Eradicator nova cannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -4682,7 +6355,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Demolisher battle cannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -4700,7 +6377,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Exterminator autocannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -4718,7 +6399,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Armoured tracks",
+          "Vanquisher battle cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4736,7 +6421,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Punisher gatling cannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -4757,7 +6446,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Sol's Righteous Gaze",
           "Conquest",
-          "Konstantin's hooves"
+          "Konstantin's hooves",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -4777,7 +6467,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Armoured tracks",
+          "Storm eagle rockets"
+        ],
         "wargearOptions": []
       },
       {
@@ -4802,7 +6496,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hot-shot lasgun",
           "Master vox",
           "Hot-shot laspistol",
-          "Medi-pack"
+          "Medi-pack",
+          "Tempestus dagger",
+          "Command rod"
         ],
         "wargearOptions": [
           {
@@ -4876,7 +6572,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Ripper gun",
-          "Huge knife"
+          "Huge knife",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -4897,8 +6594,85 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Close combat weapon",
+          "Slabshield",
+          "Bullgryn maul"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Huge Knife",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Slabshield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Slabshield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Huge knife",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Huge knife"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Brute shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Brute shield"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ripper Gun",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bullgryn maul",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bullgryn maul"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ripper gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ripper gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grenadier gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grenadier gauntlet"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "c9eb-2007-af01-a853",
@@ -4939,7 +6713,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Laspistol",
+          "Psychic maelstrom",
+          "Force weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -4955,7 +6733,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Enginseer Axe",
+          "Mechanicus pistol",
+          "Servo-arm"
+        ],
         "wargearOptions": []
       },
       {
@@ -4973,8 +6755,125 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Heavy stubber",
+          "Oppressor cannon and coaxial autocannon",
+          "2 Multi-meltas",
+          "2 Heavy Bolters",
+          "2 Meltaguns",
+          "2 Additional Heavy Stubbers"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin Battle Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Oppressor cannon and coaxial autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Oppressor cannon and coaxial autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin battle cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Castigator Gatling Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Castigator gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castigator gatling cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Pulveriser cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulveriser cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Multi-meltas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Multi-meltas"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Heavy Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy Bolters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hull Weapons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Meltaguns",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Meltaguns"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Additional Heavy Stubbers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Additional Heavy Stubbers"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1b48-2f2-8e9c-1308",
@@ -4989,7 +6888,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Volcano cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -5009,7 +6914,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Ripper pistol",
-          "Envenomed blade"
+          "Envenomed blade",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -5026,7 +6932,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Twin heavy bolter",
+          "Lascannon",
+          "Heavy stubber",
+          "Armoured tracks",
+          "Vulcan mega-bolter"
+        ],
         "wargearOptions": []
       },
       {
@@ -5045,8 +6958,211 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "2 Heavy bolters",
+          "2 Heavy flamers",
+          "2 Multi-meltas",
+          "2 Plasma cannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Leman Russ Battle Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Leman Russ battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Leman Russ battle cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Demolisher battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Demolisher battle cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Vanquisher battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vanquisher battle cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Eradicator nova cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Eradicator nova cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Executioner plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Executioner plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Punisher gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Punisher gatling cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Exterminator autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Exterminator autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Lascannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lascannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Heavy flamers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy flamers"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Multi-meltas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Multi-meltas"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Plasma cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Plasma cannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pintle Mount",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy stubber"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "11e5-d4ab-d140-ac38",
@@ -5063,7 +7179,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Twin autocannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -5081,7 +7200,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Storm bolter"
+        ],
         "wargearOptions": []
       },
       {
@@ -5113,7 +7235,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Grenade launcher",
           "Hot-shot volley gun",
           "Meltagun",
-          "Plasma gun"
+          "Plasma gun",
+          "Bolt pistol",
+          "Plasma pistol",
+          "Chainsword",
+          "Power fist",
+          "Power weapon"
         ],
         "wargearOptions": [
           {
@@ -5285,7 +7412,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Power weapon",
-          "Duty and Vengeance"
+          "Duty and Vengeance",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -5302,7 +7430,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured hull",
+          "2 Heavy Bolters"
+        ],
         "wargearOptions": []
       },
       {
@@ -5321,7 +7452,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Armoured tracks",
+          "Wyvern quad stormshard mortar"
+        ],
         "wargearOptions": []
       },
       {
@@ -5356,7 +7491,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Twin heavy bolter",
+          "Lascannon",
+          "Armoured tracks",
+          "Stormsword siege cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -5415,7 +7555,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured hull",
+          "Heavy stubber",
+          "Lascannon",
+          "Avenger bolt cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -5433,7 +7578,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Executioner plasma cannon",
+          "Wargear Options"
+        ],
         "wargearOptions": []
       },
       {
@@ -5456,7 +7605,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hot-shot lascarbine",
           "Close combat weapon",
           "Hot-shot laspistol",
-          "Hot-shot long las"
+          "Hot-shot long las",
+          "Plasma carbine",
+          "Melta carbine",
+          "Chainsword",
+          "Power weapon",
+          "Bolt pistol",
+          "Sentry flamer",
+          "Sentry hot-shot volley gun",
+          "Sentry grenade launcher"
         ],
         "wargearOptions": [
           {
@@ -5591,7 +7748,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Laspistol",
           "Sabre of Sacrifice",
-          "Savage claws"
+          "Savage claws",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -5613,10 +7771,19 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 6,
         "maxModels": 6,
         "wargear": [
-          "Close combat weapon",
           "Laspistol",
+          "Plasma pistol",
+          "Close combat weapon",
           "Alchemyk Counteragents",
           "Servo-scribes",
+          "Boltgun",
+          "Plasma gun",
+          "Meltagun",
+          "Grenade launcher",
+          "Flamer",
+          "Chainsword",
+          "Power weapon",
+          "Trench club",
           "Lasgun",
           "Master vox",
           "Regimental standard"
@@ -5804,8 +7971,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Lasgun",
+          "Crew close combat weapons",
+          "Heavy mortar",
+          "Siege cannon",
+          "Multiple rocket launcher",
+          "Heavy quad launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Heavy mortar",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy mortar",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy mortar"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Siege cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Siege cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Multiple rocket launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multiple rocket launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy quad launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy quad launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "78b6-f280-bba9-0594",
@@ -5823,8 +8043,125 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Heavy stubber",
+          "2 Meltaguns",
+          "2 Additional Heavy Stubbers",
+          "2 Multi-meltas",
+          "2 Heavy Bolters",
+          "Oppressor cannon and coaxial autocannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Castigator Gatling Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Castigator gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castigator gatling cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Pulveriser cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulveriser cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hull Weapons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Meltaguns",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Meltaguns"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Additional Heavy Stubbers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Additional Heavy Stubbers"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Multi-meltas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Multi-meltas"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Heavy Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy Bolters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Twin Battle Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Oppressor cannon and coaxial autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Oppressor cannon and coaxial autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin battle cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ba72-7b05-33c9-a1c0",
@@ -5839,8 +8176,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Zealot's vindicator",
+          "Holy pistol and power weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Zealot's Vindicator",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Zealot's vindicator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Zealot's vindicator"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Holy pistol and power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Holy pistol and power weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3e90-9359-2aaa-205e",
@@ -5867,7 +8235,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Close combat weapon",
           "Flamer",
           "Combat shotgun",
-          "Remote mine"
+          "Remote mine",
+          "Autopistol and trench club",
+          "Combat shotgun and close combat weapon"
         ],
         "wargearOptions": [
           {
@@ -6101,7 +8471,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Enforcer crew",
           "Armoured hull",
           "Chiron gatling cannon",
-          "Power sword and Manus Mortis"
+          "Power sword and Manus Mortis",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -6122,7 +8493,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Bolt pistol",
-          "Power sword and Manus Mortis"
+          "Power sword and Manus Mortis",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -6146,7 +8518,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Power sword",
           "Power klaw",
           "Bale Eye",
-          "Storm bolter"
+          "Storm bolter",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -6165,7 +8538,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured hull",
+          "Pintle-mounted heavy stubber"
+        ],
         "wargearOptions": []
       },
       {
@@ -6754,8 +9130,56 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Nemesis force weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Storm Bolter",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psycannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psilencer"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2c81-4e74-8707-3117",
@@ -6772,7 +9196,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Storm bolter",
+          "Nemesis force weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -6791,7 +9218,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Crozius arcanum",
+          "Storm bolter"
+        ],
         "wargearOptions": []
       },
       {
@@ -6810,8 +9240,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Vortex of Doom",
+          "Nemesis force weapon",
+          "Combi-weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f667-5267-f241-37",
@@ -6828,7 +9290,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Servo-arm",
+          "Omnissian power axe",
+          "Grav-pistol",
+          "Forge bolter"
+        ],
         "wargearOptions": []
       },
       {
@@ -6855,6 +9322,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Nemesis force weapon",
           "Storm bolter",
           "Ancient's Banner",
+          "Incinerator",
+          "Psycannon",
+          "Psilencer",
           "Apothecary's narthecium"
         ],
         "wargearOptions": [
@@ -6945,7 +9415,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Storm bolter",
           "Purifying Flame",
-          "Black Blade of Antwyr"
+          "Black Blade of Antwyr",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -6965,8 +9436,56 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Nemesis force weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Storm Bolter",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psycannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psilencer"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3625-f9f1-122b-bf9d",
@@ -6984,7 +9503,123 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Dreadfists",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Nemesis mace",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nemesis mace"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Nemesis flail",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nemesis flail"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dreadfists",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dreadfists"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Nemesis daemon greathammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nemesis daemon greathammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Nemesis greatsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nemesis greatsword"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ranged Weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Sublimator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sublimator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Gatling psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Gatling psilencer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy psycannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Fragstorm grenade launcher",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Fragstorm grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7256-bb3a-3e79-31fe",
@@ -7005,7 +9640,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Storm bolter",
           "Malleus Argyrum",
-          "Searing Purity"
+          "Searing Purity",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -7022,8 +9658,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin heavy bolter",
+          "Armoured tracks",
+          "Godhammer lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4c63-cca-8d26-6330",
@@ -7038,8 +9727,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin assault cannon",
+          "Armoured tracks",
+          "Hurricane bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ada7-eb0b-c920-d77f",
@@ -7054,8 +9796,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin assault cannon",
+          "Armoured tracks",
+          "Flamestorm cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "841f-98b-fbf3-c8ee",
@@ -7070,8 +9865,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin Heavy Bolter",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5ffd-f698-a1bb-fba7",
@@ -7086,8 +9943,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Storm bolter",
+          "Armoured tracks"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "fa-e288-2107-d22e",
@@ -7102,8 +9979,77 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin assault cannon",
+          "Armoured hull",
+          "Las-talon",
+          "Icarus stormcannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Skyhammer missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Typhoon missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Typhoon missile launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyhammer missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skyhammer missile launcher"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Las-talon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Las-talon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Las-talon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Icarus stormcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Icarus stormcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2efe-459b-9562-e7a9",
@@ -7118,8 +10064,103 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "2 Hurricane bolters",
+          "Armoured hull",
+          "Stormstrike missile launcher",
+          "Twin heavy plasma cannon",
+          "Twin multi-melta"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin Assault Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin heavy plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin assault cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin assault cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Typhoon missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Typhoon missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Typhoon missile launcher"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "2 Hurricane bolters",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "2 Hurricane bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "84ac-b9ea-921f-9082",
@@ -7134,8 +10175,57 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin assault cannon",
+          "Armoured hull"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Skyhammer missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Typhoon missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Typhoon missile launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyhammer missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skyhammer missile launcher"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "bd43-b303-66e0-4c10",
@@ -7152,8 +10242,75 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Storm bolter and Dreadnought combat weapon",
+          "Heavy flamer and Dreadnought combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Assault Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Assault cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Assault cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm Bolter and Dreadnought Combat Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm bolter and Dreadnought combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter and Dreadnought combat weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy flamer and Dreadnought combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer and Dreadnought combat weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d9f7-71b7-8e67-7f44",
@@ -7255,7 +10412,80 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Dreadfists",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Nemesis greatsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nemesis greatsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Nemesis daemon greathammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nemesis daemon greathammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dreadfists",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dreadfists"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Ranged Weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Gatling psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Gatling psilencer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy psycannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy incinerator"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6528-4634-c2cf-2840",
@@ -7281,6 +10511,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Nemesis force weapon",
           "Storm bolter",
           "Ancient's Banner",
+          "Incinerator",
+          "Psycannon",
+          "Psilencer",
           "Apothecary's narthecium"
         ],
         "wargearOptions": [
@@ -7569,7 +10802,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Nemesis force weapon",
-          "Storm bolter"
+          "Storm bolter",
+          "Incinerator",
+          "Psycannon",
+          "Psilencer"
         ],
         "wargearOptions": [
           {
@@ -7615,8 +10851,71 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin heavy bolter",
+          "Lascannon",
+          "Armoured Hull",
+          "Thunderhawk heavy cannon",
+          "Turbo-laser destructor",
+          "Thunderhawk cluster bombs",
+          "Hellstrike missile battery"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Thunderhawk Heavy Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Thunderhawk heavy cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunderhawk heavy cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Turbo-laser destructor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Turbo-laser destructor"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Thunderhawk Cluster Bombs",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Thunderhawk cluster bombs",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunderhawk cluster bombs"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Hellstrike missile battery",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hellstrike missile battery"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "69d-a656-fde3-6c3e",
@@ -7631,8 +10930,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Heavy incinerator",
+          "Armoured tracks",
+          "Twin psycannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       }
     ],
     "detachments": [
@@ -8009,7 +11361,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Exitus pistol",
           "Exitus rifle",
           "Micromelta Round",
-          "Vindicare combat knife"
+          "Vindicare combat knife",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -8031,7 +11384,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Life-draining touch",
           "Animus speculum",
-          "Esoteric Explosives"
+          "Esoteric Explosives",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -8053,7 +11407,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Executioner pistol",
           "Intra-neural Biotech",
-          "Power sword and neuro gauntlet"
+          "Power sword and neuro gauntlet",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -8075,7 +11430,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Decoy Targets",
           "Neural shredder",
-          "Phase sword and poison blades"
+          "Phase sword and poison blades",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -8096,6 +11452,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 4,
         "maxModels": 4,
         "wargear": [
+          "Monomolecular cane-rapier",
+          "Household pistol",
           "Dartmask",
           "Death Cult power blade",
           "Close combat weapon",
@@ -8147,11 +11505,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Close combat weapon",
+          "Navis shotgun",
+          "Autopistol and chainsword",
+          "Bolt pistol and power weapon",
           "Navis heavy shotgun",
           "Endurant shield",
+          "Meltagun",
+          "Navis las-volley",
+          "Plasma gun",
           "Autopistol",
           "Power weapon",
-          "Navis shotgun",
           "Chainfist"
         ],
         "wargearOptions": [
@@ -8220,7 +11583,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Weapons",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Navis Sergeant-at-Arms",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -8512,7 +11875,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Dirgesinger",
           "Psychic Tempest",
-          "Power fist"
+          "Power fist",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -8538,7 +11902,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Bolt pistol",
           "Psychic Blast",
           "Nemesis daemon hammer",
-          "Glovodan Psyber-eagle"
+          "Glovodan Psyber-eagle",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -8563,7 +11928,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Castigation",
           "Condemnor stake",
-          "Master-crafted power sword"
+          "Master-crafted power sword",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -8580,8 +11946,97 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Inquisitorial melee weapon",
+          "Force weapon",
+          "Bolt pistol",
+          "Combi-weapon",
+          "Blessed wardings",
+          "Psychic gifts"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inquisitorial melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inquisitorial melee weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Force weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Force weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Blessed wardings",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blessed wardings"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Psychic gifts",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psychic gifts"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "55cf-8d86-affd-bc9b",
@@ -8600,7 +12055,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Laspistol",
+          "Force-orb cane"
+        ],
         "wargearOptions": []
       },
       {
@@ -8618,8 +12076,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Holy Pistol and Power Weapon",
+          "Zealot's vindictor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Holy Pistol and Power Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Holy Pistol and Power Weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Zealot's vindictor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Zealot's vindictor"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4469-7239-717e-9abd",
@@ -8788,6 +12277,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 5,
         "wargear": [
           "Storm bolter",
+          "Incinerator",
+          "Psilencer",
+          "Psycannon",
           "Narthecium"
         ],
         "wargearOptions": [
@@ -8840,8 +12332,106 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Hunter-killer missile",
+          "Lasgun array",
+          "Storm bolter",
+          "Heavy stubber",
+          "Multi-laser"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hull weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy stubber"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Turret weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Multi-laser",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-laser"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cbbd-8e0a-fd90-fa0d",
@@ -8856,7 +12446,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Hunter-killer missile",
+          "Storm bolter"
+        ],
         "wargearOptions": []
       },
       {
@@ -8878,7 +12472,19 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
-          "Boltgun"
+          "Chainsword",
+          "Power weapon",
+          "Condemnor boltgun",
+          "Combi-weapon",
+          "Ministorum hand flamer",
+          "Inferno pistol",
+          "Plasma pistol",
+          "Boltgun",
+          "Artificer-crafted storm bolter",
+          "Meltagun",
+          "Multi-melta",
+          "Ministorum heavy flamer",
+          "Heavy bolter"
         ],
         "wargearOptions": [
           {
@@ -8936,7 +12542,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Melee Weapon",
             "groupMin": 0,
             "groupMax": 1,
-            "modelContext": "Sister Superior",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -8963,7 +12569,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Sister Superior",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -9048,8 +12654,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Heavy bolter",
+          "Immolation flamers",
+          "Twin heavy bolter",
+          "Twin multi-melta"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Turret weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Immolation flamers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Immolation flamers"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin multi-melta"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8b98-0ac7-a0ba-dedf",
@@ -9068,8 +12733,115 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Hurricane bolter",
+          "Twin assault cannon",
+          "Twin lascannon",
+          "2 Blackstar rocket launchers",
+          "2 Stormstrike missile launchers",
+          "Auspex array",
+          "Infernum halo-launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Centreline weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin assault cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin assault cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Missile choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Blackstar rocket launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Blackstar rocket launchers"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Stormstrike missile launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Stormstrike missile launchers"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Wargear",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Auspex array",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Auspex array"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Infernum halo-launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Infernum halo-launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hurricane bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hurricane bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "0744-61ce-619d-ffe1",
@@ -9103,7 +12875,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Astartes shield",
           "Stalker-pattern boltgun",
           "Deathwatch shotgun",
-          "Black Shield blades"
+          "Black Shield blades",
+          "Boltgun and power weapon",
+          "Deathwatch shotgun and close combat weapon",
+          "Frag cannon and close combat weapon",
+          "Infernus heavy bolter and close combat weapon",
+          "Stalker-pattern boltgun and close combat weapon"
         ],
         "wargearOptions": [
           {
@@ -9223,7 +13000,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Hellfire Extremis",
-          "Master-crafted power weapon"
+          "Master-crafted power weapon",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -9244,7 +13022,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Vigil spear"
+        ],
         "wargearOptions": []
       },
       {
@@ -9268,6 +13048,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Salvationist Medikit",
           "Close combat weapon",
           "Death Cult blades",
+          "Meltagun",
+          "Plasma gun",
           "Ministorum flamer",
           "Ministorum hand flamer",
           "Simulacrum Imperialis"
@@ -9339,7 +13121,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Mighty Champions",
+          "Jindarii tox-cycler",
+          "Stubcarbine",
+          "Butcher blade",
+          "Garralisk's claws and teeth"
+        ],
         "wargearOptions": []
       }
     ],
@@ -9433,8 +13221,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Omnissian staff",
+          "Magnarail lance",
+          "Transonic cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace magnarail lance",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Magnarail lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Magnarail lance"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Transonic cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transonic cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b897-e4c6-fcb6-6538",
@@ -9452,7 +13272,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Mechanicus pistol",
+          "Control stave"
+        ],
         "wargearOptions": []
       },
       {
@@ -9473,10 +13296,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Alpha combat weapon",
+          "Mechanicus pistol",
+          "Galvanic rifle",
           "Transuranic arquebus",
           "Arc rifle",
           "Plasma caliver",
-          "Galvanic rifle",
           "Enhanced data-tether",
           "Omnispex"
         ],
@@ -9550,7 +13374,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Skitarii Ranger Alpha",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -9593,10 +13417,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Alpha combat weapon",
+          "Mechanicus pistol",
+          "Radium carbine",
           "Transuranic arquebus",
           "Arc rifle",
           "Plasma caliver",
-          "Radium carbine",
           "Enhanced data-tether",
           "Omnispex"
         ],
@@ -9670,7 +13495,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Skitarii Vanguard Alpha",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -9712,8 +13537,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Omnissian axe",
+          "Macrostubber",
+          "Phosphor serpenta",
+          "Eradication ray",
+          "Volkite blaster"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace macrostubber",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Macrostubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Macrostubber"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Phosphor serpenta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Phosphor serpenta"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace volkite blaster",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Eradication ray",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Eradication ray"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Volkite blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Volkite blaster"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "detachments": [
@@ -9995,8 +13881,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Master-crafted Heavy Bolt Rifle and Master-crafted Power Weapon",
+          "Boltstorm Gauntlet, Powerfist, and Relic weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Master-crafted Heavy Bolt Rifle and Master-crafted Power Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Master-crafted Heavy Bolt Rifle and Master-crafted Power Weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Boltstorm Gauntlet, Powerfist, and Relic weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltstorm Gauntlet, Powerfist, and Relic weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a976-7cd5-9657-d91a",
@@ -10014,7 +13931,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Instigator Bolt Carbine",
+          "Combat Knife"
+        ],
         "wargearOptions": []
       },
       {
@@ -10033,8 +13954,65 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Relic Fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Relic Fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Relic Fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Relic Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Relic Weapon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1319-45d-bb95-dfd4",
@@ -10053,8 +14031,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Melee and Pistol",
+          "Thunder Hammer and Relic Shield",
+          "Chainsword and Relic Shield"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Melee and Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Melee and Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Thunder Hammer and Relic Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunder Hammer and Relic Shield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Chainsword and Relic Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainsword and Relic Shield"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8da0-4570-c3c-819f",
@@ -10077,8 +14096,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Bolt pistol",
-          "Close combat weapon",
+          "Hand flamer",
+          "Power weapon",
+          "Plasma pistol",
+          "Astartes Chainsword",
           "Bolt Rifle",
+          "Bolt Rifle w/ Grenade Launcher",
+          "Power fist",
+          "Thunder Hammer",
+          "Close combat weapon",
           "Astartes grenade launcher"
         ],
         "wargearOptions": [
@@ -10203,8 +14229,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Hand flamer",
+          "Plasma pistol",
+          "Heavy Bolt Pistol",
           "Astartes Chainsword",
-          "Heavy Bolt Pistol"
+          "Power weapon",
+          "Power fist",
+          "Thunder Hammer"
         ],
         "wargearOptions": [
           {
@@ -10454,7 +14485,25 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
-          "Boltgun"
+          "Boltgun",
+          "Astartes Chainsword",
+          "Grav-pistol",
+          "Plasma pistol",
+          "Power fist",
+          "Thunder Hammer",
+          "Power weapon",
+          "Storm bolter",
+          "Combi-weapon",
+          "Flamer",
+          "Meltagun",
+          "Plasma gun",
+          "Grav-gun",
+          "Heavy Bolter",
+          "Multi-melta",
+          "Lascannon",
+          "Missile Launcher",
+          "Plasma cannon",
+          "Grav-cannon"
         ],
         "wargearOptions": [
           {
@@ -10529,8 +14578,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Close combat weapon",
           "Boltgun",
           "Bolt pistol",
-          "Astartes Shotgun",
+          "Astartes Chainsword",
           "Combat Knife",
+          "Astartes Shotgun",
+          "Heavy Bolter",
           "Scout Sniper Rifle"
         ],
         "wargearOptions": [
@@ -10630,7 +14681,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Heavy Bolt Pistol",
-          "Master-crafted power weapon"
+          "Master-crafted power weapon",
+          "Plasma pistol",
+          "Neo-volkite Pistol"
         ],
         "wargearOptions": [
           {
@@ -10684,7 +14737,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Vanguard Veteran Weapon"
+          "Vanguard Veteran Weapon",
+          "Plasma pistol",
+          "Inferno Pistol",
+          "Hand flamer",
+          "Bolt pistol",
+          "Grav-pistol",
+          "Storm Shield"
         ],
         "wargearOptions": [
           {
@@ -10736,7 +14795,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Sternguard Bolt Rifle",
           "Close combat weapon",
-          "Combi-weapon"
+          "Combi-weapon",
+          "Power weapon",
+          "Power fist",
+          "Astartes Chainsword",
+          "Sternguard Heavy Bolter",
+          "Pyrecannon"
         ],
         "wargearOptions": [
           {
@@ -10810,6 +14874,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Special Issue Bolt Pistol",
           "Combat Knife",
+          "Bolt Carbine and Close Combat Weapon",
           "Bolt Carbine"
         ],
         "wargearOptions": [
@@ -10867,7 +14932,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
-          "Twin power fist"
+          "Twin power fist",
+          "Auto Boltstorm Gauntlets & Fragstorm Grenade Launcher",
+          "Flamestorm Gauntlets"
         ],
         "wargearOptions": []
       },
@@ -10893,7 +14960,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Storm Shield",
           "Thunder Hammer",
-          "Twin Lightning Claws"
+          "Twin Lightning Claws",
+          "Thunder Hammer & Storm Shield"
         ],
         "wargearOptions": [
           {
@@ -10954,8 +15022,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Storm bolter",
+          "Power weapon",
+          "Chainfist",
           "Power fist",
-          "Chainfist"
+          "Heavy Flamer",
+          "Assault Cannon",
+          "Cyclone Missile Launcher & Storm Bolter"
         ],
         "wargearOptions": [
           {
@@ -11025,6 +15097,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
+          "Centurion Bolters",
+          "Centurion Assault Launchers",
+          "Twin flamer",
+          "Twin meltagun",
           "Siege Drills"
         ],
         "wargearOptions": [
@@ -11075,6 +15151,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
+          "Centurion Bolters",
+          "Centurion missile launcher",
+          "Twin heavy bolter",
+          "Twin lascannon",
+          "Grav-cannon",
           "Centurion Fists"
         ],
         "wargearOptions": [
@@ -11120,8 +15201,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Fragstorm grenade launcher",
+          "Heavy Bolter",
+          "Twin Ironhail Heavy Stubber",
+          "Invictor Fist",
+          "Incendium Cannon",
+          "Twin Ironhail Autocannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Main Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Incendium Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incendium Cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin Ironhail Autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Ironhail Autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d204-13c6-dab1-ecdc",
@@ -11136,8 +15252,94 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Dreadnought Combat Weapon w/ Heavy Flamer",
+          "Dreadnought Combat Weapon w/ Storm Bolter",
+          "Close Combat Weapon w/ Missile Launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Dreadnought Arm Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Dreadnought Combat Weapon w/ Heavy Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dreadnought Combat Weapon w/ Heavy Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dreadnought Combat Weapon w/ Storm Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dreadnought Combat Weapon w/ Storm Bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Close Combat Weapon w/ Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close Combat Weapon w/ Missile Launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Dreadnought Heavy Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Assault Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Assault Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy Plasma Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Plasma Cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1d94-b3c8-9205-827e",
@@ -11154,8 +15356,110 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Redemptor Fist",
+          "Twin Fragstorm Grenade Launcher",
+          "Twin Storm Bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Macro Plasma Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Macro Plasma Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy Onslaught Gatling Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Onslaught Gatling Cannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Flamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Onslaught gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Onslaught gatling cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option 3",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Fragstorm Grenade Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Fragstorm Grenade Launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin Storm Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Storm Bolter"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Icarus Rocket Pod",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Icarus Rocket Pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5dc7-aa6c-7053-cede",
@@ -11172,7 +15476,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Twin Storm Bolter",
+          "Armoured Feet",
+          "Ballistus Lascannon",
+          "Ballistus Missile Launcher"
+        ],
         "wargearOptions": []
       },
       {
@@ -11190,8 +15499,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin Icarus ironhail heavy stubber",
+          "Brutalis Fists & Brutalis Bolt Rifles",
+          "Brutalis Talons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Melee Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Brutalis Fists & Brutalis Bolt Rifles",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Brutalis Fists & Brutalis Bolt Rifles"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Brutalis Talons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Brutalis Talons"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ranged Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin multi-melta"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8d7b-3dfe-7b91-2490",
@@ -11206,8 +15574,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bolt pistol",
+          "Twin bolt rifle",
+          "Close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Onslaught gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Onslaught gatling cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b5e8-c34b-566b-8bda",
@@ -11308,7 +15708,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Assault Bolters",
+          "Plasma Exterminators"
         ],
         "wargearOptions": []
       },
@@ -11325,7 +15727,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Fragstorm grenade launcher",
+          "Onslaught gatling cannon",
+          "Twin Ironhail Heavy Stubber",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -11341,7 +15748,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close combat weapon",
+          "Stormfury Missiles",
+          "Thunderstrike Las-talon",
+          "Twin Icarus Rocket Pod"
+        ],
         "wargearOptions": []
       },
       {
@@ -11357,7 +15769,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close combat weapon",
+          "Hammerstrike Missile Launcher",
+          "Krakstorm Grenade Launcher",
+          "Melta Destroyer"
+        ],
         "wargearOptions": []
       },
       {
@@ -11381,6 +15798,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Close combat weapon",
+          "Plasma pistol",
           "Bolt pistol",
           "Plasma Incinerator"
         ],
@@ -11433,7 +15851,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 3,
         "wargear": [
           "Close combat weapon",
-          "Bolt pistol"
+          "Bolt pistol",
+          "Bolt Sniper Rifle",
+          "Instigator Bolt Carbine"
         ],
         "wargearOptions": []
       },
@@ -11527,7 +15947,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Boltgun",
           "Close combat weapon",
-          "Bolt pistol"
+          "Bolt pistol",
+          "Heavy Bolter",
+          "Lascannon",
+          "Grav-cannon",
+          "Multi-melta",
+          "Plasma cannon",
+          "Missile Launcher"
         ],
         "wargearOptions": [
           {
@@ -11580,7 +16006,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Bolt pistol",
           "Close combat weapon",
-          "Castellan Launcher"
+          "Castellan Launcher",
+          "Superfrag Rocket Launcher",
+          "Superkrak Rocket Launcher",
+          "Vengor launcher"
         ],
         "wargearOptions": [
           {
@@ -11629,8 +16058,44 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks",
+          "Whirlwind Vengeance Launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d4c8-dd6a-cd7a-ccc3",
@@ -11645,8 +16110,73 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks",
+          "Predator Autocannon",
+          "2 Lascannons",
+          "2 Heavy Bolters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Sponson Weapons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Lascannons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Heavy Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy Bolters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "31a-6c3e-5843-4023",
@@ -11661,8 +16191,73 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks",
+          "Predator Twin Lascannon",
+          "2 Lascannons",
+          "2 Heavy Bolters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Sponson Weapons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Lascannons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Heavy Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy Bolters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7814-107b-a498-96f6",
@@ -11677,8 +16272,73 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "Lancer Laser Destroyer",
+          "Two fragstorm grenade launchers",
+          "Two storm bolters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Sponson Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two fragstorm grenade launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two fragstorm grenade launchers"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Two storm bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two storm bolters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Icarus Rocket Pod",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Icarus Rocket Pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ironhail Heavy Stubber",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Ironhail Heavy Stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ed20-824b-7419-aebc",
@@ -11693,8 +16353,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "Tempest Bolter",
+          "Twin Heavy Onslaught Gatling Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Icarus Rocket Pod",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Icarus Rocket Pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ironhail Heavy Stubber",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Ironhail Heavy Stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6b89-8147-9b6b-6db1",
@@ -11709,8 +16406,45 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "Multi-melta",
+          "Twin Las-talon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Icarus Rocket Pod",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Icarus Rocket Pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ironhail Heavy Stubber",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Ironhail Heavy Stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cb6d-201f-4888-3027",
@@ -11725,8 +16459,44 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks",
+          "Demolisher Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8cca-9318-3bec-d360",
@@ -11741,8 +16511,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks",
+          "Twin heavy bolter",
+          "Godhammer Lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1d65-c592-2e16-b045",
@@ -11759,8 +16582,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks",
+          "Hurricane Bolter",
+          "Twin assault cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d361-a36e-1448-264d",
@@ -11777,8 +16653,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks",
+          "Twin assault cannon",
+          "Flamestorm Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e8e-fc5c-c689-99ca",
@@ -11793,8 +16722,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "Hunter-slayer missile",
+          "Repulsor Defensive Array"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hull Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Turret Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy Onslaught Gatling Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Onslaught Gatling Cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Las-talon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Las-talon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9259-f166-15f2-7f79",
@@ -11809,8 +16797,75 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "Heavy Onslaught Gatling Cannon",
+          "Twin heavy bolter",
+          "Twin Icarus ironhail heavy stubber",
+          "Repulsor Executioner Defensive Array",
+          "Heavy Laser Destroyer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Turret Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy Laser Destroyer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Laser Destroyer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Macro Plasma Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Macro Plasma Incinerator"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Icarus Rocket Pod",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Icarus Rocket Pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ironhail Heavy Stubber",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Ironhail Heavy Stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a14e-75ca-ef91-397f",
@@ -11825,8 +16880,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks",
+          "Storm bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ed11-25b9-a0eb-89f4",
@@ -11841,8 +16916,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Tracks"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Turret Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Storm bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "bfb1-7512-e1a3-9fa2",
@@ -11857,8 +16994,104 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "Orbital Comms Array",
+          "Shield Dome",
+          "Ironhail Skytalon Array",
+          "2 Storm Bolters",
+          "2 Fragstorm Grenade Launchers"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Option",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Orbital Comms Array",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Orbital Comms Array"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Shield Dome",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shield Dome"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ironhail Skytalon Array",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ironhail Skytalon Array"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bellicatus Missile Array",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bellicatus Missile Array"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Storm Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Storm Bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Fragstorm Grenade Launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Fragstorm Grenade Launchers"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ironhail Heavy Stubber",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Ironhail Heavy Stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4d57-c5c8-c1a1-e8a6",
@@ -11889,8 +17122,76 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "Twin assault cannon",
+          "Icarus Stormcannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Icarus Stormcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Icarus Stormcannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Las-talon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Las-talon"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Typhoon missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Typhoon missile launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skyhammer Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skyhammer Missile Launcher"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1bb6-878e-7af1-5bdb",
@@ -11905,8 +17206,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "Twin assault cannon",
+          "Skyhammer Missile Launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Skyhammer Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skyhammer Missile Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Typhoon missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Typhoon missile launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "469b-3370-30f3-473a",
@@ -11921,8 +17272,102 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured Hull",
+          "2 Hurricane Bolters",
+          "Stormstrike Missiles",
+          "Twin Heavy Plasma Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Heavy Plasma Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Heavy Plasma Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin assault cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin assault cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Typhoon missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Typhoon missile launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin multi-melta"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "2 Hurricane Bolters",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "2 Hurricane Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ce15-e87e-7cff-b129",
@@ -11939,8 +17384,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Neo-volkite pistol, Master-crafted Power Sword & Storm Shield",
+          "Pistol, Master-crafted Bolter & Melee Weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Neo-volkite pistol, Master-crafted Power Sword & Storm Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neo-volkite pistol, Master-crafted Power Sword & Storm Shield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Pistol, Master-crafted Bolter & Melee Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pistol, Master-crafted Bolter & Melee Weapon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6dfd-beb0-5b01-b21e",
@@ -11958,7 +17434,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Combat Knife",
+          "Master-crafted Special Issue Bolt Pistol"
+        ],
         "wargearOptions": []
       },
       {
@@ -11977,7 +17456,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Master-crafted Scoped Bolt Carbine",
+          "Paired Combat Blades"
+        ],
         "wargearOptions": []
       },
       {
@@ -11996,7 +17479,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Force weapon",
+          "Smite"
+        ],
         "wargearOptions": []
       },
       {
@@ -12016,7 +17503,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Force weapon",
+          "Smite"
+        ],
         "wargearOptions": []
       },
       {
@@ -12036,8 +17527,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Force weapon",
+          "Smite"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ceb5-55c7-2d49-d952",
@@ -12054,7 +17576,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Absolvor bolt pistol",
+          "Crozius arcanum"
+        ],
         "wargearOptions": []
       },
       {
@@ -12073,8 +17598,38 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Crozius arcanum"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Relic Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Relic Shield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5d1d-2230-8199-3ab3",
@@ -12091,7 +17646,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Absolvor bolt pistol",
+          "Crozius arcanum",
+          "Twin bolt rifle"
+        ],
         "wargearOptions": []
       },
       {
@@ -12110,8 +17669,101 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Crozius arcanum"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno Pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hand flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hand flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grav-pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e671-cd3a-2b03-3954",
@@ -12128,7 +17780,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Grav-pistol",
+          "Omnissian power axe",
+          "Servo-arm",
+          "Forge Bolter"
+        ],
         "wargearOptions": []
       },
       {
@@ -12147,7 +17804,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Combi-weapon",
+          "Paired Combat Blades"
+        ],
         "wargearOptions": []
       },
       {
@@ -12165,7 +17825,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Absolvor bolt pistol",
+          "Close combat weapon",
+          "Reductor Pistol"
+        ],
         "wargearOptions": []
       },
       {
@@ -12185,7 +17849,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Absolvor bolt pistol",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -12203,8 +17870,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bolt pistol",
+          "Bolt Rifle & Close Combat Weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt Rifle & Close Combat Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Rifle & Close Combat Weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9ca5-e5f4-f85d-bcca",
@@ -12222,7 +17920,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Heavy Bolt Pistol",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -12241,8 +17942,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin lightning claws",
+          "Storm Bolter and Melee Weapon",
+          "Thunder Hammer & Terminator Storm Shield"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm Bolter and Melee Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm Bolter and Melee Weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Thunder Hammer & Terminator Storm Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunder Hammer & Terminator Storm Shield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lightning claws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lightning claws"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8dcb-987c-1ab4-b976",
@@ -12259,7 +18001,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Absolvor bolt pistol",
+          "Executioner Relic Blade"
+        ],
         "wargearOptions": []
       },
       {
@@ -12277,8 +18022,49 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bolt Pistol, Master-crafted Bolter, Melee Weapon",
+          "Heavy Bolt Pistol, Master-crafted power weapon and 1 Relic Shield",
+          "Pistol and Melee Weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt Pistol, Master-crafted Bolter, Melee Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Pistol, Master-crafted Bolter, Melee Weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy Bolt Pistol, Master-crafted power weapon and 1 Relic Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolt Pistol, Master-crafted power weapon and 1 Relic Shield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Pistol and Melee Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pistol and Melee Weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "98db-fff3-b1b2-e22f",
@@ -12293,8 +18079,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Ironhail Heavy Stubber",
+          "Storm bolter",
+          "Twin macro-accelerator cannon",
+          "Two Astraeus las-rippers",
+          "Two plasma eradicators"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hull weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponson weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two Astraeus las-rippers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two Astraeus las-rippers"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Two plasma eradicators",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two plasma eradicators"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3416-dfee-84ee-e21d",
@@ -12309,8 +18157,71 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Thunderhawk cluster bombs",
+          "Hellstrike missile battery",
+          "Thunderhawk heavy cannon",
+          "Turbo-laser destructor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Bombs or missiles",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Thunderhawk cluster bombs",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunderhawk cluster bombs"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Hellstrike missile battery",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hellstrike missile battery"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Main weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Thunderhawk heavy cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunderhawk heavy cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Turbo-laser destructor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Turbo-laser destructor"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cdd9-efda-95-e7b2",
@@ -12333,9 +18244,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Astartes Chainsword",
+          "Hand flamer",
+          "Plasma pistol",
           "Heavy Bolt Pistol",
-          "Plasma pistol"
+          "Astartes Chainsword",
+          "Power weapon",
+          "Power fist"
         ],
         "wargearOptions": [
           {
@@ -14372,8 +20286,77 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Daemon hammer",
+          "Accursed weapon",
+          "Astartes chainblade",
+          "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Daemon hammer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Daemon hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Daemon hammer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainblade"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Plasma pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6bf7-888c-7aa6-6831",
@@ -14392,6 +20375,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Chainsword",
+          "Bolt pistol",
+          "Plasma pistol",
           "Autopistol",
           "Close combat weapon",
           "Great weapon",
@@ -14441,7 +20426,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Pistol",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Fellgor Champion",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -14482,8 +20467,76 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Accursed weapon",
+          "Power fist",
+          "Twin lightning claws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Accursed weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lightning claws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lightning claws"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Bolt pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "203d-c50f-a438-4982",
@@ -14510,7 +20563,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Combi-weapon",
           "Power fist",
           "Chainfist",
-          "Paired accursed weapons"
+          "Heavy flamer",
+          "Reaper autocannon",
+          "Paired accursed weapons",
+          "Combi-bolter and accursed weapon"
         ],
         "wargearOptions": [
           {
@@ -14624,7 +20680,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Plasma pistol",
           "Combi-weapon",
           "Paired accursed weapons",
-          "Power fist"
+          "Power fist",
+          "Boltgun and accursed weapon"
         ],
         "wargearOptions": [
           {
@@ -14742,12 +20799,22 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Boltgun",
-          "Bolt pistol",
           "Close combat weapon",
+          "Accursed weapon",
           "Astartes chainsword",
           "Heavy melee weapon",
-          "Balefire tome"
+          "Boltgun",
+          "Bolt pistol",
+          "Balefire tome",
+          "Meltagun",
+          "Flamer",
+          "Havoc autocannon",
+          "Heavy bolter",
+          "Lascannon",
+          "Missile launcher",
+          "Plasma gun",
+          "Reaper chaincannon",
+          "Plasma pistol and Astartes chainsword"
         ],
         "wargearOptions": [
           {
@@ -14812,6 +20879,114 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Replace bolt pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy melee weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace boltgun",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy melee weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -14829,6 +21004,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 3,
         "wargear": [
+          "Bolt pistol",
+          "Accursed crozius",
           "Close combat weapon"
         ],
         "wargearOptions": []
@@ -14853,7 +21030,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Chaos icon",
           "Autopistol",
           "Close combat weapon",
-          "Warp Curse"
+          "Warp Curse",
+          "Commune stave"
         ],
         "wargearOptions": []
       },
@@ -14871,6 +21049,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
+          "Flamer",
+          "Plasma gun",
           "Close combat weapon",
           "Havoc autocannon",
           "Havoc lascannon",
@@ -14937,6 +21117,114 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -14955,7 +21243,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Rite of Possession",
+          "Staff of possession"
+        ],
         "wargearOptions": []
       },
       {
@@ -14977,7 +21269,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Hideous mutations"
+        ],
         "wargearOptions": [
           {
             "name": "5 - 10 Possessed",
@@ -15118,6 +21412,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy melee weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -15136,7 +21493,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Infernal Gaze",
+          "Force weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -15155,8 +21516,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Infernal Gaze",
+          "Force weapon",
+          "Chaos Familiar",
+          "Combi-bolter",
+          "Combi-weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace combi-bolter",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Chaos Familiar",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Chaos Familiar",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9f33-ff4a-d948-4636",
@@ -15178,7 +21589,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Warp claws"
+        ],
         "wargearOptions": [
           {
             "name": "5-10 Warp Talons",
@@ -15222,6 +21635,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Close combat weapon",
+          "Chainsword",
+          "Power weapon",
+          "Corrupted pistol",
+          "Boltgun",
           "Lasgun",
           "Flamer",
           "Plasma gun",
@@ -15312,7 +21729,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Melee weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Traitor Sergeant",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -15348,7 +21765,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Traitor Sergeant",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -15394,6 +21811,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 20,
         "wargear": [
           "Brutal assault weapon",
+          "Bolt pistol",
           "Autopistol"
         ],
         "wargearOptions": [
@@ -15442,8 +21860,88 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Combi-bolter",
+          "Combi-weapon",
+          "Exalted weapon",
+          "Chainfist",
+          "Paired accursed weapons",
+          "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Combi-bolter",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Exalted weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Exalted weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Exalted weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainfist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Paired accursed weapons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paired accursed weapons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cb66-af7-2cca-1c85",
@@ -15460,7 +21958,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Balefire pike",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -15479,6 +21980,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 2,
         "maxModels": 2,
         "wargear": [
+          "Bolt pistol",
+          "Power fist",
           "Ogryn weapons"
         ],
         "wargearOptions": []
@@ -15806,7 +22309,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Chaos icon",
           "Autopistol",
           "Close combat weapon",
-          "Warp Curse"
+          "Warp Curse",
+          "Commune stave"
         ],
         "wargearOptions": []
       },
@@ -15826,6 +22330,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 2,
         "maxModels": 2,
         "wargear": [
+          "Bolt pistol",
+          "Power fist",
           "Ogryn weapons"
         ],
         "wargearOptions": []
@@ -15847,6 +22353,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Close combat weapon",
+          "Chainsword",
+          "Power weapon",
+          "Corrupted pistol",
+          "Boltgun",
           "Lasgun",
           "Flamer",
           "Plasma gun",
@@ -15937,7 +22447,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Melee weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Traitor Sergeant",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -15973,7 +22483,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Traitor Sergeant",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -16015,6 +22525,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Chainsword",
+          "Bolt pistol",
+          "Plasma pistol",
           "Autopistol",
           "Close combat weapon",
           "Great weapon",
@@ -16064,7 +22576,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Pistol",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Fellgor Champion",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -16104,7 +22616,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Balefire pike",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -16128,6 +22643,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 20,
         "wargear": [
           "Brutal assault weapon",
+          "Bolt pistol",
           "Autopistol"
         ],
         "wargearOptions": [
@@ -16481,7 +22997,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Talon of Horus",
-          "Drach'nyen"
+          "Drach'nyen",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -16503,7 +23020,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Hellspear",
-          "Herald's Talon"
+          "Herald's Talon",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -16524,7 +23042,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Tyrant's Claw heavy flamer",
-          "Tyrant's Claw and exalted power weapon"
+          "Tyrant's Claw and exalted power weapon",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -16544,7 +23063,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Hellforged weapons",
+          "Infernal cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -16564,7 +23086,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Hellforged weapons",
+          "Infernal cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -16605,7 +23130,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Cypher's bolt pistol",
-          "Cypher's plasma pistol"
+          "Cypher's plasma pistol",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -16624,7 +23150,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Rite of Possession",
+          "Staff of possession"
+        ],
         "wargearOptions": []
       },
       {
@@ -16640,8 +23170,77 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Daemon hammer",
+          "Accursed weapon",
+          "Astartes chainblade",
+          "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Daemon hammer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Daemon hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Daemon hammer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainblade"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Plasma pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b206-250d-84aa-fc42",
@@ -16659,8 +23258,88 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Combi-bolter",
+          "Combi-weapon",
+          "Exalted weapon",
+          "Chainfist",
+          "Paired accursed weapons",
+          "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Combi-bolter",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Exalted weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Exalted weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Exalted weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainfist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Paired accursed weapons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Paired accursed weapons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "980d-c80a-19b2-f641",
@@ -16677,7 +23356,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Infernal Gaze",
+          "Force weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -16696,8 +23379,58 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Infernal Gaze",
+          "Force weapon",
+          "Chaos Familiar",
+          "Combi-bolter",
+          "Combi-weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace combi-bolter",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Chaos Familiar",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Chaos Familiar",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "46e1-2159-7c26-9105",
@@ -16715,8 +23448,71 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bolt pistol",
+          "Bladed limbs",
+          "Impaler chainglaive",
+          "Helstalker autocannon",
+          "Baleflamer",
+          "Techno-virus injector",
+          "Magma cutter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Autocannon or baleflamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Helstalker autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helstalker autocannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Baleflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Baleflamer"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Injector or magma cutter",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Techno-virus injector",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Techno-virus injector"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Magma cutter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Magma cutter"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "440-a22a-eac1-b107",
@@ -16731,7 +23527,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Plasma pistol",
+          "Flamer tendril",
+          "Forge weapon",
+          "Melta tendril"
+        ],
         "wargearOptions": []
       },
       {
@@ -16748,6 +23549,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 3,
         "wargear": [
+          "Bolt pistol",
+          "Accursed crozius",
           "Close combat weapon"
         ],
         "wargearOptions": []
@@ -16772,7 +23575,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Chaos icon",
           "Autopistol",
           "Close combat weapon",
-          "Warp Curse"
+          "Warp Curse",
+          "Commune stave"
         ],
         "wargearOptions": []
       },
@@ -16794,12 +23598,22 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Boltgun",
-          "Bolt pistol",
           "Close combat weapon",
+          "Accursed weapon",
           "Astartes chainsword",
           "Heavy melee weapon",
-          "Balefire tome"
+          "Boltgun",
+          "Bolt pistol",
+          "Balefire tome",
+          "Meltagun",
+          "Flamer",
+          "Havoc autocannon",
+          "Heavy bolter",
+          "Lascannon",
+          "Missile launcher",
+          "Plasma gun",
+          "Reaper chaincannon",
+          "Plasma pistol and Astartes chainsword"
         ],
         "wargearOptions": [
           {
@@ -16864,6 +23678,114 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Replace bolt pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy melee weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace boltgun",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy melee weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -16888,6 +23810,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 20,
         "wargear": [
           "Brutal assault weapon",
+          "Bolt pistol",
           "Autopistol"
         ],
         "wargearOptions": [
@@ -16970,7 +23893,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Combi-weapon",
           "Power fist",
           "Chainfist",
-          "Paired accursed weapons"
+          "Heavy flamer",
+          "Reaper autocannon",
+          "Paired accursed weapons",
+          "Combi-bolter and accursed weapon"
         ],
         "wargearOptions": [
           {
@@ -17073,7 +23999,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Axe of dismemberment"
+        ],
         "wargearOptions": []
       },
       {
@@ -17095,7 +24024,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Hideous mutations"
+        ],
         "wargearOptions": [
           {
             "name": "5 - 10 Possessed",
@@ -17139,7 +24070,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Plasma pistol",
           "Combi-weapon",
           "Paired accursed weapons",
-          "Power fist"
+          "Power fist",
+          "Boltgun and accursed weapon"
         ],
         "wargearOptions": [
           {
@@ -17254,7 +24186,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Excruciator cannon",
+          "Soulflayer tendrils and claws"
+        ],
         "wargearOptions": []
       },
       {
@@ -17276,9 +24211,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Combi-bolter",
-          "Bolt pistol",
           "Close combat weapon",
+          "Accursed weapon",
           "Astartes chainsword",
+          "Bolt pistol",
           "Flamer",
           "Meltagun",
           "Plasma gun",
@@ -17421,6 +24357,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
               }
             ],
             "modelMin": 6
+          },
+          {
+            "name": "Replace bolt pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -17545,6 +24535,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy melee weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy melee weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -17568,7 +24621,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Warp claws"
+        ],
         "wargearOptions": [
           {
             "name": "5-10 Warp Talons",
@@ -17609,6 +24664,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
+          "Flamer",
+          "Plasma gun",
           "Close combat weapon",
           "Havoc autocannon",
           "Havoc lascannon",
@@ -17675,6 +24732,114 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes chainsword"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -17693,7 +24858,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 2,
-        "wargear": [],
+        "wargear": [
+          "Crushing fists",
+          "Fleshmetal guns"
+        ],
         "wargearOptions": []
       },
       {
@@ -17713,7 +24881,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Vashtorr's claw",
-          "Vashtorr's hammer"
+          "Vashtorr's hammer",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -17734,6 +24903,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Close combat weapon",
+          "Chainsword",
+          "Power weapon",
+          "Corrupted pistol",
+          "Boltgun",
           "Lasgun",
           "Flamer",
           "Plasma gun",
@@ -17824,7 +24997,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Melee weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Traitor Sergeant",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -17860,7 +25033,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Traitor Sergeant",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -17902,6 +25075,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Chainsword",
+          "Bolt pistol",
+          "Plasma pistol",
           "Autopistol",
           "Close combat weapon",
           "Great weapon",
@@ -17951,7 +25126,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Pistol",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Fellgor Champion",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -17992,6 +25167,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 2,
         "maxModels": 2,
         "wargear": [
+          "Bolt pistol",
+          "Power fist",
           "Ogryn weapons"
         ],
         "wargearOptions": []
@@ -18011,8 +25188,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Havoc launcher",
+          "Twin heavy bolter",
+          "Armoured tracks",
+          "Soulshatter lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "279e-62d4-bff1-141",
@@ -18029,8 +25239,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Predator twin lascannon",
+          "2 heavy bolters",
+          "2 lascannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 lascannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3dfb-3b2a-94b-2fbe",
@@ -18047,8 +25318,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Predator autocannon",
+          "2 heavy bolters",
+          "2 lascannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 lascannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e687-6d7a-bb28-dcaa",
@@ -18065,8 +25397,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Demolisher cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "45b-19f6-38d2-703f",
@@ -18083,8 +25447,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "2 ectoplasma cannons",
+          "2 Hades autocannons",
+          "Ectoplasma cannon and limbs",
+          "Forgefiend jaws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Arm weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 ectoplasma cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 ectoplasma cannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Hades autocannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Hades autocannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Head weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Ectoplasma cannon and limbs",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ectoplasma cannon and limbs"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Forgefiend jaws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Forgefiend jaws"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9ff2-45e0-fe97-65f8",
@@ -18099,8 +25523,145 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Close combat weapon",
+          "Helbrute fist with combi-bolter",
+          "Helbrute fist with heavy flamer",
+          "Missile launcher",
+          "Helbrute hammer",
+          "Power scourge",
+          "Multi-melta",
+          "Twin autocannon",
+          "Helbrute plasma cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Helbrute fist with combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Helbrute hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute hammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power scourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power scourge"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "79e5-a673-cca5-91a4",
@@ -18117,8 +25678,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Heldrake claws",
+          "Baleflamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Mouth weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Baleflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Baleflamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades autocannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d37d-7e8f-341b-c67c",
@@ -18135,8 +25727,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Maulerfiend fists",
+          "2 magma cutters",
+          "Lasher tendrils"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Head weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 magma cutters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 magma cutters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lasher tendrils",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lasher tendrils"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e981-27ae-112f-aa9a",
@@ -18153,8 +25777,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Combi-bolter",
+          "Havoc launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b27f-1c85-5e7f-4e7d",
@@ -18174,8 +25830,79 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Great cleaver of Khorne",
+          "Hades gatling cannon",
+          "Skullhurler",
+          "Gorestorm cannon",
+          "Daemongore cannon",
+          "Ichor cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hades gatling cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hades gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades gatling cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Skullhurler",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skullhurler"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Gorestorm cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Gorestorm cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Gorestorm cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Daemongore cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Daemongore cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ichor cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ichor cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7263-70e5-b424-61eb",
@@ -18218,8 +25945,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 10,
         "maxModels": 20,
         "wargear": [
-          "Bolt pistol",
-          "Plasma pistol"
+          "Chainblade",
+          "Plasma pistol",
+          "Bolt pistol"
         ],
         "wargearOptions": [
           {
@@ -18233,6 +25961,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Khorne Berzerker",
                 "min": 5,
                 "max": 19,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
                 "weapons": [
                   "Bolt pistol"
                 ],
@@ -18263,6 +26018,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Force weapon",
+          "Malefic Curse",
+          "Inferno bolt pistol",
+          "Warpflame pistol",
           "Inferno boltgun",
           "Close combat weapon",
           "Warpflamer",
@@ -18309,6 +26068,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           },
           {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Warpflame pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Warpflame pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
             "name": "Icon of Flame",
             "groupMin": 0,
             "groupMax": 1,
@@ -18346,6 +26132,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Power fist",
+          "Plague bolt pistol",
+          "Plasma gun",
           "Bubotic weapons",
           "Heavy plague weapon",
           "Blight launcher",
@@ -18353,8 +26142,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Plague spewer",
           "Icon of Despair",
           "Meltagun",
-          "Plague belcher",
-          "Plasma gun"
+          "Plague belcher"
         ],
         "wargearOptions": [
           {
@@ -18494,6 +26282,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
               }
             ],
             "modelMin": 10
+          },
+          {
+            "name": "Plague knives",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plague knives",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plague knives"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Bubotic weapons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bubotic weapons"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Boltgun",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plague bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plague bolt pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -18533,8 +26402,76 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Accursed weapon",
+          "Power fist",
+          "Twin lightning claws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Accursed weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lightning claws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lightning claws"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Bolt pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cb66-af7-2cca-1c85",
@@ -18551,7 +26488,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Balefire pike",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -18574,10 +26514,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Nostraman chainblade",
           "Boltgun",
           "Bolt pistol",
           "Close combat weapon",
           "Astartes chainsword",
+          "Heavy bolter",
+          "Missile launcher",
+          "Meltagun",
+          "Flamer",
+          "Plasma gun",
           "Accursed weapon",
           "Nostraman chainglaive",
           "Paired accursed weapons",
@@ -18679,6 +26625,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Nostraman chainblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nostraman chainblade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -18699,8 +26708,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 6,
         "maxModels": 6,
         "wargear": [
-          "Sonic blaster",
           "Close combat weapon",
+          "Screamer pistol and power sword",
+          "Sonic blaster",
           "Blastmaster"
         ],
         "wargearOptions": [
@@ -18730,6 +26740,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Close combat weapon"
                 ],
                 "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace sonic blaster",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Screamer pistol and power sword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Screamer pistol and power sword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Sonic blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sonic blaster"
+                ],
+                "isDefault": true
               }
             ]
           }
@@ -18784,6 +26821,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Boltgun",
           "Bolt pistol",
+          "Hand flamer",
           "Meltagun",
           "Power fist"
         ],
@@ -18852,7 +26890,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Pistol choice",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Red Corsairs Raider Champion",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -18890,8 +26928,56 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bolt pistol",
+          "Power sword",
+          "Power maul"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power sword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power sword"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Power maul",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power maul"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Plasma pistol",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "29f9-fc47-787e-d9d3",
@@ -18908,8 +26994,161 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Shearing claws",
+          "Heavy missile launcher",
+          "Hades battle cannon",
+          "Ectoplasma destructor",
+          "Heavy baleflamer",
+          "Two excruciator cannons",
+          "Two magma cutters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace heavy missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy missile launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Electroscourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Electroscourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Main cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hades battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades battle cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Ectoplasma destructor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ectoplasma destructor"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace heavy baleflamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy baleflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy baleflamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Electroscourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Electroscourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace excruciator cannons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two excruciator cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two excruciator cannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Two magma cutters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two magma cutters"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       }
     ],
     "detachments": [
@@ -19197,7 +27436,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Hellforged weapons",
+          "Infernal cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -19217,7 +27459,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Hellforged weapons",
+          "Infernal cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -19238,7 +27483,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Lakrimae"
+          "Lakrimae",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -19258,7 +27504,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Power fist",
+          "Twin plague spewer"
+        ],
         "wargearOptions": []
       },
       {
@@ -19277,7 +27526,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Manreaper"
+        ],
         "wargearOptions": []
       },
       {
@@ -19296,7 +27547,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Corrupted staff",
+          "Plague Wind"
+        ],
         "wargearOptions": []
       },
       {
@@ -19319,6 +27574,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Power fist",
           "Bubotic weapons",
           "Heavy plague weapon",
           "Boltgun",
@@ -19518,7 +27774,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Plasma pistol",
+          "Cursed plague bell"
+        ],
         "wargearOptions": []
       },
       {
@@ -19536,7 +27795,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close combat weapon",
+          "Plague sprayer"
+        ],
         "wargearOptions": []
       },
       {
@@ -19554,7 +27816,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Hyper blight grenades",
+          "Injector pistol",
+          "Plague knives"
+        ],
         "wargearOptions": []
       },
       {
@@ -19572,7 +27838,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Plasma pistol",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -19590,7 +27859,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bolt pistol",
+          "Balesword"
+        ],
         "wargearOptions": []
       },
       {
@@ -19648,8 +27920,169 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Close combat weapon",
+          "Helbrute fist with combi-bolter",
+          "Helbrute fist with heavy flamer",
+          "Multi-melta",
+          "Twin autocannon",
+          "Plasma cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace helbrute fist",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Helbrute fist with combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Helbrute fist with heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power scourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power scourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute hammer"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace multi-melta",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power scourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power scourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute hammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5b4e-dcf1-5c6f-4d35",
@@ -19672,8 +28105,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 10,
         "wargear": [
-          "Combi-bolter",
           "Combi-weapon",
+          "Combi-bolter",
           "Close combat weapon",
           "Flail of corruption",
           "Reaper autocannon"
@@ -19751,7 +28184,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Blightlord Champion",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -19799,6 +28232,34 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargearOptions": []
       },
       {
+        "id": "35b2-7490-1a7b-cd99",
+        "name": "Myphitic Blight-hauler",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            100
+          ],
+          [
+            2,
+            200
+          ]
+        ],
+        "keywords": [
+          "Nurgle",
+          "Daemon"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Bile spurt",
+          "Gnashing maw",
+          "Missile launcher",
+          "Multi-melta"
+        ],
+        "wargearOptions": []
+      },
+      {
         "id": "26d5-ec73-3517-f3f",
         "name": "Foetid Bloat-drone",
         "role": "Vehicle",
@@ -19814,8 +28275,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Plague probe",
+          "Two plaguespitters",
+          "Fleshmower"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two plaguespitters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two plaguespitters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Fleshmower",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fleshmower"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e58b-507a-937f-7abf",
@@ -19833,8 +28326,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Plagueburst mortar",
+          "Rothail volley gun",
+          "Heavy slugger",
+          "2 entropy cannons",
+          "2 plaguespitters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Rothail volley gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Rothail volley gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy slugger",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy slugger"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Sponson weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 entropy cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 entropy cannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 plaguespitters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 plaguespitters"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "89d-b0c0-6e19-f017",
@@ -19852,8 +28407,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Havoc launcher",
+          "Twin heavy bolter",
+          "Armoured tracks",
+          "Soulshatter lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9b58-210d-c12f-4d46",
@@ -19871,8 +28459,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Predator twin lascannon",
+          "2 heavy bolters",
+          "2 lascannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 lascannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ab4e-466d-e9e8-89d5",
@@ -19890,8 +28539,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Predator autocannon",
+          "2 plague heavy bolters",
+          "2 lascannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 plague heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 plague heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 lascannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b899-92e2-693a-975f",
@@ -19909,8 +28619,55 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Combi-bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "f5ac-4f37-fe7b-36b6",
@@ -19933,7 +28690,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Rotwind",
           "Lantern",
-          "Silence"
+          "Silence",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -19953,7 +28711,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Boltgun",
+          "Plague knife"
+        ],
         "wargearOptions": []
       },
       {
@@ -19971,7 +28732,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Plasma pistol",
+          "Great plague blade"
+        ],
         "wargearOptions": []
       },
       {
@@ -19993,9 +28757,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Putrid vomit"
+          "Putrid vomit",
+          "Plague flail",
+          "Bileblade",
+          "Bilesword",
+          "Doomsday bell"
         ],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Flail / Bileblade",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plague flail",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plague flail"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Bileblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bileblade"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Bilesword / Bell",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bilesword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bilesword"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Doomsday bell",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Doomsday bell"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "66dd-f8c9-f9a6-0e6b",
@@ -20017,7 +28840,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Streams of brackish filth",
-          "Gnarlrod"
+          "Gnarlrod",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -20072,6 +28896,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargearOptions": []
       },
       {
+        "id": "5f38-3bbb-ce09-485b",
+        "name": "Beasts of Nurgle",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            65
+          ],
+          [
+            2,
+            130
+          ]
+        ],
+        "keywords": [
+          "Beast",
+          "Daemon",
+          "Nurgle",
+          "Summoned"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Putrid appendages"
+        ],
+        "wargearOptions": []
+      },
+      {
         "id": "7e32-0162-71e2-57a0",
         "name": "Nurglings",
         "role": "Infantry",
@@ -20115,7 +28966,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Heavy blight launcher",
+          "Plague probe"
+        ],
         "wargearOptions": []
       },
       {
@@ -20134,8 +28988,161 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Shearing claws",
+          "Heavy missile launcher",
+          "Hades battle cannon",
+          "Ectoplasma destructor",
+          "Heavy baleflamer",
+          "Two excruciator cannons",
+          "Two magma cutters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace heavy missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy missile launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Electroscourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Electroscourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Main cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hades battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades battle cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Ectoplasma destructor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ectoplasma destructor"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace heavy baleflamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy baleflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy baleflamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Electroscourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Electroscourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace excruciator cannons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two excruciator cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two excruciator cannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Two magma cutters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two magma cutters"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       }
     ],
     "detachments": [
@@ -20386,7 +29393,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Inferno bolt pistol",
           "Transmogrifying Blast",
-          "Black Staff of Ahriman"
+          "Black Staff of Ahriman",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -20406,8 +29414,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Havoc launcher",
+          "Twin inferno heavy bolter",
+          "Armoured tracks",
+          "Soulshatter lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a619-beee-4bde-d049",
@@ -20425,8 +29466,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Predator twin lascannon",
+          "2 inferno heavy bolters",
+          "2 lascannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 inferno heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 inferno heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 lascannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4819-dbbe-8547-4e23",
@@ -20444,8 +29546,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Predator autocannon",
+          "2 inferno heavy bolters",
+          "2 lascannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 inferno heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 inferno heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 lascannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8d9b-b949-2557-dcc4",
@@ -20463,8 +29626,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Inferno combi-bolter"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "60de-4c77-95e1-1337",
@@ -20505,8 +29700,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Demolisher cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "c3a6-8fab-45f0-2d45",
@@ -20524,8 +29751,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Force weapon",
+          "Inferno bolt pistol",
+          "Astral Blast",
+          "Prosperine khopesh"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Prosperine khopesh",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Prosperine khopesh",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1724-8c9c-c385-16c6",
@@ -20544,8 +29793,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Force weapon",
+          "Inferno bolt pistol",
+          "Arcane Fire",
+          "Prosperine khopesh"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Prosperine khopesh",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Prosperine khopesh",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d2f1-7a0b-f7cd-9b46",
@@ -20563,8 +29834,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "2 ectoplasma cannons",
+          "2 Hades autocannons",
+          "Ectoplasma cannon and claws",
+          "Forgefiend jaws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Arm weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 ectoplasma cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 ectoplasma cannons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Hades autocannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Hades autocannons"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Head weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Ectoplasma cannon and claws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ectoplasma cannon and claws"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Forgefiend jaws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Forgefiend jaws"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5b9d-e3c1-3d55-8276",
@@ -20581,8 +29912,145 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Close combat weapon",
+          "Helbrute fist with combi-bolter",
+          "Helbrute fist with heavy flamer",
+          "Missile launcher",
+          "Helbrute hammer",
+          "Power scourge",
+          "Multi-melta",
+          "Twin autocannon",
+          "Helbrute plasma cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Helbrute fist with combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Helbrute hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute hammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power scourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power scourge"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Multi-melta",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin inferno heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin inferno heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "637a-d542-35aa-e95c",
@@ -20599,8 +30067,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Heldrake claws",
+          "Baleflamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Mouth weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Baleflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Baleflamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades autocannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1693-5e00-da69-57bb",
@@ -20618,7 +30117,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Force weapon",
+          "Inferno bolt pistol",
+          "Fires of the Abyss"
+        ],
         "wargearOptions": []
       },
       {
@@ -20642,7 +30145,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Gaze of Magnus",
           "Blade of Magnus",
-          "Tzeentch's Firestorm"
+          "Tzeentch's Firestorm",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -20662,8 +30166,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Maulerfiend fists",
+          "2 magma cutters",
+          "Lasher tendrils"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Head weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 magma cutters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 magma cutters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lasher tendrils",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lasher tendrils"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "094c-c618-92c1-b394",
@@ -20681,7 +30217,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Betentacled maw",
+          "Mutalith claws",
+          "Warp vortex"
+        ],
         "wargearOptions": []
       },
       {
@@ -20707,6 +30247,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Force weapon",
           "Malefic Curse",
+          "Inferno bolt pistol",
+          "Warpflame pistol",
           "Inferno boltgun",
           "Close combat weapon",
           "Warpflamer",
@@ -20756,7 +30298,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Pistol",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Aspiring Sorcerer",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -20908,7 +30450,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Scarab Occult Sorcerer",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -20983,8 +30525,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Force weapon",
+          "Inferno bolt pistol",
+          "Pandaemonic Delusion",
+          "Prosperine khopesh"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Prosperine khopesh",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Prosperine khopesh",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "c6d1-e73b-9d26-5d8b",
@@ -21004,8 +30568,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Force weapon",
+          "Gaze of Hate"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Inferno combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Inferno combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "eccd-e442-607b-3fd0",
@@ -21025,7 +30620,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Dark Blessing",
+          "Hellforged weapons",
+          "Infernal cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -21046,7 +30645,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Dark Blessing",
+          "Hellforged weapons",
+          "Infernal cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -21070,7 +30673,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
-          "Divining spear"
+          "Divining spear",
+          "Autopistol and chainsword"
         ],
         "wargearOptions": [
           {
@@ -21102,7 +30706,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Weapons",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Aviarch",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -21144,7 +30748,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Baleful Devolution",
+          "Force stave"
+        ],
         "wargearOptions": []
       },
       {
@@ -21168,6 +30775,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 10,
         "maxModels": 20,
         "wargear": [
+          "Pistol and chainsword",
           "Tzaangor blades",
           "Chainsword"
         ],
@@ -21203,7 +30811,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Weapons",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Twistbray",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -21247,7 +30855,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 2,
         "maxModels": 4,
-        "wargear": [],
+        "wargear": [
+          "Close combat weapon",
+          "Heavy warpflamer",
+          "Hellfyre missile rack",
+          "Pyreflux meltagun",
+          "Power claw",
+          "Warpflame projector"
+        ],
         "wargearOptions": [
           {
             "name": "2-4 Sekhetar Robots",
@@ -21320,7 +30935,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Infernal Gateway",
-          "Staff of Tomorrow"
+          "Staff of Tomorrow",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -21344,9 +30960,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Bolt of Change",
-          "Staff of Tzeentch"
+          "Staff of Tzeentch",
+          "Rod of sorcery",
+          "Baleful sword"
         ],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Rod of sorcery",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Rod of sorcery"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Baleful sword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Baleful sword"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "694f-a205-b260-783c",
@@ -21499,8 +31145,161 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Shearing claws",
+          "Heavy missile launcher",
+          "Hades battle cannon",
+          "Ectoplasma destructor",
+          "Heavy baleflamer",
+          "Two excruciator cannons",
+          "Two pyraflux magma cutters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace heavy missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy missile launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Electroscourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Electroscourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Main cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hades battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades battle cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Ectoplasma destructor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ectoplasma destructor"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace heavy baleflamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy baleflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy baleflamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Electroscourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Electroscourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace excruciator cannons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two excruciator cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two excruciator cannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Two pyraflux magma cutters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two pyraflux magma cutters"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       }
     ],
     "detachments": [
@@ -21780,7 +31579,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Samni’arius and Spinegrinder"
+          "Samni’arius and Spinegrinder",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -21801,7 +31601,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Plasma pistol",
-          "Gorechild"
+          "Gorechild",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -21823,7 +31624,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Bolt pistol",
           "Coward's Bane",
-          "Bladed horn"
+          "Bladed horn",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -21844,7 +31646,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Hellforged weapons",
+          "Infernal cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -21864,7 +31669,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Hellforged weapons",
+          "Infernal cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -21882,7 +31690,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Plasma pistol",
+          "Bladed horn",
+          "Exalted chainblade"
+        ],
         "wargearOptions": []
       },
       {
@@ -21900,7 +31712,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Axe of dismemberment",
+          "Bolt pistol"
+        ],
         "wargearOptions": []
       },
       {
@@ -21950,7 +31765,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Pistol",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Khorne Berzerker Champion",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -21997,12 +31812,20 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Paired accursed weapons",
+          "Combi-weapon, power fist",
+          "Combi-weapon, accursed weapon",
+          "Combi-weapon, chainfist",
+          "Combi-bolter, accursed weapon",
+          "Combi-bolter, chainfist",
+          "Combi-bolter, power fist",
           "Combi-bolter",
           "Accursed weapon",
           "Chainfist",
           "Power fist",
           "Combi-weapon",
-          "Paired accursed weapons"
+          "Heavy flamer",
+          "Reaper autocannon"
         ],
         "wargearOptions": [
           {
@@ -22094,7 +31917,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Weapons",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Terminator Champion",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -22281,8 +32104,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Havoc launcher",
+          "Twin heavy bolter",
+          "Armoured tracks",
+          "Soulshatter lascannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "497c-f787-5a7e-1020",
@@ -22300,8 +32156,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Predator twin lascannon",
+          "2 heavy bolters",
+          "2 lascannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 lascannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "04a0-269e-3bab-2c61",
@@ -22319,8 +32236,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher",
+          "Predator autocannon",
+          "2 heavy bolters",
+          "2 lascannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 lascannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 lascannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ea51-5575-9e74-9346",
@@ -22338,8 +32316,161 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Shearing claws",
+          "Heavy missile launcher",
+          "Hades battle cannon",
+          "Ectoplasma destructor",
+          "Heavy baleflamer",
+          "Two excruciator cannons",
+          "Two magma cutters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace heavy missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy missile launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Electroscourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Electroscourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Main cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hades battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades battle cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Ectoplasma destructor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ectoplasma destructor"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace heavy baleflamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy baleflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy baleflamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy reaper autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Electroscourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Electroscourge"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace excruciator cannons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two excruciator cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two excruciator cannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Two magma cutters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two magma cutters"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "81e1-b212-69c1-308f",
@@ -22357,8 +32488,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "2 ectoplasma cannons",
+          "2 Hades autocannons",
+          "Ectoplasma cannon and claws",
+          "Forgefiend jaws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Arm weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 ectoplasma cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 ectoplasma cannons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Hades autocannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Hades autocannons"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Head weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Ectoplasma cannon and claws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ectoplasma cannon and claws"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Forgefiend jaws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Forgefiend jaws"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "273a-db24-3f7c-b977",
@@ -22375,8 +32566,145 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Close combat weapon",
+          "Helbrute fist with combi-bolter",
+          "Helbrute fist with heavy flamer",
+          "Missile launcher",
+          "Helbrute hammer",
+          "Power scourge",
+          "Multi-melta",
+          "Twin autocannon",
+          "Plasma cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace missile launcher",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Helbrute fist with combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Helbrute hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute hammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power scourge",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power scourge"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace multi-melta",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Helbrute fist with combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Helbrute fist with combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "de2e-8fae-9d22-24a4",
@@ -22394,8 +32722,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Heldrake claws",
+          "Baleflamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Mouth weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Baleflamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Baleflamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hades autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades autocannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a619-8a52-be03-3bd5",
@@ -22413,8 +32772,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Maulerfiend fists",
+          "2 magma cutters",
+          "Lasher tendrils"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Head weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 magma cutters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 magma cutters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lasher tendrils",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lasher tendrils"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e849-ce40-ee43-7623",
@@ -22432,8 +32823,55 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Havoc launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pintle weapon",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Combi-bolter",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "edde-57bf-bccc-d8b2",
@@ -22475,8 +32913,79 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Great cleaver of Khorne",
+          "Hades gatling cannon",
+          "Skullhurler",
+          "Gorestorm cannon",
+          "Daemongore cannon",
+          "Ichor cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace gatling cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hades gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hades gatling cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Skullhurler",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skullhurler"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Replace gorestorm cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Gorestorm cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Gorestorm cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Daemongore cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Daemongore cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ichor cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ichor cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b399-9b66-e550-8050",
@@ -22551,7 +33060,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Lacerator and daemonic claw"
+        ],
         "wargearOptions": []
       },
       {
@@ -22572,7 +33083,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Bellow of endless fury",
-          "Slaughter and Carnage"
+          "Slaughter and Carnage",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -22593,8 +33105,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Hellfire breath",
+          "Great axe of Khorne",
+          "Axe and flail",
+          "Axe and lash"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Replace great axe",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Great axe of Khorne",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Great axe of Khorne"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Axe and flail",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Axe and flail"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Axe and lash",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Axe and lash"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9188-4709-00ba-e5e0",
@@ -22945,14 +33499,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
-          "Close Combat Weapon"
+          "Close Combat Weapon",
+          "Wraithcannon",
+          "D-Scythe"
         ],
         "wargearOptions": [
           {
             "name": "Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Wraithguard",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -23060,7 +33616,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "The Bloody Twins",
-          "The Sword of Asur"
+          "The Sword of Asur",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -23080,8 +33637,108 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Scorpion Chainsword",
+          "Banshee Blade",
+          "Star Glaive",
+          "Shuriken Pistol",
+          "Reaper Launcher",
+          "Death Spinner",
+          "Dragon Fusion Gun",
+          "Dragon Fusion Pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Scorpion Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Scorpion Chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Banshee Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Banshee Blade"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Star Glaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Star Glaive"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Ranged Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Reaper Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Reaper Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Death Spinner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Death Spinner"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dragon Fusion Gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dragon Fusion Gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dragon Fusion Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dragon Fusion Pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "497a-263e-966a-5a15",
@@ -23100,8 +33757,108 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Scorpion Chainsword",
+          "Banshee Blade",
+          "Star Glaive",
+          "Shuriken Pistol",
+          "Reaper Launcher",
+          "Death Spinner",
+          "Dragon Fusion Gun",
+          "Dragon Fusion Pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Scorpion Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Scorpion Chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Banshee Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Banshee Blade"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Star Glaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Star Glaive"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Ranged Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Reaper Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Reaper Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Death Spinner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Death Spinner"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dragon Fusion Gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dragon Fusion Gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dragon Fusion Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dragon Fusion Pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "554c-8b4f-1059-28a7",
@@ -23120,7 +33877,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "The Wailing Doom"
+          "The Wailing Doom",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -23144,7 +33902,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Fury of the Tempest",
-          "The Shining Blade"
+          "The Shining Blade",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -23171,11 +33930,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Shuriken cannon",
+          "Wraithcannon",
           "Shuriken rifle",
           "Blaster",
           "Shredder",
           "Mistshield",
-          "Power sword"
+          "Power sword",
+          "Neuro disruptor",
+          "Shuriken pistol"
         ],
         "wargearOptions": [
           {
@@ -23299,8 +34062,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Shuriken rifle",
           "Faolchú",
           "Fusion pistol",
+          "Shuriken cannon",
+          "Wraithcannon",
           "Long rifle",
-          "Mistshield"
+          "Corsair shredder",
+          "Corsair blaster",
+          "Mistshield",
+          "Neuro disruptor",
+          "Shuriken pistol"
         ],
         "wargearOptions": [
           {
@@ -23429,8 +34198,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Pulse Laser",
+          "Wraithbone Hull",
+          "2 Starcannons",
+          "2 Bright Lances"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Starcannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Starcannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Bright Lances",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Bright Lances"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6863-bf42-238a-fd0b",
@@ -23455,7 +34257,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Reaper Launcher",
-          "Close combat weapon"
+          "Close combat weapon",
+          "Shuriken Cannon",
+          "Tempest Launcher",
+          "Missile Launcher"
         ],
         "wargearOptions": [
           {
@@ -23496,7 +34301,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Jester's Blade",
+          "Shrieker Cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -23522,7 +34330,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Avenger Shuriken Catapult",
-          "Close Combat Weapon"
+          "Close Combat Weapon",
+          "Diresword and Shuriken Pistol",
+          "Power Glaive and Shuriken Pistol",
+          "Two Avenger Shuriken Catapults",
+          "Diresword and Shimmershield",
+          "Power Glaive and Shimmershield"
         ],
         "wargearOptions": [
           {
@@ -23567,7 +34380,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Shuriken Pistol",
           "Staff of Ulthamar and witchblade",
-          "Mind War"
+          "Mind War",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -23587,8 +34401,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Heavy Weapons",
+          "Pulse Laser",
+          "Wraithbone hull",
+          "Twin Shuriken Catapult",
+          "Shuriken Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hull weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Shuriken Catapult",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Shuriken Catapult"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b2f5-8219-f875-917e",
@@ -23607,8 +34455,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Eldritch Storm",
+          "Shuriken Pistol",
+          "Witchblade",
+          "Singing Spear"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Witchblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Witchblade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Singing Spear",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Singing Spear"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "833b-55bc-73be-8862",
@@ -23628,8 +34509,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Eldritch Storm",
+          "Shuriken Pistol",
+          "Twin Shuriken Catapult",
+          "Witchblade",
+          "Singing Spear"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Witchblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Witchblade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Singing Spear",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Singing Spear"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5374-9e93-8af2-819e",
@@ -23654,7 +34569,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Dragon Fusion Gun",
-          "Close combat weapon"
+          "Close combat weapon",
+          "Exarch's Dragon Fusion Gun",
+          "Dragon's Breath Flamer",
+          "Firepike",
+          "Dragon Fusion Pistol & Dragon Axe"
         ],
         "wargearOptions": [
           {
@@ -23694,8 +34613,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Prism Cannon",
+          "Wraithbone hull",
+          "Twin Shuriken Catapult",
+          "Shuriken Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hull weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Shuriken Catapult",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Shuriken Catapult"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9262-3993-1368-be5a",
@@ -23716,7 +34668,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Searsong",
-          "The Fire Axe"
+          "The Fire Axe",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -23758,7 +34711,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Heavy D-Scythe"
+        ],
         "wargearOptions": []
       },
       {
@@ -23783,7 +34738,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Banshee Blade",
-          "Shuriken Pistol"
+          "Shuriken Pistol",
+          "Banshee Blade and Shuriken Pistol",
+          "Executioner and Shuriken Pistol",
+          "Triskele and Shuriken Pistol",
+          "Mirrorswords"
         ],
         "wargearOptions": [
           {
@@ -23826,7 +34785,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Silent Death",
-          "The Blade of Destruction"
+          "The Blade of Destruction",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -23848,7 +34808,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Maugetar"
+          "Maugetar",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -23867,8 +34828,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Doomweaver",
+          "Wraithbone hull",
+          "Twin Shuriken Catapult",
+          "Shuriken Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hull weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Shuriken Catapult",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Shuriken Catapult"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b98b-701f-9c0c-5437",
@@ -23913,8 +34907,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Miststave",
+          "Shuriken Pistol",
+          "Neuro Disruptor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistol Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Neuro Disruptor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neuro Disruptor"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "433-faed-ea62-c531",
@@ -23940,7 +34966,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Twin Shuriken Catapult",
           "Laser Lance",
-          "Shimmershield"
+          "Shimmershield",
+          "Paragon Sabre",
+          "Star Lance",
+          "Shuriken Cannon"
         ],
         "wargearOptions": [
           {
@@ -24012,14 +35041,18 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 2,
         "maxModels": 4,
         "wargear": [
-          "Close Combat Weapon"
+          "Close Combat Weapon",
+          "Shuriken Cannon",
+          "Skyweaver Haywire Cannon",
+          "Star Bolas",
+          "Zephyrglaive"
         ],
         "wargearOptions": [
           {
             "name": "Bike Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Skyweaver",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -24046,7 +35079,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Rider Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Skyweaver",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -24089,7 +35122,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Solitaire Weapons"
+          "Solitaire Weapons",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -24110,7 +35144,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Shuriken Pistol",
+          "Witch Staff"
+        ],
         "wargearOptions": []
       },
       {
@@ -24131,7 +35168,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Shuriken Cannon",
+          "Close Combat Weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -24229,7 +35269,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close Combat Weapon",
+          "Shuriken Catapult",
+          "D-cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -24256,7 +35300,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Lasblaster",
-          "Close combat weapon"
+          "Close combat weapon",
+          "Exarch's Lasblaster",
+          "Hawk's Talon",
+          "Scatter Laser",
+          "Sunpistol & Power Sword"
         ],
         "wargearOptions": [
           {
@@ -24296,7 +35344,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Asu-var"
+          "Asu-var",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -24319,7 +35368,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Vilith-zhar",
-          "Swirling soul energy"
+          "Swirling soul energy",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -24349,7 +35399,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Harlequin's Blade",
           "Harlequin's Special Weapon",
           "Fusion Pistol",
-          "Neuro Disruptor"
+          "Neuro Disruptor",
+          "Power sword"
         ],
         "wargearOptions": [
           {
@@ -24418,8 +35469,78 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Harlequin's Special Weapon",
+          "Troupe Master's Blade",
+          "Shuriken Pistol",
+          "Fusion Pistol",
+          "Neuro Disruptor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Harlequin's Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Special Weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Troupe Master's Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Troupe Master's Blade"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Fusion Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion Pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Neuro Disruptor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neuro Disruptor"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e011-d99d-f0de-5289",
@@ -24438,7 +35559,160 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Shuriken Cannon",
+          "Close Combat Weapon",
+          "Prismatic Cannon",
+          "Voidweaver Haywire Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Prismatic Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Prismatic Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Voidweaver Haywire Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Voidweaver Haywire Cannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "814d-56c9-78fe-2123",
+        "name": "Vypers",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            75
+          ],
+          [
+            2,
+            150
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Wraithbone hull",
+          "Bright Lance",
+          "Scatter Laser",
+          "Starcannon",
+          "Shuriken Cannon",
+          "Missile Launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Bright Lance Replacement",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bright Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bright Lance"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Scatter Laser",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Scatter Laser"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Starcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Starcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Shuriken Cannon Replacement",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile Launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bcec-dc54-9242-4e13",
+        "name": "War Walkers",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            85
+          ],
+          [
+            2,
+            170
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Ynnari"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Heavy Weapons",
+          "War Walker feet"
+        ],
         "wargearOptions": []
       },
       {
@@ -24458,8 +35732,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Destructor",
+          "Shuriken Pistol",
+          "Witchblade",
+          "Singing Spear"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Witchblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Witchblade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Singing Spear",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Singing Spear"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d61-c058-6bd1-112f",
@@ -24603,7 +35910,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Death spinner"
+          "Death spinner",
+          "Exarch's death spinner",
+          "1 Spinneret rifle & 1 Death weavers",
+          "1 Powerblades & 1 Death Weavers",
+          "1 Powerblade array"
         ],
         "wargearOptions": [
           {
@@ -24642,8 +35953,99 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Wraithbone Hull",
+          "Twin Shuriken Catapult",
+          "Shuriken Cannon",
+          "Twin Aeldari Missile Launcher",
+          "Twin Bright Lance",
+          "Twin Scatter Laser",
+          "Twin Shuriken Cannon",
+          "Twin Starcannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Hull weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Shuriken Catapult",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Shuriken Catapult"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Turret Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Aeldari Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Aeldari Missile Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Bright Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Bright Lance"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Scatter Laser",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Scatter Laser"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Shuriken Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Shuriken Cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin Starcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Starcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "bb4f-4359-cc16-e6d5",
@@ -24662,13 +36064,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 5,
-        "wargear": [],
+        "wargear": [
+          "Ghostswords",
+          "Ghostaxe and Forceshield"
+        ],
         "wargearOptions": [
           {
             "name": "Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Wraithblade",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -24711,8 +36116,107 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Titanic feet",
+          "Scattershield",
+          "Heavy Wraithcannon",
+          "Suncannon",
+          "Scatter Laser",
+          "Shuriken Cannon",
+          "Starcannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Left Arm",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Scattershield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Scattershield"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy Wraithcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Wraithcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Right Arm",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Suncannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Suncannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy Wraithcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Wraithcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Secondary Weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Scatter Laser",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Scatter Laser"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Starcannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Starcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b9e9-397e-d83a-f77a",
@@ -24731,8 +36235,116 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Ghostglaive",
+          "Wraithbone Fists",
+          "Shuriken Catapult",
+          "Flamer",
+          "Aeldari Missile Launcher",
+          "Bright Lance",
+          "Scatter Laser",
+          "Shuriken Cannon",
+          "Starcannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Arm Weapons",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken Catapult",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shuriken Catapult"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Heavy Weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Aeldari Missile Launcher",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Aeldari Missile Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bright Lance",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Bright Lance"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Scatter Laser",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Scatter Laser"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Starcannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Starcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Ghostglaive",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Ghostglaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ada5-25ce-d5d5-4ccb",
@@ -24752,7 +36364,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Kha-vir",
-          "Storm of Whispers"
+          "Storm of Whispers",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -24779,7 +36392,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Scorpion chainsword",
-          "Shuriken pistol"
+          "Shuriken pistol",
+          "Chainsabres",
+          "Shuriken Pistol, Scorpion Chainsword & Scorpion's claw",
+          "Biting blade & Shuriken Pistol"
         ],
         "wargearOptions": [
           {
@@ -24820,8 +36436,153 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Phantom feet",
+          "Voidstorm missile launcher",
+          "D-bombard",
+          "1 Phantom pulsar",
+          "2 Phantom starcannons & 1 wraith glaive",
+          "2 pulse lasers & 1 wraith glaive",
+          "1 Phantom starcannon, 1 pulse laser & 1 wraith glaive",
+          "Phantom pulsar"
+        ],
+        "wargearOptions": [
+          {
+            "name": "D-bombard Replacement",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "D-bombard",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "D-bombard"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "1 Phantom pulsar",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "1 Phantom pulsar"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Phantom starcannons & 1 wraith glaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Phantom starcannons & 1 wraith glaive"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 pulse lasers & 1 wraith glaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 pulse lasers & 1 wraith glaive"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "1 Phantom starcannon, 1 pulse laser & 1 wraith glaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "1 Phantom starcannon, 1 pulse laser & 1 wraith glaive"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Phantom pulsar Replacement",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "D-bombard",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "D-bombard"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Phantom pulsar",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Phantom pulsar"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Phantom starcannons & 1 wraith glaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Phantom starcannons & 1 wraith glaive"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 pulse lasers & 1 wraith glaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 pulse lasers & 1 wraith glaive"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "1 Phantom starcannon, 1 pulse laser & 1 wraith glaive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "1 Phantom starcannon, 1 pulse laser & 1 wraith glaive"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Phantom starcannon replacement",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Pulse laser",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulse laser"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Phantom starcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Phantom starcannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ca40-4a0d-567-852",
@@ -24840,8 +36601,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Cloudburst missile launcher",
+          "Revenant feet",
+          "Sonic Lance",
+          "Revenant Pulsar"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Left Arm",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Sonic Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sonic Lance"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Revenant Pulsar",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Revenant Pulsar"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Right Arm",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Sonic Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sonic Lance"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Revenant Pulsar",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Revenant Pulsar"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5f10-27fc-f1e4-af90",
@@ -24859,8 +36680,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Huskblade",
+          "Shadow Field",
+          "Splinter Pistol",
+          "Blast Pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistol Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Splinter Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Blast Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blast Pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5bf7-f905-8fab-43b4",
@@ -24883,7 +36737,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Klaive"
+          "Klaive",
+          "Demiklaives"
         ],
         "wargearOptions": [
           {
@@ -24928,7 +36783,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Blaster",
           "Splinter cannon",
           "Dark lance",
-          "Phantasm Grenade Launcher"
+          "Phantasm Grenade Launcher",
+          "Blast Pistol",
+          "Splinter Pistol",
+          "Splinter Rifle",
+          "Close Combat Weapon",
+          "Sybarite Weapon"
         ],
         "wargearOptions": [
           {
@@ -25003,8 +36863,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bladevanes",
+          "Disintegrator Cannon",
+          "Dark Lance"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Disintegrator Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Disintegrator Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dark Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dark Lance"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "915d-ad53-9518-7a85",
@@ -25095,8 +36987,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Succubus weapons",
+          "Splinter Pistol",
+          "Blast Pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistol Choice",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Splinter Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Blast Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blast Pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5443-6671-baeb-77a3",
@@ -25114,8 +37038,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bladevanes",
+          "Splinter Cannon",
+          "Twin Splinter Rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Splinter Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Splinter Rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Splinter Rifle"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "36fd-7c3f-b728-c5d4",
@@ -25135,7 +37091,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Splinter Pistol",
-          "Hekatarii Blade"
+          "Hekatarii Blade",
+          "Blast Pistol"
         ],
         "wargearOptions": [
           {
@@ -25176,7 +37133,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close Combat Weapon",
+          "Shuriken Catapult",
+          "Shadow weaver"
+        ],
         "wargearOptions": []
       },
       {
@@ -25196,7 +37157,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close Combat Weapon",
+          "Shuriken Catapult",
+          "Vibro Cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -25220,7 +37185,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Brood Twain",
           "Spider's Fangs",
-          "Weaverender"
+          "Weaverender",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -25242,8 +37208,79 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Titanic Ghostglaive",
+          "Scattershield",
+          "Heavy Wraithcannon",
+          "Scatter Laser",
+          "Shuriken Cannon",
+          "Starcannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Left Arm",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Scattershield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Scattershield"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy Wraithcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Wraithcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Secondary Weapons",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Scatter Laser",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Scatter Laser"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Shuriken Cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Shuriken Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Starcannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Starcannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "54dc-aa1f-817a-a5c5",
@@ -25264,7 +37301,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "The Eye of Wrath",
           "The Spear of Twilight",
-          "Shuriken Pistol"
+          "Shuriken Pistol",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -25287,7 +37325,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Dread of the Deep Void",
-          "Waystave"
+          "Waystave",
+          "Mighty Champions"
+        ],
+        "wargearOptions": []
+      },
+      {
+        "id": "a074-87f8-810d-492a",
+        "name": "Starfangs",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            75
+          ],
+          [
+            2,
+            150
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Ynnari",
+          "Anhrathe"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Wraithbone hull",
+          "Disintegrator Cannon",
+          "Starfang Grenade Launcher"
         ],
         "wargearOptions": []
       },
@@ -25314,6 +37381,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Corsair Blade",
+          "Neuro disruptor",
+          "Shuriken pistol",
+          "Blast Pistol",
           "Corsair blaster",
           "Flamer",
           "Fusion gun",
@@ -26363,8 +38433,88 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Splinter pistol",
+          "Blast pistol",
+          "Soul Trap",
+          "Huskblade",
+          "Agoniser",
+          "Master-crafted power weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistol Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Splinter pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Blast pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blast pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Soul Trap",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Soul Trap"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Melee Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Huskblade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Huskblade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Agoniser",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Agoniser"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Master-crafted power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Master-crafted power weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a5d3-e21b-bf13-a952",
@@ -26387,7 +38537,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 2,
         "wargear": [
-          "Spirit Vortex"
+          "Spirit Vortex",
+          "Spirit Syphon",
+          "Spirit-leech Tentacles"
         ],
         "wargearOptions": []
       },
@@ -26408,7 +38560,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "The Executioner's demiklaives"
+          "The Executioner's demiklaives",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -26428,7 +38581,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Haemonculus tools and scissorhands",
+          "Stinger pistol"
+        ],
         "wargearOptions": []
       },
       {
@@ -26454,7 +38610,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Hellglaive",
           "Splinter Pods",
-          "Phantasm Grenade Launcher"
+          "Phantasm Grenade Launcher",
+          "1 Splinter pistol and 1 Power weapon",
+          "1 Splinter pistol and 1 Stunclaw"
         ],
         "wargearOptions": [
           {
@@ -26499,7 +38657,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Klaive"
+          "Klaive",
+          "Demiklaives"
         ],
         "wargearOptions": [
           {
@@ -26578,7 +38737,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Splinter rifle",
           "Blaster",
           "Splinter cannon",
-          "Dark lance"
+          "Dark lance",
+          "Blast Pistol",
+          "Splinter Pistol",
+          "Splinter Rifle",
+          "Power Weapon",
+          "Phantasm Grenade Launcher",
+          "Kabalite Icon"
         ],
         "wargearOptions": [
           {
@@ -26660,7 +38825,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Lelith's blades"
+          "Lelith's blades",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -26725,8 +38891,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bladevanes and chainsnares",
+          "Disintegrator Cannon",
+          "Dark Lance"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Disintegrator Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Disintegrator Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dark Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dark Lance"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3376-d337-6a33-4bca",
@@ -26744,8 +38942,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bladevanes",
+          "Disintegrator Cannon",
+          "Dark Lance"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 3,
+            "groupMax": 3,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Disintegrator Cannon",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Disintegrator Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dark Lance",
+                "min": 0,
+                "max": 3,
+                "weapons": [
+                  "Dark Lance"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "fbc4-c7d0-db5b-91c",
@@ -26762,8 +38992,70 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bladed wings",
+          "Razorwing missiles",
+          "Two dark lances",
+          "Two disintegrator cannons",
+          "Splinter Cannon",
+          "Twin Splinter Rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Main Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two dark lances",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two dark lances"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Two disintegrator cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two disintegrator cannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Splinter cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Splinter Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Splinter Rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Splinter Rifle"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2c3a-9752-2516-69ab",
@@ -26856,7 +39148,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Blaster",
+          "Heat Lance",
+          "Splinter Cannon",
+          "Shredder",
+          "Dark Lance",
+          "Haywire Blaster",
+          "Shardcarbine",
+          "1 Blast pistol and 1 Power weapon",
+          "1 Splinter pistol and 1 Power weapon"
         ],
         "wargearOptions": [
           {
@@ -26920,8 +39221,136 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Macro-Scalpel",
+          "Talos Ichor Injector",
+          "Twin Liquifier Gun",
+          "Chain-flails",
+          "Talos Gauntlet",
+          "Twin Splinter Cannon",
+          "Twin Haywire Blasters",
+          "Twin Heat Lance",
+          "Stinger Pod"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Arm 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Macro-Scalpel",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Macro-Scalpel"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Talos Ichor Injector",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Talos Ichor Injector"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Liquifier Gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Liquifier Gun"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Arm 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Chain-flails",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chain-flails"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Talos Gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Talos Gauntlet"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Macro-Scalpel",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Macro-Scalpel"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Tail Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin Splinter Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Splinter Cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin Haywire Blasters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Haywire Blasters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Heat Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Heat Lance"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Stinger Pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Stinger Pod"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ee2c-6ca0-5e29-37a6",
@@ -26938,8 +39367,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bladevanes",
+          "Splinter Cannon",
+          "Twin Splinter Rifle"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Splinter Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin Splinter Rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Splinter Rifle"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "71e1-7d54-4856-4ce1",
@@ -26957,8 +39418,57 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Bladed wings",
+          "Voidraven Missiles",
+          "2 Void Lances",
+          "2 Dark Scythes"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Void Lances",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Void Lances"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Dark Scythes",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Dark Scythes"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Voidraven Missiles",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Voidraven Missiles",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2659-7a1b-3ce6-8e4b",
@@ -26986,7 +39496,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hexrifle",
           "Liquifier gun",
           "Ossefactor",
-          "Stinger pistol"
+          "Stinger pistol",
+          "Power weapon"
         ],
         "wargearOptions": [
           {
@@ -27068,7 +39579,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Splinter Pistol",
           "Hekatarii Blade",
-          "Gladiatorial weapons"
+          "Gladiatorial weapons",
+          "Blast Pistol",
+          "Power weapon"
         ],
         "wargearOptions": [
           {
@@ -27124,11 +39637,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Shuriken cannon",
+          "Wraithcannon",
           "Shuriken rifle",
           "Blaster",
           "Shredder",
           "Mistshield",
-          "Power sword"
+          "Power sword",
+          "Neuro disruptor",
+          "Shuriken pistol"
         ],
         "wargearOptions": [
           {
@@ -27252,8 +39769,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Shuriken rifle",
           "Faolchú",
           "Fusion pistol",
+          "Shuriken cannon",
+          "Wraithcannon",
           "Long rifle",
-          "Mistshield"
+          "Corsair shredder",
+          "Corsair blaster",
+          "Mistshield",
+          "Neuro disruptor",
+          "Shuriken pistol"
         ],
         "wargearOptions": [
           {
@@ -27382,7 +39905,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Jester's Blade",
+          "Shrieker Cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -27403,7 +39929,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Solitaire Weapons"
+          "Solitaire Weapons",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -27425,8 +39952,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Miststave",
+          "Shuriken Pistol",
+          "Neuro Disruptor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pistol Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Neuro Disruptor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neuro Disruptor"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9270-4b93-ca59-f3ed",
@@ -27450,14 +40009,18 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 2,
         "maxModels": 4,
         "wargear": [
-          "Close Combat Weapon"
+          "Close Combat Weapon",
+          "Shuriken Cannon",
+          "Skyweaver Haywire Cannon",
+          "Star Bolas",
+          "Zephyrglaive"
         ],
         "wargearOptions": [
           {
             "name": "Bike Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Skyweaver",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -27484,7 +40047,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Rider Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Skyweaver",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -27527,7 +40090,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Shuriken Cannon",
+          "Close Combat Weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -27547,8 +40113,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Shuriken Cannon",
+          "Close Combat Weapon",
+          "Prismatic Cannon",
+          "Voidweaver Haywire Cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Prismatic Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Prismatic Cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Voidweaver Haywire Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Voidweaver Haywire Cannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "dac1-6a7f-a06a-82cf",
@@ -27576,7 +40175,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Harlequin's Blade",
           "Harlequin's Special Weapon",
           "Fusion Pistol",
-          "Neuro Disruptor"
+          "Neuro Disruptor",
+          "Power sword"
         ],
         "wargearOptions": [
           {
@@ -27645,8 +40245,78 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Harlequin's Special Weapon",
+          "Troupe Master's Blade",
+          "Shuriken Pistol",
+          "Fusion Pistol",
+          "Neuro Disruptor"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Melee Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Harlequin's Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Special Weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Troupe Master's Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Troupe Master's Blade"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Fusion Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion Pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Neuro Disruptor",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neuro Disruptor"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a223-234b-7886-fccc",
@@ -27666,7 +40336,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Melee Weapons"
+          "Melee Weapons",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -27690,7 +40361,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 5,
         "wargear": [
           "Close combat weapon",
-          "Shardcarbine"
+          "Blaster",
+          "Shredder",
+          "Shardcarbine",
+          "1 Blast pistol and 1 Power weapon",
+          "1 Splinter pistol and 1 Power weapon"
         ],
         "wargearOptions": [
           {
@@ -27746,6 +40421,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Corsair Blade",
+          "Neuro disruptor",
+          "Shuriken pistol",
+          "Blast Pistol",
           "Corsair blaster",
           "Flamer",
           "Fusion gun",
@@ -27883,7 +40561,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "The Eye of Wrath",
           "The Spear of Twilight",
-          "Shuriken Pistol"
+          "Shuriken Pistol",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -27906,7 +40585,36 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Dread of the Deep Void",
-          "Waystave"
+          "Waystave",
+          "Mighty Champions"
+        ],
+        "wargearOptions": []
+      },
+      {
+        "id": "a074-87f8-810d-492a",
+        "name": "Starfangs",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            75
+          ],
+          [
+            2,
+            150
+          ]
+        ],
+        "keywords": [
+          "Aeldari",
+          "Ynnari",
+          "Anhrathe"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Wraithbone hull",
+          "Disintegrator Cannon",
+          "Starfang Grenade Launcher"
         ],
         "wargearOptions": []
       }
@@ -28864,7 +41572,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Power sledgehammer"
+        ],
         "wargearOptions": []
       },
       {
@@ -28886,7 +41596,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 2,
-        "wargear": [],
+        "wargear": [
+          "Armoured hull",
+          "Twin heavy stubber",
+          "Flare launcher",
+          "Spotter",
+          "Survey augur",
+          "Achilles missile launcher",
+          "Heavy mortar"
+        ],
         "wargearOptions": []
       },
       {
@@ -28913,7 +41631,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hand flamer",
           "Cult claws and knife",
           "Cult icon",
-          "Demolition charge"
+          "Demolition charge",
+          "Leader's bio-weapons"
         ],
         "wargearOptions": [
           {
@@ -28972,7 +41691,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Autopistol",
+          "Cult claws"
+        ],
         "wargearOptions": []
       },
       {
@@ -28998,7 +41720,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Grenade launcher",
           "Close combat weapon",
           "Atalan small arms",
-          "Atalan power weapon"
+          "Atalan power weapon",
+          "Mining laser",
+          "Atalan incinerator",
+          "Heavy stubber"
         ],
         "wargearOptions": [
           {
@@ -29067,7 +41792,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Injector goad",
+          "Autopistol",
+          "Chemical vials",
+          "Alchemicus familiar"
+        ],
         "wargearOptions": []
       },
       {
@@ -29085,7 +41815,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Autopistol",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -29103,8 +41836,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Heavy stubber",
+          "Demolition charge cache",
+          "Drilldozer blade",
+          "Clearance incinerator",
+          "Heavy seismic cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Heavy Mining Laser",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Clearance incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Clearance incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy seismic cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy seismic cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy mining laser",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy mining laser"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1d1-f0d2-b810-12fe",
@@ -29121,7 +41897,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Demolition charge cache",
+          "Heavy stubber",
+          "Twin autocannon",
+          "Goliath wheels"
+        ],
         "wargearOptions": []
       },
       {
@@ -29147,7 +41928,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Metamorph mutations",
           "Autopistol",
           "Cult icon",
-          "Hand flamer"
+          "Hand flamer",
+          "Leader's Bio-weapons"
         ],
         "wargearOptions": [
           {
@@ -29206,7 +41988,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Autopistol",
+          "Close combat weapon",
+          "Cult sniper rifle"
+        ],
         "wargearOptions": []
       },
       {
@@ -29224,7 +42010,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close combat weapon",
+          "Liberator autostubs"
+        ],
         "wargearOptions": []
       },
       {
@@ -29242,7 +42031,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Locus blades"
+        ],
         "wargearOptions": []
       },
       {
@@ -29261,7 +42052,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Force stave",
+          "Autopistol"
+        ],
         "wargearOptions": []
       },
       {
@@ -29287,7 +42081,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Hybrid firearm",
           "Autopistol",
           "Close combat weapon",
-          "Cult Icon"
+          "Cult Icon",
+          "Mining laser",
+          "Seismic cannon",
+          "Autopistol, hybrid firearm and close combat weapon",
+          "Autopistol, anointed pistol and power weapon",
+          "Autopistol, anointed pistol and chainsword"
         ],
         "wargearOptions": [
           {
@@ -29359,7 +42158,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Autopistol",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -29378,7 +42180,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Patriarch's claws"
+        ],
         "wargearOptions": []
       },
       {
@@ -29396,7 +42200,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Toxin injector claw",
+          "Scoped needle pistol",
+          "Cult bonesword"
+        ],
         "wargearOptions": []
       },
       {
@@ -29438,7 +42246,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Autopistol",
+          "Remote explosives",
+          "Close combat weapon",
+          "Demolition charges"
+        ],
         "wargearOptions": []
       },
       {
@@ -29456,8 +42269,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Sanctus bio-dagger",
+          "Cult sniper rifle and close combat weapon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Sanctus bio-dagger",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sanctus bio-dagger"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Cult sniper rifle and close combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cult sniper rifle and close combat weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "908a-9fd8-2270-8dbd",
@@ -29475,7 +42319,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Psionic cascade",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -29502,7 +42349,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Autopistol",
           "Cult claws and knife",
           "Cult icon",
-          "Heavy mining tool"
+          "Heavy mining tool",
+          "Leader's Bio-weapons"
         ],
         "wargearOptions": [
           {
@@ -29569,7 +42417,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Lasgun",
           "Hunting lance",
           "Steed's hooves",
-          "Goad lance"
+          "Goad lance",
+          "Power sabre"
         ],
         "wargearOptions": [
           {
@@ -29620,7 +42469,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Coaxial autocannon",
+          "Demolisher cannon",
+          "Heavy stubber",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Baneblade cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -29636,7 +42494,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Tremor cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -29652,7 +42516,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Quake cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -29671,7 +42541,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Wargear Options",
+          "Earthshaker cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -29689,8 +42563,93 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Boltgun and close combat weapon",
+          "Power fist"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Laspistol",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Laspistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Laspistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Chainsword",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Boltgun and close combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun and close combat weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainsword"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4d28-f2a7-67c1-eb2e",
@@ -29711,6 +42670,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 5,
         "wargear": [
           "Close combat weapon",
+          "Flamer",
+          "Grenade launcher",
+          "Meltagun",
+          "Plasma gun",
+          "Regimental standard and lasgun",
+          "Chainsword",
+          "Power fist",
+          "Power weapon",
+          "Flamer and close combat weapon",
+          "Grenade launcher and close combat weapon",
+          "Plasma gun and close combat weapon",
+          "Meltagun and close combat weapon",
+          "Bolt pistol",
+          "Laspistol",
+          "Plasma pistol",
           "Lasgun",
           "Master vox",
           "Medi-pack"
@@ -29752,7 +42726,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lasgun array"
+        ],
         "wargearOptions": []
       },
       {
@@ -29790,7 +42767,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Wargear Options",
+          "Deathstrike Missile"
+        ],
         "wargearOptions": []
       },
       {
@@ -29806,7 +42787,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Magma cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -29985,7 +42972,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Coaxial autocannon",
+          "Demolisher cannon",
+          "Heavy stubber",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Hellhammer cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -30003,8 +42999,102 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Chem cannon",
+          "Inferno cannon",
+          "Melta cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Heavy Flamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Inferno Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Chem cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chem cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Melta cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Melta cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "4967-19b6-1e2a-a300",
@@ -30021,7 +43111,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Wargear Options",
+          "Hydra autocannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -30050,7 +43144,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Plasma gun",
           "Hot-shot volley gun",
           "Meltagun",
-          "Grenade launcher"
+          "Grenade launcher",
+          "Plasma pistol",
+          "Bolt pistol",
+          "Chainsword",
+          "Power weapon"
         ],
         "wargearOptions": [
           {
@@ -30180,7 +43278,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Leman Russ battle cannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -30198,7 +43300,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Eradicator nova cannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -30216,7 +43322,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Demolisher battle cannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -30234,7 +43344,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Exterminator autocannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -30252,7 +43366,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Armoured tracks",
+          "Vanquisher battle cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -30270,7 +43388,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Punisher gatling cannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -30289,7 +43411,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Armoured tracks",
+          "Storm eagle rockets"
+        ],
         "wargearOptions": []
       },
       {
@@ -30307,7 +43433,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Laspistol",
+          "Psychic maelstrom",
+          "Force weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -30325,8 +43455,125 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Heavy stubber",
+          "Oppressor cannon and coaxial autocannon",
+          "2 Multi-meltas",
+          "2 Heavy Bolters",
+          "2 Meltaguns",
+          "2 Additional Heavy Stubbers"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin Battle Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Oppressor cannon and coaxial autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Oppressor cannon and coaxial autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin battle cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Castigator Gatling Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Castigator gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castigator gatling cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Pulveriser cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulveriser cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Multi-meltas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Multi-meltas"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Heavy Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy Bolters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hull Weapons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Meltaguns",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Meltaguns"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Additional Heavy Stubbers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Additional Heavy Stubbers"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1b48-2f2-8e9c-1308",
@@ -30341,7 +43588,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Lascannon",
+          "Twin heavy bolter",
+          "Wargear Options",
+          "Volcano cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -30357,7 +43610,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Twin heavy bolter",
+          "Lascannon",
+          "Heavy stubber",
+          "Armoured tracks",
+          "Vulcan mega-bolter"
+        ],
         "wargearOptions": []
       },
       {
@@ -30376,8 +43636,211 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "2 Heavy bolters",
+          "2 Heavy flamers",
+          "2 Multi-meltas",
+          "2 Plasma cannons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Leman Russ Battle Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Leman Russ battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Leman Russ battle cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Demolisher battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Demolisher battle cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Vanquisher battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vanquisher battle cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Eradicator nova cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Eradicator nova cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Executioner plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Executioner plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Punisher gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Punisher gatling cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Exterminator autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Exterminator autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Lascannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lascannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Heavy bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Heavy flamers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy flamers"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Multi-meltas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Multi-meltas"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Plasma cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Plasma cannons"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pintle Mount",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy stubber"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hunter-killer missile",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Hunter-killer missile",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "11e5-d4ab-d140-ac38",
@@ -30394,7 +43857,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Twin autocannon",
+          "Armoured tracks"
+        ],
         "wargearOptions": []
       },
       {
@@ -30412,7 +43878,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Storm bolter"
+        ],
         "wargearOptions": []
       },
       {
@@ -30431,7 +43900,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Wargear Options",
+          "Armoured tracks",
+          "Wyvern quad stormshard mortar"
+        ],
         "wargearOptions": []
       },
       {
@@ -30492,7 +43965,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured tracks",
+          "Executioner plasma cannon",
+          "Wargear Options"
+        ],
         "wargearOptions": []
       },
       {
@@ -30527,7 +44004,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Twin heavy bolter",
+          "Lascannon",
+          "Armoured tracks",
+          "Stormsword siege cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -30571,7 +44053,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Lictor claws and talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -30591,7 +44075,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Prime talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -30615,7 +44101,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 20,
-        "wargear": [],
+        "wargear": [
+          "Blinding venom",
+          "Fleshborer"
+        ],
         "wargearOptions": []
       },
       {
@@ -30635,7 +44124,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Lictor claws and talons"
+          "Lictor claws and talons",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -30655,7 +44145,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Distendible jaw",
+          "Mawloc scything talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -30675,7 +44168,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Barbed ovipositor",
+          "Clawed limbs"
+        ],
         "wargearOptions": []
       },
       {
@@ -30694,7 +44190,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Flensing Whips",
+          "Tyrannocyte Bio-weapons"
+        ],
         "wargearOptions": []
       },
       {
@@ -30714,7 +44213,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Trygon Character upgrade"
+          "Trygon Character upgrade",
+          "Bio-electric pulse",
+          "Trygon scything talons"
         ],
         "wargearOptions": []
       },
@@ -30757,7 +44258,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Piercing claws and talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -30778,10 +44281,19 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 6,
         "maxModels": 6,
         "wargear": [
-          "Close combat weapon",
           "Laspistol",
+          "Plasma pistol",
+          "Close combat weapon",
           "Alchemyk Counteragents",
           "Servo-scribes",
+          "Boltgun",
+          "Plasma gun",
+          "Meltagun",
+          "Grenade launcher",
+          "Flamer",
+          "Chainsword",
+          "Power weapon",
+          "Trench club",
           "Lasgun",
           "Master vox",
           "Regimental standard"
@@ -30969,8 +44481,125 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured tracks",
+          "Heavy stubber",
+          "2 Meltaguns",
+          "2 Additional Heavy Stubbers",
+          "2 Multi-meltas",
+          "2 Heavy Bolters",
+          "Oppressor cannon and coaxial autocannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Castigator Gatling Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Castigator gatling cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castigator gatling cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Pulveriser cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulveriser cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Hull Weapons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Meltaguns",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Meltaguns"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Additional Heavy Stubbers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Additional Heavy Stubbers"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Sponsons",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Multi-meltas",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Multi-meltas"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Heavy Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Heavy Bolters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Twin Battle Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Oppressor cannon and coaxial autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Oppressor cannon and coaxial autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin battle cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin battle cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "0595-6d6c-a783-12ab",
@@ -30988,8 +44617,61 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Lasgun",
+          "Crew close combat weapons",
+          "Heavy mortar",
+          "Siege cannon",
+          "Multiple rocket launcher",
+          "Heavy quad launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Heavy mortar",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy mortar",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy mortar"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Siege cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Siege cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Multiple rocket launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multiple rocket launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy quad launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy quad launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3e90-9359-2aaa-205e",
@@ -31016,7 +44698,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Close combat weapon",
           "Flamer",
           "Combat shotgun",
-          "Remote mine"
+          "Remote mine",
+          "Autopistol and trench club",
+          "Combat shotgun and close combat weapon"
         ],
         "wargearOptions": [
           {
@@ -31248,8 +44932,56 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Tyrant talons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Monstrous Bonesword and Lash Whip",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Monstrous scything talons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Monstrous scything talons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Stranglethorn cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Stranglethorn cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy venom cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy venom cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Monstrous bonesword and lash whip",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Monstrous bonesword and lash whip"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "c10d-772e-a54f-a2b9",
@@ -31269,6 +45001,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
+          "Prime claws and talons",
           "Ravener heavy claws and talons",
           "Venom bolt"
         ],
@@ -31289,7 +45022,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured hull",
+          "Pintle-mounted heavy stubber"
+        ],
         "wargearOptions": []
       },
       {
@@ -31417,7 +45153,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Gaping maw",
+          "Scything talons",
+          "Mighty Champions"
+        ],
         "wargearOptions": []
       }
     ],
@@ -31898,7 +45638,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Rampart crest",
           "Volkanite disintegrator",
-          "Blade of the Ancestors"
+          "Blade of the Ancestors",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -31922,6 +45663,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Autoch-pattern bolt pistol",
           "Autoch-pattern bolter",
           "Ion blaster",
+          "Theyn's pistol",
           "HYLas rotary cannon",
           "HYLas auto rifle",
           "L7 missile launcher",
@@ -32038,7 +45780,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Theyn",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -32085,8 +45827,93 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Mass gauntlet",
+          "Forgewrought plasma axe"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Crest",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Rampart crest",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Rampart crest"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Teleport crest",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Teleport crest"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Mass gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Mass gauntlet"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Forgewrought plasma axe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Forgewrought plasma axe"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Autoch-pattern combi-bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Autoch-pattern combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Volkanite disintegrator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Volkanite disintegrator"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2cc6-e2bf-635f-1260",
@@ -32103,8 +45930,68 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Autoch-pattern combi-bolter",
+          "Weavefield crest",
+          "Mass hammer",
+          "Darkstar axe"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Crest",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Weavefield crest",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Weavefield crest"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Teleport crest",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Teleport crest"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Mass hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Mass hammer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Darkstar axe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Darkstar axe"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "d3a3-2d20-bd7e-6778",
@@ -32120,6 +46007,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 3,
         "wargear": [
+          "Ancestral ward stave",
+          "Ancestral Wrath",
           "Autoch-pattern bolter",
           "Close combat weapon"
         ],
@@ -32141,6 +46030,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
+          "Graviton hammer",
+          "Graviton rifle",
           "Autoch-pattern bolt pistol",
           "Close combat weapon",
           "Plasma torch",
@@ -32169,7 +46060,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Exo-armour grenade launcher"
+          "Exo-armour grenade launcher",
+          "EtaCarn plasma gun",
+          "Volkanite disintegrator",
+          "Concussion gauntlet",
+          "Plasma blade gauntlet",
+          "Graviton hammer",
+          "Weavefield crest",
+          "Teleport crest"
         ],
         "wargearOptions": [
           {
@@ -32194,7 +46092,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Ranged weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Hesyr",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -32221,7 +46119,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Melee weapon",
             "groupMin": 0,
             "groupMax": 1,
-            "modelContext": "Hesyr",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -32257,7 +46155,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Crest",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Hesyr",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -32303,6 +46201,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
+          "Concussion maul",
+          "Heavy plasma axe",
           "Twin concussion gauntlets",
           "Mole grenade launcher"
         ],
@@ -32482,8 +46382,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin bolt cannon",
+          "Armoured wheels",
+          "HYLas beam cannon",
+          "L7 missile launcher and Sagitaur missile launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Turret weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "HYLas beam cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "HYLas beam cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "L7 missile launcher and Sagitaur missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "L7 missile launcher and Sagitaur missile launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "MATR autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "MATR autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ea1b-99f6-c398-06b1",
@@ -32507,14 +46449,17 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Bolt cannon",
+          "Graviton blast cannon",
+          "SP conversion beamer"
         ],
         "wargearOptions": [
           {
             "name": "Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Brôkhyr Thunderkyn",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -32561,8 +46506,108 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "MATR autocannon",
+          "Armoured wheels",
+          "SP heavy conversion beamer",
+          "Heavy magna-rail cannon",
+          "Cyclic ion cannon",
+          "Twin ion beamer",
+          "Pan spectral scanner",
+          "Hekaton warhead"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Main weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "SP heavy conversion beamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "SP heavy conversion beamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy magna-rail cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy magna-rail cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Cyclic ion cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cyclic ion cannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Sponson weapons",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin ion beamer",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Twin ion beamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin bolt cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Twin bolt cannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Wargear",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Pan spectral scanner",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pan spectral scanner"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Hekaton warhead",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hekaton warhead"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5b0b-c18d-1470-44bb",
@@ -32646,7 +46691,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Autoch-pattern bolt pistol",
-          "Bane"
+          "Bane",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -32663,7 +46709,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Autoch-pattern bolt pistol",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -32679,8 +46728,85 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Transmatter inverter",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
+      },
+      {
+        "id": "f788-ecf2-9b2e-bc23",
+        "name": "Kapricus Defenders",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            70
+          ],
+          [
+            2,
+            140
+          ]
+        ],
+        "keywords": [
+          "Hernkyn",
+          "Kapricus",
+          "Defenders"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Twin magna-coil autocannon",
+          "Armoured hull",
+          "Smoke launcher",
+          "Magna-rail cannon",
+          "HYLas rotary cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Magna-rail cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Magna-rail cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "HYLas rotary cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "HYLas rotary cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Smoke launcher",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Smoke launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cfbc-9eeb-badb-b28c",
@@ -32699,8 +46825,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin magna-coil autocannon",
+          "Magna-coil autocannon",
+          "Smoke launcher",
+          "Armoured hull"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Smoke launcher",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Smoke launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1e3f-209d-798f-3a42",
@@ -32721,13 +46869,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": [],
+        "wargear": [
+          "Disintegrator and knife",
+          "Bolter and sword"
+        ],
         "wargearOptions": [
           {
             "name": "Weapons",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Steeljack Theyn",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -32773,8 +46924,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Autoch-pattern bolter",
-          "Concussion gauntlet",
-          "Plasma sword"
+          "Plasma sword",
+          "Concussion gauntlet"
         ],
         "wargearOptions": [
           {
@@ -32810,7 +46961,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Melee Weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Steeljack Theyn",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -32854,14 +47005,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 2,
         "wargear": [
           "Plasma picks",
-          "Autoch-pattern bolt pistol"
+          "Autoch-pattern bolt pistol",
+          "Breacher ordnance",
+          "Tremor shells"
         ],
         "wargearOptions": [
           {
             "name": "Main weapon",
             "groupMin": 1,
             "groupMax": 1,
-            "modelContext": "Cthonian Earthshaker",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -32903,7 +47056,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Kromlôk's Revenge",
-          "Warforge gauntlets"
+          "Warforge gauntlets",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       }
@@ -33190,7 +47344,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Staff of Tomorrow"
+          "Staff of Tomorrow",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -33211,7 +47366,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Gauntlet of Fire",
-          "Staff of the Destroyer"
+          "Staff of the Destroyer",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -33232,7 +47388,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Eldritch lance",
-          "Impaling legs"
+          "Impaling legs",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -33252,7 +47409,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Empathic Obliterator"
+          "Empathic Obliterator",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -33269,7 +47427,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close combat weapon",
+          "Relic gauss blaster"
+        ],
         "wargearOptions": []
       },
       {
@@ -33287,7 +47448,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Enmitic annihilator",
+          "Flensing claw",
+          "Hyperphase harvester"
+        ],
         "wargearOptions": []
       },
       {
@@ -33305,8 +47470,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Lord's blade",
+          "Staff of light",
+          "Nanoscarab amulet"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Lord's blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lord's blade"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Staff of light",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Staff of light"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Equipment",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Nanoscarab amulet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Nanoscarab amulet"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Resurrection orb",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Resurrection orb"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e667-b37c-61c-4893",
@@ -33321,8 +47545,84 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Resurrection orb",
+          "Gauss cannon",
+          "Tesla cannon",
+          "Staff of light"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Main weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Gauss cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Gauss cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Tesla cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Tesla cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Overlord's Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Staff of light",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Staff of light"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Overlord's blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Overlord's blade"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Resurrection orb",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Resurrection orb",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "dbe5-257e-e2bd-1b40",
@@ -33339,8 +47639,65 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Overlord's blade and tachyon arrow",
+          "Voidscythe",
+          "Staff of light"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Overlord's blade and tachyon arrow",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Overlord's blade and tachyon arrow"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Voidscythe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Voidscythe"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Staff of light",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Staff of light"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Resurrection orb",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Resurrection orb",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "852a-ba39-e93f-6b62",
@@ -33357,7 +47714,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Staff of light"
+        ],
         "wargearOptions": []
       },
       {
@@ -33375,7 +47734,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Abyssal lance"
+        ],
         "wargearOptions": []
       },
       {
@@ -33393,7 +47754,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Chronomancer's stave"
+        ],
         "wargearOptions": []
       },
       {
@@ -33411,7 +47774,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Plasmic lance"
+        ],
         "wargearOptions": []
       },
       {
@@ -33483,7 +47848,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
-          "Close combat weapon"
+          "Close combat weapon",
+          "Gauss blaster",
+          "Tesla carbine"
         ],
         "wargearOptions": [
           {
@@ -33522,7 +47889,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Atomiser beam",
+          "Reanimator's claws"
+        ],
         "wargearOptions": []
       },
       {
@@ -33540,7 +47910,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Close combat weapon",
+          "Enmitic disintegrator pistols"
+        ],
         "wargearOptions": []
       },
       {
@@ -33560,7 +47933,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Warscythe",
+          "Hyperphase sword and dispersion shield"
+        ],
         "wargearOptions": [
           {
             "name": "5-10 Lychguard",
@@ -33696,8 +48072,50 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Stalker's forelimbs",
+          "Heat ray",
+          "Particle shredder",
+          "Heavy gauss cannon array"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heat ray",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heat ray"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Particle shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Particle shredder"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy gauss cannon array",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy gauss cannon array"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e09-d7d6-e4e3-42c1",
@@ -33715,7 +48133,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Cosmic insanity",
           "Golden fists",
-          "Singularity Matrix"
+          "Singularity Matrix",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -33735,7 +48154,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Gaze of death",
           "Scythe of the Nightbringer",
-          "Quantum Goad"
+          "Quantum Goad",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -33756,7 +48176,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Spear of the Void Dragon",
           "Voltaic storm",
           "Canoptek tail blades",
-          "Animus Damper"
+          "Animus Damper",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -33773,8 +48194,73 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Crackling tendrils",
+          "Seismic assault",
+          "Relatavistic Tether"
+        ],
         "wargearOptions": []
+      },
+      {
+        "id": "cae9-5277-87f4-54b8",
+        "name": "Canoptek Spyders",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            75
+          ],
+          [
+            2,
+            150
+          ]
+        ],
+        "keywords": [
+          "Canoptek",
+          "Spyders"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Gloom prism",
+          "Automaton claws",
+          "Fabricator claw array",
+          "Two particle beamers"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Fabricator claw array",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Fabricator claw array",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Two particle beamers",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Two particle beamers",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "259b-a8e3-928f-1d0c",
@@ -33841,7 +48327,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Shieldvanes",
-          "Close combat weapon"
+          "Close combat weapon",
+          "Twin gauss blaster",
+          "Particle beamer",
+          "Twin tesla carbine",
+          "Shadowloom",
+          "Nebuloscope"
         ],
         "wargearOptions": []
       },
@@ -33862,7 +48353,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Rod of covenant",
+          "Particle caster and voidblade"
+        ],
         "wargearOptions": []
       },
       {
@@ -33954,8 +48448,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured bulk",
+          "Twin tesla destructor",
+          "Gauss cannon",
+          "Tesla cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Secondary weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Gauss cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Gauss cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Tesla cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Tesla cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "e046-8220-d8a2-1d19",
@@ -33970,7 +48497,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured bulk",
+          "Doomsday cannon",
+          "Gauss flayer array"
+        ],
         "wargearOptions": []
       },
       {
@@ -34014,7 +48545,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Doomsday blaster",
+          "Doomstalker limbs",
+          "Twin gauss flayer"
+        ],
         "wargearOptions": []
       },
       {
@@ -34030,7 +48565,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured bulk",
+          "Gauss flayer array"
+        ],
         "wargearOptions": []
       },
       {
@@ -34046,7 +48584,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured bulk",
+          "Twin tesla destructor"
+        ],
         "wargearOptions": []
       },
       {
@@ -34062,7 +48603,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured bulk",
+          "Heavy death ray",
+          "Twin tesla destructor"
+        ],
         "wargearOptions": []
       },
       {
@@ -34080,7 +48625,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured bulk",
+          "Tesla sphere"
+        ],
         "wargearOptions": []
       },
       {
@@ -34098,7 +48646,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Armoured bulk",
+          "C'tan Powers",
+          "Tesla sphere"
+        ],
         "wargearOptions": []
       },
       {
@@ -34116,8 +48668,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Particle whip",
+          "Portal of exile",
+          "Four death rays",
+          "Four gauss flux arcs"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Four death rays",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Four death rays"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Four gauss flux arcs",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Four gauss flux arcs"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7422-7fbf-8694-364c",
@@ -34144,6 +48729,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargearOptions": []
       },
       {
+        "id": "919f-7076-c827-b844",
+        "name": "Convergence of Dominion",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            60
+          ],
+          [
+            3,
+            120
+          ]
+        ],
+        "keywords": [],
+        "minModels": 1,
+        "maxModels": 3,
+        "wargear": [
+          "Transdimensional abductor"
+        ],
+        "wargearOptions": []
+      },
+      {
         "id": "fa11-cd65-fcf6-427c",
         "name": "Seraptek Heavy Construct",
         "role": "Vehicle",
@@ -34158,8 +48765,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Titanic forelimbs",
+          "Two singularity generators",
+          "Two synaptic obliterators and two transdimensional projectors"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Two singularity generators",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two singularity generators"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Two synaptic obliterators and two transdimensional projectors",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Two synaptic obliterators and two transdimensional projectors"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2e4-afdd-efdd-c5c8",
@@ -34177,7 +48816,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Overlord's blade",
+          "Resurrection orb"
+        ],
         "wargearOptions": []
       },
       {
@@ -34272,7 +48914,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 2,
         "wargear": [
           "Twin gauss reaper",
-          "Claws"
+          "Claws",
+          "Dimensional isolator"
         ],
         "wargearOptions": []
       },
@@ -34291,7 +48934,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Tremorglaive"
+        ],
         "wargearOptions": []
       },
       {
@@ -34309,7 +48954,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Mighty Champions",
+          "Blade tail and whip coils",
+          "Enmitic disintegrators",
+          "Nullstone field generator",
+          "Unmaker gauntlet"
+        ],
         "wargearOptions": []
       }
     ],
@@ -34553,8 +49204,157 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "’Ard Case",
+          "Killkannon",
+          "Zzap gun",
+          "Kannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Big Gun",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Killkannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Killkannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Zzap gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Zzap gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Kannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Tracks and Wheels",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Deff rolla",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Deff rolla"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Tracks and wheels",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Tracks and wheels"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "’Ard Case",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "’Ard Case",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Lobba",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Lobba",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Wreckin' ball",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Wreckin' ball",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Grabbin' klaw",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Grabbin' klaw",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Big shoota",
+            "groupMin": 0,
+            "groupMax": 4,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Big shoota",
+                "min": 0,
+                "max": 4,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "b7c3-d00e-daf2-76fb",
@@ -34631,7 +49431,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Beastchoppa",
+          "Beast Snagga klaw",
+          "Shoota"
+        ],
         "wargearOptions": []
       },
       {
@@ -34650,8 +49454,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Beastchoppa",
+          "Slugga",
+          "Squigosaur’s jaws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Thump Gun",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Thump gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thump gun"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "95e9-6da3-5e75-2566",
@@ -34669,8 +49496,103 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Power klaw",
+          "Tellyport blasta",
+          "Grot oiler"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Additional Options",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Tellyport blasta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Tellyport blasta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Kustom force field",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kustom force field"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Grot Oiler",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Grot oiler",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grot oiler"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Kustom-mega Blaster",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Kustom mega-blasta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kustom mega-blasta"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Kustom shoota",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kustom shoota"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Kombi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kombi-weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Killsaw",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Killsaw"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "dde2-ca42-e3bc-2ef6",
@@ -34687,8 +49609,31 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Close combat weapon",
+          "Shokk attack gun",
+          "Grot assistant"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Grot Assistant",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Grot assistant",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grot assistant"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a20-d3af-2c3e-3267",
@@ -34705,7 +49650,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Big shoota",
+          "Twin supa-shoota",
+          "Armoured hull"
+        ],
         "wargearOptions": []
       },
       {
@@ -34723,7 +49672,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Big shoota",
+          "Grot blasta",
+          "Spiked wheels",
+          "Mek speshul"
+        ],
         "wargearOptions": []
       },
       {
@@ -34741,7 +49695,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Slugga",
-          "Mork’s Teeth"
+          "Mork’s Teeth",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -34770,7 +49725,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Shoota",
           "Close combat weapon",
           "Big shoota",
-          "Rokkit launcha"
+          "Rokkit launcha",
+          "Big choppa and slugga",
+          "Power klaw and slugga",
+          "Kombi-weapon and close combat weapon"
         ],
         "wargearOptions": [
           {
@@ -34864,8 +49822,32 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Twin big shoota",
+          "Twin supa-shoota",
+          "Armoured hull",
+          "Skorcha missile rack"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Skorcha Missile Rack",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Skorcha missile rack",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Skorcha missile rack"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3b42-b41f-d11e-bdca",
@@ -34882,8 +49864,30 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Twin supa-shoota"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin Supa-shootas (2-3)",
+            "groupMin": 2,
+            "groupMax": 3,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin supa-shoota",
+                "min": 2,
+                "max": 3,
+                "weapons": [
+                  "Twin supa-shoota"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1594-b986-e77e-d89d",
@@ -34898,8 +49902,67 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Stompy feet",
+          "Big shoota",
+          "Dread klaw"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear Options",
+            "groupMin": 4,
+            "groupMax": 4,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Dread klaw",
+                "min": 2,
+                "max": 4,
+                "weapons": [
+                  "Dread klaw"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Big shoota",
+                "min": 2,
+                "max": 4,
+                "weapons": [
+                  "Big shoota"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Kustom mega-blasta",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Kustom mega-blasta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Rokkit launcha",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Rokkit launcha"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Skorcha",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Skorcha"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ca85-1d18-dc30-d64e",
@@ -34917,7 +49980,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Deffkilla boomstikks",
+          "Killa jet",
+          "Snagga klaw"
+        ],
         "wargearOptions": []
       },
       {
@@ -34939,7 +50006,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": [],
+        "wargear": [
+          "Kopta rokkits",
+          "Slugga",
+          "Spinnin’ blades",
+          "Kustom mega-blasta"
+        ],
         "wargearOptions": [
           {
             "name": "Deffkoptas (3-6)",
@@ -35044,7 +50116,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Rokkit launcha",
+          "Skorcha",
+          "Twin big shoota",
+          "Deffstorm mega-shoota",
+          "Klaw of Gork"
+        ],
         "wargearOptions": []
       },
       {
@@ -35080,7 +50158,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "’Eavy lobba",
+          "Butcha boyz",
+          "Savage horns and hooves",
+          "Saw blades",
+          "Stikka kannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -35099,7 +50183,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "’Eavy lobba",
+          "Butcha boyz",
+          "Savage horns and hooves",
+          "Saw blades",
+          "Stikka kannon",
+          "Wurrtower"
+        ],
         "wargearOptions": []
       },
       {
@@ -35121,7 +50212,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": [],
+        "wargear": [
+          "Kan klaw",
+          "Kan shoota",
+          "Grotzooka",
+          "Rokkit launcha",
+          "Skorcha"
+        ],
         "wargearOptions": [
           {
             "name": "Killa Kans (3-6)",
@@ -35182,7 +50279,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Close combat weapon",
           "Breacha ram",
           "Burna",
-          "Rokkit launcha"
+          "Rokkit launcha",
+          "Power klaw",
+          "Big choppa"
         ],
         "wargearOptions": [
           {
@@ -35260,7 +50359,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Grot blasta",
+          "Spiked wheels",
+          "Burna exhausts",
+          "Rivet kannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -35399,7 +50503,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Twin big shoota",
+          "Nose drill",
+          "Rokkit cannon",
+          "Wing missiles"
+        ],
         "wargearOptions": []
       },
       {
@@ -35415,8 +50524,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Kustom mega-slugga",
+          "Wrench",
+          "Killsaw"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wrench",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Wrench",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Wrench"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Killsaw",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Killsaw"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9ee5-2b39-de06-dda6",
@@ -35433,7 +50574,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Kustom mega-blasta",
+          "Rokkit launcha",
+          "Twin big shoota",
+          "Klaw of Mork",
+          "Kustom mega-zappa"
+        ],
         "wargearOptions": []
       },
       {
@@ -35455,7 +50602,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Thump gun",
           "Big Chompa’s jaws",
-          "Gutrippa"
+          "Gutrippa",
+          "Mighty Champions",
+          "Waaagh!boss"
         ],
         "wargearOptions": []
       },
@@ -35481,7 +50630,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Big choppa",
           "Power klaw",
           "Close combat weapon",
-          "Kombi-weapon"
+          "Kombi-weapon",
+          "Slugga and big choppa",
+          "Slugga and power klaw"
         ],
         "wargearOptions": [
           {
@@ -35540,7 +50691,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Beast Snagga klaw",
+          "Grot orderly"
+        ],
         "wargearOptions": []
       },
       {
@@ -35556,7 +50710,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "’Urty syringe",
+          "Power klaw",
+          "Grot orderly"
+        ],
         "wargearOptions": []
       },
       {
@@ -35574,7 +50732,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Saw blades",
+          "Sawn-off shotgun",
+          "Squig launchas"
+        ],
         "wargearOptions": []
       },
       {
@@ -35592,7 +50754,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Rokkit launcha",
+          "Saw blades",
+          "Kustom shokk rifle"
+        ],
         "wargearOptions": []
       },
       {
@@ -35628,7 +50794,15 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Big shoota",
+          "Skorcha",
+          "Twin big shoota",
+          "Deffkannon",
+          "Mega-choppa",
+          "Supa-gatler",
+          "Supa-rokkits"
+        ],
         "wargearOptions": []
       },
       {
@@ -35652,7 +50826,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 10,
         "wargear": [
           "Slugga",
-          "Choppa"
+          "Choppa",
+          "Power klaw"
         ],
         "wargearOptions": [
           {
@@ -35691,6 +50866,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 6,
         "wargear": [
           "Choppa",
+          "Rokkit pistol",
           "Rokkit launcha",
           "Close combat weapon",
           "Pulsa rokkit"
@@ -35751,8 +50927,28 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Big shoota",
+          "Spiked wheel"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wreckin' ball",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
+              {
+                "name": "Wreckin' ball",
+                "min": 0,
+                "max": 1,
+                "weapons": [],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "83a7-ea20-ed9-d14a",
@@ -35777,7 +50973,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Twin dakkagun",
           "Close combat weapon",
           "Slugga",
-          "Choppa"
+          "Choppa",
+          "Big choppa",
+          "Power klaw"
         ],
         "wargearOptions": [
           {
@@ -35836,8 +51034,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Kombi-weapon",
+          "Twin slugga"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Big Choppa",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Big choppa",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Big choppa"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Power klaw",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power klaw"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "494b-11ce-5af-5b50",
@@ -35855,7 +51084,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "’Uge choppa",
+          "Big shoota"
+        ],
         "wargearOptions": []
       },
       {
@@ -35873,8 +51105,43 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Smasha gun",
+          "Twin wazbom mega-kannon",
+          "Twin tellyport mega-blasta",
+          "Blastajet Force Field",
+          "Twin supa-shoota"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin Wazbom Mega-kannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin wazbom mega-kannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin wazbom mega-kannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin tellyport mega-blasta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin tellyport mega-blasta"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "260d-9ce4-ea1f-a957",
@@ -35891,7 +51158,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Weirdboy staff",
+          "’Eadbanger"
+        ],
         "wargearOptions": []
       },
       {
@@ -35910,7 +51180,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Eyez of Mork",
+          "Close combat weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -35928,7 +51201,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Da Grabzappa",
-          "Squigstoppa"
+          "Squigstoppa",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -35947,8 +51221,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Huge tusks",
+          "Supa-kannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear Options",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Supa-kannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Supa-kannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Kannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "fbee-427a-1c46-f621",
@@ -35966,7 +51271,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Power Klaw",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Drilla",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Drilla"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power klaw",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power klaw"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Kustom Mega-blasta",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Traktor blasta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Traktor blasta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Kustom mega-blasta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kustom mega-blasta"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "a596-3d99-257e-0ea1",
@@ -35985,7 +51345,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Smash hammer",
           "Tankhammer",
           "Knucklebustas",
-          "Choppa"
+          "Choppa",
+          "Rokkit pistol"
         ],
         "wargearOptions": [
           {
@@ -36045,7 +51406,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Fixit's wrench",
           "Psyko-gatler",
           "Grabba dragga",
-          "Speeding bulk and flaming exhaust"
+          "Speeding bulk and flaming exhaust",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       }
@@ -36682,7 +52044,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Light missile pod",
           "High-energy fusion blaster",
           "Flechette launcher",
-          "Battlesuit fists"
+          "Battlesuit fists",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -36704,7 +52067,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "High-intensity plasma rifle",
-          "Dawn Blade"
+          "Dawn Blade",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -36724,8 +52088,111 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Battlesuit fists",
+          "Drones (0-2)"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Support Systems (1-4)",
+            "groupMin": 1,
+            "groupMax": 4,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Battlesuit support system",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Battlesuit support system"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Shield generator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shield generator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Weapon support system",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Weapon support system"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile pod",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Missile pod"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Burst cannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Burst cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Airbursting fragmentation projector",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Airbursting fragmentation projector"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Cyclic ion blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cyclic ion blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "T'au flamer",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "T'au flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Fusion blaster",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Fusion blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma rifle",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Plasma rifle"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "3a73-7255-c639-e89e",
@@ -36743,8 +52210,121 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Battlesuit fists",
+          "Drones (0-2)",
+          "High-output burst cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Support Systems (1-4)",
+            "groupMin": 1,
+            "groupMax": 4,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "High-output burst cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "High-output burst cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Battlesuit support system",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Battlesuit support system"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Shield generator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shield generator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Weapon support system",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Weapon support system"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile pod",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Missile pod"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Burst cannon",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Burst cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Airbursting fragmentation projector",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Airbursting fragmentation projector"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Cyclic ion blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cyclic ion blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "T'au flamer",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "T'au flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Fusion blaster",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Fusion blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma rifle",
+                "min": 0,
+                "max": 4,
+                "weapons": [
+                  "Plasma rifle"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8f32-9697-ed41-6e3",
@@ -36761,7 +52341,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Fireblade pulse rifle",
+          "Close combat weapon",
+          "Drones (0-2)"
+        ],
         "wargearOptions": []
       },
       {
@@ -36779,7 +52363,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Drones (0-2)",
+          "Honour stave",
+          "Hover Drone"
+        ],
         "wargearOptions": []
       },
       {
@@ -36800,7 +52388,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 1,
         "wargear": [
           "Close combat weapon",
-          "Shade"
+          "Shade",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -36825,7 +52414,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Pulse pistol",
           "Close combat weapon",
           "Pulse carbine",
-          "Pulse rifle"
+          "Pulse rifle",
+          "Support turret",
+          "Drones (0-2)"
         ],
         "wargearOptions": [
           {
@@ -36881,7 +52472,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Pulse pistol",
           "Close combat weapon",
-          "Pulse blaster"
+          "Pulse blaster",
+          "Support turret",
+          "Drones (0-2)"
         ],
         "wargearOptions": []
       },
@@ -36908,7 +52501,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Close combat weapon",
           "Kroot rifle",
-          "Tanglebomb launcher"
+          "Tanglebomb launcher",
+          "Kroot pistol"
         ],
         "wargearOptions": [
           {
@@ -37022,7 +52616,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Battlesuit fists",
           "Burst cannon",
-          "Fusion blaster"
+          "Fusion blaster",
+          "Drones (0-2)",
+          "Homing beacon"
         ],
         "wargearOptions": [
           {
@@ -37073,8 +52669,78 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Ghostkeel fists",
+          "Twin burst cannon",
+          "Battlesuit support system",
+          "Fusion collider",
+          "Cyclic ion raker"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin T'au flamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin burst cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin burst cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin T'au flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin T'au flamer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin fusion blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin fusion blaster"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Fusion collider",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Fusion collider",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fusion collider"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Cyclic ion raker",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cyclic ion raker"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "5fe4-86de-b88c-a47b",
@@ -37092,7 +52758,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Pulse pistol",
+          "Close combat weapons",
+          "Longshot pulse rifles"
+        ],
         "wargearOptions": []
       },
       {
@@ -37117,7 +52787,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Pulse carbine",
           "Semi-automatic grenade launcher",
           "Ion rifle",
-          "Rail rifle"
+          "Rail rifle",
+          "Drones (0-2)",
+          "Grav-inhibitor drone",
+          "Pulse accelerator drone",
+          "Recon drone"
         ],
         "wargearOptions": [
           {
@@ -37186,6 +52860,79 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ]
       },
       {
+        "id": "ad2-6549-8a19-d745",
+        "name": "Piranha",
+        "role": "Vehicle",
+        "costs": [
+          [
+            1,
+            60
+          ],
+          [
+            3,
+            120
+          ]
+        ],
+        "keywords": [
+          "Non-Kroot"
+        ],
+        "minModels": 1,
+        "maxModels": 3,
+        "wargear": [
+          "Armoured hull",
+          "Twin pulse carbine",
+          "Piranha burst cannon",
+          "Piranha fusion blaster"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Piranha Burst Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Piranha burst cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Piranha burst cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Piranha fusion blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Piranha fusion blaster"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Seeker Missiles (0-2)",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Seeker missile",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Seeker missile"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "b91-ba27-3842-76c",
         "name": "Vespid Stingwings",
         "role": "Infantry",
@@ -37207,6 +52954,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargear": [
           "Stingwing claws",
           "Neutron blaster",
+          "Oversight Drone",
           "T'au flamer",
           "Neutron grenade launcher",
           "Neutron rail rifle"
@@ -37311,7 +53059,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Crushing bulk"
+          "Crushing bulk",
+          "Heavy rail rifle",
+          "High-yield missile pods",
+          "Drones (0-2)"
         ],
         "wargearOptions": []
       },
@@ -37332,8 +53083,95 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Riptide fists",
+          "Heavy burst cannon",
+          "Ion accelerator",
+          "Twin smart missile system"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Heavy Burst Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy burst cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy burst cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Ion accelerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ion accelerator"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Missile Drones (0-2)",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Missile Drone",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Missile Drone"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Twin Plasma Rifles",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin smart missile system",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin smart missile system"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin fusion blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin fusion blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin plasma rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin plasma rifle"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "ca9-49ab-17c1-8556",
@@ -37350,8 +53188,97 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Railgun",
+          "Ion cannon",
+          "2 Accelerator burst cannons",
+          "2 Twin pulse carbines",
+          "2 Smart missile systems"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Railgun",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Railgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Railgun"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Ion cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ion cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Seeker Missiles (0-2)",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Seeker missile",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Seeker missile"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Twin Pulse Carbines",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Accelerator burst cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Accelerator burst cannons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Twin pulse carbines",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Twin pulse carbines"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Smart missile systems",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Smart missile systems"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "bfe0-2e9f-6f57-b48f",
@@ -37369,8 +53296,51 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Seeker missile rack",
+          "2 Accelerator burst cannons",
+          "2 Twin pulse carbines",
+          "2 Smart missile systems"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin Pulse Carbines",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Accelerator burst cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Accelerator burst cannons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Twin pulse carbines",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Twin pulse carbines"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Smart missile systems",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Smart missile systems"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "14f3-9aa6-21af-7fe3",
@@ -37387,8 +53357,59 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Accelerator burst cannon",
+          "Armoured hull",
+          "2 Twin pulse carbines",
+          "2 Smart missile systems"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Twin Pulse Carbines",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Twin pulse carbines",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Twin pulse carbines"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Smart missile systems",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Smart missile systems"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Seeker Missiles (0-2)",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Seeker missile",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Seeker missile"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "cac0-2569-67c8-f492",
@@ -37405,8 +53426,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Seeker missile",
+          "Armoured hull",
+          "Quad ion turret"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Accelerator Burst Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Missile pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile pod"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Accelerator burst cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accelerator burst cannon"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8d6a-3409-52db-a8c",
@@ -37423,8 +53476,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Seeker missile",
+          "Armoured hull",
+          "Twin ion rifle",
+          "Twin missile pod"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Missile Pod",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin missile pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin missile pod"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile pod",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile pod"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "439b-e08-4466-e162",
@@ -37442,8 +53528,81 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Cluster rocket system",
+          "Destroyer missiles",
+          "Thunderous footfalls",
+          "Twin smart missile system",
+          "Pulse driver cannon",
+          "Pulse blast cannon",
+          "Twin airbursting fragmentation projector",
+          "Twin burst cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Pulse Driver Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Pulse driver cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulse driver cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Pulse blast cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pulse blast cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Twin T'au Flamer",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin airbursting fragmentation projector",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin airbursting fragmentation projector"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin burst cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin burst cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin T'au flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin T'au flamer"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "72f2-7d0b-80f9-43b7",
@@ -37468,7 +53627,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Close combat weapon",
           "Dvorgite skinner",
           "Londaxi tribalest",
-          "Ritual blade"
+          "Ritual blade",
+          "T'au tech rifle"
         ],
         "wargearOptions": [
           {
@@ -37562,8 +53722,81 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Burst cannon",
+          "Smart missile system",
+          "Crushing feet",
+          "Tri-axis ion cannon",
+          "Fusion eradicator",
+          "3 Pulse ordnance drivers",
+          "2 Nexus missile launchers",
+          "Heavy rail cannon array and fragmentation cluster shell launcher"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Arm Weapons",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Tri-axis ion cannon",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Tri-axis ion cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Fusion eradicator",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Fusion eradicator"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Carapace Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "3 Pulse ordnance drivers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "3 Pulse ordnance drivers"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Nexus missile launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Nexus missile launchers"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy rail cannon array and fragmentation cluster shell launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy rail cannon array and fragmentation cluster shell launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "1c73-43dc-bef0-a468",
@@ -37580,8 +53813,127 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Armoured hull",
+          "Missile pod",
+          "2 cyclic ion blasters",
+          "2 burst cannons",
+          "2 Ion cannons",
+          "2 Swiftstrike burst cannons",
+          "2 Swiftstrike railguns",
+          "Transport bay",
+          "2 Skyspear missile racks"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Burst Cannons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 cyclic ion blasters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 cyclic ion blasters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 burst cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 burst cannons"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Ion Cannons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 Ion cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Ion cannons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Swiftstrike burst cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Swiftstrike burst cannons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 Swiftstrike railguns",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Swiftstrike railguns"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Seeker Missiles (0-6)",
+            "groupMin": 0,
+            "groupMax": 6,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Seeker missile",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Seeker missile"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Transport Bay",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Transport bay",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Transport bay"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2 Skyspear missile racks",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 Skyspear missile racks"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "6a78-555-46c7-999b",
@@ -37598,8 +53950,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Missile pod",
+          "Armoured hull",
+          "Twin heavy rail cannon",
+          "2 burst cannons",
+          "2 cyclic ion blasters"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Burst Cannons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2 burst cannons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 burst cannons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "2 cyclic ion blasters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2 cyclic ion blasters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Seeker Missiles (0-6)",
+            "groupMin": 0,
+            "groupMax": 6,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Seeker missile",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Seeker missile"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "8e75-7545-e43b-7c67",
@@ -37617,7 +54021,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Seeker missile",
+          "Missile pod",
+          "Armoured hull",
+          "Heavy rail cannon",
+          "Long-barrelled burst cannon array",
+          "Ion cannon"
+        ],
         "wargearOptions": []
       },
       {
@@ -37638,7 +54049,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": [],
+        "wargear": [
+          "Drones (0-2)",
+          "Battlesuit fists",
+          "Fusion blaster"
+        ],
         "wargearOptions": []
       },
       {
@@ -37659,8 +54074,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Drones (0-2)",
+          "Battlesuit fists"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapons",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plasma rifle",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Plasma rifle"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile pod",
+                "min": 0,
+                "max": 2,
+                "weapons": [
+                  "Missile pod"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "fb32-c683-b38f-d339",
@@ -37680,8 +54126,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 3,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Drones (0-2)",
+          "Battlesuit fists",
+          "Burst cannon",
+          "T'au flamer"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Weapons",
+            "groupMin": 2,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Burst cannon",
+                "min": 1,
+                "max": 2,
+                "weapons": [
+                  "Burst cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "T'au flamer",
+                "min": 1,
+                "max": 2,
+                "weapons": [
+                  "T'au flamer"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2ebe-a524-656d-7f0e",
@@ -37700,7 +54179,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Kroot rifle",
+          "Shaper's blade"
+        ],
         "wargearOptions": []
       },
       {
@@ -37720,8 +54202,39 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Shaper's blade",
+          "Kroot pistol"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear Options",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bladestave and prey-hook",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bladestave and prey-hook"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dart-bow and tri-blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dart-bow and tri-blade"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "bb34-e371-33ee-397",
@@ -37740,7 +54253,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Twin ritualistic blades",
+          "Kroot scattergun"
+        ],
         "wargearOptions": []
       },
       {
@@ -37759,8 +54275,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Kalamandra's bite",
+          "Close combat weapon",
+          "Blast javelin and hunting javelin"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Wargear Options",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Blast javelin and hunting javelin",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blast javelin and hunting javelin"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Kroot long gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Kroot long gun"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "7f73-6728-df6f-1446",
@@ -38205,8 +54753,40 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Stinger salvoes",
+          "Massive scything talons",
+          "Massive crushing claws"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Massive Scything Talons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Massive scything talons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Massive scything talons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Massive crushing claws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Massive crushing claws"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "13f7-1a3-eff-7393",
@@ -38226,7 +54806,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bone Sabres",
+          "Synaptic Pulse",
+          "Mighty Champions"
+        ],
         "wargearOptions": []
       },
       {
@@ -38247,7 +54831,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Broodlord Claws and Talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -38266,7 +54852,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Old One Eye’s claws and talons"
+          "Old One Eye’s claws and talons",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -38345,6 +54932,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "maxModels": 20,
         "wargear": [
           "Chitinous claws and teeth",
+          "Fleshborer",
+          "Termagant spinefist",
+          "Termagant devourer",
           "Shardlauncher",
           "Spike rifle",
           "Strangleweb"
@@ -38440,7 +55030,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Massive toxic lashes"
+        ],
         "wargearOptions": []
       },
       {
@@ -38462,7 +55054,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": [],
+        "wargear": [
+          "Scything talons and rending claws",
+          "Bone cleaver, lash whip and rending claws",
+          "Crushing claws and rending claws"
+        ],
         "wargearOptions": []
       },
       {
@@ -38482,7 +55078,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Psychic scream",
+          "Neurotyrant claws and lashes"
+        ],
         "wargearOptions": []
       },
       {
@@ -38503,7 +55102,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Psychic overload",
+          "Massive scything talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -38548,7 +55150,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Ravenous maw",
+          "Grasping tongue",
+          "Shovelling claws"
+        ],
         "wargearOptions": []
       },
       {
@@ -38628,6 +55234,29 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "wargearOptions": []
       },
       {
+        "id": "707a-9de8-f75b-41c5",
+        "name": "Mucolid Spores",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            30
+          ],
+          [
+            2,
+            60
+          ]
+        ],
+        "keywords": [
+          "Beast",
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [],
+        "wargearOptions": []
+      },
+      {
         "id": "c590-436d-4fd-ef26",
         "name": "Spore Mines",
         "role": "Infantry",
@@ -38665,7 +55294,62 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bio-plasmic cannon",
+          "Powerful limbs"
+        ],
+        "wargearOptions": []
+      },
+      {
+        "id": "3f2c-85ec-d83c-4a2f",
+        "name": "Biovores",
+        "role": "Infantry",
+        "costs": [
+          [
+            1,
+            50
+          ],
+          [
+            3,
+            100
+          ]
+        ],
+        "keywords": [
+          "Great Devourer",
+          "Biovore"
+        ],
+        "minModels": 1,
+        "maxModels": 3,
+        "wargear": [
+          "Chitin-barbed limbs",
+          "Spore mine launcher"
+        ],
+        "wargearOptions": []
+      },
+      {
+        "id": "9efd-5564-f0f5-21ea",
+        "name": "Carnifexes",
+        "role": "Monster",
+        "costs": [
+          [
+            1,
+            90
+          ],
+          [
+            2,
+            180
+          ]
+        ],
+        "keywords": [
+          "Great Devourer"
+        ],
+        "minModels": 1,
+        "maxModels": 2,
+        "wargear": [
+          "Chitinous claws and teeth",
+          "Bio-plasma",
+          "Spine banks"
+        ],
         "wargearOptions": []
       },
       {
@@ -38683,7 +55367,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bio-plasmic scream",
+          "Screamer-killer talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -38757,8 +55444,48 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Stinger salvoes",
+          "Powerful limbs"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Fleshborer Hive",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Rupture cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Rupture cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Fleshborer hive",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fleshborer hive"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Acid spray",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Acid spray"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "93aa-dd13-de9d-402b",
@@ -38776,7 +55503,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Scything wings",
+          "Stinger salvoes",
+          "Drool cannon",
+          "Tentaclids",
+          "Thorax spur"
+        ],
         "wargearOptions": []
       },
       {
@@ -38795,8 +55528,41 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Stinger salvoes",
+          "Scything wings",
+          "Twin stranglethorn cannon",
+          "Twin heavy venom cannon"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Stranglethorn Cannon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin stranglethorn cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin stranglethorn cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin heavy venom cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy venom cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2cdd-3bf1-55e0-7641",
@@ -38813,7 +55579,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Flensing whips",
+          "Sporocyst bio-weapon"
+        ],
         "wargearOptions": []
       },
       {
@@ -38832,7 +55601,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Psychoclastic torrent",
+          "Talons and betentacled maw"
+        ],
         "wargearOptions": []
       },
       {
@@ -38854,7 +55626,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Barblauncher",
+          "Chitinous claws and teeth"
+        ],
         "wargearOptions": []
       },
       {
@@ -38872,7 +55647,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Dire bio-cannon",
+          "Gargantuan scything talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -38891,7 +55669,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Bio-plasma torrent",
+          "Dire bio-cannon",
+          "Lashwhip pods",
+          "Titanic scything talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -38914,7 +55697,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 5,
         "maxModels": 10,
-        "wargear": [],
+        "wargear": [
+          "Genestealers claws and talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -38934,7 +55719,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Monstrous scything talons",
+          "Toxinjecter harpoon"
+        ],
         "wargearOptions": []
       },
       {
@@ -38954,7 +55742,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Monstrous rending claws",
+          "Monstrous scything talons",
+          "Psychic tendril"
+        ],
         "wargearOptions": []
       },
       {
@@ -38975,7 +55767,89 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
-        "wargearOptions": []
+        "wargearOptions": [
+          {
+            "name": "Monstrous Bonesword and Lash Whip",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Monstrous bonesword and lash whip",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Monstrous bonesword and lash whip"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Heavy venom cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy venom cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Stranglethorn cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Stranglethorn cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Monstrous scything talons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Monstrous scything talons"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Monstrous Scything Talons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Monstrous scything talons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Monstrous scything talons"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Stranglethorn cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Stranglethorn cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy venom cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy venom cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "31f9-9730-853c-6f13",
@@ -38993,7 +55867,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Rending claw",
+          "Lash whip",
+          "Scything talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -39015,8 +55893,56 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
-        "wargearOptions": []
+        "wargear": [
+          "Tyrant talons"
+        ],
+        "wargearOptions": [
+          {
+            "name": "Monstrous Bonesword and Lash Whip",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Monstrous scything talons",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Monstrous scything talons"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Stranglethorn cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Stranglethorn cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy venom cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy venom cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Monstrous bonesword and lash whip",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Monstrous bonesword and lash whip"
+                ],
+                "isDefault": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "9ce8-7a63-15c3-0347",
@@ -39039,7 +55965,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 10,
         "maxModels": 20,
-        "wargear": [],
+        "wargear": [
+          "Blinding venom",
+          "Fleshborer"
+        ],
         "wargearOptions": []
       },
       {
@@ -39059,7 +55988,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Prime talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -39078,7 +56009,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Lictor claws and talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -39098,7 +56031,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Lictor claws and talons"
+          "Lictor claws and talons",
+          "Mighty Champions"
         ],
         "wargearOptions": []
       },
@@ -39157,7 +56091,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "name": "Spinemaw",
             "groupMin": 0,
             "groupMax": 1,
-            "modelContext": "Ripper Swarm",
+            "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
@@ -39190,7 +56124,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Barbed ovipositor",
+          "Clawed limbs"
+        ],
         "wargearOptions": []
       },
       {
@@ -39209,7 +56146,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Distendible jaw",
+          "Mawloc scything talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -39229,7 +56169,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
-          "Trygon Character upgrade"
+          "Trygon Character upgrade",
+          "Bio-electric pulse",
+          "Trygon scything talons"
         ],
         "wargearOptions": []
       },
@@ -39249,7 +56191,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Flensing Whips",
+          "Tyrannocyte Bio-weapons"
+        ],
         "wargearOptions": []
       },
       {
@@ -39291,7 +56236,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Piercing claws and talons"
+        ],
         "wargearOptions": []
       },
       {
@@ -39312,6 +56259,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
+          "Prime claws and talons",
           "Ravener heavy claws and talons",
           "Venom bolt"
         ],
@@ -39334,7 +56282,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 1,
         "maxModels": 1,
-        "wargear": [],
+        "wargear": [
+          "Gaping maw",
+          "Scything talons",
+          "Mighty Champions"
+        ],
         "wargearOptions": []
       }
     ],
