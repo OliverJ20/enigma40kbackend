@@ -1,0 +1,41 @@
+name: Sync BSData catalogue
+
+on:
+  schedule:
+    # Every Monday at 03:00 UTC — BSData merges are most active on weekends
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+    # Also triggerable manually from Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run BSData sync
+        run: npm run sync:catalogue
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet src/data/catalogue.ts || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit updated catalogue
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/catalogue.ts src/lib/factions.ts
+          git commit -m "chore: sync BSData wh40k-10e catalogue [skip ci]"
+          git push
