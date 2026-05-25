@@ -195,11 +195,22 @@ function parseRestriction(description: string): {
   }
   if (keywords.length > 0) return { allowedKeywords: keywords, allowedUnitNames: [] };
 
-  const unitNames = text
-    .split(/\s+or\s+/i)
-    .map((s) => s.replace(/\*+/g, "").trim())
+  const parts = text
+    .split(/\s+or\s+|,\s*/i)
+    .map((s) => s.replace(/\*+/g, "").replace(/^or\s+/i, "").trim())
     .filter(Boolean);
-  return { allowedKeywords: [], allowedUnitNames: unitNames };
+
+  // All-caps tokens (e.g. "NECRONS", "ADEPTA SORORITAS") are faction/army keywords, not unit names.
+  // Convert to title case so they match unit keywords derived from "Faction: X" category links.
+  const allCaps = parts.every((p) => p === p.toUpperCase() && /[A-Z]/.test(p));
+  if (allCaps) {
+    const kwFromCaps = parts.map((p) =>
+      p.split(" ").map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(" "),
+    );
+    return { allowedKeywords: kwFromCaps, allowedUnitNames: [] };
+  }
+
+  return { allowedKeywords: [], allowedUnitNames: parts };
 }
 
 function ruleText(entry: any): { ruleName: string; rule: string } {
@@ -795,6 +806,19 @@ function extractWargearOptions(e: Record<string, any>): WargearGroup[] {
     extractOptionsFromModelSEGs(directSe, modelContext, groups);
   }
 
+  // Weapon choices inside squad-composition SEGs (e.g. Immortals: "Immortal" model SE
+  // lives inside the "5-10 Immortals" SEG and has an internal "Weapons" choice SEG).
+  for (const seg of (e["selectionEntryGroups"]?.["selectionEntryGroup"] ?? [])) {
+    const { min: segMin, max: segMax } = readSelectionConstraints(seg);
+    if (segMax === 0 && segMin === 0) continue; // container SEG, not squad
+    const seModels = (seg["selectionEntries"]?.["selectionEntry"] ?? []).filter(
+      (se: any) => se["@_type"] === "model",
+    );
+    for (const modelSe of seModels) {
+      extractOptionsFromModelSEGs(modelSe, "", groups);
+    }
+  }
+
   // Unit-level optional upgrade SEs (icons, banners — e.g. "Icon of Flame" on Rubric Marines).
   // These sit directly on the unit entry (not inside any model SE or SEG) with max≥1.
   for (const se of (e["selectionEntries"]?.["selectionEntry"] ?? [])) {
@@ -886,11 +910,15 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
   const role = mappedRole ?? "Infantry";
 
   const keywords = catLinks
-    .map((c: any) => String(c["@_name"]))
+    .map((c: any) => {
+      const raw = String(c["@_name"]);
+      // Strip "Faction: " prefix so "Faction: Necrons" → "Necrons",
+      // allowing enhancement eligibility checks to match faction-level restrictions.
+      return raw.startsWith("Faction: ") ? raw.slice("Faction: ".length) : raw;
+    })
     .filter(
       (n) =>
         !SKIP_CATEGORIES.has(n) &&
-        !n.startsWith("Faction:") &&
         !(n in ROLE_MAP) &&
         n !== name,
     );
@@ -922,6 +950,9 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
   // Build cost tiers from BSData modifiers (e.g. "atLeast 3 models → 95pts").
   // BSData stores multi-tier costs as a base pts value + cascading set-modifiers.
   const costTierMap = new Map<number, number>([[minModels, pts]]);
+  // Accepted self-reference scopes: literal "self" or the entry's own id.
+  // Some BSData authors write scope=<unit-id> instead of scope="self" (e.g. Necrons, Tyranids).
+  const selfIds = new Set(["self", String(e["@_id"] ?? ""), String(modsSource["@_id"] ?? "")]);
   const rawMods: any[] = modsSource["modifiers"]?.["modifier"] ?? [];
   const modsArr = Array.isArray(rawMods) ? rawMods : [rawMods];
   for (const mod of modsArr) {
@@ -934,7 +965,7 @@ function extractUnit(e: Record<string, any>): CatalogueUnit | null {
     for (const cond of condsArr) {
       if (cond["@_type"] !== "atLeast") continue;
       if (cond["@_field"] !== "selections") continue;
-      if (cond["@_scope"] !== "self") continue;
+      if (!selfIds.has(String(cond["@_scope"] ?? ""))) continue;
       const count = Math.round(parseFloat(String(cond["@_value"] ?? "0")));
       if (count > 0) costTierMap.set(count, modPts);
     }

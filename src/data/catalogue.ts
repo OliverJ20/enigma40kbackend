@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-05-18T11:23:31.049Z
+// Last synced: 2026-05-25T01:11:00.678Z
 
 export interface WargearVariant {
   name: string;
@@ -76,7 +76,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             70
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 2,
         "maxModels": 2,
         "wargear": [
@@ -97,10 +99,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            90
+            140
           ]
         ],
         "keywords": [
+          "Adepta Sororitas",
           "Penitent"
         ],
         "minModels": 3,
@@ -120,7 +123,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             105
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
@@ -195,7 +200,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -340,7 +347,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -393,7 +402,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -450,7 +461,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             85
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 2,
         "maxModels": 2,
         "wargear": [
@@ -470,7 +483,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             40
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -489,7 +504,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             45
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -508,7 +525,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
@@ -560,6 +579,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Dominion Special Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Artificer-crafted storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Artificer-crafted storm bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ministorum Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum Flamer"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -573,7 +628,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             210
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -638,7 +695,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -657,7 +716,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -677,7 +738,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             115
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -752,7 +815,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             80
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -777,6 +842,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adepta Sororitas",
           "Penitent"
         ],
         "minModels": 1,
@@ -802,7 +868,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             185
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -823,7 +891,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             50
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -871,7 +941,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             210
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 3,
         "maxModels": 3,
         "wargear": [
@@ -1081,6 +1153,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adepta Sororitas",
           "Penitent"
         ],
         "minModels": 1,
@@ -1104,6 +1177,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adepta Sororitas",
           "Penitent"
         ],
         "minModels": 1,
@@ -1153,11 +1227,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            150
+            160
           ]
         ],
         "keywords": [
-          "Penitent"
+          "Penitent",
+          "Adepta Sororitas"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -1178,7 +1253,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
@@ -1204,6 +1281,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Retributor Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Ministorum heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": true
+              }
+            ]
           }
         ]
       },
@@ -1218,6 +1331,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adepta Sororitas",
           "Jump Pack"
         ],
         "minModels": 1,
@@ -1242,6 +1356,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adepta Sororitas",
           "Jump Pack"
         ],
         "minModels": 5,
@@ -1348,6 +1463,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Special Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "2x Ministorum Hand Flamers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2x Ministorum Hand Flamers"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "2x Inferno Pistols",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "2x Inferno Pistols"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -1361,7 +1503,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             100
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
@@ -1461,7 +1605,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             75
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -1497,7 +1643,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             235
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -1522,6 +1670,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adepta Sororitas",
           "Jump Pack"
         ],
         "minModels": 5,
@@ -1573,6 +1722,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Canoness",
+          "Adepta Sororitas",
           "Jump Pack"
         ],
         "minModels": 1,
@@ -1631,7 +1781,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             110
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 9,
         "maxModels": 9,
         "wargear": [
@@ -1658,7 +1810,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adepta Sororitas"
+        ],
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
@@ -1775,6 +1929,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adepta Sororitas",
           "Penitent"
         ],
         "minModels": 1,
@@ -1829,10 +1984,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "army-of-faith",
         "points": 5,
         "description": "ADEPTA SORORITAS model only. In your Movement phase, you can select one enemy unit within 12\" of that bearer; that unit must take a Battle-shock test. If that test is failed, you gain 1 Miracle dice.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "army-of-faith__triptych-of-the-macharian-crusade",
@@ -1840,10 +1995,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "army-of-faith",
         "points": 20,
         "description": "ADEPTA SORORITAS model only. Each time the bearer uses an Act of Faith to substitute a saving throw, that saving throw is successful, irrespective of the value of the Miracle dice used.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "army-of-faith__blade-of-saint-ellynor",
@@ -1851,10 +2006,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "army-of-faith",
         "points": 15,
         "description": "ADEPTA SORORITAS model only. Improve the Strength and Armour Penetration characteristics of the bearer's melee weapons by 1, and those weapons have the [Precision] ability. In addition, each time the bearer fights, if one or more enemy models is destroyed by those attacks, you gain 1 Miracle dice.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "army-of-faith__litanies-of-faith",
@@ -1862,11 +2017,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "army-of-faith",
         "points": 10,
         "description": "CANONESS or PALATINE model only. At the start of your Command phase, if the bearer is on the battlefield, take a Leadership test for the bearer. If that test is passed, you gain 1 Miracle dice.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "CANONESS",
-          "PALATINE"
-        ]
+        "allowedKeywords": [
+          "Canoness",
+          "Palatine"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "hallowed-martyrs__saintly-example",
@@ -1874,10 +2029,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "hallowed-martyrs",
         "points": 10,
         "description": "ADEPTA SORORITAS model only. When the bearer is destroyed, you gain an additional D3 Miracle dice.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "hallowed-martyrs__through-suffering-strength",
@@ -1896,10 +2051,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "hallowed-martyrs",
         "points": 25,
         "description": "ADEPTA SORORITAS model only. At the end of your Command phase, if the bearer is on the battlefield, you can re-roll one Miracle dice from your Miracle dice pool and return it to your Miracle dice pool with the new result you rolled. When doing so, if the bearer's unit is below its Starting Strength, you can re-roll up to 3 Miracle dice in this way instead.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "hallowed-martyrs__mantle-of-ophelia",
@@ -1919,11 +2074,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "penitent-host",
         "points": 20,
         "description": "CANONESS, PALATINE, or MINISTORUM PRIEST model only. The bearer gains the PENITENT keyword and, during the Declare Battle Formations step, can be attached to a REPENTIA SQUAD unit.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "CANONESS, PALATINE,",
-          "MINISTORUM PRIEST"
-        ]
+        "allowedKeywords": [
+          "Canoness",
+          "Palatine",
+          "Ministorum Priest"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "penitent-host__psalm-of-righteous-judgement",
@@ -1931,10 +2087,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "penitent-host",
         "points": 30,
         "description": "ADEPTA SORORITAS model only. While the bearer is on the battlefield, each time an enemy unit is destroyed by a PENITENT unit from your army, you can discard 1 Miracle dice to gain 1 Miracle dice showing a value of 6.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "penitent-host__verse-of-holy-piety",
@@ -1942,10 +2098,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "penitent-host",
         "points": 15,
         "description": "PENITENT model only. Once per battle, at the start of the battle round, select one Vow of Atonement. Until the start of the next battle round, that Vow of Atonement is active for the bearer's unit in addition to any that is active for your army, even if you have already selected that Vow of Atonement this battle.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "PENITENT"
-        ]
+        "allowedKeywords": [
+          "Penitent"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "penitent-host__refrain-of-enduring-faith",
@@ -1953,10 +2109,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "penitent-host",
         "points": 25,
         "description": "PENITENT model only. While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "PENITENT"
-        ]
+        "allowedKeywords": [
+          "Penitent"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "bringers-of-flame__iron-surplice-of-saint-istalela",
@@ -1964,11 +2120,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "bringers-of-flame",
         "points": 10,
         "description": "CANONESS or PALATINE model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "CANONESS",
-          "PALATINE"
-        ]
+        "allowedKeywords": [
+          "Canoness",
+          "Palatine"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "bringers-of-flame__righteous-rage",
@@ -1987,10 +2143,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "bringers-of-flame",
         "points": 20,
         "description": "ADEPTA SORORITAS model only. At the start of your Command phase, you can discard up to 2 Miracle dice. Then, add 1 Miracle dice to your Miracle Dice pool showing a value equal to the sum of the two Miracle dice you discarded (to a maximum of 6).",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "bringers-of-flame__fire-and-fury",
@@ -2009,10 +2165,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "champions-of-faith",
         "points": 15,
         "description": "ADEPTA SORORITAS model only. Each time a model in the bearer’s unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristics and/or any or all modifiers to the Hit roll.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "champions-of-faith__mark-of-devotion",
@@ -2031,10 +2187,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "champions-of-faith",
         "points": 10,
         "description": "ADEPTA SORORITAS model only. The bearer’s weapons have the [PRECISION] ability. Each time the bearer’s unit destroys an enemy Character model, you gain 1CP.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "champions-of-faith__sanctified-amulet",
@@ -2042,10 +2198,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "champions-of-faith",
         "points": 25,
         "description": "ADEPTA SORORITAS model only. Enemy units that are set up on the battlefield from Reserves cannot be set up within 12\" of the bearer",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTA SORORITAS"
-        ]
+        "allowedKeywords": [
+          "Adepta Sororitas"
+        ],
+        "allowedUnitNames": []
       }
     ]
   },
@@ -2062,7 +2218,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Anathema Psykana"
+          "Anathema Psykana",
+          "Adeptus Custodes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -2082,11 +2239,20 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             110
           ],
           [
+            3,
+            165
+          ],
+          [
+            5,
+            275
+          ],
+          [
             6,
-            220
+            330
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "Terminator"
         ],
         "minModels": 2,
@@ -2151,7 +2317,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Rhino",
-          "Anathema Psykana"
+          "Anathema Psykana",
+          "Adeptus Custodes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -2188,7 +2355,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -2207,10 +2376,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             5,
-            320
+            200
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 4,
         "maxModels": 5,
         "wargear": [
@@ -2273,7 +2444,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             420
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 4,
         "maxModels": 5,
         "wargear": [
@@ -2317,6 +2490,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Guardian Spear",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Guardian Spear"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Castellan Axe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Castellan Axe"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -2331,6 +2531,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "Anathema Psykana"
         ],
         "minModels": 1,
@@ -2394,6 +2595,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "Anathema Psykana"
         ],
         "minModels": 4,
@@ -2414,7 +2616,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -2493,7 +2697,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator",
-          "Shield-Captain"
+          "Shield-Captain",
+          "Adeptus Custodes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -2544,6 +2749,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Dawneagle Jetbike",
+          "Adeptus Custodes",
           "Shield-Captain"
         ],
         "minModels": 1,
@@ -2593,7 +2799,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -2614,6 +2822,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "Shield-Captain"
         ],
         "minModels": 1,
@@ -2635,6 +2844,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "AC Walker"
         ],
         "minModels": 1,
@@ -2685,7 +2895,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             220
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -2743,7 +2955,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             300
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 2,
         "maxModels": 3,
         "wargear": [
@@ -2798,7 +3012,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Anathema Psykana"
+          "Anathema Psykana",
+          "Adeptus Custodes"
         ],
         "minModels": 4,
         "maxModels": 10,
@@ -2822,6 +3037,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "Anathema Psykana"
         ],
         "minModels": 4,
@@ -2843,7 +3059,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Custodian Guard"
+          "Custodian Guard",
+          "Adeptus Custodes"
         ],
         "minModels": 5,
         "maxModels": 5,
@@ -2891,7 +3108,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             225
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
@@ -2915,6 +3134,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "Terminator"
         ],
         "minModels": 3,
@@ -2988,7 +3208,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             450
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
@@ -3054,7 +3276,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Jump Pack"
+          "Jump Pack",
+          "Adeptus Custodes"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -3105,6 +3328,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "AC Walker"
         ],
         "minModels": 1,
@@ -3125,6 +3349,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "AC Walker"
         ],
         "minModels": 1,
@@ -3184,7 +3409,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             105
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -3203,7 +3430,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             215
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -3253,6 +3482,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Custodes",
           "AC Walker"
         ],
         "minModels": 1,
@@ -3313,7 +3543,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             200
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -3333,7 +3565,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             690
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -3354,7 +3588,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             580
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Custodes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -3482,10 +3718,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "solar-spearhead",
         "points": 35,
         "description": "ADEPTUS CUSTODES model only. The bearer has the Feel No Pain 5+ ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS CUSTODES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Custodes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "solar-spearhead__adamantine-talisman",
@@ -3513,6 +3749,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 1,
@@ -3564,7 +3801,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Skitarii"
+          "Skitarii",
+          "Adeptus Mechanicus"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -3617,6 +3855,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 1,
@@ -3669,6 +3908,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tech-Priest",
+          "Adeptus Mechanicus",
           "Cult Mechanicus"
         ],
         "minModels": 1,
@@ -3699,6 +3939,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Electro-Priests",
           "Corpuscarii",
+          "Adeptus Mechanicus",
           "Cult Mechanicus"
         ],
         "minModels": 5,
@@ -3725,6 +3966,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Electro-Priests",
           "Fulgurite",
+          "Adeptus Mechanicus",
           "Cult Mechanicus"
         ],
         "minModels": 5,
@@ -3749,6 +3991,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Legio Cybernetica"
         ],
         "minModels": 2,
@@ -3843,6 +4086,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Breachers",
           "Kataphron",
+          "Adeptus Mechanicus",
           "Cult Mechanicus"
         ],
         "minModels": 3,
@@ -3905,6 +4149,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Destroyers",
           "Kataphron",
+          "Adeptus Mechanicus",
           "Cult Mechanicus"
         ],
         "minModels": 3,
@@ -3961,7 +4206,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Skitarii"
+          "Skitarii",
+          "Adeptus Mechanicus"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -4070,6 +4316,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Skystalkers",
+          "Adeptus Mechanicus",
           "Jump Pack",
           "Skitarii",
           "Pteraxii"
@@ -4102,6 +4349,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Sterylizors",
           "Jump Pack",
           "Skitarii",
+          "Adeptus Mechanicus",
           "Pteraxii"
         ],
         "minModels": 5,
@@ -4129,6 +4377,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 3,
@@ -4187,6 +4436,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 3,
@@ -4246,6 +4496,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii",
           "Sicarian",
           "Infiltrators"
@@ -4335,6 +4586,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Ruststalkers",
+          "Adeptus Mechanicus",
           "Skitarii",
           "Sicarian"
         ],
@@ -4414,6 +4666,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Marshal",
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 1,
@@ -4436,6 +4689,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Rangers",
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 10,
@@ -4557,6 +4811,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Vanguard",
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 10,
@@ -4677,6 +4932,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 1,
@@ -4729,6 +4985,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 1,
@@ -4751,6 +5008,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Dominus",
+          "Adeptus Mechanicus",
           "Tech-Priest",
           "Cult Mechanicus"
         ],
@@ -4832,6 +5090,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Enginseer",
+          "Adeptus Mechanicus",
           "Tech-Priest",
           "Cult Mechanicus"
         ],
@@ -4856,6 +5115,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Manipulus",
+          "Adeptus Mechanicus",
           "Tech-Priest",
           "Cult Mechanicus"
         ],
@@ -4907,6 +5167,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Tech-Priest",
           "Cult Mechanicus"
         ],
@@ -4930,6 +5191,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tech-Priest",
+          "Adeptus Mechanicus",
           "Legio Cybernetica"
         ],
         "minModels": 1,
@@ -4953,6 +5215,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Skitarii",
           "Sydonian",
+          "Adeptus Mechanicus",
           "Skatros"
         ],
         "minModels": 1,
@@ -4970,11 +5233,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             55
           ],
           [
+            2,
+            100
+          ],
+          [
             3,
-            110
+            150
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii",
           "Sydonian",
           "Dragoons with Radium Jezzails"
@@ -5016,6 +5284,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Cult Mechanicus"
         ],
         "minModels": 9,
@@ -5080,6 +5349,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tech-Priest",
+          "Adeptus Mechanicus",
           "Cult Mechanicus"
         ],
         "minModels": 1,
@@ -5102,6 +5372,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii",
           "Hastarii",
           "Exterminators"
@@ -5148,6 +5419,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Mechanicus",
           "Skitarii",
           "Hastarii",
           "Fusiliers"
@@ -5292,6 +5564,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 5,
@@ -5350,7 +5623,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             450
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -5375,7 +5650,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             420
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -5397,7 +5674,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             450
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -5420,6 +5699,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Squadron"
         ],
@@ -5447,7 +5727,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Ogryn"
+          "Ogryn",
+          "Astra Militarum"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -5476,6 +5757,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": true
               }
             ]
+          },
+          {
+            "name": "Slabshield",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Slabshield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Slabshield"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Brute shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Brute shield"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Grenadier Gauntlet",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bullgryn maul",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bullgryn maul"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grenadier gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grenadier gauntlet"
+                ],
+                "isDefault": true
+              }
+            ]
           }
         ]
       },
@@ -5490,6 +5825,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer"
         ],
         "minModels": 1,
@@ -5593,6 +5929,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Command Squad",
           "Cadian",
           "Platoon"
@@ -5633,6 +5970,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment",
           "Platoon",
           "Cadian"
@@ -5653,6 +5991,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -5674,6 +6013,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer"
         ],
         "minModels": 1,
@@ -5750,6 +6090,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment",
           "Platoon"
         ],
@@ -5769,6 +6110,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron",
           "Artillery"
         ],
@@ -5791,7 +6133,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             415
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -5814,6 +6158,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Regiment"
         ],
@@ -5885,7 +6230,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             100
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 6,
         "maxModels": 6,
         "wargear": [
@@ -5912,6 +6259,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 3,
@@ -6002,7 +6350,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             420
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -6028,6 +6378,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6140,6 +6491,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6162,6 +6514,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 10,
@@ -6307,6 +6660,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6329,6 +6683,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6351,6 +6706,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6373,6 +6729,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6395,6 +6752,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6417,6 +6775,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6439,6 +6798,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer"
         ],
         "minModels": 1,
@@ -6462,6 +6822,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Squadron"
         ],
@@ -6486,6 +6847,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Militarum Tempestus",
+          "Astra Militarum",
           "Command Squad"
         ],
         "minModels": 5,
@@ -6551,6 +6913,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Hot-shot Lasgun",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grenade launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hot-shot volley gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hot-shot volley gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hot-shot lasgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hot-shot lasgun"
+                ],
+                "isDefault": true
+              }
+            ]
           }
         ]
       },
@@ -6565,6 +6990,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Ogryn",
           "Loyal Protector"
         ],
@@ -6589,6 +7015,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Bodyguard",
+          "Astra Militarum",
           "Loyal Protector",
           "Ogryn"
         ],
@@ -6689,6 +7116,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Ogryn"
         ],
         "minModels": 3,
@@ -6709,6 +7137,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Psyker"
         ],
         "minModels": 1,
@@ -6730,7 +7159,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             45
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -6751,6 +7182,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -6885,7 +7317,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             410
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -6908,6 +7342,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 1,
@@ -6929,7 +7364,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             430
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -6953,6 +7390,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer",
           "Squadron"
         ],
@@ -7175,6 +7613,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -7196,6 +7635,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -7221,6 +7661,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment",
           "Militarum Tempestus"
         ],
@@ -7406,6 +7847,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer"
         ],
         "minModels": 1,
@@ -7427,7 +7869,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             190
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -7447,6 +7891,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Squadron"
         ],
@@ -7470,6 +7915,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Platoon",
           "Regiment"
         ],
@@ -7488,7 +7934,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             465
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -7514,6 +7962,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 5,
@@ -7536,7 +7985,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             25
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
@@ -7552,7 +8003,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             130
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -7574,6 +8027,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -7597,7 +8051,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Regiment",
-          "Militarum Tempestus"
+          "Militarum Tempestus",
+          "Astra Militarum"
         ],
         "minModels": 10,
         "maxModels": 10,
@@ -7673,6 +8128,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Special weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Plasma carbine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma carbine"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Melta carbine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Melta carbine"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -7690,7 +8172,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             100
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 10,
         "wargear": [
@@ -7741,6 +8225,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer"
         ],
         "minModels": 1,
@@ -7764,6 +8249,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Command Squad",
           "Platoon",
           "Krieg"
@@ -7801,6 +8287,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Command Squad",
           "Platoon",
           "Catachan"
@@ -7966,6 +8453,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Regiment"
         ],
@@ -8038,6 +8526,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron",
           "Officer"
         ],
@@ -8173,7 +8662,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             35
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -8225,6 +8716,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 5,
@@ -8303,6 +8795,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 4,
@@ -8370,6 +8863,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 3,
@@ -8461,6 +8955,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer",
           "Squadron"
         ],
@@ -8487,6 +8982,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Commissar Graves"
         ],
         "minModels": 1,
@@ -8509,6 +9005,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer"
         ],
         "minModels": 1,
@@ -8534,6 +9031,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -8555,6 +9053,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 10,
@@ -9126,6 +9625,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator",
+          "Grey Knights",
           "Psyker"
         ],
         "minModels": 1,
@@ -9192,7 +9692,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Psyker"
+          "Psyker",
+          "Grey Knights"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -9213,6 +9714,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Grey Knights",
           "Terminator",
           "Psyker"
         ],
@@ -9235,6 +9737,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Grey Knights",
           "Terminator",
           "Psyker"
         ],
@@ -9286,7 +9789,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Psyker"
+          "Psyker",
+          "Grey Knights"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -9308,12 +9812,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             150
           ],
           [
-            10,
+            5,
+            185
+          ],
+          [
+            8,
             300
+          ],
+          [
+            10,
+            375
           ]
         ],
         "keywords": [
           "Psyker",
+          "Grey Knights",
           "Terminator"
         ],
         "minModels": 4,
@@ -9394,6 +9907,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psycannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psilencer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Heavy Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psilencer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psycannon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -9408,6 +10002,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Grey Knights",
           "Psyker"
         ],
         "minModels": 1,
@@ -9432,6 +10027,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Grey Knights",
           "Terminator"
         ],
         "minModels": 1,
@@ -9498,7 +10094,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Psyker"
+          "Psyker",
+          "Grey Knights"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -9633,6 +10230,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Grey Knights",
           "Terminator"
         ],
         "minModels": 1,
@@ -9655,7 +10253,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             220
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -9724,7 +10324,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             220
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -9793,7 +10395,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             270
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -9862,7 +10466,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             85
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -9940,7 +10546,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             80
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -9976,7 +10584,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -10061,7 +10671,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             280
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -10172,7 +10784,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             170
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -10238,6 +10852,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Grey Knights",
           "Psyker"
         ],
         "minModels": 1,
@@ -10327,7 +10942,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Psyker"
+          "Psyker",
+          "Grey Knights"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -10407,7 +11023,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Psyker"
+          "Psyker",
+          "Grey Knights"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -10497,12 +11114,21 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             180
           ],
           [
-            10,
+            5,
+            225
+          ],
+          [
+            8,
             360
+          ],
+          [
+            10,
+            450
           ]
         ],
         "keywords": [
           "Psyker",
+          "Grey Knights",
           "Terminator"
         ],
         "minModels": 4,
@@ -10564,6 +11190,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psycannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psilencer"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psycannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psilencer"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -10582,7 +11289,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Psyker"
+          "Psyker",
+          "Grey Knights"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -10666,6 +11374,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Grey Knights",
           "Psyker"
         ],
         "minModels": 5,
@@ -10796,6 +11505,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Grey Knights",
           "Psyker"
         ],
         "minModels": 5,
@@ -10833,6 +11543,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon Choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psycannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psilencer"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -10847,7 +11593,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Thunderhawk Gunship"
+          "Thunderhawk Gunship",
+          "Grey Knights"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -10927,7 +11674,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             255
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Grey Knights"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -11610,6 +12359,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "max": 1,
                 "weapons": [
                   "Bolt pistol and power weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Navis las-volley",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Navis las-volley"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
                 ],
                 "isDefault": false
               }
@@ -12316,6 +13101,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Incinerator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Incinerator"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psilencer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psilencer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Psycannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Psycannon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -12632,6 +13453,105 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "max": 1,
                 "weapons": [
                   "Bolt pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Ministorum heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Artificer-crafted storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Artificer-crafted storm bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ministorum flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Artificer-crafted storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Artificer-crafted storm bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Ministorum flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Ministorum flamer"
                 ],
                 "isDefault": false
               }
@@ -13216,6 +14136,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Manipulus",
+          "Adeptus Mechanicus",
           "Tech-Priest",
           "Cult Mechanicus"
         ],
@@ -13268,6 +14189,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Marshal",
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 1,
@@ -13290,6 +14212,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Rangers",
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 10,
@@ -13411,6 +14334,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Vanguard",
+          "Adeptus Mechanicus",
           "Skitarii"
         ],
         "minModels": 10,
@@ -13532,6 +14456,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Dominus",
+          "Adeptus Mechanicus",
           "Tech-Priest",
           "Cult Mechanicus"
         ],
@@ -13877,6 +14802,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Captain",
+          "Adeptus Astartes",
           "Gravis"
         ],
         "minModels": 1,
@@ -13927,7 +14853,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Captain",
-          "Phobos"
+          "Phobos",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -13950,6 +14877,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Captain",
+          "Adeptus Astartes",
           "Terminator"
         ],
         "minModels": 1,
@@ -14026,6 +14954,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Captain",
+          "Adeptus Astartes",
           "Jump Pack",
           "Tacticus"
         ],
@@ -14090,7 +15019,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -14148,6 +15078,123 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt Rifle w/ Grenade Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Rifle w/ Grenade Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hand flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hand flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt Rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt Rifle"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Weapon 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Thunder Hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunder Hammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Close combat weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Close combat weapon"
+                ],
+                "isDefault": true
+              }
+            ]
           }
         ]
       },
@@ -14166,6 +15213,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Tacticus"
         ],
         "minModels": 5,
@@ -14224,6 +15272,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Tacticus"
         ],
         "minModels": 5,
@@ -14263,6 +15312,87 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hand flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hand flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy Bolt Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolt Pistol"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Weapon 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Astartes Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Thunder Hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunder Hammer"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -14281,7 +15411,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Gravis"
+          "Gravis",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -14351,7 +15482,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Phobos"
+          "Phobos",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -14441,7 +15573,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Phobos"
+          "Phobos",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -14479,7 +15612,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
@@ -14554,6 +15689,294 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Astartes Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Grav-pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Thunder Hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunder Hammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Astartes Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Storm bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Thunder Hammer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunder Hammer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grav-gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-gun"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grav-gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grav-cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-cannon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -14571,7 +15994,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -14657,6 +16082,78 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combat Knife",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combat Knife"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes Shotgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Shotgun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Boltgun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Boltgun"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile Launcher"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -14671,11 +16168,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             6,
-            160
+            170
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -14713,6 +16211,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Pistol Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Neo-volkite Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Neo-volkite Pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy Bolt Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolt Pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -14731,6 +16265,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Jump Pack",
           "Vanguard Veteran Squad"
         ],
@@ -14770,6 +16305,132 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Pistol Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm Shield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno Pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hand flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hand flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grav-pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-pistol"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Storm Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Storm Shield"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Inferno Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Inferno Pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Hand flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hand flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grav-pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -14788,7 +16449,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -14849,6 +16511,96 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Sternguard Bolt Rifle",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sternguard Bolt Rifle"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Melee Option",
+            "groupMin": 0,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Astartes Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Sternguard Heavy Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Sternguard Heavy Bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Pyrecannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Pyrecannon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -14867,7 +16619,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Phobos"
+          "Phobos",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -14927,7 +16680,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Gravis"
+          "Gravis",
+          "Adeptus Astartes"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -14953,7 +16707,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Terminator"
+          "Terminator",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -14998,6 +16753,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Thunder Hammer & Storm Shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Thunder Hammer & Storm Shield"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin Lightning Claws",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin Lightning Claws"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -15016,7 +16798,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Terminator"
+          "Terminator",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -15074,6 +16857,105 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainfist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Ranged Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Cyclone Missile Launcher & Storm Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Cyclone Missile Launcher & Storm Bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Assault Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Assault Cannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Melee Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainfist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -15092,6 +16974,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Centurion"
         ],
         "minModels": 3,
@@ -15128,6 +17011,114 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Centurion Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Centurion Assault Launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Centurion Assault Launchers"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Centurion Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Centurion Bolters"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin meltagun"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Centurion Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Centurion Assault Launchers",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Centurion Assault Launchers"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Centurion Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Centurion Bolters"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Twin flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin meltagun"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -15146,7 +17137,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Centurion"
+          "Centurion",
+          "Adeptus Astartes"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -15183,6 +17175,132 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Centurion Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Centurion Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Centurion Bolters"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Centurion missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Centurion missile launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Grav-cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Centurion Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Centurion Bolters",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Centurion Bolters"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Centurion missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Centurion missile launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Grav-cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Twin heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Twin lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Twin lascannon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -15197,6 +17315,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Phobos"
         ],
         "minModels": 1,
@@ -15249,7 +17368,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             135
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -15352,6 +17473,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Dreadnought"
         ],
         "minModels": 1,
@@ -15472,6 +17594,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Dreadnought"
         ],
         "minModels": 1,
@@ -15495,6 +17618,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Dreadnought"
         ],
         "minModels": 1,
@@ -15571,7 +17695,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -15623,7 +17749,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
@@ -15676,7 +17804,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Jump Pack"
+          "Jump Pack",
+          "Adeptus Astartes"
         ],
         "minModels": 3,
         "maxModels": 3,
@@ -15703,7 +17832,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Jump Pack",
-          "Gravis"
+          "Gravis",
+          "Adeptus Astartes"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -15724,7 +17854,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             115
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -15745,7 +17877,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             135
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -15766,7 +17900,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             125
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -15792,6 +17928,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Tacticus"
         ],
         "minModels": 5,
@@ -15831,6 +17968,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Pistol Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -15845,7 +18009,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Phobos"
+          "Phobos",
+          "Adeptus Astartes"
         ],
         "minModels": 3,
         "maxModels": 3,
@@ -15872,7 +18037,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Gravis"
+          "Gravis",
+          "Adeptus Astartes"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -15941,7 +18107,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             200
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -15985,6 +18153,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": true
               }
             ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy Bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grav-cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grav-cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Multi-melta",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Multi-melta"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile Launcher"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -15999,7 +18230,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 5,
@@ -16042,6 +18274,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Superfrag Rocket Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Superfrag Rocket Launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Superkrak Rocket Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Superkrak Rocket Launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon Option",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Superfrag Rocket Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Superfrag Rocket Launcher"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Superkrak Rocket Launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Superkrak Rocket Launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Vengor launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Vengor launcher"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -16055,7 +18350,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             190
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16107,7 +18404,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16188,7 +18487,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             135
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16269,7 +18570,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16350,7 +18653,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16403,7 +18708,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             150
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16456,7 +18763,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             185
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16508,7 +18817,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             220
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16578,6 +18889,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Land Raider"
         ],
         "minModels": 1,
@@ -16649,6 +18961,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Land Raider"
         ],
         "minModels": 1,
@@ -16719,7 +19032,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             180
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16794,7 +19109,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             230
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16877,7 +19194,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             75
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16913,7 +19232,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             95
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -16991,7 +19312,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             80
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -17119,7 +19442,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             155
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -17203,7 +19528,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             165
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -17269,7 +19596,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             280
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -17380,7 +19709,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -17430,6 +19760,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phobos",
+          "Adeptus Astartes",
           "Lieutenant"
         ],
         "minModels": 1,
@@ -17452,6 +19783,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phobos",
+          "Adeptus Astartes",
           "Lieutenant"
         ],
         "minModels": 1,
@@ -17475,6 +19807,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Adeptus Astartes",
           "Tacticus"
         ],
         "minModels": 1,
@@ -17498,6 +19831,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Adeptus Astartes",
           "Phobos",
           "Librarian"
         ],
@@ -17523,7 +19857,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Terminator",
-          "Librarian"
+          "Librarian",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -17572,7 +19907,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -17594,7 +19930,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator",
-          "Chaplain"
+          "Chaplain",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -17642,7 +19979,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Chaplain"
+          "Chaplain",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -17665,6 +20003,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Chaplain",
+          "Adeptus Astartes",
           "Jump Pack"
         ],
         "minModels": 1,
@@ -17776,7 +20115,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -17799,6 +20139,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Phobos",
           "Lieutenant"
         ],
@@ -17821,6 +20162,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Tacticus"
         ],
         "minModels": 1,
@@ -17844,6 +20186,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Gravis",
+          "Adeptus Astartes",
           "Apothecary",
           "Biologis"
         ],
@@ -17866,7 +20209,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -17915,6 +20259,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Adeptus Astartes",
           "Tacticus",
           "Ancient"
         ],
@@ -17938,7 +20283,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Terminator",
-          "Ancient"
+          "Ancient",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -17997,7 +20343,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -18018,7 +20365,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -18076,7 +20424,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             525
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -18154,7 +20504,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             840
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Adeptus Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -18234,12 +20586,13 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            180
+            170
           ]
         ],
         "keywords": [
           "Tacticus",
-          "Jump Pack"
+          "Jump Pack",
+          "Adeptus Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -18287,6 +20640,78 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon 1",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Hand flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hand flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy Bolt Pistol",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy Bolt Pistol"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Weapon 2",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Astartes Chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Astartes Chainsword"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Power weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power weapon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -18301,7 +20726,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Tacticus"
+          "Tacticus",
+          "Adeptus Astartes"
         ],
         "minModels": 4,
         "maxModels": 4,
@@ -18549,7 +20975,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "id": "armoured-speartip",
         "name": "Armoured Speartip",
         "ruleName": "Rapid Deployment",
-        "rule": "Each time an Adeptus Astartes unit from your army disembarks from a Transport (excluding Aircraft) that made a Normal or Advance move this phase, that disembarked unit can make a Normal move of up to D6\", or a Normal move of up to D3+3\" instead if that Transport is a Heavy Transport (see below)\n\n\nAdeptus Astartes Transport units from your army (excluding Aircraft) that have a Wounds characteristic of 14+ have the Heavy Transport keyword."
+        "rule": "Each time an Adeptus Astartes unit from your army disembarks from a Transport (excluding Fly) that made a Normal or Advance move this phase (excluding those that arrived from Strategic Reserves), that disembarked unit can\nmake a Normal move of up to D6\", or a Normal move of up to D3+3\" instead if that Transport is a Heavy Transport\n(see below).\n\n\nAdeptus Astartes Transport units from your army (excluding FLY) that have a Wounds characteristic of 14+ have the Heavy Transport keyword."
       },
       {
         "id": "headhunter-task-force",
@@ -18664,10 +21090,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "black-spear-task-force",
         "points": 25,
         "description": "ADEPTUS ASTARTES model only. Models in the bearer’s unit have the Deep Strike ability. In addition, you can target the bearer’s unit with the Rapid Ingress Stratagem for 0CP.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "black-spear-task-force__osseus-key",
@@ -18675,11 +21101,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "black-spear-task-force",
         "points": 15,
         "description": "WATCH MASTER or TECHMARINE model only. At the start of your opponent’s Shooting phase, select one enemy VEHICLE unit (excluding TITANIC units) within 12\" of and visible to the bearer. That model must take a Leadership test. If that test is passed, until the end of the phase, each time a model in that unit makes an attack, subtract 1 from the Hit roll; if that test is failed, that unit is not eligible to shoot this phase.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "WATCH MASTER",
-          "TECHMARINE"
-        ]
+        "allowedKeywords": [
+          "Watch Master",
+          "Techmarine"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "black-spear-task-force__the-tome-of-ectoclades",
@@ -18687,11 +21113,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "black-spear-task-force",
         "points": 30,
         "description": "WATCH MASTER or CAPTAIN model only. Once per battle, after you have selected your Oath of Moment target, the bearer can use this Enhancement. If it does, select a second enemy unit to be an Oath of Moment target. \n\n\n**Designer’s Note:** *This means that each time a model with the Oath of Moment ability makes an attack that targets either of your Oath of Moment targets, you can re-roll the Hit roll.*",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "WATCH MASTER",
-          "CAPTAIN"
-        ]
+        "allowedKeywords": [
+          "Watch Master",
+          "Captain"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "unforgiven-task-force__shroud-of-heroes",
@@ -18842,10 +21268,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "ironstorm-spearhead",
         "points": 20,
         "description": "ADEPTUS ASTARTES model only. In your Command phase, select one ADEPTUS ASTARTES VEHICLE within 6\" of the bearer. Until the start of your next Command phase, that VEHICLE is eligible to shoot even if it Fell Back or Advanced this turn.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "ironstorm-spearhead__target-augury-web",
@@ -18853,10 +21279,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "ironstorm-spearhead",
         "points": 30,
         "description": "TECHMARINE model only. In your Command phase, select one ADEPTUS ASTARTES VEHICLE model within 6\" of the bearer. Until the start of your next Command phase, weapons equipped by that VEHICLE have the [Lethal Hits] ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "TECHMARINE"
-        ]
+        "allowedKeywords": [
+          "Techmarine"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "ironstorm-spearhead__the-flesh-is-weak",
@@ -19007,10 +21433,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "company-of-hunters",
         "points": 10,
         "description": "RAVENWING model only. Melee weapons equipped by the bearer have the Precision ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "RAVENWING"
-        ]
+        "allowedKeywords": [
+          "Ravenwing"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "company-of-hunters__mounted-strategist",
@@ -19018,10 +21444,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "company-of-hunters",
         "points": 30,
         "description": "RAVENWING model only. You can re‑roll Advance and Charge rolls made for the bearer’s unit.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "RAVENWING"
-        ]
+        "allowedKeywords": [
+          "Ravenwing"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "company-of-hunters__master-of-manoeuvre",
@@ -19029,10 +21455,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "company-of-hunters",
         "points": 15,
         "description": "RAVENWING model only. If the bearer's unit starts the battle in Strategic Reserves, its points value does not count towards the combined points limit for units from your army that are in Strategic Reserve, and for the purposes of setting up that unit on the battlefield, treat the current battle round number as being one higher than it actually is.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "RAVENWING"
-        ]
+        "allowedKeywords": [
+          "Ravenwing"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "company-of-hunters__recon-hunter",
@@ -19040,10 +21466,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "company-of-hunters",
         "points": 20,
         "description": "RAVENWING model only. Models in the bearer's unit have the Scouts 9\" ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "RAVENWING"
-        ]
+        "allowedKeywords": [
+          "Ravenwing"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "inner-circle-task-force__eye-of-the-unseen",
@@ -19205,7 +21631,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "description": "Captain, Chaplain or Lieutenant model only. While the bearer’s unit is not Battle‑shocked, add 1 to the Objective Control characteristic of models in the bearer’s unit.",
         "allowedKeywords": [],
         "allowedUnitNames": [
-          "Captain, Chaplain",
+          "Captain",
+          "Chaplain",
           "Lieutenant"
         ]
       },
@@ -19444,10 +21871,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-hunter",
         "points": 20,
         "description": "SPACE WOLVES model only. Model's in the bearer's unit have the Scouts 7\" ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "SPACE WOLVES"
-        ]
+        "allowedKeywords": [
+          "Space Wolves"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "saga-of-the-hunter__fenrisian-grit",
@@ -19455,10 +21882,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-hunter",
         "points": 15,
         "description": "ADEPTUS ASTARTES model only. The bearer has the Feel No Pain 4+ ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "saga-of-the-hunter__feral-rage",
@@ -19477,10 +21904,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-hunter",
         "points": 5,
         "description": "SPACE WOLVES model only. In your Command phase, select one friendly SPACE WOLVES unit within 9\" of the bearer. Until the start of your next Command phase, teeth and claws and Tyrnak and Fenrir weapons equipped by models in that unit have the [LETHAL HITS] ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "SPACE WOLVES"
-        ]
+        "allowedKeywords": [
+          "Space Wolves"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "saga-of-the-bold__braggart-s-steel",
@@ -19510,10 +21937,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-bold",
         "points": 15,
         "description": "ADEPTUS ASTARTES model only. Each time a SPACE WOLVES CHARACTER unit from your army achieves a Boast, if the bearer is on the battlefield, you gain 1 CP",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "saga-of-the-bold__thunderwolf-s-fortitude",
@@ -19521,10 +21948,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-bold",
         "points": 25,
         "description": "ADEPTUS ASTARTES model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "saga-of-the-beastslayer__wolf-touched",
@@ -19532,10 +21959,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-beastslayer",
         "points": 15,
         "description": "SPACE WOLVES model only. Add 2\" to the Move characteristic of the bearer. In the Declare Battle Formations step, the bearer can be attached to a WULFEN INFANTRY unit",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "SPACE WOLVES"
-        ]
+        "allowedKeywords": [
+          "Space Wolves"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "saga-of-the-beastslayer__hunter-s-guile",
@@ -19543,10 +21970,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-beastslayer",
         "points": 20,
         "description": "ADEPTUS ASTARTES model only. After both players have deployed their armies, select up to three THUNDERWOLF CAVALRY, WULFEN and/or BLOOD CLAWS units from your army and redeploy them. When doing so you can set those units up in Strategic Reserves if you wish, regardless of how many units are already in Strategic Reserves",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "saga-of-the-beastslayer__elder-s-guidance",
@@ -19554,10 +21981,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-beastslayer",
         "points": 20,
         "description": "SPACE WOLVES model only. Once per battle, at the start of the Fight phase, if the bearer is leading a BLOOD CLAWS unit, the bearer can use this Enhancement. If it does, until the end of the phase, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "SPACE WOLVES"
-        ]
+        "allowedKeywords": [
+          "Space Wolves"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "saga-of-the-beastslayer__helm-of-the-beastslayer",
@@ -19565,10 +21992,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "saga-of-the-beastslayer",
         "points": 15,
         "description": "ADEPTUS ASTARTES model only. Each time an attack is made by a CHARACTER, MONSTER, or VEHICLE model that targets the bearer's unit, reduce the Armour Penetration characteristic of that attack by 1.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "companions-of-vehemence__incendiary-animus",
@@ -19576,11 +22003,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "companions-of-vehemence",
         "points": 25,
         "description": "CHAPLAIN or JUDICIAR model only. Improve the Armour Penetration characteristic of melee weapons equipped by models in the bearer's unit by 1",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "CHAPLAIN",
-          "JUDICIAR"
-        ]
+        "allowedKeywords": [
+          "Chaplain",
+          "Judiciar"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "companions-of-vehemence__oathbound-exemplar",
@@ -19588,10 +22015,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "companions-of-vehemence",
         "points": 15,
         "description": "ADEPTUS ASTARTES INFANTRY model only. Add 1 to the Advance rolls made for the bearer's unit. If the mission pack you are playing features Actions, the bearer's unit is eligible to start to perform an Action in a turn in which it Advanced.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES INFANTRY"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes Infantry"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "companions-of-vehemence__merciless-denunciation",
@@ -19599,11 +22026,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "companions-of-vehemence",
         "points": 25,
         "description": "CHAPLAIN or JUDICIAR model only. Each time a model in the bearer's unit makes a melee attack, you can re-roll the hit roll.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "CHAPLAIN",
-          "JUDICIAR"
-        ]
+        "allowedKeywords": [
+          "Chaplain",
+          "Judiciar"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "companions-of-vehemence__zealous-vanguard",
@@ -19611,10 +22038,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "companions-of-vehemence",
         "points": 20,
         "description": "ADEPTUS ASTARTES model only. Models in the bearer's unit have the Scouts 6\" ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "vindication-task-force__consecrating-aura",
@@ -19622,10 +22049,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "vindication-task-force",
         "points": 25,
         "description": "ADEPTUS ASTARTES model only. Model's in the bearer's unit have a 5+ invulnerable save.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "vindication-task-force__imperialis-of-the-eternal-crusade",
@@ -19633,10 +22060,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "vindication-task-force",
         "points": 15,
         "description": "ANCIENT model only. Each time an enemy unit selects the bearer's unit as a target of a charge, subtract 2 from the Charge roll (this is not cumulative with any other negative modifiers to that Charge roll)",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ANCIENT"
-        ]
+        "allowedKeywords": [
+          "Ancient"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "vindication-task-force__warden-of-honour",
@@ -19644,10 +22071,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "vindication-task-force",
         "points": 20,
         "description": "CRUSADE ANCIENT model only. While the bearer is leading a unit, each time you roll one D6 for the bearer's Vengeful Exhortation ability, add 1 to the result.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "CRUSADE ANCIENT"
-        ]
+        "allowedKeywords": [
+          "Crusade Ancient"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "vindication-task-force__orb-of-the-emperor-s-aegis",
@@ -19655,10 +22082,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "vindication-task-force",
         "points": 10,
         "description": "ADEPTUS ASTARTES model only. Models in the bearer's unit have the Deep Strike ability",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "godhammer-assault-force__paragon-of-fury",
@@ -19677,10 +22104,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "godhammer-assault-force",
         "points": 10,
         "description": "ADEPTUS ASTARTES model only. Each time the bearer's unit declares a charge, if an enemy unit takes a Battle-shock test as a result of the Shock and Awe detachment rule, subtract 1 from that Battle-shock test.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "godhammer-assault-force__augury-servo-host",
@@ -19688,10 +22115,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "godhammer-assault-force",
         "points": 15,
         "description": "ADEPTUS ASTARTES model only. At the start of your shooting phase, select one enemy unit within 12\" of and visible to the bearer. Until the end of the phase, models in that unit cannot have the Benefit of Cover.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "godhammer-assault-force__herald-of-the-sacred-slaughter",
@@ -19699,10 +22126,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "godhammer-assault-force",
         "points": 15,
         "description": "ADEPTUS ASTARTES model only. In the Declare Battle Formations step, if the bearer starts the battle embarked within a DEDICATED TRANSPORT, that DEDICATED TRANSPORT has the Scouts 9\" ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "ADEPTUS ASTARTES"
-        ]
+        "allowedKeywords": [
+          "Adeptus Astartes"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "forgefather-s-seekers__adamantine-mantle",
@@ -20240,7 +22667,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "name": "Tip of the Spear",
         "detachmentId": "armoured-speartip",
         "points": 40,
-        "description": "Adeptus Astartes model only. If the bearer starts the battle embarked within a Transport, that transport\nhas the Scouts 9\" ability",
+        "description": "Adeptus Astartes model only. If the bearer starts the battle embarked within a Transport, that transport\nhas the Scouts 6\" ability",
         "allowedKeywords": [],
         "allowedUnitNames": [
           "Adeptus Astartes"
@@ -20283,7 +22710,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -20369,6 +22798,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -20462,6 +22892,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Chaos Lord",
           "Jump Pack"
         ],
@@ -20553,6 +22984,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Terminator"
         ],
         "minModels": 5,
@@ -20653,6 +23085,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainfist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -20670,7 +23165,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             250
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -20792,10 +23289,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            180
+            170
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -20987,6 +23486,96 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Havoc autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Havoc autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Reaper chaincannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Reaper chaincannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol and Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol and Astartes chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -21000,7 +23589,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 3,
         "maxModels": 3,
         "wargear": [
@@ -21021,7 +23612,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Damned"
+          "Damned",
+          "Heretic Astartes"
         ],
         "minModels": 5,
         "maxModels": 5,
@@ -21045,7 +23637,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             125
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
@@ -21239,6 +23833,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Psyker"
         ],
         "minModels": 1,
@@ -21265,6 +23860,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 5,
@@ -21302,10 +23898,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            220
+            210
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Jump Pack"
         ],
         "minModels": 5,
@@ -21489,6 +24086,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Psyker"
         ],
         "minModels": 1,
@@ -21511,6 +24109,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Psyker",
           "Terminator"
         ],
@@ -21580,10 +24179,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            250
+            270
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Jump Pack",
           "Daemon"
         ],
@@ -21629,6 +24229,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -21805,6 +24406,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -21855,6 +24457,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Terminator",
           "Chaos Lord"
         ],
@@ -21954,6 +24557,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 1,
@@ -21997,10 +24601,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             16,
-            180
+            195
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 8,
@@ -22300,7 +24905,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Damned"
+          "Damned",
+          "Heretic Astartes"
         ],
         "minModels": 5,
         "maxModels": 5,
@@ -22347,6 +24953,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -22519,6 +25126,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -22612,6 +25220,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 1,
@@ -22637,6 +25246,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -22687,10 +25297,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             16,
-            180
+            195
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 8,
@@ -22990,6 +25601,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Terminator",
           "Chaos Undivided"
         ],
@@ -23013,6 +25625,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Jump Pack",
           "Chaos Undivided"
         ],
@@ -23036,6 +25649,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Chaos Undivided"
         ],
         "minModels": 1,
@@ -23058,6 +25672,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon",
           "Daemon Prince"
         ],
@@ -23080,6 +25695,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon",
           "Daemon Prince with Wings",
           "Daemon Prince"
@@ -23124,6 +25740,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Fallen"
         ],
         "minModels": 1,
@@ -23146,6 +25763,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Psyker"
         ],
         "minModels": 1,
@@ -23167,7 +25785,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -23253,6 +25873,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Terminator",
           "Chaos Lord"
         ],
@@ -23352,6 +25973,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Psyker"
         ],
         "minModels": 1,
@@ -23374,6 +25996,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Psyker",
           "Terminator"
         ],
@@ -23443,6 +26066,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon",
           "Lord Discordant"
         ],
@@ -23524,7 +26148,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             70
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -23545,7 +26171,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 3,
         "maxModels": 3,
         "wargear": [
@@ -23566,7 +26194,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Damned"
+          "Damned",
+          "Heretic Astartes"
         ],
         "minModels": 5,
         "maxModels": 5,
@@ -23591,10 +26220,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            180
+            170
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -23786,6 +26417,96 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Havoc autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Havoc autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Lascannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Lascannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile launcher"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Reaper chaincannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Reaper chaincannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma pistol and Astartes chainsword",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma pistol and Astartes chainsword"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -23804,6 +26525,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -23854,10 +26576,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             16,
-            180
+            195
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 8,
@@ -23883,6 +26606,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Terminator"
         ],
         "minModels": 5,
@@ -23983,6 +26707,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Reaper autocannon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainfist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -23996,7 +26783,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             80
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -24020,6 +26809,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 5,
@@ -24060,7 +26850,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             250
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -24182,6 +26974,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 1,
@@ -24203,10 +26996,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             6,
-            140
+            130
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
@@ -24425,10 +27220,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            220
+            210
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Jump Pack"
         ],
         "minModels": 5,
@@ -24612,10 +27408,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            250
+            270
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Jump Pack",
           "Daemon"
         ],
@@ -24660,7 +27457,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             125
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 5,
         "maxModels": 5,
         "wargear": [
@@ -24851,9 +27650,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             2,
             160
+          ],
+          [
+            3,
+            360
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 2,
@@ -24875,6 +27679,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 1,
@@ -24897,6 +27702,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -25069,6 +27875,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 10,
@@ -25184,6 +27991,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Land Raider"
         ],
         "minModels": 1,
@@ -25235,6 +28043,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Predator Annihilator"
         ],
         "minModels": 1,
@@ -25314,6 +28123,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Predator Destructor"
         ],
         "minModels": 1,
@@ -25393,6 +28203,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Vindicator"
         ],
         "minModels": 1,
@@ -25443,6 +28254,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 1,
@@ -25520,7 +28332,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             130
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -25674,6 +28488,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 1,
@@ -25723,6 +28538,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 1,
@@ -25773,6 +28589,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Rhino"
         ],
         "minModels": 1,
@@ -25823,6 +28640,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Towering",
           "Khorne",
           "Daemon",
@@ -25915,6 +28733,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Beast"
         ],
         "minModels": 2,
@@ -25939,6 +28758,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Khorne",
           "Berzerkers"
         ],
@@ -26012,6 +28832,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Tzeentch",
           "Rubricae"
         ],
@@ -26122,11 +28943,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             95
           ],
           [
+            7,
+            130
+          ],
+          [
             10,
             190
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Nurgle"
         ],
         "minModels": 5,
@@ -26377,6 +29203,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Daemon"
         ],
         "minModels": 3,
@@ -26397,6 +29224,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Chaos Lord",
           "Jump Pack"
         ],
@@ -26484,6 +29312,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Heretic Astartes",
           "Damned"
         ],
         "minModels": 1,
@@ -26505,11 +29334,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            220
+            190
           ]
         ],
         "keywords": [
-          "Psyker"
+          "Psyker",
+          "Heretic Astartes"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -26688,6 +29518,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Heavy bolter",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy bolter"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Missile launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Missile launcher"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma gun"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Meltagun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Meltagun"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -26703,6 +29596,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Slaanesh",
+          "Heretic Astartes",
           "Cults of the Dark Gods"
         ],
         "minModels": 6,
@@ -26783,7 +29677,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Chaos Undivided"
+          "Chaos Undivided",
+          "Heretic Astartes"
         ],
         "minModels": 5,
         "maxModels": 5,
@@ -26815,7 +29710,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             220
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -26925,7 +29822,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             75
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Heretic Astartes"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -26990,7 +29889,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Daemon"
+          "Daemon",
+          "Heretic Astartes"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -27430,6 +30330,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Daemon",
           "Daemon Prince"
@@ -27453,6 +30354,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Daemon",
           "Daemon Prince with Wings"
@@ -27476,6 +30378,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Psyker",
           "Terminator"
@@ -27499,6 +30402,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Terminator"
         ],
@@ -27521,6 +30425,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Terminator"
         ],
@@ -27542,6 +30447,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Psyker"
         ],
@@ -27564,11 +30470,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             95
           ],
           [
+            7,
+            130
+          ],
+          [
             10,
             190
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 5,
@@ -27731,6 +30642,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 10,
@@ -27770,6 +30682,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 1,
@@ -27791,6 +30704,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 1,
@@ -27812,6 +30726,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 1,
@@ -27834,6 +30749,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 1,
@@ -27855,6 +30771,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 1,
@@ -27880,6 +30797,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Terminator"
         ],
@@ -27916,6 +30834,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 1,
@@ -28094,11 +31013,16 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             115
           ],
           [
+            5,
+            185
+          ],
+          [
             10,
-            230
+            370
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Terminator"
         ],
@@ -28220,6 +31144,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Beast",
           "Nurgle",
           "Spawn"
@@ -28246,6 +31171,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Daemon"
         ],
@@ -28270,6 +31196,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Daemon"
         ],
@@ -28321,6 +31248,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Daemon"
         ],
@@ -28402,6 +31330,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Land Raider"
         ],
@@ -28454,6 +31383,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Predator Annihilator"
         ],
@@ -28534,6 +31464,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Predator Destructor"
         ],
@@ -28614,6 +31545,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Rhino"
         ],
@@ -28680,6 +31612,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Psyker",
           "Daemon",
           "Nurgle",
@@ -28706,6 +31639,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Death Guard Icon Bearer"
         ],
@@ -28728,6 +31662,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle"
         ],
         "minModels": 1,
@@ -28752,6 +31687,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Psyker",
           "Daemon",
           "Nurgle",
+          "Plague Legions",
           "Summoned"
         ],
         "minModels": 1,
@@ -28834,6 +31770,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Psyker",
           "Daemon",
           "Nurgle",
+          "Plague Legions",
           "Summoned"
         ],
         "minModels": 1,
@@ -28858,6 +31795,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon",
           "Nurgle",
+          "Plague Legions",
           "Summoned"
         ],
         "minModels": 10,
@@ -28884,6 +31822,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon",
           "Nurgle",
+          "Plague Legions",
           "Summoned"
         ],
         "minModels": 3,
@@ -28913,6 +31852,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Daemon",
           "Nurgle",
+          "Plague Legions",
           "Summoned"
         ],
         "minModels": 1,
@@ -28933,13 +31873,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             6,
-            80
+            70
           ]
         ],
         "keywords": [
           "Swarm",
           "Daemon",
           "Nurgle",
+          "Plague Legions",
           "Summoned"
         ],
         "minModels": 3,
@@ -28960,6 +31901,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Death Guard",
           "Nurgle",
           "Daemon",
           "Foetid Bloat-drone"
@@ -28984,7 +31926,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Daemon",
-          "Nurgle"
+          "Nurgle",
+          "Death Guard"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -29385,6 +32328,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Psyker",
           "Tzeentch"
         ],
@@ -29409,6 +32353,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Land Raider"
         ],
@@ -29461,6 +32406,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Predator Annihilator"
         ],
@@ -29541,6 +32487,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Predator Destructor"
         ],
@@ -29621,6 +32568,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Rhino"
         ],
@@ -29672,6 +32620,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Beast",
           "Tzeentch",
           "Spawn",
@@ -29695,6 +32644,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Vindicator"
         ],
@@ -29746,6 +32696,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Psyker",
           "Tzeentch"
         ],
@@ -29787,6 +32738,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Psyker",
           "Tzeentch",
           "Exalted Sorcerer"
@@ -29829,6 +32781,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Daemon",
           "Tzeentch"
         ],
@@ -29908,6 +32861,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch"
         ],
         "minModels": 1,
@@ -30063,6 +33017,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch"
         ],
         "minModels": 1,
@@ -30112,6 +33067,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Psyker",
           "Tzeentch"
         ],
@@ -30135,6 +33091,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Psyker",
           "Daemon",
           "Tzeentch",
@@ -30161,6 +33118,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Daemon",
           "Tzeentch"
         ],
@@ -30212,6 +33170,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Mutant"
         ],
@@ -30239,6 +33198,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Rubricae"
         ],
@@ -30354,6 +33314,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Scarab Occult",
           "Rubricae",
@@ -30520,6 +33481,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Psyker",
           "Tzeentch"
         ],
@@ -30561,6 +33523,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Psyker",
           "Tzeentch",
           "Sorcerer",
@@ -30613,6 +33576,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Daemon",
           "Psyker",
           "Tzeentch",
@@ -30638,6 +33602,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Daemon",
           "Psyker",
           "Tzeentch",
@@ -30667,6 +33632,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Mutant"
         ],
@@ -30742,6 +33708,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Psyker",
           "Tzeentch",
           "Mutant"
@@ -30769,6 +33736,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Mutant"
         ],
@@ -30851,6 +33819,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch"
         ],
         "minModels": 2,
@@ -30904,6 +33873,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Thousand Sons",
           "Tzeentch",
           "Tzaangor Enlightened",
           "Mutant"
@@ -30926,6 +33896,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Scintillating Legions",
           "Psyker",
           "Daemon",
           "Tzeentch",
@@ -30954,7 +33925,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Psyker",
           "Daemon",
           "Tzeentch",
-          "Summoned"
+          "Summoned",
+          "Scintillating Legions"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -31011,7 +33983,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon",
           "Tzeentch",
-          "Summoned"
+          "Summoned",
+          "Scintillating Legions"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -31039,7 +34012,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Daemon",
           "Tzeentch",
-          "Summoned"
+          "Summoned",
+          "Scintillating Legions"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -31062,7 +34036,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Tzeentch",
           "Summoned",
-          "Horrors"
+          "Horrors",
+          "Scintillating Legions"
         ],
         "minModels": 10,
         "maxModels": 10,
@@ -31119,7 +34094,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Daemon",
           "Tzeentch",
           "Summoned",
-          "Horrors"
+          "Horrors",
+          "Scintillating Legions"
         ],
         "minModels": 10,
         "maxModels": 10,
@@ -31141,6 +34117,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Daemon",
+          "Thousand Sons",
           "Tzeentch"
         ],
         "minModels": 1,
@@ -31572,6 +34549,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon",
           "Primarch"
@@ -31595,6 +34573,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne"
         ],
         "minModels": 1,
@@ -31617,6 +34596,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne"
         ],
         "minModels": 1,
@@ -31640,6 +34620,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon",
           "Daemon Prince"
@@ -31663,6 +34644,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon",
           "Daemon Prince"
@@ -31686,6 +34668,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne"
         ],
         "minModels": 1,
@@ -31708,6 +34691,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne"
         ],
         "minModels": 1,
@@ -31733,6 +34717,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Berzerkers"
         ],
@@ -31805,6 +34790,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Terminator",
           "Terminator Squad"
@@ -31984,6 +34970,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Accursed weapon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Power fist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Power fist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Chainfist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Chainfist"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Heavy weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Reaper autocannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Reaper autocannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy flamer"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -31998,6 +35047,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne"
         ],
         "minModels": 3,
@@ -32051,6 +35101,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon",
           "Possessed"
@@ -32077,6 +35128,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon",
           "Possessed"
@@ -32099,6 +35151,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Land Raider"
         ],
@@ -32151,6 +35204,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Predator Annihilator"
         ],
@@ -32231,6 +35285,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Predator Destructor"
         ],
@@ -32311,6 +35366,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon"
         ],
@@ -32483,6 +35539,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon"
         ],
@@ -32562,6 +35619,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne"
         ],
         "minModels": 1,
@@ -32717,6 +35775,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon"
         ],
@@ -32767,6 +35826,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Daemon"
         ],
@@ -32818,6 +35878,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne",
           "Rhino"
         ],
@@ -32884,6 +35945,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Beast",
           "Khorne",
           "Spawn"
@@ -32906,6 +35968,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Towering",
           "Khorne",
           "Daemon",
@@ -32998,6 +36061,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "World Eaters",
           "Khorne"
         ],
         "minModels": 8,
@@ -33056,7 +36120,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Khorne",
           "Daemon",
-          "Possessed"
+          "Possessed",
+          "World Eaters"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -33077,7 +36142,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Daemon",
-          "Khorne"
+          "Khorne",
+          "Blood Legions"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -33101,6 +36167,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon",
           "Khorne",
+          "Blood Legions",
           "Summoned"
         ],
         "minModels": 1,
@@ -33163,7 +36230,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon",
           "Khorne",
-          "Summoned"
+          "Summoned",
+          "Blood Legions"
         ],
         "minModels": 10,
         "maxModels": 10,
@@ -33187,6 +36255,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Daemon",
           "Khorne",
+          "Blood Legions",
           "Summoned"
         ],
         "minModels": 3,
@@ -33212,6 +36281,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Beast",
           "Daemon",
           "Khorne",
+          "Blood Legions",
           "Summoned"
         ],
         "minModels": 5,
@@ -33492,6 +36562,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Wraith Construct",
           "Aeldari",
           "Ynnari"
@@ -33548,6 +36619,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -33609,6 +36681,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phoenix Lord",
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior"
         ],
@@ -33632,6 +36705,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -33751,6 +36825,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Jump Pack",
           "Ynnari"
@@ -33872,6 +36947,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Daemon",
+          "Asuryani",
           "Aeldari"
         ],
         "minModels": 1,
@@ -33894,6 +36970,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phoenix Lord",
+          "Asuryani",
           "Aspect Warrior",
           "Aeldari",
           "Jump Pack"
@@ -33923,6 +37000,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Anhrathe",
+          "Asuryani",
           "Aeldari",
           "Ynnari",
           "Corsairs and Travelling Players"
@@ -34028,6 +37106,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
               }
             ],
             "modelMin": 10
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Wraithcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Wraithcannon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -34047,6 +37152,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Anhrathe",
+          "Asuryani",
           "Aeldari",
           "Ynnari",
           "Corsairs and Travelling Players"
@@ -34192,6 +37298,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
@@ -34249,6 +37356,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aspect Warrior",
           "Aeldari",
           "Ynnari"
@@ -34297,6 +37405,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Harlequin Allies",
           "Aeldari",
+          "Harlequins",
           "Corsairs and Travelling Players"
         ],
         "minModels": 1,
@@ -34322,6 +37431,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
@@ -34373,6 +37483,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Psyker",
           "Farseer",
           "Eldrad Ultran",
+          "Asuryani",
           "Aeldari"
         ],
         "minModels": 1,
@@ -34396,6 +37507,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -34450,6 +37562,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -34504,6 +37617,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Farseer",
           "Psyker",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -34561,6 +37675,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
@@ -34608,6 +37723,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -34661,6 +37777,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phoenix Lord",
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior"
         ],
@@ -34685,6 +37802,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Guardians",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -34706,6 +37824,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Wraith Construct",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -34731,6 +37850,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Ynnari",
           "Aspect Warrior"
         ],
@@ -34778,6 +37898,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phoenix Lord",
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior"
         ],
@@ -34802,6 +37923,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Phoenix Lord",
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior"
         ],
@@ -34824,6 +37946,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari"
         ],
         "minModels": 1,
@@ -34879,6 +38002,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -34902,6 +38026,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Harlequin Allies",
+          "Harlequins",
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
@@ -34957,6 +38082,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
@@ -35008,6 +38134,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -35036,6 +38163,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Harlequin Allies",
           "Aeldari",
+          "Harlequins",
           "Corsairs and Travelling Players"
         ],
         "minModels": 2,
@@ -35116,6 +38244,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Harlequin Allies",
+          "Harlequins",
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
@@ -35139,6 +38268,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -35163,6 +38293,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Star Weaver",
           "Aeldari",
+          "Harlequins",
           "Harlequin Allies",
           "Corsairs and Travelling Players"
         ],
@@ -35186,6 +38317,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Guardians",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -35264,6 +38396,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Support Weapon",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -35291,6 +38424,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Jump Pack",
           "Aspect Warrior",
@@ -35339,6 +38473,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Ynnari",
           "Aeldari"
         ],
         "minModels": 1,
@@ -35362,7 +38497,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Daemon",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -35390,6 +38526,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Harlequin Allies",
           "Aeldari",
+          "Harlequins",
           "Corsairs and Travelling Players"
         ],
         "minModels": 5,
@@ -35449,6 +38586,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Harlequin's Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Blade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Harlequin's Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Special Weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Harlequin's Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Blade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Harlequin's Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Special Weapon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -35464,6 +38655,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Harlequin Allies",
+          "Harlequins",
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
@@ -35554,6 +38746,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Harlequin Allies",
+          "Harlequins",
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
@@ -35611,6 +38804,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Asuryani",
           "Ynnari"
         ],
         "minModels": 1,
@@ -35705,6 +38899,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Asuryani",
           "Ynnari"
         ],
         "minModels": 1,
@@ -35727,6 +38922,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -35784,6 +38980,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Asuryani",
           "Aeldari",
           "Warlock",
           "Ynnari"
@@ -35840,6 +39037,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Asuryani",
           "Warlock",
           "Aeldari",
           "Ynnari"
@@ -35902,6 +39100,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Jump Pack",
           "Aeldari",
           "Aspect Warrior",
@@ -35948,6 +39147,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -36059,6 +39259,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Wraith Construct",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -36111,6 +39312,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Wraith Construct",
           "Towering",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -36230,6 +39432,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Wraith Construct",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -36358,7 +39561,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -36384,6 +39588,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Aspect Warrior",
           "Ynnari"
@@ -36430,6 +39635,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Towering",
           "Aeldari",
           "Wraith Construct"
@@ -36595,6 +39801,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Towering",
           "Wraith Construct",
           "Aeldari"
@@ -36676,7 +39883,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
-          "Archon"
+          "Archon",
+          "Ynnari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -36732,7 +39940,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Incubi",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -36773,7 +39982,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Kabalite Warriors",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 10,
         "maxModels": 10,
@@ -36859,7 +40069,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Raider",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -36914,7 +40125,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Reavers",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -36983,7 +40195,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Succubus",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -37034,7 +40247,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Venom",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -37085,7 +40299,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Wyches",
-          "Aeldari"
+          "Aeldari",
+          "Ynnari"
         ],
         "minModels": 10,
         "maxModels": 10,
@@ -37128,6 +40343,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Support Weapon",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -37152,6 +40368,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Support Weapon",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -37176,6 +40393,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Asuryani",
           "Jump Pack",
           "Aspect Warrior",
           "Phoenix Lord"
@@ -37203,6 +40421,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Wraith Construct",
           "Towering",
+          "Asuryani",
           "Aeldari",
           "Ynnari"
         ],
@@ -37293,6 +40512,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Anhrathe"
         ],
@@ -37318,6 +40538,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Asuryani",
           "Psyker",
           "Anhrathe"
         ],
@@ -37346,6 +40567,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Asuryani",
           "Ynnari",
           "Anhrathe"
         ],
@@ -37375,7 +40597,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Anhrathe",
-          "Jump Pack"
+          "Jump Pack",
+          "Asuryani"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -38429,7 +41652,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Kabal",
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -38532,7 +41756,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
-          "Haemonculus Covens"
+          "Haemonculus Covens",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 2,
@@ -38555,6 +41780,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Drukhari",
           "Blades for Hire"
         ],
         "minModels": 1,
@@ -38577,7 +41803,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Haemonculus Covens",
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -38603,7 +41830,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
-          "Wych Cult"
+          "Wych Cult",
+          "Drukhari"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -38652,6 +41880,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Drukhari",
           "Blades for Hire"
         ],
         "minModels": 5,
@@ -38727,7 +41956,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
-          "Kabal"
+          "Kabal",
+          "Drukhari"
         ],
         "minModels": 10,
         "maxModels": 10,
@@ -38820,7 +42050,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Wych Cult",
-          "Succubus"
+          "Succubus",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -38846,6 +42077,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Drukhari",
           "Blades for Hire"
         ],
         "minModels": 5,
@@ -38887,7 +42119,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -38938,7 +42171,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
-          "Kabal"
+          "Kabal",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -38988,7 +42222,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -39073,7 +42308,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Wych Cult",
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -39142,6 +42378,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Scourges",
           "Aeldari",
+          "Drukhari",
           "Jump Pack",
           "Blades for Hire"
         ],
@@ -39177,6 +42414,69 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": true
               }
             ]
+          },
+          {
+            "name": "Ranged Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heat Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heat Lance"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Splinter Cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Splinter Cannon"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shredder"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Dark Lance",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Dark Lance"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Haywire Blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Haywire Blaster"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -39192,7 +42492,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Wych Cult",
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -39217,7 +42518,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
-          "Haemonculus Covens"
+          "Haemonculus Covens",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 2,
@@ -39363,7 +42665,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -39414,7 +42717,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Voidraven",
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -39486,7 +42790,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Haemonculus Covens",
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -39572,7 +42877,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Wych Cult",
-          "Aeldari"
+          "Aeldari",
+          "Drukhari"
         ],
         "minModels": 10,
         "maxModels": 10,
@@ -39630,6 +42936,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Anhrathe",
+          "Asuryani",
           "Aeldari",
           "Ynnari",
           "Corsairs and Travelling Players"
@@ -39735,6 +43042,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
               }
             ],
             "modelMin": 10
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Shuriken cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shuriken cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Wraithcannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Wraithcannon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -39754,6 +43088,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Anhrathe",
+          "Asuryani",
           "Aeldari",
           "Ynnari",
           "Corsairs and Travelling Players"
@@ -39901,6 +43236,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Harlequin Allies",
           "Aeldari",
+          "Harlequins",
           "Corsairs and Travelling Players"
         ],
         "minModels": 1,
@@ -39923,6 +43259,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Harlequin Allies",
+          "Harlequins",
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
@@ -39947,6 +43284,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Harlequin Allies",
+          "Harlequins",
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
@@ -40004,6 +43342,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Harlequin Allies",
           "Aeldari",
+          "Harlequins",
           "Corsairs and Travelling Players"
         ],
         "minModels": 2,
@@ -40085,6 +43424,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Star Weaver",
           "Aeldari",
+          "Harlequins",
           "Harlequin Allies",
           "Corsairs and Travelling Players"
         ],
@@ -40108,6 +43448,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Harlequin Allies",
+          "Harlequins",
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
@@ -40166,6 +43507,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Harlequin Allies",
           "Aeldari",
+          "Harlequins",
           "Corsairs and Travelling Players"
         ],
         "minModels": 5,
@@ -40225,6 +43567,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Harlequin's Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Blade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Harlequin's Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Special Weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Harlequin's Blade",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Blade"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Harlequin's Special Weapon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Harlequin's Special Weapon"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -40240,6 +43636,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Harlequin Allies",
+          "Harlequins",
           "Aeldari",
           "Corsairs and Travelling Players"
         ],
@@ -40331,7 +43728,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Kabal",
           "Aeldari",
-          "Archon"
+          "Archon",
+          "Drukhari"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -40354,6 +43752,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Scourges",
           "Aeldari",
+          "Drukhari",
           "Jump Pack",
           "Blades for Hire"
         ],
@@ -40395,6 +43794,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": true
               }
             ]
+          },
+          {
+            "name": "Ranged Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Blaster"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Shredder",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shredder"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Shardcarbine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Shardcarbine"
+                ],
+                "isDefault": true
+              }
+            ]
           }
         ]
       },
@@ -40415,7 +43850,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Aeldari",
           "Anhrathe",
-          "Jump Pack"
+          "Jump Pack",
+          "Asuryani"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -40553,6 +43989,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Asuryani",
           "Aeldari",
           "Anhrathe"
         ],
@@ -40578,6 +44015,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Asuryani",
           "Psyker",
           "Anhrathe"
         ],
@@ -40606,6 +44044,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Aeldari",
+          "Asuryani",
           "Ynnari",
           "Anhrathe"
         ],
@@ -41548,7 +44987,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Genestealer Cults"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -41568,6 +45008,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -41592,6 +45033,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -41623,6 +45065,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Acolyte Hybrids",
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 5,
@@ -41687,6 +45130,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -41712,6 +45156,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 5,
@@ -41788,6 +45233,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -41811,6 +45257,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -41832,6 +45279,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -41893,6 +45341,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -41920,6 +45369,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 5,
@@ -41984,6 +45434,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -42006,6 +45457,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -42027,6 +45479,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -42047,6 +45500,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Psyker",
           "Great Devourer"
         ],
@@ -42073,6 +45527,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 10,
@@ -42140,6 +45595,78 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Heavy Weapon Selection",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Mining laser",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Mining laser"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Seismic cannon",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Seismic cannon"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy stubber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy stubber"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Special Weapon Selection",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Webber",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Webber"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Flamer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Flamer"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Grenade launcher",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Grenade launcher"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -42154,6 +45681,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -42175,6 +45703,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Psyker",
           "Great Devourer"
         ],
@@ -42196,6 +45725,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -42222,6 +45752,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 5,
@@ -42242,6 +45773,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -42265,6 +45797,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -42315,7 +45848,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
-          "Great Devourer"
+          "Great Devourer",
+          "Genestealer Cults"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -42341,6 +45875,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Acolyte Hybrids",
+          "Genestealer Cults",
           "Great Devourer"
         ],
         "minModels": 5,
@@ -42408,6 +45943,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 5,
@@ -42466,7 +46002,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             450
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -42491,7 +46029,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             420
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -42513,7 +46053,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             450
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -42536,6 +46078,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Squadron"
         ],
@@ -42559,6 +46102,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer"
         ],
         "minModels": 1,
@@ -42662,6 +46206,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Command Squad",
           "Cadian",
           "Platoon"
@@ -42702,6 +46247,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment",
           "Platoon",
           "Cadian"
@@ -42722,6 +46268,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -42743,6 +46290,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment",
           "Platoon"
         ],
@@ -42762,6 +46310,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron",
           "Artillery"
         ],
@@ -42784,7 +46333,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             415
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -42807,6 +46358,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Regiment"
         ],
@@ -42879,6 +46431,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 3,
@@ -42969,7 +46522,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             420
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -42995,6 +46550,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43107,6 +46663,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43129,6 +46686,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 10,
@@ -43274,6 +46832,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43296,6 +46855,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43318,6 +46878,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43340,6 +46901,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43362,6 +46924,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43384,6 +46947,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43406,6 +46970,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Squadron"
         ],
@@ -43429,6 +46994,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Psyker"
         ],
         "minModels": 1,
@@ -43451,6 +47017,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43585,7 +47152,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             410
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -43607,7 +47176,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             430
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -43631,6 +47202,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Officer",
           "Squadron"
         ],
@@ -43853,6 +47425,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43874,6 +47447,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43895,6 +47469,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Squadron"
         ],
@@ -43922,6 +47497,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 5,
@@ -43944,7 +47520,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             25
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
@@ -43961,6 +47539,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -43983,6 +47562,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Platoon",
           "Regiment"
         ],
@@ -44001,7 +47581,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             465
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Astra Militarum"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -44028,6 +47610,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 3,
@@ -44049,6 +47632,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -44070,6 +47654,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Synapse",
           "Vanguard Invader"
         ],
@@ -44096,6 +47681,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Endless Multitude",
           "Vanguard Invader"
         ],
@@ -44118,6 +47704,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer",
           "Vanguard Invader"
         ],
@@ -44141,6 +47728,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -44163,6 +47751,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader",
           "Synapse"
         ],
@@ -44186,6 +47775,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -44208,6 +47798,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -44230,6 +47821,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer",
           "Vanguard Invader",
           "Burrowers"
@@ -44254,6 +47846,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Vanguard Invader",
+          "Tyranids",
           "Synapse"
         ],
         "minModels": 1,
@@ -44274,6 +47867,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Command Squad",
           "Platoon",
           "Krieg"
@@ -44311,6 +47905,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Command Squad",
           "Platoon",
           "Catachan"
@@ -44476,6 +48071,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron",
           "Officer"
         ],
@@ -44612,6 +48208,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Artillery",
           "Regiment"
         ],
@@ -44688,6 +48285,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 5,
@@ -44766,6 +48364,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 4,
@@ -44833,6 +48432,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 3,
@@ -44925,6 +48525,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Tyranids",
           "Great Devourer",
           "Synapse",
           "Vanguard Invader",
@@ -44996,7 +48597,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Vanguard Invader",
-          "Burrowers"
+          "Burrowers",
+          "Tyranids"
         ],
         "minModels": 5,
         "maxModels": 5,
@@ -45018,6 +48620,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Squadron"
         ],
         "minModels": 1,
@@ -45039,6 +48642,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Astra Militarum",
           "Regiment"
         ],
         "minModels": 10,
@@ -45148,6 +48752,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader",
           "Burrowers"
         ],
@@ -45632,7 +49237,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             95
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -45653,7 +49260,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             100
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
@@ -45824,7 +49433,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -45926,6 +49537,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Leagues of Votann",
           "Exoarmour"
         ],
         "minModels": 1,
@@ -46003,7 +49615,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 3,
         "maxModels": 3,
         "wargear": [
@@ -46025,6 +49639,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Leagues of Votann",
           "Brôkhyr"
         ],
         "minModels": 5,
@@ -46055,6 +49670,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Leagues of Votann",
           "Exoarmour"
         ],
         "minModels": 5,
@@ -46177,6 +49793,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": true
               }
             ]
+          },
+          {
+            "name": "Squad ranged weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "EtaCarn plasma gun",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "EtaCarn plasma gun"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Volkanite disintegrator",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Volkanite disintegrator"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Squad melee weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Concussion gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Concussion gauntlet"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Plasma blade gauntlet",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Plasma blade gauntlet"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -46195,6 +49865,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Leagues of Votann",
           "Cthonian",
           "Beserks"
         ],
@@ -46240,6 +49911,60 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Squad weapon choice",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Concussion maul",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Concussion maul"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy plasma axe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy plasma axe"
+                ],
+                "isDefault": true
+              }
+            ]
+          },
+          {
+            "name": "Weapon",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Concussion maul",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Concussion maul"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Heavy plasma axe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Heavy plasma axe"
+                ],
+                "isDefault": true
+              }
+            ]
           }
         ]
       },
@@ -46257,7 +49982,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
@@ -46379,7 +50106,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -46442,6 +50171,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Leagues of Votann",
           "Exoframe",
           "Thunderkyn",
           "Brôkhyr"
@@ -46503,7 +50233,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             240
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -46619,7 +50351,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
@@ -46686,7 +50420,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             95
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -46706,7 +50442,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             45
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -46725,7 +50463,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             65
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Leagues of Votann"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -46751,7 +50491,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Hernkyn",
           "Kapricus",
-          "Defenders"
+          "Defenders",
+          "Leagues of Votann"
         ],
         "minModels": 1,
         "maxModels": 2,
@@ -46821,7 +50562,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Hernkyn",
           "Kapricus",
-          "Carrier"
+          "Carrier",
+          "Leagues of Votann"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -46865,6 +50607,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Leagues of Votann",
           "Ironkin Steeljacks"
         ],
         "minModels": 3,
@@ -46918,6 +50661,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Leagues of Votann",
           "Ironkin Steeljacks"
         ],
         "minModels": 3,
@@ -46999,7 +50743,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Artillery",
           "Cthonian",
-          "Earthshakers"
+          "Earthshakers",
+          "Leagues of Votann"
         ],
         "minModels": 2,
         "maxModels": 2,
@@ -47050,7 +50795,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Cthonian"
+          "Cthonian",
+          "Leagues of Votann"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -47338,6 +51084,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Cryptek",
           "Chronomancer"
         ],
@@ -47360,6 +51107,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Noble"
         ],
         "minModels": 1,
@@ -47382,6 +51130,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Cryptek"
         ],
         "minModels": 1,
@@ -47404,6 +51153,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Noble"
         ],
         "minModels": 1,
@@ -47424,7 +51174,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             50
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -47444,6 +51196,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Destroyer Cult"
         ],
         "minModels": 1,
@@ -47466,6 +51219,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Destroyer Cult"
         ],
         "minModels": 1,
@@ -47542,7 +51296,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -47635,6 +51391,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Noble"
         ],
         "minModels": 1,
@@ -47710,6 +51467,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Cryptek"
         ],
         "minModels": 1,
@@ -47730,6 +51488,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Cryptek"
         ],
         "minModels": 1,
@@ -47750,6 +51509,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Cryptek"
         ],
         "minModels": 1,
@@ -47770,6 +51530,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Cryptek"
         ],
         "minModels": 1,
@@ -47790,10 +51551,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             20,
-            180
+            200
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 10,
         "maxModels": 20,
         "wargear": [
@@ -47841,10 +51604,12 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            140
+            150
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -47870,6 +51635,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": true
               }
             ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Gauss blaster",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Gauss blaster"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Tesla carbine",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Tesla carbine"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -47884,6 +51676,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Canoptek",
           "Reanimator"
         ],
@@ -47906,6 +51699,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Destroyer Cult"
         ],
         "minModels": 1,
@@ -47930,7 +51724,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             170
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -47953,6 +51749,33 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": true
               }
             ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Warscythe",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Warscythe"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Hyperphase sword and dispersion shield",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Hyperphase sword and dispersion shield"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -47970,7 +51793,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -47993,7 +51818,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -48030,7 +51857,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 2,
         "maxModels": 2,
         "wargear": [
@@ -48047,9 +51876,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             90
+          ],
+          [
+            4,
+            180
           ]
         ],
         "keywords": [
+          "Necrons",
           "Destroyer Cult"
         ],
         "minModels": 1,
@@ -48069,7 +51903,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             110
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48127,7 +51963,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             310
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48148,7 +51986,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             340
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48169,7 +52009,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             330
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48191,7 +52033,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             325
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48216,6 +52060,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Canoptek",
           "Spyders"
         ],
@@ -48279,7 +52124,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Swarm",
           "Canoptek",
-          "Scarab Swarms"
+          "Scarab Swarms",
+          "Necrons"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -48296,9 +52142,14 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           [
             1,
             80
+          ],
+          [
+            4,
+            160
           ]
         ],
         "keywords": [
+          "Necrons",
           "Destroyer Cult"
         ],
         "minModels": 1,
@@ -48322,7 +52173,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             150
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 3,
         "maxModels": 6,
         "wargear": [
@@ -48350,7 +52203,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             180
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -48374,6 +52229,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Beast",
           "Canoptek",
           "Wraiths"
@@ -48445,7 +52301,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             105
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48494,7 +52352,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             200
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48514,11 +52374,20 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             40
           ],
           [
+            2,
+            60
+          ],
+          [
+            3,
+            90
+          ],
+          [
             6,
-            80
+            180
           ]
         ],
         "keywords": [
+          "Necrons",
           "Destroyer Cult"
         ],
         "minModels": 1,
@@ -48540,6 +52409,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Canoptek",
           "Doomstalker"
         ],
@@ -48562,7 +52432,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             115
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48581,7 +52453,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             145
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48600,7 +52474,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             230
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -48621,6 +52497,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Towering"
         ],
         "minModels": 1,
@@ -48642,6 +52519,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Towering"
         ],
         "minModels": 1,
@@ -48664,6 +52542,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Towering"
         ],
         "minModels": 1,
@@ -48715,6 +52594,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Triarch"
         ],
         "minModels": 3,
@@ -48742,7 +52622,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Necrons"
+        ],
         "minModels": 1,
         "maxModels": 3,
         "wargear": [
@@ -48761,6 +52643,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Towering"
         ],
         "minModels": 1,
@@ -48811,6 +52694,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Noble",
           "Overlord"
         ],
@@ -48833,6 +52717,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Beast",
           "Canoptek",
           "Macrocytes"
@@ -48906,6 +52791,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Beast",
           "Canoptek",
           "Tomb Crawlers"
@@ -48930,6 +52816,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Cryptek"
         ],
         "minModels": 1,
@@ -48950,6 +52837,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Necrons",
           "Destroyer Cult"
         ],
         "minModels": 1,
@@ -49027,10 +52915,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "awakened-dynasty",
         "points": 20,
         "description": "NECRONS model only. Once per battle, at the end of your opponent’s turn, if the bearer’s unit is not within Engagement Range of one or more enemy units, the bearer can use this Enhancement. If it does, remove that unit from the battlefield. Then, in the Reinforcements step of your next Movement phase, set up that unit anywhere on the battlefield that is more than 9\" horizontally away from all enemy models.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "awakened-dynasty__nether-realm-casket",
@@ -49038,10 +52926,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "awakened-dynasty",
         "points": 20,
         "description": "NECRONS model only. While the bearer is leading a unit, models in that unit have the Stealth ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "awakened-dynasty__phasal-subjugator",
@@ -49049,10 +52937,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "awakened-dynasty",
         "points": 35,
         "description": "NECRONS model only. While a friendly NECRONS unit (excluding CHARACTER units) is within 6\" of the bearer, each time a model in that unit makes an attack, add 1 to the hit roll.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "hypercrypt-legion__dimensional-overseer",
@@ -49060,10 +52948,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "hypercrypt-legion",
         "points": 25,
         "description": "NECRONS model only. While the bearer is on the battlefield or in Strategic Reserves, add 1 to the number of units from your army that you can select for the Hyperphasing rule.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "annihilation-legion__eternal-madness",
@@ -49071,10 +52959,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "annihilation-legion",
         "points": 25,
         "description": "NECRONS model only. In the Fight phase, each time a model in the bearer's unit is destroyed, if that model had not fought this phase, roll one D6. On a 4+, do not remove the destroyed model from play; it can fight after the attacking model's unit has finished making its attacks, and is then removed from play.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "annihilation-legion__ingrained-superiority",
@@ -49082,10 +52970,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "annihilation-legion",
         "points": 10,
         "description": "NECRONS model only. Each time a model in the bearer's unit makes an attack, on a Critical Wound, improve the Armour Penetration characteristic of that attack by 1.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "annihilation-legion__soulless-reaper",
@@ -49093,10 +52981,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "annihilation-legion",
         "points": 20,
         "description": "DESTROYER CULT model only. Each time an enemy unit within Engagement Range of the bearer's unit is selected to Fall Back, roll one D6. On a 3+, that unit cannot Fall Back and must Remain Stationary.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "DESTROYER CULT"
-        ]
+        "allowedKeywords": [
+          "Destroyer Cult"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "awakened-dynasty__enaegic-dermal-bond",
@@ -49104,10 +52992,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "awakened-dynasty",
         "points": 30,
         "description": "NECRONS model only. The bearer has the Feel No Pain 4+ ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "hypercrypt-legion__arisen-tyrant",
@@ -49115,10 +53003,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "hypercrypt-legion",
         "points": 25,
         "description": "NECRONS model only. Each time a model in the bearer's unit makes an attack, re-roll a Hit roll of 1. If the bearer's unit was set up on the battlefield this turn, you can re-roll the Hit roll instead.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "hypercrypt-legion__hyperspatial-transfer-node",
@@ -49126,10 +53014,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "hypercrypt-legion",
         "points": 15,
         "description": "NECRONS model only. Each time the bearer's unit Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in the bearer's unit.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "hypercrypt-legion__osteoclave-fulcrum",
@@ -49137,10 +53025,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "detachmentId": "hypercrypt-legion",
         "points": 20,
         "description": "NECRONS model only. Models in the bearer's unit have the Deep Strike ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "NECRONS"
-        ]
+        "allowedKeywords": [
+          "Necrons"
+        ],
+        "allowedUnitNames": []
       },
       {
         "id": "starshatter-arsenal__miniaturised-nebuloscope",
@@ -49201,7 +53089,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -49372,7 +53262,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Mob",
-          "Beast Snagga"
+          "Beast Snagga",
+          "Orks"
         ],
         "minModels": 10,
         "maxModels": 20,
@@ -49427,7 +53318,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Beast Snagga",
-          "Warboss"
+          "Warboss",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -49450,6 +53342,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Beast Snagga",
+          "Orks",
           "Warboss"
         ],
         "minModels": 1,
@@ -49491,6 +53384,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Mega Armour",
           "Mek"
         ],
@@ -49605,6 +53499,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Mek"
         ],
         "minModels": 1,
@@ -49646,6 +53541,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -49668,6 +53564,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -49690,7 +53587,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             75
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -49715,7 +53614,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Mob"
+          "Mob",
+          "Orks"
         ],
         "minModels": 10,
         "maxModels": 20,
@@ -49801,7 +53701,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             60
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
@@ -49818,6 +53720,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -49860,6 +53763,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -49899,7 +53803,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -49976,6 +53882,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Warboss",
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -50002,6 +53909,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 3,
@@ -50052,7 +53960,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             160
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -50091,7 +54001,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             235
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 2,
         "maxModels": 2,
         "wargear": [
@@ -50112,7 +54024,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Towering"
+          "Towering",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -50136,6 +54049,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Grots"
         ],
         "minModels": 1,
@@ -50154,7 +54068,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Beast Snagga"
+          "Beast Snagga",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -50179,7 +54094,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
-          "Beast Snagga"
+          "Beast Snagga",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -50208,6 +54124,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Grots"
         ],
         "minModels": 3,
@@ -50269,7 +54186,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             120
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 10,
         "maxModels": 10,
         "wargear": [
@@ -50355,6 +54274,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -50377,7 +54297,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             50
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [],
@@ -50406,6 +54328,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Mega Armour"
         ],
         "minModels": 2,
@@ -50499,6 +54422,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -50521,7 +54445,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             45
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -50570,7 +54496,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Towering"
+          "Towering",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -50595,6 +54522,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Beast Snagga",
+          "Orks",
           "Warboss"
         ],
         "minModels": 1,
@@ -50622,7 +54550,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             210
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 5,
         "maxModels": 10,
         "wargear": [
@@ -50687,7 +54617,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Beast Snagga"
+          "Beast Snagga",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -50707,7 +54638,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             80
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -50728,6 +54661,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -50750,6 +54684,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -50772,7 +54707,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Beast Snagga"
+          "Beast Snagga",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -50790,7 +54726,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Towering"
+          "Towering",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -50820,7 +54757,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Jump Pack"
+          "Jump Pack",
+          "Orks"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -50861,7 +54799,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 6,
         "maxModels": 6,
         "wargear": [
@@ -50924,7 +54864,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             70
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -50965,6 +54907,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 3,
@@ -51031,7 +54974,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             75
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -51079,6 +55024,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Mega Armour",
           "Warboss"
         ],
@@ -51101,6 +55047,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -51154,7 +55101,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Psyker"
+          "Psyker",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -51176,7 +55124,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
-          "Beast Snagga"
+          "Beast Snagga",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -51196,7 +55145,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             90
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 1,
         "maxModels": 1,
         "wargear": [
@@ -51217,7 +55168,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Towering"
+          "Towering",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -51266,7 +55218,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Mek"
+          "Mek",
+          "Orks"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -51338,7 +55291,9 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             140
           ]
         ],
-        "keywords": [],
+        "keywords": [
+          "Orks"
+        ],
         "minModels": 6,
         "maxModels": 6,
         "wargear": [
@@ -51398,6 +55353,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Orks",
           "Speed Freeks"
         ],
         "minModels": 1,
@@ -52035,6 +55991,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Battlesuit",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52061,6 +56018,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Battlesuit",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52084,6 +56042,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Battlesuit",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52206,6 +56165,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Battlesuit",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52337,6 +56297,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52359,6 +56320,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52381,6 +56343,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Markerlight",
           "Non-Kroot"
         ],
@@ -52406,6 +56369,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Markerlight",
           "Fire Warrior",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 10,
@@ -52465,6 +56429,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Markerlight",
           "Fire Warrior",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 10,
@@ -52494,7 +56459,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Kroot",
-          "Carnivores"
+          "Carnivores",
+          "T'au Empire"
         ],
         "minModels": 10,
         "maxModels": 20,
@@ -52551,7 +56517,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Kroot"
+          "Kroot",
+          "T'au Empire"
         ],
         "minModels": 1,
         "maxModels": 3,
@@ -52608,6 +56575,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Battlesuit",
           "Stealth",
+          "T'au Empire",
           "Markerlight",
           "Non-Kroot"
         ],
@@ -52665,6 +56633,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Battlesuit",
           "Ghostkeel",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52754,6 +56723,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Markerlight",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52777,6 +56747,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Markerlight",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 10,
@@ -52874,6 +56845,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -52947,6 +56919,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 5,
@@ -53028,6 +57001,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Beast",
           "Kroot",
+          "T'au Empire",
           "Hounds"
         ],
         "minModels": 5,
@@ -53053,6 +57027,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Battlesuit",
+          "T'au Empire",
           "Broadside",
           "Non-Kroot"
         ],
@@ -53078,6 +57053,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Battlesuit",
+          "T'au Empire",
           "Riptide",
           "Non-Kroot"
         ],
@@ -53184,6 +57160,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -53292,6 +57269,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Markerlight",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -53353,6 +57331,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -53422,6 +57401,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -53472,6 +57452,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -53524,6 +57505,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Towering",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -53616,7 +57598,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Kroot",
-          "Farstalkers"
+          "Farstalkers",
+          "T'au Empire"
         ],
         "minModels": 12,
         "maxModels": 12,
@@ -53718,6 +57701,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Towering",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -53809,6 +57793,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -53946,6 +57931,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -54017,6 +58003,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Markerlight",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 1,
@@ -54044,6 +58031,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Battlesuit",
           "Crisis",
+          "T'au Empire",
           "Sunforge",
           "Non-Kroot"
         ],
@@ -54069,6 +58057,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Battlesuit",
           "Crisis",
+          "T'au Empire",
           "Fireknife",
           "Non-Kroot"
         ],
@@ -54121,6 +58110,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Battlesuit",
           "Crisis",
+          "T'au Empire",
           "Starscythe",
           "Non-Kroot"
         ],
@@ -54175,6 +58165,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Kroot",
           "Shaper",
+          "T'au Empire",
           "Trail Shaper"
         ],
         "minModels": 1,
@@ -54198,6 +58189,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Kroot",
           "Shaper",
+          "T'au Empire",
           "War Shaper"
         ],
         "minModels": 1,
@@ -54249,6 +58241,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Kroot",
           "Shaper",
+          "T'au Empire",
           "Flesh Shaper"
         ],
         "minModels": 1,
@@ -54271,6 +58264,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Kroot",
+          "T'au Empire",
           "Lone-spear"
         ],
         "minModels": 1,
@@ -54325,7 +58319,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Kroot"
+          "Kroot",
+          "T'au Empire"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -54369,6 +58364,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Battlesuit",
+          "T'au Empire",
           "Non-Kroot"
         ],
         "minModels": 2,
@@ -54749,6 +58745,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Great Devourer",
+          "Tyranids",
           "Synapse"
         ],
         "minModels": 1,
@@ -54799,6 +58796,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer",
           "Synapse",
           "Psyker",
@@ -54825,6 +58823,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Tyranids",
           "Great Devourer",
           "Vanguard Invader",
           "Synapse"
@@ -54847,7 +58846,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -54873,6 +58873,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Tyranid Warriors with Ranged Bio-weapons",
+          "Tyranids",
           "Synapse",
           "Great Devourer"
         ],
@@ -54898,6 +58899,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Tyranid Warriors with Melee Bio-weapons",
           "Great Devourer",
           "Synapse",
@@ -54926,6 +58928,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Endless Multitude"
         ],
         "minModels": 10,
@@ -54987,6 +58990,42 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               }
             ]
+          },
+          {
+            "name": "Weapons",
+            "groupMin": 1,
+            "groupMax": 1,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Fleshborer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Fleshborer"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Termagant spinefist",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Termagant spinefist"
+                ],
+                "isDefault": false
+              },
+              {
+                "name": "Termagant devourer",
+                "min": 0,
+                "max": 1,
+                "weapons": [
+                  "Termagant devourer"
+                ],
+                "isDefault": false
+              }
+            ]
           }
         ]
       },
@@ -55006,7 +59045,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
-          "Endless Multitude"
+          "Endless Multitude",
+          "Tyranids"
         ],
         "minModels": 10,
         "maxModels": 20,
@@ -55026,7 +59066,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -55050,7 +59091,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -55074,6 +59116,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Great Devourer",
+          "Tyranids",
           "Synapse"
         ],
         "minModels": 1,
@@ -55098,6 +59141,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Psyker",
           "Great Devourer",
           "Malceptor",
+          "Tyranids",
           "Synapse"
         ],
         "minModels": 1,
@@ -55124,6 +59168,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Harvester"
         ],
         "minModels": 1,
@@ -55146,6 +59191,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Harvester"
         ],
         "minModels": 1,
@@ -55172,6 +59218,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer"
         ],
         "minModels": 3,
@@ -55197,7 +59244,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
-          "Endless Multitude"
+          "Endless Multitude",
+          "Tyranids"
         ],
         "minModels": 11,
         "maxModels": 21,
@@ -55223,6 +59271,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Great Devourer",
+          "Tyranids",
           "Synapse"
         ],
         "minModels": 3,
@@ -55249,7 +59298,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Beast",
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 2,
@@ -55272,7 +59322,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Beast",
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -55290,7 +59341,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -55316,7 +59368,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
-          "Biovore"
+          "Biovore",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 3,
@@ -55341,7 +59394,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 2,
@@ -55363,7 +59417,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -55388,7 +59443,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 3,
         "maxModels": 6,
@@ -55440,7 +59496,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -55499,6 +59556,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -55524,6 +59582,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -55575,7 +59634,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 1,
         "maxModels": 1,
@@ -55597,6 +59657,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Harvester"
         ],
         "minModels": 1,
@@ -55622,7 +59683,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
-          "Great Devourer"
+          "Great Devourer",
+          "Tyranids"
         ],
         "minModels": 5,
         "maxModels": 10,
@@ -55643,6 +59705,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer"
         ],
         "minModels": 1,
@@ -55664,6 +59727,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Towering",
           "Great Devourer"
         ],
@@ -55688,10 +59752,11 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ],
           [
             10,
-            150
+            140
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer",
           "Vanguard Invader"
         ],
@@ -55715,6 +59780,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Synapse",
+          "Tyranids",
           "Harvester"
         ],
         "minModels": 1,
@@ -55738,6 +59804,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Psyker",
           "Great Devourer",
+          "Tyranids",
           "Synapse"
         ],
         "minModels": 1,
@@ -55761,6 +59828,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Tyranids",
           "Great Devourer",
           "Synapse"
         ],
@@ -55862,6 +59930,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer",
           "Synapse"
         ],
@@ -55886,6 +59955,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Psyker",
+          "Tyranids",
           "Great Devourer",
           "Synapse",
           "Vanguard Invader",
@@ -55960,6 +60030,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Endless Multitude",
           "Vanguard Invader"
         ],
@@ -55983,6 +60054,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Synapse",
           "Vanguard Invader"
         ],
@@ -56005,6 +60077,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -56025,6 +60098,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer",
           "Vanguard Invader"
         ],
@@ -56052,6 +60126,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 3,
@@ -56079,6 +60154,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           "Ripper Swarm",
           "Swarm",
           "Great Devourer",
+          "Tyranids",
           "Harvester"
         ],
         "minModels": 1,
@@ -56119,6 +60195,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader",
           "Synapse"
         ],
@@ -56142,6 +60219,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -56164,6 +60242,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -56187,6 +60266,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader"
         ],
         "minModels": 1,
@@ -56208,6 +60288,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
           ]
         ],
         "keywords": [
+          "Tyranids",
           "Great Devourer",
           "Vanguard Invader",
           "Burrowers"
@@ -56232,6 +60313,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Vanguard Invader",
+          "Tyranids",
           "Synapse"
         ],
         "minModels": 1,
@@ -56254,7 +60336,8 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "keywords": [
           "Great Devourer",
           "Vanguard Invader",
-          "Burrowers"
+          "Burrowers",
+          "Tyranids"
         ],
         "minModels": 5,
         "maxModels": 5,
@@ -56277,6 +60360,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "keywords": [
           "Great Devourer",
+          "Tyranids",
           "Vanguard Invader",
           "Burrowers"
         ],
