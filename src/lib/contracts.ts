@@ -20,6 +20,12 @@ export const unitSelectionSchema = z.object({
   modelCount: z.number().int().positive(),
   points: z.number().int().nonnegative(),
   notes: z.string().optional(),
+  /** groupKey → selected variant name(s). Persisted so list detail can render wargear. */
+  wargearChoices: z.record(z.string(), z.array(z.string())).optional(),
+  /** Enhancement id assigned to this selection (convenience denormalisation alongside roster.enhancements). */
+  enhancementId: z.string().optional(),
+  /** True when this selection is the roster's warlord. */
+  isWarlord: z.boolean().optional(),
 });
 
 export const rosterSchema = z.object({
@@ -27,6 +33,7 @@ export const rosterSchema = z.object({
   factionId: z.string(),
   detachmentId: z.string().optional(),
   pointsLimit: z.number().int().positive(),
+  warlordUnitSelectionId: z.string().optional(),
   enhancements: z
     .array(
       z.object({

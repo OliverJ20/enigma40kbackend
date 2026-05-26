@@ -23002,76 +23002,63 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "wargearOptions": [
           {
-            "name": "4-9 Chaos Terminators",
+            "name": "Squad ranged weapon",
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Accursed weapon and combi-bolter",
+                "name": "Combi-bolter",
                 "min": 0,
                 "max": 9,
                 "weapons": [
-                  "Combi-bolter",
+                  "Combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Squad melee weapon",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
                   "Accursed weapon"
                 ],
                 "isDefault": true
               },
               {
-                "name": "Accursed weapon and combi-weapon",
-                "min": 0,
-                "max": 9,
-                "weapons": [
-                  "Accursed weapon",
-                  "Combi-weapon"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Power fist and combi-weapon",
+                "name": "Power fist",
                 "min": 0,
                 "max": 6,
                 "weapons": [
-                  "Power fist",
-                  "Combi-weapon"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Chainfist and combi-bolter",
-                "min": 0,
-                "max": 2,
-                "weapons": [
-                  "Chainfist",
-                  "Combi-bolter"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Heavy weapon",
-                "min": 0,
-                "max": 2,
-                "weapons": [],
-                "isDefault": false
-              },
-              {
-                "name": "Power fist and combi-bolter",
-                "min": 0,
-                "max": 6,
-                "weapons": [
-                  "Combi-bolter",
                   "Power fist"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Chainfist and combi-weapon",
+                "name": "Chainfist",
                 "min": 0,
                 "max": 2,
                 "weapons": [
-                  "Chainfist",
-                  "Combi-weapon"
+                  "Chainfist"
                 ],
                 "isDefault": false
               },
@@ -23182,95 +23169,75 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "wargearOptions": [
           {
-            "name": "4-9 Chosen",
+            "name": "Weapon loadout",
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Chosen w/ boltgun",
+                "name": "Boltgun and accursed weapon",
                 "min": 0,
                 "max": 9,
                 "weapons": [
-                  "Bolt pistol",
                   "Boltgun",
                   "Accursed weapon"
                 ],
                 "isDefault": true
               },
               {
-                "name": "Chosen w/ boltgun and plasma pistol",
+                "name": "Combi-weapon and accursed weapon",
                 "min": 0,
                 "max": 4,
                 "weapons": [
-                  "Plasma pistol",
-                  "Accursed weapon",
-                  "Boltgun"
+                  "Combi-weapon",
+                  "Accursed weapon"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Chosen w/ combi-weapon and bolt pistol",
-                "min": 0,
-                "max": 4,
-                "weapons": [
-                  "Accursed weapon",
-                  "Bolt pistol",
-                  "Combi-weapon"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Chosen w/ paired accursed weapons and plasma pistol",
-                "min": 0,
-                "max": 2,
-                "weapons": [
-                  "Plasma pistol",
-                  "Paired accursed weapons"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Chosen w/ power fist and bolt pistol",
+                "name": "Power fist and boltgun",
                 "min": 0,
                 "max": 2,
                 "weapons": [
                   "Boltgun",
-                  "Bolt pistol",
                   "Power fist"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Chosen w/ combi-weapon and plasma pistol",
-                "min": 0,
-                "max": 4,
-                "weapons": [
-                  "Accursed weapon",
-                  "Plasma pistol",
-                  "Combi-weapon"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Chosen w/ paired accursed weapons and bolt pistol",
+                "name": "Paired accursed weapons",
                 "min": 0,
                 "max": 2,
                 "weapons": [
-                  "Bolt pistol",
                   "Paired accursed weapons"
                 ],
                 "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
               },
               {
-                "name": "Chosen w/ power fist and plasma pistol",
+                "name": "Plasma pistol",
                 "min": 0,
-                "max": 2,
+                "max": 4,
                 "weapons": [
-                  "Boltgun",
-                  "Plasma pistol",
-                  "Power fist"
+                  "Plasma pistol"
                 ],
                 "isDefault": false
               }
@@ -26624,76 +26591,63 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "wargearOptions": [
           {
-            "name": "4-9 Chaos Terminators",
+            "name": "Squad ranged weapon",
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Accursed weapon and combi-bolter",
+                "name": "Combi-bolter",
                 "min": 0,
                 "max": 9,
                 "weapons": [
-                  "Combi-bolter",
+                  "Combi-bolter"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Combi-weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Combi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Squad melee weapon",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Accursed weapon",
+                "min": 0,
+                "max": 9,
+                "weapons": [
                   "Accursed weapon"
                 ],
                 "isDefault": true
               },
               {
-                "name": "Accursed weapon and combi-weapon",
-                "min": 0,
-                "max": 9,
-                "weapons": [
-                  "Accursed weapon",
-                  "Combi-weapon"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Power fist and combi-weapon",
+                "name": "Power fist",
                 "min": 0,
                 "max": 6,
                 "weapons": [
-                  "Power fist",
-                  "Combi-weapon"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Chainfist and combi-bolter",
-                "min": 0,
-                "max": 2,
-                "weapons": [
-                  "Chainfist",
-                  "Combi-bolter"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Heavy weapon",
-                "min": 0,
-                "max": 2,
-                "weapons": [],
-                "isDefault": false
-              },
-              {
-                "name": "Power fist and combi-bolter",
-                "min": 0,
-                "max": 6,
-                "weapons": [
-                  "Combi-bolter",
                   "Power fist"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Chainfist and combi-weapon",
+                "name": "Chainfist",
                 "min": 0,
                 "max": 2,
                 "weapons": [
-                  "Chainfist",
-                  "Combi-weapon"
+                  "Chainfist"
                 ],
                 "isDefault": false
               },
@@ -26867,95 +26821,75 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "wargearOptions": [
           {
-            "name": "4-9 Chosen",
+            "name": "Weapon loadout",
             "groupMin": 4,
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Chosen w/ boltgun",
+                "name": "Boltgun and accursed weapon",
                 "min": 0,
                 "max": 9,
                 "weapons": [
-                  "Bolt pistol",
                   "Boltgun",
                   "Accursed weapon"
                 ],
                 "isDefault": true
               },
               {
-                "name": "Chosen w/ boltgun and plasma pistol",
+                "name": "Combi-weapon and accursed weapon",
                 "min": 0,
                 "max": 4,
                 "weapons": [
-                  "Plasma pistol",
-                  "Accursed weapon",
-                  "Boltgun"
+                  "Combi-weapon",
+                  "Accursed weapon"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Chosen w/ combi-weapon and bolt pistol",
-                "min": 0,
-                "max": 4,
-                "weapons": [
-                  "Accursed weapon",
-                  "Bolt pistol",
-                  "Combi-weapon"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Chosen w/ paired accursed weapons and plasma pistol",
-                "min": 0,
-                "max": 2,
-                "weapons": [
-                  "Plasma pistol",
-                  "Paired accursed weapons"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Chosen w/ power fist and bolt pistol",
+                "name": "Power fist and boltgun",
                 "min": 0,
                 "max": 2,
                 "weapons": [
                   "Boltgun",
-                  "Bolt pistol",
                   "Power fist"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Chosen w/ combi-weapon and plasma pistol",
-                "min": 0,
-                "max": 4,
-                "weapons": [
-                  "Accursed weapon",
-                  "Plasma pistol",
-                  "Combi-weapon"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Chosen w/ paired accursed weapons and bolt pistol",
+                "name": "Paired accursed weapons",
                 "min": 0,
                 "max": 2,
                 "weapons": [
-                  "Bolt pistol",
                   "Paired accursed weapons"
                 ],
                 "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Pistol",
+            "groupMin": 4,
+            "groupMax": 9,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Bolt pistol",
+                "min": 0,
+                "max": 9,
+                "weapons": [
+                  "Bolt pistol"
+                ],
+                "isDefault": true
               },
               {
-                "name": "Chosen w/ power fist and plasma pistol",
+                "name": "Plasma pistol",
                 "min": 0,
-                "max": 2,
+                "max": 4,
                 "weapons": [
-                  "Boltgun",
-                  "Plasma pistol",
-                  "Power fist"
+                  "Plasma pistol"
                 ],
                 "isDefault": false
               }
@@ -29743,40 +29677,26 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             ]
           },
           {
-            "name": "Raiders with alternate weapons",
+            "name": "Alternate weapon upgrades",
             "groupMin": 0,
             "groupMax": 4,
             "modelContext": "",
-            "isUpgrade": false,
+            "isUpgrade": true,
             "variants": [
               {
-                "name": "Red Corsairs Raider w/ meltagun",
+                "name": "Meltagun (up to 2, replaces boltgun)",
                 "min": 0,
                 "max": 2,
                 "weapons": [
-                  "Meltagun",
-                  "Bolt pistol"
+                  "Meltagun"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Red Corsairs Raider w/ power fist",
+                "name": "Power fist (up to 2)",
                 "min": 0,
                 "max": 2,
                 "weapons": [
-                  "Boltgun",
-                  "Bolt pistol",
-                  "Power fist"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Red Corsairs Raider w/ power fist and meltagun",
-                "min": 0,
-                "max": 2,
-                "weapons": [
-                  "Meltagun",
-                  "Bolt pistol",
                   "Power fist"
                 ],
                 "isDefault": false
@@ -31062,12 +30982,10 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               },
               {
-                "name": "Blightlord Terminator w/ plague spewer and CCW",
+                "name": "Blightlord Terminator w/ plague spewer",
                 "min": 0,
-                "max": 1,
-                "weapons": [
-                  "Close combat weapon"
-                ],
+                "max": 2,
+                "weapons": [],
                 "isDefault": false
               },
               {
@@ -31094,9 +31012,18 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                   "Reaper autocannon"
                 ],
                 "isDefault": false
-              },
+              }
+            ]
+          },
+          {
+            "name": "Bubotic blade upgrade",
+            "groupMin": 0,
+            "groupMax": 2,
+            "modelContext": "",
+            "isUpgrade": true,
+            "variants": [
               {
-                "name": "Blightlord Terminator w/ plague spewer and bubotic blade",
+                "name": "Bubotic blade (plague spewer models only)",
                 "min": 0,
                 "max": 2,
                 "weapons": [],
@@ -52236,55 +52163,52 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "minModels": 3,
         "maxModels": 6,
-        "wargear": [],
+        "wargear": [
+          "Vicious claws"
+        ],
         "wargearOptions": [
           {
-            "name": "3-6 Wraiths",
+            "name": "Melee weapon",
             "groupMin": 3,
             "groupMax": 6,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Wraith w/ claws and beamer",
+                "name": "Vicious claws",
                 "min": 0,
                 "max": 6,
-                "weapons": [],
-                "isDefault": false
-              },
-              {
-                "name": "Wraith w/ claws and particle caster",
-                "min": 0,
-                "max": 6,
-                "weapons": [],
-                "isDefault": false
-              },
-              {
-                "name": "Wraith w/ claws",
-                "min": 0,
-                "max": 6,
-                "weapons": [],
+                "weapons": ["Vicious claws"],
                 "isDefault": true
               },
               {
-                "name": "Wraith w/ coils",
+                "name": "Whip coils",
                 "min": 0,
                 "max": 6,
-                "weapons": [],
+                "weapons": ["Whip coils"],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Optional secondary weapon",
+            "groupMin": 0,
+            "groupMax": 6,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Particle caster",
+                "min": 0,
+                "max": 6,
+                "weapons": ["Particle caster"],
                 "isDefault": false
               },
               {
-                "name": "Wraith w/ coils and beamer",
+                "name": "Transdimensional beamer",
                 "min": 0,
                 "max": 6,
-                "weapons": [],
-                "isDefault": false
-              },
-              {
-                "name": "Wraith w/ coils and particle caster",
-                "min": 0,
-                "max": 6,
-                "weapons": [],
+                "weapons": ["Transdimensional beamer"],
                 "isDefault": false
               }
             ]
@@ -54342,54 +54266,59 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         ],
         "wargearOptions": [
           {
-            "name": "2-6 Meganobz",
+            "name": "Ranged weapon",
             "groupMin": 2,
             "groupMax": 6,
             "modelContext": "",
             "isUpgrade": false,
             "variants": [
               {
-                "name": "Meganob w/ Kustom shoota and power klaw",
+                "name": "Kustom shoota",
                 "min": 0,
                 "max": 6,
                 "weapons": [
-                  "Kustom shoota",
+                  "Kustom shoota"
+                ],
+                "isDefault": true
+              },
+              {
+                "name": "Kombi-weapon",
+                "min": 0,
+                "max": 6,
+                "weapons": [
+                  "Kombi-weapon"
+                ],
+                "isDefault": false
+              }
+            ]
+          },
+          {
+            "name": "Melee weapon",
+            "groupMin": 2,
+            "groupMax": 6,
+            "modelContext": "",
+            "isUpgrade": false,
+            "variants": [
+              {
+                "name": "Power klaw",
+                "min": 0,
+                "max": 6,
+                "weapons": [
                   "Power klaw"
                 ],
                 "isDefault": true
               },
               {
-                "name": "Meganob w/ Kombi-weapon and power klaw",
+                "name": "Killsaw",
                 "min": 0,
                 "max": 6,
                 "weapons": [
-                  "Kombi-weapon",
-                  "Power klaw"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Meganob w/ Kombi-weapon and killsaw",
-                "min": 0,
-                "max": 6,
-                "weapons": [
-                  "Kombi-weapon",
                   "Killsaw"
                 ],
                 "isDefault": false
               },
               {
-                "name": "Meganob w/ Kustom shoota and killsaw",
-                "min": 0,
-                "max": 6,
-                "weapons": [
-                  "Kustom shoota",
-                  "Killsaw"
-                ],
-                "isDefault": false
-              },
-              {
-                "name": "Meganob w/ Killsaw and power klaw",
+                "name": "Killsaw and power klaw",
                 "min": 0,
                 "max": 6,
                 "weapons": [
@@ -54399,7 +54328,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "isDefault": false
               },
               {
-                "name": "Meganob w/ Twin killsaw",
+                "name": "Twin killsaw",
                 "min": 0,
                 "max": 6,
                 "weapons": [
