@@ -20,8 +20,10 @@ export const unitSelectionSchema = z.object({
   modelCount: z.number().int().positive(),
   points: z.number().int().nonnegative(),
   notes: z.string().optional(),
-  /** groupKey → selected variant name(s). Persisted so list detail can render wargear. */
+  /** groupKey → selected variant name(s). For single-select groups. */
   wargearChoices: z.record(z.string(), z.array(z.string())).optional(),
+  /** groupKey → variantName → count. For per-model groups where each model independently chooses. */
+  wargearCounts: z.record(z.string(), z.record(z.string(), z.number())).optional(),
   /** Enhancement id assigned to this selection (convenience denormalisation alongside roster.enhancements). */
   enhancementId: z.string().optional(),
   /** True when this selection is the roster's warlord. */

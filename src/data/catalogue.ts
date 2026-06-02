@@ -22,6 +22,8 @@ export interface WargearGroup {
   modelContext: string;
   /** True for unit-level add-on upgrades (icons, banners) rendered separately from squad composition. */
   isUpgrade: boolean;
+  /** True when each model independently chooses a variant — render with count spinners, not a single-select. */
+  isPerModel?: boolean;
   variants: WargearVariant[];
 }
 
@@ -23007,6 +23009,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Combi-bolter",
@@ -23034,6 +23037,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Accursed weapon",
@@ -23174,6 +23178,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Boltgun and accursed weapon",
@@ -23222,6 +23227,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Bolt pistol",
@@ -26596,6 +26602,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Combi-bolter",
@@ -26623,6 +26630,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Accursed weapon",
@@ -26826,6 +26834,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Boltgun and accursed weapon",
@@ -26874,6 +26883,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Bolt pistol",
@@ -30962,6 +30972,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 9,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Blightlord Terminator w/ combi-bolter",
@@ -52173,6 +52184,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 6,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Vicious claws",
@@ -52196,6 +52208,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 6,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Particle caster",
@@ -54271,6 +54284,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 6,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Kustom shoota",
@@ -54298,6 +54312,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
             "groupMax": 6,
             "modelContext": "",
             "isUpgrade": false,
+            "isPerModel": true,
             "variants": [
               {
                 "name": "Power klaw",
