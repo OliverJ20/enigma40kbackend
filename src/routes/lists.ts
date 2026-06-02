@@ -8,7 +8,6 @@ import {
   updateListSchema,
 } from "../lib/contracts.js";
 import { requireAuth } from "../middleware/auth.js";
-import { requireAuth } from "../middleware/auth.js";
 
 const app = new Hono();
 
