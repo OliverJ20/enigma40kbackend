@@ -8,6 +8,7 @@ import {
   updateListSchema,
 } from "../lib/contracts.js";
 import { requireAuth } from "../middleware/auth.js";
+import { requireAuth } from "../middleware/auth.js";
 
 const app = new Hono();
 
@@ -86,7 +87,7 @@ app.get(
   "/",
   zValidator("query", listListsQuerySchema),
   async (c) => {
-    const { faction, q, author, limit } = c.req.valid("query");
+    const { faction, q, author, sort, limit } = c.req.valid("query");
     const needle = q?.toLowerCase();
 
     // Base predicate — public only
@@ -94,12 +95,14 @@ app.get(
     if (faction) conditions.push(eq(lists.factionId, faction));
     if (author) conditions.push(eq(user.username, author));
 
+    const orderCol = sort === "views" ? desc(lists.viewCount) : desc(lists.updatedAt);
+
     const rows = await db
       .select(summaryColumns)
       .from(lists)
       .innerJoin(user, eq(lists.authorId, user.id))
       .where(and(...conditions))
-      .orderBy(desc(lists.updatedAt))
+      .orderBy(orderCol)
       .limit(limit);
 
     const filtered = needle

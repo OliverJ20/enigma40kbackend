@@ -71,8 +71,16 @@ export const listListsQuerySchema = z.object({
   faction: z.string().optional(),
   q: z.string().optional(),
   author: z.string().optional(),
+  sort: z.enum(["recent", "views"]).optional().default("recent"),
   limit: z.coerce.number().int().positive().max(100).default(50),
   cursor: z.string().optional(),
+});
+
+export const myListsQuerySchema = z.object({
+  faction: z.string().optional(),
+  q: z.string().optional(),
+  sort: z.enum(["recent", "views"]).optional().default("recent"),
+  limit: z.coerce.number().int().positive().max(100).default(50),
 });
 
 export const listSummarySchema = z.object({

@@ -1,14 +1,61 @@
 import { Hono } from "hono";
-import { db, eq, lists, user } from "../db/index.js";
+import { zValidator } from "@hono/zod-validator";
+import { and, db, desc, eq, lists, user } from "../db/index.js";
+import { myListsQuerySchema } from "../lib/contracts.js";
+import { requireAuth } from "../middleware/auth.js";
 
 const app = new Hono();
 
+const summaryColumns = {
+  id: lists.id,
+  slug: lists.slug,
+  title: lists.title,
+  description: lists.description,
+  factionId: lists.factionId,
+  detachmentId: lists.detachmentId,
+  points: lists.points,
+  pointsLimit: lists.pointsLimit,
+  visibility: lists.visibility,
+  viewCount: lists.viewCount,
+  likeCount: lists.likeCount,
+  forkCount: lists.forkCount,
+  forkedFromId: lists.forkedFromId,
+  createdAt: lists.createdAt,
+  updatedAt: lists.updatedAt,
+  authorId: user.id,
+  authorUsername: user.username,
+  authorName: user.name,
+  authorImage: user.image,
+};
+
+function toSummary(row: Record<string, unknown>) {
+  return {
+    id: row.id as string,
+    slug: row.slug as string,
+    title: row.title as string,
+    description: (row.description as string | null) ?? null,
+    factionId: row.factionId as string,
+    detachmentId: (row.detachmentId as string | null) ?? null,
+    points: row.points as number,
+    pointsLimit: row.pointsLimit as number,
+    visibility: row.visibility as "public" | "unlisted" | "private",
+    viewCount: row.viewCount as number,
+    likeCount: row.likeCount as number,
+    forkCount: row.forkCount as number,
+    forkedFromId: (row.forkedFromId as string | null) ?? null,
+    createdAt: (row.createdAt as Date).toISOString(),
+    updatedAt: (row.updatedAt as Date).toISOString(),
+    author: {
+      id: row.authorId as string,
+      username: row.authorUsername as string,
+      name: (row.authorName as string | null) ?? null,
+      image: (row.authorImage as string | null) ?? null,
+    },
+  };
+}
+
 /**
- * GET /me — returns the current user, or null when unauthenticated.
- *
- * The frontend uses better-auth's `useSession()` hook for most
- * session queries; this endpoint is a server-side, app-augmented view
- * that includes counts (e.g. number of authored lists).
+ * GET /me — returns the current user profile, or null when unauthenticated.
  */
 app.get("/", async (c) => {
   const currentUser = c.get("user");
@@ -45,5 +92,41 @@ app.get("/", async (c) => {
     },
   });
 });
+
+/**
+ * GET /me/lists — all lists belonging to the current user (all visibilities).
+ * Requires authentication.
+ */
+app.get(
+  "/lists",
+  requireAuth,
+  zValidator("query", myListsQuerySchema),
+  async (c) => {
+    const currentUser = c.get("user")!;
+    const { faction, q, sort, limit } = c.req.valid("query");
+    const needle = q?.toLowerCase();
+
+    const conditions = [eq(lists.authorId, currentUser.id)];
+    if (faction) conditions.push(eq(lists.factionId, faction));
+
+    const orderCol = sort === "views" ? desc(lists.viewCount) : desc(lists.updatedAt);
+
+    const rows = await db
+      .select(summaryColumns)
+      .from(lists)
+      .innerJoin(user, eq(lists.authorId, user.id))
+      .where(and(...conditions))
+      .orderBy(orderCol)
+      .limit(limit);
+
+    const filtered = needle
+      ? rows.filter((r) =>
+          `${r.title} ${r.description ?? ""}`.toLowerCase().includes(needle),
+        )
+      : rows;
+
+    return c.json({ lists: filtered.map(toSummary), count: filtered.length });
+  },
+);
 
 export default app;
