@@ -6,7 +6,14 @@
 export interface WargearVariant {
   name: string;
   min: number;
+  /** Absolute upper bound on the number of models that can carry this variant. */
   max: number;
+  /**
+   * When the rule says "for every N models, up to K can take this option",
+   * set maxPerModels: { count: K, per: N }.
+   * Effective max at any model count = Math.min(max, Math.floor(modelCount / per) * count).
+   */
+  maxPerModels?: { count: number; per: number };
   weapons: string[];
   /** True when this is the SEG's default entry — the base loadout all models start with. */
   isDefault: boolean;
@@ -23098,6 +23105,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Power fist",
                 "min": 0,
                 "max": 6,
+                "maxPerModels": { "count": 3, "per": 5 },
                 "weapons": [
                   "Power fist"
                 ],
@@ -23107,6 +23115,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Chainfist",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Chainfist"
                 ],
@@ -23116,6 +23125,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Paired accursed weapons",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Paired accursed weapons"
                 ],
@@ -24001,6 +24011,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Raptor w/ meltagun",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Close combat weapon",
                   "Bolt pistol",
@@ -24012,6 +24023,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Raptor w/ plasma gun",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Plasma gun",
                   "Close combat weapon",
@@ -24023,6 +24035,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Raptor w/ flamer",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Flamer",
                   "Close combat weapon",
@@ -26695,6 +26708,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Power fist",
                 "min": 0,
                 "max": 6,
+                "maxPerModels": { "count": 3, "per": 5 },
                 "weapons": [
                   "Power fist"
                 ],
@@ -26704,6 +26718,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Chainfist",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Chainfist"
                 ],
@@ -26713,6 +26728,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Paired accursed weapons",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Paired accursed weapons"
                 ],
@@ -27297,6 +27313,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Raptor w/ meltagun",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Close combat weapon",
                   "Bolt pistol",
@@ -27308,6 +27325,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Raptor w/ plasma gun",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Plasma gun",
                   "Close combat weapon",
@@ -27319,6 +27337,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Raptor w/ flamer",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Flamer",
                   "Close combat weapon",
@@ -31051,6 +31070,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Blightlord Terminator w/ plague spewer",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [],
                 "isDefault": false
               },
@@ -31067,6 +31087,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Blightlord Terminator w/ blight launcher",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [],
                 "isDefault": false
               },
@@ -31074,6 +31095,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Blightlord Terminator w/ reaper autocannon",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Reaper autocannon"
                 ],
@@ -34861,6 +34883,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Power fist",
                 "min": 0,
                 "max": 6,
+                "maxPerModels": { "count": 3, "per": 5 },
                 "weapons": ["Power fist"],
                 "isDefault": false
               },
@@ -34868,6 +34891,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Chainfist",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": ["Chainfist"],
                 "isDefault": false
               },
@@ -34875,6 +34899,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Paired accursed weapons",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": ["Paired accursed weapons"],
                 "isDefault": false
               }
@@ -49317,6 +49342,7 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
                 "name": "Hearthkyn Warrior w/ plasma knife",
                 "min": 0,
                 "max": 2,
+                "maxPerModels": { "count": 1, "per": 5 },
                 "weapons": [
                   "Autoch-pattern bolt pistol",
                   "Close combat weapon"
