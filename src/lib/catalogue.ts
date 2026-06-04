@@ -1,5 +1,6 @@
 import {
   BSDATA_CATALOGUE,
+  type AllyRule,
   type CatalogueUnit,
   type Detachment,
   type Enhancement,
@@ -8,7 +9,7 @@ import {
 } from "../data/catalogue.js";
 import { ROLE_ORDER, type UnitRole } from "./mock-catalogue.js";
 
-export type { CatalogueUnit, Detachment, Enhancement, WargearVariant, WargearGroup, UnitRole };
+export type { AllyRule, CatalogueUnit, Detachment, Enhancement, WargearVariant, WargearGroup, UnitRole };
 export { ROLE_ORDER };
 
 export function getUnits(factionId: string) {
@@ -32,4 +33,8 @@ export function getDetachments(factionId: string): Detachment[] {
 
 export function getEnhancements(factionId: string): Enhancement[] {
   return BSDATA_CATALOGUE[factionId]?.enhancements ?? [];
+}
+
+export function getAllyRules(factionId: string): AllyRule[] {
+  return BSDATA_CATALOGUE[factionId]?.allies ?? [];
 }
