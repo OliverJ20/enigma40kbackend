@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-06-15T04:35:34.476Z
+// Last synced: 2026-06-22T04:35:51.785Z
 
 export interface WargearVariant {
   name: string;
@@ -20972,12 +20972,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "rule": "Each time an ^^**Adeptus Astartes**^^ model from your army makes an attack, if that model’s unit is within a terrain feature, re‑roll a Hit roll of 1 and re‑roll a Wound roll of 1. \n\n\n^^**Adeptus Astartes**^^ units from your army gain the ^^**Entrenched**^^ keyword while all of the following are true: \n- That unit is within a terrain feature.\n- That unit was not set up on the battlefield this turn.\n- No model in that unit has moved more than 3” this turn."
       },
       {
-        "id": "armoured-speartip",
-        "name": "Armoured Speartip",
-        "ruleName": "Rapid Deployment",
-        "rule": "Each time an Adeptus Astartes unit from your army disembarks from a Transport (excluding Fly) that made a Normal or Advance move this phase (excluding those that arrived from Strategic Reserves), that disembarked unit can\nmake a Normal move of up to D6\", or a Normal move of up to D3+3\" instead if that Transport is a Heavy Transport\n(see below).\n\n\nAdeptus Astartes Transport units from your army (excluding FLY) that have a Wounds characteristic of 14+ have the Heavy Transport keyword."
-      },
-      {
         "id": "headhunter-task-force",
         "name": "Headhunter Task Force",
         "ruleName": "Target Sighted",
@@ -22650,51 +22644,6 @@ export const BSDATA_CATALOGUE: Record<string, FactionData> = {
         "description": "After both players have deployed their armies, select up to three ^^**Adeptus Astartes**^^ units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.",
         "allowedKeywords": [],
         "allowedUnitNames": []
-      },
-      {
-        "id": "armoured-speartip__liberator",
-        "name": "Liberator",
-        "detachmentId": "armoured-speartip",
-        "points": 15,
-        "description": "Adeptus Astartes model only. If you control an objective marker at the end of your Command phase,\nand the bearer’s unit (or any Heavy Transport it is embarked within) is within range of that objective\nmarker, that objective marker remains under your control until your opponent’s Level of Control over\nthat objective marker is greater than yours at the end of a phase.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "Adeptus Astartes"
-        ]
-      },
-      {
-        "id": "armoured-speartip__tip-of-the-spear",
-        "name": "Tip of the Spear",
-        "detachmentId": "armoured-speartip",
-        "points": 40,
-        "description": "Adeptus Astartes model only. If the bearer starts the battle embarked within a Transport, that transport\nhas the Scouts 6\" ability",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "Adeptus Astartes"
-        ]
-      },
-      {
-        "id": "armoured-speartip__shock-deployment",
-        "name": "Shock Deployment",
-        "detachmentId": "armoured-speartip",
-        "points": 20,
-        "description": "Adeptus Astartes Terminator or Gravis model only. In your Shooting phase, each time the bearer’s unit is selected to shoot, if it disembarked from a Transport this turn, until the end of the phase, ranged weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "Adeptus Astartes Terminator",
-          "Gravis"
-        ]
-      },
-      {
-        "id": "armoured-speartip__armoured-commander",
-        "name": "Armoured Commander",
-        "detachmentId": "armoured-speartip",
-        "points": 25,
-        "description": "Adeptus Astartes model only. Once per turn, in your Movement phase, the bearer can use this\nEnhancement. If it does, select one friendly Adeptus Astartes Transport that is in Strategic Reserves. Until the end of the phase, for the purposes of setting up that Transport on the battlefield, treat the current battle round number as being one higher than it actually is.",
-        "allowedKeywords": [],
-        "allowedUnitNames": [
-          "Adeptus Astartes"
-        ]
       }
     ]
   },
