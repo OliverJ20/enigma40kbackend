@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit manually.
 // Source: https://github.com/BSData/wh40k-10e
 // Regenerate: npm run sync:catalogue
-// Last synced: 2026-09-14T08:34:42.311Z
+// Last synced: 2026-09-21T08:36:10.231Z
 
 export interface WargearVariant {
   name: string;
